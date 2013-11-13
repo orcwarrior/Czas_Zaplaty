@@ -17,7 +17,10 @@ INSTANCE DIA_Leren_Hello (C_INFO)
 
 FUNC INT DIA_Leren_Hello_Condition()
 {
-	if(Npc_GetDistToPlayer(self)<200)
+// Ork: Tak mi sie przypomnia³a ta rozmowa wyskakuj¹ca w nieodpowiednim miejscu, w
+// nie odpowiednim czasie co skonczy³o siê zmian¹ Rutyny i rozkurwieniem gry w piŸdzieæ :P
+// *mam nadzieje ze to odp. WP (TODO / do sprawdzenia) i w miare dobry dystans
+	if(Npc_GetDistToPlayer(self) < 200 && Npc_GetDistToWP(self,"WAY_PATHMAGE") < 1900)
 	{
 		return 1;
 	};
