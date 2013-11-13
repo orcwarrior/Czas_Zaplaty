@@ -237,7 +237,9 @@ func void MusicSystem_Callback()
 		}; 
 		
 	};
-	print
+	// Ork: To powinno mnie oświecić codo problemów ze powrotem muzyki z fight -> standard
+	printscreen_s_i_s_i("Current musicZone.ptr: ",musiczone,"; herostatus: ",herostatus
+	,5,5,1);
 		MusicSystem_MusicZoneAddress_Last = musiczone;
 	
 	//Tidy is needed evry 125ms now
