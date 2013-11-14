@@ -1225,6 +1225,7 @@ FUNC VOID DIA_RATFORD_ExterminatePatrols_Info()
 };
 
 // **************************************************
+var int ratford_patrols_success;
 
 INSTANCE DIA_RATFORD_Patrols (C_INFO)
 {
@@ -1239,7 +1240,7 @@ INSTANCE DIA_RATFORD_Patrols (C_INFO)
 
 FUNC INT DIA_RATFORD_Patrols_Condition()
 {
-	if (Npc_KnowsInfo (hero, DIA_RATFORD_ExterminatePatrols))&&(NPC_HasItems(other,GRD_Prl_Swd))
+	if (Npc_KnowsInfo (hero, DIA_RATFORD_ExterminatePatrols))&&(NPC_HasItems(other,GRD_Prl_Swd)) && (!ratford_patrols_success)
 	{
 		return 1;
 	};
@@ -1252,7 +1253,7 @@ FUNC VOID DIA_RATFORD_Patrols_Info()
 	if (NPC_HasItems(other,GRD_Prl_Swd)>=10)
 	{
 		B_GiveXP (1500);
-		DIA_RATFORD_Patrols.permanent = 0;
+		ratford_patrols_success = true;
 		AI_Output (self, other, "DIA_RATFORD_Patrols_07_02"); //Œwietna robota, ci stra¿nicy ju¿ nam nie zaszkodz¹.
 		AI_Output (self, other, "DIA_RATFORD_Patrols_07_03"); //Daj mi miecze i mo¿esz trochê odetchn¹æ. Zajmij siê w³asnymi sprawami.
 		AI_Output (self, other, "DIA_RATFORD_Patrols_07_04"); //Wróæ do mnie, jak bêdziesz gotów na kolejne harce.
@@ -1285,7 +1286,7 @@ INSTANCE DIA_RATFORD_Raport (C_INFO)
 
 FUNC INT DIA_RATFORD_Raport_Condition()
 {
-	if (Npc_KnowsInfo (hero, DIA_Leren_LastThreeFinish1))||(Npc_KnowsInfo (hero,  DIA_RATFORD_Patrols))
+	if (Npc_KnowsInfo (hero, DIA_Leren_LastThreeFinish1))||(ratford_patrols_success)
 	{
 		return 1;
 	};
@@ -1293,7 +1294,6 @@ FUNC INT DIA_RATFORD_Raport_Condition()
 
 FUNC VOID DIA_RATFORD_Raport_Info()
 {
-   DIA_Carlos_First1.permanent = 0;
 	AI_Output (other, self, "DIA_RATFORD_Raport_15_01"); //To o czym chcia³eœ pogadaæ?
 	AI_Output (self, other, "DIA_RATFORD_Raport_07_02"); //Ju¿ od d³u¿szego czasu czekam na raport z Nowego Obozu. Jak pewnie siê domyœlasz, pos³aniec, którego wys³a³em, nie wróci³.
 	AI_Output (other, self, "DIA_RATFORD_Raport_15_03"); //Mnie te¿ chcesz siê pozbyæ w ten sam sposób?
