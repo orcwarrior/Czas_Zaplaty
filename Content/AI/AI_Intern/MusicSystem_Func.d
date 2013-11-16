@@ -7,11 +7,14 @@ var int MusicSys_Inited;
 var string MusicSys_Theme;
 var string MusicSys_OldTheme;
 var string MusicSys_OldThemePrefix;
+var int MusicSys_MusicVolume; // Ork: NEW
 var int OrcDLL_LIB;
 var int OrcDLL_PlayMusic; 
 var int OrcDLL_Tidy; 
 var int OrcDLL_SetVolume;//set global music volume level
 var int MusicSys_TidyDelay;
+var int MusicSys_FGT2DEF_Bugfix; // Ork: Kurwa, tak jak myslalem, orcLib.dll jest zjebany,
+								 // ale może jakoś to wymanewruje z poziomu gry (źródel dllki nie mam niesteety).
 func void MusicSystem_Init()
 {
 	if(MusicSys_Inited)
@@ -32,8 +35,67 @@ func void MusicSys_ReInit()//Called at INIT(All) in startup.d
 	MusicSys_Inited = false;
 };
 
+// Proba parsowania floata, z załozeniem ze zakres floata to 0.0 - 1.0
+func int MusicSys__parseMusicVolume(var string vol)
+{
+	printdebug("MS: Pre getchar At:");
+	var int firstChar; firstChar = STR_GetCharAt(vol,0);
+	printdebug_s_i("MS: char at 0: ",firstChar);
+	var int result; result = 1065353216; // float: 1.0;
+	
+	// printscreen_ss("Parsujemy glosnosc:  ",vol
+	// ,5,17,7);
+	if(firstChar != 49)//49 - '1' ascii
+	{
+		var string poPrzecinku; poPrzecinku = STR_SubStr(vol, 2, STR_Len(vol)-2);
+		var int poPrzecinku_Len; poPrzecinku_Len = STR_Len(poPrzecinku);
+	var int min; min = 4; if(min > poPrzecinku_Len) { min = poPrzecinku_Len; };
+	poPrzecinku = STR_SubStr(vol, 2, min);
+		var int wartPoPrzecinku; wartPoPrzecinku = STR_ToInt(poPrzecinku);
+		var int wiekszaPotega10tki; wiekszaPotega10tki = MATH_POWER(10,min);
+		result = divf(mkf(wartPoPrzecinku),mkf(wiekszaPotega10tki));
+	// printscreen_ss("pp: ",poPrzecinku
+	// ,5,26,10);
+	// printscreen_s_i_s_i("val: ",wiekszaPotega10tki," /( ",wartPoPrzecinku
+	// ,5,23,10);
+	};
+	
+	// printscreen_s_i("Sprasowany vol:  ",result
+	// ,5,20,7);
+	
+	return result;
+};
 
+func void MusicSystem_SetVolume(var int fvolume)
+{
+	MusicSystem_Init();
+	CALL_FloatParam(MusicSys_MusicVolume);
+	CALL__cdecl(OrcDLL_SetVolume);
+};
+// Called by Apply_Menu_Options hook
+func void MusicSys_VolumeUpdate()
+{
+	printdebug("Vol Update start");
+	//MEM_GetGothOpt ("SOUND","musicVolume");
+	//MEM_GetGothOpt ("SOUND","musicEnabled");
+	var string configMusicVol; configMusicVol = MEM_GetGothOpt ("SOUND","musicVolume"); 
+	var string configEnabled; configEnabled = MEM_GetGothOpt ("SOUND","musicEnabled"); 
+	printdebug("Vol UPD STR COmpare");
+	
+	if(STR_ToInt(configEnabled) == 0)
+	{
+		MusicSys_MusicVolume = FLOATNULL;
+	}
+	// Trzeba 'sparsować' floata zapisanego jako string:
+	else
+	{
+		MusicSys_MusicVolume = MusicSys__parseMusicVolume(configMusicVol);
+	};
+	printdebug("MS: VOLUME UPDATE");
+	MusicSystem_SetVolume(MusicSys_MusicVolume);
+	// printdebug_ss("MS: VOL: ",BuildNumber ("", MusicSys_MusicVolume, 4));
 
+};
 const int MS_Default = 0;//std->std
 const int MS_ToFight = 1;//std->fgt
 const int MS_FromFight = 2;//fgt->std
@@ -54,20 +116,8 @@ func void MusicSystem_PlayMusic(var string file, var int volume)
 	CALL_cStringPtrParam (file);
 	CALL__cdecl(OrcDLL_PlayMusic);
 	printdebug("MS:Music Played..");
-	// Gothic wasn't very happy when he have to grab this msg's
-	//get returnec Const char...
-	//var string msg; 
-    //var zString zStr;
-	//printdebug("MS: Returning value..");
-	//MEM_AssignInst (zStr, STRINT_GetHelpStringAddress());
-	//zStr.ptr = CALL_RetValAsPtr();
-	//zStr.len = 280;
-	//printdebug("MS: orcLib_PlayMusic()->returned:");
-	//msg = MEMINT_HlpString;
-	//printdebug_ss("MS: orcLib::msg: ",msg);
 	
-	MusicSys_TidyDelay = 1000;//??? ahh so thats the time after tidy should be fired fuck that anyways ;d
-	
+	MusicSys_TidyDelay = 1000;//??? ahh so thats the time after tidy should be fired fuck that anyways ;d	
 	MusicSys_OldTheme = file;
 	
 };
@@ -76,16 +126,6 @@ func void MusicSystem_Tidy()//stop faded out channel
 	MusicSystem_Init();//but at all it will be inited only when MusicSys_Inited == false (and after init it is true)
 	
 	CALL__cdecl(OrcDLL_Tidy);
-	
-	//var string msg; 
-    //var zString zStr;
-	//printdebug("MS: Returning value..");
-	//MEM_AssignInst (zStr, STRINT_GetHelpStringAddress());
-	//zStr.ptr = CALL_RetValAsPtr();
-	//zStr.len = 280;
-	//printdebug("MS: orcLib_Tidy()->returned:");
-	//msg = MEMINT_HlpString;
-	//printdebug_ss("MS: orcLib::msg: ",msg);
 	
 };
 
@@ -132,10 +172,13 @@ func void MusicSystem_SetNewTheme()
 		filename = MusicSystem_GetTheme();
 		printdebug(concatstrings("MS:MusicSys_OldThemePrefix:",MusicSys_OldThemePrefix));
 		printdebug(concatstrings("MS:MusicSys_NewThemePrefix:",filename));
-		
+
+		// printscreen_ss("Trying to set new theme...[IF THERE IS NO FUTHER MSG FUNC. BROKE ;(]",filename
+		// ,5,11,7);
 		// Don't do nothing if new Theme is same theme as old one
 		// and herostatus won't changed too
 		if(Hlp_StrCmp(filename,MusicSys_OldThemePrefix) && herostatus == MusicSystem_HeroStatus_Last){return;}
+		
 		else { MusicSys_OldThemePrefix = filename; };
 		
 		// Default motif have night variation:
@@ -143,16 +186,19 @@ func void MusicSystem_SetNewTheme()
 		if(Hlp_StrCmp(filename,"DEF"))
 		{
 			printdebug("it's DEF!!!");
-			if(Wld_IsTime(20,00,5,00))
-			{
-				//Note: Looks like night theme will never happen ;)
-				//filename = ConcatStrings(filename,"_NGT");		
-			};
+			// if(Wld_IsTime(20,00,5,00))
+			// {
+			// 	//Note: Looks like night theme will never happen ;)
+			// 	//filename = ConcatStrings(filename,"_NGT");		
+			// };
 		};
 		filename = ConcatStrings(filename,"_DAY");	
-		printdebug(concatstrings("MS:FilenamePREFIX:",filename));		
+		printdebug(concatstrings("MS:Filename PREFIX:",filename));		
 		
-		if(herostatus==0)//to std
+		// Ork: ok, pierwsza kwestia 1 = threat(zagrozenie, 2 = walka, dlatego muzyka
+		// z walki potrafiła ciagle grać w lasach, dlatego że wlaśnie jest tam odpalany
+		// motyw THREAT z automatu.
+		if(herostatus<=1)//to standard
 		{
 			filename = ConcatStrings(filename,"_STD.ogg");	
 		}
@@ -189,13 +235,24 @@ func void MusicSystem_SetNewTheme()
 			};		
 		};		
 		//TODO: get volume level from zCMusicZone object maybe?
-		MusicSystem_PlayMusic(FILENAME,mkf(1));		
+		// Ork: To może zrobić robotę:
+		// Samo ustawianie nowej ścieżki może się nie powieść
+		// (zaleznie od istnienia takiego pliku) ale wywołanie ustawienia
+		// utworu podstawowego przed tym może rozwiąże problem ;)
+		if(herostatus<=1)
+		{
+			MusicSystem_PlayMusic("DEF_DAY_STD.ogg",MusicSys_MusicVolume);
+		};
+		MusicSystem_PlayMusic(FILENAME,MusicSys_MusicVolume);		
 		MusicSystem_HeroStatus_Last = herostatus;
 		printdebug(concatstrings("MS:filename:",filename));
 		
+		// printscreen_ss("...OK!   ",filename
+		// ,5,14,7);
 };
 
 // Wiec ta funkcja jest wywoływana przez *loop* z opoznieniem 0.125
+// z NpcFunc_Trigger.d EVT_POISON()
 func void MusicSystem_Callback()
 {
 	var int musiczone; // Pointer to zCMusicZone object that hero is in
@@ -204,13 +261,14 @@ func void MusicSystem_Callback()
 	printdebug("MS:MusicSystem_Callback()");
 	
 	//First, handle the boss-fight motives:
+	// Exctract this block of code to function?
 	if(BOSSFIGHT_CURRENT==BOSSFIGHT_FGT1)
 	{
 		filename = MusicSystem_GetTheme();		
 		MusicSys_OldThemePrefix = filename;	
-		herostatus = 1;
+		herostatus = 2;
 		MusicSystem_MusicZoneAddress_Last = 0;
-		MusicSystem_PlayMusic("BOSSFGT1_DAY_STD.ogg",mkf(1));
+		MusicSystem_PlayMusic("BOSSFGT1_DAY_STD.ogg",MusicSys_MusicVolume);
 		return;
 	};
 	
@@ -218,7 +276,8 @@ func void MusicSystem_Callback()
 	// Zmiana strefy muzycznej / wczytanie gry (zmiana adresu music zone)
 	if(musiczone!=MusicSystem_MusicZoneAddress_Last)//change music: std->std or fgt->fgt
 	{	// so new musiczone != last music zone
-	
+		// printscreen_s_i("NEW music zone! [PREVIOUS]: ",MusicSystem_MusicZoneAddress_Last
+		// ,5,8,7);
 		printdebug("MS:musiczone != lastmusiczone");
 		MusicSystem_SetNewTheme();
 	}
@@ -230,16 +289,51 @@ func void MusicSystem_Callback()
 		herostatus = MEM_ReadInt(MUSIC_HeroStatus_Address);
 		if(herostatus!=MusicSystem_HeroStatus_Last)//change music std->fgt/fgt->std (same theme)
 		{
+			// Ork: Tutaj dodajemy naszego bugfixa który po ~7 sekundach ustawi ponownie
+			// motyw co w kazdym przypadku powinno zrobić robotę, a zarazem nie zaszkodzi
+			// utworowi który poprawnie się zmienił.
+			if(MusicSystem_HeroStatus_Last == 2) { // FGT -> !FGT
+				MusicSys_FGT2DEF_Bugfix = 8*5;
+				MusicSystem_SetVolume(FLOATNULL); // Ork: Dzięki temu muzyka z walki chociaż się wyciszy, zawsze lepsza
+											      // cisza niż zapętlone gówno.
+			};
+			// printscreen_s_i("NEW herostatus! [PREVIOUS]: ",MusicSystem_HeroStatus_Last
+			// ,5,8,7);
 			printdebug("MS:herostatus != lastHeroStatus");
 			filename = MusicSystem_GetTheme();
 			MusicSystem_SetNewTheme();			
-			MusicSys_OldThemePrefix = filename;			
+			MusicSys_OldThemePrefix = filename;		
+
 		}; 
 		
+	};		// Kontynuacja bugfixa...
+	if(MusicSys_FGT2DEF_Bugfix>0) 
+	{
+		// printscreen_s_i("... ",MusicSys_FGT2DEF_Bugfix
+		// ,5,18,1);
+		MusicSys_FGT2DEF_Bugfix = MusicSys_FGT2DEF_Bugfix - 1;
+		var int tmp; 
+		if(MusicSys_FGT2DEF_Bugfix==4){
+			// Temp set fight theme again...
+			tmp = MusicSystem_HeroStatus_Last;
+			// MusicSystem_Tidy();
+			MusicSystem_HeroStatus_Last = -1;
+			MusicSystem_SetNewTheme();
+			MusicSystem_HeroStatus_Last = tmp;
+		}
+		if(MusicSys_FGT2DEF_Bugfix==0){ 
+			// printscreen_ss("BUGFIX !!! ONEONE  ",filename
+			// ,5,18,7);
+			tmp = MusicSystem_HeroStatus_Last;
+			// MusicSystem_Tidy();
+			MusicSystem_HeroStatus_Last = -1;
+			MusicSystem_SetNewTheme();
+			MusicSystem_HeroStatus_Last = tmp;
+		};
 	};
 	// Ork: To powinno mnie oświecić codo problemów ze powrotem muzyki z fight -> standard
-	printscreen_s_i_s_i("Current musicZone.ptr: ",musiczone,"; herostatus: ",herostatus
-	,5,5,1);
+	// printscreen_s_i_s_i("Current musicZone.ptr: ",musiczone,"; herostatus: ",herostatus
+	// ,5,5,1);
 		MusicSystem_MusicZoneAddress_Last = musiczone;
 	
 	//Tidy is needed evry 125ms now
@@ -252,7 +346,7 @@ func void MusicSystem_Callback()
 	//	};
 	//};//timems - 125ms
 	
-
+	
 	
 	
 };

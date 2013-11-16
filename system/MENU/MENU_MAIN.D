@@ -171,7 +171,8 @@ instance MENUITEM_MAIN_INTRO(C_MENU_ITEM_DEF)
 	// Aktionen
 	onSelAction[0]	= SEL_ACTION_UNDEF;
 	
-	onEventAction[EVENT_EXECUTE] 	= ShowCredits;
+	// Ork: LOLWUT?
+	onEventAction[EVENT_EXECUTE] 	= ShowIntro;
 	// Weitere Eigenschaften
 	flags			= menuitm_flg;
 };

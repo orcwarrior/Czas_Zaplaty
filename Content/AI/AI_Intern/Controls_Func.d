@@ -671,6 +671,7 @@ func void FrameCallBack_HandleKeystorkes()
 	//F12
 	if(MEM_KeyState(KEY_F12)==KEY_PRESSED)
 	{
+		return; // Ork: czegos szukam i akurat tu trafilem, to bylo dla czystej zabawy usuwam bo mogło sporo mieszać
 // 		CheckAdress(MEM_InstToPtr(MEM_World),2024,1,1); 		
   		printdebug_s_i("># lights: ",MEM_World.bspTree_renderLightList_numInArray);
 // 		OptimizationVobLights_CollectLights();		
@@ -794,6 +795,7 @@ func void FrameCallBack_HandleKeystorkes()
 	//F5 - Damage Debug
 	if(MEM_KeyState(KEY_F10)==KEY_PRESSED)
 	{
+		return; // jak wyzej, ale ja jeszcze z tego skorzystam :D
 		RS_PrintActualRuneAttribs();
 		//PrintScreen ("Damage Pool:",-1, 10, _STR_FONT_ONSCREEN,999119);	
 //		var int ptr;
@@ -846,5 +848,4 @@ func void FrameCallBack_HandleKeystorkes()
 	KeyEvent_EquipmentTakeAll();
  	
 	printdebug("FrameCallBack_HandleKeystorkes koniec funkcji");
-//	print_s_i("OCC_CELLAR_HALLWAY_FRONT: ",Npc_GetDistToWp(hero,"OCC_CELLAR_HALLWAY_FRONT"));
 };

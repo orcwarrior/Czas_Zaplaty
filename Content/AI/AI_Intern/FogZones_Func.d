@@ -620,6 +620,9 @@ func void FX_TransitionDoStep()
 	// 	
 	var int sky_indoor;
 	sky_indoor = MEM_World.skyControlerIndoor;
+	// Ork: Kurwa jakie te moje funkcje magiczne to ićpanwchuj
+	// ale to chyba zmienia kolor foga, i jeśli RGBAToZColor jest skaszanione
+	// to może to powodować kolorowe, oczojebne migotania mgły przy wychodzeniu/wchodzeniu do strefy.
 	MEM_WriteInt(sky_indoor+44,RGBAToZColor (r,g,b,155)); 
 
 	

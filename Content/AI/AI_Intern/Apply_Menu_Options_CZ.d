@@ -1,4 +1,4 @@
-//called both by Startup & engine hook of MenuLeave
+//called both by Startup & engine hook of MenuLeave functon 
 var int Last_GAME_frameLimit;
 var int Settings_CompassOn;
 func void Apply_Menu_Options_CZ()
@@ -29,5 +29,7 @@ func void Apply_Menu_Options_CZ()
 	};
 	
 	Controls_Update();//Update controls keys
-	Extract_NeededKeys();//all in one			
+	Extract_NeededKeys();//all in one	
+	printdebug("Pre musicSYS Call");
+	MusicSys_VolumeUpdate();
 };

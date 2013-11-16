@@ -43,22 +43,6 @@ func void EVT_POISON()
 	printdebug("PoisonTrigger>>B_Sprinter"); 
 
    B_Sprinter();	
-	//if(C_BodyStateContains(hero,BS_HIT))&&(WAS_BS_HIT==0)&&(DualEquiped==TRUE)&&(Npc_HasReadiedMeleeWeapon(hero))	
-	//{
-	//	Wld_PlayEffect("LH_TRAIL",hero,hero,0,0,0,FALSE);	
-	//	WAS_BS_HIT=1;
-	//}
-	//if(WAS_BS_HIT>0)
-	//{
-	//	WAS_BS_HIT=WAS_BS_HIT+1;
-	//	
-	//	if(WAS_BS_HIT==21)
-	//	{
-	//		WAS_BS_HIT=0;	
-	//	};
-	//	
-	//};
-
 
 	printdebug("PoisonTrigger>>Trade_UpdateMul"); 				
 	Trade_UpdateMul();

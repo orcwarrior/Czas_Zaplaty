@@ -40,7 +40,7 @@ func void KeyEvent_RuneSwd()
 		};
 	};
 };
-
+// Ork: Dobra, czemu to nie dzia³a w gzrze? [TODO]
 func void KeyEvent_PreviousAmunition()
 {
 	var c_item rw;

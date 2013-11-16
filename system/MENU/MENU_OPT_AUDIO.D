@@ -13,6 +13,8 @@ INSTANCE MENU_OPT_AUDIO(C_MENU_DEF)
 		
 	items[3]		= "MENUITEM_AUDIO_MUSICVOL";
 	items[4]		= "MENUITEM_AUDIO_MUSICVOL_SLIDER";
+	items[16]		= "MENUITEM_AUDIO_MUSICVOL_INFO";
+	items[17]		= "MENUITEM_AUDIO_MUSICVOL_INFO2";
 	
 	items[5]		= "MENUITEM_AUDIO_MUSIC";
 	items[6]		= "MENUITEM_AUDIO_MUSIC_CHOICE";
@@ -118,7 +120,22 @@ INSTANCE MENUITEM_AUDIO_MUSICVOL_SLIDER(C_MENU_ITEM_DEF)
 	userString[0]	=	MENU_SLIDER_POS_PIC;
 	flags			= flags & ~IT_SELECTABLE;
 };
+INSTANCE MENUITEM_AUDIO_MUSICVOL_INFO(C_MENU_ITEM_DEF)
+{
+	text[0]			=	"(Zmiana zostanie wprow. ";
+	posx		= MENU_OPT_X2+1900;		posy		= MENU_START_Y + MENU_DY*1 - 100;
+	fontName 	= 	MENU_FONT_SMALL;
+	flags		= flags  & ~IT_SELECTABLE;
 
+};
+INSTANCE MENUITEM_AUDIO_MUSICVOL_INFO2(C_MENU_ITEM_DEF)
+{
+	text[0]			=	"po zamkniêciu tego menu.)";
+	posx		= MENU_OPT_X2+1900;		posy		= MENU_START_Y + MENU_DY*1- 100 + 200;
+	fontName 	= 	MENU_FONT_SMALL;
+	flags		= flags  & ~IT_SELECTABLE;
+
+};
 
 //
 // Music on/off

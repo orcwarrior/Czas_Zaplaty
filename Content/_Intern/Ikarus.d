@@ -798,9 +798,24 @@ func string STR_SubStr (var string str, var int start, var int count) {
     return str;
 };
 
+//--------------------------------------
+// Länge eines Strings
+//--------------------------------------
+// Ork: Przesuniete, wymagane przez suffix
+func int STR_Len (var string str) {
+    var zString zStr;
+    MEM_AssignInst (zStr, STRINT_GetStringAddress(str));
+    
+    return zStr.len;
+};
 //Von früher:
 func string STR_Prefix (var string str, var int len) {
     return STR_SubStr (str, 0, len);
+};
+// Ork: new
+func string STR_Suffix (var string str, var int startPos) {
+	var int tillEnd; tillEnd = STR_Len(str) - startPos;
+    return STR_SubStr (str, startPos, tillEnd);
 };
 
 //--------------------------------------
@@ -865,16 +880,6 @@ func int STR_Search (var string str, var string pattern) {
     return -1;//pattern not found
 };
 
-//--------------------------------------
-// Länge eines Strings
-//--------------------------------------
-
-func int STR_Len (var string str) {
-    var zString zStr;
-    MEM_AssignInst (zStr, STRINT_GetStringAddress(str));
-    
-    return zStr.len;
-};
 
 //--------------------------------------
 // Pointer auf Daten
