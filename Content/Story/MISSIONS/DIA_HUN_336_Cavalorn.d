@@ -2152,7 +2152,7 @@ INSTANCE DIA_Cavalorn_SpyEnd (C_INFO)
 
 FUNC INT DIA_Cavalorn_SpyEnd_Condition()
 {
-	if (Npc_KnowsInfo (hero, DIA_Abel_SpyKillEnd))&&(Npc_GetDistToNpc(self,hero) < 800)
+	if (Npc_KnowsInfo (hero, DIA_Abel_SpyKillEnd6))&&(Npc_GetDistToNpc(self,hero) < 800)
 	{
 		return TRUE;
 	};

@@ -812,7 +812,7 @@ INSTANCE Rick_Axe_1 (WeaponsMelee)
 	TEXT[1]				= "To mój topór, morze go nie oszczêdzi³o";	
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
-	TEXT[4] 			= NAME_TwoHanded;
+	TEXT[4] 			= NAME_OneHanded;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 
 };
@@ -838,7 +838,7 @@ INSTANCE Rick_Axe_2a (WeaponsMelee)
 	TEXT[1]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[2]				= "To mój topór, Aidan go naprawi³";	
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
-	TEXT[4] 			= NAME_TwoHanded;
+	TEXT[4] 			= NAME_OneHanded;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 };
 INSTANCE Rick_Axe_2b (WeaponsMelee)
@@ -888,7 +888,7 @@ INSTANCE Rick_Axe_3a (WeaponsMelee)
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[1]				= "To mój topór, ulepszy³em go dziêki Fakegem";	
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
-	TEXT[4] 			= NAME_TwoHanded;
+	TEXT[4] 			= NAME_OneHanded;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 };
 INSTANCE Rick_Axe_3b (WeaponsMelee)
