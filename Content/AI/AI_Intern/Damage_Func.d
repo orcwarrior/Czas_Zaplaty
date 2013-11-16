@@ -1279,7 +1279,7 @@
 		var int ptr;//pointer to last collected item of array
 		var int array;//*zCArray voblist       
 		var c_npc npc;//founded oCnpc => C_NPC
-		const int fight_range = 1140457472;//500.0
+		const int fight_range = 1140457472;//500.0 (float)
 		
 		//Reset hostile enemies
 		HeroDamage_HostileEnemies=0;
@@ -1302,23 +1302,24 @@
 		if(!max){return;};
 		array = her.vobList_array;
 		
+		// Ork: Jeœli fokus nie znajdzie sie na vobliscie, i tak go sprawdzimy, a co tam :)
+		var int bFocusInVoblist; bFocusInVoblist = FALSE;
 		MEM_InitLabels();
 		label = MEM_StackPos.position;  
-		
-		ptr = MEM_ReadInt(array+i*4);
+		ptr = MEM_ReadInt(array + i*4);
 		//is Npc?
 		if(oCNpc_vtbl<ptr)&&(ptr<600000000)&&(ptr%4==0)
 		{
-			printdebug("PrintNearestNpcs: WATCH OUT! I'm about to read potential object pointer, if game crash it was my fault!!!");
 			if((ptr != 0) && (MEM_ReadInt(ptr) == oCNpc_vtbl))
 			{              
 				var int oldtrgt;
 				oldtrgt = her.enemy;//ocnpc.enemy
 				her.enemy = ptr;
 				Npc_GetTarget(hero);
-				
+				// printscreen_s_i_s(ConcatStrings(inttostring(i),". "),ptr,other.name
+				// ,5,5+i*3,2);
 				CollPool_CheckSingleNpc(other,hand);
-				
+				if(ptr == oldtrgt) { bFocusInVoblist = TRUE; };
 				her.enemy = oldtrgt;
 			};
 		};
@@ -1327,6 +1328,13 @@
 		{
 			MEM_StackPos.position = label;
 		};      
+		// Ork: Jeœli fokus nie zostal znaleziony na vobliscie, to sprawdzimy jeszcze jego:
+		if(!bFocusInVoblist)
+		{
+			// printscreen_s_i_s("(Focus). ",her.enemy,other.name
+			// ,5,5+i*3,2);
+			CollPool_CheckSingleNpc(other,hand);
+		};
 	};
 	
 	

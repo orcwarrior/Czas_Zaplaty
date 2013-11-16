@@ -3,7 +3,7 @@
 **		Wld_Gettimehour													**
 **		=============													**
 **																		**
-**		Func returns Now Hour In Gothic							**
+**		Func returns current Hour In Gothic							**
 **		By Orcwarrior													**
 **																		**
 *************************************************************************/
@@ -32,7 +32,7 @@ Func Int Wld_GetHour()
 **		Wld_Gettimemin													**
 **		=============													**
 **																		**
-**		Func returns Now Minute In Gothic							**
+**		Func returns current Minute In Gothic							**
 **		By Orcwarrior													**
 **																		**
 *************************************************************************/
