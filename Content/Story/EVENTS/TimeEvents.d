@@ -629,6 +629,21 @@ FUNC VOID B_Trigger_CheckMissions()
       Npc_SetPermAttitude(kasacz, ATT_HOSTILE);	
    };
    
+   if ((Saturas_saves_Rick == 1) && InfoManager_HasFinished())
+   {
+      AI_Teleport  (hero, "LOCATION_19_03_ROOM6_BARRELCHAMBER2");
+
+      Npc_ExchangeRoutine(hrabia, "HIDE");
+      Npc_ExchangeRoutine(grd_2514, "HIDE");
+      Npc_ExchangeRoutine(grd_2515, "HIDE");
+      Npc_ExchangeRoutine(grd_2516, "HIDE");
+      Npc_ExchangeRoutine(grd_2517, "HIDE");
+      Npc_ExchangeRoutine(grd_2518, "HIDE");
+      Npc_ExchangeRoutine(wegorz, "HIDE");
+      
+      Saturas_saves_Rick = false;
+   };
+   
    if (Npc_HasItems(hero,orn3) && (!Hrabia_orn3))
    {
       B_ExchangeRoutine(hrabia,"OR3");

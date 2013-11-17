@@ -428,49 +428,8 @@ FUNC VOID DIA_Hrabia_FindThief1_Info()
 	AI_Output (self, other, "DIA_Hrabia_FindThief1_11_07"); //Zdaje siê, ¿e ju¿ to s³ysza³em. Zabijcie go ch³opcy, bo Kruk urwie wam jaja!
 	AI_DrawWeapon		(other);
 	B_StopProcessInfos	(self);
-};
-
-INSTANCE DIA_Hrabia_FindThief11 (C_INFO)
-{
-	npc				= GRD_4010_Hrabia;
-	nr				= 5;
-	condition		= DIA_Hrabia_FindThief11_Condition;
-	information		= DIA_Hrabia_FindThief11_Info;
-	permanent		= 0;
-	important		= 1;
-	description		= "..."; 
-};
-
-FUNC INT DIA_Hrabia_FindThief11_Condition()
-{
-	if (Npc_KnowsInfo (hero, DIA_Hrabia_FindThief1))&&(Npc_GetDistToNpc(self,hero) < 2500)&&(NPC_HasItems(hero,orn3)>=1)
-	{
-		return 1;
-	};
-};
-
-FUNC VOID DIA_Hrabia_FindThief11_Info()
-{
-	var C_NPC weg; weg = Hlp_GetNpc(Grd_2519_Wegorz);
-	var C_NPC grd1; grd1 = Hlp_GetNpc(GRD_2514_Guard);
-	var C_NPC grd2; grd2 = Hlp_GetNpc(GRD_2515_Guard);
-	var C_NPC grd3; grd3 = Hlp_GetNpc(GRD_2516_Guard);
-	var C_NPC grd4; grd4 = Hlp_GetNpc(GRD_2517_Guard);
-	var C_NPC grd5; grd5 = Hlp_GetNpc(GRD_2518_Guard);
-
-	Npc_ExchangeRoutine	(self, "HIDE");
-
-	Npc_ExchangeRoutine(grd1,"HIDE");
-	Npc_ExchangeRoutine(grd2,"HIDE");
-	Npc_ExchangeRoutine(grd3,"HIDE");
-	Npc_ExchangeRoutine(grd4,"HIDE");
-	Npc_ExchangeRoutine(grd5,"HIDE");
-	Npc_ExchangeRoutine(weg,"HIDE");
-	
-	B_StopProcessInfos(self);
-   B_StopProcessInfos(hero);
-
-	AI_Teleport  (hero, "LOCATION_19_03_ROOM6_BARRELCHAMBER2");
+   
+   Saturas_saves_Rick = true;
 };
 
 INSTANCE DIA_Hrabia_LastOrn (C_INFO)

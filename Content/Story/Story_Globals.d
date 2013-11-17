@@ -214,6 +214,7 @@ VAR INT MIS_PACHOSPLIT;
 VAR INT MIS_PACHOEARLCAMCANBEENABLED;
 VAR INT MIS_TELEPORTEARL;
 VAR INT Hrabia_teleport;
+var int Saturas_saves_Rick;
 var int Leren_teleport_after_ritual;
 var int Xardas_teleport_after_ritual;
 var int Tondral_death;

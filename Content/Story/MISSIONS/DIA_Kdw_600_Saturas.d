@@ -106,7 +106,7 @@ instance Info_Saturas_SaveDick (C_INFO)
 
 FUNC int Info_Saturas_SaveDick_Condition()
 {
-	if (Npc_KnowsInfo(hero,DIA_Hrabia_FindThief11))&&(Npc_GetDistToWP (hero,"LOCATION_19_03_ROOM6_BARRELCHAMBER2") < 500 ) 
+	if (Npc_KnowsInfo(hero,DIA_Hrabia_FindThief1))&&(Npc_GetDistToWP (hero,"LOCATION_19_03_ROOM6_BARRELCHAMBER2") < 500 ) 
 	{
 		return 1;
 	};

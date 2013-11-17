@@ -74,6 +74,7 @@ var C_NPC grd_2515;
 var C_NPC grd_2516;
 var C_NPC grd_2517;
 var C_NPC grd_2518;
+var C_NPC wegorz;
 /****CH2*****/
 var C_NPC CH2_Patrol_g1; 
 var C_NPC CH2_Patrol_g2; 
@@ -214,6 +215,7 @@ func void Init_GlobalNpc_World()
    grd_2516 = Hlp_GetNpc(GRD_2516_Guard);
    grd_2517 = Hlp_GetNpc(GRD_2517_Guard);
    grd_2518 = Hlp_GetNpc(GRD_2518_Guard);
+   wegorz = Hlp_GetNpc(Grd_2519_Wegorz);
    
    necro_demon = Hlp_GetNpc(NecromancerDemon);
 };
