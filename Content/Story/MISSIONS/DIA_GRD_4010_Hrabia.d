@@ -425,7 +425,7 @@ FUNC VOID DIA_Hrabia_FindThief1_Info()
 	AI_Output (self, other, "DIA_Hrabia_FindThief1_11_04"); //To znowu Ty! Za czêsto wtykasz nos w nieswoje sprawy.
 	AI_Output (self, other, "DIA_Hrabia_FindThief1_11_05"); //A to bardzo niebezpieczna przywara.
 	AI_Output (other, self, "DIA_Hrabia_FindThief1_15_06"); //Skóry tanio nie sprzedam!
-	AI_Output (self, other, "DIA_Hrabia_FindThief1_11_05"); //Zdaje siê, ¿e ju¿ to s³ysza³em. Zabijcie go ch³opcy, bo Kruk urwie wam jaja!
+	AI_Output (self, other, "DIA_Hrabia_FindThief1_11_07"); //Zdaje siê, ¿e ju¿ to s³ysza³em. Zabijcie go ch³opcy, bo Kruk urwie wam jaja!
 	AI_DrawWeapon		(other);
 	B_StopProcessInfos	(self);
 };
