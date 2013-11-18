@@ -405,3 +405,36 @@ FUNC VOID DIA_RBL_2617_Carlson_troll_armor_ready_Info()
    Log_SetTopicStatus(CH2_RBL_armor, LOG_SUCCESS);
 	B_LogEntry(CH2_RBL_armor, "W nagrodê otrzyma³em swój wymarzony pancerz z trolla.");
 };
+
+INSTANCE DIA_RBL_2617_Carlson_Repair_Axe (C_INFO)
+{
+	npc				= RBL_2617_Carlson;
+	nr				= 3;
+	condition		= DIA_RBL_2617_Carlson_Repair_Axe_Condition;
+	information		= DIA_RBL_2617_Carlson_Repair_Axe_Info;
+	permanent		= 0;
+	important		= 0;
+	description		= "Czy móg³byœ podostrzyæ mi mój topór?"; 
+};
+
+FUNC INT DIA_RBL_2617_Carlson_Repair_Axe_Condition()
+{
+	if (Npc_KnowsInfo (hero, DIA_Carlson_GoOut)) && (!repaired_axe_Rick) && (NPC_HasItems(other, Rick_Axe_1)>=1)
+	{
+		return 1;
+	};
+};
+
+FUNC VOID DIA_RBL_2617_Carlson_Repair_Axe_Info()
+{
+	repaired_axe_Rick = TRUE; 
+   
+   B_unequip_current_mweapon_hero(Rick_Axe_1);
+   
+	AI_Output (other, self, "DIA_RBL_2617_Carlson_Repair_Axe_15_01"); //Czy móg³byœ podostrzyæ mi mój topór?
+	AI_Output (self, other, "DIA_RBL_2617_Carlson_Repair_Axe_11_02"); //Tak, a przy okazji sprawdzê jakoœæ tutejszej kuŸni. Daj mi swój toporek.
+   Give_and_remove(Rick_Axe_1, 1);
+   Create_and_give(Rick_Axe_2b, 1);
+	AI_Output (self, other, "DIA_RBL_2617_Carlson_Repair_Axe_15_03"); //Teraz ma³e poprawki i ju¿ jest gotowy!
+	AI_Output (other, self, "DIA_RBL_2617_Carlson_Repair_Axe_15_04"); //Dziêki.
+};

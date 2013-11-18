@@ -223,6 +223,7 @@ var int Necro_teleport_after_deaths_beast;
 var int Necro_teleport_on_ritual;
 var int Raven_teleport_to_EN;
 var int Raven_teleport_to_hidden;
+var int repaired_axe_Rick;
 
 var int Scorpio_teacher;
 //MIS_Katrakanat_pieces

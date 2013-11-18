@@ -1114,7 +1114,7 @@ INSTANCE DIA_Aidan_armor (C_INFO)
 
 FUNC INT DIA_Aidan_armor_Condition()
 {
-	if (Npc_KnowsInfo (hero, Info_Kira_HuntFinalEnd))&&(NPC_HasItems(other,ItAt_BlackTroSkin>=1))
+	if (Npc_KnowsInfo (hero, Info_Kira_HuntFinalEnd))&&(NPC_HasItems(other,ItAt_BlackTroSkin)>=1)
 	{
 		return 1;
 	};
@@ -1126,4 +1126,37 @@ FUNC VOID DIA_Aidan_armor_Info()
    AI_Output (self, other, "DIA_Aidan_armor_11_02"); //Zaczekaj no, ja tylko wykuwam broñ, nie jestem ¿adnym p³atnerzem.
    AI_Output (self, other, "DIA_Aidan_armor_11_03"); //Tak, a te wszystkie pancerze rebeliantów pojawi³y siê ni st¹d, ni zow¹d?
    AI_Output (self, other, "DIA_Aidan_armor_11_04"); //Przestaæ mi zawracaæ dupê, mam pe³ne rêce roboty.
+};
+
+INSTANCE DIA_HUN_859_AIDAN_Repair_Axe (C_INFO)
+{
+	npc				= HUN_859_AIDAN;
+	nr				= 3;
+	condition		= DIA_HUN_859_AIDAN_Repair_Axe_Condition;
+	information		= DIA_HUN_859_AIDAN_Repair_Axe_Info;
+	permanent		= 0;
+	important		= 0;
+	description		= "Czy móg³byœ podostrzyæ mi mój topór?"; 
+};
+
+FUNC INT DIA_HUN_859_AIDAN_Repair_Axe_Condition()
+{
+	if (Npc_KnowsInfo (hero, DIA_HUN_859_AIDAN_GarryCome)) && (!repaired_axe_Rick) && (NPC_HasItems(other, Rick_Axe_1)>=1)
+	{
+		return 1;
+	};
+};
+
+FUNC VOID DIA_HUN_859_AIDAN_Repair_Axe_Info()
+{
+	repaired_axe_Rick = TRUE; 
+   
+   B_unequip_current_mweapon_hero(Rick_Axe_1);
+   
+	AI_Output (other, self, "DIA_HUN_859_AIDAN_Repair_Axe_15_01"); //Czy móg³byœ podostrzyæ mi mój topór?
+	AI_Output (self, other, "DIA_HUN_859_AIDAN_Repair_Axe_11_02"); //Jasne! Daj mi go, a po chwili znów bêdziesz móg³ posiekaæ kogoœ na kawa³ki.
+   Give_and_remove(Rick_Axe_1, 1);
+   Create_and_give(Rick_Axe_2a, 1);
+	AI_Output (self, other, "DIA_HUN_859_AIDAN_Repair_Axe_15_03"); //Proszê, niech ci dobrze s³u¿y. 
+	AI_Output (other, self, "DIA_HUN_859_AIDAN_Repair_Axe_15_04"); //Dziêki.
 };

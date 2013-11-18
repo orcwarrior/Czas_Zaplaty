@@ -121,3 +121,12 @@ func void B_end_game()
    PlayVideo ("CZ_credits.bik");
    ExitGame();
 };
+
+func void B_unequip_current_mweapon_hero(var int instanceName)
+{
+   var c_item hero_weapon; hero_weapon = Npc_GetEquippedMeleeWeapon(hero);
+   if (Hlp_IsItem(hero_weapon, instanceName))
+   {
+      AI_UnequipWeapons(hero);
+   };
+};

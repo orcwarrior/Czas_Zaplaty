@@ -826,12 +826,12 @@ INSTANCE Rick_Axe_2a (WeaponsMelee)
 
 	value 				=	750;//1200;//595
 	
-	damageTotal			= 	75;
+	damageTotal			= 	45;
 	damagetype			=	DAM_EDGE;
 	range    			=  	100;		
 
 	cond_atr[2]   		= 	ATR_STRENGTH;
-	cond_value[2]  		= 	65;
+	cond_value[2]  		= 	30;
 	visual 				=	"ItMw_1H_Axe_01.3DS";
 
 	description			= name;
@@ -851,17 +851,17 @@ INSTANCE Rick_Axe_2b (WeaponsMelee)
 
 	value 				=	750;//1200;//595
 	
-	damageTotal			= 	100;
+	damageTotal			= 	60;
 	damagetype			=	DAM_EDGE;
 	range    			=  	150;		
 
 	cond_atr[2]   		= 	ATR_STRENGTH;
-	cond_value[2]  		= 	80;
+	cond_value[2]  		= 	40;
 	visual 				=	"ItMw_2H_Axe_light_01.3DS";
 
 	description			= name;
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
-	TEXT[1]				= "To mój topór, Aidan go naprawi³";	
+	TEXT[1]				= "To mój topór, Carlson go naprawi³";	
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
 	TEXT[4] 			= NAME_TwoHanded;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
