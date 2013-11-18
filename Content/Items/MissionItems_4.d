@@ -503,7 +503,7 @@ INSTANCE beast_heart (C_Item)
 {
 	name 				=	"Serce";
 
-	mainflag 			=	ITEM_KAT_RUNE;
+	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
 
 	value 				=	1000;
@@ -514,15 +514,13 @@ INSTANCE beast_heart (C_Item)
 	description			= name;
 	TEXT[0]				= "To serce pochodzi ze szcz¹tków";
 	TEXT[1]				= "bestii która pokona³em na bagnach.";
-// 	TEXT[2]				= "Jego magiczna moc pozwala";
-// 	TEXT[3]				= "podpaliæ przeciwnika.";
-	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_Feuerherz;
+	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 };
 INSTANCE baal_heart (C_Item)
 {
 	name 				=	"Serce";
 
-	mainflag 			=	ITEM_KAT_RUNE;
+	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
 
 	value 				=	1;
@@ -532,7 +530,5 @@ INSTANCE baal_heart (C_Item)
 
 	description			= name;
 	TEXT[0]				= "Wyjête z Baala Tondrala!";
-// 	TEXT[2]				= "Jego magiczna moc pozwala";
-// 	TEXT[3]				= "podpaliæ przeciwnika.";
-	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_Feuerherz;
+	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 };
