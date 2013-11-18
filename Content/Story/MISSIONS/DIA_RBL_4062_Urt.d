@@ -415,7 +415,7 @@ FUNC VOID DIA_Urt_Kelvin1_Info()
  	AI_Output (self, other, "DIA_Urt_Kelvin1_11_02"); //A niech mnie, ten cwany skurczybyk znalaz³ tajemne wejœcie do Starego Obozu!
  	AI_Output (self, other, "DIA_Urt_Kelvin1_11_03"); //Kelvin nawet zza grobu potrafi dokopaæ Gomezowi.
  	AI_Output (other, self, "DIA_Urt_Kelvin1_15_04"); //¯a³ujê, ¿e go nie zna³em. To musia³ byæ niez³y...
- 	AI_Output (self, other, "DIA_Urt_Kelvin1_11_05"); //Stra¿nicy! Id¹ tutaj. Biegnij, uciekniesz przez piwnicê magnatów.
+ 	AI_Output (self, other, "DIA_Urt_Kelvin1_11_05"); //Stra¿nicy! Id¹ tutaj. Biegnij, uciekaj najszybciej jak tylko potrafisz.
  	AI_Output (self, other, "DIA_Urt_Kelvin1_11_06"); //Ja ich zatrzymam tak d³ugo jak siê da.
  	AI_Output (other, self, "DIA_Urt_Kelvin1_15_07"); //Zginiesz!
 	AI_Output (self, other, "DIA_Urt_Kelvin1_11_08"); //Dam sobie radê, uciekaj do lochów pod zamkiem, tam znajdziesz tajne przejœcie! 	
