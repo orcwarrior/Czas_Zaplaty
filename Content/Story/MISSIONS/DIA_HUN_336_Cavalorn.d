@@ -1821,6 +1821,9 @@ FUNC VOID DIA_Cavalorn_NewSword_Scrab()
 	AI_Output (self, other,"DIA_Cavalorn_NewSword_Scrab_12_03"); //Nie zamieniê tego ostrza na ¿aden inny. Powiedz Foxowi, ¿eby siê ju¿ wiêcej nie trudzi³.
 	B_LogEntry(CH3_RBL_DelivWeapon, "Cavalorn nie przyj¹³ ostrza.");
 	B_StopProcessInfos(self);
+   
+   Log_SetTopicStatus	(CH3_RBL_DelivWeapon, LOG_FAILED);
+	B_LogEntry		(CH3_RBL_DelivWeapon, "Nie uda³o mi siê przekonaæ Cavalorna by wzi¹³ miecz. No có¿, lepiej na razie nie wracaæ do Foxa...");
 };
 
 // -------------------------------------------------------------------
@@ -1832,6 +1835,9 @@ FUNC VOID DIA_Cavalorn_NewSword_Care()
 	AI_Output (self, other,"DIA_Cavalorn_NewSword_Care_12_03"); //Nie zamieniê orê¿a na ¿aden inny. Powiedz Foxowi, ¿eby siê ju¿ wiêcej nie trudzi³.
 	B_LogEntry(CH3_RBL_DelivWeapon, "Cavalorn nie przyj¹³ ostrza.");
 	B_StopProcessInfos(self);
+   
+   Log_SetTopicStatus	(CH3_RBL_DelivWeapon, LOG_FAILED);
+	B_LogEntry		(CH3_RBL_DelivWeapon, "Nie uda³o mi siê przekonaæ Cavalorna by wzi¹³ miecz. No có¿, lepiej na razie nie wracaæ do Foxa...");
 };
 
 //*********************************
