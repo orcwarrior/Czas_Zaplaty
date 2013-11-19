@@ -836,7 +836,7 @@ INSTANCE Saturas_Training_Magic (C_INFO)
 
 FUNC INT Saturas_Training_Magic_Condition()
 {		
-	if (Npc_KnowsInfo(hero, DIA_Saturas_CanYouTeachMe))
+	if (Npc_KnowsInfo(hero, DIA_Saturas_CanYouTeachMe) && (hero.guild == gil_mag))
 	{
 		return 1;
 	};
