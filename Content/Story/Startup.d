@@ -366,16 +366,16 @@ func VOID STARTUP_SUB_NEWCAMP ()
 	Wld_InsertNpc(SLV_2525_Slave, "NC_DAM");  //Slave
 	Wld_InsertNpc(SLV_2526_Slave, "NC_DAM");  //Slave
 	Wld_InsertNpc(SLV_2527_Slave, "NC_DAM");  //Slave
-		
+	
 	//----------Vorplatz (Surface)---------------------------			*******************ToDo!!!!!!!*****************************+
-// 	Wld_InsertNpc(ORG_829_Organisator, "NC_DAM"); //Vortor
-// 	Wld_InsertNpc(ORG_830_Organisator, "NC_DAM"); //Vortor
-// 	Wld_InsertNpc(ORG_831_Organisator, "NC_DAM"); //Vortor
-// 	Wld_InsertNpc(ORG_832_Organisator, "NC_DAM"); //Vortor
-// 	Wld_InsertNpc(ORG_834_Organisator, "NC_DAM"); //Wheel-Wache
-// 	//Wld_InsertNpc(BAU_925_Bauer, "NC_DAM"); 		//Nach Vortor
-// 	//Wld_InsertNpc(BAU_926_Bauer, "NC_DAM"); 		//Nach Vortor
-// 
+	// 	Wld_InsertNpc(ORG_829_Organisator, "NC_DAM"); //Vortor
+	// 	Wld_InsertNpc(ORG_830_Organisator, "NC_DAM"); //Vortor
+	// 	Wld_InsertNpc(ORG_831_Organisator, "NC_DAM"); //Vortor
+	// 	Wld_InsertNpc(ORG_832_Organisator, "NC_DAM"); //Vortor
+	// 	Wld_InsertNpc(ORG_834_Organisator, "NC_DAM"); //Wheel-Wache
+	// 	//Wld_InsertNpc(BAU_925_Bauer, "NC_DAM"); 		//Nach Vortor
+	// 	//Wld_InsertNpc(BAU_926_Bauer, "NC_DAM"); 		//Nach Vortor
+	// 
 	
 	//Patrol GRDs
 	Wld_InsertNpc(Grd_2530_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
@@ -391,23 +391,23 @@ func VOID STARTUP_SUB_NEWCAMP ()
 	Wld_InsertNpc(GRD_251_Kirgo, "NC_DAM");	 //Hut 21,Arena
 
 	//CAVE
-		Wld_InsertNpc(Grd_2539_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
-		Wld_InsertNpc(Grd_2540_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
-		Wld_InsertNpc(Grd_2541_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
-		Wld_InsertNpc(Grd_2542_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
-		Wld_InsertNpc(Grd_2543_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
-		Wld_InsertNpc(Grd_2544_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
-		Wld_InsertNpc(Grd_2545_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
-		Wld_InsertNpc(Grd_2546_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
-		Wld_InsertNpc(Grd_2547_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
-		Wld_InsertNpc(Grd_2548_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
-		Wld_InsertNpc(Grd_2549_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
-		Wld_InsertNpc(Grd_2550_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
- 
-		Wld_InsertNpc(SLV_824_Slave, "NC_DAM"); //Brooming 
-		Wld_InsertNpc(SLV_823_Slave, "NC_DAM"); //Brooming 	
-		Wld_InsertNpc(SLV_850_Wedge, "NC_DAM"); //Brooming 	
-		Wld_InsertNpc(SLV_901_Horatio, "NC_DAM"); //CF3
+	Wld_InsertNpc(Grd_2539_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
+	Wld_InsertNpc(Grd_2540_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
+	Wld_InsertNpc(Grd_2541_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
+	Wld_InsertNpc(Grd_2542_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
+	Wld_InsertNpc(Grd_2543_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
+	Wld_InsertNpc(Grd_2544_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
+	Wld_InsertNpc(Grd_2545_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
+	Wld_InsertNpc(Grd_2546_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
+	Wld_InsertNpc(Grd_2547_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
+	Wld_InsertNpc(Grd_2548_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
+	Wld_InsertNpc(Grd_2549_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
+	Wld_InsertNpc(Grd_2550_PatrolGRD, "NC_DAM"); 	//Surface Patrol	
+
+	Wld_InsertNpc(SLV_824_Slave, "NC_DAM"); //Brooming 
+	Wld_InsertNpc(SLV_823_Slave, "NC_DAM"); //Brooming 	
+	Wld_InsertNpc(SLV_850_Wedge, "NC_DAM"); //Brooming 	
+	Wld_InsertNpc(SLV_901_Horatio, "NC_DAM"); //CF3
 	//----------------Bauern---------------------------------
 	Wld_InsertNpc(BAU_902_Pock, "NC_DAM");  //CF2
 	Wld_InsertNpc(BAU_903_Rufus, "NC_DAM"); //CF1
@@ -438,10 +438,10 @@ func VOID STARTUP_SUB_NEWCAMP ()
 	//sprawdziæ wp dla Carlosa po gadce z Kilem	 NC_PATH49
 	
 	
- 	Wld_InsertNpc(Grd_255_Fletcher, "NC_DAM");		 //NC_Small_Cave_Center
+	Wld_InsertNpc(Grd_255_Fletcher, "NC_DAM");		 //NC_Small_Cave_Center
 	Wld_InsertNpc(GRD_20300_Gardist, "NC_DAM");	 //Hut 05
 	
- 	Wld_InsertNpc(SLD_702_Soeldner, "NC_DAM");	 //24h Wache vor Fletcher
+	Wld_InsertNpc(SLD_702_Soeldner, "NC_DAM");	 //24h Wache vor Fletcher
 
 	//Wld_InsertNpc(PC_Fighter, "NC_PATH87"); //Gorn
 	Wld_InsertNpc(Grd_4087_Carlos, "OW_PATH_07_21_GUARD_MIDDLE"); //Stra¿nik NO
@@ -450,37 +450,37 @@ func VOID STARTUP_SUB_NEWCAMP ()
 	//----------------Magier---------------------------------
 
 	//------------Organisatoren---------------------------------
-// 	Wld_InsertNpc(ORG_800_Organisator, "NC_DAM"); //Hut 26
-// 	Wld_InsertNpc(ORG_804_Organisator, "NC_DAM"); //Durchgangs-Wache zu Lares, 24h
-// 	Wld_InsertNpc(ORG_806_Organisator, "NC_DAM"); //Hut 20
-// 	Wld_InsertNpc(ORG_807_Organisator, "NC_DAM"); //Hut 14
-// 	Wld_InsertNpc(ORG_810_Organisator, "NC_DAM"); //Hut 12
-// 	Wld_InsertNpc(ORG_811_Organisator, "NC_DAM"); //Hut 17
-// 	Wld_InsertNpc(ORG_815_Organisator, "NC_DAM"); //Hut 29
-// 	Wld_InsertNpc(ORG_816_Organisator, "NC_DAM"); //Hut 28
-// 	Wld_InsertNpc(ORG_817_Organisator, "NC_DAM"); //Hut 13
-// 	Wld_InsertNpc(ORG_820_Organisator, "NC_DAM"); //Hut 12
-// 	Wld_InsertNpc(ORG_821_Organisator, "NC_DAM"); //Hut 25, Tavern Top
-// 	Wld_InsertNpc(ORG_822_Organisator, "NC_DAM"); //Hut 16
+	// 	Wld_InsertNpc(ORG_800_Organisator, "NC_DAM"); //Hut 26
+	// 	Wld_InsertNpc(ORG_804_Organisator, "NC_DAM"); //Durchgangs-Wache zu Lares, 24h
+	// 	Wld_InsertNpc(ORG_806_Organisator, "NC_DAM"); //Hut 20
+	// 	Wld_InsertNpc(ORG_807_Organisator, "NC_DAM"); //Hut 14
+	// 	Wld_InsertNpc(ORG_810_Organisator, "NC_DAM"); //Hut 12
+	// 	Wld_InsertNpc(ORG_811_Organisator, "NC_DAM"); //Hut 17
+	// 	Wld_InsertNpc(ORG_815_Organisator, "NC_DAM"); //Hut 29
+	// 	Wld_InsertNpc(ORG_816_Organisator, "NC_DAM"); //Hut 28
+	// 	Wld_InsertNpc(ORG_817_Organisator, "NC_DAM"); //Hut 13
+	// 	Wld_InsertNpc(ORG_820_Organisator, "NC_DAM"); //Hut 12
+	// 	Wld_InsertNpc(ORG_821_Organisator, "NC_DAM"); //Hut 25, Tavern Top
+	// 	Wld_InsertNpc(ORG_822_Organisator, "NC_DAM"); //Hut 16
 
-// 	Wld_InsertNpc(ORG_833_Buster, "NC_DAM");		//Hut 30
-// 	Wld_InsertNpc(ORG_836_Organisator, "NC_DAM"); //Hut 26
-// 	Wld_InsertNpc(ORG_837_Organisator, "NC_DAM"); //Hut 31, Kneipe
-// 	Wld_InsertNpc(ORG_838_Organisator, "NC_DAM"); //Hut 31, Kneipe
-// 	Wld_InsertNpc(ORG_841_Silas, "NC_DAM");		//Wirt, 24h in Kneipe
-// 	Wld_InsertNpc(ORG_842_Shrike, "NC_DAM");		//Hut 01, dann Hut 18
-// 	Wld_InsertNpc(ORG_843_Sharky, "NC_DAM");		//Hut 25
+	// 	Wld_InsertNpc(ORG_833_Buster, "NC_DAM");		//Hut 30
+	// 	Wld_InsertNpc(ORG_836_Organisator, "NC_DAM"); //Hut 26
+	// 	Wld_InsertNpc(ORG_837_Organisator, "NC_DAM"); //Hut 31, Kneipe
+	// 	Wld_InsertNpc(ORG_838_Organisator, "NC_DAM"); //Hut 31, Kneipe
+	// 	Wld_InsertNpc(ORG_841_Silas, "NC_DAM");		//Wirt, 24h in Kneipe
+	// 	Wld_InsertNpc(ORG_842_Shrike, "NC_DAM");		//Hut 01, dann Hut 18
+	// 	Wld_InsertNpc(ORG_843_Sharky, "NC_DAM");		//Hut 25
 
 
-/*****************
+	/*****************
 Lee/Saturas camps
 *****************/
 
-//mobs:
+	//mobs:
 
 	Wld_InsertNpc(Bloodhound,	"LOCATION_19_03");
 
-//soldiers:
+	//soldiers:
 
 	Wld_InsertNpc(SLD_700_Lee, "LOCATION_19_03_ROOM3");		
 	Wld_InsertNpc(SLD_701_Orik, "LOCATION_19_03_PEMTAGRAM_MOVEMENT");	
@@ -495,14 +495,14 @@ Lee/Saturas camps
 	Wld_InsertNpc(SLD_726_Soeldner, "LOCATION_19_03_ROOM2");  
 	Wld_InsertNpc(SLD_708_Soeldner, "LOCATION_19_03_SECOND_HARPYE5"); 
 
- 	Wld_InsertNpc(SLD_710_Soeldner, "LOCATION_19_03_SECOND_HARPYE2"); 
- 	Wld_InsertNpc(SLD_720_Soeldner, "LOCATION_19_03_SECOND_ETAGE5"); 
- 	Wld_InsertNpc(SLD_723_Soeldner, "LOCATION_19_03_SECOND_HARPYE3"); 
- 	Wld_InsertNpc(SLD_725_Soeldner, "LOCATION_19_03_SECOND_ETAGE_BALCON3"); 
+	Wld_InsertNpc(SLD_710_Soeldner, "LOCATION_19_03_SECOND_HARPYE2"); 
+	Wld_InsertNpc(SLD_720_Soeldner, "LOCATION_19_03_SECOND_ETAGE5"); 
+	Wld_InsertNpc(SLD_723_Soeldner, "LOCATION_19_03_SECOND_HARPYE3"); 
+	Wld_InsertNpc(SLD_725_Soeldner, "LOCATION_19_03_SECOND_ETAGE_BALCON3"); 
 	
 	// 	Wld_InsertNpc(SLD_730_Soeldner, "NC_DAM"); //dodaæ wp na szczyt wie¿y
 
-//magowie:
+	//magowie:
 
 
 	Wld_InsertNpc(KDW_600_Saturas, "LOCATION_19_03_ROOM6_BARRELCHAMBER2");	//dodaæ book shelf i fp
@@ -514,13 +514,13 @@ Lee/Saturas camps
 
 
 	
-/************************************
+	/************************************
 Harpie
 //   
 
 
-    //Brücke
-    
+	//Brücke
+	
 	//Platz vor Fokusplattform & Eingang
 	//Wld_InsertNpc(Harpie, "LOCATION_19_03_PATH_RUIN7");
 	//Wld_InsertNpc(Harpie, "LOCATION_19_03_PATH_RUIN8");    
@@ -564,7 +564,7 @@ Harpie
 	
 
 
-/*******************
+	/*******************
 BNs to use!
 
 *******************/
@@ -573,31 +573,31 @@ BNs to use!
 
 
 
-// 	Wld_InsertNpc(SLD_731_Soeldner, "NC_DAM"); //24h Wache vor Lee
-// 	Wld_InsertNpc(SLD_732_Soeldner, "NC_DAM"); //Durchgangs-Wache Magier
-// 	Wld_InsertNpc(SLD_733_Soeldner, "NC_DAM"); //Haupttor, Ausguck auf Reisfelder
-// 	Wld_InsertNpc(SLD_735_Soeldner, "NC_DAM"); //Trainee (Cord)
-// 	Wld_InsertNpc(SLD_736_Soeldner, "NC_DAM"); //Trainee (Cord)
-// //	Wld_InsertNpc(SLD_738_Soeldner, "NC_DAM"); //Drehradwache Haupttor 
+	// 	Wld_InsertNpc(SLD_731_Soeldner, "NC_DAM"); //24h Wache vor Lee
+	// 	Wld_InsertNpc(SLD_732_Soeldner, "NC_DAM"); //Durchgangs-Wache Magier
+	// 	Wld_InsertNpc(SLD_733_Soeldner, "NC_DAM"); //Haupttor, Ausguck auf Reisfelder
+	// 	Wld_InsertNpc(SLD_735_Soeldner, "NC_DAM"); //Trainee (Cord)
+	// 	Wld_InsertNpc(SLD_736_Soeldner, "NC_DAM"); //Trainee (Cord)
+	// //	Wld_InsertNpc(SLD_738_Soeldner, "NC_DAM"); //Drehradwache Haupttor 
 
 
-//*******************************************
+	//*******************************************
 
 
 	//Hut 15
 
-// 	Wld_InsertNpc(ORG_875_Tuersteher, "NC_DAM"); 	//Kneipen-Tuersteher
-// 	Wld_InsertNpc(ORG_876_Tuersteher, "NC_DAM"); 	//Kneipen-Tuersteher
-// 	Wld_InsertNpc(ORG_873_Cipher, "NC_DAM");	
+	// 	Wld_InsertNpc(ORG_875_Tuersteher, "NC_DAM"); 	//Kneipen-Tuersteher
+	// 	Wld_InsertNpc(ORG_876_Tuersteher, "NC_DAM"); 	//Kneipen-Tuersteher
+	// 	Wld_InsertNpc(ORG_873_Cipher, "NC_DAM");	
 
 	//-----------Schürfer in Bar--------------------------------
 
 	//-------------Lagerfremde---------------------------------
-//	Wld_InsertNpc(NOV_1332_BaalKagan, "NC_DAM");  //vor Hut 21, Abends bei Bauern am CF3
-//	Wld_InsertNpc(NOV_1333_BaalIsidro, "NC_DAM"); //24 in Kneipe an Ecktisch
+	//	Wld_InsertNpc(NOV_1332_BaalKagan, "NC_DAM");  //vor Hut 21, Abends bei Bauern am CF3
+	//	Wld_InsertNpc(NOV_1333_BaalIsidro, "NC_DAM"); //24 in Kneipe an Ecktisch
 	// Mordrag: Hut 19
 
-//	Wld_InsertNpc(DamLurker, "NC_SPAWN_DAM_LURKER2");
+	//	Wld_InsertNpc(DamLurker, "NC_SPAWN_DAM_LURKER2");
 
 
 	Wld_InsertNpc(SFB_1000_Senyan, "NC_DAM");	
@@ -637,7 +637,7 @@ BNs to use!
 	Wld_InsertNpc(Grd_658_Gardist, "NC_EN_1");		
 	Wld_InsertNpc(Grd_659_Gardist, "NC_EN_1");		
 	Wld_InsertNpc(Non_660_Nia, "NC_EN_1");		
-		
+	
 	//Slaves
 	Wld_InsertNpc(SLV_634_Slave, "NC_EN_1");		
 	Wld_InsertNpc(SLV_635_Slave, "NC_EN_1");		
@@ -789,10 +789,10 @@ FUNC VOID STARTUP_SUB_OLDCAMP ()
 	Wld_InsertNpc(Grd_211_Skip, "OC1");    //Händler, Scheune, OCC_MERCS_UPPER_LEFT_ROOM_BED4
 	Wld_InsertNpc(Grd_212_Torwache, "OC1");//Burgtor			
 	Wld_InsertNpc(Grd_213_Torwache, "OC1");//Burgtor			
-// 	Wld_InsertNpc(Grd_214_Torwache, "OC1");//Nordtor			
-// 	Wld_InsertNpc(Grd_215_Torwache, "OC1");//Nordtor			
-// 	Wld_InsertNpc(Grd_216_Torwache, "OC1");//Südtor			
-// 	Wld_InsertNpc(Grd_217_Torwache, "OC1");//Südtor
+	// 	Wld_InsertNpc(Grd_214_Torwache, "OC1");//Nordtor			
+	// 	Wld_InsertNpc(Grd_215_Torwache, "OC1");//Nordtor			
+	// 	Wld_InsertNpc(Grd_216_Torwache, "OC1");//Südtor			
+	// 	Wld_InsertNpc(Grd_217_Torwache, "OC1");//Südtor
 	Wld_InsertNpc(Grd_1245_Cad, "OC1");//Z mieczem dwurêcznym
 	Wld_InsertNpc(Grd_1246_Jeff, "OC1");//Z mieczem dwurêcznym
 	
@@ -822,7 +822,7 @@ FUNC VOID STARTUP_SUB_OLDCAMP ()
 	Wld_InsertNpc(Grd_3101_Mathis, "OC1");	 //Hut 21,Arena
 
 	Wld_InsertNpc(Grd_252_Gardist, "OC1"); //Torplatz, OCC_MERCS_LEFT_ROOM_BED2
-//TO NewCamp
+	//TO NewCamp
 	Wld_InsertNpc(Grd_253_Gardist, "OC1"); //Torplatz, Wachhaus OCC_MERCS_TO_GANGWAY
 	//Wld_InsertNpc(Grd_255_Fletcher, "OC1");//ArenaplatzPatrouille
 	Wld_InsertNpc(GRD_279_Gardist, "OC1"); //ItemWache im EBr-Haus
@@ -847,12 +847,12 @@ FUNC VOID STARTUP_SUB_OLDCAMP ()
 	Wld_InsertNpc(Stt_304_Schatten, "OC1"); //Hut 6, Torplatz
 	Wld_InsertNpc(Stt_306_Schatten, "OC1"); //Hut 27, Arenaplatz
 	Wld_InsertNpc(STT_346_Virat, "OC1"); //Hut 27, Arenaplatz
-		
+	
 	Wld_InsertNpc(STT_343_Felos, "OC1"); //  Arena Fighter
 	Wld_InsertNpc(STT_344_Warrior, "OC1"); //Arena Fighter
 	Wld_InsertNpc(STT_345_Warrior, "OC1"); //Arena Fighter
 	
-					
+	
 	//Wld_InsertNpc(KDF_400_Rodriguez, "OC1");
 	//Wld_InsertNpc(KDF_401_Damarok, "OC1");
 	//Wld_InsertNpc(KdF_402_Corristo, "OC1");
@@ -861,9 +861,9 @@ FUNC VOID STARTUP_SUB_OLDCAMP ()
 
 
 	Wld_InsertNpc(Grd_265_Gardist, "OC1");//OC Südtor (Ex-Fox)
-// 	Wld_InsertNpc(RBL_2400_Kelvin, "OC1");//OC Südtor (Ex-Fox)
-// 	var c_npc kevin; kevin = Hlp_GetNpc(RBL_2400_Kelvin);
-// 	kevin.attribute[ATR_HITPOINTS]-=kevin.attribute[ATR_HITPOINTS];
+	// 	Wld_InsertNpc(RBL_2400_Kelvin, "OC1");//OC Südtor (Ex-Fox)
+	// 	var c_npc kevin; kevin = Hlp_GetNpc(RBL_2400_Kelvin);
+	// 	kevin.attribute[ATR_HITPOINTS]-=kevin.attribute[ATR_HITPOINTS];
 	Wld_InsertNpc(Meatbug, "FP_MEATBUG_SPAWN_1");
 	Wld_InsertNpc(Meatbug, "FP_MEATBUG_SPAWN_1");
 	Wld_InsertNpc(Meatbug, "FP_MEATBUG_SPAWN_1");
@@ -875,10 +875,10 @@ FUNC VOID INIT_SUB_OLDCAMP ()
 	**                STARTUP_LIGHTS IN OLDCAMP                  **
 	**************************************************************/
 	//---- SN 09.01.01: auskommentiert, damit Tore rund um die Uhr offen sind ----
-// 	Wld_SetObjectRoutine (20,00, "EVT_OC_MAINGATE01_SWITCH",1);
-// 	Wld_SetObjectRoutine (08,00, "EVT_OC_MAINGATE01_SWITCH",1);
-// 	Wld_SetObjectRoutine (20,00, "EVT_OC_MAINGATE02_SWITCH",1);
-// 	Wld_SetObjectRoutine (08,00, "EVT_OC_MAINGATE02_SWITCH",1);
+	// 	Wld_SetObjectRoutine (20,00, "EVT_OC_MAINGATE01_SWITCH",1);
+	// 	Wld_SetObjectRoutine (08,00, "EVT_OC_MAINGATE01_SWITCH",1);
+	// 	Wld_SetObjectRoutine (20,00, "EVT_OC_MAINGATE02_SWITCH",1);
+	// 	Wld_SetObjectRoutine (08,00, "EVT_OC_MAINGATE02_SWITCH",1);
 	//Wld_SetObjectRoutine (23,15, "EVT_OC_INNERMAINGATE_SWITCH",1); //Grd_280_Gardist
 	//Wld_SetObjectRoutine (06,30, "EVT_OC_INNERMAINGATE_SWITCH",0);
 	//Wld_SetObjectRoutine (00,00, "OCR__MAINGATE_TRIGGER",1);
@@ -925,7 +925,7 @@ FUNC VOID INIT_SUB_OLDCAMP ()
 	Wld_SetObjectRoutine (00,00, "OC_FIREPLACE_HIGH_18",1);
 	Wld_SetObjectRoutine (20,00, "OC_FIREPLACE_HIGH_18",1);
 	Wld_SetObjectRoutine (05,00, "OC_FIREPLACE_HIGH_18",0);
-		
+	
 	Wld_SetObjectRoutine (00,00, "OC_FIREPLACE_HIGH_09",1);
 	Wld_SetObjectRoutine (20,00, "OC_FIREPLACE_HIGH_09",1);
 	Wld_SetObjectRoutine (05,00, "OC_FIREPLACE_HIGH_09",0);
@@ -1053,7 +1053,7 @@ FUNC VOID INIT_SUB_OLDCAMP ()
 	Wld_AssignRoomToGuild("HH7",GIL_GRD);	// Portalraum EBR-Bedroom
 	
 	Wld_AssignRoomToGuild("ocgateb",GIL_GRD);	//Wachraum am Haupteingang
-	 Wld_AssignRoomToGuild("hütte1",GIL_VLK); //Diegos Hütte
+	Wld_AssignRoomToGuild("hütte1",GIL_VLK); //Diegos Hütte
 	Wld_AssignRoomToGuild("hütte2",GIL_VLK); 
 	Wld_AssignRoomToGuild("hütte3",GIL_VLK); 
 	Wld_AssignRoomToGuild("hütte4",GIL_VLK);
@@ -1151,9 +1151,9 @@ func VOID INIT_SUB_DEMONTOWER ()
 
 FUNC VOID STARTUP_SUB_FREEMINECAMP ()
 {
-// 	Wld_SetMobRoutine			(00,00, "FIREPLACE", 1);
-// 	Wld_SetMobRoutine			(22,00, "FIREPLACE", 1);
-// 	Wld_SetMobRoutine			(05,00, "FIREPLACE", 0);
+	// 	Wld_SetMobRoutine			(00,00, "FIREPLACE", 1);
+	// 	Wld_SetMobRoutine			(22,00, "FIREPLACE", 1);
+	// 	Wld_SetMobRoutine			(05,00, "FIREPLACE", 0);
 
 	//----------------------Soeldner-------------------------------
 	Wld_InsertNpc(SLD_750_Soeldner, "FMC_ENTRANCE"); //FMC-Palisadenwache
@@ -1224,8 +1224,8 @@ FUNC VOID INIT_SUB_FREEMINECAMP ()
 //*******************************************************************************
 FUNC VOID STARTUP_SUB_SURFACE ()
 {
-// 	Wld_InsertNpc(GRD_254_Orry, "OC1");
-// 	Wld_InsertNpc(GRD_281_Gardist, "OC1");//Orry-Wache
+	// 	Wld_InsertNpc(GRD_254_Orry, "OC1");
+	// 	Wld_InsertNpc(GRD_281_Gardist, "OC1");//Orry-Wache
 	//Wld_InsertNpc(GRD_22299_Gardist, "OC1");
 	//Wld_InsertNpc(GRD_25411_Gardist, "OC1");
 	//Wld_InsertNpc(Tpl_11432_Templer, "OC1"); 
@@ -1254,13 +1254,13 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_SetObjectRoutine (05,00, "OW_FIREPLACE_HIGH_TH_2",0);	
 
 	
- 	Wld_SetObjectRoutine (00,00, "WOODRAYS_NGT0",1); 
+	Wld_SetObjectRoutine (00,00, "WOODRAYS_NGT0",1); 
 	Wld_SetObjectRoutine (19,00, "WOODRAYS_NGT0",1); 	
 	Wld_SetObjectRoutine (05,30, "WOODRAYS_NGT0",0); 	
 	Wld_SetObjectRoutine (00,00, "WOODRAYS_DAY0",0); 	
 	Wld_SetObjectRoutine (19,00, "WOODRAYS_DAY0",0); 	
 	Wld_SetObjectRoutine (05,30, "WOODRAYS_DAY0",1);			
-		
+	
 	Wld_SetObjectRoutine (00,00, "WOODRAYS_NGT1",1);
 	Wld_SetObjectRoutine (19,00, "WOODRAYS_NGT1",1);
 	Wld_SetObjectRoutine (05,30, "WOODRAYS_NGT1",0);
@@ -1309,7 +1309,7 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_SetObjectRoutine (00,00, "WOODRAYS_DAY7",0); 	
 	Wld_SetObjectRoutine (19,00, "WOODRAYS_DAY7",0); 	
 	Wld_SetObjectRoutine (05,30, "WOODRAYS_DAY7",1);	
-		
+	
 	Wld_SetObjectRoutine (00,00, "WOODRAYS_NGT8",1); 	
 	Wld_SetObjectRoutine (19,00, "WOODRAYS_NGT8",1); 	
 	Wld_SetObjectRoutine (05,30, "WOODRAYS_NGT8",0); 	
@@ -1359,7 +1359,7 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_SetObjectRoutine (19,00, "WOODRAYS_DAY14",0); 	
 	Wld_SetObjectRoutine (05,30, "WOODRAYS_DAY14",1);			
 	
-								
+	
 	Wld_InsertNpc(Non_4020_Tablor, "OW_PATH_02");
 	Wld_InsertNpc(Non_4021_Bukhart, "OW_SAWHUT_GREENGOBBO_SPAWN");
 	Wld_InsertNpc(Non_4022_Postronek, "OW_PATH_02");
@@ -1385,7 +1385,7 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_InsertNpc(YWolf, "OC_ROUND_15");	//OC Round Wolf-pack		
 	Wld_InsertNpc(YWolf, "LOCATION_01_01");	//OC Round Wolf-pack		
 	Wld_InsertNpc(YWolf, "OC_ROUND_17");	//OC Round Wolf-pack		
-		
+	
 	//---------geheimes Drogenlabor-------------------------------
 	Wld_InsertNpc(BlackGobboMace, "LOCATION_11_08");
 	Wld_InsertNpc(BlackGobboMace, "LOCATION_11_08");
@@ -1450,9 +1450,9 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_InsertNpc(OrcBiter, "OW_WOODRUIN_WOLF_SPAWN");
 	Wld_InsertNpc(OrcBiter, "OW_PATH_02");
 	Wld_InsertNpc(OrcBiter, "OW_PATH_02");
-// 	Wld_InsertNpc(OrcBiter, "OW_CAVE2_SNAPPER_SPAWN"); //molerats
-// 	Wld_InsertNpc(Snapper, "OW_CAVE2_SNAPPER_SPAWN"); //molerats
-// 	Wld_InsertNpc(Snapper, "OW_CAVE2_SNAPPER_SPAWN"); //molerats
+	// 	Wld_InsertNpc(OrcBiter, "OW_CAVE2_SNAPPER_SPAWN"); //molerats
+	// 	Wld_InsertNpc(Snapper, "OW_CAVE2_SNAPPER_SPAWN"); //molerats
+	// 	Wld_InsertNpc(Snapper, "OW_CAVE2_SNAPPER_SPAWN"); //molerats
 	Wld_InsertNpc(Scavenger, "OW_PATH_SCAVENGER13_SPAWN01");
 	Wld_InsertNpc(Scavenger, "OW_PATH_SCAVENGER13_SPAWN01");
 	Wld_InsertNpc(Scavenger, "OW_PATH_SCAVENGER13_SPAWN01");
@@ -1540,7 +1540,7 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_InsertNpc(Aligator, "SPAWN_OW_WARAN_CAVE1_1");	
 	Wld_InsertNpc(Aligator, "MOVEMENT_OW_MINICOAST_LURKER_A1");
 	Wld_InsertNpc(Aligator, "MOVEMENT_OW_MINICOAST_LURKER_A1");	
-		
+	
 	Wld_InsertNpc(Scavenger, "SPAWN_SCAVENGER_PATH_OC_PSI_03");
 	Wld_InsertNpc(Scavenger, "SPAWN_SCAVENGER_PATH_OC_PSI_03");
 	Wld_InsertNpc(Scavenger, "SPAWN_SCAVENGER_PATH_OC_PSI_02");
@@ -1582,7 +1582,7 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_InsertNpc(Bloodfly, "PATH_TAKE_BLOODFLY_SPAWN");
 	Wld_InsertNpc(Bloodfly, "PATH_TAKE_BLOODFLY_SPAWN");
 	Wld_InsertNpc(Bloodfly, "PATH_TAKE_BLOODFLY_SPAWN");
-		
+	
 	//----------------------------------SHIPWRECK----------------------------------//
 	Wld_InsertNpc(Young_Aligator, "OW_COAST_SHIPWRECK_WARAN_2");
 	Wld_InsertNpc(Young_Aligator, "OW_COAST_SHIPWRECK_WARAN_2");
@@ -1838,27 +1838,27 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	//Wld_InsertNpc(Scavenger, "SPAWN_OW_SCAVENGER_06_04");
 	//Wld_InsertNpc(Scavenger, "SPAWN_OW_SCAVENGER_06_04");
 	//Wld_InsertNpc(Scavenger, "SPAWN_OW_SCAVENGER_06_04");
-		
+	
 	//Wld_InsertNpc(Scavenger, "SPAWN_OW_SCAVENGER_AL_ORC");
 	//Wld_InsertNpc(Scavenger, "HELPPOINT");
 
 	// ...
 
 	//------------vom NL zum FMC-------------------------------//
-// 	Wld_InsertNpc(Scavenger, "OW_PATH_075_GUARD2");
-// 	Wld_InsertNpc(Scavenger, "OW_PATH_075_GUARD3");
-// 	Wld_InsertNpc(Scavenger, "OW_PATH_075_GUARD4");
-// 	Wld_InsertNpc(Molerat, "OW_PATH_084");
-// 	Wld_InsertNpc(Molerat, "OW_PATH_086");
-// 	Wld_InsertNpc(Molerat, "OW_PATH_3001");
-// 	Wld_InsertNpc(Wolf, "OW_PATH_3001_MOVE");
-// 	Wld_InsertNpc(Molerat, "OW_PATH_3001_MOVE5");
+	// 	Wld_InsertNpc(Scavenger, "OW_PATH_075_GUARD2");
+	// 	Wld_InsertNpc(Scavenger, "OW_PATH_075_GUARD3");
+	// 	Wld_InsertNpc(Scavenger, "OW_PATH_075_GUARD4");
+	// 	Wld_InsertNpc(Molerat, "OW_PATH_084");
+	// 	Wld_InsertNpc(Molerat, "OW_PATH_086");
+	// 	Wld_InsertNpc(Molerat, "OW_PATH_3001");
+	// 	Wld_InsertNpc(Wolf, "OW_PATH_3001_MOVE");
+	// 	Wld_InsertNpc(Molerat, "OW_PATH_3001_MOVE5");
 
 
 	//-------------Camp im Lager über Cavalorns Hütte---------------------------
-// Alex: NSCs sollten Hostile sein und bei Sichtung angreifen. Das funzt aber nicht, deshalb wieder rausgenommen
-//	Wld_InsertNpc(NON_1501_WEGELAGERER, "SPAWN_TALL_PATH_BANDITOS2_03");
-//	Wld_InsertNpc(NON_1502_WEGELAGERER, "SPAWN_TALL_PATH_BANDITOS2_03");
+	// Alex: NSCs sollten Hostile sein und bei Sichtung angreifen. Das funzt aber nicht, deshalb wieder rausgenommen
+	//	Wld_InsertNpc(NON_1501_WEGELAGERER, "SPAWN_TALL_PATH_BANDITOS2_03");
+	//	Wld_InsertNpc(NON_1502_WEGELAGERER, "SPAWN_TALL_PATH_BANDITOS2_03");
 	//Wld_InsertNpc(Wolf, "SPAWN_TALL_PATH_BANDITOS2_03");
 
 	//-------------Camp zw. AL und NL ---------------------------
@@ -1868,9 +1868,9 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 
 	//-----------------------KLOSTERRUINE---------------------------------//
 	// Am Strand
-   Wld_InsertNpc(Waran, "SPAWN_ROAM_OW_WARAN_RUIN");
-   Wld_InsertNpc(Waran, "SPAWN_ROAM_OW_WARAN_RUIN");
-   Wld_InsertNpc(Waran, "SPAWN_ROAM_OW_WARAN_RUIN");
+	Wld_InsertNpc(Waran, "SPAWN_ROAM_OW_WARAN_RUIN");
+	Wld_InsertNpc(Waran, "SPAWN_ROAM_OW_WARAN_RUIN");
+	Wld_InsertNpc(Waran, "SPAWN_ROAM_OW_WARAN_RUIN");
 
 	// vor Baumstamm 
 	Wld_InsertNpc(Snapper, "OW_PATH_ABYSS_4");
@@ -1887,16 +1887,16 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_InsertNpc(Snapper, "OW_PATH_179");
 
 	// in der Grabenhöhle unter dem Baumstamm
-    Wld_InsertNpc(Snapper, "OW_ABYSS_SPAWN_WARAN");
-    Wld_InsertNpc(Snapper, "OW_ABYSS_SPAWN_WARAN");
+	Wld_InsertNpc(Snapper, "OW_ABYSS_SPAWN_WARAN");
+	Wld_InsertNpc(Snapper, "OW_ABYSS_SPAWN_WARAN");
 	Wld_InsertNpc(Snapper, "SPAWN_ABYSS_TO_CAVE_MOVE");
 	Wld_InsertNpc(Snapper, "SPAWN_ABYSS_TO_CAVE_MOVE");
 
 	// Vor der Mauer
 	Wld_InsertNpc       (Meatbug, "OW_PATH_175_MEATBUG");
 	Wld_InsertNpc       (Meatbug, "OW_PATH_175_MEATBUG");
-    Wld_InsertNpc       (Meatbug, "OW_PATH_175_MEATBUG");
-    
+	Wld_InsertNpc       (Meatbug, "OW_PATH_175_MEATBUG");
+	
 	// im Hof
 	Wld_InsertNpc(Snapper, "OW_PATH_SNAPPER04_SPAWN01");
 	Wld_InsertNpc(Snapper, "OW_PATH_SNAPPER04_SPAWN01");
@@ -1914,8 +1914,8 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_InsertNpc(Shadowbeast, "OW_PATH_TEMPELRUIN06");
 
 	// Auf hinterer Plattform
-    //Wld_InsertNpc(Troll, "OW_RUIN_TROLL");	//wird erst später in B_Story_LeftFM() gespawnt!
-    
+	//Wld_InsertNpc(Troll, "OW_RUIN_TROLL");	//wird erst später in B_Story_LeftFM() gespawnt!
+	
 
 	//-----------------------STEINKREIS---------------------------------//
 	// Höhle auf Bergweg vor Milten
@@ -1929,7 +1929,7 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_InsertNpc(Bloodhound, "OW_PATH_274");
 
 	// Untote in der Gruft unter dem Steinkreis 
-//	Wld_InsertNpc(ZombieTheKeeper, "LOCATION_05_02_STONEHENGE4");
+	//	Wld_InsertNpc(ZombieTheKeeper, "LOCATION_05_02_STONEHENGE4");
 	Wld_InsertNpc(SkeletonSH,			"LOCATION_05_02_STONEHENGE2");
 	Wld_InsertNpc(SkeletonSH,			"LOCATION_05_02_STONEHENGE2");
 	Wld_InsertNpc(SkeletonSH,			"LOCATION_05_02_STONEHENGE3");
@@ -1937,62 +1937,62 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_InsertNpc(SkeletonSH,			"LOCATION_05_02_STONEHENGE5");
 	Wld_InsertNpc(SkeletonSH,			"LOCATION_05_02_STONEHENGE5");
 
-   
-    //------------------TROLLSCHLUCHT-------------------------------
-    // 1. Gruppe
-    Wld_InsertNpc(GreenGobboClub, "LOCATION_12_01");
-    Wld_InsertNpc(GreenGobboClub, "LOCATION_12_01");
-    Wld_InsertNpc(GreenGobboClub, "LOCATION_12_01");
-    Wld_InsertNpc(GreenGobboSword, "LOCATION_12_01");
-    
-    // 2. Gruppe
+
+	//------------------TROLLSCHLUCHT-------------------------------
+	// 1. Gruppe
+	Wld_InsertNpc(GreenGobboClub, "LOCATION_12_01");
+	Wld_InsertNpc(GreenGobboClub, "LOCATION_12_01");
+	Wld_InsertNpc(GreenGobboClub, "LOCATION_12_01");
+	Wld_InsertNpc(GreenGobboSword, "LOCATION_12_01");
+	
+	// 2. Gruppe
 	Wld_InsertNpc(BlackGobboMace, "SPAWN_BLACKGOBBO_SHRINKSCROLL");
-    Wld_InsertNpc(BlackGobboMace, "SPAWN_BLACKGOBBO_SHRINKSCROLL");
-    Wld_InsertNpc(BlackGobboMace, "SPAWN_BLACKGOBBO_SHRINKSCROLL");
-    Wld_InsertNpc(BlackGobboMace, "SPAWN_BLACKGOBBO_SHRINKSCROLL");
-    
-    // 3. Gruppe
-    Wld_InsertNpc(GreenGobboSword, "LOCATION_12_14");
-    Wld_InsertNpc(GreenGobboSword, "LOCATION_12_14");
-    Wld_InsertNpc(GreenGobboSword, "LOCATION_12_14");
-    Wld_InsertNpc(GreenGobboSword, "LOCATION_12_14");
-    // NEW: 4. Group: Phylosophy stone guardians
-    Wld_InsertNpc(BlackGobboMace, "SPAWN_BLACKGOBBO_PHYLOSOPHY_STONE");
+	Wld_InsertNpc(BlackGobboMace, "SPAWN_BLACKGOBBO_SHRINKSCROLL");
+	Wld_InsertNpc(BlackGobboMace, "SPAWN_BLACKGOBBO_SHRINKSCROLL");
+	Wld_InsertNpc(BlackGobboMace, "SPAWN_BLACKGOBBO_SHRINKSCROLL");
+	
+	// 3. Gruppe
+	Wld_InsertNpc(GreenGobboSword, "LOCATION_12_14");
+	Wld_InsertNpc(GreenGobboSword, "LOCATION_12_14");
+	Wld_InsertNpc(GreenGobboSword, "LOCATION_12_14");
+	Wld_InsertNpc(GreenGobboSword, "LOCATION_12_14");
+	// NEW: 4. Group: Phylosophy stone guardians
+	Wld_InsertNpc(BlackGobboMace, "SPAWN_BLACKGOBBO_PHYLOSOPHY_STONE");
 	Wld_InsertNpc(BlackGobboWarrior, "SPAWN_BLACKGOBBO_PHYLOSOPHY_STONE");
 	Wld_InsertNpc(BlackGobboMace, "SPAWN_BLACKGOBBO_PHYLOSOPHY_STONE");
-    Wld_InsertNpc(BlackGobboWarrior, "SPAWN_BLACKGOBBO_PHYLOSOPHY_STONE");	
-    Wld_InsertNpc(BlackGobboWarrior, "SPAWN_BLACKGOBBO_PHYLOSOPHY_STONE");	
+	Wld_InsertNpc(BlackGobboWarrior, "SPAWN_BLACKGOBBO_PHYLOSOPHY_STONE");	
+	Wld_InsertNpc(BlackGobboWarrior, "SPAWN_BLACKGOBBO_PHYLOSOPHY_STONE");	
 	// bei der Winde
-    Wld_InsertNpc(Troll, "LOCATION_12_14");
-    
+	Wld_InsertNpc(Troll, "LOCATION_12_14");
+	
 	// Fokusplatform
-    Wld_InsertNpc(Harpie, "LOCATION_12_09");
-    Wld_InsertNpc(Harpie, "LOCATION_12_09");
-    Wld_InsertNpc(Harpie, "LOCATION_12_09");
-    Wld_InsertNpc(Harpie, "LOCATION_12_09");
-     
+	Wld_InsertNpc(Harpie, "LOCATION_12_09");
+	Wld_InsertNpc(Harpie, "LOCATION_12_09");
+	Wld_InsertNpc(Harpie, "LOCATION_12_09");
+	Wld_InsertNpc(Harpie, "LOCATION_12_09");
+	
 
-    //-------------------------FELSENFESTUNG------------------------
- 	// Berggebiet vor Brücke
-   //Wld_InsertNpc(Bloodhound, "PLATEAU_ROUND01");
-  //Wld_InsertNpc(Bloodhound, "PLATEAU_ROUND02");
-    Wld_InsertNpc(Bloodhound, "PLATEAU_ROUND02_CAVE");
-    Wld_InsertNpc(Bloodhound, "PLATEAU_ROUND02_CAVE_MOVE");
-    Wld_InsertNpc(Bloodhound, "LOCATION_18_OUT");
-//    Wld_InsertNpc(Bloodhound, "PLATEAU_ROUND02");
-    Wld_InsertNpc(Harp5, "PATH_TO_PLATEAU04");
-    Wld_InsertNpc(Harp4, "PATH_TO_PLATEAU04");
-    Wld_InsertNpc(Harp3, "PATH_TO_PLATEAU04");
-    Wld_InsertNpc(Harp2, "PATH_TO_PLATEAU04");
-    Wld_InsertNpc(Harp1, "PATH_TO_PLATEAU04");
-
-        
-
-    //Brücke
-    
+	//-------------------------FELSENFESTUNG------------------------
+	// Berggebiet vor Brücke
+	//Wld_InsertNpc(Bloodhound, "PLATEAU_ROUND01");
+	//Wld_InsertNpc(Bloodhound, "PLATEAU_ROUND02");
+	Wld_InsertNpc(Bloodhound, "PLATEAU_ROUND02_CAVE");
+	Wld_InsertNpc(Bloodhound, "PLATEAU_ROUND02_CAVE_MOVE");
+	Wld_InsertNpc(Bloodhound, "LOCATION_18_OUT");
+	//    Wld_InsertNpc(Bloodhound, "PLATEAU_ROUND02");
+	Wld_InsertNpc(Harp5, "PATH_TO_PLATEAU04");
+	Wld_InsertNpc(Harp4, "PATH_TO_PLATEAU04");
+	Wld_InsertNpc(Harp3, "PATH_TO_PLATEAU04");
+	Wld_InsertNpc(Harp2, "PATH_TO_PLATEAU04");
+	Wld_InsertNpc(Harp1, "PATH_TO_PLATEAU04");
 
 	
-    //----------------------------SUMPF-------------------------------------
+
+	//Brücke
+	
+
+	
+	//----------------------------SUMPF-------------------------------------
 	Wld_InsertNpc(DraconianSolidier, "PATH_NEW_AROUND_PSI29");
 	Wld_InsertNpc(DraconianSolidier, "PATH_NEW_AROUND_PSI28");
 	Wld_InsertNpc(DraconianSolidier, "PATH_NEW_AROUND_PSI23");
@@ -2069,7 +2069,7 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_InsertNpc(DraconianScout, "PATH_TAKE_HERB_07");			
 	Wld_InsertNpc(SwampGolem, "PATH_TAKE_HERB_08");		
 	
-		
+	
 	
 	//-----------------------ORK-GEBIET---------------------------------//
 	
@@ -2089,7 +2089,7 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_InsertNpc(OrcBiter, "SPAWN_OW_SCAVENGER_ORC_03");
 	Wld_InsertNpc(OrcBiter, "SPAWN_OW_SCAVENGER_ORC_03");
 	
-		
+	
 	Wld_InsertNpc(OrcScoutGYD, "OW_PATH_RUIN_7");
 	Wld_InsertNpc(OrcScoutGYD, "OW_PATH_RUIN_7");
 	
@@ -2452,7 +2452,7 @@ FUNC VOID INIT_SUB_SURFACE ()
 	Wld_SetObjectRoutine (00,00, "OW_FIREPLACE_HIGH2_30",1);
 	Wld_SetObjectRoutine (20,00, "OW_FIREPLACE_HIGH2_30",1);
 	Wld_SetObjectRoutine (05,00, "OW_FIREPLACE_HIGH2_30",0);
-		
+	
 	Wld_SetObjectRoutine (00,00, "OW_FIREPLACE_PCHIGH2_01",1);
 	Wld_SetObjectRoutine (20,00, "OW_FIREPLACE_PCHIGH2_01",1);
 	Wld_SetObjectRoutine (05,00, "OW_FIREPLACE_PCHIGH2_01",0);
@@ -2476,45 +2476,45 @@ FUNC VOID INIT_SUB_SURFACE ()
 	Wld_SetObjectRoutine (00,00, "OW_FIREPLACE_PCHIGH2_06",1);
 	Wld_SetObjectRoutine (20,00, "OW_FIREPLACE_PCHIGH2_06",1);
 	Wld_SetObjectRoutine (05,00, "OW_FIREPLACE_PCHIGH2_06",0);
-// 	Wld_SetObjectRoutine (19,00, "arena",1);
-// 	Wld_SetObjectRoutine (04,00, "arena",1);
-// 	Wld_SetObjectRoutine (05,00, "arena",0);
-// 	Wld_SetObjectRoutine (19,00, "arena1",1);
-// 	Wld_SetObjectRoutine (04,00, "arena1",1);
-// 	Wld_SetObjectRoutine (05,00, "arena1",0);
-// 	Wld_SetObjectRoutine (19,00, "arena2",1);
-// 	Wld_SetObjectRoutine (04,00, "arena2",1);
-// 	Wld_SetObjectRoutine (05,00, "arena2",0);
-// 	Wld_SetObjectRoutine (19,00, "arena3",1);
-// 	Wld_SetObjectRoutine (04,00, "arena3",1);
-// 	Wld_SetObjectRoutine (05,00, "arena3",0);
-// 	Wld_SetObjectRoutine (19,00, "arena4",1);
-// 	Wld_SetObjectRoutine (04,00, "arena4",1);
-// 	Wld_SetObjectRoutine (05,00, "arena4",0);
-// 	Wld_SetObjectRoutine (19,00, "arenal",1);
-// 	Wld_SetObjectRoutine (04,00, "arenal",1);
-// 	Wld_SetObjectRoutine (05,00, "arenal",0);
-// 	Wld_SetObjectRoutine (19,00, "arenal1",1);
-// 	Wld_SetObjectRoutine (04,00, "arenal1",1);
-// 	Wld_SetObjectRoutine (05,00, "arenal1",0);
-// 	Wld_SetObjectRoutine (19,00, "arenal2",1);
-// 	Wld_SetObjectRoutine (04,00, "arenal2",1);
-// 	Wld_SetObjectRoutine (05,00, "arenal2",0);
-// 	Wld_SetObjectRoutine (19,00, "arenar",1);
-// 	Wld_SetObjectRoutine (04,00, "arenar",1);
-// 	Wld_SetObjectRoutine (05,00, "arenar",0);
-// 	Wld_SetObjectRoutine (19,00, "arenar1",1);
-// 	Wld_SetObjectRoutine (04,00, "arenar1",1);
-// 	Wld_SetObjectRoutine (05,00, "arenar1",0);
-// 	Wld_SetObjectRoutine (19,00, "arenar2",1);
-// 	Wld_SetObjectRoutine (04,00, "arenar2",1);
-// 	Wld_SetObjectRoutine (05,00, "arenar2",0);
-// 	
+	// 	Wld_SetObjectRoutine (19,00, "arena",1);
+	// 	Wld_SetObjectRoutine (04,00, "arena",1);
+	// 	Wld_SetObjectRoutine (05,00, "arena",0);
+	// 	Wld_SetObjectRoutine (19,00, "arena1",1);
+	// 	Wld_SetObjectRoutine (04,00, "arena1",1);
+	// 	Wld_SetObjectRoutine (05,00, "arena1",0);
+	// 	Wld_SetObjectRoutine (19,00, "arena2",1);
+	// 	Wld_SetObjectRoutine (04,00, "arena2",1);
+	// 	Wld_SetObjectRoutine (05,00, "arena2",0);
+	// 	Wld_SetObjectRoutine (19,00, "arena3",1);
+	// 	Wld_SetObjectRoutine (04,00, "arena3",1);
+	// 	Wld_SetObjectRoutine (05,00, "arena3",0);
+	// 	Wld_SetObjectRoutine (19,00, "arena4",1);
+	// 	Wld_SetObjectRoutine (04,00, "arena4",1);
+	// 	Wld_SetObjectRoutine (05,00, "arena4",0);
+	// 	Wld_SetObjectRoutine (19,00, "arenal",1);
+	// 	Wld_SetObjectRoutine (04,00, "arenal",1);
+	// 	Wld_SetObjectRoutine (05,00, "arenal",0);
+	// 	Wld_SetObjectRoutine (19,00, "arenal1",1);
+	// 	Wld_SetObjectRoutine (04,00, "arenal1",1);
+	// 	Wld_SetObjectRoutine (05,00, "arenal1",0);
+	// 	Wld_SetObjectRoutine (19,00, "arenal2",1);
+	// 	Wld_SetObjectRoutine (04,00, "arenal2",1);
+	// 	Wld_SetObjectRoutine (05,00, "arenal2",0);
+	// 	Wld_SetObjectRoutine (19,00, "arenar",1);
+	// 	Wld_SetObjectRoutine (04,00, "arenar",1);
+	// 	Wld_SetObjectRoutine (05,00, "arenar",0);
+	// 	Wld_SetObjectRoutine (19,00, "arenar1",1);
+	// 	Wld_SetObjectRoutine (04,00, "arenar1",1);
+	// 	Wld_SetObjectRoutine (05,00, "arenar1",0);
+	// 	Wld_SetObjectRoutine (19,00, "arenar2",1);
+	// 	Wld_SetObjectRoutine (04,00, "arenar2",1);
+	// 	Wld_SetObjectRoutine (05,00, "arenar2",0);
+	// 	
 	// aus Orc-City
 	Wld_SetMobRoutine	(00,00, "FIREPLACE", 1);
 	
 	/*************************************************************/
-// PlayVideo		("intro25fr.bik");
+	// PlayVideo		("intro25fr.bik");
 };
 
 func VOID STARTUP_DEMONTOWER()
@@ -2539,7 +2539,7 @@ func VOID INIT_FREEMINCAMP()
 
 func VOID STARTUP_PSICAMP()
 {
-   STARTUP_SUB_PSICAMP();
+	STARTUP_SUB_PSICAMP();
 };
 
 func VOID INIT_PSICAMP()
@@ -2549,32 +2549,32 @@ func VOID INIT_PSICAMP()
 
 func VOID STARTUP_NEWCAMP()
 {
-   STARTUP_SUB_NEWCAMP();
+	STARTUP_SUB_NEWCAMP();
 };
 
 func VOID INIT_NEWCAMP()
 {
-   INIT_SUB_NEWCAMP();
+	INIT_SUB_NEWCAMP();
 };
 
 func VOID STARTUP_OLDCAMP()
 {
-   STARTUP_SUB_OLDCAMP();
+	STARTUP_SUB_OLDCAMP();
 };
 
 func VOID INIT_OLDCAMP()
 {
-   INIT_SUB_OLDCAMP();
+	INIT_SUB_OLDCAMP();
 };
 
 func VOID STARTUP_SURFACE()
 {
-   STARTUP_SUB_SURFACE();
+	STARTUP_SUB_SURFACE();
 };
 
 func VOID INIT_SURFACE()
 {
-   INIT_SUB_SURFACE();
+	INIT_SUB_SURFACE();
 };
 
 func VOID STARTUP_SUB_PIRATEBAY()
@@ -2584,53 +2584,53 @@ func VOID STARTUP_SUB_PIRATEBAY()
 	/////////////////////////
 	Wld_InsertNpc(PIR_2600_Angus, "OW_PIR_CAMPFIRE");
 	Wld_InsertNpc(PIR_2601_Hank, "OW_PIR_CAMPFIRE");
-//	Wld_InsertNpc(My_Wolf, "OW_PIR_CAMPFIRE");	
+	//	Wld_InsertNpc(My_Wolf, "OW_PIR_CAMPFIRE");	
 	Wld_InsertNpc(PIR_2602_Rodney, "OW_PIR_CAMPFIRE");
 	//Dead Pirates
-   Wld_InsertNpc(PIR_2611_Skip, "PL_DEAD");
-   Wld_InsertNpc(PIR_2606_Dustin, "LOCATION_26_01_2");
-    	
+	Wld_InsertNpc(PIR_2611_Skip, "PL_DEAD");
+	Wld_InsertNpc(PIR_2606_Dustin, "LOCATION_26_01_2");
+	
 	//Tony + Guards now are added to world when Pirats are guiding hero
-//	Wld_InsertNpc			 	(RBL_2604_Tony, "OW_HUN_SMALLCAMP");
-//	Wld_InsertNpc			 	(GRD_2599_Guard, "OW_HUN_SMALLCAMP");
-//	Wld_InsertNpc			 	(GRD_4063_Guard, "OW_HUN_SMALLCAMP");
-   var C_NPC skip; skip = Hlp_GetNpc(PIR_2611_Skip);
+	//	Wld_InsertNpc			 	(RBL_2604_Tony, "OW_HUN_SMALLCAMP");
+	//	Wld_InsertNpc			 	(GRD_2599_Guard, "OW_HUN_SMALLCAMP");
+	//	Wld_InsertNpc			 	(GRD_4063_Guard, "OW_HUN_SMALLCAMP");
+	var C_NPC skip; skip = Hlp_GetNpc(PIR_2611_Skip);
 	B_ChangeAttribute	(skip, ATR_HITPOINTS, -skip.attribute[ATR_HITPOINTS_MAX]);	
-   var C_NPC dustin; dustin = Hlp_GetNpc(PIR_2606_Dustin);
+	var C_NPC dustin; dustin = Hlp_GetNpc(PIR_2606_Dustin);
 	B_ChangeAttribute	(dustin, ATR_HITPOINTS, -dustin.attribute[ATR_HITPOINTS_MAX]);
-   //GRD - Anti Escape	
-   Wld_InsertNpc(GRD_2711_Gardist, "OW_PATH_199");
+	//GRD - Anti Escape	
+	Wld_InsertNpc(GRD_2711_Gardist, "OW_PATH_199");
 	//end	
 };
 
 func VOID STARTUP_SUB_REBELCAMP ()
 {
-///////////////////////////////////////////////////
-//Rebel Camp
-///////////////////////////////////////////////////
+	///////////////////////////////////////////////////
+	//Rebel Camp
+	///////////////////////////////////////////////////
 	//Fireplaces
 	Wld_AssignRoomToGuild("OR1",GIL_HUN);
 	Wld_AssignRoomToGuild("OR2",GIL_HUN);		
 	//Hunters
 	
-/***************************************
+	/***************************************
 Added by Sher
 ****************************************/	
 	Wld_InsertNpc(HUN_20254_Grd, "DEEP_WP"); // Deep grd
 
 
 	
-//****************************************
+	//****************************************
 
 	Wld_InsertNpc(HUN_336_Cavalorn, "OW_SAWHUT_GREENGOBBO_SPAWN");
 	Wld_InsertNpc(HUN_818_Ratford, "OW_PATH_02");	
 	Wld_InsertNpc(HUN_858_Quentin, "OW_PATH_02");
 	Wld_InsertNpc(HUN_819_Drax, "OW_PATH_02");
 	Wld_InsertNpc(HUN_859_Aidan, "OW_PATH_02");	
-//	Wld_InsertNpc(HUN_828_Bruce, "OW_PATH_02"); //AT CHAPTER 3 NC ARRIVED
+	//	Wld_InsertNpc(HUN_828_Bruce, "OW_PATH_02"); //AT CHAPTER 3 NC ARRIVED
 	Wld_InsertNpc(HUN_729_Kharim, "OW_PATH_02"); 
 	Wld_InsertNpc(HUN_1422_GorHanis, "OW_PATH_02"); 
-//	Wld_InsertNpc(PC_Thief, "OW_PATH_02");
+	//	Wld_InsertNpc(PC_Thief, "OW_PATH_02");
 	Wld_InsertNpc(HUN_309_Whistler, "OW_PATH_02");	
 	Wld_InsertNpc(HUN_2615_Abel, "OW_PATH_02");	
 	
@@ -2642,7 +2642,7 @@ Added by Sher
 	Wld_InsertNpc(Grd_205_Scorpio, "OC1"); //WitPacho
 	Wld_InsertNpc(GRD_224_Pacho, "OC1");
 	Wld_InsertNpc(RBL_2617_Carlson, "OW_PATH_02");//witScorpio
-			
+	
 	//Magicans
 	Wld_InsertNpc(mag_1604_Leren, "OW_PATH_02");
 	Wld_InsertNpc(MAG_1330_BaalParvez, "OW_PATH_02");
@@ -2650,7 +2650,7 @@ Added by Sher
 
 	//Rebeliants
 	Wld_InsertNpc(RBL_311_Fisk, "OW_PATH_02");	 
-//	Wld_InsertNpc(RBL_826_Mordrag, "OW_PATH_02");	
+	//	Wld_InsertNpc(RBL_826_Mordrag, "OW_PATH_02");	
 	Wld_InsertNpc(RBL_2605_Garry, "OW_PATH_02");	
 
 	Wld_InsertNpc(RBL_1331_BaalTaran, "OW_PATH_02");
@@ -2670,19 +2670,19 @@ Added by Sher
 	Wld_InsertNpc(RBL_2616_Mark, "OW_PATH_02");
 	Wld_InsertNpc(RBL_2618_Hark, "OW_PATH_02");
 	Wld_InsertNpc(RBL_2619_CUP, "OW_PATH_02");
-/* NC_ARRIVED	
+	/* NC_ARRIVED	
 //	Wld_InsertNpc(RBL_8730_Dylan, "OW_PATH_02");	//ADD in 3 Chapter NC_ARRIVED
 //	Wld_InsertNpc(RBL_826_Mordrag, "OW_PATH_02");  //ADD in 3 Chapter NC_ARRIVED	
 //	
 /* PSI_ARRIVED
 	Wld_InsertNpc		   	 	(RBL_1333_BaalIsidro, "OW_HUN_SMALLCAMP");*/
 	Wld_InsertNpc(RBL_1332_BaalKagan, "OW_PATH_02");
-//	Wld_InsertNpc(PC_Psionic, "OW_PATH_02");
+	//	Wld_InsertNpc(PC_Psionic, "OW_PATH_02");
 	
-/*	Wld_InsertNpc(RBL_2331_Zex, "OW_PATH_02");
+	/*	Wld_InsertNpc(RBL_2331_Zex, "OW_PATH_02");
 	Wld_InsertNpc(RBL_2402_Terry, "OW_PATH_02");	
 */
-/* BANDITS */
+	/* BANDITS */
 	Wld_InsertNpc(org_4050_camper1, "OW_PATH_02");	 //Hut 14,SnafPlatz
 	Wld_InsertNpc(org_4051_camper2, "OW_PATH_02");
 	Wld_InsertNpc(org_4052_camper3, "OW_PATH_02");
@@ -2845,27 +2845,27 @@ FUNC VOID STARTUP_SUB_OLDMINECAMP ()
 //-------- eigentliche Startup des Spiels --------
 func void STARTUP_TriggerScripts()
 {
-//loops func's etc.	
-//ABSOLUTELY TO MUCH OF THAT SHIT!
-// 	//Amunition
+	//loops func's etc.	
+	//ABSOLUTELY TO MUCH OF THAT SHIT!
+	// 	//Amunition
 
-// Questtest normal framerate: 256 constantly
- 	Wld_SendTrigger("TIMETRIGGER7");	//EVT_TRIGGER7 delay: 1
-// 	//GUI Render	
- 	//Wld_SendTrigger("TIMETRIGGER8");	//
-// 	//RuneSword charge++		
- 	//Wld_SendTrigger("RUNESWD_CHARGING"); //EVT_RUNESWD_CHARGING delay: 9
-// 	//B_SayHello
-// 	//poisoned -hp	
- 	Wld_SendTrigger("POISON_TRIGGER");	//-(~40f) ;-( //EVT_POISON delay: 0.100000121
- 	Wld_SendTrigger("COMPASS_TRIGGER");	//COMPASS_TRIGGER delay: 0.00999999978 
-// 	
- 	//Wld_SendTrigger("TIMETRIGGER3"); //runesword trigger  (effect) //EVT_TRIGGER3 delay: 1
-// 	//day change
- 	Wld_SetObjectRoutine (23, 58, "TIMETRIGGER1", 1);	//EVT_TRIGGER1 delay: 1
- 	Wld_SetObjectRoutine (23, 59, "TIMETRIGGER1", 0);		
-// 	
- 	Wld_SendTrigger("PERFRAMETRIGGER"); // -0 frames idle;   //F_PERFRAMETRIGGER delay: 9.99999975e-005
+	// Questtest normal framerate: 256 constantly
+	Wld_SendTrigger("TIMETRIGGER7");	//EVT_TRIGGER7 delay: 1
+	// 	//GUI Render	
+	//Wld_SendTrigger("TIMETRIGGER8");	//
+	// 	//RuneSword charge++		
+	//Wld_SendTrigger("RUNESWD_CHARGING"); //EVT_RUNESWD_CHARGING delay: 9
+	// 	//B_SayHello
+	// 	//poisoned -hp	
+	Wld_SendTrigger("POISON_TRIGGER");	//-(~40f) ;-( //EVT_POISON delay: 0.100000121
+	Wld_SendTrigger("COMPASS_TRIGGER");	//COMPASS_TRIGGER delay: 0.00999999978 
+	// 	
+	//Wld_SendTrigger("TIMETRIGGER3"); //runesword trigger  (effect) //EVT_TRIGGER3 delay: 1
+	// 	//day change
+	Wld_SetObjectRoutine (23, 58, "TIMETRIGGER1", 1);	//EVT_TRIGGER1 delay: 1
+	Wld_SetObjectRoutine (23, 59, "TIMETRIGGER1", 0);		
+	// 	
+	Wld_SendTrigger("PERFRAMETRIGGER"); // -0 frames idle;   //F_PERFRAMETRIGGER delay: 9.99999975e-005
 	Wld_SendTrigger("DAMAGE_TRIGGER"); // -0 frames idle;		//DAMAGE_TRIGGER_FUNC delay: 0.0500000007
 };
 func void STARTUP_Runes()
@@ -2881,7 +2881,7 @@ func void STARTUP_Runes()
 	Wld_InsertNpc(RuneSword_WindFist, "OW_ABYSS_TO_CAVE_MOVE6");	
 	Wld_InsertNpc(RuneSword_Heal, "OW_ABYSS_TO_CAVE_MOVE6");
 	Wld_InsertNpc(RuneSword_StuningBall, "OW_ABYSS_TO_CAVE_MOVE6");
-		
+	
 	//3
 	Wld_InsertNpc(RuneSword_IceCube, "OW_ABYSS_TO_CAVE_MOVE6");	
 	Wld_InsertNpc(RuneSword_ThunderBall, "OW_ABYSS_TO_CAVE_MOVE6");	
@@ -2902,7 +2902,7 @@ func void STARTUP_Runes()
 	Wld_InsertNpc(RuneSword_IceWave, "OW_ABYSS_TO_CAVE_MOVE6");	
 	Wld_InsertNpc(RuneSword_FireRain, "OW_ABYSS_TO_CAVE_MOVE6");
 	Wld_InsertNpc(RuneSword_Thunder, "OW_ABYSS_TO_CAVE_MOVE6");
-		
+	
 	//6	
 	Wld_InsertNpc(RuneSword_BreathofDead, "OW_ABYSS_TO_CAVE_MOVE6");		
 	Wld_InsertNpc(RuneSword_Meteor, "OW_ABYSS_TO_CAVE_MOVE6");			
@@ -2920,9 +2920,9 @@ func void STARTUP_HandlerContainers()
 	Wld_InsertNpc(Taran_Container, "INVISIBLE");		
 	Wld_InsertNpc(Leren_Container, "INVISIBLE");		
 	Wld_InsertNpc(Jeff_Container,	"INVISIBLE");	
-   Wld_InsertNpc(Vam_Container,	"INVISIBLE");
-   Wld_InsertNpc(Riordian_Container,	"INVISIBLE"); //dodane 2012-11-14
-   Wld_InsertNpc(Wolf_Container,	"INVISIBLE"); //dodane 2012-11-14
+	Wld_InsertNpc(Vam_Container,	"INVISIBLE");
+	Wld_InsertNpc(Riordian_Container,	"INVISIBLE"); //dodane 2012-11-14
+	Wld_InsertNpc(Wolf_Container,	"INVISIBLE"); //dodane 2012-11-14
 };	
 
 func void STARTUP_NewsNPC()
@@ -2932,27 +2932,27 @@ func void STARTUP_NewsNPC()
 
 FUNC VOID INIT_Variables()
 {
- 	A_munition=0;
- 	Last_A_munition=0;
- 	B_munition=0;
- 	Last_B_munition=0;
-		
- 	//if blanks, init run/walk keys
- 	if(!Key_tStatus1)
- 	{
-      Key_tStatus1 = KEY_S;	
-      Key_tStatus2 = KEY_B;	
- 	};
-   
- 	if(!Key_tAction1)
- 	{
-      Key_tAction1 = KEY_LCONTROL;	
- 	};
-   
-// 	TALENT_DUALUSING = TRUE;
+	A_munition=0;
+	Last_A_munition=0;
+	B_munition=0;
+	Last_B_munition=0;
+	
+	//if blanks, init run/walk keys
+	if(!Key_tStatus1)
+	{
+		Key_tStatus1 = KEY_S;	
+		Key_tStatus2 = KEY_B;	
+	};
+
+	if(!Key_tAction1)
+	{
+		Key_tAction1 = KEY_LCONTROL;	
+	};
+
+	// 	TALENT_DUALUSING = TRUE;
 	RuneSwdCriticalChance=20;
 	gomez = Hlp_GetNpc(Ebr_100_Gomez);
-	HelloSayingState = 1;
+	DailyHello_HeroAttackersCnt = 1;
 	Day = 1;
 	GRDChallenge = FALSE;	
 	CasTeleportActive = FALSE;
@@ -2961,7 +2961,7 @@ FUNC VOID INIT_Variables()
 	Is_1_On = FALSE;	
 	Know_JackAlligator = TRUE;	
 	LastNpcWithSpecWeapon = -1;
-	HelloSayingState = 1;
+	DailyHello_HeroAttackersCnt = 1;
 	Day = 1;
 	GRDChallenge = FALSE;	
 	//TALENT_QUICK_LERNING=FALSE;
@@ -2972,26 +2972,26 @@ FUNC VOID INIT_Variables()
 	Global_Cinematic_i = -256;
 	
 	HeroHasPupil=0;
-//Animalthrophy skills	
-// 		 Knows_GetTeeth      		= TRUE;		
-// 		 Knows_GetClaws      		= TRUE;
-// 		 Knows_GetFur        		= TRUE;
-// 		 Knows_GetHide       		= TRUE;
-// 		 Knows_GetTongue     		= TRUE;
-// 		 Knows_GetMCMandibles		= TRUE;
-// 		 Knows_GetMCThread   		= TRUE;
-// 		 Knows_GetMCPlates   		= TRUE;
-// 		 Knows_GetBFSting    		= TRUE;
-// 		 Knows_GetWings      		= TRUE;
-// 		 Knows_GetHorn   	 	  	= TRUE;
-// 		 Knows_GetLiver      		= TRUE;
-// 		 Knows_GetFeather    		= TRUE;		
-// 		 Knows_GetWTF        		= TRUE;
-// 		 Knows_GetWool       		= TRUE;  
-// 		 Knows_GetHeart        		= TRUE;
-		
+	//Animalthrophy skills	
+	// 		 Knows_GetTeeth      		= TRUE;		
+	// 		 Knows_GetClaws      		= TRUE;
+	// 		 Knows_GetFur        		= TRUE;
+	// 		 Knows_GetHide       		= TRUE;
+	// 		 Knows_GetTongue     		= TRUE;
+	// 		 Knows_GetMCMandibles		= TRUE;
+	// 		 Knows_GetMCThread   		= TRUE;
+	// 		 Knows_GetMCPlates   		= TRUE;
+	// 		 Knows_GetBFSting    		= TRUE;
+	// 		 Knows_GetWings      		= TRUE;
+	// 		 Knows_GetHorn   	 	  	= TRUE;
+	// 		 Knows_GetLiver      		= TRUE;
+	// 		 Knows_GetFeather    		= TRUE;		
+	// 		 Knows_GetWTF        		= TRUE;
+	// 		 Knows_GetWool       		= TRUE;  
+	// 		 Knows_GetHeart        		= TRUE;
+	
 	Ritual_Katrakanat_counter=0;
-//ORE DAILY 10 = 1 UNIT
+	//ORE DAILY 10 = 1 UNIT
 	DAILYMAGICORE               = 100;
 	DAILYGOLDORE                = 20;
 	DAILYCARBONORE              = 35;
@@ -3001,14 +3001,8 @@ FUNC VOID INIT_Variables()
 	DAILYGOLDORE_NOW    = DAILYGOLDORE;  
 	DAILYCARBONORE_NOW  = DAILYCARBONORE;
 	DAILYIRONORE_NOW    = DAILYIRONORE;  
-   DAILYSILVERORE_NOW	= DAILYSILVERORE;
-   
-   HERO_TATTOO = 0;
-   HERO_BEARD = 4;
-   HERO_HAIR = 3;
-   HERO_FACEMESH="Hum_Head_Bald";
-   hero_last_face=340;
-   HERO_FACEMESH_LAST=HERO_FACEMESH;	   
+	DAILYSILVERORE_NOW	= DAILYSILVERORE;
+
 	
 	LastDayIn_WORLDZEN          = 1; 
 };
@@ -3020,9 +3014,9 @@ func void INIT_Sub_QuestTest()
 
 func void Startup_Sub_Questtest()
 {
-///////////////////////////////////////////////////
-//Rebel Camp
-///////////////////////////////////////////////////
+	///////////////////////////////////////////////////
+	//Rebel Camp
+	///////////////////////////////////////////////////
 
 	//Hunters
 	Wld_InsertNpc(HUN_336_Cavalorn, "OW_SAWHUT_GREENGOBBO_SPAWN");
@@ -3030,14 +3024,14 @@ func void Startup_Sub_Questtest()
 	Wld_InsertNpc(HUN_858_Quentin, "OW_PATH_02");
 	Wld_InsertNpc(HUN_819_Drax, "OW_PATH_02");
 	Wld_InsertNpc(HUN_859_Aidan, "OW_PATH_02");	
-//	Wld_InsertNpc(HUN_828_Bruce, "OW_PATH_02"); //AT CHAPTER 3 NC ARRIVED
+	//	Wld_InsertNpc(HUN_828_Bruce, "OW_PATH_02"); //AT CHAPTER 3 NC ARRIVED
 	Wld_InsertNpc(HUN_729_Kharim, "OW_PATH_02"); 
 	Wld_InsertNpc(HUN_1422_GorHanis, "OW_PATH_02"); 
 	Wld_InsertNpc(PC_Thief, "OW_PATH_02");
 	Wld_InsertNpc(HUN_309_Whistler, "OW_PATH_02");	
 	Wld_InsertNpc(HUN_2615_Abel, "OW_PATH_02");	
 	
-//	Wld_InsertNpc(PC_Fighter, "OW_PATH_02");//AT CHAPTER 3 NC ARRIVED
+	//	Wld_InsertNpc(PC_Fighter, "OW_PATH_02");//AT CHAPTER 3 NC ARRIVED
 	
 	//Finding new people
 	Wld_InsertNpc(HUN_2609_Gestath, "OW_PATH_02");	
@@ -3045,7 +3039,7 @@ func void Startup_Sub_Questtest()
 	Wld_InsertNpc(Grd_205_Scorpio, "OC1"); //WitPacho
 	Wld_InsertNpc(GRD_224_Pacho, "OC1");
 	Wld_InsertNpc(RBL_2617_Carlson, "OW_PATH_02");//witScorpio
-			
+	
 	//Magicans
 	Wld_InsertNpc(mag_1604_Leren, "OW_PATH_02");
 	Wld_InsertNpc(MAG_1330_BaalParvez, "OW_PATH_02");
@@ -3064,7 +3058,7 @@ func void Startup_Sub_Questtest()
 	Wld_InsertNpc(RBL_2616_Mark, "OW_PATH_02");
 	Wld_InsertNpc(RBL_2618_Hark, "OW_PATH_02");
 	Wld_InsertNpc(RBL_2619_CUP, "OW_PATH_02");
-/* NC_ARRIVED	
+	/* NC_ARRIVED	
 //	Wld_InsertNpc(RBL_8730_Dylan, "OW_PATH_02");	//ADD in 3 Chapter NC_ARRIVED
 //	Wld_InsertNpc(RBL_851_Butch, "OW_PATH_02");  //ADD in 3 Chapter NC_ARRIVED
 //	Wld_InsertNpc(RBL_826_Mordrag, "OW_PATH_02");  //ADD in 3 Chapter NC_ARRIVED	
@@ -3072,9 +3066,9 @@ func void Startup_Sub_Questtest()
 /* PSI_ARRIVED
 	Wld_InsertNpc		   	 	(RBL_1333_BaalIsidro, "OW_HUN_SMALLCAMP");*/
 	Wld_InsertNpc(RBL_1332_BaalKagan, "OW_PATH_02");
-//	Wld_InsertNpc(PC_Psionic, "OW_PATH_02");
+	//	Wld_InsertNpc(PC_Psionic, "OW_PATH_02");
 	
-/*	Wld_InsertNpc(RBL_2331_Zex, "OW_PATH_02");
+	/*	Wld_InsertNpc(RBL_2331_Zex, "OW_PATH_02");
 	Wld_InsertNpc(RBL_2402_Terry, "OW_PATH_02");	
 */
 	/////////////////////////
@@ -3085,9 +3079,9 @@ func void Startup_Sub_Questtest()
 	Wld_InsertNpc(My_Wolf, "OW_PIR_CAMPFIRE");	
 	Wld_InsertNpc(PIR_2602_Rodney, "OW_PIR_CAMPFIRE");
 	//Dead Pirates
-   Wld_InsertNpc(PIR_2611_Skip, "OW_PIR_CAMPFIRE");
-   Wld_InsertNpc(PIR_2606_Dustin, "OW_PIR_CAMPFIRE");
-    	
+	Wld_InsertNpc(PIR_2611_Skip, "OW_PIR_CAMPFIRE");
+	Wld_InsertNpc(PIR_2606_Dustin, "OW_PIR_CAMPFIRE");
+	
 	//Tony
 	//-added in dialog with hank
 };
@@ -3099,8 +3093,12 @@ Func void Events_OnGameStart()
 
 FUNC VOID INIT_ALLWORLDS()
 {
+	// Ork: Dobra to chyba tutaj musi sie pojawiæ inicjacja zmiennych odwo³uj¹cych siê do offsetów w pamieci
+	// Przyda³oby siê jakieœ "Exctract Method" tutaj bo wygl¹da to jak zwykle gorzej niz obrzydliwie :P
+	// S³owa kluczowe: Reinicjacja Zmiennych, Reinit 
 	MEM_SetShowDebug(1);
-	
+	Appr_Init();
+	Appr_RefreshHeroAppearance();
 	Arr_ReInitStartAndHigh();
 	Respawn_Init();
 	Controls_Update();
@@ -3111,22 +3109,23 @@ FUNC VOID INIT_ALLWORLDS()
 	InitTexts();
 	WORLDS_INITS	+= 1;
 	HeroDamage_ComboCounter = 0;//reset
-   B_InitMonsterAttitudes();
+	B_InitMonsterAttitudes();
 	B_InitGuildAttitudes();	
 	Init_GlobalNpc();
 	
 	MEM_InitGlobalInst();//ikarus
 	
-//	B_CheckHello 			(other);	
+	//	B_CheckHello 			(other);	
 	Wld_InsertNpc(MOD_ITEMMASTER, "INVISIBLE");		
 	
 	SkyPreset_ReInit = true;
 	SkyController_Ptr = 0;// This is critical! Without it Function FX_TransitionDoFrameStep could cause a crash
-						  // (function can be called before skycontroller_ptr has valid value pointing to skycontroller_outdoor class
-						  // Pointer is updating by Posion trigger (per 0.125) so many frames could go before it has proper value.
-						  // -orcwarrior March 27, 2011 
-						  
-	FX_LastActiveFog = 0; //See comment over, but this time function could crash at FX_TransitionDoStep						  
+	// (function can be called before skycontroller_ptr has valid value pointing to skycontroller_outdoor class
+	// Pointer is updating by Posion trigger (per 0.125) so many frames could go before it has proper value.
+	// -orcwarrior March 27, 2011 
+	
+	FX_LastActiveFog = 0; //See comment over, but this time function could crash at FX_TransitionDoStep			
+	FX_Reinit(); // Nówka funkiel, powinna pomóc z Cinemabarsami, fov-morphem i innymi funkcjami z AI_Intern/FX_Func.d
 	MusicSys_ReInit();
 	MsgManager_ReInit();
 	Extract_NeededKeys();
@@ -3138,12 +3137,12 @@ FUNC VOID INIT_ALLWORLDS()
 	{
 		HooksReinited="Yes";
 		//HookEngine_Hook_PreUnconscious_JmpAdress = HookEngine(7630776,6, "HOOK_PREUNCONSCIOUS",COPY_INSTR);
-	 	HookEngine(6924707,5, "HOOK_AFTEROPENSTATUSSCREEN",COPY_INSTR);	
-	 	HookEngine(4349120,5, "APPLY_MENU_OPTIONS_CZ",COPY_INSTR);	
-	 	//HookEngine_Hook_LeftWeaponTrail_JmpAdress = HookEngine(6452024,5, "HOOK_WEAPONTRAIL",COPY_INSTR);	
-	 	//HookEngine_Hook_PreRenderVobList_JmpAdress = HookEngine(5365779,5, "HOOK_PREVOBLIGHTRENDER",COPY_INSTR);	
-	 	//HookTesting = HookEngine(5467923,5, "HOOKTESTINGFUNC",COPY_INSTR);	
-	 	
+		HookEngine(6924707,5, "HOOK_AFTEROPENSTATUSSCREEN",COPY_INSTR);	
+		HookEngine(4349120,5, "APPLY_MENU_OPTIONS_CZ",COPY_INSTR);	
+		//HookEngine_Hook_LeftWeaponTrail_JmpAdress = HookEngine(6452024,5, "HOOK_WEAPONTRAIL",COPY_INSTR);	
+		//HookEngine_Hook_PreRenderVobList_JmpAdress = HookEngine(5365779,5, "HOOK_PREVOBLIGHTRENDER",COPY_INSTR);	
+		//HookTesting = HookEngine(5467923,5, "HOOKTESTINGFUNC",COPY_INSTR);	
+		
 		//HookEngine_Hook_PreDropVob_JmpAdress = HookEngine(7023277,5, "HOOK_PREDROPVOB",COPY_INSTR);
 	};
 	//OptimizationVobLights_CollectLights();
@@ -3156,7 +3155,7 @@ func void HOOK_PREDROPVOB()
 	//CheckAdress(ESPAdr(),128,1,1);
 	
 
-//MEM_WriteInt(HookEngine_Hook_PreDropVob_JmpAdress,7023911);
+	//MEM_WriteInt(HookEngine_Hook_PreDropVob_JmpAdress,7023911);
 };
 
 FUNC VOID STARTUP_ALLWORDLS()
@@ -3181,9 +3180,11 @@ FUNC VOID INIT_QUESTTEST()
 	Wld_SetObjectRoutine (20,28, "GLOWWORMS1",1);	
 	Wld_SetObjectRoutine (04,59, "GLOWWORMS1",0);
 
-   B_InitMonsterAttitudes();
+	B_InitMonsterAttitudes();
 	B_InitGuildAttitudes();
 	Init_GlobalNpc();
+	Init_GlobalNpc_World();
+	//WORLD_CURRENT = WORLD_WORLDZEN;
 };
 
 FUNC VOID INIT_WORLD()
@@ -3204,7 +3205,7 @@ FUNC VOID INIT_WORLD()
 	Wld_SetObjectRoutine(03,10, "CAS_TELEPORT2", 0);			
 	Wld_SetObjectRoutine(20,28, "GLOWWORMS1", 1);	
 	Wld_SetObjectRoutine(04,59, "GLOWWORMS1", 0);
-   B_InitMonsterAttitudes();
+	B_InitMonsterAttitudes();
 	B_InitGuildAttitudes();
 	Init_GlobalNpc();
 	Init_GlobalNpc_World();
@@ -3219,7 +3220,7 @@ FUNC VOID INIT_HCWORLD()
 	INIT_Sub_Freeminecamp();
 	INIT_Sub_Surface();
 
-//	Wld_SendTrigger("TIMETRIGGER6");
+	//	Wld_SendTrigger("TIMETRIGGER6");
 	Wld_SetObjectRoutine (03,10, "CAS_TELEPORT_TRIG",0);	
 	Wld_SetObjectRoutine (03,10, "CAS_TELEPORT",0);		
 	Wld_SetObjectRoutine (03,10, "CAS_TELEPORT2",0);			
@@ -3229,14 +3230,15 @@ FUNC VOID INIT_HCWORLD()
 
 FUNC VOID STARTUP_QUESTTEST()
 {
+	INIT_QUESTTEST();	
 	Startup_Sub_Questtest();
 	Wld_InsertNpc(Perception_Testmodell, "A2");
 	//die folgende Zeile gilt nur, bis die INIT_...-Funktionen von Ulf unterstützt werden.
-	INIT_QUESTTEST();	
+
 	STARTUP_ALLWORDLS();
 	
-	Wld_InsertNpc(SLV_011_BarrelSlave, "B4"); 
-//	Wld_InsertNpc(SLV_012_BarrelSlave, "B4"); 
+	// Wld_InsertNpc(SLV_011_BarrelSlave, "B4"); 
+	//	Wld_InsertNpc(SLV_012_BarrelSlave, "B4"); 
 	
 	//Wld_InsertNpc(SLV_22_AppearTest, "B4"); 
 };
@@ -3245,11 +3247,11 @@ FUNC VOID STARTUP_WORLD ()
 {
 	//var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	//Triggers
-//	Wld_SendTrigger ("EVT_TRIGGER2"); 	
- 	//Content
- 	//debug:
- 	
- 	STARTUP_ALLWORDLS();	
+	//	Wld_SendTrigger ("EVT_TRIGGER2"); 	
+	//Content
+	//debug:
+	
+	STARTUP_ALLWORDLS();	
 	Startup_Sub_Newcamp();
 	Startup_Sub_Oldcamp();
 	Startup_Sub_Psicamp();
@@ -3262,8 +3264,9 @@ FUNC VOID STARTUP_WORLD ()
 
 	//die folgende Zeile gilt nur, bis die INIT_...-Funktionen von Ulf unterstützt werden.
 	INIT_WORLD();	
+	
 	PlayVideo ("INTRO.BIK");
-   PlayVideo ("CZ_INTRO.BIK");
+	PlayVideo ("CZ_INTRO.BIK");
 	//AI_StartState			(hero,	ZS_Unconscious,	1,	"");
 	//B_FullStop			(hero);
 	//B_ProcessInfos (her);
@@ -3292,13 +3295,13 @@ func void INIT_DUNGEON()
 	WORLD_CURRENT = WORLD_MONSTARYDUNGEONZEN;
 	Respawn_SkippedDays(DAY-LastDayIn_MONSTARYDUNGEONZEN);
 	LastDayIn_MONSTARYDUNGEONZEN= DAY;//Set Last Day in psi dream to today's day		
-   B_InitMonsterAttitudes();
+	B_InitMonsterAttitudes();
 	B_InitGuildAttitudes();	
 	INIT_ALLWORLDS();		
-   
-   Party_RemoveNpc(Roderic);
+
+	Party_RemoveNpc(Roderic);
 };
-		
+
 FUNC VOID STARTUP_DUNGEON()
 {	
 	var c_npc poormeatbug;
@@ -3321,12 +3324,12 @@ FUNC VOID STARTUP_DUNGEON()
 	Wld_InsertNpc(Zombie_BonesChamber6, "KOMNATA_KOSCI_01"); 
 	Wld_InsertNpc(Zombie_BonesChamber1, "KOMNATA_KOSCI_02"); 
 	Wld_InsertNpc(Zombie_BonesChamber2, "KOMNATA_KOSCI_03"); 
-//	Wld_InsertNpc(Zombie_BonesChamber3, "KOMNATA_KOSCI_04"); 
+	//	Wld_InsertNpc(Zombie_BonesChamber3, "KOMNATA_KOSCI_04"); 
 	Wld_InsertNpc(Zombie_BonesChamber4, "KOMNATA_KOSCI_05"); 
 	Wld_InsertNpc(Zombie_BonesChamber5, "KOMNATA_KOSCI_06"); 
 	
-//	Wld_InsertNpc(Skeleton2HSwdWarrior, "KOMNATA_MOST_07");
-//	Wld_InsertNpc(Skeleton2HSwdWarrior, "KOMNATA_MOST_08");
+	//	Wld_InsertNpc(Skeleton2HSwdWarrior, "KOMNATA_MOST_07");
+	//	Wld_InsertNpc(Skeleton2HSwdWarrior, "KOMNATA_MOST_08");
 	//Wld_InsertNpc(SkeletonMage, "KOMNATA_MOST_02");
 	//Wld_InsertNpc(SkeletonPoisonRanger, "KOMNATA_MOST_05");
 	//Wld_InsertNpc(SkeletonPoisonRanger, "KOMNATA_MOST_06");
@@ -3348,14 +3351,14 @@ FUNC VOID STARTUP_DUNGEON()
 	Wld_InsertNpc(SkeletonDual1, "JASKINIA_02");
 
 	Wld_InsertNpc(SkeletonMage, "KOMNATA_WIEDZY_01");
-		
+	
 	Wld_InsertNpc(SkeletonDual1, "KOMNATA_SYPIALNA_03");
-//	Wld_InsertNpc(Skeleton2HAxeWarrior, "KOMNATA_SYPIALNA_01");
+	//	Wld_InsertNpc(Skeleton2HAxeWarrior, "KOMNATA_SYPIALNA_01");
 	Wld_InsertNpc(SkeletonDual1, "KOMNATA_SYPIALNA_02");
 	Wld_InsertNpc(SkeletonRanger, "KOMNATA_SYPIALNA_04");
 	Wld_InsertNpc(SkeletonRanger, "KOMNATA_SYPIALNA_05");
-				
- 	STARTUP_ALLWORDLS();		
+	
+	STARTUP_ALLWORDLS();		
 };
 /****************************************************
 *      CAVE		CAVE	CAVE    CAVE	CAVE		*
@@ -3371,7 +3374,7 @@ FUNC VOID INIT_CAVE ()
 	WORLD_CURRENT = WORLD_CATACOMBS;
 	Respawn_SkippedDays(DAY-LastDayIn_CATACOMBS);
 	LastDayIn_CATACOMBS= DAY;//Set Last Day in cave to today's day				
-   B_InitMonsterAttitudes();
+	B_InitMonsterAttitudes();
 	B_InitGuildAttitudes();
 	INIT_ALLWORLDS();
 };
@@ -3395,15 +3398,15 @@ FUNC VOID STARTUP_CAVE ()
 	Wld_InsertNpc(SkeletonScout, "SKE_CORRIDOR_2"); 	
 	Wld_InsertNpc(SkeletonWarrior, "SKE_CORRIDOR_3"); 	
 	Wld_InsertNpc(Skeleton2HSwdWarrior, "SKE_CORRIDOR_4");
-   
- 	//Content
-//	Startup_Sub_Newcamp			();
-//	Startup_Sub_Oldcamp			();
-//	Startup_Sub_Psicamp			();
-//	Startup_Sub_Demontower		();
-//	Startup_Sub_Freeminecamp	();
-//	Startup_Sub_Surface			();
-  	STARTUP_ALLWORDLS();		
+
+	//Content
+	//	Startup_Sub_Newcamp			();
+	//	Startup_Sub_Oldcamp			();
+	//	Startup_Sub_Psicamp			();
+	//	Startup_Sub_Demontower		();
+	//	Startup_Sub_Freeminecamp	();
+	//	Startup_Sub_Surface			();
+	STARTUP_ALLWORDLS();		
 	//die folgende Zeile gilt nur, bis die INIT_...-Funktionen von Ulf unterstützt werden.
 	INIT_CAVE();
 	B_CheckHello(other);		
@@ -3421,26 +3424,26 @@ FUNC VOID INIT_ORCGRAVEYARD()
 	Respawn_SkippedDays(DAY-LastDayIn_OGY);
 	LastDayIn_OGY= DAY;//Set Last Day in graveyard to today's day				
 	//-------- Attitüden initialisieren --------
-   B_InitMonsterAttitudes();
+	B_InitMonsterAttitudes();
 	B_InitGuildAttitudes();
 	INIT_ALLWORLDS();
 };
 
 FUNC VOID STARTUP_ORCGRAVEYARD ()
 {
-   INIT_ORCGRAVEYARD();
-   
+	INIT_ORCGRAVEYARD();
+
 	if(nameless_enterGYD)
 	{
-      Wld_InsertNpc(Nameless_ThirdMeetGYD, "GRYD_002");
-      Wld_InsertNpc(OrcScoutGYD, "GRYD_015");
-      Wld_InsertNpc(Skeleton, "GRYD_019B");
-      Wld_InsertNpc(Skeleton2HSwdWarrior, "GRYD_032");
-      Wld_InsertNpc(SkeletonPoisonRanger, "GRYD_039");
-      Wld_InsertNpc(SkeletonMage, "GRYD_023");
-      Wld_InsertNpc(Cave_UndeadOrcWarrior, "GRYD_061");
-      Wld_InsertNpc(Cave_UndeadOrcWarrior, "GRYD_062");
-      Wld_InsertNpc(Cave_UndeadOrcWarrior, "GRYD_047");
+		Wld_InsertNpc(Nameless_ThirdMeetGYD, "GRYD_002");
+		Wld_InsertNpc(OrcScoutGYD, "GRYD_015");
+		Wld_InsertNpc(Skeleton, "GRYD_019B");
+		Wld_InsertNpc(Skeleton2HSwdWarrior, "GRYD_032");
+		Wld_InsertNpc(SkeletonPoisonRanger, "GRYD_039");
+		Wld_InsertNpc(SkeletonMage, "GRYD_023");
+		Wld_InsertNpc(Cave_UndeadOrcWarrior, "GRYD_061");
+		Wld_InsertNpc(Cave_UndeadOrcWarrior, "GRYD_062");
+		Wld_InsertNpc(Cave_UndeadOrcWarrior, "GRYD_047");
 	};
 	//-------- 1. Höhle --------
 	Wld_InsertNpc(OrcScoutGYD, "GRYD_006");
@@ -3478,8 +3481,8 @@ FUNC VOID STARTUP_ORCGRAVEYARD ()
 	Wld_InsertNpc(Cave_UndeadOrcWarrior, "GRYD_2_03");
 	Wld_InsertNpc(Cave_UndeadOrcWarrior, "GRYD_2_09");	
 	Wld_InsertNpc(ORC_GHOST, "ORCGHOST");	
-   TurnToGhost(ORC_GHOST,16);	
- 	STARTUP_ALLWORDLS();			
+	TurnToGhost(ORC_GHOST,16);	
+	STARTUP_ALLWORDLS();			
 };
 
 FUNC VOID STARTUP_ORCTEMPEL ()
@@ -3569,7 +3572,7 @@ FUNC VOID STARTUP_ORCTEMPEL ()
 	// ----------------- Sleeper ---------------------------------------
 	Wld_InsertNpc(SLEEPER, "TPL_395"); // Schläft die ganze Zeit :)
 
- 	STARTUP_ALLWORDLS();				
+	STARTUP_ALLWORDLS();				
 };
 
 FUNC VOID INIT_ORCTEMPEL ()
@@ -3580,7 +3583,7 @@ FUNC VOID INIT_ORCTEMPEL ()
 	WORLD_CURRENT = WORLD_OTEMPLE;
 
 	//-------- Attitüden initialisieren --------
-   B_InitMonsterAttitudes();
+	B_InitMonsterAttitudes();
 	B_InitGuildAttitudes();
 	INIT_ALLWORLDS();
 };
@@ -3590,15 +3593,15 @@ FUNC VOID INIT_OLDMINE ()
 	Wld_SetMobRoutine (00,00, "FIREPLACE", 1);
 
 	//-------- Attitüden initialisieren --------
-   B_InitMonsterAttitudes();
+	B_InitMonsterAttitudes();
 	B_InitGuildAttitudes();
 	INIT_ALLWORLDS();
 };
 
 FUNC VOID STARTUP_OLDMINE ()
 {
-   INIT_OLDMINE();
-   
+	INIT_OLDMINE();
+
 	Wld_InsertNpc(Stt_300_Alberto, "OM_122");
 	Wld_InsertNpc(Stt_301_Ian, "OM_122");
 	Wld_InsertNpc(Stt_302_Viper, "OM_122");
@@ -3642,7 +3645,7 @@ FUNC VOID STARTUP_OLDMINE ()
 	Wld_InsertNpc(VLK_583_Glen, "OM_122");
 	Wld_InsertNpc(VLK_584_Snipes, "OM_122");
 	Wld_InsertNpc(VLK_585_Aleph, "OM_122");
-//	Wld_InsertNpc(VLK_586_Grimes, "OM_122");
+	//	Wld_InsertNpc(VLK_586_Grimes, "OM_122");
 	Wld_InsertNpc(VLK_587_Garp, "OM_122");
 	Wld_InsertNpc(VLK_588_Buddler, "OM_122");
 	Wld_InsertNpc(VLK_589_Buddler, "OM_122");
@@ -3705,7 +3708,7 @@ FUNC VOID STARTUP_OLDMINE ()
 	//-------- globale Variable --------
 	EnteredOldMine = TRUE;
 	
- 	STARTUP_ALLWORDLS();			
+	STARTUP_ALLWORDLS();			
 };
 
 FUNC VOID INIT_FREEMINE ()	
@@ -3717,18 +3720,18 @@ FUNC VOID INIT_FREEMINE ()
 	Respawn_SkippedDays(DAY-LastDayIn_FREEMINE);
 	LastDayIn_FREEMINE = DAY;//Set Last Day in freemine to today's day
 	//-------- Attitüden initialisieren --------
-   B_InitMonsterAttitudes();
+	B_InitMonsterAttitudes();
 	B_InitGuildAttitudes();
 	INIT_ALLWORLDS();	
 };
 
 FUNC VOID STARTUP_FREEMINE ()	
 {
-   INIT_FREEMINE();
+	INIT_FREEMINE();
 	//-------- globale Story-Variable --------
 	EnteredFreeMine = TRUE;
 
-//*******added by sher**********************
+	//*******added by sher**********************
 	
 	Wld_InsertNpc(SLD_737_Torlof, "FM_03");	 //
 	Wld_InsertNpc(GRD_851_Butch, "FM_03");  //
@@ -3741,7 +3744,7 @@ FUNC VOID STARTUP_FREEMINE ()
 	Wld_InsertNpc(Grd_20272_GRD, "FM_12");	
 	Wld_InsertNpc(Grd_20273_GRD, "FM_14");		
 	
-/************	
+	/************	
 	FM_02 wypad z FM
 	sher FM_03 start  FM_06 after
 	Thorlof FM_18 V
@@ -3809,7 +3812,7 @@ FUNC VOID STARTUP_FREEMINE ()
 	//-----------------------Meatbug-------------------------------------------
 	
 	Wld_InsertNpc(FreemineOrc, "FM_03");//WaitforRescue
- 	STARTUP_ALLWORDLS();		
+	STARTUP_ALLWORDLS();		
 };
 
 /**********************************************************
@@ -3830,90 +3833,90 @@ FUNC VOID STARTUP_FREEMINE ()
 
 FUNC VOID STARTUP_DREAM01 ()
 {
-   Wld_InsertNpc(RBL_1412_Templer, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1413_Templer, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1414_Templer, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1415_Templer, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1416_Templer, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1417_Templer, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1418_Templer, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1419_Templer, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1420_Templer, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1423_Templer, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1424_Templer, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1425_Templer, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1430_Templer, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1431_Templer, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1432_Templer, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1433_GorNaVid, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1434_Templer, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_414_BaalParvez, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_413_BaalTaran, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_408_Nowicjusz, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_416_GorHanis, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_410_BaalParvez, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_409_BaalTaran, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_411_BaalIsidro, "PSI_PATH_1_1");
- 
-   Wld_InsertNpc(RBL_1327_Novize, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1328_Novize, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1329_Novize, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1332_BaalKagan, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1334_Novize, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1335_Novize, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1336_Novize, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1337_Novize, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1338_Novize, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1339_Novize, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1340_Novize, "PSI_PATH_1_1");
- 
-   Wld_InsertNpc(RBL_1327_Novize, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1328_Novize, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1329_Novize, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1332_BaalKagan, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1334_Novize, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1335_Novize, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1336_Novize, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1337_Novize, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1338_Novize, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1339_Novize, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1340_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1412_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1413_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1414_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1415_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1416_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1417_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1418_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1419_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1420_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1423_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1424_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1425_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1430_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1431_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1432_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1433_GorNaVid, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1434_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_414_BaalParvez, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_413_BaalTaran, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_408_Nowicjusz, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_416_GorHanis, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_410_BaalParvez, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_409_BaalTaran, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_411_BaalIsidro, "PSI_PATH_1_1");
 
-   Wld_InsertNpc(RBL_1409_Templer, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1410_Templer, "PSI_PATH_1_1");
-   Wld_InsertNpc(RBL_1411_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1327_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1328_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1329_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1332_BaalKagan, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1334_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1335_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1336_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1337_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1338_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1339_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1340_Novize, "PSI_PATH_1_1");
 
-   Wld_InsertNpc(RBL_1411_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1327_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1328_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1329_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1332_BaalKagan, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1334_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1335_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1336_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1337_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1338_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1339_Novize, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1340_Novize, "PSI_PATH_1_1");
 
-   Wld_InsertNpc(RBL_1435_DeadMen, "PSI_TEMPLE_NOVIZE_PR4");
-   Wld_InsertNpc(RBL_1435_DeadMen, "PSI_TEMPLE_NOVIZE_PR7");
-   Wld_InsertNpc(RBL_1435_DeadMen, "PSI_TEMPLE_NOVIZE_PR6");
-   Wld_InsertNpc(RBL_1435_DeadMen, "PSI_TEMPLE_GUARD_04");
+	Wld_InsertNpc(RBL_1409_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1410_Templer, "PSI_PATH_1_1");
+	Wld_InsertNpc(RBL_1411_Templer, "PSI_PATH_1_1");
 
-   Wld_InsertNpc(DemonPsi, "PSI_TEMPLE_GUARD_03");
-   Wld_InsertNpc(DemonPsi, "PSI_TEMPLE_GUARD_02");
-   Wld_InsertNpc(DemonPsi, "PSI_TEMPLE_STAIRS_3");
-   Wld_InsertNpc(DemonPsi, "PSI_TEMPLE_STAIRS_1");
+	Wld_InsertNpc(RBL_1411_Templer, "PSI_PATH_1_1");
 
-   Wld_InsertNpc(PSI_NovHZombie, "PSI_TEMPLE_COURT_2");
-   Wld_InsertNpc(PSI_TplHZombie, "PSI_TEMPLE_COURT_3");
-   Wld_InsertNpc(PSI_GuruZombieFireStorm, "PSI_TEMPLE_COURT_GURU");
-   Wld_InsertNpc(PSI_NovMZombie, "PSI_TEMPLE_STAIRS_1");
-   Wld_InsertNpc(PSI_TplHZombie, "PSI_PATH_TEMPLE_8");
+	Wld_InsertNpc(RBL_1435_DeadMen, "PSI_TEMPLE_NOVIZE_PR4");
+	Wld_InsertNpc(RBL_1435_DeadMen, "PSI_TEMPLE_NOVIZE_PR7");
+	Wld_InsertNpc(RBL_1435_DeadMen, "PSI_TEMPLE_NOVIZE_PR6");
+	Wld_InsertNpc(RBL_1435_DeadMen, "PSI_TEMPLE_GUARD_04");
 
-   Wld_InsertNpc(RBL_1436_ImOnFire, "PSI_PATH_10_2");
-   Wld_InsertNpc(RBL_415_ImOnFire, "PSI_PATH_10_2");
-   Wld_InsertNpc(RBL_1438_ImOnFire, "PSI_PATH_10_2");
+	Wld_InsertNpc(DemonPsi, "PSI_TEMPLE_GUARD_03");
+	Wld_InsertNpc(DemonPsi, "PSI_TEMPLE_GUARD_02");
+	Wld_InsertNpc(DemonPsi, "PSI_TEMPLE_STAIRS_3");
+	Wld_InsertNpc(DemonPsi, "PSI_TEMPLE_STAIRS_1");
+
+	Wld_InsertNpc(PSI_NovHZombie, "PSI_TEMPLE_COURT_2");
+	Wld_InsertNpc(PSI_TplHZombie, "PSI_TEMPLE_COURT_3");
+	Wld_InsertNpc(PSI_GuruZombieFireStorm, "PSI_TEMPLE_COURT_GURU");
+	Wld_InsertNpc(PSI_NovMZombie, "PSI_TEMPLE_STAIRS_1");
+	Wld_InsertNpc(PSI_TplHZombie, "PSI_PATH_TEMPLE_8");
+
+	Wld_InsertNpc(RBL_1436_ImOnFire, "PSI_PATH_10_2");
+	Wld_InsertNpc(RBL_415_ImOnFire, "PSI_PATH_10_2");
+	Wld_InsertNpc(RBL_1438_ImOnFire, "PSI_PATH_10_2");
 
 	Wld_InsertNpc(PC_Hero_Dream01, "PSI_31_HUT_IN");//VisionPlayer
- 	STARTUP_ALLWORDLS();			
+	STARTUP_ALLWORDLS();			
 };
 
 FUNC VOID INIT_DREAM01 ()
 {
 	WORLD_CURRENT = WORLD_DREAM01;
 	//-------- Attitüden initialisieren --------
-   B_InitMonsterAttitudes ();
+	B_InitMonsterAttitudes ();
 	B_InitGuildAttitudes();
 	INIT_ALLWORLDS();
 };	
@@ -3924,7 +3927,7 @@ FUNC VOID INIT_NECROLOC()
 
 	WORLD_CURRENT = WORLD_NECROLOCATION;
 	respawn_dur_minus = 10000;
-   B_InitMonsterAttitudes();
+	B_InitMonsterAttitudes();
 	B_InitGuildAttitudes();
 	Init_GlobalNpc();
 };
@@ -3932,8 +3935,8 @@ FUNC VOID INIT_NECROLOC()
 FUNC VOID STARTUP_NECROLOC()
 {
 	Wld_InsertNpc(hero_mirror, "INVISIBLE");
-   Wld_InsertNpc(DMB_1701_NecroInNecroloc, "NECRO_CENTER");
-   Wld_InsertNpc(DMB_1701_NecroInNecroloc_mirror, "INVISIBLE");
+	Wld_InsertNpc(DMB_1701_NecroInNecroloc, "NECRO_CENTER");
+	Wld_InsertNpc(DMB_1701_NecroInNecroloc_mirror, "INVISIBLE");
 	
 	Wld_InsertNpc(NON_4084_NecroServant1, "NL_OUTTER_CIRCLE_01");
 	Wld_InsertNpc(NON_4084_NecroServant1_mirror, "INVISIBLE");
@@ -3955,9 +3958,9 @@ FUNC VOID INIT_OR_DEEP ()
 
 	WORLD_CURRENT = WORLD_OR_DEEP;
 	respawn_dur_minus = 10000;
-   B_InitMonsterAttitudes();
+	B_InitMonsterAttitudes();
 	B_InitGuildAttitudes();
-   Init_GlobalNpc();
+	Init_GlobalNpc();
 };
 
 FUNC VOID STARTUP_OR_DEEP ()
@@ -3969,24 +3972,25 @@ FUNC VOID STARTUP_OR_DEEP ()
 
 	//Wld_InsertNpc(Demon, "WP_DEMON");
 	
-	Wld_InsertNpc(Spider, "MINE_PATH25");	
-	Wld_InsertNpc(Spider, "MINE_PATH25");	
-	Wld_InsertNpc(Spider, "MINE_PATH25");		
-	Wld_InsertNpc(Spider, "MINE_QUEEN_PATH_12");		
-	Wld_InsertNpc(Spider, "MINE_QUEEN_PATH_12");	
-	Wld_InsertNpc(Spider_Sword, "MINE_QUEEN_PATH_11");	
-	Wld_InsertNpc(Spider, "MINE_QUEEN_PATH_10");	
-	Wld_InsertNpc(Spider_Sword, "MINE_QUEEN_PATH_10");
-	Wld_InsertNpc(Spider_Sword, "MINE_QUEEN_PATH_9");	
-	Wld_InsertNpc(Spider_Sword, "MINE_QUEEN_PATH_7");	
-	Wld_InsertNpc(Spider, "MINE_QUEEN_PATH_8");	
-	Wld_InsertNpc(Spider, "MINE_QUEEN_PATH_8");	
-	Wld_InsertNpc(Spider, "MINE_QUEEN_PATH_8");	
-	Wld_InsertNpc(Spider_Sword, "MINE_QUEEN_PATH_6");		
-	Wld_InsertNpc(Spider_Sword, "MINE_QUEEN_PATH_6");		
-	Wld_InsertNpc(Spider_Sword, "MINE_QUEEN_PATH_5");		
-	Wld_InsertNpc(Spider, "MINE_QUEEN_PATH_4");		
-	Wld_InsertNpc(SpiderQueen, "MINE_QUEEN");		
+	// Ork: Chocia¿ tymczasowo, zamieniam na pe³zacze
+	Wld_InsertNpc(Minecrawler, "MINE_PATH25");	
+	Wld_InsertNpc(Minecrawler, "MINE_PATH25");	
+	Wld_InsertNpc(Minecrawler, "MINE_PATH25");		
+	Wld_InsertNpc(Minecrawler, "MINE_QUEEN_PATH_12");		
+	Wld_InsertNpc(Minecrawler, "MINE_QUEEN_PATH_12");	
+	Wld_InsertNpc(MinecrawlerWarrior, "MINE_QUEEN_PATH_11");	
+	Wld_InsertNpc(Minecrawler, "MINE_QUEEN_PATH_10");	
+	Wld_InsertNpc(MinecrawlerWarrior, "MINE_QUEEN_PATH_10");
+	Wld_InsertNpc(MinecrawlerWarrior, "MINE_QUEEN_PATH_9");	
+	Wld_InsertNpc(MinecrawlerWarrior, "MINE_QUEEN_PATH_7");	
+	Wld_InsertNpc(Minecrawler, "MINE_QUEEN_PATH_8");	
+	Wld_InsertNpc(Minecrawler, "MINE_QUEEN_PATH_8");	
+	Wld_InsertNpc(Minecrawler, "MINE_QUEEN_PATH_8");	
+	Wld_InsertNpc(MinecrawlerWarrior, "MINE_QUEEN_PATH_6");		
+	Wld_InsertNpc(MinecrawlerWarrior, "MINE_QUEEN_PATH_6");		
+	Wld_InsertNpc(MinecrawlerWarrior, "MINE_QUEEN_PATH_5");		
+	Wld_InsertNpc(Minecrawler, "MINE_QUEEN_PATH_4");		
+	Wld_InsertNpc(MinecrawlerQueen, "MINE_QUEEN");		
 	
 	INIT_OR_DEEP();	
 	STARTUP_ALLWORDLS();	
@@ -4003,9 +4007,9 @@ FUNC VOID INIT_LABIRYNT ()
 
 	WORLD_CURRENT = WORLD_LABIRYNT;
 	respawn_dur_minus = 10000;
-   B_InitMonsterAttitudes();
+	B_InitMonsterAttitudes();
 	B_InitGuildAttitudes();
-   Init_GlobalNpc();
+	Init_GlobalNpc();
 };
 
 FUNC VOID STARTUP_LABIRYNT ()

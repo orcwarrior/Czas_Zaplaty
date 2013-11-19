@@ -1,3 +1,4 @@
+// Ork: Przeniesienie tego do wspolnego pliku było chyba w sumie chujskim pomysłem ;D
 //#############################################
 //Amunition Func's
 //#############################################
@@ -8,44 +9,77 @@ var int B_MUNITION;
 //Appearance Func's
 //#############################################
 //varibles
-var c_npc stylist;
-var int HerohasEquipedHunLArmor;
-var int changes_price;//hair+beard+TATTOO
-var int changes_price_hair;
-var int changes_price_beard;
-var int changes_price_TATTOO;
-const int STYLIST_1_DIALOG = 21;
-var int hero_last_face;//for dialogues with stylizers(pay or not[back to old])
-var int hero_last_aplied_face;//for dialogues with stylizers(pay or not[back to old])
-var int stylist_init;
-var c_item prestylize_armor;
+// Ork: Poprawie troche nazwy tych zmiennych bo aż oczy bolą :((
+var int Appr_Inited; // 1 - true, 2 - need reinit (called by trigger cuz it need some time delay)
+var c_npc Appr_Stylist;
+var int Appr_HerohasEquipedHunLArmor;
+var int Appr_changesPriceAll;//hair+beard+TATTOO
+var int Appr_changesPriceHair;
+var int Appr_changesPriceBeard;
+var int Appr_changesPriceTattoo;
+var int Appr_heroFace_Current;//for dialogues with stylizers(pay or not[back to old])
+var int Appr_heroFace_Previous;// Ork: Kiedy twarz w monologu była zaakceptowana ale nie mamy kasy na "zakup" wygladu
+											// to korzystamy z tej zmiennej
+var int Appr_Wait4Monolouge; // jeśli true, jakiś trigger (raczej rzadki, bedzie sprawdzał czy hero juz skonczył dialog, jesli tak
+							 // Wywoła: Appr_StartMonolouge()
+var int Appr_stylistInit;
+var c_item Appr_preStylizationArmor;
 // TATTOOS
-var int HERO_TATTOO;
-const int TATTOO_MULTIPILER=1;
-const int TATTOO_NONE = 0;
-const int TATTOO_BROTHERHOOD = 1;
-const int TATTOO_WARRIOR = 2;
-const int TATTOO_LIZARDAGILITY = 3;
-const int TATTOO_RUNE = 4;
+var int APPR_HERO_TATTOO_CURRENT;
+	const int TATTOO_MULTIPILER=1;
+	const int TATTOO_NONE = 0;
+	const int TATTOO_BROTHERHOOD = 1;
+	const int TATTOO_WARRIOR = 2;
+	const int TATTOO_LIZARDAGILITY = 3;
+	const int TATTOO_RUNE = 4;
 // BEARD
-var int HERO_BEARD;
-const int BEARD_MULTIPILER=10;
-const int BEARD_NONE=2;
-const int BEARD_MOUSTACHEANDSTRIPE=3;
-const int BEARD_MOUSTACHEANDBEARD=4;
+var int APPR_HERO_BEARD_CURRENT;
+	const int BEARD_MULTIPILER=10;
+	const int BEARD_NONE=2;
+	const int BEARD_MOUSTACHEANDSTRIPE=3;
+	const int BEARD_MOUSTACHEANDBEARD=4;
 // HAIR
-var int HERO_HAIR;
-const int HAIR_MULTIPILER=100;
-const int HAIR_BALD=1;
-const int HAIR_SHORT=2;
-const int HAIR_NORMAL=3;
-const int HAIR_RED=4;
+var int APPR_HERO_HAIR_CURRENT;
+	const int HAIR_MULTIPILER=100;
+	const int HAIR_BALD=1;
+	const int HAIR_SHORT=2;
+	const int HAIR_NORMAL=3;
+	const int HAIR_RED=4;
 // FACEMESH
-var string HERO_FACEMESH;
-var string HERO_FACEMESH_LAST;
-var string HERO_FACEMESH_LASTAPLIED;
+// ork: [NEW] Przechowywanie tego w postaci stringa to słaby pomysł, bo jak wiadomo
+// takie luźnie zmienne w stringu nie są archiwzowane wiec Save->Load rozpiepsza nasz niecny plan :(
+var int APPR_HERO_FACEMESH_CURRENT;
+var int APPR_HERO_FACEMESH_LAST;
+	const int FACEMESH_FIGHTER = 0; // 0 bo defaultowy mesh Dicka
+	const int FACEMESH_BALD = 1;
+	const int FACEMESH_PONY = 2;	
+	const int FACEMESH_THIEF = 2;	
+// [NEW] Ork: Ok, kazdy stylista będzie miał pewne możliwości co do zmieniania wygladu
+//  bohatera, tak aby każdy nie mógł mu zmienić wszystkiego, odpowiednia partia flag-możliwości
+//  musi być nałozona wraz z rozpoczęciem dialogu z konkretnym stylistom, a zdjęta zostanie
+//  automatycznie przy kończeniu zmian w Appearance_Func.d
+var int Appr_CurrentStylist_Posibilities; // to na podstawie tego będa czytane wszystkie flagi
+	const int Appr_PossibFlags_Tattoo_None	 		 =  1 << 0;
+	const int Appr_PossibFlags_Tattoo_Brotherhood	 =  1 << 1;
+	const int Appr_PossibFlags_Tattoo_Warrior 		 =  1 << 2;
+	const int Appr_PossibFlags_Tattoo_LizardAgi		 =  1 << 3;
+	const int Appr_PossibFlags_Tattoo_Rune			 =  1 << 4;
+	
+	const int Appr_PossibFlags_Beard_None	 		 =  1 << 5;
+	const int Appr_PossibFlags_Beard_Mouthstache	 =  1 << 6;
+	const int Appr_PossibFlags_Beard_MouthstacheBrd  =  1 << 7;
+	
+	const int Appr_PossibFlags_Hair_Bald	 		 =  1 << 8;
+	const int Appr_PossibFlags_Hair_Short			 =  1 << 9;
+	const int Appr_PossibFlags_Hair_Normal			 =  1 << 10;
+	const int Appr_PossibFlags_Hair_Red				 =  1 << 11;
+// Podstawą każdego stylisty powinno być przywrócenie wyglądu bohatera do startowego:
+const int Appr_Posibilities_Base = Appr_PossibFlags_Tattoo_None | Appr_PossibFlags_Beard_MouthstacheBrd | Appr_PossibFlags_Hair_Normal;
+const int Appr_Posibilities_Kasztan = Appr_Posibilities_Base | Appr_PossibFlags_Tattoo_Warrior | Appr_PossibFlags_Beard_None | Appr_PossibFlags_Tattoo_LizardAgi | Appr_PossibFlags_Beard_Mouthstache | Appr_PossibFlags_Beard_MouthstacheBrd | Appr_PossibFlags_Hair_Bald | Appr_PossibFlags_Hair_Short | Appr_PossibFlags_Hair_Normal;
+const int Appr_Posibilities_TypowyCpun = Appr_Posibilities_Base | Appr_PossibFlags_Tattoo_Brotherhood | Appr_PossibFlags_Beard_None | Appr_PossibFlags_Hair_Bald;
 
 var int hero_changes_visual;
+const int STYLIST_1_DIALOG = 21; // ID Monologu (jakoś tak)
 //#############################################
 //Compass Func's
 //#############################################
@@ -182,9 +216,11 @@ var int NewNpcOnList;
 var int BOSSFIGHT_CURRENT;
 const int BOSSFIGHT_NONE = 0;
 const int BOSSFIGHT_FGT1 = 1; // Roderic vs. Truan
-const int BOSSFIGHT_FGT2 = 2;
-const int BOSSFIGHT_FGT3 = 3;
-
+const int BOSSFIGHT_FGT2 = 2; // The Beast
+const int BOSSFIGHT_FGT3 = 3; // New Camp Rebellion
+const int BOSSFIGHT_FGT4 = 4; // Old Camp Battle
+const int BOSSFIGHT_FGT5 = 5; // Final Battle
+const int BOSSFIGHT_LAVAESCAPE = 6; // I'm fighting with lava, yay!
 //#############################################
 //RuneSword Func's
 //#############################################

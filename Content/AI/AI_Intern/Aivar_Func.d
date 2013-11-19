@@ -208,7 +208,10 @@ func int Npc_GetAivar(var C_NPC slf, var int offset)
 	}
 	else
 	{//Passed wrong offset!
+		// Hmm to jest sposob ktorym poradziliscie sobie z blednymi offsetami? :D
+		// mam nadzieje ze nie :P
 		//Print_s_i_s("WARN:Npc_GetAivar, offset: ",offset," is out of range, can't get value.");
+		PrintDebug_s_i_s("WARN:Npc_GetAivar, offset: ",offset," is out of range, can't get value.");
 		return -1; 
 	};
 };

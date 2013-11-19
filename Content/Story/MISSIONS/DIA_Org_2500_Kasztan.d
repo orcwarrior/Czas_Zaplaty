@@ -41,8 +41,11 @@ FUNC int  Org_2500_Kasztan_Stylize_Condition()
 
 FUNC VOID  Org_2500_Kasztan_Stylize_Info()
 {
-	bloops=0;	
-	stylist=hlp_getnpc(Org_2500_Kasztan);
+	PC_Stylist_Dialog_Init();
+	Appr_CurrentStylist_Posibilities = Appr_Posibilities_Base | Appr_Posibilities_Kasztan; 
+	//bloops=0;	// Ork: Jedno z wiekszych gówien jakie pope³ni³em i do tej pory widzia³em :D:D
+	Appr_Stylist=hlp_getnpc(Org_2500_Kasztan);
+	// Ork: Jednak zamierzam to wyci¹æ w pieñ [Senduje EVT_Stylist z
 	Wld_SendTrigger("STYLIST");		
 	B_StopProcessInfos	(self);
 };
@@ -59,7 +62,7 @@ INSTANCE Org_2500_Kasztan_Cash4Style (c_Info)
 
 FUNC INT Org_2500_Kasztan_Cash4Style_Condition()
 {		
-	if(changes_price)
+	if(Appr_changesPriceAll)
 	{		
 		return 1;
 	};
@@ -71,31 +74,33 @@ func VOID Org_2500_Kasztan_Cash4Style_Info()
 
 	Info_ClearChoices	(Org_2500_Kasztan_Cash4Style);
 	Info_AddChoice		(Org_2500_Kasztan_Cash4Style,"Nie zap³acê.",Org_2500_Kasztan_Cash4Style_No);
-	if(NPC_HasItems(hero,itminugget)>=changes_price)
+	// Ork: Bezwarunkowo bedzie lepiej
+	if(NPC_HasItems(hero,itminugget)>=Appr_changesPriceAll)
 	{
-		Info_AddChoice		(Org_2500_Kasztan_Cash4Style,ConcatStrings(ConcatStrings("Trzymaj swoj¹ rudê (",Inttostring(changes_price))," bry³ek rudy)."),Org_2500_Kasztan_Cash4Style_Yes);
+		Info_AddChoice		(Org_2500_Kasztan_Cash4Style,ConcatStrings(ConcatStrings("Trzymaj swoj¹ rudê (",Inttostring(Appr_changesPriceAll))," bry³ek rudy)."),Org_2500_Kasztan_Cash4Style_Yes);
 	};
+	TA_EndOverlay(self);	//Ork: Musi byæ!!! U ka¿dego stylisty!
 };
 func VOID Org_2500_Kasztan_Cash4Style_No()
 {
 	AI_Output (other, self,"Org_2500_Kasztan_Cash4Style_NO_11_00"); //Nie zap³acê.
 	
-	HERO_TATTOO=hero_last_aplied_face%10;
-	HERO_BEARD=((hero_last_aplied_face%100)-HERO_TATTOO)/10;
-	HERO_HAIR=(hero_last_aplied_face-((HERO_BEARD*10)+HERO_TATTOO))/100;	
-	hero_last_face=hero_last_aplied_face;
-	//p/rint(inttostring(HERO_TATTOO+HERO_BEARD+HERO_HAIR));
-	Mdl_SetHeroAppearance();	
+	APPR_HERO_TATTOO_CURRENT=Appr_heroFace_Current%10;
+	APPR_HERO_BEARD_CURRENT=((Appr_heroFace_Current%100)-APPR_HERO_TATTOO_CURRENT)/10;
+	APPR_HERO_HAIR_CURRENT=(Appr_heroFace_Current-((APPR_HERO_BEARD_CURRENT*10)+APPR_HERO_TATTOO_CURRENT))/100;	
+	//Ork: To jest chyba niepotrzebne :? ( po zmianie metody z Set* na Recover* Appearance
+	//hero_last_face = Appr_heroFace_Current;
+	Appr_RecoverHeroAppearance();	
 	Info_ClearChoices	(Org_2500_Kasztan_Cash4Style);
-	changes_price=0;
+	Appr_changesPriceAll=0;
 };
 func VOID Org_2500_Kasztan_Cash4Style_Yes()
 {
 	AI_Output (other, self,"Org_2500_Kasztan_Cash4Style_Yes_11_00"); //Trzymaj swoj¹ rudê.
 
-	B_GiveInvItems(hero,self,ITMINUGGET,changes_price);
+	B_GiveInvItems(hero,self,ITMINUGGET,Appr_changesPriceAll);
 	Info_ClearChoices	(Org_2500_Kasztan_Cash4Style);
-	changes_price=0;
+	Appr_changesPriceAll=0;
    hero_changes_visual = true;
 };
 // **************************************************

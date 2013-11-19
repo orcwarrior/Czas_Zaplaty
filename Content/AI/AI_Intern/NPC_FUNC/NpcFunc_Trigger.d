@@ -42,7 +42,7 @@ func void EVT_POISON()
 	PupilBugfix2Handle();
 	printdebug("PoisonTrigger>>B_Sprinter"); 
 
-   B_Sprinter();	
+	B_Sprinter();	
 
 	printdebug("PoisonTrigger>>Trade_UpdateMul"); 				
 	Trade_UpdateMul();
@@ -83,19 +83,25 @@ func void EVT_POISON()
 	
 	printdebug("PoisonTrigger<<ObserveConsole");
 	ObserveConsole();
-   printdebug("PoisonTrigger<<MirrorDamage");
+	printdebug("PoisonTrigger<<MirrorDamage");
 	mirror_damage();	
-   printdebug("PoisonTrigger<<Icearmor_minus");
+	printdebug("PoisonTrigger<<Icearmor_minus");
 	icearmor_minus();
-   printdebug("PoisonTrigger<<Magicshield_minus");
+	printdebug("PoisonTrigger<<Magicshield_minus");
 	magicshield_minus();
-   printdebug("PoisonTrigger<<Curse_damage");
+	printdebug("PoisonTrigger<<Curse_damage");
 	Curse_damage();
-   printdebug("PoisonTrigger<<poison_damage");
+	printdebug("PoisonTrigger<<poison_damage");
 	poison_damage();
-   printdebug("PoisonTrigger<<party_check");
+	printdebug("PoisonTrigger<<party_check");
 	party_check();	
 	B_SetTimedATT_minus_rec(max_bonuses);	
+	
+	
+	// Ork: Pozwole sobie stąd jednorazowo ogarnac appearence func które wymaga opóznionego
+	// ponownego ustawienia tekstury twarzy bohatera:
+	if(Appr_Inited == 2)
+	{ Appr_RefreshHeroAppearance(); Appr_Inited = 1; PRINT("REINIT APPEAR");};
 	
 	Wld_SendTrigger("POISON_TRIGGER");
 };

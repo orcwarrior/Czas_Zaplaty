@@ -13,7 +13,7 @@ FUNC VOID B_PRINTDEBUG(VAR STRING MSG)
 {
 	IF(DEBUGPRINTS)
 	{
-      PRINT(MSG);
+		PRINT(MSG);
 	};
 };
 
@@ -28,16 +28,16 @@ FUNC VOID B_PRINTDEBUG(VAR STRING MSG)
 Func int Hlp_GetDistBetweenTrafoPoints2D(var int x1, var int y1, var int x2, var int y2)
 {//Trafo
 	var int x;  var int z; var int dist;
- 	x1 = x1 - x2;
- 	
-   if(x1<0){x1=x1*(-1);};
- 				
-   y1 = y1 - y2;
- 				
-   if(y1<0){y1=y1*(-1);};		
- 	x1 = x1+y1; /*Return in cm's*/ x1 = x1/1000; x1 = (x1) - (x1%1);	
-				
- 	return x1;			
+	x1 = x1 - x2;
+	
+	if(x1<0){x1=x1*(-1);};
+	
+	y1 = y1 - y2;
+	
+	if(y1<0){y1=y1*(-1);};		
+	x1 = x1+y1; /*Return in cm's*/ x1 = x1/1000; x1 = (x1) - (x1%1);	
+	
+	return x1;			
 };
 
 /*************************************************************************
@@ -92,9 +92,9 @@ FUNC VOID B_HEROEQUIPItem(VAR INT ITM)
 	I=NPC_HASItemS(HERO,ID);
 	ITMMAST=HLP_GETNPC(MOD_ItemMASTER);
 	
-   IF(I==0)
+	IF(I==0)
 	{
-      RETURN;
+		RETURN;
 	};
 	IF(Item.MAINFLAG==Item_KAT_FF)
 	{
@@ -110,7 +110,7 @@ FUNC VOID B_HEROEQUIPItem(VAR INT ITM)
 	B_TransferCategory(HERO,1,ITMMAST);
 	CREATEInvItem(HERO,ID);
 	
-   IF(WEAPONTYPE==0)
+	IF(WEAPONTYPE==0)
 	{
 		AI_EQUIPBESTRANGEDWEAPON(HERO);
 	}
@@ -118,7 +118,7 @@ FUNC VOID B_HEROEQUIPItem(VAR INT ITM)
 	{
 		AI_EQUIPBESTMELEEWEAPON(HERO);
 	};
-   
+
 	GIVEBACKWEAPONS=TRUE;
 	WLD_SENDTRIGGER("DUALTRIGGER2");
 };
@@ -454,9 +454,9 @@ FUNC VOID B_SMARTTURNTONPC(VAR C_NPC SLF,VAR C_NPC OTH)
 	////PrintDebugNpc(PD_ZS_DETAIL,"B_SmartTurnToNpc");
 
 	IF(!(C_BODYSTATECONTAINS(SLF,BS_SIT)
-				||		C_BODYSTATECONTAINS(SLF,BS_ItemINTERACT)
-				||		C_BODYSTATECONTAINS(SLF,BS_MOBINTERACT)
-				||		C_BODYSTATECONTAINS(SLF,BS_MOBINTERACT_INTERRUPT)))
+	||		C_BODYSTATECONTAINS(SLF,BS_ItemINTERACT)
+	||		C_BODYSTATECONTAINS(SLF,BS_MOBINTERACT)
+	||		C_BODYSTATECONTAINS(SLF,BS_MOBINTERACT_INTERRUPT)))
 	{
 		////PrintDebugNpc(PD_ZS_DETAIL,"...sitzt nicht und ist nicht am Mobsi");
 		IF(!NPC_CANSEENPC(SLF,OTH))
@@ -687,11 +687,11 @@ FUNC VOID B_RegainDroppedWeapon(VAR C_NPC SLF)
 	{
 		if(NPC_GetTalentSkill(SLF,NPC_TALENT_2H)>NPC_GetTalentSkill(SLF,NPC_TALENT_1H))
 		{
-			 CreateInvItem(slf,DEF_MW_2H);
+			CreateInvItem(slf,DEF_MW_2H);
 		}
 		else
 		{
-			 CreateInvItem(slf,DEF_MW_1H);		
+			CreateInvItem(slf,DEF_MW_1H);		
 		};   
 	};  
 	AI_EQUIPBESTMELEEWEAPON(SLF);
@@ -841,7 +841,7 @@ FUNC VOID B_USEFAKESCROLL(VAR C_NPC SLF)
 		AI_STANDUP(SLF);
 		AI_TURNTONPC(SLF,HERO);
 	};
-   
+
 	CREATEInvItem(SLF,FAKESCROLL);//Fire Letter after use dispear!
 	AI_USEItemTOSTATE(SLF,FAKESCROLL,1);
 	B_PRINTDEBUG("useit");
@@ -882,13 +882,13 @@ FUNC VOID B_EXCHANGEROUTINE(VAR INT NPCINSTANCE,VAR STRING NEWROUTINE)
 
 	VAR C_NPC	NPC;
 	NPC=HLP_GETNPC(NPCINSTANCE);
-   
+
 	IF(C_BODYSTATECONTAINS(NPC,BS_SIT))
 	{
 		NPC_ClearAIQUEUE(NPC);
 		AI_STANDUP(NPC);
 	};
-   
+
 	NPC_EXCHANGEROUTINE(NPC,NEWROUTINE);
 	AI_CONTINUEROUTINE(NPC);
 };
@@ -939,13 +939,13 @@ FUNC VOID B_LOGSETTOPICSTATUS(VAR STRING TOPIC,VAR INT STATUS)
 
 	IF(STATUS==LOG_SUCCESS)
 	{
-      PutMsg(concatstrings("Wykonano zadanie: ",TOPIC),"font_default.tga",RGBAToZColor(100,255,100,255),_TIME_MESSAGE_LOGENTRY,"");
-//Snd_Play 		("MisSuccess");
+		PutMsg(concatstrings("Wykonano zadanie: ",TOPIC),"font_default.tga",RGBAToZColor(100,255,100,255),_TIME_MESSAGE_LOGENTRY,"");
+		//Snd_Play 		("MisSuccess");
 	}
 	ELSE IF(STATUS==LOG_FAILED)
 	{
-//Snd_Play 		("MisFail");
-      PutMsg(concatstrings("Popsute zadanie: ",TOPIC),"font_default.tga",RGBAToZColor(255,100,100,255),_TIME_MESSAGE_LOGENTRY,"");
+		//Snd_Play 		("MisFail");
+		PutMsg(concatstrings("Popsute zadanie: ",TOPIC),"font_default.tga",RGBAToZColor(255,100,100,255),_TIME_MESSAGE_LOGENTRY,"");
 	};
 };
 
@@ -1005,7 +1005,7 @@ FUNC VOID B_GIVEInvItems(VAR C_NPC GIVER,VAR C_NPC TAKER,VAR INT ItemINSTANCE,VA
 		}
 		ELSE
 		{
-         MSG=CONCATSTRINGS("Odda³eœ: ",Item.DESCRIPTION);
+			MSG=CONCATSTRINGS("Odda³eœ: ",Item.DESCRIPTION);
 
 			IF (AMOUNT > 1)
 			{
@@ -1014,8 +1014,8 @@ FUNC VOID B_GIVEInvItems(VAR C_NPC GIVER,VAR C_NPC TAKER,VAR INT ItemINSTANCE,VA
 				MSG=CONCATSTRINGS(MSG,")");
 			};
 		};
-      
-      PutMsg(MSG,"font_default.tga",RGBAToZColor(255,160,100,255),_TIME_MESSAGE_GIVEN,"");
+		
+		PutMsg(MSG,"font_default.tga",RGBAToZColor(255,160,100,255),_TIME_MESSAGE_GIVEN,"");
 	}
 	ELSE IF NPC_ISPLAYER(TAKER)
 	{
@@ -1026,8 +1026,8 @@ FUNC VOID B_GIVEInvItems(VAR C_NPC GIVER,VAR C_NPC TAKER,VAR INT ItemINSTANCE,VA
 		}
 		ELSE
 		{
-         MSG=CONCATSTRINGS("Otrzyma³eœ: ",Item.DESCRIPTION);
-            
+			MSG=CONCATSTRINGS("Otrzyma³eœ: ",Item.DESCRIPTION);
+			
 			IF (AMOUNT==1)
 			{
 				PutMsg(MSG,"font_default.tga",RGBAToZColor(255,230,100,255),_TIME_MESSAGE_TAKEN,"");
@@ -1321,270 +1321,6 @@ FUNC VOID B_PERCGETWEAPON()
 {
 	B_GETWEAPON(SELF,10);
 };
-///////////////////////////////////////////////////////////////////////////////
-//SAY DELAY
-//////////////////////////////////////////////////////////////////////////////
-VAR C_NPC HI_VICTIM;
-
-FUNC VOID B_DELAYSAYTIMER()
-{
-	//if (!C_NpcIsDown(hero)&&!C_NpcIsDown(other))
-	//{
-	IF(IS_3_ON==TRUE)&&(!C_NPCISDOWN(HERO))
-	{
-		NPC_ClearAIQUEUE(HERO);
-      
-		IF(C_BODYSTATECONTAINS(HERO,BS_SIT))
-		{
-			AI_LOOKATNPC(HERO,OTHER);
-		}
-		ELSE
-		{
-			B_SMARTTURNTONPC(HERO,OTHER);
-			AI_OUTPUTSVM(HERO,NULL,SAYSTRING3);
-			IS_1_ON=FALSE;//bool
-		};
-	}
-	ELSE IF(IS_2_ON==TRUE)&&(!C_NPCISDOWN(HERO))
-	{
-		NPC_ClearAIQUEUE(HERO);
-		IF(C_BODYSTATECONTAINS(HERO,BS_SIT))
-		{
-			AI_LOOKATNPC(HERO,OTHER);
-		}
-		ELSE
-		{
-			B_SMARTTURNTONPC(HERO,OTHER);
-			AI_OUTPUTSVM(HERO,NULL,SAYSTRING2);
-			IS_2_ON=FALSE;//bool
-		};
-	}
-	ELSE IF(IS_1_ON==TRUE)&&(!C_NPCISDOWN(HERO))
-	{
-		NPC_ClearAIQUEUE(HERO);
-		IF(C_BODYSTATECONTAINS(HERO,BS_SIT))
-		{
-			AI_LOOKATNPC(HERO,OTHER);
-		}
-		ELSE
-		{
-			B_SMARTTURNTONPC(HERO,OTHER);
-			AI_OUTPUTSVM(HERO,NULL,SAYSTRING1);
-			IS_3_ON=FALSE;//bool
-		};
-	}
-	ELSE
-	{
-		DELAYSAYTIMERACTIVED=FALSE;
-	};
-};
-
-FUNC VOID B_SAYWITHDELAYINIT(VAR C_NPC WHOSAY/*not using*/,VAR STRING WHAT,VAR INT DELAY)//UseTimeTrigger
-{
-	IF(IS_1_ON !=TRUE)
-	{
-		//PrintScreen		("Is_1_On = TRUE", -1,20,"font_old_10_white.tga",1);
-		SAYDELAY1=DELAY;
-		SAYSTRING1=WHAT;
-		//PrintScreen		(concatstrings("SayString1= ",SayString1), 20,60,"font_old_10_white.tga",2);
-
-		IS_1_ON=TRUE;//bool
-	}
-	ELSE IF(IS_1_ON==TRUE)
-	{
-		SAYDELAY2=DELAY;
-		SAYSTRING2=WHAT;
-		IS_2_ON=TRUE;//bool
-	}
-	ELSE IF(IS_2_ON==TRUE)
-	{
-		SAYDELAY3=DELAY;
-		SAYSTRING3=WHAT;
-		IS_3_ON=TRUE;//bool
-	};
-	WLD_SENDTRIGGER("SEC2DELAYER");
-};
-///////////////////////////////////////////////////////////////////////////////
-///                  CHECK HELLO
-//  ======================
-//NPC Target Saying "Hello" everday to hero
-//////////using with TriGGEr Script and Event
-//////////////////////////////////////////////////////////////////////////////
-FUNC VOID B_CHECKHELLO(VAR C_NPC TRGTNPC)
-{
-	IF(WLD_GETDAY()<3)
-	{
-      RETURN;
-	};
-	VAR INT HELLOSAYIZER;//I'm a King in random name'ing :P
-	VAR INT SAYVARIANTIZER;//Like up :D
-	HELLOSAYIZER=HLP_RANDOM(2);
-	SAYVARIANTIZER=HLP_RANDOM(3);
-	VAR INT HELLO_OTHSAYIZER;
-	HELLO_OTHSAYIZER=HLP_RANDOM(50);
-
-	VAR INT OTHTRGT;
-	OTHTRGT=NPC_GETTARGET(TRGTNPC);
-
-	VAR C_NPC OTHTRGTNPC;
-	OTHTRGTNPC=HLP_GETNPC(OTHTRGT);
-
-	VAR INT REACTTOPLAYER;
-	REACTTOPLAYER=NPC_GETPERMATTITUDE(TRGTNPC,HERO);
-	IF(HELLOSAYINGSTATE !=0)
-	{
-		IF(SOMEONEATTACKHERO==FALSE)
-		{
-			////PrintDebugNpc(PD_ZS_DETAIL,"CHECK HELLO");
-			IF(HLP_ISVALIDNPC(TRGTNPC))
-			{
-				IF((C_NPCISHUMAN(TRGTNPC))&&(!C_NPCISDOWN(TRGTNPC)&&(!NPC_ISINSTATE(TRGTNPC,ZS_TALK))))//Not Unconcious and Dead
-				{
-					//PrintScreen           (trgtNPC.name,30,40,"FONT_OLD_10_WHITE.TGA",2);
-					//PrintScreen           ("react to hero: ",10,40,"FONT_OLD_10_WHITE.TGA",2);
-					//PrintScreen           (IntToString(Npc_GetPermAttitude(trgtNPC,hero)),10,90,"FONT_OLD_10_WHITE.TGA",2);
-
-					IF(HELLOSAYIZER==1)
-					{
-
-						IF((NPC_CANSEENPC(TRGTNPC,HERO))&&(NPC_GETDISTTONPC(TRGTNPC,HERO)< 380))
-						{
-							//PrintScreen           ("dist to player < 250",50,40,"FONT_OLD_10_WHITE.TGA",2);
-							IF(Npc_GetAivar(TRGTNPC,AIV_HELLOSAYED) < DAY)
-							{
-								Npc_SetAivar(TRGTNPC,AIV_HELLOSAYED,DAY);
-								IF(C_BODYSTATECONTAINS(TRGTNPC,BS_SIT))
-								{
-									AI_LOOKATNPC(TRGTNPC,HERO);
-								}
-								ELSE
-								{
-									NPC_ClearAIQUEUE(TRGTNPC);
-									B_SMARTTURNTONPC(TRGTNPC,HERO);
-									//PrintScreen           ("start saying",50,40,"FONT_OLD_10_WHITE.TGA",2);
-									IF(C_BODYSTATECONTAINS(TRGTNPC,BS_ItemINTERACT)||C_BODYSTATECONTAINS(TRGTNPC,BS_MOBINTERACT)||C_BODYSTATECONTAINS(TRGTNPC,BS_MOBINTERACT_INTERRUPT))
-									{
-										NPC_ClearAIQUEUE(TRGTNPC);
-										B_STANDUP(TRGTNPC);
-										NPC_ClearAIQUEUE(TRGTNPC);
-									};
-
-									IF(REACTTOPLAYER==ATT_NEUTRAL)
-									{
-										AI_OUTPUTSVM(TRGTNPC,NULL,"$WhatDoYouWant");
-										IF(Npc_GetAivar(TRGTNPC,AIV_WASDEFEATEDBYSC)==TRUE)
-										{
-											IF(SAYVARIANTIZER==1)
-											{
-												B_SAYWITHDELAYINIT(HERO,"$YouWannaFoolMe",5);
-											}
-											ELSE IF(SAYVARIANTIZER==2)
-											{
-												B_SAYWITHDELAYINIT(HERO,"$YouStillNotHaveEnough",5);
-											}
-											ELSE IF(SAYVARIANTIZER==3)
-											{
-												B_SAYWITHDELAYINIT(HERO,"$LookingForTroubleAgain",5);
-											};
-										}
-										ELSE IF(Npc_GetAivar(TRGTNPC,AIV_HASDEFEATEDSC)==TRUE)
-										{
-											IF(SAYVARIANTIZER==1)
-											{
-												B_SAYWITHDELAYINIT(HERO,"$YouDefeatedMeWell",5);
-											}
-											ELSE IF(SAYVARIANTIZER==2)
-											{
-												B_SAYWITHDELAYINIT(HERO,"$LetsForgetOurLittleFight",5);
-											}
-											ELSE IF(SAYVARIANTIZER==3)
-											{
-												B_SAYWITHDELAYINIT(HERO,"$YesYes",5);
-											};
-										};
-									}
-									ELSE IF(REACTTOPLAYER==ATT_ANGRY)
-									{
-										AI_OUTPUTSVM(TRGTNPC,NULL,"$GetOutOfHere");
-										IF(Npc_GetAivar(TRGTNPC,AIV_WASDEFEATEDBYSC)==TRUE)
-										{
-											IF(SAYVARIANTIZER==1)
-											{
-												B_SAYWITHDELAYINIT(HERO,"$YouWannaFoolMe",2);
-											}
-											ELSE IF(SAYVARIANTIZER==2)
-											{
-												B_SAYWITHDELAYINIT(HERO,"$YouStillNotHaveEnough",2);
-											}
-											ELSE IF(SAYVARIANTIZER==3)
-											{
-												B_SAYWITHDELAYINIT(HERO,"$LookingForTroubleAgain",2);
-											};
-										}
-										ELSE IF(Npc_GetAivar(TRGTNPC,AIV_HASDEFEATEDSC)==TRUE)
-										{
-											IF(SAYVARIANTIZER==1)
-											{
-												B_SAYWITHDELAYINIT(HERO,"$YouDefeatedMeWell",2);
-											}
-											ELSE IF(SAYVARIANTIZER==2)
-											{
-												B_SAYWITHDELAYINIT(HERO,"$LetsForgetOurLittleFight",2);
-											}
-											ELSE IF(SAYVARIANTIZER==3)
-											{
-												B_SAYWITHDELAYINIT(HERO,"$YesYes",2);
-											};
-										};
-									}
-									ELSE IF(REACTTOPLAYER==ATT_FRIENDLY)
-									{
-										B_STANDUP(TRGTNPC);
-										NPC_ClearAIQUEUE(TRGTNPC);
-										AI_OUTPUTSVM(TRGTNPC,NULL,"$FriendlyGreetings");
-										B_SAYWITHDELAYINIT(HERO,"$FriendlyGreetings",5);
-									}
-									ELSE IF(REACTTOPLAYER==ATT_HOSTILE)
-									{
-										AI_OUTPUTSVM(TRGTNPC,NULL,"$DieMortalEnemy");
-										AI_OUTPUTSVM(TRGTNPC,NULL,"$NowWait");
-										IF(NPC_HASREADIEDMELEEWEAPON(TRGTNPC))
-										{
-											B_SAYWITHDELAYINIT(HERO,"$WeaponDown",2);
-										}
-										ELSE IF(NPC_HASREADIEDRANGEDWEAPON(TRGTNPC))
-										{
-											IF(NPC_GETTARGET(TRGTNPC)==HLP_GETINSTANCEID(HERO))
-											{
-												B_SAYWITHDELAYINIT(HERO,"$WatchYourAim",2);
-											};
-										};
-										IF(SAYVARIANTIZER==1)
-										{
-											B_SAYWITHDELAYINIT(HERO,"$NowWaitIntruder",2);
-										}
-										ELSE IF(SAYVARIANTIZER==2)
-										{
-											B_SAYWITHDELAYINIT(HERO,"$NowWait",2);
-										}
-										ELSE IF(SAYVARIANTIZER==3)
-										{
-											B_SAYWITHDELAYINIT(HERO,"$DieMonster",2);
-										};
-
-										NPC_SETTARGET(TRGTNPC,HERO);
-										AI_STARTSTATE(TRGTNPC,ZS_ATTACK,1,"");
-									};//ATT_HOSTILE
-								};//BS
-							};//Hellosayed
-						};//(Npc_GetDistToNpc(hero,trgtNPC) < 250)
-					};//HelloSayizer == 1
-				};//C_NPCISHUMAN
-			};//IsVaildNPC
-		};
-	};
-	WLD_SENDTRIGGER("HELLOTRRIGER");//STUPID MISTAKE :D ("RR")
-};
 
 FUNC STRING B_SECONDSTOFULLTIME(VAR INT A)
 {
@@ -1703,14 +1439,14 @@ FUNC VOID RTN_GLOBAL_InvISIBLE()
 FUNC VOID B_NPCREMOVEFROMWORLD(VAR C_NPC SLF)
 {
 	SLF.ATTRIBUTE[ATR_HITPOINTS]-=SLF.ATTRIBUTE[ATR_HITPOINTS_MAX];//kill
-//B_ClearInventory(slf);//remove Inv (MIS)- so npc can dispears
-//if(Npc_GetDistToPlayer(self)<4110)
-//{
-//Npc_ClearAIQueue(slf);
-//AI_Teleport(slf,"InvISIBLE");//Hided WP - add on every world
-//B_NpcDisablePerc(slf);//To be sure - disable any perceptions(attack near wp npcs etc.
-//
-//};
+	//B_ClearInventory(slf);//remove Inv (MIS)- so npc can dispears
+	//if(Npc_GetDistToPlayer(self)<4110)
+	//{
+	//Npc_ClearAIQueue(slf);
+	//AI_Teleport(slf,"InvISIBLE");//Hided WP - add on every world
+	//B_NpcDisablePerc(slf);//To be sure - disable any perceptions(attack near wp npcs etc.
+	//
+	//};
 	NPC_EXCHANGEROUTINE(SLF,"DEAD");//ExchangeRoutine
 	SLF.DAILY_ROUTINE=RTN_GLOBAL_InvISIBLE;//ExchangeRoutine
 
@@ -1755,12 +1491,12 @@ FUNC VOID TURNTOGHOST(VAR INT ID,VAR INT VISIBILITY)
 {
 	VAR ZCVOB VOB;VOB=HLP_GETNPC(ID);
 
-   VOB.VOB_BITFIELD[0]=VOB.VOB_BITFIELD[0] & ~ZCVOB_BITFIELD0_CASTDYNSHADOW;
-   VOB.VOB_BITFIELD[0]=VOB.VOB_BITFIELD[0] & ~ZCVOB_BITFIELD0_COLLDETECTIONDYNAMIC;
-   VOB.VOB_BITFIELD[0]=VOB.VOB_BITFIELD[0] |(1<<2);
-   //Bugfix, no longer needed, it comes with knowledge ;)
+	VOB.VOB_BITFIELD[0]=VOB.VOB_BITFIELD[0] & ~ZCVOB_BITFIELD0_CASTDYNSHADOW;
+	VOB.VOB_BITFIELD[0]=VOB.VOB_BITFIELD[0] & ~ZCVOB_BITFIELD0_COLLDETECTIONDYNAMIC;
+	VOB.VOB_BITFIELD[0]=VOB.VOB_BITFIELD[0] |(1<<2);
+	//Bugfix, no longer needed, it comes with knowledge ;)
 
-   VOB.VISUALALPHA=fracf(VISIBILITY*5,100);
+	VOB.VISUALALPHA=fracf(VISIBILITY*5,100);
 };
 
 func int B_HasReadiedRangedWeaponWithAmmo(var c_npc slf)
@@ -1794,18 +1530,18 @@ func void B_DoDialogFight()
 	
 	Npc_SetTarget(slf,oth); 
 	AI_StartState(slf,ZS_ATTACK,1,"");
-   
+
 	if(AfterDialogFight_Kill)
 	{
 		B_SetAttackReason(slf,AIV_AR_NONE);
 		Npc_SetPermAttitude	(slf, ATT_HOSTILE);	
 	}
 	else
-   {
-      B_SetAttackReason(slf,AIV_AR_PERSONALAFFAIRS);
-      Npc_SendPassivePerc	(slf, PERC_ASSESSFIGHTSOUND,	oth, slf);
-   };
-   
+	{
+		B_SetAttackReason(slf,AIV_AR_PERSONALAFFAIRS);
+		Npc_SendPassivePerc	(slf, PERC_ASSESSFIGHTSOUND,	oth, slf);
+	};
+
 	//reset defeats aivars;
 	Npc_SetAivar(slf,AIV_WASDEFEATEDBYSC,	 false);
 	Npc_SetAivar(slf,AIV_HASDEFEATEDSC, 	 false);
@@ -1821,19 +1557,19 @@ func void B_DoDialogFight()
 func int Npc_HasHPPotions(var c_npc slf)
 {
 	return 	Npc_HasItems(slf,ItFo_Potion_Health_01)*hp_Essenz  +
-		    Npc_HasItems(slf,ItFo_Potion_Health_02)*hp_Extrakt +
-		    Npc_HasItems(slf,ItFo_Potion_Health_03)*hp_Elixier +
-		    Npc_HasItems(slf,ItFo_Potion_Health_04)*slf.attribute[ATR_HITPOINTS_MAX];
-		
+	Npc_HasItems(slf,ItFo_Potion_Health_02)*hp_Extrakt +
+	Npc_HasItems(slf,ItFo_Potion_Health_03)*hp_Elixier +
+	Npc_HasItems(slf,ItFo_Potion_Health_04)*slf.attribute[ATR_HITPOINTS_MAX];
+	
 };
 //return number of mana points that can be restored
 func int Npc_HasManaPotions(var c_npc slf)
 {
 	return 	Npc_HasItems(slf,ItFo_Potion_Mana_01)*Mana_Essenz  +
-		    Npc_HasItems(slf,ItFo_Potion_Mana_02)*Mana_Extrakt +
-		    Npc_HasItems(slf,ItFo_Potion_Mana_03)*Mana_Elixier +
-		    Npc_HasItems(slf,ItFo_Potion_Mana_04)*slf.attribute[ATR_MANA_MAX];
-		
+	Npc_HasItems(slf,ItFo_Potion_Mana_02)*Mana_Extrakt +
+	Npc_HasItems(slf,ItFo_Potion_Mana_03)*Mana_Elixier +
+	Npc_HasItems(slf,ItFo_Potion_Mana_04)*slf.attribute[ATR_MANA_MAX];
+	
 };
 
 // Remove mob items when npc was taken down

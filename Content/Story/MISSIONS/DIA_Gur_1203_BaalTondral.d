@@ -203,8 +203,8 @@ FUNC VOID DIA_BaalTondral_Swamp_Info()
 	AI_Output (self, other,"DIA_BaalTondral_Swamp_13_00"); //Pamiêtajcie, po co tu przybyliœmy. Musimy zg³adziæ z³o i przynieœæ ukojenie naszym braciom.
 	AI_Output (other, self, "DIA_BaalTondral_Swamp_15_01"); //We œnie widzia³em jak¹œ truciznê.
 	AI_Output (self, other,"DIA_BaalTondral_Swamp_13_02"); //Tak, to by³a ta butelka.
-   CreateInvItems (self, ItFobeer, 1);
-	AI_UseItem (self, ItFobeer);
+   CreateInvItems (self, ItFo_Potion_Edg_3_temp, 1); // ork: XD
+	AI_UseItem (self, ItFo_Potion_Edg_3_temp);
 	AI_Output (other, self, "DIA_BaalTondral_Swamp_15_03"); //Co robisz?! Przecie¿ to trucizna!
 	AI_Output (self, other,"DIA_BaalTondral_Swamp_13_04"); //Œmiertelna dla Bestii, ale dla cz³owieka to tylko odroczony wyrok œmierci. Prze¿yjê wystarczaj¹co d³ugo, aby rzuciæ siê na potwora.
 	AI_Output (self, other,"DIA_BaalTondral_Swamp_13_05"); //Kiedy wypije moj¹ krew zginie. Chocia¿ tyle mogê zrobiæ dla moich braci...
@@ -232,10 +232,8 @@ INSTANCE DIA_BaalTondral_End (C_INFO)
 FUNC INT DIA_BaalTondral_End_Condition()
 {
 	/***************
-
-Na placu przed wejœciem do œwiatymi bo tam jest bestia tak?
-
-******************************/
+	  Na placu przed wejœciem do œwiatymi bo tam jest bestia tak?
+	******************************/
 	if (Npc_GetDistToWP (self, "PSI_TEMPLE_COURT_GURU") < 1000 )&&(Npc_KnowsInfo(hero,DIA_Lester_Comment))
 	{
 		return 1;
@@ -261,4 +259,5 @@ FUNC VOID DIA_BaalTondral_End_Info()
    Ball pêdzie w stronê œwi¹tyni, ale na drodze nagle pojawi siê jakiœ super z¹biak i go œlicznie poszatkuje xD
 
    ****************************/
+   BOSSFIGHT_CURRENT = BOSSFIGHT_FGT2;
 };

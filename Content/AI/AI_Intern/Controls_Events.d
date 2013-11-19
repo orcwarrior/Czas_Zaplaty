@@ -29,7 +29,7 @@ func void KeyEvent_RuneSwd()
 					rune_instance = STR_SubStr (rune_instance,8,24);
 					if(MEM_ReadInt(rune+568)/*range*/==NO_RuneSword)
 					{ //Means cant be used in RuneSword
-							PutMsg("Runa nie pasuje!","font_default.tga",RGBAToZColor(255,50,50,255),8*1,"");			
+						PutMsg("Runa nie pasuje!","font_default.tga",RGBAToZColor(255,50,50,255),8*1,"");			
 					}
 					else
 					{
@@ -48,6 +48,8 @@ func void KeyEvent_PreviousAmunition()
 	{
 		if(MEM_KeyState(Key_PrevA)==KEY_PRESSED)
 		{
+			print("Previous Amunition");
+	
 			//TODO: Idea color of font means type of amunition
 			PutMsg("Poprzednia amunicja","font_default.tga",RGBAToZColor(255,255,255,255),4,"");
 			rw = Npc_GetReadiedWeapon(hero);
@@ -80,6 +82,8 @@ func void KeyEvent_NextAmunition()
 	{
 		if(MEM_KeyState(Key_NextA)==KEY_PRESSED)
 		{
+			print("Next Amunition");
+	
 			PutMsg("Nastepna amunicja","font_default.tga",RGBAToZColor(255,255,255,255),4,"");
 			rw = Npc_GetReadiedWeapon(hero);
 			if(rw.makingmob==1)//bow
@@ -113,17 +117,17 @@ func void KeyEvent_AmunitionBugFix()
 	{//Hero Is Removing RangedWeapon
 		if(!Npc_HasReadiedRangedWeapon(hero))
 		{  //time to ready it again!
-			 rw = Npc_GetEquippedRangedWeapon(hero);		
-			 if(rw.makingmob==1)//bow
-			 {		
+			rw = Npc_GetEquippedRangedWeapon(hero);		
+			if(rw.makingmob==1)//bow
+			{		
 				A_SetMunition(rw,A_munition,TRUE);	
-			 }		
-			 else//cbow
-			 {		
+			}		
+			else//cbow
+			{		
 				A_SetMunition(rw,B_munition,TRUE);	
-			 };
-			 AI_ReadyRangedWeapon(hero);					
-			 KeyAmunitionChange=0;
+			};
+			AI_ReadyRangedWeapon(hero);					
+			KeyAmunitionChange=0;
 		};	
 	};
 };
@@ -199,7 +203,7 @@ func void KeyEvent_LameHP()
 		if(hp==hero.attribute[ATR_HITPOINTS])
 		{return;};
 		
-		//Mana updated: Print Msg
+		//HP updated: Print Msg
 		var string msg;
 		msg = ConcatStrings("P¯: ",inttostring(hero.attribute[ATR_HITPOINTS]));
 		msg = ConcatStrings(msg,"/");
@@ -242,8 +246,8 @@ func void KeyEvenT_LAMEMP()
 			Npc_RemoveInvItem(hero,ItFo_Potion_Mana_03);	
 			Npc_ChangeAttribute			(hero,ATR_MANA,mana_Elixier); 
 		}
-		else if(mp-100<=0)&&(Npc_HasItems(hero,ItFo_Potion_Mana_04))//Very Low mp, drink full it's rational
-		{
+		else if(mp-50<=0)&&(Npc_HasItems(hero,ItFo_Potion_Mana_04))//Very Low mp, drink full it's rational
+		{ //ork: fine tunning taki :)
 			AI_PlayAni(hero,"T_LAMEMP");
 			Npc_RemoveInvItem(hero,ItFo_Potion_Mana_04);	
 			Npc_ChangeAttribute			(hero,ATR_MANA,mpmax-mp); 
@@ -293,7 +297,7 @@ func void KeyEvenT_LAMEMP()
 
 
 
-
+// TODO: To chyba w sumie nie jest wcale zaimplementowane, có¿ :D -ork
 func void KeyEvent_PartyCommands()
 {
 	if(MEM_KeyState(key_PFollow)==KEY_PRESSED)
@@ -346,150 +350,147 @@ func void KeyEvent_PartyCommands()
 instance herofocus(C_NPC);
 func void KeyEvent_EquipmentTakeAll()
 {
-   printdebug("KeyEvent_EquipmentTakeAll pocz¹tek funkcji");
-//	print(inttostring(LCtrl_Doubleclick));
+	printdebug("KeyEvent_EquipmentTakeAll pocz¹tek funkcji");
+	//	print(inttostring(LCtrl_Doubleclick));
 	if(MEM_KeyState(KEY_LCONTROL)==KEY_RELEASED)
 	{
 		//Get hero focus:
 		var int targetptr; var int t_hp;
 
 		var ocnpc hiro; hiro = Hlp_GetNpc(pc_hero);
-      printdebug("KeyEvent_EquipmentTakeAll przed herofocus");
+		printdebug("KeyEvent_EquipmentTakeAll przed herofocus");
 
-      PrintDebug_s_i_s_i("Herofocus wynosi: ",herofocus,", hiro.focus_vob wynosi: ",hiro.focus_vob);
+		PrintDebug_s_i_s_i("Herofocus wynosi: ",herofocus,", hiro.focus_vob wynosi: ",hiro.focus_vob);
 
-      MEM_AssignInst (herofocus,hiro.focus_vob); // <-- tu jest NULL
-      printdebug("KeyEvent_EquipmentTakeAll po herofocus");
-      targetptr =  MEM_InstToPtr(herofocus);
+		MEM_AssignInst (herofocus,hiro.focus_vob); // <-- tu jest NULL
+		printdebug("KeyEvent_EquipmentTakeAll po herofocus");
+		targetptr =  MEM_InstToPtr(herofocus);
 
-      printdebug(inttostring(targetptr));
-      t_hp = 2;//init
-      printdebug("KeyEvent_EquipmentTakeAll przed targetptr");
-      if(targetptr)
-      {
-         t_hp = MEM_ReadInt(targetptr+388);
-      };
-      printdebug("KeyEvent_EquipmentTakeAll drugi if");
-      if(!LCtrl_Doubleclick)//first click of doubleclick
-      {
-         LCtrl_Doubleclick = 6;//6*0.125=750ms
-      }
-      else if(t_hp<2)&&(LCtrl_Doubleclick)&&(MEM_ReadInt(targetptr)==oCNpc_vtbl)//trader container is unconscious/dead
-      {
-         printdebug("KeyEvent_EquipmentTakeAll else if");
-         //Debug things:		
-         print(herofocus.name);
+		printdebug(inttostring(targetptr));
+		t_hp = 2;//init
+		printdebug("KeyEvent_EquipmentTakeAll przed targetptr");
+		if(targetptr)
+		{
+			t_hp = MEM_ReadInt(targetptr+388);
+		};
+		printdebug("KeyEvent_EquipmentTakeAll drugi if");
+		if(!LCtrl_Doubleclick)//first click of doubleclick
+		{
+			LCtrl_Doubleclick = 6;//6*0.125=750ms
+		}
+		else if(t_hp<2)&&(LCtrl_Doubleclick)&&(MEM_ReadInt(targetptr)==oCNpc_vtbl)//trader container is unconscious/dead
+		{
+			printdebug("KeyEvent_EquipmentTakeAll else if");
+			// Ork: Zastanawiam sie czemu nikt tego wczesniej nie wy³¹czy³ :D		
+			//print(herofocus.name);
 
-         //Transfer whole inventory except armor:
-         Show_HeroTransferedItem=true;
-         B_GiveAllInventory(herofocus,hero);
-         if(B_InventoryIsEmpty(herofocus))
-         {//nuttin was given:
-            AI_PlayAni(hero,"T_DONTKNOW");
-         }
-         else
-         {//Play sound:
-            Snd_Play("BACKPACK_HANDLE");		
-         };
-         Show_HeroTransferedItem=false;
-         
-         targetptr = hiro.focus_vob;
-         if(t_hp==0)
-         {//Dead, he shouldn't trash hero focus anymore...
-            MEM_WriteInt(targetptr+160,0);//0 = oCVOB - others causes CRASH!!!
-         };
-         printdebug("KeyEvent_EquipmentTakeAll przed this");
-         var int this;
-         this = MEM_InstToPtr(hiro);
-         printdebug("KeyEvent_EquipmentTakeAll po this");
-         //Close invetories:
-         CALL__thiscall (this,oCNpc__CloseDeadNpc_offset);			
-         CALL__thiscall (this,oCNpc__CloseInventory_offset);			
-         LCtrl_Doubleclick = 0;
-      };
+			//Transfer whole inventory except armor:
+			Show_HeroTransferedItem=true;
+			B_GiveAllInventory(herofocus,hero);
+			if(B_InventoryIsEmpty(herofocus))
+			{//nuttin was given:
+				AI_PlayAni(hero,"T_DONTKNOW");
+			}
+			else
+			{//Play sound:
+				Snd_Play("BACKPACK_HANDLE");		
+			};
+			Show_HeroTransferedItem=false;
+			
+			targetptr = hiro.focus_vob;
+			if(t_hp==0)
+			{//Dead, he shouldn't trash hero focus anymore...
+				MEM_WriteInt(targetptr+160,0);//0 = oCVOB - others causes CRASH!!!
+			};
+			printdebug("KeyEvent_EquipmentTakeAll przed this");
+			var int this;
+			this = MEM_InstToPtr(hiro);
+			printdebug("KeyEvent_EquipmentTakeAll po this");
+			//Close invetories:
+			CALL__thiscall (this,oCNpc__CloseDeadNpc_offset);			
+			CALL__thiscall (this,oCNpc__CloseInventory_offset);			
+			LCtrl_Doubleclick = 0;
+		};
 	};
 };
 var int BugfixUpdate;
 func void KeyEvent_UpdateStatusScreen()
 {
-			BugfixUpdate =BugfixUpdate+1;
-			var int ptr; var int listptr;	var int arrayptr;	
-			ptr = MEM_GetMenuByString("MENU_STATUS");				
-			if(ptr>1000)
-			{
-			CheckAdress(ptr,128,1,1);
-			listptr = MEM_ReadInt(ptr+3256);//ItemArray
-			CheckAdress(listptr,128,1,1);
+	BugfixUpdate =BugfixUpdate+1;
+	var int ptr; var int listptr;	var int arrayptr;	
+	ptr = MEM_GetMenuByString("MENU_STATUS");				
+	if(ptr>1000)
+	{
+		CheckAdress(ptr,128,1,1);
+		listptr = MEM_ReadInt(ptr+3256);//ItemArray
+		CheckAdress(listptr,128,1,1);
 
-			
-            var string t14;//[73]
-            var string t15;//[75]
-            var string t16;//[77]
-            var string t17;//[79]
-			
-            //Initiation of Values:
-            t14 = "0";
-            t15 = "Nie";
-            t16 = "Nie";
-            t17 = "Nie";
-            
-            //Check if status is changed
-            //Magic Circle: (Printed in Romamian Numerics)
-            var int hlp;
-            hlp = Npc_GetAivar(hero,TALENT_MAGIC_CIRCLE);
-            if(hlp==1){ t14="I"; }
-            if(hlp==2){ t14="II"; }
-            if(hlp==3){ t14="III"; }
-            if(hlp==4){ t14="IV"; }
-            if(hlp==5){ t14="V"; }
-            if(hlp==6){ t14="VI"; };
-            
-           	//Dual:
-           	if(TALENT_DUALUSING){t15="Tak";};
-           
-           	//Sneak:
-           	if(TALENT_SNEAK){t16="Tak";};
-             	
-           	//Rune Sword:
-           	if(TALENT_RUNESWORDUSING){t17="Tak";};         	
-           	 
-            //Apply on [71]
- 			ptr = MEM_ReadInt(listptr+4*71);          
- 			arrayptr = MEM_ReadInt(ptr+892);
- 			MEM_WriteString(arrayptr,t14);			
-			CALL__thiscall (ptr,zCMenuItem__DrawFront_offset);			
-            printdebug(concatstrings("># I'm here safe;puttin':",t14));
-            //Apply on [73]
- 			ptr = MEM_ReadInt(listptr+4*73);          
- 			arrayptr = MEM_ReadInt(ptr+892);
- 			MEM_WriteString(arrayptr,t15);			
-			CALL__thiscall (ptr,zCMenuItem__DrawFront_offset);			
-            printdebug(concatstrings("># I'm here safe;puttin':",t15));
-           
-            //Apply on [75]
- 			ptr = MEM_ReadInt(listptr+4*75);           
- 			arrayptr = MEM_ReadInt(ptr+892);
- 			MEM_WriteString(arrayptr,t16);			
-			CALL__thiscall (ptr,zCMenuItem__DrawFront_offset);		
-            printdebug(concatstrings("># I'm here safe;puttin':",t16));
-          
-            //Apply on [77]
- 			ptr = MEM_ReadInt(listptr+4*77);          
- 			arrayptr = MEM_ReadInt(ptr+892);
- 			MEM_WriteString(arrayptr,t17);			
-			CALL__thiscall (ptr,zCMenuItem__DrawFront_offset);		
-            printdebug("># I'm here safe");
-			
-			BugfixUpdate = false;
-			};
-			
-			//If it was closing of menustatus
-			if(BugfixUpdate>5)
-			{ BugfixUpdate=false;};
-			
-						
-
+		
+		var string t14;//[73]
+		var string t15;//[75]
+		var string t16;//[77]
+		var string t17;//[79]
+		
+		//Initiation of Values:
+		t14 = "0";
+		t15 = "Nie";
+		t16 = "Nie";
+		t17 = "Nie";
+		
+		//Check if status is changed
+		//Magic Circle: (Printed in Romamian Numerics)
+		var int hlp;
+		hlp = Npc_GetAivar(hero,TALENT_MAGIC_CIRCLE);
+		if(hlp==1){ t14="I"; }
+		if(hlp==2){ t14="II"; }
+		if(hlp==3){ t14="III"; }
+		if(hlp==4){ t14="IV"; }
+		if(hlp==5){ t14="V"; }
+		if(hlp==6){ t14="VI"; };
+		
+		//Dual:
+		if(TALENT_DUALUSING){t15="Tak";};
+		
+		//Sneak:
+		if(TALENT_SNEAK){t16="Tak";};
+		
+		//Rune Sword:
+		if(TALENT_RUNESWORDUSING){t17="Tak";};         	
+		
+		//Apply on [71]
+		ptr = MEM_ReadInt(listptr+4*71);          
+		arrayptr = MEM_ReadInt(ptr+892);
+		MEM_WriteString(arrayptr,t14);			
+		CALL__thiscall (ptr,zCMenuItem__DrawFront_offset);			
+		printdebug(concatstrings("># I'm here safe;puttin':",t14));
+		//Apply on [73]
+		ptr = MEM_ReadInt(listptr+4*73);          
+		arrayptr = MEM_ReadInt(ptr+892);
+		MEM_WriteString(arrayptr,t15);			
+		CALL__thiscall (ptr,zCMenuItem__DrawFront_offset);			
+		printdebug(concatstrings("># I'm here safe;puttin':",t15));
+		
+		//Apply on [75]
+		ptr = MEM_ReadInt(listptr+4*75);           
+		arrayptr = MEM_ReadInt(ptr+892);
+		MEM_WriteString(arrayptr,t16);			
+		CALL__thiscall (ptr,zCMenuItem__DrawFront_offset);		
+		printdebug(concatstrings("># I'm here safe;puttin':",t16));
+		
+		//Apply on [77]
+		ptr = MEM_ReadInt(listptr+4*77);          
+		arrayptr = MEM_ReadInt(ptr+892);
+		MEM_WriteString(arrayptr,t17);			
+		CALL__thiscall (ptr,zCMenuItem__DrawFront_offset);		
+		printdebug("># I'm here safe");
+		
+		BugfixUpdate = false;
+	};
 	
+	//If it was closing of menustatus
+	if(BugfixUpdate>5)
+	{ BugfixUpdate=false;};
+
 };
 func void Hook_AfterOpenStatusScreen()
 {
@@ -521,13 +522,13 @@ func void KeyEvent_SprintDoubleClick()
 };
 func void KeyEvent_ParadeTunning()
 {
-//Speed up block "response" when hero is durinng attack/other ani.
+	//Speed up block "response" when hero is durinng attack/other ani.
 	if //((MEM_KeyState(Key_tAction1)==KEY_HOLD)||(MEM_KeyState(Key_tAction2)==KEY_HOLD))//||(MEM_KeyState(MOUSE_BUTTONLEFT)==KEY_HOLD))
 	((MEM_KeyState(Key_tDown1)==KEY_HOLD)||(MEM_KeyState(Key_tDown2)==KEY_HOLD))
 	&& (Npc_IsInFightMode(hero,FMODE_MELEE))
 	//TODO: Some way to detect mouse input
 	{
-		 
+		
 		if(C_BodyStateContains(hero,BS_HIT))
 		{
 			var oCNpc Chero; var int ptr; var int frame;

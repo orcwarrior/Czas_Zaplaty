@@ -184,9 +184,11 @@ func int zCTexture_GetPointer(var string name)
 // Cinema Scope
 //=============================================
 
-var int CinemaScopeColorPtr;
+var int FX_CinemaScopeEnabled_Adr;
+var int FX_CinemaScopeColor_Adr;
 var int CinemaScopeState;//0-off;1-on;2-off->on; 3-on->off
 var int screen_y_size;
+
 func void I_EnableCinemaScope()
 {	
 	var int ccsptr; var int View_ptr; var int tmp;
@@ -199,7 +201,7 @@ func void I_EnableCinemaScope()
 	ccsptr = ccsptr+2248;
 	MEM_WriteInt(ccsptr,1);//enable
 	ccsptr = ccsptr+4;	
-	CinemaScopeColorPtr = ccsptr;
+	FX_CinemaScopeColor_Adr = ccsptr;
 	MEM_WriteInt(ccsptr,0);//set almost opanque 4 trigger to now what to do
 	//Now trigger will know that he has to change color
 		//disable zoom effect
@@ -249,15 +251,6 @@ func void I_EnableCinemaScope()
 	};
 	view_ptr = view_ptr+28;
 	MEM_WriteInt(View_ptr,0); //60 tex
-		
-	// //	MEM_WriteInt(View_ptr,246);//38 XPOS
-// 	view_ptr = view_ptr+4;
-// 	MEM_WriteInt(View_ptr,512);//3C //YPOS
-// 	view_ptr = view_ptr+12;
-// 	//MEM_WriteInt(View_ptr,0);//44 XPOS 2
-// 	view_ptr = view_ptr+4;
-// //	MEM_WriteInt(View_ptr,512);//48 PIXELYPOS 2
-
 };
 /*
 */
@@ -270,7 +263,7 @@ func void I_DisableCinemaScope()
 	///Camera.cinemascope
 	ccsptr = MEM_InstGetOffset(MEM_CAMERA);
 	ccsptr = ccsptr+2252;
-	CinemaScopeColorPtr = ccsptr;
+	FX_CinemaScopeColor_Adr = ccsptr;
 	MEM_WriteInt(ccsptr,-16777216);//set almost full visible
 	//Now trigger will know that he has to change color
 
@@ -286,91 +279,92 @@ func void I_DisableCinemaScope()
 	MEM_WriteInt(View_ptr,1);
 */	
 };
-
+// Ork: This function is pain in the ass :/
+// Powoduje crasha przy wczytywania save'a którego otrzyma³em w temacie na forum... [TODO]
 func void I_TriggerCinemaScope()
 {	if(CinemaScopeState==0)
 	{ return; };//break if state=0	
 	if(CinemaScopeState>1)//Fade Alpha
 	{
 		var int CS_Color;
-		CS_Color = MEM_ReadInt(CinemaScopeColorPtr);
+		CS_Color = MEM_ReadInt(FX_CinemaScopeColor_Adr);
 		if(CinemaScopeState==2)//SET ON
 		{
 			if(CS_Color==0)//-4294967295
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-4160749568);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-4160749568);
 			}
 			else if(CS_Color==-4160749568)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-3959422976);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-3959422976);
 			}
 			else if(CS_Color==-3959422976)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-3724541952);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-3724541952);
 			}
 			else if(CS_Color==-3724541952)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-3489660928);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-3489660928);
 			}
 			else if(CS_Color==-3489660928)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-3254779904);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-3254779904);
 			}
 			else if(CS_Color==-3254779904)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-3019898880);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-3019898880);
 			}
 			else if(CS_Color==-3019898880)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-2785017856);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-2785017856);
 			}
 			else if(CS_Color==-2785017856)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-2550136832);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-2550136832);
 			}
 			else if(CS_Color==-2550136832)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-2315255808);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-2315255808);
 			}
 			else if(CS_Color==-2315255808)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-2080374784);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-2080374784);
 			}
 			else if(CS_Color==-2080374784)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-1845493760);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-1845493760);
 			}
 			else if(CS_Color==-1845493760)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-1610612736);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-1610612736);
 			}
 			else if(CS_Color==-1610612736)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-1375731712);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-1375731712);
 			}
 			else if(CS_Color==-1375731712)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-1140850688);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-1140850688);
 			}
 			else if(CS_Color==-1140850688)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-905969664);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-905969664);
 			}
 			else if(CS_Color==-905969664)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-671088640);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-671088640);
 			}
 			else if(CS_Color==-671088640)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-469762048);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-469762048);
 			}
 			else if(CS_Color==-469762048)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-234881024);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-234881024);
 			}
 			else if(CS_Color==-234881024)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-16777216);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-16777216);
 				CinemaScopeState=1;//on
 			};			
 		}
@@ -378,90 +372,85 @@ func void I_TriggerCinemaScope()
 		{
 			if(CS_Color==-16777216)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-234881024);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-234881024);
 			}
 			else if(CS_Color==-234881024)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-469762048);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-469762048);
 			}
 			else if(CS_Color==-469762048)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-671088640);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-671088640);
 			}
 			else if(CS_Color==-671088640)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-905969664);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-905969664);
 			}
 			else if(CS_Color==-905969664)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-1140850688);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-1140850688);
 			}
 			else if(CS_Color==-1140850688)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-1375731712);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-1375731712);
 			}
 			else if(CS_Color==-1375731712)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-1610612736);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-1610612736);
 			}
 			else if(CS_Color==-1610612736)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-1845493760);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-1845493760);
 			}
 			else if(CS_Color==-1845493760)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-2080374784);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-2080374784);
 			}
 			else if(CS_Color==-2080374784)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-2315255808);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-2315255808);
 			}
 			else if(CS_Color==-2315255808)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-2550136832);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-2550136832);
 			}
 			else if(CS_Color==-2550136832)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-2785017856);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-2785017856);
 			}
 			else if(CS_Color==-2785017856)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-3019898880);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-3019898880);
 			}
 			else if(CS_Color==-3019898880)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-3254779904);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-3254779904);
 			}
 			else if(CS_Color==-3254779904)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-3489660928);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-3489660928);
 			}
 			else if(CS_Color==-3489660928)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-3724541952);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-3724541952);
 			}
 			else if(CS_Color==-3724541952)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-3959422976);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-3959422976);
 			}
 			else if(CS_Color==-3959422976)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,-4160749568);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,-4160749568);
 			}
 			else if(CS_Color==-4160749568)
 			{
-				MEM_WriteInt(CinemaScopeColorPtr,0);
+				MEM_WriteInt(FX_CinemaScopeColor_Adr,0);
 				CinemaScopeState=0;//off
 			};				
 		};	
 	};	
-
-	
 	//set cinema scope on in camera
-	var int ptr;	
-	ptr = MEM_InstGetOffset(MEM_CAMERA);
-	ptr = ptr+2248;
-	MEM_WriteInt(ptr,1);
+	MEM_WriteInt(FX_CinemaScopeEnabled_Adr,1);
 };
 
 //=============================================
@@ -951,11 +940,12 @@ func string Trade_GetHeroCatString()
 };
 
 func int Game_MenusOpened()
-{	return MEM_REadInt(MEMINT_MenuArrayOffset+8);
+{	return MEM_ReadInt(MEMINT_MenuArrayOffset+8);
 };
 
 func void I_TurnOffWarnMessages()
 {		//TODO: Turn it on back when release version comes
+		//Ork: otó¿ to :P
 		return;
 		
 		//Adding this function only to release verios is a good idea

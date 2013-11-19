@@ -106,4 +106,7 @@ FUNC void  Info_XardasOT_Final_Info()
 	Npc_ExchangeRoutine	(self, "DRAINED"); 	
 	//Party_AddNpc(self);
 	B_StopProcessInfos(self);
+	
+	//Ork: Pora na final battle!!!
+	BOSSFIGHT_CURRENT = BOSSFIGHT_FGT5;
 };

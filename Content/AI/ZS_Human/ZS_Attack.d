@@ -2,13 +2,13 @@ func void ZS_Attack ()
 {
 	if(GrdsInAttack)
 	{return;};
-	if ( Npc_IsPlayer( other ) )
-{
-SomeOneAttackHero = TRUE;
-Npc_PercEnable   	(other, 	PERC_ASSESSDAMAGE 	,	B_HeroReactToDamage   	  	);	
-		B_Pupil_ReactToOthAttack();
 
-};
+	if ( Npc_IsPlayer( other ) )
+	{
+		add_CollPool(self);	
+		DailyHello_HeroAttackersCnt += 1;
+		Npc_PercEnable   	(other, 	PERC_ASSESSDAMAGE 	,	B_HeroReactToDamage   	  	);	
+	};
 	if (C_NpcIsMonsterMage(self)||self.id == 2001)
 	{	
 		B_FullStop		(self);
@@ -332,7 +332,7 @@ func void ZS_Attack_End()
 
 	//-------- Heilen ! --------
 	AI_StartState			(self,	ZS_HealSelf,	1,	"");
-	SomeOneAttackHero = FALSE;	
+	DailyHello_HeroAttackersCnt -= 1;	
 };
 
 //------------------------------------------------------------------------------------------------------

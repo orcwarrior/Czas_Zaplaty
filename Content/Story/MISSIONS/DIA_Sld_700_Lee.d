@@ -553,6 +553,7 @@ Ork Gorn ma byæ gdzieœ w pobli¿u Lee przez ca³y czas, przyda siê dopiero póŸniej
 	Log_CreateTopic(CH5_NO_Rebel, LOG_MISSION);
 	Log_SetTopicStatus(CH5_NO_Rebel, LOG_RUNNING);
 	B_LogEntry(CH5_NO_Rebel, "Walka o Nowy Obóz w³aœnie siê rozpoczê³a. Najwa¿niejsze, ¿e Lee jest z nami, najemnicy i szkodniki pójd¹ za genera³em w ¿ywy ogieñ. Muszê porozmawiaæ z Laresem i dowiedzieæ siê czegoœ wiêcej o aktualnej sytuacji w obozie.");
+	
 };
 
 //*********************************************************
@@ -618,6 +619,9 @@ Tutaj Dick nie mo¿e wzi¹æ ze sob¹ najemników ambientów. Zrób rutyny stra¿ników o
    Log_SetTopicStatus	(CH5_NO_Mine, LOG_FAILED);
    Log_SetTopicStatus	(CH5_NO_Guards, LOG_FAILED);
    Info_ClearChoices (DIA_Lee_RBLTasks);
+   // Ork: Nie wiem, chyba tutaj rozpocza³bym muzykê do rebelii, to doœæ
+   // d³ugi kawalek wiêc nie powinien przeszkadzaæ:
+   BOSSFIGHT_CURRENT = BOSSFIGHT_FGT3;
 };
 
 // -------------------------------------------------------------------
@@ -1127,7 +1131,10 @@ FUNC VOID  DIA_Lee_AllCompleated_Info()
 	B_LogEntry(CH5_NO_Rebel, "Nowy Obóz znowu jest wolny od stra¿ników. Sporo mnie to kosztowa³o wysi³ku, ale by³o warto.");
 
 	B_LogEntry (CH4_RBL_NCRebel, "W Nowym Obozie zapanowa³ stary porz¹dek. Czas porozmawiaæ z Cavalornem.");
-	B_Kapitelwechsel(6);	 	
+	B_Kapitelwechsel(6);	 
+
+	// Ork: Tutaj koniec? No chyba:
+	BOSSFIGHT_CURRENT = BOSSFIGHT_NONE;
 };
 
 //*********************************************************

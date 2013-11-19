@@ -42,11 +42,11 @@ func void B_AssessFighter()
 		B_SetRoguesToHostile();
 	};
 	if ( Npc_IsPlayer( other ) )
-{
-add_CollPool(self);	
-SomeOneAttackHero = TRUE;
-Npc_PercEnable   	(other, 	PERC_ASSESSDAMAGE 	,	B_HeroReactToDamage   	  	);	
-};
+	{
+		add_CollPool(self);	
+		DailyHello_HeroAttackersCnt += 1;
+		Npc_PercEnable   	(other, 	PERC_ASSESSDAMAGE 	,	B_HeroReactToDamage   	  	);	
+	};
 	//***********************************************
 	
 	//######## Ist Fighter ein MENSCH ? ########

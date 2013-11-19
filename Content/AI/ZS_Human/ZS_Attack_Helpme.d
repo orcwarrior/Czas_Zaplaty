@@ -1,10 +1,13 @@
+// Ten ZS jest troche bezSesu ;(
 func void ZS_Attack_Helpme ()
 {
+
 	if ( Npc_IsPlayer( other ) )
-{
-SomeOneAttackHero = TRUE;
-Npc_PercEnable   	(other, 	PERC_ASSESSDAMAGE 	,	B_HeroReactToDamage   	  	);	
-};
+	{
+		// add_CollPool(self);	
+		DailyHello_HeroAttackersCnt += 1;
+		Npc_PercEnable   	(other, 	PERC_ASSESSDAMAGE 	,	B_HeroReactToDamage   	  	);	
+	};
 
 	////////////////////////////////////////////////////////////////////////////
 	//////PrintDebugNpc		(PD_ZS_FRAME, "ZS_Attack_Helpme" );		
@@ -248,5 +251,5 @@ func void ZS_Attack_Helpme_End()
 
 	//-------- Heilen ! --------
 	AI_StartState			(self,	ZS_HealSelf,	1,	"");
-SomeOneAttackHero = FALSE;	
+	DailyHello_HeroAttackersCnt -= 1;	
 };

@@ -63,6 +63,9 @@ FUNC VOID DIA_Necromanus_First_Info()
 
 	B_LogEntry		(CH6_RBL_PayDay, "Z deszczu pod rynnê. Jeden nekromanta uratowa³ mnie z r¹k drugiego... Zaczyna mnie niepokoiæ to zainteresowanie moj¹ osob¹.");
 	B_StopProcessInfos	(self);
+	
+	//Ork: No chyba pora wy³¹czyæ muzyke dla bitwy w SO
+	BOSSFIGHT_CURRENT = BOSSFIGHT_NONE;
 
 	/***********************
 Teleport do œwi¹tyni Œpiocha, zrób to bo ja nie wiem co dzia³a a co nie ;P

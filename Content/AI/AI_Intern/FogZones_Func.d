@@ -129,7 +129,7 @@ func int FX_CalculateCameraZoneImmersion(var int zoneptr)
 	}
 	else if (lf(ret,1028443341))//ret<0.05
 	{
-		return 0;	
+		return FLOATNULL;	//Ork: Hmpf..
 	}
 	else
 	{

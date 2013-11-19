@@ -6,6 +6,12 @@
 **		Enthält eine Reihe von Checks für die Master-AI					**
 **																		**
 *************************************************************************/
+// Ork: Mhmm naprawde nie wiedzialem gdzie to dopisaæ, dla czystosci siê przyda:
+func int  C_VarHasFlag(var int variable, var int flag)
+{
+	return (variable & flag) == flag;
+};
+
 // FUNC INT CmpNpc(VAR C_NPC P1,VAR C_NPC P2)
 //MOVED TO CompareNpcs.d
 

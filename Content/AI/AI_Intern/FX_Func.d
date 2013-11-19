@@ -26,6 +26,7 @@ var int FX_Blend_CameraPTR;//MEM_Camera.cinemascopeEnable*
 var int FX_Blend_ViewPTR;//View.screenblend*
 var int FX_Blend_Timer;//Seconds to fire FX_StopBlend
 
+
 func void FX_InitScreenBlend(var string name,var int lastframe)
 {
 	if (!MEM_World.skyControlerOutdoor)//Globals don't inited
@@ -167,7 +168,6 @@ func void I_TriggerScreenBlend()
 		MEM_WriteInt(FX_Blend_CameraPTR+4,FX_Blend_BGColor);
 		
 		//Change Image?
-		printdebug("################################");
 		FX_Blend_FramesToNextImage-=1;
 		if(FX_Blend_FramesToNextImage<0)//YES
 		{
@@ -255,20 +255,13 @@ const int FX_Fov_VDefault = 1066847204;//+2304
 
 var int FX_FovDreamFX_Enabled;//if true start next Morph after one end
 
-func void FX_InitFov()
-{
-	if (!MEM_World.skyControlerOutdoor)//Globals don't inited
-	{
-		MEM_InitGlobalInst();
-	};
-	FX_Fov_H_Ptr = MEM_InstGetOffset(MEM_CAMERA)+2300;
-};
 
 func void FX_FovMorph(var int H,var int V,var int frames,var int dontbackToDefault)
 {
 	var int tmp;
-	
-	FX_InitFov();
+	// Ork: Potrzebna jest jakaś globalna inicjalizacja tego
+	// inaczej po save-load to nie może działać ;/. Tylko gdze to inicjalizować? hmm...
+	//FX_InitFov();
 	if(dontbackToDefault==2)//backing 2 def. now
 	{
 		FX_Fov_BackToDefaultDone=TRUE;	
@@ -314,22 +307,19 @@ func void I_TriggerFovMorph()
 {
 	var int tmp; var int tmp2; var int tmp3;
 	if(FX_Fov_FramesLeft)
-	{
+	{	// Ork: Piekne sa te magic numbers :D jakbym chociaz jakis ofsetów nie mógł doklepać, no cóz...
 		tmp2 = FX_Fov_FramesStart-FX_Fov_FramesLeft;
 		tmp2 = mulf(FX_Fov_HStep,mkf(tmp2));
 		MEM_WriteInt(FX_Fov_H_Ptr,addf(FX_Fov_HBegin,tmp2));
 		tmp3 = addf(tmp,tmp2);
 		tmp = MEM_ReadInt(FX_FOV_h_Ptr+4);
 		tmp2 = FX_Fov_FramesStart-FX_Fov_FramesLeft;
-		tmp2 = mulf(FX_Fov_VStep,mkf(tmp2));		
+		tmp2 = mulf(FX_Fov_VStep,mkf(tmp2));	
 		MEM_WriteInt(FX_Fov_H_Ptr+4,addf(FX_Fov_VBegin,tmp2));
 		
 		FX_Fov_FramesLeft-=1;
 		if(FX_Fov_FramesLeft%100==0)
-		{
-			printdebug("--frame--:");		
-			printdebug(FLOAT32TOSTRING(tmp3));	
-			printdebug(FLOAT32TOSTRING(addf(tmp,tmp2)));		
+		{		
 		};
 		// 		if(FX_Fov_FramesLeft==0)&&(!FX_Fov_BackToDefaultDone)//gently back to default, but check if it wasnt done last time!
 		// 		{
@@ -377,6 +367,8 @@ func void I_TriggerFovMorph()
 	}
 	else if(FX_Fov_DontbackToDefault)
 	{
+		// Ork: To powoduje crash przy ładowaniu save'a #3 od mrdragogothic FX_Fov_H_Ptr
+		// pewnie nie jest reinicjowany w odpowiedniej kolejności lub podobnie...
 		MEM_WriteInt(FX_Fov_H_Ptr,FX_Fov_LastH);
 		MEM_WriteInt(FX_Fov_H_Ptr+4,FX_Fov_LastV); 						
 	};
@@ -391,18 +383,18 @@ func void FX_RebelMine()
 		var int sky_indoor;
 		sky_indoor = MEM_World.skyControlerIndoor;
 		MEM_WriteInt(sky_indoor+44,RGBAToZColor (30,23,21,155)); 
- 		MEM_WriteInt(sky_indoor+100,mkf(0)); 
- 		MEM_WriteInt(sky_indoor+104,mkf(OR_Mine_FogRange)); 
- 		MEM_WriteInt(sky_indoor+108,mkf(1)); 
- 		
-//   		var int this; this = MEM_ReadInt(zCRenderClass);		
-//  		CALL_IntParam(2);
-// 		CALL__thiscall (this,zCRnd_D3D__SetFog_offset);
-//  		
-//  		CALL_IntParam(3);
-//  		CALL_IntParam(100);
-//   		CALL_IntParam(100);
-// 		CALL__thiscall (this,zCRnd_D3D__SetFogRange_offset);
+		MEM_WriteInt(sky_indoor+100,mkf(0)); 
+		MEM_WriteInt(sky_indoor+104,mkf(OR_Mine_FogRange)); 
+		MEM_WriteInt(sky_indoor+108,mkf(1)); 
+		
+		//   		var int this; this = MEM_ReadInt(zCRenderClass);		
+		//  		CALL_IntParam(2);
+		// 		CALL__thiscall (this,zCRnd_D3D__SetFog_offset);
+		//  		
+		//  		CALL_IntParam(3);
+		//  		CALL_IntParam(100);
+		//   		CALL_IntParam(100);
+		// 		CALL__thiscall (this,zCRnd_D3D__SetFogRange_offset);
 		
 	};
 	
@@ -412,25 +404,51 @@ func void FX_NecroLocation()
 {
 	if(WORLD_CURRENT == WORLD_NECROLOCATION)
 	{
-      MirrorNpc(pc_hero, hero_mirror);
-      //MirrorNpc(DMB_1701_NecroInNecroloc, DMB_1701_NecroInNecroloc_mirror);
-      MirrorNpc(NON_4084_NecroServant1, NON_4084_NecroServant1_Mirror);
-      MirrorNpc(NON_4084_NecroServant2, NON_4084_NecroServant2_Mirror);
+		MirrorNpc(pc_hero, hero_mirror);
+		//MirrorNpc(DMB_1701_NecroInNecroloc, DMB_1701_NecroInNecroloc_mirror);
+		MirrorNpc(NON_4084_NecroServant1, NON_4084_NecroServant1_Mirror);
+		MirrorNpc(NON_4084_NecroServant2, NON_4084_NecroServant2_Mirror);
 	};
+};
+
+
+// Ork: Elementy stąd potrzebują pożadnego reinita, może przestaną
+// wtedy crashować gre:
+func void FX_Reinit()
+{
+	// Pre-init, zainicjuj globalne Instancje które są tu wymagane:
+	if (!MEM_World.skyControlerOutdoor)//Globals don't inited
+	{
+		MEM_InitGlobalInst();
+	};
+	var int camOff; camOff = MEM_InstGetOffset(MEM_CAMERA);
+	
+	// Init FOV:
+	FX_Fov_H_Ptr = camOff+2300;
+	
+	// Init Screen Blend:
+	// [TODO] No tutaj nie wiem naprawde co z tym zrobić i jak to zrobić :|
+	// ...to może pomóc:
+	FX_Blend_CameraPTR = camOff+2240;
+	FX_Blend_ViewPTR = MEM_GAME.array_view[0];	
+	
+	// Init Cinema-Scope:
+	FX_CinemaScopeEnabled_Adr = camOff+2248;
+	FX_CinemaScopeColor_Adr = camOff+2252;
 };
 
 
 //Function by Sektenspinner:
 func void ScaleWorldTime (var int factor) {
-    //worldTime += frameTime * (factor - 1);
+	//worldTime += frameTime * (factor - 1);
 
-    //Global instances have to be intialised!
-    if(MEM_WorldTimer)
-    {
-    var int deltaT; deltaT = MEM_Timer.frameTimeFloat;
-    deltaT = mkf(2065);
-    deltaT = mulf (deltaT, subf (factor, mkf (1)));
-    MEM_WorldTimer.worldTime = addf (MEM_WorldTimer.worldTime, deltaT);
+	//Global instances have to be intialised!
+	if(MEM_WorldTimer)
+	{
+		var int deltaT; deltaT = MEM_Timer.frameTimeFloat;
+		deltaT = mkf(2065);
+		deltaT = mulf (deltaT, subf (factor, mkf (1)));
+		MEM_WorldTimer.worldTime = addf (MEM_WorldTimer.worldTime, deltaT);
 	};
-    
+	
 };

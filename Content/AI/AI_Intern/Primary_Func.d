@@ -111,9 +111,9 @@ Func Int C_Npcismonstermage(Var C_Npc Slf)
 
 	If((Slf.Fight_Tactic==Fai_Human_Mage)
 	&&((Slf.Guild==Gil_Demon)||			//Skelett-Mage (Hat Aus Species.D-Technischen GrüNden DäMonen-Gilde!)
-(Slf.Guild==Gil_Orcshaman)||			//Ork-Shamane
-(Slf.Guild==Gil_Undeadorc)||			//Untoter Ork-Priester
-(Slf.Guild==Gil_Golem)))//Eisgolem Der Einen "Ice-Cube"-Angriff Hat
+	(Slf.Guild==Gil_Orcshaman)||			//Ork-Shamane
+	(Slf.Guild==Gil_Undeadorc)||			//Untoter Ork-Priester
+	(Slf.Guild==Gil_Golem)))//Eisgolem Der Einen "Ice-Cube"-Angriff Hat
 	{
 		//Printdebugint(Pd_Zs_Detail,"...True");
 		Return True;
@@ -182,7 +182,7 @@ FUNC INT C_BODYSTATECONTAINS(VAR C_NPC SLF,VAR INT BODYSTATE)
 
 //Written by Sektenspinner
 func string Wld_GetPlayerPortalRoom() {
-    MEM_InitGlobalInst();
+	MEM_InitGlobalInst();
 	var oCPortalRoomManager portalman;
 	portalman = MEM_PtrToInst (MEM_Game.portalman);
 	var oCPortalRoom playerRoom;
@@ -199,19 +199,19 @@ func string Wld_GetPlayerPortalRoom() {
 
 func void B_ProcessInfos(var C_NPC npc)
 {
-   I_EnableCinemaScope();	
-   AI_ProcessInfos(npc);	
+	I_EnableCinemaScope();	
+	AI_ProcessInfos(npc);	
 };
 
 func void B_StopProcessInfos(var C_NPC npc)
 {
-   //They're disabled by ZS_Talk_END if npc!=hero
-   if(Npc_IsPlayer(npc))
-   {
-      I_DisableCinemaScope();
-   };
-   
-   AI_StopProcessInfos(npc);	
+	//They're disabled by ZS_Talk_END if npc!=hero
+	if(Npc_IsPlayer(npc))
+	{
+		I_DisableCinemaScope();
+	};
+
+	AI_StopProcessInfos(npc);	
 };
 
 
@@ -228,8 +228,8 @@ func void B_EquipItem(var c_npc slf,var int instID)
 		return;
 	};
 	//
-    CALL_PtrParam(MEM_InstToPtr(item));
-    CALL__thiscall(MEM_InstToPtr(slf), oCNpc__Equip_offset);	
+	CALL_PtrParam(MEM_InstToPtr(item));
+	CALL__thiscall(MEM_InstToPtr(slf), oCNpc__Equip_offset);	
 };
 
 func void B_UnequipMeleeWeapon(var c_npc slf)
@@ -237,7 +237,7 @@ func void B_UnequipMeleeWeapon(var c_npc slf)
 	var c_item meleeweap;
 	if(Npc_HasReadiedMeleeWeapon(slf))
 	{
-	 	meleeweap = Npc_GetReadiedWeapon(slf);	
+		meleeweap = Npc_GetReadiedWeapon(slf);	
 	}
 	else
 	{
@@ -252,7 +252,7 @@ func void B_UnequipMeleeWeapon(var c_npc slf)
 	var c_item rangedWEAP;
 	if(Npc_HasReadiedRangedWeapon(slf))
 	{
-	 	rangedWEAP = Npc_GetReadiedWeapon(slf);	
+		rangedWEAP = Npc_GetReadiedWeapon(slf);	
 	}
 	else
 	{
@@ -272,7 +272,7 @@ func void B_UnequipRangedWeapon(var c_npc slf)
 	var c_item rangedWEAP;
 	if(Npc_HasReadiedRangedWeapon(slf))
 	{
-	 	rangedWEAP = Npc_GetReadiedWeapon(slf);	
+		rangedWEAP = Npc_GetReadiedWeapon(slf);	
 	}
 	else
 	{
@@ -287,7 +287,7 @@ func void B_UnequipRangedWeapon(var c_npc slf)
 	var c_item meleeweap;
 	if(Npc_HasReadiedMeleeWeapon(slf))
 	{
-	 	meleeweap = Npc_GetReadiedWeapon(slf);	
+		meleeweap = Npc_GetReadiedWeapon(slf);	
 	}
 	else
 	{

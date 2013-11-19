@@ -483,4 +483,6 @@ Niech siê gdzieœ pojawi Nekro w takim miejscu, ¿eby Dick nie móg³ go omin¹æ.
    wld_insertNPC(DMB_1703_NecroInWorld, "PSI_TEMPLE_IN_1");
    AI_Teleport(necro_in_world, "PSI_TEMPLE_IN_1");
 	B_ExchangeRoutine	(necro_in_world, "AfterDeadsBeast");
+	// Ork: Wylaczam motyw walki z bossem
+   BOSSFIGHT_CURRENT = BOSSFIGHT_NONE;
 };

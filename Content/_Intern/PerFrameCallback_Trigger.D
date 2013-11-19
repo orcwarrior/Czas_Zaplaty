@@ -33,6 +33,7 @@ func void F_PERFRAMETRIGGER()
 	var int rune; 	var string rune_instance;
 	var ocnpc hlp;
 	//Triggerscript find pointer
+		printdebug("PerFrameCallTrigger_NOTINIT :(");
 	if(PerFrameCallTrigger_Init)
 	{
 		printdebug("PerFrameCallTrigger_Init");
@@ -47,6 +48,7 @@ func void F_PERFRAMETRIGGER()
 		
 		MEM_AssignInst (trigger, ptr);
 		PerFrameCallTrigger_Init=FALSE;
+		
 	};
 	//factor per frame
 	if(Timer_factormotion)
@@ -119,10 +121,15 @@ func void F_PERFRAMETRIGGER()
 	//Triggers needed to be done evry frame:
 	printdebug("I_TriggerCinemaScope");
 	I_TriggerCinemaScope();
+	printdebug("I_TriggerFadeScreen");
 	I_TriggerFadeScreen();
+	printdebug("I_TriggerScreenBlend");
 	I_TriggerScreenBlend();
+	printdebug("I_TriggerFovMorph");
 	I_TriggerFovMorph();
+	printdebug("SleepFX_PerFrameHandle");
 	SleepFX_PerFrameHandle();
+	printdebug("MsgManager_DoFrame");
 	MsgManager_DoFrame();
 //	OptimizationVobLights_PerFrameTidy();
 	

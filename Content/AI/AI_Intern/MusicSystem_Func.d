@@ -175,6 +175,11 @@ func void MusicSystem_SetNewTheme()
 		
 		else { MusicSys_OldThemePrefix = filename; };
 		
+		// Exceptions:
+		// #1 Pre final battle: I Don't wanted to touch .ZEN file, so I merged
+		// KAT / TPL / SLP int FIN
+		if(Hlp_StrCmp(filename,"KAT") || Hlp_StrCmp(filename,"TPL") || Hlp_StrCmp(filename,"SLP"))
+		{ filename = "FIN"; };
 		// Default motif have night variation:
 		// (I don't think so)
 		if(Hlp_StrCmp(filename,"DEF"))
@@ -206,6 +211,14 @@ func void MusicSystem_SetNewTheme()
 			else if(Hlp_StrCmp(filename,"OGY_DAY"))
 			{//huh, kidding (just forgot about OGY)
 				printdebug(concatstrings("MS:Fight OGY!:",""));
+				filename = ConcatStrings(filename,"_FGT.ogg");	
+			}
+			else if(Hlp_StrCmp(filename,"CAVE_DAY"))
+			{
+				filename = ConcatStrings(filename,"_FGT.ogg");	
+			}
+			else if(Hlp_StrCmp(filename,"DREAM_DAY"))
+			{
 				filename = ConcatStrings(filename,"_FGT.ogg");	
 			}
 			else
@@ -247,16 +260,20 @@ func void MusicSystem_Callback()
 	
 	//First, handle the boss-fight motives:
 	// Exctract this block of code to function?
-	if(BOSSFIGHT_CURRENT==BOSSFIGHT_FGT1)
+	if(BOSSFIGHT_CURRENT>0)
 	{
+		var string bossFightMotif; bossFightMotif = ConcatStrings("BOSSFGT",inttostring(BOSSFIGHT_CURRENT));
+		bossFightMotif = ConcatStrings(bossFightMotif,"_DAY_STD.ogg");
+
 		filename = MusicSystem_GetTheme();		
 		MusicSys_OldThemePrefix = filename;	
 		herostatus = 2;
 		MusicSystem_MusicZoneAddress_Last = 0;
-		MusicSystem_PlayMusic("BOSSFGT1_DAY_STD.ogg",MusicSys_MusicVolume);
+		MusicSystem_PlayMusic(bossFightMotif,MusicSys_MusicVolume);
 		return;
 	};
-	
+	printscreen_ss("Music Zone: ",MusicSystem_GetTheme()
+	,5,8,7);
 	musiczone = MEM_ReadInt(MUSIC_Zone_Address);
 	// Zmiana strefy muzycznej / wczytanie gry (zmiana adresu music zone)
 	if(musiczone!=MusicSystem_MusicZoneAddress_Last)//change music: std->std or fgt->fgt

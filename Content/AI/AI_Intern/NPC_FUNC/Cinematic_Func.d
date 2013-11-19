@@ -267,7 +267,7 @@ func void CinematicDialog(var int slf,var int oth, var string txt, var string wa
 };
 
 //CinematicEnd - It just clear all varibles, so they willn't dump RAM Memory
-
+// Ork: HUEHUEHUE 
 func void CinematicEnd()
 {
 	var c_npc npc; 
@@ -895,6 +895,10 @@ func void CinematicActions_7()
 
 /* -------------------------------------------
 	CINEMATIC TRIGGER
+	Ork: Strasznie do bani jest to napisane
+	du¿o lepiej gdyby wywo³ywaæ funkcje dla
+	konkretnych ID cinematiców, ale zbyt wiele
+	roboty by coœ z tym robic.
 ==============================================*/
 func void CinematicEvent()//SEND ON TRIGGER (TRIGGER7)
 {
