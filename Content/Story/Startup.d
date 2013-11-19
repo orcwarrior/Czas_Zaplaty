@@ -3264,7 +3264,6 @@ FUNC VOID STARTUP_WORLD ()
 
 	//die folgende Zeile gilt nur, bis die INIT_...-Funktionen von Ulf unterstützt werden.
 	INIT_WORLD();	
-	
 	PlayVideo ("INTRO.BIK");
 	PlayVideo ("CZ_INTRO.BIK");
 	//AI_StartState			(hero,	ZS_Unconscious,	1,	"");

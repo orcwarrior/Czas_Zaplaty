@@ -10,7 +10,8 @@ func void ZS_Dead ()
 	
 	//if self==hero quit save (if it meet with condition)
 	Dream_HeroDead();
-
+	// Ork: Bugfix materia³ów do mobów:
+	B_RemoveMobItems(self);
 	
 	if(self.id==2770)//OR Attack GRD - make them un-aim-able
 	{

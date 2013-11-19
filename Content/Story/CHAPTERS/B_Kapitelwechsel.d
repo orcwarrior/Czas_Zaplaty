@@ -13,8 +13,8 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 	{
 		//PrintDebugNpc	(PD_MISSION, "---=== DAS ERSTES KAPITEL ===---");
 		
-		introducechapter ("Rozdzia³ 1","Witamy w Kolonii!","chapter1.tga","levelup.wav", 6000);
-		//introducechapter ("Chapter 1","Welcome to the colony","chapter1.tga","levelup.wav", 6000);
+		introducechapter ("Rozdzia³ 1","Witamy w Kolonii!","chapter1.tga","chapter.wav", 6000);
+		//introducechapter ("Chapter 1","Welcome to the colony","chapter1.tga","chapter.wav", 6000);
 	}
 	
 	//***************************************************************************
@@ -42,8 +42,8 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		B_ExchangeRoutine(snaf,"SCARED");
 		//-------- InExtremo vorbereiten --------
 		
-		introducechapter ("Rozdzia³ 2","Szpieg","chapter2.tga","levelup.wav", 6000);
-		//introducechapter ("Chapter 2","The Minecrawler's nest","chapter2.tga","levelup.wav", 6000);
+		introducechapter ("Rozdzia³ 2","Szpieg","chapter2.tga","chapter.wav", 6000);
+		//introducechapter ("Chapter 2","The Minecrawler's nest","chapter2.tga","chapter.wav", 6000);
 	}
 	
 	//***************************************************************************
@@ -53,8 +53,8 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 	{
 		//PrintDebugNpc	(PD_MISSION, "---=== DAS DRITTE KAPITEL ===---");
 
-		introducechapter ("Rozdzia³ 3","Pêtla siê zaciska","chapter3.tga","levelup.wav", 6000);
-		//introducechapter ("Chapter 3","Artifacts of ancient power","chapter3.tga","levelup.wav", 6000);
+		introducechapter ("Rozdzia³ 3","Pêtla siê zaciska","chapter3.tga","chapter.wav", 6000);
+		//introducechapter ("Chapter 3","Artifacts of ancient power","chapter3.tga","chapter.wav", 6000);
 	}
 	
 	//***************************************************************************
@@ -63,8 +63,8 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 	else if (neues_Kapitel == 4)
 	{
 		//PrintDebugNpc	(PD_MISSION, "---=== DAS VIERTE KAPITEL ===---");
-		introducechapter ("Rozdzia³ 4","Nowy Obóz","chapter4.tga","levelup.wav", 6000); 
-		//introducechapter ("Chapter 4","Xardas","chapter4.tga","levelup.wav", 6000); 
+		introducechapter ("Rozdzia³ 4","Nowy Obóz","chapter4.tga","chapter.wav", 6000); 
+		//introducechapter ("Chapter 4","Xardas","chapter4.tga","chapter.wav", 6000); 
 	}
 	
 	//***************************************************************************
@@ -73,8 +73,8 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 	else if (neues_Kapitel == 5)
 	{
 		//PrintDebugNpc	(PD_MISSION, "---=== DAS FÜNFTE KAPITEL ===---");
-		introducechapter ("Rozdzia³ 5","Wysoka stawka","chapter5.tga","levelup.wav", 6000);
-		//introducechapter ("Chapter 5","The custodians of the portal","chapter5.tga","levelup.wav", 6000);
+		introducechapter ("Rozdzia³ 5","Wysoka stawka","chapter5.tga","chapter.wav", 6000);
+		//introducechapter ("Chapter 5","The custodians of the portal","chapter5.tga","chapter.wav", 6000);
 	}
 	
 	//***************************************************************************
@@ -83,8 +83,8 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 	else if (neues_Kapitel == 6)
 	{
 		//PrintDebugNpc	(PD_MISSION, "---=== DAS SECHSTE KAPITEL ===---");
-		introducechapter ("Rozdzia³ 6","Czas Zap³aty","chapter6.tga","levelup.wav", 6000);
-		//introducechapter ("Chapter 6","The sleeper's halls","chapter6.tga","levelup.wav", 6000);
+		introducechapter ("Rozdzia³ 6","Czas Zap³aty","chapter6.tga","chapter.wav", 6000);
+		//introducechapter ("Chapter 6","The sleeper's halls","chapter6.tga","chapter.wav", 6000);
 	};
 };
 

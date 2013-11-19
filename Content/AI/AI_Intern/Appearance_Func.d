@@ -128,7 +128,6 @@ func void Appr_Init()
 		return;
 	};
 	
-	Print("APPEARENCE INIT");
 	Appr_Inited = true;
 	APPR_HERO_TATTOO_CURRENT = 0;
 	APPR_HERO_BEARD_CURRENT = 4;

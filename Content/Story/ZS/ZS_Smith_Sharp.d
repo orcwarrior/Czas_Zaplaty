@@ -21,6 +21,7 @@ func void ZS_Smith_Sharp_Loop ()
     	B_InterruptMob ("BSSHARP");
     };
 	AI_Wait(self,1);
+	B_RemoveMobItems(self); //Ork: Troche perfidne ale to może pomoże garremu
 };
 
 func void ZS_Smith_Sharp_End ()
@@ -30,9 +31,4 @@ func void ZS_Smith_Sharp_End ()
 	B_StopUseMob	(self,	"BSSHARP");
 
 	var int amount;
-	amount = Npc_HasItems(self, ItMw_1H_Sword_01);
-	if (amount > 1)
-	{
-		Npc_RemoveInvItems(self,ItMw_1H_Sword_01, amount-1);
-	};
 };

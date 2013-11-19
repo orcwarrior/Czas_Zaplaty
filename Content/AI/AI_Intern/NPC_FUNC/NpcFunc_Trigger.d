@@ -101,7 +101,7 @@ func void EVT_POISON()
 	// Ork: Pozwole sobie stąd jednorazowo ogarnac appearence func które wymaga opóznionego
 	// ponownego ustawienia tekstury twarzy bohatera:
 	if(Appr_Inited == 2)
-	{ Appr_RefreshHeroAppearance(); Appr_Inited = 1; PRINT("REINIT APPEAR");};
+	{ Appr_RefreshHeroAppearance(); Appr_Inited = 1;};
 	
 	Wld_SendTrigger("POISON_TRIGGER");
 };
