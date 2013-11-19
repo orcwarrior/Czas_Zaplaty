@@ -559,25 +559,6 @@ FUNC VOID DIA_Fox_Armor_Info()
 	AI_Output (other, self, "DIA_Fox_Armor_15_08"); //Zobaczmy...
 }; 
 
-func void BuyArmorAtFox(var c_item armor)
-{
-   AI_Output(other, self,"RBL_2614_FOX_BuyArmorAtFox_15_01"); //Chcia³bym kupiæ zbrojê.
-   
-	if (Npc_HasItems(hero, itminugget)>= armor.value)
-	{
-		AI_Output(self, other,"RBL_2614_FOX_BuyArmorAtFox_08_02"); //Proszê, mam nadziejê, ¿e bêdziesz z niej zadowolony!		
-		CreateInvItem (hero, armor);	
-		Npc_RemoveInvItems (hero, ItMiNugget, armor.value); 
-		AI_EquipArmor(hero, armor);
-	}
-	else
-	{
-		AI_Output(self, other,"RBL_2614_FOX_BuyArmorAtFoxRefused_07_03"); //Nie masz wystarczaj¹cej iloœci rudy, a ja nie mogê robiæ tak hojnych prezentów!
-	};
-
-	B_StopProcessInfos(self);
-};
-
 var int buy_HUN_ARMOR_M;
 var int buy_HUN_ARMOR_H;
 var int buy_HUN_ARMOR_H2;
@@ -603,9 +584,22 @@ FUNC int RBL_2614_FOX_HUN_ARMOR_M_Condition()
 
 func void RBL_2614_FOX_HUN_ARMOR_M_Info()
 {
-   BuyArmorAtFox(HUN_ARMOR_M);
+   AI_Output(other, self,"RBL_2614_FOX_BuyArmorAtFox_15_01"); //Chcia³bym kupiæ zbrojê.
    
-   buy_HUN_ARMOR_M = true;
+	if (Npc_HasItems(hero, itminugget)>= HUN_ARMOR_M.value)
+	{
+		AI_Output(self, other,"RBL_2614_FOX_BuyArmorAtFox_08_02"); //Proszê, mam nadziejê, ¿e bêdziesz z niej zadowolony!		
+		CreateInvItem (hero, HUN_ARMOR_M);	
+		Npc_RemoveInvItems (hero, ItMiNugget, HUN_ARMOR_M.value); 
+		AI_EquipArmor(hero, HUN_ARMOR_M);
+      buy_HUN_ARMOR_M = true;
+	}
+	else
+	{
+		AI_Output(self, other,"RBL_2614_FOX_BuyArmorAtFoxRefused_07_03"); //Nie masz wystarczaj¹cej iloœci rudy, a ja nie mogê robiæ tak hojnych prezentów!
+	};
+
+	B_StopProcessInfos(self);
 };
 
 instance RBL_2614_FOX_HUN_ARMOR_H (C_INFO)
@@ -628,10 +622,23 @@ FUNC int RBL_2614_FOX_HUN_ARMOR_H_Condition()
 };
 
 func void RBL_2614_FOX_HUN_ARMOR_H_Info()
-{   
-   BuyArmorAtFox(HUN_ARMOR_H);
+{      
+   AI_Output(other, self,"RBL_2614_FOX_BuyArmorAtFox_15_01"); //Chcia³bym kupiæ zbrojê.
    
-   buy_HUN_ARMOR_H = true;
+	if (Npc_HasItems(hero, itminugget)>= HUN_ARMOR_H.value)
+	{
+		AI_Output(self, other,"RBL_2614_FOX_BuyArmorAtFox_08_02"); //Proszê, mam nadziejê, ¿e bêdziesz z niej zadowolony!		
+		CreateInvItem (hero, HUN_ARMOR_H);	
+		Npc_RemoveInvItems (hero, ItMiNugget, HUN_ARMOR_H.value); 
+		AI_EquipArmor(hero, HUN_ARMOR_H);
+      buy_HUN_ARMOR_H = true;
+	}
+	else
+	{
+		AI_Output(self, other,"RBL_2614_FOX_BuyArmorAtFoxRefused_07_03"); //Nie masz wystarczaj¹cej iloœci rudy, a ja nie mogê robiæ tak hojnych prezentów!
+	};
+
+	B_StopProcessInfos(self);
 };
 
 instance RBL_2614_FOX_Improved_HUN_ARMOR_H (C_INFO)
@@ -654,8 +661,21 @@ FUNC int RBL_2614_FOX_Improved_HUN_ARMOR_H_Condition()
 };
 
 func void RBL_2614_FOX_Improved_HUN_ARMOR_H_Info()
-{
-	BuyArmorAtFox(HUN_ARMOR_H2);
+{   
+   AI_Output(other, self,"RBL_2614_FOX_BuyArmorAtFox_15_01"); //Chcia³bym kupiæ zbrojê.
    
-   buy_HUN_ARMOR_H2 = true;
+	if (Npc_HasItems(hero, itminugget)>= HUN_ARMOR_H2.value)
+	{
+		AI_Output(self, other,"RBL_2614_FOX_BuyArmorAtFox_08_02"); //Proszê, mam nadziejê, ¿e bêdziesz z niej zadowolony!		
+		CreateInvItem (hero, HUN_ARMOR_H2);	
+		Npc_RemoveInvItems (hero, ItMiNugget, HUN_ARMOR_H2.value); 
+		AI_EquipArmor(hero, HUN_ARMOR_H2);
+      buy_HUN_ARMOR_H2 = true;
+	}
+	else
+	{
+		AI_Output(self, other,"RBL_2614_FOX_BuyArmorAtFoxRefused_07_03"); //Nie masz wystarczaj¹cej iloœci rudy, a ja nie mogê robiæ tak hojnych prezentów!
+	};
+
+	B_StopProcessInfos(self);
 };
