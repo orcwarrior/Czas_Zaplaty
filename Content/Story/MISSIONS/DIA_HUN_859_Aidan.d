@@ -987,12 +987,12 @@ FUNC VOID DIA_AIDAN_SWD_Help_Info()
 	AI_Output (other, self, "DIA_AIDAN_SWD_Help_15_01"); //Mam Ci pomóc z mieczami.
 	AI_Output (self, other, "DIA_AIDAN_SWD_Help_11_02"); //Prosi³em Ratforda o pomoc, ale nie s¹dzi³em, ¿e przyœle Ciebie.
 	AI_Output (other, self, "DIA_AIDAN_SWD_Help_15_03"); //Ka¿dy ma chwilê s³aboœci. No dobra, mów, co mam robiæ.
-	AI_Output (self, other, "DIA_AIDAN_SWD_Help_11_04"); //Dam ci wybór. Wykujesz 10 mieczy, albo przyniesiesz 30 stalowych prêtów.
+	AI_Output (self, other, "DIA_AIDAN_SWD_Help_11_04"); //Dam ci wybór. Wykujesz 10 mieczy, albo przyniesiesz 10 sztabek ¿elaza i 5 sztabek stali.
 	AI_Output (self, other, "DIA_AIDAN_SWD_Help_11_05"); //Co wybierasz?
 
 	Info_ClearChoices (DIA_AIDAN_SWD_Help);
 	Info_AddChoice (DIA_AIDAN_SWD_Help, "Wykujê miecze.", DIA_AIDAN_SWD_Help_SWDS);
-	Info_AddChoice (DIA_AIDAN_SWD_Help, "Przyniosê prêty.", DIA_AIDAN_SWD_Help_PRBS);
+	Info_AddChoice (DIA_AIDAN_SWD_Help, "Przyniosê sztabki.", DIA_AIDAN_SWD_Help_PRBS);
 };
 
 // -------------------------------------------------------------------
@@ -1020,12 +1020,12 @@ FUNC VOID DIA_AIDAN_SWD_Help_SWDS()
 FUNC VOID DIA_AIDAN_SWD_Help_PRBS()
 {
 	help_choice = 2;
-	AI_Output (other, self, "DIA_AIDAN_SWD_Help_PRBS_15_01"); //Przyniosê prêty.
+	AI_Output (other, self, "DIA_AIDAN_SWD_Help_PRBS_15_01"); //Przyniosê sztabki.
 	AI_Output (self, other, "DIA_AIDAN_SWD_Help_PRBS_11_02"); //Nie dziwi mnie to, jak zawsze po najmniejszej linii oporu.
 	AI_Output (other, self, "DIA_AIDAN_SWD_Help_PRBS_15_03"); //Przestañ biadoliæ, bo siê rozmyœlê.
-	AI_Output (other, self, "DIA_AIDAN_SWD_Help_PRBS_15_04"); //Nied³ugo wrócê z prêtami.
+	AI_Output (other, self, "DIA_AIDAN_SWD_Help_PRBS_15_04"); //Nied³ugo wrócê ze sztabkami.
 
-	B_LogEntry(CH3_RBL_AidanHelp, "Przyniosê Aidanowi 30 stalowych prêtów, po co siê przemêczaæ?");
+	B_LogEntry(CH3_RBL_AidanHelp, "Przyniosê Aidanowi 10 sztabek ¿elaza oraz 5 sztabek stali, po co siê przemêczaæ?");
 	B_StopProcessInfos(self);
 };
 
@@ -1065,33 +1065,29 @@ FUNC VOID DIA_AIDAN_SWD_HelpEnd_Info()
 		AI_Output (self, other, "DIA_AIDAN_SWD_HelpEnd_11_04"); //B¹dŸ tego pewien.
 		AI_Output (self, other, "DIA_AIDAN_SWD_HelpEnd_11_05"); //A to wyku³em dla Ciebie. Zatopi³em w amulecie star¹ runê, powinien daæ Ci jak¹œ ochronê.
 		
-      CreateInvItems (self,Amulett_der_Macht,1); //zmieñ na jakiœ amulet
-		B_GiveInvItems (self, other, Amulett_der_Macht, 1);
+      Give_and_remove(ItMw_1H_Sword_Long_04, 10);
+      Create_and_give(Amulett_der_Macht, 1);
 		
       AI_Output (other, self, "DIA_AIDAN_SWD_HelpEnd_15_06"); //Dziêki, na pewno siê przyda.
 		
-      B_GiveInvItems (other, self, ItMw_1H_Sword_Long_04, 10);
-		Npc_RemoveInvItems(self,ItMw_1H_Sword_Long_04,10);
-
 		Log_SetTopicStatus(CH3_RBL_AidanHelp, LOG_SUCCESS);
 		B_LogEntry(CH3_RBL_AidanHelp, "Wyku³em miecze dla Aidana, orê¿ przys³u¿y siê sprawie.");
 	}
-	else if (help_choice == 2)&&(NPC_HasItems(other,ItMiSwordraw)>=30)	
+	else if (help_choice == 2)&&(NPC_HasItems(other, ItMa_Iron)>=10) && (NPC_HasItems(other, ItMa_Steel)>=5)
 	{
 		others_help = others_help + 1;
 		B_GiveXP(200);
 		help_choice = 5;
       
-		AI_Output (other, self, "DIA_AIDAN_SWD_HelpEnd_15_07"); //Bierz stal i zabieraj siê do roboty!
+		AI_Output (other, self, "DIA_AIDAN_SWD_HelpEnd_15_07"); //Bierz sztabki i zabieraj siê do roboty!
 		AI_Output (self, other, "DIA_AIDAN_SWD_HelpEnd_11_08"); //Wiem, co mam robiæ. ZejdŸ mi z oczu!
 
-		B_GiveInvItems (other, self, ItMiSwordraw, 30);
-		Npc_RemoveInvItems(self,ItMiSwordraw,30);
+      Give_and_remove(ItMa_Iron, 10);
+      Give_and_remove(ItMa_Steel, 5);
 
 		Log_SetTopicStatus	(CH3_RBL_AidanHelp, LOG_SUCCESS);
-		//TODO / CORRECT "kolejne nudne zadanie"
-		//Sher:
-		B_LogEntry(CH3_RBL_AidanHelp, "Odda³em Aidanowi stal, kolejne nudne zadanie zaliczone!");
+
+		B_LogEntry(CH3_RBL_AidanHelp, "Odda³em Aidanowi sztabki, kolejne nudne zadanie zaliczone!");
 	}
 	else
 	{
