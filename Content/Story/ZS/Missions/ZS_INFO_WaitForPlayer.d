@@ -21,6 +21,8 @@ func void B_TriggerInfoCam()
 
 	Log_SetTopicStatus(CH3_RBL_OldCampInfo, LOG_SUCCESS);
 	B_LogEntry(CH3_RBL_OldCampInfo, "Informator Urta powiedzia³ mi, ¿e stra¿nicy uderz¹ na Obóz Rebeliantów. Muszê ostrzec Ratforda!");
+   
+   Rick_meets_informant = true;
 };
 
 func void ZS_INFO_WaitForPlayer()

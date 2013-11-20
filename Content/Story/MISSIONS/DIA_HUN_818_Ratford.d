@@ -1506,6 +1506,8 @@ FUNC VOID DIA_RATFORD_Contact_Info()
 	AI_Output (other, self, "DIA_RATFORD_Contact_15_11"); //W porz¹dku, nie traæmy wiêcej czasu.
 
 	Wld_InsertNpc(RBL_4064_Info,"OC1");
+   
+   Rick_meets_informant = false;
 
 	Log_CreateTopic(CH3_RBL_OldCampInfo, LOG_MISSION);
 	Log_SetTopicStatus(CH3_RBL_OldCampInfo, LOG_RUNNING);
@@ -1529,7 +1531,7 @@ INSTANCE DIA_RATFORD_OCA (C_INFO)
 
 FUNC INT DIA_RATFORD_OCA_Condition()
 {
-	if (Npc_KnowsInfo (hero, DIA_NoName_HiAgain))
+	if ((Npc_KnowsInfo (hero, DIA_RATFORD_Contact) && (Rick_meets_informant)) || (Npc_KnowsInfo (hero, DIA_NoName_HiAgain)))
 	{
 		return 1;
 	};

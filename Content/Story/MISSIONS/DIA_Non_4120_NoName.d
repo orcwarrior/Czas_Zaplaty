@@ -125,7 +125,7 @@ FUNC void  DIA_NoName_HiAgain_Info()
       B_LogEntry		(CH1_Rbl_NoName, "Ten dziwny skazaniec uratowa³ mi ty³ek. Sk¹d on siê tutaj wzi¹³?");
 	};
    
-	AI_Output (self, other,"DIA_NoName_HiAgain_Info_15_04"); //Tylko nie mów tego za g³oœno bo popsujesz mi reputacjê, he, he.
+	AI_Output (self, other,"DIA_NoName_HiAgain_Info_15_04"); //Tylko nie mów tego za g³oœno, bo popsujesz mi reputacjê, he, he.
 	AI_Output (other, self,"DIA_NoName_HiAgain_Info_15_05"); //Nie ma sprawy, bêdê milcza³ jak grób. Mimo wszystko... Dziêki.
 	AI_Output (self, other,"DIA_NoName_HiAgain_Info_15_06"); //Powodzenia na szlaku.
 	AI_Output (other, self,"DIA_NoName_HiAgain_Info_15_07"); //Bywaj.
