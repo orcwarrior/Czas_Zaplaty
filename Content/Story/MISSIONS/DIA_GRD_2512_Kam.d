@@ -37,6 +37,9 @@ func void B_Kam_Fight()
    B_StartAfterDialogFight(thug1, other, true);
 	B_StartAfterDialogFight(thug2, other, true);
 	B_StartAfterDialogFight(kam, other, true);
+   Npc_SetPermAttitude	(kam, ATT_HOSTILE);
+   Npc_SetPermAttitude	(thug1, ATT_HOSTILE);
+   Npc_SetPermAttitude	(thug2, ATT_HOSTILE);
 };
 
 INSTANCE DIA_Kam_First (C_INFO)
