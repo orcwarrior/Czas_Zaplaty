@@ -445,7 +445,7 @@ INSTANCE DIA_Hrabia_LastOrn (C_INFO)
 
 FUNC INT DIA_Hrabia_LastOrn_Condition()
 {
-	if (Npc_KnowsInfo (hero, DIA_Wegorz_First1))&&(Npc_GetDistToNpc(self,hero) < 500)&&(map4_readbydick == TRUE)
+	if (Npc_KnowsInfo (hero, Info_Nefarius_OrnamentMapAgain))&&(Npc_GetDistToNpc(self,hero) < 500)&&(map4_readbydick == TRUE)
 	{
 		return 1;
 	};
@@ -480,10 +480,11 @@ FUNC VOID DIA_Hrabia_LastOrn_Info()
 	AI_Output (self, other, "DIA_Hrabia_LastOrnf_11_18"); //Co to?
 	AI_Output (other, self, "DIA_Hrabia_LastOrnf_15_19"); //Cholera, znowu te pieprzone czary...
 
-	B_LogEntry(CH3_NON_Ornament, "Znowu siê spóŸni³em! Hrabia zdoby³ ostatni ornament, ale magowie nadal maj¹ jeden kawa³ek. Mam im przekazaæ, ¿e je¿eli w ci¹gu trzech dni dobrowolnie zwróc¹ ornament, to Hrabia i jego ludzie ju¿ wiêcej nam nie zagro¿¹. Ale je¿eli odmówi¹ to czeka ich œmieræ. Musz¹ przekazaæ to Saturasowi.");
+	B_LogEntry(CH3_NON_Ornament, "Znowu siê spóŸni³em! Hrabia zdoby³ ostatni ornament, ale magowie nadal maj¹ jeden kawa³ek. Mam im przekazaæ, ¿e je¿eli w ci¹gu trzech dni dobrowolnie zwróc¹ ornament, to Hrabia i jego ludzie ju¿ wiêcej nam nie zagro¿¹. Ale je¿eli odmówi¹, to czeka ich œmieræ. Musz¹ przekazaæ to Saturasowi.");
 	B_StopProcessInfos(self);
 	Npc_ExchangeRoutine(self,"castle");//najwy¿szy czas, ¿eby hrabia wróci³ do zamku o ile bêdzie ten zamek
 
+   Saturas_saves_Rick = 2;
 	/***********************
 
 	Ork znowu tp do Saturasa, chodzi o to, ¿eby zmieœciæ siê w tych 3 dniach bo i magom i hrabiemu z krukiem na tym zale¿y

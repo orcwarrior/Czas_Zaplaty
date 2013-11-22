@@ -206,7 +206,7 @@ INSTANCE DIA_Wegorz_Wait (C_INFO)
 
 FUNC INT DIA_Wegorz_Wait_Condition()
 {
-	if (Npc_KnowsInfo(hero,DIA_Hrabia_LastOrn))
+	if (Npc_KnowsInfo(hero, DIA_Hrabia_LastOrn)) && (!Npc_KnowsInfo(hero, Info_Saturas_Konwer)) 
 	{
 		return 1;
 	};
@@ -216,33 +216,6 @@ FUNC VOID DIA_Wegorz_Wait_Info()
 {
 	AI_Output (self, other, "DIA_Wegorz_Wait_11_01"); //Nie wracaj tu bez ornamentów, z³amasie!
 	B_StopProcessInfos(self);
-};
-
-INSTANCE DIA_Wegorz_Teleport (C_INFO)
-{
-	npc				= Grd_2519_Wegorz;
-	nr				= 3;
-	condition		= DIA_Wegorz_Teleport_Condition;
-	information		= DIA_Wegorz_Teleport_Info;
-	permanent		= 0;
-	important		= 1;
-	description		= "..."; 
-};
-
-FUNC INT DIA_Wegorz_Teleport_Condition()
-{
-	if (Npc_KnowsInfo(hero, DIA_Wegorz_Wait))
-	{
-		return 1;
-	};
-};
-
-FUNC VOID DIA_Wegorz_Teleport_Info()
-{
-	B_StopProcessInfos(self);
-   B_StopProcessInfos(hero);
-
-	AI_Teleport(hero, "LOCATION_19_03_ROOM6_BARRELCHAMBER2");
 };
 
 // **************************************************
@@ -260,7 +233,7 @@ INSTANCE DIA_Wegorz_Wait1 (C_INFO)
 
 FUNC INT DIA_Wegorz_Wait1_Condition()
 {
-	if (Npc_KnowsInfo(hero,DIA_Wegorz_Wait))
+	if (Npc_KnowsInfo(hero, DIA_Wegorz_Wait)) || (Npc_KnowsInfo(hero, Info_Saturas_Konwer))
 	{
 		return 1;
 	};
@@ -277,12 +250,11 @@ FUNC VOID DIA_Wegorz_Wait1_Info()
 	if (ornament_wait >= Wld_GetDay())
 	{
 		AI_Output (self, other, "DIA_Wegorz_Wait1_11_01"); //Nie wracaj tu bez ornamentów, z³amasie!
-		B_StopProcessInfos(self);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Wegorz_Wait1_11_01"); //Gdzie s¹ moje ornamenty?!
-		AI_Output (self, other, "DIA_Wegorz_Wait1_11_01"); //Zar¿n¹æ tego wieprza!
+		AI_Output (self, other, "DIA_Wegorz_Wait1_11_02"); //Gdzie s¹ moje ornamenty?!
+		AI_Output (self, other, "DIA_Wegorz_Wait1_11_03"); //Zar¿n¹æ tego wieprza!
       
 		Npc_SetTempAttitude(self, ATT_HOSTILE); Npc_SetAttitude(self, ATT_HOSTILE);
 		Npc_SetTempAttitude(grd1, ATT_HOSTILE); Npc_SetAttitude(grd1, ATT_HOSTILE);
@@ -291,4 +263,6 @@ FUNC VOID DIA_Wegorz_Wait1_Info()
 		Npc_SetTempAttitude(grd4, ATT_HOSTILE); Npc_SetAttitude(grd4, ATT_HOSTILE);
 		Npc_SetTempAttitude(grd5, ATT_HOSTILE); Npc_SetAttitude(grd5, ATT_HOSTILE);
 	};
+   
+   B_StopProcessInfos(self);
 };
