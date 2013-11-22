@@ -501,8 +501,8 @@ FUNC VOID DIA_Angus_Patrol1_Fight()
 	B_StopProcessInfos(self); 
 	//Use old Routine	
 	Npc_ExchangeRoutine(self,"FOLLOWALLIGATOR");
-	Npc_ExchangeRoutine(hank,"FOLLOWALLIGATOR");
-	Npc_ExchangeRoutine(rodney,"FOLLOWALLIGATOR");
+	B_ExchangeRoutine(hank,"FOLLOWALLIGATOR");
+	B_ExchangeRoutine(rodney,"FOLLOWALLIGATOR");
 };
 
 // ---------------------------Smart----------------------------------------
