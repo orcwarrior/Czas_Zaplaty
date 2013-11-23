@@ -313,9 +313,7 @@ Ork:
 
 	************************/
    wld_insertNPC(MonsterOfSwamp, "PSI_TEMPLE_ROOMS_IN_02");
-   
-	AI_GotoWP(self, "PSI_TEMPLE_IN");
-	AI_GotoWP(other, "PSI_TEMPLE_IN");
+   Npc_ExchangeRoutine(self, "GoToBeast");
 };
 
 // **************************************************
@@ -376,7 +374,7 @@ ALe jak chcesz mo¿esz zrobiæ to po aragornowemu, tu masz opis.
 
 	AI_GotoWP(self, "PSI_TEMPLE_ROOMS_IN_02");
 	AI_GotoWP(other, "PSI_TEMPLE_ROOMS_IN_02");
-   
+   Npc_ExchangeRoutine(self, "FightWithBeast");
    AI_Teleport(MonsterOfSwamp, "PSI_TEMPLE_IN_05");
 };
 
@@ -423,9 +421,6 @@ CH³opaki wychodz¹ i adzia xD
 Bestia niech ju¿ nie bêdzie nieœmiertelna i hp tez jej zmniejszy³em musz¹ sobie poradziæ, ale walka MUSI byæ naprawdê trudna.
 
 	************************/
-
-	AI_GotoWP(self, "FIGHT");
-	AI_GotoWP(other, "FIGHT");
 };
 
 // **************************************************
