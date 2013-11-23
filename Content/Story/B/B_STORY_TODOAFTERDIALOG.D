@@ -245,33 +245,24 @@ func void B_AfterDialog_Info_Nameless_HiAgain(var c_npc talker)
 	AI_Teleport(a,"INVISIBLE2");	
 	Npc_ChangeAttribute(a,ATR_HITPOINTS,-9999);		
 	a.attribute[ATR_HITPOINTS]=a.attribute[ATR_HITPOINTS]-a.attribute[ATR_HITPOINTS_MAX];
-	// 	Npc_ClearAiQueue(diego);	
-	// 	AI_Teleport(diego,"INVISIBLE");	
-	// 	AI_StandUp 		(dmn);
-	// 	AI_TurnToNpc	(dmn, hero);
-	// 	AI_PlayAni		(dmn, "T_WARN"); 	
+	
 	B_AfterDialog_Info_Nameless_HiAgain_disabled=true;
 };
 
 func void B_AfterDialog_Info_Nameless_RBL4(var c_npc talker)
 {
 	var c_npc a; a = Hlp_GetNpc(Nameless_ThirdMeetGYD);
-	Hero_Meets_Informator=TRUE;
-	Npc_ExchangeRoutine(a,"DEAD2");	
+	Npc_ExchangeRoutine(a,"INVISIBLEGRYD");	
 	Npc_PerceiveAll		(a);
 	Npc_SetTarget(a,a);
 	B_DrawSpell		(a,	SPL_TELEPORT1,	SPL_SENDCAST_TELEPORT);
 	Npc_ClearAiQueue(a);		
 	Wld_PlayEffect("spellFX_Teleport", a, a, 1,0 , DAM_MAGIC, TRUE); //Projetil = TRUE (trifft alle)		
 	AI_PlayAni		(a, "T_MAGRUN_2_HEASHOOT" );
-	AI_Teleport(a,"INVISIBLE");	
+	AI_Teleport(a,"GRYD_073");
 	Npc_ChangeAttribute(a,ATR_HITPOINTS,-9999);		
 	a.attribute[ATR_HITPOINTS]=a.attribute[ATR_HITPOINTS]-a.attribute[ATR_HITPOINTS_MAX];
-	// 	Npc_ClearAiQueue(diego);	
-	// 	AI_Teleport(diego,"INVISIBLE");	
-	// 	AI_StandUp 		(dmn);
-	// 	AI_TurnToNpc	(dmn, hero);
-	// 	AI_PlayAni		(dmn, "T_WARN"); 	
+	
 	B_AfterDialog_Info_Nameless_RBL4_disabled=true;
 };
 func void B_AfterDialog_Info_OrcGhost_Kill(var c_npc talker)
