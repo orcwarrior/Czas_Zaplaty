@@ -374,6 +374,7 @@ Niech rzuci okiem na jednego z grd
 	B_LogEntry(CH4_GRD_NewMine, "Stra¿nik Carlos za³atwi³ mi darmowy pobyt w kopalni. Jeszcze siê policzê z tym sukinsynem.");
    
    freemine_ready_to_opened = true;
+   Rick_goesTo_freemine = true;
    
    Wld_SendTrigger("FREEMINEGATE");
    
