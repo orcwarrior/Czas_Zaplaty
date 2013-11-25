@@ -431,11 +431,6 @@ Ork teraz twoja dzia³a. Ci 3 stra¿nicy powinni Dicka zaprowadziæ do Kolalni i go
 ************************/
 
 	Npc_ExchangeRoutine(carlos,"DEAD");
-
-	/*************
-	Nowy stra¿nik na miejsce Carlosa przed kopalni¹
-	**************/
-	Wld_InsertNpc(Grd_4089_Bern,"FMC_PATH18");
    
    B_StopProcessInfos(self);
 };

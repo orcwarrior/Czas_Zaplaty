@@ -653,18 +653,12 @@ FUNC VOID B_Trigger_CheckMissions()
 		Saturas_saves_Rick = false;
 	};
    
-   if ((Saturas_saves_Rick == 2) && InfoManager_HasFinished())
-	{
-		AI_Teleport  (hero, "LOCATION_19_03_ROOM6_BARRELCHAMBER2");
-		
-		Saturas_saves_Rick = false;
-	};
-   
    if (Rick_goesTo_freemine && InfoManager_HasFinished())
    {
       Rick_goesTo_freemine = false;
       
       AI_GotoWP(hero, "FMC_ENTRANCE");
+      Wld_InsertNpc(Grd_4089_Bern,"FMC_PATH18"); //Nowy stra¿nik na miejsce Carlosa przed kopalni¹
    };
 
 	if (Npc_HasItems(hero,orn3) && (!Hrabia_orn3))
