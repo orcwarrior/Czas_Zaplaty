@@ -48,6 +48,7 @@ func void B_teleport_Raven()
 {
    var c_npc raven; raven = Hlp_GetNpc(Ebr_105_Raven);
 
+   B_FullStop(raven);
    B_DrawSpell		(raven,	SPL_TELEPORT1,	SPL_SENDCAST_TELEPORT);
 	AI_PlayAni		(raven, "T_MAGRUN_2_HEASHOOT");
    B_DrawSpell		(hero,	SPL_TELEPORT1,	SPL_SENDCAST_TELEPORT);

@@ -208,6 +208,7 @@ var int Raven_teleport_to_hidden;
 var int repaired_axe_Rick;
 var int Rick_meets_informant;
 var int Rick_goesTo_freemine;
+var int Raven_fights_Rick;
 
 var int Scorpio_teacher;
 //MIS_Katrakanat_pieces

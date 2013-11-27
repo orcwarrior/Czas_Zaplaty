@@ -318,7 +318,7 @@ instance DIA_Raven_Castle (C_INFO)
 
 FUNC int DIA_Raven_Castle_Condition()
 {
-	if (Npc_KnowsInfo (hero,DIA_Raven_MagAgain))&&(Npc_GetDistToWP(self,"NC_EN_MAINPATH_05") < 2500)
+	if (Npc_KnowsInfo (hero, DIA_Raven_MagAgainReadyReady))&&(Npc_GetDistToWP(self,"NC_EN_MAINPATH_05") < 2500)
 	{
 		return 1;
 	};
@@ -327,6 +327,7 @@ FUNC int DIA_Raven_Castle_Condition()
 FUNC VOID DIA_Raven_Castle_Info()
 {
 	B_FullStop (hero);
+   B_FullStop (hrabia);
 	AI_GotoNpc(self, other);
 	AI_Output (self, other,"DIA_Raven_Castle_10_01"); //Nie obawiaj siê demona. To mój...
 	AI_TurnToNpc(self, RavenDemonLord);
@@ -383,6 +384,7 @@ FUNC VOID DIA_Raven_Castle1_Info()
 Niech hrabia wyjdzie z ukrycia gdzieœ na œrodek dziedziñca...
 
 **********************/
+   AI_Teleport(hrabia, "NC_EN_MAINPATH_04");
    B_ExchangeRoutine(hrabia, "death");
    AI_SetWalkmode (hrabia, NPC_RUN); 
 	AI_GotoWP(hrabia, "NIA_INSPECT");
@@ -403,7 +405,7 @@ instance DIA_Raven_CastleCount (C_INFO)
 
 FUNC int DIA_Raven_CastleCount_Condition()
 {
-	if (Npc_KnowsInfo (hero,DIA_Raven_Castle1))&&(Npc_GetDistToWP(hrabia, "NIA_INSPECT") < 500)
+	if (Npc_KnowsInfo (hero,DIA_Raven_Castle1)) && (Npc_GetDistToWP(hrabia, "NIA_INSPECT") < 500) && (Npc_GetDistToWP(self, "NIA_INSPECT") < 500)
 	{
 		return 1;
 	};
@@ -423,6 +425,7 @@ FUNC VOID DIA_Raven_CastleCount_Info()
 	Wld_PlayEffect("spellFX_INCOVATION_RED", self, hrabia, 1, 0, DAM_MAGIC, FALSE);
 	AI_PlayAni(hrabia, "T_PSI_VICTIM");
 	Npc_ChangeAttribute(hrabia, ATR_HITPOINTS, -hrabia.attribute[ATR_HITPOINTS_MAX]);
+   self.attribute[ATR_HITPOINTS] = self.attribute[ATR_HITPOINTS_MAX];
 };
 
 //****************************
@@ -457,7 +460,8 @@ FUNC VOID DIA_Raven_CastleFight_Info()
 	B_LogEntry(CH1_Rbl_Hrabia, "Hrabia nie ¿yje. Muszê sam stawiæ czo³a Krukowi!");
    B_ClearIMMORTAL(Ebr_105_Raven);
 	B_StopProcessInfos(self); 
-	B_StartAfterDialogFight(self,other,false);
+	B_StartAfterDialogFight(self, other, true);
+   Raven_fights_Rick = true;
 };
 
 //****************************
@@ -475,12 +479,7 @@ instance DIA_Raven_CastleFightAfter (C_INFO)
 
 FUNC int DIA_Raven_CastleFightAfter_Condition()
 {
-	/**************
-Ork chodzi o to, ¿eby Kruk zagada³ jak bêdzie mia³ ma³o HP.
-
-*****************/
-
-	if (Npc_KnowsInfo (hero,DIA_Raven_CastleFight))&&(Npc_GetDistToNpc(self,hero) < 2500)&&(self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]/10 )
+	if (Npc_KnowsInfo (hero,DIA_Raven_CastleFight))&&(!Raven_fights_Rick)
 	{
 		return 1;
 	};

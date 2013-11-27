@@ -596,9 +596,7 @@ FUNC VOID B_Trigger_CheckMissions()
 	};
 
 	if (Raven_teleport_to_hidden && InfoManager_HasFinished())
-	{
-		var c_npc raven; raven = Hlp_GetNpc(Ebr_105_Raven);
-		
+	{	
 		Raven_teleport_to_hidden = false;
 		
 		Snd_Play("MFX_Teleport_Cast");
@@ -733,6 +731,12 @@ FUNC VOID B_Trigger_CheckMissions()
 	if (Black_mag_arrived == 1)
 	{
 		B_insert_necros_servants();
+	};
+   
+   if ((Raven_fights_Rick)&&(raven.attribute[ATR_HITPOINTS] <= raven.attribute[ATR_HITPOINTS_MAX]/5))
+	{
+		B_FullStop(raven);
+		Raven_fights_Rick = false;
 	};
 
 	if ((necro_appear == 2)&&(hero.attribute[ATR_HITPOINTS] <= hero.attribute[ATR_HITPOINTS_MAX]/10) && (WORLD_CURRENT == WORLD_LABIRYNT))
