@@ -1518,7 +1518,7 @@ FUNC VOID DIA_Cavalorn_Mine_Info()
 {
    AI_Output (self, other,"DIA_Cavalorn_Mine_12_01"); //Dobrze, ¿e jesteœ, najwy¿szy czas odp³aciæ Gomezowi t¹ sam¹ monet¹.
    AI_Output (other, self, "DIA_Cavalorn_Mine_15_02"); //Co zamierzasz?
-   AI_Output (self, other,"DIA_Cavalorn_Mine_12_03"); //Wyr¿niemy wszystkich s³ugusów Gomeza w Starej Kopalnii!
+   AI_Output (self, other,"DIA_Cavalorn_Mine_12_03"); //Wyr¿niemy wszystkich s³ugusów Gomeza w Starej Kopalni!
    AI_Output (other, self, "DIA_Cavalorn_Mine_15_04"); //Je¿eli spodziewaj¹ siê ataku to ju¿ po nas.
    AI_Output (self, other,"DIA_Cavalorn_Mine_12_05"); //Musimy zaryzykowaæ. Je¿eli Gomez bêdzie mia³ w rêku dwie kopalnie to i tak przegramy. 
    AI_Output (self, other,"DIA_Cavalorn_Mine_12_06"); //Nic go tak nie ugodzi, jak utrata ukochanej rudy. A nam da to chwilow¹ przewagê i wystarczaj¹c¹ iloœæ bry³ek by przygotowaæ siê do ostatecznej konfrontacji.

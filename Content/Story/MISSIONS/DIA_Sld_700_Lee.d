@@ -736,8 +736,8 @@ FUNC VOID  DIA_Lee_RBLWolf_Info()
 	AI_Output (self, other,"DIA_Lee_RBLWolf_08_15"); //Nie mo¿emy pope³niæ tego samego b³êdu co poprzednio. Trzeba zlokalizowaæ ukryte przejœcie i strzec go za wszelk¹ cenê.
 	AI_Output (other, self,"DIA_Lee_RBLWolf_15_16"); //To nie powinno byæ takie trudne.
 	AI_Output (self, other,"DIA_Lee_RBLWolf_08_17"); //Obawiam siê, ¿e mo¿esz siê myliæ.
-	AI_Output (self, other,"DIA_Lee_RBLWolf_08_18"); //Stra¿nicy regularnie organizuj¹ tam prze¿uty broni i ludzi. Z tego co wiem jest tam dobrze ukryty i strze¿ony posterunek.
-	AI_Output (self, other,"DIA_Lee_RBLWolf_08_19"); //Niestety nikt dok³adnie nie wie gdzie jest samo przejœcie i gdzie znajduje siê posterunek.
+	AI_Output (self, other,"DIA_Lee_RBLWolf_08_18"); //Stra¿nicy regularnie organizuj¹ tam przerzuty broni i ludzi. Z tego co wiem, jest tam dobrze ukryty i strze¿ony posterunek.
+	AI_Output (self, other,"DIA_Lee_RBLWolf_08_19"); //Niestety nikt dok³adnie nie wie, gdzie jest samo przejœcie i gdzie znajduje siê posterunek.
 	AI_Output (other, self,"DIA_Lee_RBLWolf_15_20"); //Hmm, rzeczywiœcie nie wygl¹da to ró¿owo.
 	AI_Output (self, other,"DIA_Lee_RBLWolf_08_21"); //Wiêc jaka jest twoja decyzja?
 
@@ -772,11 +772,11 @@ FUNC VOID  DIA_Lee_RBLOk_Info()
 	AI_Output (self, other,"DIA_Lee_RBLOk_08_03"); //Przejœcia szukaj w pobli¿u kopalni, w ka¿dym razie tam uderzyli najpierw.
 	AI_Output (self, other,"DIA_Lee_RBLOk_08_04"); //Aha i musisz pójœæ sam. Nie mogê oddaæ ci ¿adnego najemnika, dopóki nie odnajdziesz przejœcia.
 	AI_Output (self, other,"DIA_Lee_RBLOk_08_05"); //Niech ci nie przyjdzie do g³owy zgrywaæ bohatera. Jak tylko znajdziesz przejœcie i posterunek wróæ, wyœlê tam ludzi, którzy zajm¹ siê reszt¹.
-	AI_Output (other, self,"DIA_Lee_RBLOk_15_06"); //Zobaczê co da siê zrobiæ. 
+	AI_Output (other, self,"DIA_Lee_RBLOk_15_06"); //Zobaczê, co da siê zrobiæ. 
 
 	Log_CreateTopic		(CH5_NC_Passage,	LOG_MISSION);
 	Log_SetTopicStatus	(CH5_NC_Passage,	LOG_RUNNING);
-	B_LogEntry		(CH5_NC_Passage,	"Przed atakiem na stra¿ników Lee chce ¿ebym odnalaz³ prze³êcz, przez któr¹ wczeœniej przedarli siê stra¿nicy. Muszê odnaleŸæ przejœcie i ukryty tam posterunek, potem mam wróciæ do Lee, on zajmie siê reszt¹. Powinienem zacz¹æ poszukiwania w pobli¿u kopalni.");
+	B_LogEntry		(CH5_NC_Passage,	"Przed atakiem na stra¿ników Lee chce, ¿ebym odnalaz³ prze³êcz, przez któr¹ wczeœniej przedarli siê stra¿nicy. Muszê odnaleŸæ przejœcie i ukryty tam posterunek, potem mam wróciæ do Lee, on zajmie siê reszt¹. Powinienem zacz¹æ poszukiwania w pobli¿u kopalni.");
 //WP: STRAZNICA1-6
 
    Wld_InsertNpc(EBR_4444_Stern, "STRAZNICA1");
@@ -854,8 +854,8 @@ hide_clear ();
 	AI_Output (self, other,"DIA_Lee_RBLFound_08_13"); //Szkoda jednak traciæ dobrych ludzi. Grani ³atwo siê broni, kilku ludzi z ³ukami i kuszami bez problemów powstrzyma spory oddzia³. Znajdziesz tam Gorna i jego oddzia³, od niego dowiesz siê wiêcej.
 	AI_Output (other, self,"DIA_Lee_RBLFound_15_14"); //Rozumiem, ¿e wolisz wys³aæ i ewentualnie straciæ tylko jednego szaleñca?
 	AI_Output (self, other,"DIA_Lee_RBLFound_08_15"); //Nie mam wyboru. Ale negocjacje nie wchodz¹ w rachubê.
-	AI_Output (self, other,"DIA_Lee_RBLFound_08_16"); //Potrzebujemy g³owy Fletchera, tylko najpierw musisz wydusiæ z niego wszystko co wie o Orlim GnieŸdzie i tym co siê tam wydarzy³o.
-	AI_Output (other, self,"DIA_Lee_RBLFound_15_17"); //A jak mam siê tam dostaæ? Nie wdrapiê siê nawet na grañ bo podziurawi¹ mnie be³tami.
+	AI_Output (self, other,"DIA_Lee_RBLFound_08_16"); //Potrzebujemy g³owy Fletchera, tylko najpierw musisz wydusiæ z niego wszystko, co wie o Orlim GnieŸdzie i tym co siê tam wydarzy³o.
+	AI_Output (other, self,"DIA_Lee_RBLFound_15_17"); //A jak mam siê tam dostaæ? Nie wdrapiê siê nawet na grañ, bo podziurawi¹ mnie be³tami.
 	AI_Output (self, other,"DIA_Lee_RBLFound_08_18"); //Spróbuj pójœæ w nocy, kto wie, mo¿e uda Ci siê przemkn¹æ w pobli¿u stra¿ników.
 	AI_Output (other, self,"DIA_Lee_RBLFound_15_19"); //Œwietna rada... No dobra, spróbujê.
 	AI_Output (self, other,"DIA_Lee_RBLFound_08_20"); //Wiedzia³em, ¿e siê skusisz. Czasami wydaje mi siê, ¿e... szukasz œmierci.
@@ -873,7 +873,7 @@ fletcher_escape ();
 
 	Log_CreateTopic(CH5_NC_TheRock,	LOG_MISSION);
 	Log_SetTopicStatus(CH5_NC_TheRock,	LOG_RUNNING);
-	B_LogEntry(CH5_NC_TheRock,	"Pod moj¹ nieobecnoœæ coœ siê wydarzy³o w Orlim GnieŸdzie. Nawet Fletcher tak siê przerazi³, ¿e nie bacz¹c na nic przebi³ siê przez najemników i z resztk¹ stra¿ników zaszy³ siê na grani po drodze do kopalni. Muszê dowiedzieæ siê od Fletchera ile tylko zdo³am o tym co siê sta³o w sto³pie i dlaczego kasztel wygl¹da na opuszczony. Lee zasugerowa³, ¿e po rozmowie powinienem raz na zawsze pozbyæ siê Fletchera.");
+	B_LogEntry(CH5_NC_TheRock,	"Pod moj¹ nieobecnoœæ coœ siê wydarzy³o w Orlim GnieŸdzie. Nawet Fletcher tak siê przerazi³, ¿e nie bacz¹c na nic przebi³ siê przez najemników i z resztk¹ stra¿ników zaszy³ siê na grani po drodze do kopalni. Muszê dowiedzieæ siê od Fletchera, ile tylko zdo³am o tym, co siê sta³o w sto³pie i dlaczego kasztel wygl¹da na opuszczony. Lee zasugerowa³, ¿e po rozmowie powinienem raz na zawsze pozbyæ siê Fletchera.");
 	
    var C_NPC gorn; gorn = Hlp_GetNpc(PC_Fighter);
 	Npc_ExchangeRoutine(gorn,"WATCH");
@@ -957,7 +957,7 @@ FUNC VOID  DIA_Lee_TheRock_Info()
 Ork idealna by³aby funkcja sprawdzaj¹ca czy któryœ ze stra¿ników z NO jeszcze ¿yje, jak tak to tutaj go skilluj
 
 ***************************/
-	AI_Output (self, other,"DIA_Lee_TheRock_08_09"); //Dowiedz siê co knuje Kruk i co wydarzy³o siê w Orlim GnieŸdzie. Nie mo¿emy pod w³asnym nosem chowaæ puszki Beliara.
+	AI_Output (self, other,"DIA_Lee_TheRock_08_09"); //Dowiedz siê, co knuje Kruk i co wydarzy³o siê w Orlim GnieŸdzie. Nie mo¿emy pod w³asnym nosem chowaæ puszki Beliara.
 	AI_Output (other, self,"DIA_Lee_TheRock_15_10"); //Wrócê, jak dowiem siê czegoœ wiêcej.
 	//B_LogEntry		(CH5_NC_TheRock,	"Czas poszukaæ kufra Hrabiego w by³ej siedzibie Magów Wody i sprawdziæ co w nim znajdê.");
    B_LogEntry(CH5_NC_TheRock,	"Poinformowa³em Lee, co siê sta³o na grani, a on znalaz³ dla mnie runê do Orlego Gniazda. Czas spotkaæ siê z Hrabi¹!");
@@ -1017,8 +1017,8 @@ Ork daj tam 2 najemników, znaczy zmieñ rutyny jakimœ 2 ambientom
 
 	AI_Output (self, other,"DIA_Lee_TheRockCompleated_08_12"); //Zrobi³eœ wiêcej ni¿ od Ciebie oczekiwa³em.
 	AI_Output (other, self,"DIA_Lee_TheRockCompleated_15_13"); //Jak to wszystko siê skoñczy, usi¹dziemy i schlejemy siê w sztok. Oczywiœcie na twój rachunek.
-	AI_Output (self, other,"DIA_Lee_TheRockCompleated_08_14"); //Masz to jak w Myrtañskim Banku.
-	AI_Output (self, other,"DIA_Lee_TheRockCompleated_08_15"); //Aha, mam jeszcze jedn¹ proœbê. Powiedz Saturasowi, ¿e Nowy Obóz znowu jest bezpieczny. Je¿eli magowi chc¹, mog¹ wróciæ na stare œmieci.
+	AI_Output (self, other,"DIA_Lee_TheRockCompleated_08_14"); //Masz to jak w myrtañskim banku.
+	AI_Output (self, other,"DIA_Lee_TheRockCompleated_08_15"); //Aha, mam jeszcze jedn¹ proœbê. Powiedz Saturasowi, ¿e Nowy Obóz znowu jest bezpieczny. Je¿eli magowie chc¹, mog¹ wróciæ na stare œmieci.
 	AI_Output (other, self,"DIA_Lee_TheRockCompleated_15_16"); //W porz¹dku, bywaj.
    
    Log_SetTopicStatus(CH5_NC_TheRock, LOG_SUCCESS);

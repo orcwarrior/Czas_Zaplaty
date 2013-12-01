@@ -44,7 +44,7 @@ FUNC VOID DIA_Cav_TooEarlyDungeon_Info()
    B_FullStop (hero);
    AI_GotoNpc(other, self);
    AI_TurnToNpc(self, other);
-   AI_Output (self, other, "DIA_Cav_TooEarlyDungeon_12_01"); //Co ty tu robisz? Dlaczego uzy³eœ kodów?!
+   AI_Output (self, other, "DIA_Cav_TooEarlyDungeon_12_01"); //Co ty tu robisz? Dlaczego u¿y³eœ kodów?!
    AI_Output (hero, self, "DIA_Cav_TooEarlyDungeon_15_02"); //Ja...
    AI_Output (self, other, "DIA_Cav_TooEarlyDungeon_12_03"); //GIÑ, WSTRÊTNY OSZUŒCIE!
 
