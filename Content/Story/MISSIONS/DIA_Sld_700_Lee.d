@@ -422,7 +422,7 @@ FUNC VOID  DIA_Lee_RBL_Info()
 	};
 	if (lares_cooperate == TRUE)
 	{
-		lares_cooperate = false;
+		lares_cooperate = 2;
 		AI_Output (other, self,"DIA_Lee_RBL_15_03"); //Lares ma ju¿ doœæ stania obok. Powiedz tylko s³owo, a pola ry¿owe sp³yn¹ krwi¹.
 		lee_agree = lee_agree + 1;
 		B_LogEntry (CH4_NC_RBLBosses, "Lee wie ju¿ o Laresie.");

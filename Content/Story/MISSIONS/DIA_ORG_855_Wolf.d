@@ -398,7 +398,7 @@ INSTANCE DIA_Wolf_Questions2 (C_INFO)
 
 FUNC INT DIA_Wolf_Questions2_Condition()
 {
-	if (Npc_KnowsInfo (hero, DIA_Wolf_Questions1))&&(lares_cooperate == TRUE)
+	if (Npc_KnowsInfo (hero, DIA_Wolf_Questions1))&&(lares_cooperate > 0)
 	{
 		return 1;
 	};
