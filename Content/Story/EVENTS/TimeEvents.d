@@ -658,6 +658,12 @@ FUNC VOID B_Trigger_CheckMissions()
       AI_GotoWP(hero, "FM_ENTRANCE_02");
       Wld_InsertNpc(Grd_4089_Bern,"FMC_PATH18"); //Nowy stra¿nik na miejsce Carlosa przed kopalni¹
    };
+   
+   if (WORLD_CURRENT == WORLD_FREEMINE) && (!Npc_IsDead(sher)) && (Npc_GetAivar(sher, AIV_WASDEFEATEDBYSC) == TRUE) 
+   && Npc_KnowsInfo (hero, DIA_Jurgen_Third) && InfoManager_HasFinished()
+   {
+      B_ChangeAttribute(sher, ATR_HITPOINTS, -sher.attribute[ATR_HITPOINTS_MAX]);
+   };
 
 	if (Npc_HasItems(hero,orn3) && (!Hrabia_orn3))
 	{

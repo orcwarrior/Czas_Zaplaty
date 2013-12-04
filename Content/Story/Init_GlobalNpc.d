@@ -67,6 +67,7 @@ var C_NPC tondral;
 var C_NPC necro_in_world; 
 var c_npc necro_demon;
 var c_npc raven;
+var C_NPC sher;
 
 var C_NPC grd_230;
 var C_NPC kasacz; 
@@ -220,4 +221,5 @@ func void Init_GlobalNpc_World()
    
    necro_demon = Hlp_GetNpc(NecromancerDemon);
    raven = Hlp_GetNpc(Ebr_105_Raven);
+   sher = Hlp_GetNpc(Non_4088_Sher);
 };

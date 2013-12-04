@@ -108,14 +108,13 @@ FUNC INT DIA_Jurgen_Second_Condition()
 FUNC VOID DIA_Jurgen_Second_Info()
 {
 	var C_NPC tor; tor = Hlp_GetNpc(Sld_737_Torlof);
-	B_FullStop (hero);
+	B_FullStop(hero);
+   B_FullStop(sher);
 	AI_TurnToNpc(self, tor);
 
 	AI_Output (self, other, "DIA_Jurgen_Second_11_00"); //Czy¿by? Wiesz jakie s¹ zasady. Przykro mi Torlof, ale któryœ z kopaczy musi zap³aciæ krwi¹ za Twoj¹ nieudolnoœæ.
 	AI_TurnToNpc(self, other);
    
-   var C_NPC sher; sher = Hlp_GetNpc(Non_4088_Sher);
-	B_FullStop (hero);
 	AI_TurnToNpc(self, hero);	
 	
 	/*************************
@@ -153,7 +152,6 @@ FUNC INT DIA_Jurgen_Third_Condition()
 
 FUNC VOID DIA_Jurgen_Third_Info()
 {
-	var C_NPC sher; sher = Hlp_GetNpc(Non_4088_Sher);
 	B_FullStop (hero);
 	AI_TurnToNpc(self, sher);	
 	
@@ -164,6 +162,9 @@ FUNC VOID DIA_Jurgen_Third_Info()
 	AI_DrawWeapon (self);
 	B_LogEntry(CH4_GRD_NewMine, "Sher odda³ za mnie ¿ycie... Nie wiem, co powiedzieæ...");	
 	B_StopProcessInfos(self);
-   B_ChangeAttribute	(sher, ATR_HITPOINTS, -ATR_HITPOINTS + 10);
-	B_StartAfterDialogFight(self,sher,true);
+   Npc_SetAivar(sher, AIV_WASDEFEATEDBYSC, false);
+   B_ChangeAttribute	(sher, ATR_HITPOINTS, -sher.attribute[ATR_HITPOINTS_MAX] + 10);
+	B_StartAfterDialogFight(self, sher, false);
+   Npc_SetTarget(self, sher); 
+	AI_StartState(self, ZS_ATTACK, 1, "");
 };

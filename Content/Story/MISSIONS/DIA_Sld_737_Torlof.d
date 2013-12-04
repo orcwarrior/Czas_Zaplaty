@@ -257,8 +257,6 @@ instance DIA_Torlof_Fight (C_INFO)
 
 FUNC int DIA_Torlof_Fight_Condition()
 {
-	var C_NPC sher; sher = Hlp_GetNpc(Non_4088_Sher);
-
 	if (Npc_KnowsInfo (hero, DIA_Jurgen_Third))&&(Npc_IsDead(sher))&&(Npc_GetDistToNpc(self,hero) < 1000)
 	{
 		return 1;
