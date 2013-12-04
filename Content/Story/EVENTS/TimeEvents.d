@@ -655,7 +655,7 @@ FUNC VOID B_Trigger_CheckMissions()
    {
       Rick_goesTo_freemine = false;
       
-      AI_GotoWP(hero, "FMC_ENTRANCE");
+      AI_GotoWP(hero, "FM_ENTRANCE_02");
       Wld_InsertNpc(Grd_4089_Bern,"FMC_PATH18"); //Nowy stra¿nik na miejsce Carlosa przed kopalni¹
    };
 
