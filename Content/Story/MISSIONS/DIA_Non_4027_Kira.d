@@ -340,7 +340,7 @@ INSTANCE Info_Kira_AfterSex (C_INFO)
 
 FUNC INT Info_Kira_AfterSex_Condition()
 {	
-	if (TH_trust == 10)//kira_trail can be various - orc
+	if (TH_trust >= 10)//kira_trail can be various - orc
 	{
 		return 1;
 	};
