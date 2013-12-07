@@ -3869,7 +3869,7 @@ FUNC VOID STARTUP_DREAM01 ()
 	Wld_InsertNpc(RBL_1339_Novize, "PSI_PATH_1_1");
 	Wld_InsertNpc(RBL_1340_Novize, "PSI_PATH_1_1");
 
-	Wld_InsertNpc(RBL_1327_Novize, "PSI_PATH_1_1");
+	//Wld_InsertNpc(RBL_1327_Novize, "PSI_PATH_1_1");
 	Wld_InsertNpc(RBL_1328_Novize, "PSI_PATH_1_1");
 	Wld_InsertNpc(RBL_1329_Novize, "PSI_PATH_1_1");
 	Wld_InsertNpc(RBL_1332_BaalKagan, "PSI_PATH_1_1");
