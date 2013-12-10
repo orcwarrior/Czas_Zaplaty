@@ -539,6 +539,7 @@ FUNC VOID B_Trigger_CheckMissions()
 		}
 		else if (Tondral_death == 40)
 		{
+         B_FullStop(tondral);
 			AI_Teleport(tondral, "PSI_TEMPLE_IN_1");
 			Tondral_death+=1;
 		}
@@ -567,6 +568,7 @@ FUNC VOID B_Trigger_CheckMissions()
 
 	if (Necro_teleport_after_deaths_beast && InfoManager_HasFinished())
 	{
+      B_FullStop(necro_in_world);
 		Necro_teleport_after_deaths_beast = false;
 		Snd_Play("MFX_Teleport_Cast");
 		AI_Teleport(necro_in_world, "INVISIBLE");
