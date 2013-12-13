@@ -332,9 +332,9 @@ func void I_TriggerFovMorph()
 		//start another one	
 		var int add; var int fovH;
 		add = hlp_Random(2);
-		tmp = Hlp_Random(100);
+		tmp = Hlp_Random(50);
 		tmp = mkf(tmp);
-		tmp2 = divf(tmp,mkf(100));//var (100)/100
+		tmp2 = divf(tmp,mkf(100));//var (70)/100
 		tmp3 = divf(mkf(3),mkf(2));//base 3/2
 		if(add==1)
 		{//add
@@ -346,7 +346,7 @@ func void I_TriggerFovMorph()
 		};
 		fovH = tmp;
 		
-		tmp = Hlp_Random(100);
+		tmp = Hlp_Random(50);
 		tmp = mkf(tmp);
 		tmp2 = divf(tmp,mkf(120));//var (100)/120
 		tmp3 = divf(mkf(7),mkf(6));//base 7/6
@@ -363,7 +363,7 @@ func void I_TriggerFovMorph()
 			MEM_WriteInt(FX_Fov_H_Ptr,FX_Fov_LastH);
 			MEM_WriteInt(FX_Fov_H_Ptr+4,FX_Fov_LastV); 	
 		};				
-		FX_FovMorph(fovH,tmp,150+Hlp_Random(100),1);		
+		FX_FovMorph(fovH,tmp,200+Hlp_Random(60),1);		
 	}
 	else if(FX_Fov_DontbackToDefault)
 	{
@@ -422,7 +422,8 @@ func void FX_Reinit()
 		MEM_InitGlobalInst();
 	};
 	var int camOff; camOff = MEM_InstGetOffset(MEM_CAMERA);
-	
+	FX_Fov_LastH = FX_Fov_HDefault;
+	FX_Fov_LastV = FX_Fov_VDefault;
 	// Init FOV:
 	FX_Fov_H_Ptr = camOff+2300;
 	
