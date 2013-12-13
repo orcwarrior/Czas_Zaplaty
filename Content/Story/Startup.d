@@ -2958,7 +2958,6 @@ FUNC VOID INIT_Variables()
 	CasTeleportActive = FALSE;
 	DelaySayTimerActived = FALSE;	
 	ICESWDUsed = FALSE;
-	Is_1_On = FALSE;	
 	Know_JackAlligator = TRUE;	
 	LastNpcWithSpecWeapon = -1;
 	DailyHello_HeroAttackersCnt = 1;
@@ -3115,7 +3114,6 @@ FUNC VOID INIT_ALLWORLDS()
 	
 	MEM_InitGlobalInst();//ikarus
 	
-	//	B_CheckHello 			(other);	
 	Wld_InsertNpc(MOD_ITEMMASTER, "INVISIBLE");		
 	
 	SkyPreset_ReInit = true;
@@ -3408,7 +3406,6 @@ FUNC VOID STARTUP_CAVE ()
 	STARTUP_ALLWORDLS();		
 	//die folgende Zeile gilt nur, bis die INIT_...-Funktionen von Ulf unterstützt werden.
 	INIT_CAVE();
-	B_CheckHello(other);		
 	//PlayVideo ("INTRO.BIK");
 	//AI_StartState			(hero,	ZS_Unconscious,	1,	"");
 	//B_FullStop			(hero);

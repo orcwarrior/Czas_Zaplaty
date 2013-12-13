@@ -72,14 +72,12 @@ func void Dream_SwitchWorld()
  		
  		CALL_IntParam(oCNpc_GetPointer(hero));
   		CALL__thiscall(chlvltrigger,oCTriggerChangeLevel__TriggerTarget_offset);	
-		
-
 };
 
 
 func void Dream_BackToBedWorld()
 {
-	//Load Word with proper WP
+	//Load World with proper WP
 	 	printdebug("Dream_BackToBedWorld"); 
 	 	printdebug(hero.name); 
 	 	PreVisionWorld = "WORLD.ZEN";
@@ -153,14 +151,14 @@ func void Dream_SwitchToOldHero()
 {
 	var C_Npc olplaya;
 	var int npcptr;
-	printdebug("checkpoint1");
+	printdebug("Dream_SwitchToOldHero:checkpoint1");
 	olplaya = Hlp_GetNpc(pc_hero);
 	npcptr = oCNpc_GetPointer(olplaya);
 		if(Hlp_IsValidNpc(olplaya))
  	{
-	 	printdebug("checkpoint2"); 
+	 	printdebug("Dream_SwitchToOldHero:checkpoint2"); 
  		CALL__thiscall(npcptr,oCNpc__SetAsPlayer_offset);
- 		printdebug("checkpoint3"); 
+ 		printdebug("Dream_SwitchToOldHero:checkpoint3"); 
  	};
 	MEM_Game.game_drawall = true;
 	Dream_StopCutscene();

@@ -331,10 +331,10 @@ FUNC VOID EVT_TIMEGRD_START ()
 
 FUNC VOID EVT_HELLOSAY ()
 {   
-	PrintDebug         ("B_CheckHello");   
-	var int TRGT;
-	TRGT = Npc_GetTarget(hero);
-	B_CheckHello(other);
+	//PrintDebug         ("B_CheckHello");   
+	//var int TRGT;
+	//TRGT = Npc_GetTarget(hero);
+	//B_CheckHello(other);
 	//   PrintScreen      ("Czas Zap³aty 0.4b", -1,85,"font_old_10_white.tga",2);
 	//   PrintScreen      ("(c) The Modders", -1,90,"font_old_10_white.tga",2);
 };
@@ -1447,7 +1447,9 @@ FUNC VOID EVT_TRIGGER7_PHASE2 ()
 	printdebug("TRIGGER7>>DayShift");   
 	DayShift(Wld_GetDay());
 
-	//6 calls in this phase
+	printdebug("TRIGGER7>>B_DailyHello_Update");   
+	B_DailyHello_Update();
+	//7 calls in this phase
 };
 FUNC VOID EVT_TRIGGER7_PHASE3 ()
 {   
@@ -1526,12 +1528,11 @@ FUNC VOID EVT_CAS_TRAP ()
 	};
 };
 
-func void EVT_TRIGGER2DELAY ()
-{//Hello Hero Say
-	PrintDebug         ("B_DelaySayTimer");
+//func void EVT_TRIGGER2DELAY ()
+//{//Hello Hero Say
+//	PrintDebug         ("B_DelaySayTimer");
 
-	B_DelaySayTimer();
-};
+//};
 
 func void CRYSTAL_ZONE_SCRIPT()
 {
