@@ -129,9 +129,7 @@ func void I_TriggerScreenBlend()
 		printdebug("FX_Blend_FramesToNextImage");
 		printdebug(inttostring(FX_Blend_FramesToNextImage));
 		printdebug(concatstrings("A",inttostring(FX_BlendFrame_Now))); 
-		v_alpha = MEM_ReadInt(FX_Blend_ViewPTR+36);
-
-		
+		v_alpha = MEM_ReadInt(FX_Blend_ViewPTR+36);		
 		
 		//Change Image?
 		FX_Blend_FramesToNextImage-=1;
@@ -321,10 +319,12 @@ func void I_TriggerFovMorph()
 		if(FX_Fov_FramesLeft%100==0)
 		{		
 		};
-		// 		if(FX_Fov_FramesLeft==0)&&(!FX_Fov_BackToDefaultDone)//gently back to default, but check if it wasnt done last time!
-		// 		{
-		// 		 	FX_FovMorph(FX_Fov_HDefault,FX_Fov_VDefault,30,2);		
-		// 		};
+		// Ork: Odkomentowanie tego pomoże przywrocic kamere do defaultowego stanu:
+		// Pytanie: Dlaczego było zakomentowane?
+		if(FX_Fov_FramesLeft==0)&&(!FX_Fov_BackToDefaultDone)//gently back to default, but check if it wasnt done last time!
+		{
+		 	FX_FovMorph(FX_Fov_HDefault,FX_Fov_VDefault,30,2);		
+		};
 
 	}
 	else if(FX_FovDreamFX_Enabled)
