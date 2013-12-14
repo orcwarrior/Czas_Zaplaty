@@ -40,9 +40,9 @@ func void EVT_POISON()
 	
 	printdebug("PoisonTrigger>>PupilBugfix2Handle"); 				
 	PupilBugfix2Handle();
-	printdebug("PoisonTrigger>>B_Sprinter"); 
+	printdebug("PoisonTrigger>>B_Sprint_Update"); 
 
-	B_Sprinter();	
+	Sprint_Update();	
 
 	printdebug("PoisonTrigger>>Trade_UpdateMul"); 				
 	Trade_UpdateMul();

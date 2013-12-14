@@ -97,6 +97,8 @@ VAR INT BLOOPS;
 //
 VAR INT GLOBAL_FINISHHERO;
 ////////////////////////////////DAY/////////////////
+
+// Ork: To mo¿e tak, odt¹d...
 VAR INT LAST_DAY;
 VAR INT DAY;
 VAR INT WEEKDAY;
@@ -137,10 +139,8 @@ VAR C_NPC NPC_TM2LD;
 VAR C_NPC NPC_TM2M1;
 VAR C_NPC NPC_TM2M2;
 VAR C_NPC NPC_TM2M3;
-//null
-VAR C_NPC GOMEZ;
 
-
+// ... dot¹d -> WYJEBAÆ - ork
 ////////////////////////////////////////
 //...::....G R D   A T T A C K   V A R ' S...::....
 ////////////////////////////////////////
@@ -565,7 +565,8 @@ VAR INT LEFTYDEAD;
 	VAR STRING FPNAME;
 
 VAR INT WORLD_CURRENT;
-CONST INT WORLD_WORLDZEN=0;
+CONST INT WORLD_UNDEF=0;
+CONST INT WORLD_WORLDZEN=10;
 CONST INT WORLD_FREEMINE = 1;
 CONST INT WORLD_OGY = 2;
 CONST INT WORLD_MONSTARYDUNGEONZEN=3;

@@ -191,6 +191,7 @@ var int screen_y_size;
 
 func void I_EnableCinemaScope()
 {	
+	printdebug_s_i("CinemaScope: I_EnableCinemaScope:",FX_CinemaScopeEnabled_Adr);
 	var int ccsptr; var int View_ptr; var int tmp;
 	MEM_InitGlobalInst();
 	CinemaScopeState=2;
@@ -222,7 +223,6 @@ func void I_EnableCinemaScope()
 	View_ptr = MEM_ReadInt(MEMINT_oCInformationManager_Address+28);
 	screen_y_size=MEM_ReadInt(View_ptr+76); //4c
 	screen_y_size=MEM_ReadInt(screen_y_size+68); //44
-	 	View_ptr = MEM_ReadInt(MEMINT_oCInformationManager_Address+28);
 	view_ptr = view_ptr+60;//
 	if(screen_y_size<=768)
 	{
@@ -256,10 +256,10 @@ func void I_EnableCinemaScope()
 */
 func void I_DisableCinemaScope()
 {	
+	printdebug_s_i("CinemaScope: I_DisableCinemaScope:",FX_CinemaScopeEnabled_Adr);
 	var int ccsptr; var int view_ptr;
 	MEM_InitGlobalInst();
 	CinemaScopeState=3;
-	printdebug("Disable");
 	///Camera.cinemascope
 	ccsptr = MEM_InstGetOffset(MEM_CAMERA);
 	ccsptr = ccsptr+2252;
@@ -284,12 +284,13 @@ func void I_DisableCinemaScope()
 func void I_TriggerCinemaScope()
 {	if(CinemaScopeState==0)
 	{ return; };//break if state=0	
-	if(CinemaScopeState>1)//Fade Alpha
+	if(CinemaScopeState>1)//Fade IN/OUT Alpha
 	{
 		var int CS_Color;
 		CS_Color = MEM_ReadInt(FX_CinemaScopeColor_Adr);
 		if(CinemaScopeState==2)//SET ON
 		{
+			printdebug("CinemaScope: State 2, (Fade In)");
 			if(CS_Color==0)//-4294967295
 			{
 				MEM_WriteInt(FX_CinemaScopeColor_Adr,-4160749568);
@@ -370,6 +371,7 @@ func void I_TriggerCinemaScope()
 		}
 		else
 		{
+			printdebug("CinemaScope: State 3, (Fade Out)");
 			if(CS_Color==-16777216)
 			{
 				MEM_WriteInt(FX_CinemaScopeColor_Adr,-234881024);
@@ -449,6 +451,7 @@ func void I_TriggerCinemaScope()
 			};				
 		};	
 	};	
+	printdebug_s_i("CinemaScope: State ~0, Adr:",FX_CinemaScopeEnabled_Adr);
 	//set cinema scope on in camera
 	MEM_WriteInt(FX_CinemaScopeEnabled_Adr,1);
 };

@@ -33,10 +33,10 @@ func void F_PERFRAMETRIGGER()
 	var int rune; 	var string rune_instance;
 	var ocnpc hlp;
 	//Triggerscript find pointer
-		printdebug("PerFrameCallTrigger_NOTINIT :(");
+		printdebug("PerFrame: Pre-Init :(");
 	if(PerFrameCallTrigger_Init)
 	{
-		printdebug("PerFrameCallTrigger_Init");
+		printdebug("PerFrame: Initing..");
 		ptr = MEM_SearchVobByName ("PERFRAMETRIGGER");
 		
 		//bugfix: sometimes it won't be able to found the trigger
@@ -56,11 +56,11 @@ func void F_PERFRAMETRIGGER()
 		MEM_WriteInt(MEMINT_zTimer_Address,Timer_factormotion);
 	};
 	
-	printdebug("FrameCallBack_HandleKeystorkes");
+	printdebug("PerFrame: FrameCallBack_HandleKeystorkes");
 	//Keys Check Per-Frame
 	FrameCallBack_HandleKeystorkes();
 	
-	printdebug("R_SWDDMG_PTR");
+	printdebug("PerFrame: R_SWDDMG_PTR");
 	
 	//triggers Phases (optimization thing)
 	if(Trigger7Phase)
@@ -119,21 +119,21 @@ func void F_PERFRAMETRIGGER()
 */	
 
 	//Triggers needed to be done evry frame:
-	printdebug("I_TriggerCinemaScope");
+	printdebug("PerFrame: I_TriggerCinemaScope");
 	I_TriggerCinemaScope();
-	printdebug("I_TriggerFadeScreen");
+	printdebug("PerFrame: I_TriggerFadeScreen");
 	I_TriggerFadeScreen();
-	printdebug("I_TriggerScreenBlend");
+	printdebug("PerFrame: I_TriggerScreenBlend");
 	I_TriggerScreenBlend();
-	printdebug("I_TriggerFovMorph");
+	printdebug("PerFrame: I_TriggerFovMorph");
 	I_TriggerFovMorph();
-	printdebug("SleepFX_PerFrameHandle");
+	printdebug("PerFrame:SleepFX_PerFrameHandle");
 	SleepFX_PerFrameHandle();
-	printdebug("MsgManager_DoFrame");
+	printdebug("PerFrame: MsgManager_DoFrame");
 	MsgManager_DoFrame();
 //	OptimizationVobLights_PerFrameTidy();
 	
-	printdebug("FX_TransitionDoFrameStep");
+	printdebug("PerFrame: FX_TransitionDoFrameStep");
 	if(SkyController_Ptr)
 	{
 		FX_TransitionDoFrameStep();
@@ -141,10 +141,10 @@ func void F_PERFRAMETRIGGER()
    
 	FX_RebelMine();
 	FX_NecroLocation();
-	printdebug("END OF F_PERFRAMETRIGGER");
-	
 	printdebug("PerFramMission_Funcs");
 	PerFramMission_Funcs();
+	printdebug("PerFrame: END OF F_PERFRAMETRIGGER");
+	
 	
 	//set trigger fire to next frame
 	trigger._zCVob_nextOnTimer = MEM_ReadInt(MEMINT_zTimer_Address+8);//MEM_Timer.totalTimeFloat; 

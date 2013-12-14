@@ -513,12 +513,6 @@ Lee/Saturas camps
 	Wld_InsertNpc(KDW_605_Riordian, "LOCATION_19_03_ROOM6_BARRELCHAMBER");	
 
 
-	
-	/************************************
-Harpie
-//   
-
-
 	//Brücke
 	
 	//Platz vor Fokusplattform & Eingang
@@ -555,22 +549,6 @@ Harpie
 	//Wld_InsertNpc(Harpie, "LOCATION_19_03_SECOND_HARPYE3");
 	//Wld_InsertNpc(Harpie, "LOCATION_19_03_SECOND_HARPYE4");
 	//Wld_InsertNpc(Harpie, "LOCATION_19_03_SECOND_ETAGE7");
-
-
-	
-
-***********************/
-
-	
-
-
-	/*******************
-BNs to use!
-
-*******************/
-
-
-
 
 
 	// 	Wld_InsertNpc(SLD_731_Soeldner, "NC_DAM"); //24h Wache vor Lee
@@ -2476,40 +2454,6 @@ FUNC VOID INIT_SUB_SURFACE ()
 	Wld_SetObjectRoutine (00,00, "OW_FIREPLACE_PCHIGH2_06",1);
 	Wld_SetObjectRoutine (20,00, "OW_FIREPLACE_PCHIGH2_06",1);
 	Wld_SetObjectRoutine (05,00, "OW_FIREPLACE_PCHIGH2_06",0);
-	// 	Wld_SetObjectRoutine (19,00, "arena",1);
-	// 	Wld_SetObjectRoutine (04,00, "arena",1);
-	// 	Wld_SetObjectRoutine (05,00, "arena",0);
-	// 	Wld_SetObjectRoutine (19,00, "arena1",1);
-	// 	Wld_SetObjectRoutine (04,00, "arena1",1);
-	// 	Wld_SetObjectRoutine (05,00, "arena1",0);
-	// 	Wld_SetObjectRoutine (19,00, "arena2",1);
-	// 	Wld_SetObjectRoutine (04,00, "arena2",1);
-	// 	Wld_SetObjectRoutine (05,00, "arena2",0);
-	// 	Wld_SetObjectRoutine (19,00, "arena3",1);
-	// 	Wld_SetObjectRoutine (04,00, "arena3",1);
-	// 	Wld_SetObjectRoutine (05,00, "arena3",0);
-	// 	Wld_SetObjectRoutine (19,00, "arena4",1);
-	// 	Wld_SetObjectRoutine (04,00, "arena4",1);
-	// 	Wld_SetObjectRoutine (05,00, "arena4",0);
-	// 	Wld_SetObjectRoutine (19,00, "arenal",1);
-	// 	Wld_SetObjectRoutine (04,00, "arenal",1);
-	// 	Wld_SetObjectRoutine (05,00, "arenal",0);
-	// 	Wld_SetObjectRoutine (19,00, "arenal1",1);
-	// 	Wld_SetObjectRoutine (04,00, "arenal1",1);
-	// 	Wld_SetObjectRoutine (05,00, "arenal1",0);
-	// 	Wld_SetObjectRoutine (19,00, "arenal2",1);
-	// 	Wld_SetObjectRoutine (04,00, "arenal2",1);
-	// 	Wld_SetObjectRoutine (05,00, "arenal2",0);
-	// 	Wld_SetObjectRoutine (19,00, "arenar",1);
-	// 	Wld_SetObjectRoutine (04,00, "arenar",1);
-	// 	Wld_SetObjectRoutine (05,00, "arenar",0);
-	// 	Wld_SetObjectRoutine (19,00, "arenar1",1);
-	// 	Wld_SetObjectRoutine (04,00, "arenar1",1);
-	// 	Wld_SetObjectRoutine (05,00, "arenar1",0);
-	// 	Wld_SetObjectRoutine (19,00, "arenar2",1);
-	// 	Wld_SetObjectRoutine (04,00, "arenar2",1);
-	// 	Wld_SetObjectRoutine (05,00, "arenar2",0);
-	// 	
 	// aus Orc-City
 	Wld_SetMobRoutine	(00,00, "FIREPLACE", 1);
 	
@@ -2614,14 +2558,13 @@ func VOID STARTUP_SUB_REBELCAMP ()
 	//Hunters
 	
 	/***************************************
-Added by Sher
-****************************************/	
+	Added by Sher
+	****************************************/	
 	Wld_InsertNpc(HUN_20254_Grd, "DEEP_WP"); // Deep grd
 
 
 	
 	//****************************************
-
 	Wld_InsertNpc(HUN_336_Cavalorn, "OW_SAWHUT_GREENGOBBO_SPAWN");
 	Wld_InsertNpc(HUN_818_Ratford, "OW_PATH_02");	
 	Wld_InsertNpc(HUN_858_Quentin, "OW_PATH_02");
@@ -2633,8 +2576,6 @@ Added by Sher
 	//	Wld_InsertNpc(PC_Thief, "OW_PATH_02");
 	Wld_InsertNpc(HUN_309_Whistler, "OW_PATH_02");	
 	Wld_InsertNpc(HUN_2615_Abel, "OW_PATH_02");	
-	
-
 	
 	//Finding new people
 	Wld_InsertNpc(HUN_2609_Gestath, "OW_PATH_02");	
@@ -2842,21 +2783,13 @@ FUNC VOID STARTUP_SUB_OLDMINECAMP ()
 	Wld_InsertNpc(Vlk_3035_Worker, "OMC_ENT");				
 };	
 
+
 //-------- eigentliche Startup des Spiels --------
 func void STARTUP_TriggerScripts()
 {
-	//loops func's etc.	
-	//ABSOLUTELY TO MUCH OF THAT SHIT!
-	// 	//Amunition
-
+	printdebug("INIT/STARTUP: STARTUP_TriggerScripts Called!");
 	// Questtest normal framerate: 256 constantly
 	Wld_SendTrigger("TIMETRIGGER7");	//EVT_TRIGGER7 delay: 1
-	// 	//GUI Render	
-	//Wld_SendTrigger("TIMETRIGGER8");	//
-	// 	//RuneSword charge++		
-	//Wld_SendTrigger("RUNESWD_CHARGING"); //EVT_RUNESWD_CHARGING delay: 9
-	// 	//B_SayHello
-	// 	//poisoned -hp	
 	Wld_SendTrigger("POISON_TRIGGER");	//-(~40f) ;-( //EVT_POISON delay: 0.100000121
 	Wld_SendTrigger("COMPASS_TRIGGER");	//COMPASS_TRIGGER delay: 0.00999999978 
 	// 	
@@ -2943,7 +2876,6 @@ FUNC VOID INIT_Variables()
 		Key_tStatus1 = KEY_S;	
 		Key_tStatus2 = KEY_B;	
 	};
-
 	if(!Key_tAction1)
 	{
 		Key_tAction1 = KEY_LCONTROL;	
@@ -2951,7 +2883,6 @@ FUNC VOID INIT_Variables()
 
 	// 	TALENT_DUALUSING = TRUE;
 	RuneSwdCriticalChance=20;
-	gomez = Hlp_GetNpc(Ebr_100_Gomez);
 	DailyHello_HeroAttackersCnt = 1;
 	Day = 1;
 	GRDChallenge = FALSE;	
@@ -2970,25 +2901,7 @@ FUNC VOID INIT_Variables()
 	Ritual_Katrakanat_demon_counter=0;
 	Global_Cinematic_i = -256;
 	
-	HeroHasPupil=0;
-	//Animalthrophy skills	
-	// 		 Knows_GetTeeth      		= TRUE;		
-	// 		 Knows_GetClaws      		= TRUE;
-	// 		 Knows_GetFur        		= TRUE;
-	// 		 Knows_GetHide       		= TRUE;
-	// 		 Knows_GetTongue     		= TRUE;
-	// 		 Knows_GetMCMandibles		= TRUE;
-	// 		 Knows_GetMCThread   		= TRUE;
-	// 		 Knows_GetMCPlates   		= TRUE;
-	// 		 Knows_GetBFSting    		= TRUE;
-	// 		 Knows_GetWings      		= TRUE;
-	// 		 Knows_GetHorn   	 	  	= TRUE;
-	// 		 Knows_GetLiver      		= TRUE;
-	// 		 Knows_GetFeather    		= TRUE;		
-	// 		 Knows_GetWTF        		= TRUE;
-	// 		 Knows_GetWool       		= TRUE;  
-	// 		 Knows_GetHeart        		= TRUE;
-	
+	HeroHasPupil=0;	
 	Ritual_Katrakanat_counter=0;
 	//ORE DAILY 10 = 1 UNIT
 	DAILYMAGICORE               = 100;
@@ -3057,32 +2970,12 @@ func void Startup_Sub_Questtest()
 	Wld_InsertNpc(RBL_2616_Mark, "OW_PATH_02");
 	Wld_InsertNpc(RBL_2618_Hark, "OW_PATH_02");
 	Wld_InsertNpc(RBL_2619_CUP, "OW_PATH_02");
-	/* NC_ARRIVED	
-//	Wld_InsertNpc(RBL_8730_Dylan, "OW_PATH_02");	//ADD in 3 Chapter NC_ARRIVED
-//	Wld_InsertNpc(RBL_851_Butch, "OW_PATH_02");  //ADD in 3 Chapter NC_ARRIVED
-//	Wld_InsertNpc(RBL_826_Mordrag, "OW_PATH_02");  //ADD in 3 Chapter NC_ARRIVED	
-//	
-/* PSI_ARRIVED
-	Wld_InsertNpc		   	 	(RBL_1333_BaalIsidro, "OW_HUN_SMALLCAMP");*/
 	Wld_InsertNpc(RBL_1332_BaalKagan, "OW_PATH_02");
-	//	Wld_InsertNpc(PC_Psionic, "OW_PATH_02");
 	
-	/*	Wld_InsertNpc(RBL_2331_Zex, "OW_PATH_02");
-	Wld_InsertNpc(RBL_2402_Terry, "OW_PATH_02");	
-*/
-	/////////////////////////
-	//Pirates
-	/////////////////////////
 	Wld_InsertNpc(PIR_2600_Angus, "OW_PIR_CAMPFIRE");
 	Wld_InsertNpc(PIR_2601_Hank, "OW_PIR_CAMPFIRE");
 	Wld_InsertNpc(My_Wolf, "OW_PIR_CAMPFIRE");	
 	Wld_InsertNpc(PIR_2602_Rodney, "OW_PIR_CAMPFIRE");
-	//Dead Pirates
-	Wld_InsertNpc(PIR_2611_Skip, "OW_PIR_CAMPFIRE");
-	Wld_InsertNpc(PIR_2606_Dustin, "OW_PIR_CAMPFIRE");
-	
-	//Tony
-	//-added in dialog with hank
 };
 
 Func void Events_OnGameStart()
@@ -3096,6 +2989,7 @@ FUNC VOID INIT_ALLWORLDS()
 	// Przyda³oby siê jakieœ "Exctract Method" tutaj bo wygl¹da to jak zwykle gorzej niz obrzydliwie :P
 	// S³owa kluczowe: Reinicjacja Zmiennych, Reinit 
 	MEM_SetShowDebug(1);
+	printdebug("INIT/STARTUP: INIT_ALLWORLDS Called!");
 	Appr_Init();
 	Appr_RefreshHeroAppearance();
 	Arr_ReInitStartAndHigh();
@@ -3106,6 +3000,7 @@ FUNC VOID INIT_ALLWORLDS()
 	PerFrameCallTrigger_Init = TRUE;
 	COMPASS_INIT = 1;
 	InitTexts();
+	
 	WORLDS_INITS	+= 1;
 	HeroDamage_ComboCounter = 0;//reset
 	B_InitMonsterAttitudes();
@@ -3128,7 +3023,6 @@ FUNC VOID INIT_ALLWORLDS()
 	MsgManager_ReInit();
 	Extract_NeededKeys();
 	Apply_Menu_Options_CZ();
-	//Re-init varibles:
 
 	//Engine Hook's:
 	if(!Hlp_StrCmp(HooksReinited, "Yes"))
@@ -3139,8 +3033,7 @@ FUNC VOID INIT_ALLWORLDS()
 		HookEngine(4349120,5, "APPLY_MENU_OPTIONS_CZ",COPY_INSTR);	
 		//HookEngine_Hook_LeftWeaponTrail_JmpAdress = HookEngine(6452024,5, "HOOK_WEAPONTRAIL",COPY_INSTR);	
 		//HookEngine_Hook_PreRenderVobList_JmpAdress = HookEngine(5365779,5, "HOOK_PREVOBLIGHTRENDER",COPY_INSTR);	
-		//HookTesting = HookEngine(5467923,5, "HOOKTESTINGFUNC",COPY_INSTR);	
-		
+		//HookTesting = HookEngine(5467923,5, "HOOKTESTINGFUNC",COPY_INSTR);			
 		//HookEngine_Hook_PreDropVob_JmpAdress = HookEngine(7023277,5, "HOOK_PREDROPVOB",COPY_INSTR);
 	};
 	//OptimizationVobLights_CollectLights();
@@ -3151,8 +3044,6 @@ func void HOOK_PREDROPVOB()
 {
 	//print("somebody droped sth.");	
 	//CheckAdress(ESPAdr(),128,1,1);
-	
-
 	//MEM_WriteInt(HookEngine_Hook_PreDropVob_JmpAdress,7023911);
 };
 
@@ -3164,6 +3055,7 @@ FUNC VOID STARTUP_ALLWORDLS()
 	STARTUP_Runes();
 	STARTUP_TriggerScripts();	
 	STARTUP_HandlerContainers();
+	printdebug("INIT/STARTUP: STARTUP_ALLWORDLS Called!");
 };	
 
 FUNC VOID INIT_QUESTTEST()
@@ -3187,7 +3079,8 @@ FUNC VOID INIT_QUESTTEST()
 
 FUNC VOID INIT_WORLD()
 {
-	INIT_ALLWORLDS();	
+	WORLD_CURRENT = WORLD_WORLDZEN;
+	
 	INIT_Sub_Newcamp();
 	INIT_Sub_Oldcamp();
 	INIT_Sub_Psicamp();
@@ -3196,7 +3089,6 @@ FUNC VOID INIT_WORLD()
 	INIT_Sub_Surface();
 	INIT_SUB_REBELCAMP();
 
-	WORLD_CURRENT = WORLD_WORLDZEN;
 	respawn_dur_minus = 10000;
 	Wld_SetObjectRoutine(03,10, "CAS_TELEPORT_TRIG", 0);	
 	Wld_SetObjectRoutine(03,10, "CAS_TELEPORT", 0);		
@@ -3207,23 +3099,7 @@ FUNC VOID INIT_WORLD()
 	B_InitGuildAttitudes();
 	Init_GlobalNpc();
 	Init_GlobalNpc_World();
-};
-
-FUNC VOID INIT_HCWORLD()
-{
-	INIT_Sub_Newcamp();
-	INIT_Sub_Oldcamp();
-	INIT_Sub_Psicamp();
-	INIT_Sub_Demontower();
-	INIT_Sub_Freeminecamp();
-	INIT_Sub_Surface();
-
-	//	Wld_SendTrigger("TIMETRIGGER6");
-	Wld_SetObjectRoutine (03,10, "CAS_TELEPORT_TRIG",0);	
-	Wld_SetObjectRoutine (03,10, "CAS_TELEPORT",0);		
-	Wld_SetObjectRoutine (03,10, "CAS_TELEPORT2",0);			
-	Wld_SetObjectRoutine (20,28, "GLOWWORMS1",1);	
-	Wld_SetObjectRoutine (04,59, "GLOWWORMS1",0);		
+	INIT_ALLWORLDS();	
 };
 
 FUNC VOID STARTUP_QUESTTEST()
@@ -3243,13 +3119,8 @@ FUNC VOID STARTUP_QUESTTEST()
 
 FUNC VOID STARTUP_WORLD ()
 {
-	//var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
-	//Triggers
-	//	Wld_SendTrigger ("EVT_TRIGGER2"); 	
-	//Content
-	//debug:
-	
-	STARTUP_ALLWORDLS();	
+	MEM_SetShowDebug(1);
+		
 	Startup_Sub_Newcamp();
 	Startup_Sub_Oldcamp();
 	Startup_Sub_Psicamp();
@@ -3259,9 +3130,13 @@ FUNC VOID STARTUP_WORLD ()
 	Startup_Sub_PirateBay();
 	Startup_Sub_Rebelcamp();
 	Startup_Sub_Oldminecamp();
+	
+	STARTUP_ALLWORDLS();
 
 	//die folgende Zeile gilt nur, bis die INIT_...-Funktionen von Ulf unterstützt werden.
-	INIT_WORLD();	
+	//Ork: Panowie wyzej co wy odpierdalacie, potem mi sie init 2x odpala XD
+	// A tak serio, to to chyba zbedne, gdyby coœ sie kopa³o: PRZYWROCIC!
+	//INIT_WORLD();	
 	PlayVideo ("INTRO.BIK");
 	PlayVideo ("CZ_INTRO.BIK");
 	//AI_StartState			(hero,	ZS_Unconscious,	1,	"");
@@ -3269,7 +3144,7 @@ FUNC VOID STARTUP_WORLD ()
 	//B_ProcessInfos (her);
 	
 	SetSkyPreset(SKYPRESET_START,TRANS_STEP);//Init first day sky: see Skypresets_Func
-};
+}; // STARTUP_WORLD
 
 /********************************************************
 *                                                       *
@@ -3356,13 +3231,10 @@ FUNC VOID STARTUP_DUNGEON()
 	Wld_InsertNpc(SkeletonRanger, "KOMNATA_SYPIALNA_05");
 	
 	STARTUP_ALLWORDLS();		
-};
-/****************************************************
-*      CAVE		CAVE	CAVE    CAVE	CAVE		*
-*      CAVE		CAVE	CAVE    CAVE	CAVE		*
-*****************************************************/	
+}; // STARTUP_DUNGEON
+
 var int CAVETIME;
-var int RAISESTATUES;
+var int RAISESTATUES; // This shit should be in sth like Story/B/Cave ;_;
 
 FUNC VOID INIT_CAVE ()
 {
@@ -3396,21 +3268,10 @@ FUNC VOID STARTUP_CAVE ()
 	Wld_InsertNpc(SkeletonWarrior, "SKE_CORRIDOR_3"); 	
 	Wld_InsertNpc(Skeleton2HSwdWarrior, "SKE_CORRIDOR_4");
 
-	//Content
-	//	Startup_Sub_Newcamp			();
-	//	Startup_Sub_Oldcamp			();
-	//	Startup_Sub_Psicamp			();
-	//	Startup_Sub_Demontower		();
-	//	Startup_Sub_Freeminecamp	();
-	//	Startup_Sub_Surface			();
 	STARTUP_ALLWORDLS();		
 	//die folgende Zeile gilt nur, bis die INIT_...-Funktionen von Ulf unterstützt werden.
 	INIT_CAVE();
-	//PlayVideo ("INTRO.BIK");
-	//AI_StartState			(hero,	ZS_Unconscious,	1,	"");
-	//B_FullStop			(hero);
-	//B_ProcessInfos (her);
-};
+}; // STARTUP_CAVE
 
 FUNC VOID INIT_ORCGRAVEYARD()
 {
@@ -3479,7 +3340,8 @@ FUNC VOID STARTUP_ORCGRAVEYARD ()
 	Wld_InsertNpc(ORC_GHOST, "ORCGHOST");	
 	TurnToGhost(ORC_GHOST,16);	
 	STARTUP_ALLWORDLS();			
-};
+}; // STARTUP_ORCGRAVEYARD
+
 
 FUNC VOID STARTUP_ORCTEMPEL ()
 {
@@ -3569,7 +3431,7 @@ FUNC VOID STARTUP_ORCTEMPEL ()
 	Wld_InsertNpc(SLEEPER, "TPL_395"); // Schläft die ganze Zeit :)
 
 	STARTUP_ALLWORDLS();				
-};
+}; // STARTUP_ORCTEMPEL
 
 FUNC VOID INIT_ORCTEMPEL ()
 {
@@ -3705,7 +3567,7 @@ FUNC VOID STARTUP_OLDMINE ()
 	EnteredOldMine = TRUE;
 	
 	STARTUP_ALLWORDLS();			
-};
+}; // STARTUP_OLDMINE
 
 FUNC VOID INIT_FREEMINE ()	
 {
@@ -3754,7 +3616,6 @@ FUNC VOID STARTUP_FREEMINE ()
 	FM_14 grd
 	
 *******************/
-
 	//-------------------Schatten----------------------------
 	
 	Wld_InsertNpc(Stt_336_Schatten, "FM_03");//RoastScavenger
@@ -3809,7 +3670,7 @@ FUNC VOID STARTUP_FREEMINE ()
 	
 	Wld_InsertNpc(FreemineOrc, "FM_03");//WaitforRescue
 	STARTUP_ALLWORDLS();		
-};
+}; // STARTUP_FREEMINE
 
 /**********************************************************
 *                                                         *
@@ -3906,7 +3767,7 @@ FUNC VOID STARTUP_DREAM01 ()
 
 	Wld_InsertNpc(PC_Hero_Dream01, "PSI_31_HUT_IN");//VisionPlayer
 	STARTUP_ALLWORDLS();			
-};
+}; // STARTUP_DREAM01
 
 FUNC VOID INIT_DREAM01 ()
 {
@@ -3941,7 +3802,7 @@ FUNC VOID STARTUP_NECROLOC()
 	Wld_InsertNpc(NON_4084_NecroServant2_Mirror, "INVISIBLE");
 	
 	INIT_NECROLOC();	
-	STARTUP_ALLWORDLS();	
+	STARTUP_ALLWORDLS();	 
 };
 
 /*********************
@@ -3990,7 +3851,7 @@ FUNC VOID STARTUP_OR_DEEP ()
 	
 	INIT_OR_DEEP();	
 	STARTUP_ALLWORDLS();	
-};
+}; // STARTUP_OR_DEEP
 
 
 /*********************
@@ -4029,4 +3890,4 @@ FUNC VOID STARTUP_LABIRYNT ()
 	
 	INIT_LABIRYNT();	
 	STARTUP_ALLWORDLS();	
-};
+}; // STARTUP_LABIRYNT

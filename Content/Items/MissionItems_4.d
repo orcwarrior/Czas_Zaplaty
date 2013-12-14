@@ -196,9 +196,13 @@ func void UseItMiJoint_4()
 	if (!lester_joint)
 	&& Npc_IsPlayer (self)
 	{
-		AI_PlayAni(self,	"T_PSI_VICTIM");
+		//Ork: Po czasie to nie wygl¹da najlepiej :P
+		//AI_PlayAni(self,	"T_PSI_VICTIM");
+		// W zamian:
+		FX_FovDreamFX();
 		PutMsg("Moja g³owa!","font_default.tga",RGBAToZColor(255,255,255,255),_TIME_MESSAGE_LOGENTRY,"");
 		lester_joint = TRUE;
+		
       
       DreamID = DREAM_BLOODYSWAMP;
 

@@ -84,6 +84,8 @@ var C_NPC CH2_Patrol_g3;
 var C_NPC CH2_Patrol_g4; 
 var C_NPC CH2_Patrol_g5; 
 
+var C_NPC gomez;
+
 func void PreInit_GlobalNpc()
 {
    poison_memory = Hlp_GetNpc(RuneSword_Now);
@@ -222,4 +224,6 @@ func void Init_GlobalNpc_World()
    necro_demon = Hlp_GetNpc(NecromancerDemon);
    raven = Hlp_GetNpc(Ebr_105_Raven);
    sher = Hlp_GetNpc(Non_4088_Sher);
+  
+	gomez = Hlp_GetNpc(Ebr_100_Gomez);
 };

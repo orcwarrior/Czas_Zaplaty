@@ -173,8 +173,8 @@ func int FX_GetActiveZFogZone()
 	label = MEM_StackPos.position;
 	//Read zCZone...
 	ptr = MEM_ReadInt(oCWorld_zoneActibeList+i);
-	printdebug_s_i("..iteration:",i);
-	printdebug_s_i("..ptr:",ptr);
+	//printdebug_s_i("..iteration:",i);
+	//printdebug_s_i("..ptr:",ptr);
 	
 	if (i>=array_end*4)
 	|| (ptr<100000)

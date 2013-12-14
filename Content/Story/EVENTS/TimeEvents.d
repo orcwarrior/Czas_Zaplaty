@@ -329,21 +329,14 @@ FUNC VOID EVT_TIMEGRD_START ()
 	B_TimeChallenge();//Challengefunc
 };
 
-FUNC VOID EVT_HELLOSAY ()
-{   
-	//PrintDebug         ("B_CheckHello");   
-	//var int TRGT;
-	//TRGT = Npc_GetTarget(hero);
-	//B_CheckHello(other);
-	//   PrintScreen      ("Czas Zap³aty 0.4b", -1,85,"font_old_10_white.tga",2);
-	//   PrintScreen      ("(c) The Modders", -1,90,"font_old_10_white.tga",2);
-};
-
 FUNC VOID EVT_TRIGGER1 ()
 {   
 	B_StoryChangeDay();
 };
 
+// [TODO] O ile dobrze rozumiem to trigger od robienia itemków
+// To wszystko dzia³a straszliwie chujsko-powolnie, coœ z tym zrobiæ,
+// przyspieszyæ choæby samo czytanie recepty - ork.
 FUNC VOID EVT_TRIGGER4 ()
 {
 	var int waittime;
@@ -498,7 +491,6 @@ FUNC VOID B_Trigger_CheckMissions()
 	{
 		if((npc_HasItems(hero,kevin_diary)+npc_HasItems(hero,ITKE_STORAGE_01)+npc_HasItems(hero,ITKE_GOMEZ_01))>=3)
 		{
-			B_PrintDebug("B_StoryKevinDead");
 			B_Story_OldCampKevinFounded();
 			hero_is_in_kevin_room_ontime=2;
 		};
@@ -1141,13 +1133,19 @@ FUNC VOID B_Trigger_CheckMissions()
 		
 		if (Rick_wants_to_sleep == NumberSecondsToDreamSleep/2)
 		{
-			PutMsg("Po³ó¿ siê spaæ!","font_default.tga",RGBAToZColor(255,255,255,255),_TIME_MESSAGE_LOGENTRY,"");
+			PutMsg("Po³ó¿ siê spaæ!","font_default.tga",RGBAToZColor(255,128,55,255),_TIME_MESSAGE_LOGENTRY,"");
+		};
+		
+		if (Rick_wants_to_sleep == NumberSecondsToDreamSleep - 3)
+		{
+			PutMsg("Œpij na ziemi!","font_default.tga",RGBAToZColor(255,55,55,255),_TIME_MESSAGE_LOGENTRY,"");
+			B_FullStop(hero);
+			AI_PlayAni(hero,"T_BEDLOW_FRONT_STAND_2_S0");	
+			AI_PlayAni(hero,"T_BEDLOW_FRONT_S0_2_S1");				
 		};
 		
 		if (Rick_wants_to_sleep == NumberSecondsToDreamSleep)
-		{
-			PutMsg("Œpij na ziemi!","font_default.tga",RGBAToZColor(255,255,255,255),_TIME_MESSAGE_LOGENTRY,"");
-			
+		{	
 			Dream_StartUp(DreamID);
 			SleepFX_PerFrameHandle();
 		};
@@ -1348,8 +1346,6 @@ var int rune_sword_phase;
 FUNC VOID EVT_TRIGGER7 ()
 { 
 	//Appr_Wait4Monolouge
-	EVT_TRIGGER3(); // ??? co to
-
 	if (Appr_Wait4Monolouge)
 	{
 		if(Npc_GetAivar(hero,AIV_INVINCIBLE)==FALSE)
@@ -1447,6 +1443,7 @@ FUNC VOID EVT_TRIGGER7_PHASE2 ()
 	printdebug("TRIGGER7>>DayShift");   
 	DayShift(Wld_GetDay());
 
+	FX_Startup_Bugfix(); // Poprawka issue #40 (brak paskow kinowych) [+ inne]
 	printdebug("TRIGGER7>>B_DailyHello_Update");   
 	B_DailyHello_Update();
 	//7 calls in this phase
@@ -1492,7 +1489,6 @@ FUNC VOID EVT_CASTLE_TELEPORT ()
 		Npc_ClearAIQueue(self);
 		var int teleportizer;
 
-		//      Wld_PlayEffect("ItemFX_LegL         teleportizer = Hlp_Random(5);
 		if (teleportizer == 1)
 		{
 			Ai_Teleport(self,"HC_TOWER_OVER");

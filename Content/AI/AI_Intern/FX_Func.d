@@ -411,7 +411,6 @@ func void FX_NecroLocation()
 	};
 };
 
-
 // Ork: Elementy stąd potrzebują pożadnego reinita, może przestaną
 // wtedy crashować gre:
 func void FX_Reinit()
@@ -436,6 +435,18 @@ func void FX_Reinit()
 	// Init Cinema-Scope:
 	FX_CinemaScopeEnabled_Adr = camOff+2248;
 	FX_CinemaScopeColor_Adr = camOff+2252;
+};
+
+// Ork: Dodatkowy bugfix przy startupie nowej gry,
+// paski i inne nie działają, aż do momentu wczytania gry. To powinno pomóc
+var int FX_Startup_Bugfix_Done;
+func void FX_Startup_Bugfix()
+{
+	if(!FX_Startup_Bugfix_Done)
+	{
+	FX_Startup_Bugfix_Done = TRUE;
+	FX_Reinit();
+	};
 };
 
 
