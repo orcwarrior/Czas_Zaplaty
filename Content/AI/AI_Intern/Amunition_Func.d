@@ -2,6 +2,7 @@
 
 func void A_ResetMunition(var C_ITEM weapon)
 {
+	printdebug("Amu: Reset Munition");
 	var int id; var int hlp; id = Hlp_GetinstanceID(weapon);
 
 	item.TEXT[4]				= "";	
@@ -20,6 +21,7 @@ func void A_ResetMunition(var C_ITEM weapon)
 
 func void A_SetMunition(var C_ITEM weapon,var int munition,var int IsBow)
 {
+	printdebug_s_i_s_i("Amu: Set Munition, mun:",munition,", isBow: ",IsBow);
 	var int weaponid;
 	var string munitionname;
 	A_ResetMunition(weapon);
@@ -64,7 +66,7 @@ func void A_SetMunition(var C_ITEM weapon,var int munition,var int IsBow)
 		};		
 								
 	}
-	else
+	else //(Crossbow)
 	{
 		if(munition==0)
 		{
@@ -107,10 +109,7 @@ func void A_SetMunition(var C_ITEM weapon,var int munition,var int IsBow)
 	
 	Npc_GetInvItem(hero,weapon.munition);	
 	munitionname=item.description;	
-	weapon.TEXT[4]				= ConcatStrings(ConcatStrings("U¿ywana amunicja: ",munitionname),".");		
-
-
-	
+	weapon.TEXT[4]				= ConcatStrings(ConcatStrings("U¿ywana amunicja: ",munitionname),".");
 };
 
 
@@ -120,10 +119,9 @@ func void A_CheckMunition(var C_ITEM weapon,var int IsBow)
 	var int mun_id;
 	var string munitionname;	
 
-		Npc_GetInvItem(hero,weapon.munition);	
-		munitionname=item.description;
-		mun_id	=	Hlp_GetInstanceID(item);
-
+	Npc_GetInvItem(hero,weapon.munition);	
+	munitionname=item.description;
+	mun_id	=	Hlp_GetInstanceID(item);
 	if(IsBow)
 	{		
 		if(Npc_HasItems(hero,mun_id)==0)&&(!Npc_HasReadiedRangedWeapon(hero))//0 amunition and hero haven't readied weapon (so NO ammo in hand)
@@ -218,65 +216,49 @@ func void A_CheckMunition(var C_ITEM weapon,var int IsBow)
 //*******************************************************
 Func void Am_Unequip(var int type)
 {
-var int a;
+	var int a;
+	printdebug_s_i("Amu: UnEquip, isBow:",!type);
 	if(type==0)
 	{
 		Npc_GetInvItem(hero,ItAmArrow);
-		item.flags=AM_UNEQ_FLAGS;
-		
+		item.flags=AM_UNEQ_FLAGS;		
 		Npc_GetInvItem(hero,ItAmArrow_15);
-		item.flags=AM_UNEQ_FLAGS;
-
-		
+		item.flags=AM_UNEQ_FLAGS;		
 		Npc_GetInvItem(hero,ItAmArrow_25);
-		item.flags=AM_UNEQ_FLAGS;
-
-			
+		item.flags=AM_UNEQ_FLAGS;			
 		Npc_GetInvItem(hero,ItAmFireArrow);
-		item.flags=AM_UNEQ_FLAGS;
-
-					
+		item.flags=AM_UNEQ_FLAGS;					
 		Npc_GetInvItem(hero,ItAmIceArrow);
-		item.flags=AM_UNEQ_FLAGS;
-
-					
+		item.flags=AM_UNEQ_FLAGS;					
 		Npc_GetInvItem(hero,ItAmPoisonArrow);
-		item.flags=AM_UNEQ_FLAGS;
-
-					
+		item.flags=AM_UNEQ_FLAGS;					
 		Npc_GetInvItem(hero,ItAmBluntArrow);
-		item.flags=AM_UNEQ_FLAGS;
-	
+		item.flags=AM_UNEQ_FLAGS;	
 	}
 	else
 	{
 		Npc_GetInvItem(hero,ItAmBolt);
-		item.flags=AM_UNEQ_FLAGS;
-		
+		item.flags=AM_UNEQ_FLAGS;		
 		Npc_GetInvItem(hero,ItAmBolt_10);
-		item.flags=AM_UNEQ_FLAGS;
-		
+		item.flags=AM_UNEQ_FLAGS;		
 		Npc_GetInvItem(hero,ItAmBolt_25);
-		item.flags=AM_UNEQ_FLAGS;
-			
+		item.flags=AM_UNEQ_FLAGS;			
 		Npc_GetInvItem(hero,ItAmFireBolt);
-		item.flags=AM_UNEQ_FLAGS;
-					
+		item.flags=AM_UNEQ_FLAGS;					
 		Npc_GetInvItem(hero,ItAmIceBolt);
-		item.flags=AM_UNEQ_FLAGS;
-					
+		item.flags=AM_UNEQ_FLAGS;					
 		Npc_GetInvItem(hero,ItAmPoisonBolt);
-		item.flags=AM_UNEQ_FLAGS;
-					
+		item.flags=AM_UNEQ_FLAGS;					
 		Npc_GetInvItem(hero,ItAmBluntBolt);
 		item.flags=AM_UNEQ_FLAGS;		
-	};
-	
+	};	
 };
 
-
+// Ork: Ok wiêc ta funkcja pobiera identyfikator nastêpnej, lub poprzedniej
+// dostepnej amunicji dla luku
 func int I_GetA_Munition(var int previous,var int now,var int i)//i=iterations anti-loop
 {
+	printdebug_s_i_s_i("Amu: A-GetAMunition, now:",now,", i: ",i);
 	i+=1;
 	if(i>7)//antiloop
 	{ return 0;};
@@ -367,8 +349,10 @@ func int I_GetA_Munition(var int previous,var int now,var int i)//i=iterations a
 		};
 	};			
 };
+// Ork: Jak powyzszy, ale dla kuszy
 func int I_GetB_Munition(var int previous,var int now,var int i)//i=iterations anti-loop
 {
+	printdebug_s_i_s_i("Amu: Set B-Munition, now-munID:",now,", i: ",i);
 	i+=1;
 	if(i>7)//antiloop
 	{ return 0;};

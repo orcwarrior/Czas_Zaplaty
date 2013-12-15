@@ -844,7 +844,7 @@ func int STR_Search (var string str, var string pattern) {
     var int patt1stChar;
     var int i; var int j;
     MEM_AssignInst (zStr, STRINT_GetStringAddress(str));
-    MEM_AssignInst (patt, STRINT_GetStringAddress(pattern));
+    MEM_AssignInst (patt, STRINT_GetAnotherStringAddress(pattern)); //Ork: Korekta nr. 1
     
     if (zStr.len < 1) || (patt.len > zStr.len) {
         MEM_Warn ("STR_Search: Reading out of bounds! returning -1.");
@@ -855,15 +855,15 @@ func int STR_Search (var string str, var string pattern) {
     i = 0;
     
     var int loopStart; loopStart = MEM_StackPos.position;
-    
-    if(MEM_ReadInt(zStr.ptr+i)&255 == patt1stChar)
+	var string pipe; 
+    if( (MEM_ReadInt(zStr.ptr+i)&255) == patt1stChar) // Korekta #2 (nawiasy)
     {
 	    var int subLoopStart;
 	    j = 1;
 	    subLoopStart = MEM_StackPos.position;
-	    if(MEM_ReadInt(zStr.ptr+i+j)&255 == MEM_ReadInt(patt.ptr+j)&255) 
+	    if( (MEM_ReadInt(zStr.ptr+i+j)&255) == (MEM_ReadInt(patt.ptr+j)&255) ) // Korekta #3i4 (nawiasy)
 		{
-			if(j==patt.len)
+			if( (j+1) == patt.len) // Korekta #5 japierdole XD
 			{
 				return i;//returns the begging pos of searched pattern in string
 			};

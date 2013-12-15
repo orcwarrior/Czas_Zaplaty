@@ -147,7 +147,7 @@ func void UIMsg_FormatAndPrintText(var UIMsg Msg)
 	const int maxCharsInline = 32; //zmienione przez Adanosa 2012-04-30
 	const int xStartOfWindow = 5;
 	var int yStartOf1Line; yStartOf1Line = 1584 - CalcPixelPosY(8)/2;
-	var int yStartOf2Line; yStartOf2Line = 3800 - CalcPixelPosY(8)/2;
+	var int yStartOf2Line; yStartOf2Line = 3850 - CalcPixelPosY(8)/2;
 	var int yStartOfOneLine; yStartOfOneLine = 2800 - CalcPixelPosY(8)/2;//4096 = 100%
 	
 	var int secondLine; var int splitPos;
@@ -161,16 +161,12 @@ func void UIMsg_FormatAndPrintText(var UIMsg Msg)
 	test = ConcatStrings(Msg.text,"");
 	var int newLineCharPos; newLineCharPos = STR_Search(Msg.text,"\n");
 	
-	printdebug_ss("Amu: text: ",Msg.text);
-	printdebug_s_i("Amu: newlinePos: ",newLineCharPos);
 	if(newLineCharPos!=-1)
 	{
 		secondLine = true;
 		splitPos = newLineCharPos;
 		Line1 = STR_SubStr (Msg.text,0,splitPos);
 		Line2 = STR_SubStr (Msg.text,splitPos+2,Str_Len(Msg.text));	// z pominieciem "\n"	
-		printdebug_ss("Amu: Line1: ",Line1);
-		printdebug_ss("Amu: Line2: ",Line2);
 	}	
 	else if(Str_Len(Msg.text)>=maxCharsInline)
 	{

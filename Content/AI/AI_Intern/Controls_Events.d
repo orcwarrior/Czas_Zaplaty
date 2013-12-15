@@ -40,19 +40,17 @@ func void KeyEvent_RuneSwd()
 		};
 	};
 };
-// Ork: Dobra, czemu to nie dzia³a w gzrze? [TODO]
+
 func void KeyEvent_PreviousAmunition()
 {
 	var c_item rw;
 	if(Npc_HasReadiedRangedWeapon(hero))&&(!KeyAmunitionChange)
 	{
-		if(MEM_KeyState(Key_PrevA)==KEY_PRESSED)
+		if(MEM_KeyState(Key_PrevA) != KEY_UP)
 		{
-			print("Previous Amunition");
-	
 			//TODO: Idea color of font means type of amunition
-			PutMsg("Poprzednia amunicja","font_default.tga",RGBAToZColor(255,255,255,255),4,"");
 			rw = Npc_GetReadiedWeapon(hero);
+			printdebug("Amu: [KEYEVENT] Previous Ammu");
 			if(rw.makingmob==1)//bow
 			{
 				A_MUNITION =I_GetA_Munition(TRUE,A_MUNITION,0);	
@@ -61,6 +59,7 @@ func void KeyEvent_PreviousAmunition()
 				Am_Unequip(0);
 				AI_RemoveWeapon(hero);	
 				KeyAmunitionChange=2;//to perframetrigger =when it sat to 2 hero is removing weapon
+				printdebug_s_i("Amu: [KEYEVENT] Previous Ammu, new A-Munition:",A_MUNITION);	
 			}
 			else//CBOW
 			{
@@ -70,7 +69,12 @@ func void KeyEvent_PreviousAmunition()
 				Am_Unequip(1);
 				AI_RemoveWeapon(hero);	
 				KeyAmunitionChange=2;//to perframetrigger =when it sat to 2 hero is removing weapon
+				printdebug_s_i("Amu: [KEYEVENT] Previous Ammu, new B-Munition:",B_MUNITION);	
 			};
+			var string msg; msg = "Poprzednia amunicja:\n";
+			Npc_GetInvItem(hero,rw.munition);	
+			msg = ConcatStrings(msg,item.description);
+			PutMsg(msg,"font_default.tga",RGBAToZColor(255,255,255,255),4,"");
 		};
 	};	
 };
@@ -80,12 +84,10 @@ func void KeyEvent_NextAmunition()
 	var c_item rw;	
 	if(Npc_HasReadiedRangedWeapon(hero))&&(!KeyAmunitionChange)
 	{
-		if(MEM_KeyState(Key_NextA)==KEY_PRESSED)
+		if(MEM_KeyState(Key_NextA) != KEY_UP)
 		{
-			print("Next Amunition");
-	
-			PutMsg("Nastepna amunicja","font_default.tga",RGBAToZColor(255,255,255,255),4,"");
 			rw = Npc_GetReadiedWeapon(hero);
+			printdebug("Amu: [KEYEVENT] Next Ammu");	
 			if(rw.makingmob==1)//bow
 			{
 				A_MUNITION = I_GetA_Munition(FALSE,A_MUNITION,0);	
@@ -93,7 +95,8 @@ func void KeyEvent_NextAmunition()
 				Npc_ClearAIQueue(hero);
 				Am_Unequip(0);
 				AI_RemoveWeapon(hero);	
-				KeyAmunitionChange=2;//to perframetrigger =when it sat to 2 hero is removing weapon			
+				KeyAmunitionChange=2;//to perframetrigger =when it sat to 2 hero is removing weapon		
+				printdebug_s_i("Amu: [KEYEVENT] Next Ammu, new A-Munition:",A_MUNITION);		
 			}
 			else//CBOW
 			{
@@ -103,7 +106,12 @@ func void KeyEvent_NextAmunition()
 				Am_Unequip(1);
 				AI_RemoveWeapon(hero);	
 				KeyAmunitionChange=2;//to perframetrigger =when it sat to 2 hero is removing weapon
+				printdebug_s_i("Amu: [KEYEVENT] Next Ammu, new A-Munition:",B_MUNITION);	
 			};
+			var string msg; msg = "Nastepna amunicja:\n";
+			Npc_GetInvItem(hero,rw.munition);	
+			msg = ConcatStrings(msg,item.description);
+			PutMsg(msg,"font_default.tga",RGBAToZColor(255,255,255,255),4,"");
 		};	
 	};
 
@@ -124,7 +132,7 @@ func void KeyEvent_AmunitionBugFix()
 			}		
 			else//cbow
 			{		
-				A_SetMunition(rw,B_munition,TRUE);	
+				A_SetMunition(rw,B_munition,FALSE);	//Ork: False - isBow no kurwa -_-
 			};
 			AI_ReadyRangedWeapon(hero);					
 			KeyAmunitionChange=0;
