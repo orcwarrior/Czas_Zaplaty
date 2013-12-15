@@ -256,7 +256,7 @@ INSTANCE DIA_Necro_ReadyForTest(C_INFO)
 	description		= "Jestem gotów byœ podda³ mnie próbie."; //Ork: Ewentualnie do poprawki 
 };
 
-FUNC INT DIA_Necro_GreetInNecroloc_Condition()
+FUNC INT DIA_Necro_ReadyForTest_Condition()
 {
 	if (Npc_KnowsInfo (hero, DIA_Necro_GreetInNecroloc))
 	{
@@ -264,12 +264,12 @@ FUNC INT DIA_Necro_GreetInNecroloc_Condition()
 	};
 };
 
-FUNC VOID DIA_Necro_GreetInNecroloc_Info()
+FUNC VOID DIA_Necro_ReadyForTest_Info()
 {
-	AI_Output (other, self, "DIA_Necro_GreetInNecroloc_15_01"); //Jestem gotów byœ podda³ mnie próbie.
-	AI_Output (self, other, "DIA_Necro_GreetInNecroloc_11_02"); //Lorem ipsum.
-	AI_Output (other, self, "DIA_Necro_GreetInNecroloc_15_03"); //Loorem ipsum.
-	AI_Output (self, other, "DIA_Necro_GreetInNecroloc_11_04"); //Loorem ipsum.
+	AI_Output (other, self, "DIA_Necro_ReadyForTest_15_01"); //Jestem gotów byœ podda³ mnie próbie.
+	AI_Output (self, other, "DIA_Necro_ReadyForTest_11_02"); //Lorem ipsum.
+	AI_Output (other, self, "DIA_Necro_ReadyForTest_15_03"); //Loorem ipsum.
+	AI_Output (self, other, "DIA_Necro_ReadyForTest_11_04"); //Loorem ipsum.
 	
    	Log_CreateTopic	(CH4_Nec_Trial, LOG_MISSION);
 	Log_SetTopicStatus	(CH4_Nec_Trial, LOG_RUNNING);
