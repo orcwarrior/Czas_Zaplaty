@@ -55,7 +55,7 @@ PROTOTYPE Mst_Default_ZombieHeavy(C_Npc)
 	//Tpl + Guru
 	name							=	"Zombi";
 	guild							=	GIL_ZOMBIE;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_ZOMBIE);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_ZOMBIE);
 	level							=	40;
 //-----------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	200;
@@ -85,15 +85,15 @@ PROTOTYPE Mst_Default_ZombieHeavy(C_Npc)
 	fight_tactic							=	FAI_ZOMBIE;
 //-----------------------------------------------------------
 	senses						= SENSE_HEAR | SENSE_SEE | SENSE_SMELL;
-	senses_range				= 2000;
+	senses_range				= 2500;
 
  Npc_SetAivar(self,AIV_MM_Behaviour,		 HUNTER);
 	
- Npc_SetAivar(self,AIV_MM_PercRange,		 2000);
- Npc_SetAivar(self,AIV_MM_DrohRange,		 2499);
- Npc_SetAivar(self,AIV_MM_AttackRange,	 2000);
- Npc_SetAivar(self,AIV_MM_DrohTime,		 0);
- Npc_SetAivar(self,AIV_MM_FollowTime,	 10);
+ Npc_SetAivar(self,AIV_MM_PercRange,		 2500);
+ Npc_SetAivar(self,AIV_MM_DrohRange,		 2500);
+ Npc_SetAivar(self,AIV_MM_AttackRange,	 2500);
+ Npc_SetAivar(self,AIV_MM_DrohTime,		 1);
+ Npc_SetAivar(self,AIV_MM_FollowTime,	 15);
  Npc_SetAivar(self,AIV_MM_FollowInWater,  FALSE);
  Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);	
 //-------------------------------------------------------------
@@ -368,8 +368,8 @@ INSTANCE PSI_GuruZombie	(Mst_Default_ZombieHeavy)
 	Set_PSIZombie_Visuals(ZOM_GUR_ARMOR_M);
 	fight_tactic							=	FAI_HUMAN_MAGE;
 	guild							=	GIL_ZOMBIE;	
-	attribute	[ATR_MANA_MAX] 		=	201;
-	attribute	[ATR_MANA] 			=	201;
+	attribute	[ATR_MANA_MAX] 		=	400;
+	attribute	[ATR_MANA] 			=	400;
 	attribute	[ATR_HITPOINTS_MAX]	=	650;
 	attribute	[ATR_HITPOINTS]		=	650;	
 	level							=	70;
@@ -382,7 +382,8 @@ INSTANCE PSI_GuruZombie	(Mst_Default_ZombieHeavy)
 	}
 	else if(rnd == 1)
 	{		
-	CreateInvItem			(self,	ItArRuneIceCube);	
+	CreateInvItem			(self,	ItArRuneIceCube);
+	CreateInvItems			(self,	ItArScrollThunderball,5);	
 	CreateInvItems			(self,	ItArScrollSummonSkeletons,	1);
 	}	
 	else if(rnd == 2)
@@ -396,8 +397,9 @@ INSTANCE PSI_GuruZombie	(Mst_Default_ZombieHeavy)
 	CreateInvItems			(self,	ItArScrollWindFist,	2);
 	CreateInvItem			(self,	ItArRuneThunderbolt);		
 	};	
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  45);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  45);
+	Npc_SetAivar(self,AIV_MM_REAL_ID, ID_ZOMBIE_GURU);
 	B_SetMonsterLevel();			
 };
 
@@ -414,8 +416,9 @@ INSTANCE PSI_GuruZombieFireStorm	(Mst_Default_ZombieHeavy)
 	
 	CreateInvItem			(self,	ItArRuneFireStorm);	
 
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  45);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  45);
+	Npc_SetAivar(self,AIV_MM_REAL_ID, ID_ZOMBIE_GURU);
 	B_SetMonsterLevel();			
 };
 

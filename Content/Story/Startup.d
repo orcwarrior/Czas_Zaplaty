@@ -2,11 +2,11 @@
 func VOID STARTUP_SUB_PSICAMP ()
 {
 	//----------------GURUS---------------------------------------------------
-	Wld_InsertNpc(PSI_GuruZombie, "PSI_PATH_1_1");			
+	//Wld_InsertNpc(PSI_GuruZombie, "PSI_PATH_1_1");			
 	Wld_InsertNpc(PSI_GuruZombie, "PSI_TEACH_TRAIN_GUR");		//Drogenlabor
 	Wld_InsertNpc(PSI_GuruZombie, "PSI_HANGAROUND_GUR");		//Hut 17, Trainingsplatz
 	Wld_InsertNpc(PSI_GuruZombie, "PSI_22_EX_GUARD");		//Hut 28, Teacher 3
-	Wld_InsertNpc(PSI_GuruZombie, "PSI_SPEECH");		//Hauptorplatz, Smalltalk mit Lester
+	Wld_InsertNpc(PSI_GuruZombieFireStorm, "PSI_SPEECH");		//Hauptorplatz, Smalltalk mit Lester
 	Wld_InsertNpc(PSI_GuruZombie, "PSI_PLATFORM_TEACHER");			
 
 	//-----------Novizen-------------(auch für Große Beschwörung)------------------

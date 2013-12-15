@@ -105,28 +105,29 @@ Func Int C_Npcisundead(Var C_Npc Slf)
 		Return False;
 	};
 };
-Func Int C_Npcismonstermage(Var C_Npc Slf)
+Func Int C_NpcIsMonsterMage(Var C_Npc Slf)
 {
-	//Printdebugint(Pd_Zs_Detail,"C_Npcismonstermage");
+	//Printdebugint(Pd_Zs_Detail,"C_NpcIsMonsterMage");
 
 	If((Slf.Fight_Tactic==Fai_Human_Mage)
 	&&((Slf.Guild==Gil_Demon)||			//Skelett-Mage (Hat Aus Species.D-Technischen GrüNden DäMonen-Gilde!)
-	(Slf.Guild==Gil_Orcshaman)||			//Ork-Shamane
-	(Slf.Guild==Gil_Undeadorc)||			//Untoter Ork-Priester
-	(Slf.Guild==Gil_Golem)))//Eisgolem Der Einen "Ice-Cube"-Angriff Hat
+	(Slf.Guild==Gil_Orcshaman)||		//Ork-Shamane
+	(Slf.Guild==Gil_Undeadorc)||		//Untoter Ork-Priester
+	(Slf.Guild==Gil_Golem)))|| 			//Eisgolem Der Einen "Ice-Cube"-Angriff Hat
+	(Npc_GetAivar(self,AIV_MM_REAL_ID) == ID_ZOMBIE_GURU) // Ork: A mo¿e zombie-guru?
 	{
 		//Printdebugint(Pd_Zs_Detail,"...True");
-		Return True;
+		Return true;
 	}
 	Else
 	{
 		//Printdebugint(Pd_Zs_Detail,"...False");
-		Return False;
+		Return false;
 	};
 };
 Func Int C_Npcisevil(Var C_Npc Slf)
 {
-	If(C_Npcismonstermage(Slf))||(C_Npcisundead(Slf))||(C_Npcisorc(Slf))&&(Slf.Guild!=Gil_Golem)
+	If(C_NpcIsMonsterMage(Slf))||(C_Npcisundead(Slf))||(C_Npcisorc(Slf))&&(Slf.Guild!=Gil_Golem)
 	{
 		//Printdebugint(Pd_Zs_Detail,"...True");
 		Return True;

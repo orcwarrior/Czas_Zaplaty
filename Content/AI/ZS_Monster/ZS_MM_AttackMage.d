@@ -29,22 +29,17 @@ func void ZS_MM_AttackMage ()
 };
 
 func int ZS_MM_AttackMage_Loop()
-{
-	//////PrintDebugNpc		(PD_ZS_LOOP,	"ZS_MM_AttackMage_Loop");		
+{		
 	Npc_GetTarget		(self);
 	/* -------- Wenn Gegner Bewuﬂtlos oder Tod... -------- */
 	if ( Npc_IsInState	(other, ZS_Unconscious) || Npc_IsDead(other) || Npc_IsInState(other, ZS_Dead)) // WORKAROUND: es kann vorkommen, daﬂ der SC in Zustand ZS_Dead landet, aber noch bewuﬂtlos ist!!!
 	{
-		//////PrintDebugNpc	(PD_ZS_CHECK,	"...Ziel bewuﬂtlos oder tot!");
-
 		if ( Npc_IsNextTargetAvailable(self) ) 
 		{
 			Npc_GetNextTarget	(self);
-			//PrintDebugString	(PD_ZS_CHECK, "...neues Ziel gefunden: ", other.name);
 		}
 		else
 		{
-			//////PrintDebugNpc		(PD_ZS_CHECK, "...kein Neues Ziel vorhanden!");
 			return 				LOOP_END;
 		};
 	};

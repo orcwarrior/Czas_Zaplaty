@@ -259,14 +259,17 @@ func void ZS_MM_AssessEnemy()
 	Npc_PercEnable		(self, PERC_ASSESSOTHERSDAMAGE, B_MM_ReactToOthersDamage); 	
 	Npc_PercEnable		(self, PERC_ASSESSMAGIC,		B_AssessMagic); 			//selbe Rkt wie Humans
 	Npc_PercEnable 		(self, PERC_ASSESSBODY, 		B_MM_AssessBody);
-	Npc_PercEnable(Self,PERC_NPCCOMMAND,B_CHECKCOLLIDEDAMAGE_MONSTER);
+	Npc_PercEnable(self,PERC_NPCCOMMAND,B_CHECKCOLLIDEDAMAGE_MONSTER);
 	
 	if (Npc_GetAivar(self,AIV_MM_Behaviour) == HUNTER)
 	{
 		AI_StandUp 		(self);
 		AI_TurnToNpc	(self, other);
 		AI_PlayAni		(self, "T_WARN"); 
-		AI_SetWalkmode 	(self, NPC_WALK);
+		if(Npc_GetAivar(self,AIV_MM_REAL_ID) != ID_ZOMBIE_GURU)
+		{	// Ork: Fix niereagujacych guru-zombie:
+			AI_SetWalkmode 	(self, NPC_WALK);
+		};
 	};
 	if(Npc_GetAivar(self,AIV_MM_REAL_ID) == ID_FIREWISP) 
 	{
@@ -279,6 +282,7 @@ func void ZS_MM_AssessEnemy()
 		AI_StandUp 		(self); //sonst kein LookAt
 		AI_LookAtNpc	(self,other);
 	};
+	return;
 };
 
 func int ZS_MM_AssessEnemy_loop()
@@ -288,11 +292,11 @@ func int ZS_MM_AssessEnemy_loop()
 	{
 		Npc_ClearAIQueue(self);
 		AI_StartState	(self, ZS_WISP_Attack, 0, "");
-		return 1;
+		return LOOP_END;
 	};	  
 	if (Npc_GetDistToNpc(self, other) > Npc_GetAivar(self,AIV_MM_PercRange))
 	{
-		return 1;
+		return LOOP_END;
 	};
 	
 	if ((Npc_GetDistToNpc(self, other) <= Npc_GetAivar(self,AIV_MM_PercRange)) && (Npc_GetDistToNpc(self, other) > Npc_GetAivar(self,AIV_MM_DrohRange)))
@@ -319,13 +323,12 @@ func int ZS_MM_AssessEnemy_loop()
 			{	
 				Npc_SetTarget	(self, other);
 				Npc_ClearAIQueue(self);
-				AI_StartState	(self, ZS_MM_Attack, 0, "");
+				AI_StartState	(self, ZS_MM_Attack, 0, "");				
 			}
 			else
 			{
 				AI_TurnToNpc 	(self,other);			
-				AI_PlayAni		(self, "T_WARN");
-				
+				AI_PlayAni		(self, "T_WARN");				
 				Npc_SendPassivePerc	(self, PERC_ASSESSWARN, other, self); // Opfer, Täter
 			};
 		};
@@ -344,17 +347,18 @@ func int ZS_MM_AssessEnemy_loop()
 	{
 		if(Npc_GetAivar(self,AIV_MM_REAL_ID) == ID_FIREWISP) 
 		{
-		Npc_ClearAIQueue(self);
-		AI_StartState	(self, ZS_WISP_Attack, 0, "");
-			return 1;
-		};			
+			Npc_ClearAIQueue(self);
+			AI_StartState	(self, ZS_WISP_Attack, 0, "");
+			return LOOP_END;
+		};		
 		Npc_SetTarget	(self, other);
 		Npc_ClearAIQueue(self);
 		AI_StandUp		(self);
 		AI_StartState	(self, ZS_MM_Attack, 0, "");
+		return LOOP_END; //Ork: Tego brakowa³o?
 	};
 	
-	return 0;
+	return LOOP_CONTINUE;
 };	
 
 func void ZS_MM_AssessEnemy_end()
@@ -475,13 +479,18 @@ func void ZS_MM_Attack ()
 	//////PrintDebugNpc		(PD_MST_FRAME, "ZS_MM_Attack");
 	Npc_PercEnable		(Self,PERC_NPCCOMMAND,B_CHECKCOLLIDEDAMAGE_MONSTER);
 
+	//-------- SC/NSC im Dialog ignorieren --------
+	if (Npc_GetAivar(other,AIV_INVINCIBLE))
+	{
+		AI_ContinueRoutine(self); 
+	};
 	//-------- Monster-Mages --------
 	//PRINTGlobals	(PD_MST_DETAIL);
 	if ( Npc_IsPlayer( other ) )
 	{
 		B_Pupil_ReactToOthAttack();
 	};		
-	if (C_NpcIsMonsterMage(self)||self.attribute	[ATR_MANA_MAX] 		==	201)
+	if (C_NpcIsMonsterMage(self) || self.attribute	[ATR_MANA_MAX] 		==	201)
 	{	
 		B_FullStop		(self);
 		AI_StartState	(self,	ZS_MM_AttackMage, 0, "");
@@ -495,11 +504,6 @@ func void ZS_MM_Attack ()
 		return;
 	};
 
-	//-------- SC/NSC im Dialog ignorieren --------
-	if (Npc_GetAivar(other,AIV_INVINCIBLE))
-	{
-		AI_ContinueRoutine(self); 
-	};
 
 	//-------- Wahrnehmungen --------
 	Npc_PercEnable	(self, PERC_ASSESSDAMAGE,	B_MM_ReactToCombatDamage); 	//global
