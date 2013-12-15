@@ -1,7 +1,8 @@
+
+// Ork: Ten tutaj, to nekro w orctemple.zen
 // **************************************************
 // 						 EXIT 
 // **************************************************
-
 INSTANCE DIA_Necromanus_Exit (C_INFO)
 {
 	npc			= Non_4116_Nekroman;
@@ -73,6 +74,7 @@ Aha niech Dick stoi pomiêdzy Xardem a Nekro tak bêdzie najlepiej dla dialogu.
 
 ***********************/
 };
+
 
 // **************************************************
 

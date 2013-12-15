@@ -1,7 +1,7 @@
-CONST INT B_SPRINT_COST_BASE = 520;
-CONST INT B_SPRINT_COST_MAXLVLBASEDBONUS = 140;
-CONST INT B_SPRINT_COST_REGULARRUN = 230;
-CONST INT B_SPRINT_COST_STANDINGBONUS = 120;
+CONST INT B_SPRINT_COST_BASE = 530;
+CONST INT B_SPRINT_COST_MAXLVLBASEDBONUS = 90;
+CONST INT B_SPRINT_COST_REGULARRUN = 220;
+CONST INT B_SPRINT_COST_STANDINGBONUS = 60;
 
 instance StaminaBar(oCViewStatusBar) {};
 
@@ -112,7 +112,7 @@ func int Sprint__CalculateSprintCost(var int runState)
 	if(runState == B_SPRINT_RUNSTATE_RUN) 
 	{ 
 		cost = B_SPRINT_COST_BASE; 
-		var int lvlBonus; lvlBonus = hero.level * 3;
+		var int lvlBonus; lvlBonus = hero.level * 2;
 		if(lvlBonus > B_SPRINT_COST_MAXLVLBASEDBONUS) { lvlBonus = B_SPRINT_COST_MAXLVLBASEDBONUS; };
 		cost = cost - lvlBonus;
 	}

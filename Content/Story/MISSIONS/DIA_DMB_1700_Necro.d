@@ -1,3 +1,4 @@
+// Ork: Tu nekro w Cave.ZEN (1sze spotkanie) + w swojej siedzibie
 // **************************************************
 // 						 EXIT 
 // **************************************************
@@ -49,6 +50,7 @@ INSTANCE DIA_Necro_First (C_INFO)
 
 FUNC INT DIA_Necro_First_Condition()
 {
+
 	if (Npc_GetDistToNpc(self,hero) < 1000)&&(Npc_KnowsInfo (hero, DIA_Leren_RuneSwdBack))
 	{
 		return 1;
@@ -102,7 +104,9 @@ INSTANCE DIA_Necro_Second(C_INFO)
 
 FUNC INT DIA_Necro_Second_Condition()
 {
-	if (Npc_GetDistToNpc(self,hero) < 1000)&&(Npc_KnowsInfo (hero, DIA_Necro_First))
+	// Ork: 3ci warunek powinien zahamowaæ nekro przed gadaniem zbyt wiele zanim uciekniemy przed lawa
+	// #2 Ta pierwa rozmowa nie zawsze sie uruchamia (u mnie nigdy :P ) dlatego sprawdzmy lepiej zmienna z EventCave.d zamiast Info
+	if (Npc_GetDistToNpc(self,hero) < 1000)&& (EvtCave_HeroRunawaySucess) && (Npc_GetDistToWP(self,"ESCAPE_DARKMAGE") < 2000)
 	{
 		return 1;
 	};
@@ -167,8 +171,12 @@ FUNC VOID DIA_Necro_Second_Swd()
 	//dick_end ();
 };
 
-// ---------------------------Lrn----------------------------------------
 
+
+// [POPRAWKI DIALOGÓW]: To zaczynamy tutaj, ten dialog nie ma rozpoczynaæ próby, 
+// próba ma siê dziaæ w NECROLOC.ZEN. Dialog trzeba podzieliæ na 2 czêsci w tej tutaj,
+// nekro ma dawaæ tylko runê teleportacji i zapodaæ tipa ze jesli chcemy siê podj¹æ próby
+// to widzimy siê u niego na chacie :)
 FUNC VOID DIA_Necro_Second_Learn()
 {
 	AI_Output (other, self, "DIA_Necro_Second_Learn_15_01"); //Zechcesz zostaæ moim mistrzem?
@@ -183,40 +191,117 @@ FUNC VOID DIA_Necro_Second_Learn()
 	AI_Output (self, other, "DIA_Necro_Second_Learn_11_10"); //Tylko ktoœ kto potrafi zabiæ swoje w³asne jestestwo mo¿e staæ siê czar¹ Beliara.
 	AI_Output (other, self, "DIA_Necro_Second_Learn_15_11"); //Jestem gotów.
 	AI_Output (self, other, "DIA_Necro_Second_Learn_11_12"); //Zmierz siê wiêc z samym sob¹, ze swoj¹ si³¹ i s³aboœci¹ aby staæ siê Dzieckiem Ciemnoœci!
-	Log_CreateTopic	(CH4_Nec_Trial, LOG_MISSION);
-	Log_SetTopicStatus	(CH4_Nec_Trial, LOG_RUNNING);
-	B_LogEntry(CH4_Nec_Trial, "Nekromanta podda³ mnie Próbie Mroku. Muszê zmierzyæ siê z... samym sob¹.");
+
+	//Ork: To chyba zostaje:
 	B_LogEntry(CH4_Nec_BM, "Aby zdobyæ zaufanie nekromanty muszê odbyæ Próbê Mroku.");
 	B_StopProcessInfos(self);
-	Wld_PlayEffect("spellFX_INCOVATION_RED", self, self, 1, 0, DAM_MAGIC, FALSE);
-   Wld_InsertNpc (PC_Hero_AlterEgo, "ESCAPE_MIDDLE2");
-	/*********************
-		Nekro znika i pojawia siê drugi Rick, tylko ma mieæ czerwone ga³y. Ork zrób to jak uwa¿asz...
-		Opis Aragorna:
-Nawalamy siê z nim, ale po pewnym czasie zdajemy sobie sprawê z tego, ¿e mamy wa³a.
-Gdy obrywa nasz sobowtór my tracimy dok³adnie tyle samo hp. - jestem geniuszem :D
-Z otworu w sklepieniu pada struga œwiat³a, gdy uda nam siê w ni¹ zagnaæ przeciwnika ten zaczyna p³on¹æ. Wtedy atakuj¹c go nie tracimy hp.
-
-Po pokonaniu niech nekro znowy siê pojawia.
-Niech siê zmienna dick_trial ustawi na TRUE jak mu siê uda bo to bêdzie warunek do kolejnego dialogu
-		***********************/
-	place_change = place_change + 1;
-	Npc_ExchangeRoutine (self, "next_place");
+	place_change = place_change + 1; //Ork: NIE WIEM CO TO ZA ZMIENNA? ZOSTAWIAM NARAZIE TUTAJ
+	Npc_ExchangeRoutine (self, "next_place");//Ork: Dodaje ju¿ runê tutaj, ale dialogów nie tykam :)
+	Create_and_give(ItArRuneTeleportToNecroloc, 1);
+	
 	//AI_StartState(self,ZS_NekroTP,1,"");
 	//TODO
 	//dick_trial ();
 };
 
-// **************************************************
+
+// [POPRAWKI DIALOGÓW]: W zwiazku z powyzszymi za³o¿eniami, tutaj tworze narazie pusty dialog
+//  Rozmowy przed prób¹ ale ju¿ w necroloc.zen, ogólem zak³adam zeby w tym dialogu nekro ³adnie sie wita³
+//  z Rickiem, no a ¿e po dialogu pojawia sie dialog rozpoczynaj¹cy próbê mroku(?) to wrzuci³bym tu j¹kaœ linie odnosnie tego
+// (Kiedy bêdziesz gotów rozpoczniemy twój¹ próbe ..bleblebel..)
+INSTANCE DIA_Necro_GreetInNecroloc(C_INFO)
+{
+	npc				= DMB_1701_NecroInNecroloc;//Ork: zrobione
+	nr				= 31;
+	condition		= DIA_Necro_GreetInNecroloc_Condition;
+	information		= DIA_Necro_GreetInNecroloc_Info;
+	permanent		= 0;
+	important		= 1;
+	description		= "..."; 
+};
+
+FUNC INT DIA_Necro_GreetInNecroloc_Condition()
+{
+	if (Npc_GetDistToNpc(self,hero) < 1500)&&(Npc_KnowsInfo (hero, DIA_Necro_Second))
+	{
+		return 1;
+	};
+};
+
+FUNC VOID DIA_Necro_GreetInNecroloc_Info()
+{
+	//Ork: Nekro podchodzi do hero
+	if(Npc_GetDistToNpc(self,hero) > 400)
+	{
+		AI_TurnToNpc(self, other);
+		AI_SetWalkmode(self,NPC_WALK);
+		AI_GotoNpc(self,other);
+	};
+	AI_Output (self, other, "DIA_Necro_GreetInNecroloc_11_01"); //Lorem ipsum.
+	AI_Output (other, self, "DIA_Necro_GreetInNecroloc_15_02"); //Loorem ipsum.
+	AI_Output (self, other, "DIA_Necro_GreetInNecroloc_11_03"); //Loorem ipsum.	
+};
+// [POPRAWKI DIALOGÓW]: W zwiazku z powyzszymi za³o¿eniami, tutaj tworze narazie pusty dialog
+//  Rozmowy przed prób¹ ale ju¿ w necroloc.zen, ogólem zak³adam zeby w tym dialogu nekro ³adnie sie wita³
+//  z Rickiem, no a ¿e po dialogu pojawia sie dialog rozpoczynaj¹cy próbê mroku(?) to wrzuci³bym tu j¹kaœ linie odnosnie tego
+// (Kiedy bêdziesz gotów rozpoczniemy twój¹ próbe ..bleblebel..)
+INSTANCE DIA_Necro_ReadyForTest(C_INFO)
+{
+	npc				= DMB_1701_NecroInNecroloc;//Ork: zrobione
+	nr				= 32;
+	condition		= DIA_Necro_ReadyForTest_Condition;
+	information		= DIA_Necro_ReadyForTest_Info;
+	permanent		= 0;
+	important		= 0;
+	description		= "Jestem gotów byœ podda³ mnie próbie."; //Ork: Ewentualnie do poprawki 
+};
+
+FUNC INT DIA_Necro_GreetInNecroloc_Condition()
+{
+	if (Npc_KnowsInfo (hero, DIA_Necro_GreetInNecroloc))
+	{
+		return 1;
+	};
+};
+
+FUNC VOID DIA_Necro_GreetInNecroloc_Info()
+{
+	AI_Output (other, self, "DIA_Necro_GreetInNecroloc_15_01"); //Jestem gotów byœ podda³ mnie próbie.
+	AI_Output (self, other, "DIA_Necro_GreetInNecroloc_11_02"); //Lorem ipsum.
+	AI_Output (other, self, "DIA_Necro_GreetInNecroloc_15_03"); //Loorem ipsum.
+	AI_Output (self, other, "DIA_Necro_GreetInNecroloc_11_04"); //Loorem ipsum.
+	
+   	Log_CreateTopic	(CH4_Nec_Trial, LOG_MISSION);
+	Log_SetTopicStatus	(CH4_Nec_Trial, LOG_RUNNING);
+	B_LogEntry(CH4_Nec_Trial, "Nekromanta podda³ mnie Próbie Mroku. Muszê zmierzyæ siê z... samym sob¹.");
+	B_LogEntry(CH4_Nec_BM, "Aby zdobyæ zaufanie nekromanty muszê odbyæ Próbê Mroku.");
+	B_StopProcessInfos(self);
+   
+   /*********************
+		Nekro znika i pojawia siê drugi Rick, tylko ma mieæ czerwone ga³y. Ork zrób to jak uwa¿asz...
+		Opis Aragorna:
+		Nawalamy siê z nim, ale po pewnym czasie zdajemy sobie sprawê z tego, ¿e mamy wa³a.
+		Gdy obrywa nasz sobowtór my tracimy dok³adnie tyle samo hp. - jestem geniuszem :D
+		Z otworu w sklepieniu pada struga œwiat³a, gdy uda nam siê w ni¹ zagnaæ przeciwnika ten zaczyna p³on¹æ. Wtedy atakuj¹c go nie tracimy hp.
+		
+		Po pokonaniu niech nekro znowy siê pojawia.
+		Niech siê zmienna dick_trial ustawi na TRUE jak mu siê uda bo to bêdzie warunek do kolejnego dialogu
+		***********************/
+	Wld_PlayEffect("spellFX_INCOVATION_RED", self, self, 1, 0, DAM_MAGIC, FALSE);
+	Wld_InsertNpc (PC_Hero_AlterEgo, "ESCAPE_MIDDLE2");
+  	
+};
+
 
 /*********************
 Po próbie
 *********************/
 
 
+// [POPRAWKI DIALOGÓW]: Ten dialog teraz jest juz w necroloc.zen, wiêc musi byc poprawiony npc
 INSTANCE DIA_Necro_Trial(C_INFO)
 {
-	npc				= DMB_1700_Necro;
+	npc				= DMB_1701_NecroInNecroloc;//Ork: zrobione
 	nr				= 3;
 	condition		= DIA_Necro_Trial_Condition;
 	information		= DIA_Necro_Trial_Info;
@@ -250,7 +335,8 @@ FUNC VOID DIA_Necro_Trial_Info()
 	AI_Output (other, self, "DIA_Necro_Trial_15_02"); //To dla mnie zaszczyt, mistrzu.
 	AI_Output (self, other, "DIA_Necro_Trial_11_03"); //Przyjmij tê runê. Teleportuje Ciê do mnie, gdy zajdzie taka potrzeba.
    
-   Create_and_give(ItArRuneTeleportToNecroloc, 1);
+   //Ork: Rune zapodaje wczesniej.
+   //Create_and_give(ItArRuneTeleportToNecroloc, 1);
 
 	AI_Output (self, other, "DIA_Necro_Trial_11_04"); //Czas rozpocz¹æ naukê i lepiej, ¿ebyœ mnie nie zawiód³!
 
@@ -262,10 +348,6 @@ FUNC VOID DIA_Necro_Trial_Info()
 	Log_SetTopicStatus	(CH4_Nec_Master, LOG_RUNNING);
 	B_LogEntry(CH4_Nec_Master, "Zosta³em uczniem nekromanty! Muszê to dobrze wykorzystaæ. Powinienem poznaæ mo¿liwie du¿o tajników nekromancji, kto wie czy nie przydadz¹ mi siê kiedyœ w s³usznej sprawie?");
 
-	/******************
-	Tutaj ten nekro powinien siê tp do swojej kryjówki, a dick powinien u¿yæ runy, ¿eby za nim pod¹¿yæ. Ork zrób to jak nale¿y.
-	Aha i lepiej, ¿eby gracz posiadali jakiœ tp do koloni bo inaczej jak wróc¹? A mo¿e w bibliotece nekrosa albo w jego prywatnej komnacie dodaj jak¹œ fajn¹ multirunê prowadz¹c¹ do kilkunastu najwa¿niejszych miest w koloni - jak chcesz to mo¿esz skopiowaæ t¹ z MT, pozwalam ci xD
-	*****************/
 };
 
 // **************************************************
@@ -276,7 +358,7 @@ FUNC VOID DIA_Necro_Trial_Info()
 
 INSTANCE DIA_Necro_Learn (C_INFO)
 {
-	npc				= DMB_1700_Necro;
+	npc				= DMB_1701_NecroInNecroloc; //Ork: Poprawiam na NECROLOC.ZEN
 	nr				= 4;
 	condition		= DIA_Necro_Learn_Condition;
 	information		= DIA_Necro_Learn_Info;
@@ -307,7 +389,7 @@ FUNC VOID DIA_Necro_Learn_Info()
 
 INSTANCE DIA_Necro_Poison (C_INFO)
 {
-	npc				= DMB_1700_Necro;
+	npc				= DMB_1701_NecroInNecroloc; //Ork: Poprawiam z necro w CAVE.ZEN => NECROLOC.ZEN
 	nr				= 5;
 	condition		= DIA_Necro_Poison_Condition;
 	information		= DIA_Necro_Poison_Info;

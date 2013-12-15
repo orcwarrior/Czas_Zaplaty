@@ -1,5 +1,6 @@
-var int CameraStart;
-var int InMaze;
+var int EvtCave_HeroRunawaySucess;
+var int EvtCave_LavaStartRaising;
+var int EvtCave_HeroInMaze;//Unused
 
 FUNC VOID EVT_TRAP_SCRIPT01 ()
 {
@@ -15,39 +16,45 @@ func void EVT_CAVE_TIMER ()
 	var int SendTrigggerCave_Timer;
 	SendTrigggerCave_Timer=TRUE;
 //	Wld_PlayEffect("DREAM_BLEND", hero, hero, 0, 0, DAM_MAGIC, 0);
-	CAVETIME=CAVETIME+1;
+	// Ork: Bugfix, oczekujemy aż hero sobie pogada z nekromantą (przy pierwszym spotkaniu)
+	if(InfoManager_HasFinished() && !EvtCave_HeroRunawaySucess)
+	{
+		CAVETIME=CAVETIME+1;
+	};
 
+	// "Koncowy cinematic" -> po ucieczce
 	if(CAVETIME>=37)//Not start camera = HOT :D
-	{	Wld_SendTrigger("LAVA_MOVER_KEY");	};
+	{	Wld_SendTrigger("LAVA_MOVER_KEY");	}; // <- tutaj hero zginie
 
-	if(CameraStart)&&(CAVETIME==6)
+	if(EvtCave_HeroRunawaySucess)&&(CAVETIME==6)
 	{
 		Wld_SendTrigger("DARKMAGE_TELEPORT");
 		Snd_Play("MFX_Teleport_Invest");
 	};
 
-	if(CameraStart)&&(CAVETIME==9)
+	if(EvtCave_HeroRunawaySucess)&&(CAVETIME==9)
 	{
       Snd_Play("MFX_Teleport_Cast");
       Npc_ExchangeRoutine(DarkMage,"TESTPASSED");
       DarkMage = Hlp_GetNpc(DMB_1700_Necro); Npc_ClearAIQueue(DarkMage);AI_Teleport(DarkMage,"ESCAPE_DARKMAGE");
 	};
 
-	if(CameraStart)&&(CAVETIME==11)
+	if(EvtCave_HeroRunawaySucess)&&(CAVETIME==11)
 	{
 		DarkMage = Hlp_GetNpc(DMB_1700_Necro);
 		AI_TurnToNpc(hero,DarkMage); SendTrigggerCave_Timer=FALSE;
 		Wld_PlayEffect("DarkMage_STOPLAVA_BLEND", DarkMage, DarkMage, 0, 0, DAM_MAGIC, 0);
 	  	Wld_PlayEffect("DarkMage_STOPLAVA", DarkMage, DarkMage, 0, 0, DAM_MAGIC, 0);
+		
 	};
-
-	if(Lava_CameraStart)&&(CAVETIME==3)
+	// "poczatkowy cinematic" na 1sze spotkanie:
+	if(EvtCave_LavaStartRaising)&&(CAVETIME==3)
 	{
       Wld_SendTrigger("DARKMAGE_TELEPORT0");
       Snd_Play("MFX_Teleport_Invest");
 	};
 
-	if(Lava_CameraStart)&&(CAVETIME==5)
+	if(EvtCave_LavaStartRaising)&&(CAVETIME==5)
 	{
 	   Snd_Play("MFX_Teleport_Cast");
 	  	Wld_InsertNPC(DMB_1700_Necro,"NECRO_LAVA");
@@ -57,13 +64,13 @@ func void EVT_CAVE_TIMER ()
 		AI_PlayAni(DarkMage,"t_Teleport_2_Stand");
 	};
 
-	if(Lava_CameraStart)&&(CAVETIME==8)
+	if(EvtCave_LavaStartRaising)&&(CAVETIME==8)
 	{
 		Wld_PlayEffect("DarkMage_STOPLAVA_BLEND", DarkMage, DarkMage, 0, 0, DAM_MAGIC, 0);
 	  	Wld_PlayEffect("DarkMage_STOPLAVA", DarkMage, DarkMage, 0, 0, DAM_MAGIC, 0);
 	};
 
-	if(Lava_CameraStart)&&(CAVETIME==9)
+	if(EvtCave_LavaStartRaising)&&(CAVETIME==9)
 	{
       DarkMage = Hlp_GetNpc(DMB_1700_Necro);
       AI_StopProcessInfos	(DarkMage);
@@ -71,12 +78,14 @@ func void EVT_CAVE_TIMER ()
       Snd_Play("MFX_Teleport_Cast");
       AI_Teleport(DarkMage,"NECRO_START");
       Npc_ExchangeRoutine(DarkMage,"HIDE");
+	  // Ork: Uceiczka przed lava theme
+	  BOSSFIGHT_CURRENT = BOSSFIGHT_LAVAESCAPE;
 	};
 
-	if(Lava_CameraStart)&&(CAVETIME==14)
+	if(EvtCave_LavaStartRaising)&&(CAVETIME==14)
 	{
       CAVETIME=0;
-      Lava_CameraStart=FALSE;
+      EvtCave_LavaStartRaising=FALSE;
       Wld_SendTrigger("LAVA_LIST01");
 	};
 
@@ -94,7 +103,7 @@ func void EVT_BRIDGEBREAK ()
 func void EVT_ESCAPE_START()
 {
    CAVETIME=0;
-   CameraStart=TRUE;
+   EvtCave_HeroRunawaySucess=TRUE;
    Wld_SendTrigger("ESCAPE_CAM");
    AI_GotoWP(hero,"ESCAPE_DEADEND");
 };
@@ -124,11 +133,11 @@ func void EVT_PRELAVA_EXIT_SCRIPT()
       Wld_SendTrigger("LAVA_SHOW_CAM");
       AI_GotoWP(hero,"LAVA_HERO");
       Wld_SendTrigger("CAVE_TIMER");
-      Lava_CameraStart=TRUE;
+      EvtCave_LavaStartRaising=TRUE;
 	};
 };
 
-func void EVT_MONSTERSPAWN_INMAZE()
+func void EVT_MONSTERSPAWN_EvtCave_HeroInMaze()
 {
 	//PRI/NT("A");
 	//DISABLED CAUSE OF BUGS
@@ -154,18 +163,18 @@ func void EVT_MONSTERSPAWN_INMAZE()
 // 			Wld_SpawnNpcRange	(hero,	SkeletonRanger,			1,	999);
 // 		};
 // 	};
-// 	if(InMaze)
+// 	if(EvtCave_HeroInMaze)
 // 	{
-// 	Wld_SendTrigger("MONSTERSPAWN_INMAZE");
+// 	Wld_SendTrigger("MONSTERSPAWN_EvtCave_HeroInMaze");
 // 	};
 };
 func void EVT_MAZEOUT()
 {
-	InMaze=FALSE;
+	EvtCave_HeroInMaze=FALSE;
 };
 
 func void EVT_MAZEIN()
 {
-	InMaze=TRUE;
-	Wld_SendTrigger("MONSTERSPAWN_INMAZE");
+	EvtCave_HeroInMaze=TRUE;
+	Wld_SendTrigger("MONSTERSPAWN_EvtCave_HeroInMaze");
 };
