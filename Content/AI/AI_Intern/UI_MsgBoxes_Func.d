@@ -142,6 +142,8 @@ func void MsgManager_Pop()
 };
 func void UIMsg_FormatAndPrintText(var UIMsg Msg)
 {
+	// [TODO]Ork: To powinno być zalezne od rozdzielczości, troche testów w roznych
+	// rozdzialkach i uda sie ustalic jakąs funkcje liniową dla odp. il znaków w linii. 
 	const int maxCharsInline = 32; //zmienione przez Adanosa 2012-04-30
 	const int xStartOfWindow = 5;
 	var int yStartOf1Line; yStartOf1Line = 1584 - CalcPixelPosY(8)/2;
@@ -154,13 +156,28 @@ func void UIMsg_FormatAndPrintText(var UIMsg Msg)
 	secondLine = false;
 	Line1 = ""; Line2 = "";
 	
-	if(Str_Len(Msg.text)>=maxCharsInline)
+	//[NEW] Ork: Nowy ficzer, teraz mozna jeszcze sformatować tekst pieknym "\n"
+	var string test;
+	test = ConcatStrings(Msg.text,"");
+	var int newLineCharPos; newLineCharPos = STR_Search(Msg.text,"\n");
+	
+	printdebug_ss("Amu: text: ",Msg.text);
+	printdebug_s_i("Amu: newlinePos: ",newLineCharPos);
+	if(newLineCharPos!=-1)
+	{
+		secondLine = true;
+		splitPos = newLineCharPos;
+		Line1 = STR_SubStr (Msg.text,0,splitPos);
+		Line2 = STR_SubStr (Msg.text,splitPos+2,Str_Len(Msg.text));	// z pominieciem "\n"	
+		printdebug_ss("Amu: Line1: ",Line1);
+		printdebug_ss("Amu: Line2: ",Line2);
+	}	
+	else if(Str_Len(Msg.text)>=maxCharsInline)
 	{
 	//split string	
 	secondLine = true;
 	//find first space at left
-	splitPos = maxCharsInline;
-	
+	splitPos = maxCharsInline;	
 	//loop
 	MEM_InitLabels (); 
 	label = MEM_StackPos.position; 
@@ -176,8 +193,7 @@ func void UIMsg_FormatAndPrintText(var UIMsg Msg)
 	if(splitPos==0)//if no space fouded, divide at last char
 	{
 		splitPos=maxCharsInline;
-	};	
-   
+	};	   
 	Line1 = STR_SubStr (Msg.text,0,splitPos);
 	Line2 = STR_SubStr (Msg.text,splitPos+1,Str_Len(Msg.text));
 	};

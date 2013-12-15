@@ -404,7 +404,7 @@ INSTANCE ItAmIceArrow(C_Item)
 
 	value 				=	50;
 
-	visual 				=	"ITAMICEARROW.ZEN";
+	visual 				=	"ItAm_Arrow_01.3ds";
 	material 			=	MAT_WOOD;
 
 	description			= name;
@@ -546,7 +546,7 @@ INSTANCE ItAmFireBolt(C_Item)
 
 	value 				=	60;
 
-	visual 				=	"ITAMFIREBolt.ZEN";
+	visual 				=	"ItAm_Bolt_01.3ds";
 	material 			=	MAT_WOOD;
 
 	description			= name;
@@ -569,7 +569,7 @@ INSTANCE ItAmIceBolt(C_Item)
 
 	value 				=	50;
 
-	visual 				=	"ITAMICEBolt.ZEN";
+	visual 				=	"ItAm_Bolt_0.3ds";
 	material 			=	MAT_WOOD;
 
 	description			= name;

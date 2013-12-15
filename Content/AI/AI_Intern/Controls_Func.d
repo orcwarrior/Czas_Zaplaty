@@ -496,7 +496,7 @@ func int Controls_StringToKey(var string str)
 				}
 				else
 				{
-				return pos1+10;//F2-F9
+					return pos1+10;//F2-F9
 				};
 			};						
 		};
@@ -663,77 +663,70 @@ var int f12;
 var int Last_MenusOpened;
 func void FrameCallBack_HandleKeystorkes()
 {
-		var int ptr; var oCNPC hiro;
-// 	//print(concatstrings("HC_PRACTICE1:",inttostring(Npc_GetDistToWP(hero,"HC_PRACTICE1"))));
-// 	print(concatstrings("OW_PATH_047:",inttostring(Npc_GetDistToWP(hero,"OW_PATH_047"))));
-// 	print(concatstrings("PATH_OC_NC_4:",inttostring(Npc_GetDistToWP(hero,"PATH_OC_NC_4"))));
-// 	print(concatstrings("OW_PATH_OC_NC5:",inttostring(Npc_GetDistToWP(hero,"OW_PATH_OC_NC5"))));
+	var int ptr; var oCNPC hiro;
 	//F12
 	if(MEM_KeyState(KEY_F12)==KEY_PRESSED)
 	{
 		return; // Ork: czegos szukam i akurat tu trafilem, to bylo dla czystej zabawy usuwam bo mogło sporo mieszać
-// 		CheckAdress(MEM_InstToPtr(MEM_World),2024,1,1); 		
-  		printdebug_s_i("># lights: ",MEM_World.bspTree_renderLightList_numInArray);
-// 		OptimizationVobLights_CollectLights();		
- 		//BspLeaf
- 		//0x1C - PolyArray
- 		
+		// 		CheckAdress(MEM_InstToPtr(MEM_World),2024,1,1); 		
+		printdebug_s_i("># lights: ",MEM_World.bspTree_renderLightList_numInArray);
+		// 		OptimizationVobLights_CollectLights();		
+		//BspLeaf
+		//0x1C - PolyArray 		
 		CheckAdress(MEM_ReadInt(MEM_ReadInt(MEM_ReadInt(MEM_World.bspTree_leafList)+60)),128,1,1);
+		//Wld_SpawnNpcRange	(self,sym,1,1000);		
+		// 		if(GetSkyPreset()!=SKYPRESET_SUNNY)
+		// 		{
+		// 			SetSkyPreset(SKYPRESET_SUNNY,TRANS_SMOOTH);
+		// 			CustomRainFX_InitRain(5,40,5,41,0,"",0);	
+		// 		}
+		// 		else
+		// 		{
+		// 			SetSkyPreset(SKYPRESET_FOGGY,TRANS_SMOOTH);
+		// 			CustomRainFX_InitRain(5,40,5,41,0,"",0);	
+		// 		};
 
-		//Wld_SpawnNpcRange	(self,sym,1,1000);
+		//CheckAdress(MeM_ReadInt(zCRenderClass),1224,2,1);
+		// 	
+		// 	//MEM_WriteInt(rnd+1088,0);	
+		// 	rnd = MeM_ReadInt(zCRenderClass);
+		// 	CALL_IntParam(0);
+		// 		CALL__thiscall (rnd,7446336);	
 		
-// 		if(GetSkyPreset()!=SKYPRESET_SUNNY)
-// 		{
-// 			SetSkyPreset(SKYPRESET_SUNNY,TRANS_SMOOTH);
-// 		CustomRainFX_InitRain(5,40,5,41,0,"",0);	
-// 		}
-// 		else
-// 		{
-// 			SetSkyPreset(SKYPRESET_FOGGY,TRANS_SMOOTH);
-// 			CustomRainFX_InitRain(5,40,5,41,0,"",0);	
-// 		};
+		//print(MEM_GetClassName(	MEM_ReadInt(ptr)));
+		var oCNpc her; her = hlp_GetNpc(pc_hero);
+		printdebug_s_i(">###### voblist lenght: ",her.vobList_numInArray);
+		printdebug_s_i(">###### percActivet: ",her.percActive);
+		
+		if(!f12)
+		{
 
-	//CheckAdress(MeM_ReadInt(zCRenderClass),1224,2,1);
-// 	
-// 	//MEM_WriteInt(rnd+1088,0);	
-// 	rnd = MeM_ReadInt(zCRenderClass);
-// 	CALL_IntParam(0);
-// 		CALL__thiscall (rnd,7446336);	
-	
-	//print(MEM_GetClassName(	MEM_ReadInt(ptr)));
-      var oCNpc her; her = hlp_GetNpc(pc_hero);
-      printdebug_s_i(">###### voblist lenght: ",her.vobList_numInArray);
-      printdebug_s_i(">###### percActivet: ",her.percActive);
-	
-      if(!f12)
-      {
+			f12 = 1;
+			
+		}
+		else
+		{
+			f12 = 0;
 
-         f12 = 1;
-               
-      }
-      else
-      {
-         f12 = 0;
-
-      };	
+		};	
 	};
-   
+
 	if(f12==2)
 	{
+		return;
 		ScaleWorldTime(fracf(205,100));	//475	
 		//MEM_WriteInt(SPAWN_INSERTRANGE_Address,mkf(700));
 		//MEM_WriteInt(SPAWN_REMOVERANGE_Address,mkf(800));
-		return;
 		
 		hiro = hlp_Getnpc(pc_hero);
-      MEM_AssignInst (ptr, hiro);
+		MEM_AssignInst (ptr, hiro);
 		var int npclist; var int npcptr; var int npcptrhlp;
 		var int label; var int i;
 
-      MEM_AssignInst (npclist, MEM_World);
+		MEM_AssignInst (npclist, MEM_World);
 		npclist = MEM_ReadInt(npclist+25196);
 		printdebug_s_i("npclist:",npclist);
-      
+		
 		//first npc on list is always blank
 		//so jump to next
 		npclist = MEM_ReadInt(npclist+8);
@@ -747,47 +740,47 @@ func void FrameCallBack_HandleKeystorkes()
 		{
 			return;
 		};
-				
+		
 		npcptr = MEM_ReadInt(npclist+4);//.data
 		npclist = MEM_ReadInt(npclist+8);//next on list	
 		printdebug(concatstrings("NpcID:",MEM_ReadString(npcptr+16)));
 		if(npcptr!=0)&&(npcptr!=ptr)//is hero
 		{
-		printdebug("1");
- 		npcptrhlp = MEM_ReadInt(npcptr+2488);//oCaniCtrl
-		printdebug_s_i("2:",npcptrhlp);
-		if(!npcptrhlp){
-			MEM_StackPos.position =label; 
-			return;
+			printdebug("1");
+			npcptrhlp = MEM_ReadInt(npcptr+2488);//oCaniCtrl
+			printdebug_s_i("2:",npcptrhlp);
+			if(!npcptrhlp){
+				MEM_StackPos.position =label; 
+				return;
+			};
+			npcptrhlp = MEM_ReadInt(npcptrhlp+104);//zCModel
+			printdebug_s_i("3:",npcptrhlp);
+			//layer1
+			npcptr = MEM_ReadInt(npcptrhlp+56);//*ActiveAniLayer1		
+			printdebug_s_i("4:",npcptr);
+			MEM_WriteInt(npcptr+12,mkf(5));
+			printdebug("5");
+			
+			//layer2
+			npcptr = MEM_ReadInt(npcptrhlp+60);//*ActiveAniLayer1		
+			if(!npcptr)
+			{
+				MEM_StackPos.position =label; 
+				return;
+			}; 		
+			printdebug_s_i("6:",npcptr);
+			if(npcptr>400000000)
+			{
+				MEM_StackPos.position = label; 
+				return;
+			}; 	
+			// 		if(MEM_ReadInt(npcptr)==0)
+			// 		{
+			// 			MEM_StackPos.position = label; 
+			// 			return;
+			// 		}; 	
+			MEM_WriteInt(npcptr+12,mkf(5));
 		};
- 		npcptrhlp = MEM_ReadInt(npcptrhlp+104);//zCModel
-		printdebug_s_i("3:",npcptrhlp);
- 		//layer1
- 		npcptr = MEM_ReadInt(npcptrhlp+56);//*ActiveAniLayer1		
-		printdebug_s_i("4:",npcptr);
- 		MEM_WriteInt(npcptr+12,mkf(5));
-		printdebug("5");
-		
- 		//layer2
- 		npcptr = MEM_ReadInt(npcptrhlp+60);//*ActiveAniLayer1		
-		if(!npcptr)
-		{
-			MEM_StackPos.position =label; 
-			return;
-		}; 		
-		printdebug_s_i("6:",npcptr);
-		if(npcptr>400000000)
-		{
-			MEM_StackPos.position = label; 
-			return;
-		}; 	
-// 		if(MEM_ReadInt(npcptr)==0)
-// 		{
-// 			MEM_StackPos.position = label; 
-// 			return;
-// 		}; 	
- 		MEM_WriteInt(npcptr+12,mkf(5));
- 		};
 		MEM_StackPos.position =label; 
 		
 	};
@@ -798,15 +791,15 @@ func void FrameCallBack_HandleKeystorkes()
 		return; // jak wyzej, ale ja jeszcze z tego skorzystam :D
 		RS_PrintActualRuneAttribs();
 		//PrintScreen ("Damage Pool:",-1, 10, _STR_FONT_ONSCREEN,999119);	
-//		var int ptr;
-// 		ptr = MEM_SearchVobByName ("DMG2");
-// 		if(ptr)
-// 		{
-// 			MEM_WriteInt(ptr+72,HeroDamage_Hitpos1_X);
-// 			MEM_WriteInt(ptr+88,HeroDamage_Hitpos1_Y);
-// 			MEM_WriteInt(ptr+104,HeroDamage_Hitpos1_Z);
-// 			
-// 		};		
+		//		var int ptr;
+		// 		ptr = MEM_SearchVobByName ("DMG2");
+		// 		if(ptr)
+		// 		{
+		// 			MEM_WriteInt(ptr+72,HeroDamage_Hitpos1_X);
+		// 			MEM_WriteInt(ptr+88,HeroDamage_Hitpos1_Y);
+		// 			MEM_WriteInt(ptr+104,HeroDamage_Hitpos1_Z);
+		// 			
+		// 		};		
 	};	
 	
 	//Chest hacking massages bugfix (anti doubles)
@@ -818,34 +811,34 @@ func void FrameCallBack_HandleKeystorkes()
 		ChestMsgBugfix=false;	
 	};
 	
-   printdebug("FrameCallBack_HandleKeystorkes RuneSwd");
+	printdebug("FrameCallBack_HandleKeystorkes RuneSwd");
 	KeyEvent_RuneSwd();
 	printdebug("FrameCallBack_HandleKeystorkes PreviousAmunition");
 	KeyEvent_PreviousAmunition();
-   printdebug("FrameCallBack_HandleKeystorkes NextAmunition");
+	printdebug("FrameCallBack_HandleKeystorkes NextAmunition");
 	KeyEvent_NextAmunition();
-   printdebug("FrameCallBack_HandleKeystorkes AmunitionBugFix");
+	printdebug("FrameCallBack_HandleKeystorkes AmunitionBugFix");
 	KeyEvent_AmunitionBugFix();
-   
-   printdebug("FrameCallBack_HandleKeystorkes LameHP");
+
+	printdebug("FrameCallBack_HandleKeystorkes LameHP");
 	KeyEvent_LameHP();
-   printdebug("FrameCallBack_HandleKeystorkes LameMP");
+	printdebug("FrameCallBack_HandleKeystorkes LameMP");
 	KeyEvent_LameMP();
-   
-   printdebug("FrameCallBack_HandleKeystorkes SprintDoubleClick");
+
+	printdebug("FrameCallBack_HandleKeystorkes SprintDoubleClick");
 	KeyEvent_SprintDoubleClick();
-   
-   printdebug("FrameCallBack_HandleKeystorkes ParadeTunning");
+
+	printdebug("FrameCallBack_HandleKeystorkes ParadeTunning");
 	KeyEvent_ParadeTunning();
-		
+	
 	//print(inttostring(Party_LastPos));	
 	if(Party_LastPos)//party has npcs!
 	{
 		KeyEvent_PartyCommands();
 	};
 	//Amunition Bugfix
-   printdebug("FrameCallBack_HandleKeystorkes EquipmentTakeAll");
+	printdebug("FrameCallBack_HandleKeystorkes EquipmentTakeAll");
 	KeyEvent_EquipmentTakeAll();
- 	
+	
 	printdebug("FrameCallBack_HandleKeystorkes koniec funkcji");
 };

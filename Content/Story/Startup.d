@@ -3263,10 +3263,10 @@ FUNC VOID STARTUP_CAVE ()
 	Wld_InsertNpc(SkeletonIceRanger, "ROOM01_UDWR2"); 	
 	Wld_InsertNpc(Skeleton, "ROOM01_UDWR3");	
 	//skeletons at corridors	
-	Wld_InsertNpc(SkeletonWarrior, "SKE_CORRIDOR_1"); 	
+	Wld_InsertNpc(SkeletonScout, "SKE_CORRIDOR_1"); 	
+	Wld_InsertNpc(SkeletonScout, "SKE_CORRIDOR_1"); 	
 	Wld_InsertNpc(SkeletonScout, "SKE_CORRIDOR_2"); 	
-	Wld_InsertNpc(SkeletonWarrior, "SKE_CORRIDOR_3"); 	
-	Wld_InsertNpc(Skeleton2HSwdWarrior, "SKE_CORRIDOR_4");
+	Wld_InsertNpc(SkeletonRanger, "SKE_CORRIDOR_2");
 
 	STARTUP_ALLWORDLS();		
 	//die folgende Zeile gilt nur, bis die INIT_...-Funktionen von Ulf unterstützt werden.

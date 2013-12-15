@@ -182,7 +182,6 @@ FUNC VOID Sprint_Update()
 			}
 			else if(gf(mkf(-5000),hiro.divectr))
 			{	// PLAY TIRED ANI AND WAIT
-				// TODO: UP
 				AI_Wait(hero, 0.1);
 				Sprint__TurnOff(swimbar); // Ork: Pasek sprintu wy³aczamy dopiero pe³nym zregenerowaniu [NEW]
 				oCStatusBar_SetAlpha(swimbar,255);	

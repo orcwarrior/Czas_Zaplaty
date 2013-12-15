@@ -140,6 +140,7 @@ func void F_PERFRAMETRIGGER()
 	};
    
 	FX_RebelMine();
+	FX_Cave();
 	FX_NecroLocation();
 	printdebug("PerFramMission_Funcs");
 	PerFramMission_Funcs();

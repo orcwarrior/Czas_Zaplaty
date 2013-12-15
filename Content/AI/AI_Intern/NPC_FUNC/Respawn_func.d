@@ -57,7 +57,6 @@ func int Respawn_FindFirstFree ()
 func int Respawn_FindLastUsed (var int arr_ID, var int start, var int last)
 {
 	// rekursive Suche nach einem Element
-	
 	if (start <= last)
 	{
 		var int foundvalue;
@@ -89,11 +88,9 @@ func void Respawn_Include(var c_npc slf)
 	{
 	Respawn_Array_LastUsedIDX = idx;	
 	};
-	//return if daytorespawn invalid
+	//break if daytorespawn invalid
 	if(Npc_GetAivar(slf,AIV_MM_DAYTORESPAWN)==999)||(Npc_GetAivar(slf,AIV_MM_DAYTORESPAWN)==0)
-	{
-		return;
-	};
+	{ return; };
 	
 	killed_Counter+=1;
 	//Set ID,WP and Time
@@ -128,18 +125,19 @@ func void Respawn_SpawnMonster(var int id, var string wp)
 		printdebug(concatstrings("Respawn -> ",MEM_ReadString(inst+16)));
 	};
 	//printdebug(concatstrings("Respawn -> Inst2Ptr: ",inttostring(MEM_InstToPtr(id))));
-   
-   
    if (inst > 0)
    {
       Wld_InsertNpc(id,wp);
    };
-		
-	return;	
+	return;	// <= do wywalenia
 
    //BUGFIX: Special threatment needed for some monsters
    //YEA ITS FUCKING ANNOYING!!!
-   //First method for fixing but, sure it won't be working anyway
+   // First method for fixing but, sure it won't be working anyway
+   // [NEW] Ork: O ile pamietam to to i tak nie działało, zamiast id
+   // który chyba nie jest tym czym do tej pory uwazałem, przekazywal
+   // AIV_MM_REALID(jakos tak) i jakąś piękną metodą if..elseif..itd. spawnować
+   // odpowiednie monstery (ból jak cholera).
    if(id==13998)//bugfix! it's an aligator
    { 
       printdebug("Respawn -> respawnin, aligator (need special treatment)"); 	
@@ -256,6 +254,7 @@ func void Respawn_Trigger()
 	//temporary disabled, it need fix cuz instances at respawn are someway incorrect, so it
 	//need to be base on f.e. an MonsterID  aiv'ar and respawn monsters by recognize that AivID
 	//and respawnin straight f.e. Wld_InsertNpc(Scavenger,WP);
+	// Ork: O prosze, nawet wczesniej wpadłem na to samo co powyzej :)
 	if(Respawn_ChangeDay_LastCheckedIndex>0)//during walk...
 	{
 	Respawn_ChangeDay_walker();

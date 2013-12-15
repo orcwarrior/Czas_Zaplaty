@@ -1608,6 +1608,14 @@ func void printdebug_ss(var string a,var string b)
 	printdebug(pipe);
 };
 
+func void printdebug_ssss(var string a,var string b,var string c,var string d)
+{
+	var string pipe;
+	pipe = concatstrings(a,b);	
+	pipe = concatstrings(pipe,c);
+	pipe = concatstrings(pipe,d);
+	printdebug(pipe);
+};
 
 func void printdebug_s_i(var string a,var int b)
 {

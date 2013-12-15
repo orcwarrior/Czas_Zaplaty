@@ -399,6 +399,18 @@ func void FX_RebelMine()
 	};
 	
 };
+func void FX_Cave()
+{
+	if(WORLD_CURRENT == WORLD_CATACOMBS)
+	{
+		var int sky_indoor;
+		sky_indoor = MEM_World.skyControlerIndoor;
+		MEM_WriteInt(sky_indoor+44,RGBAToZColor (60,40,2,155)); 
+		MEM_WriteInt(sky_indoor+100,mkf(0)); 
+		//MEM_WriteInt(sky_indoor+104,mkf(OR_Mine_FogRange)); 
+		MEM_WriteInt(sky_indoor+108,mkf(1)); 
+	};	
+};
 
 func void FX_NecroLocation()
 {

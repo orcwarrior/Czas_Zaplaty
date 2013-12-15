@@ -552,7 +552,7 @@ INSTANCE Cave_Statue (Mst_Default_Skeleton)
 	level							=	30;
 	attribute	[ATR_STRENGTH]		=	70;
 	npctype		=	npctype_main;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_CAVESTATUE);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,ID_CAVESTATUE);
 //------------------------------------------
 	Set_DarkWarrior_Visuals();
 	EquipItem(self,ItMw_2H_Sword_Light_Rusty_05);
@@ -566,10 +566,10 @@ INSTANCE Cave_Statue (Mst_Default_Skeleton)
 	protection	[PROT_POINT]		=	20;
 //------------------------------------------
 	start_aistate	=	ZS_MM_Statue;
- Npc_SetAivar(self,AIV_MM_TALKEDAFTERATTACK,  0);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	Npc_SetAivar(self,AIV_MM_TALKEDAFTERATTACK,  0);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 	CreateInvItems (self, ItAt_Kosc, 1);	
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 	B_SetMonsterLevel();	
 };
 
@@ -586,7 +586,7 @@ Instance MIS_CRYSTAL_SkeletonFireRanger(Mst_Default_SkeletonRanger)
 	name = "Stra¿nik";
 	CreateInvItems (self, ItRw_Bow_Ske_02, 1);	
 	CreateInvItems (self, ItAmFireArrow, 15);	
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 	B_SetMonsterLevel();	
 	attribute	[ATR_HITPOINTS_MAX]	=	360;
 	attribute	[ATR_HITPOINTS]		=	360;

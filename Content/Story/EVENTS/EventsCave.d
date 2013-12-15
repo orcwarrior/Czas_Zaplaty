@@ -111,21 +111,19 @@ func void EVT_PRELAVA_SCRIPT()
 	Wld_SendTrigger("PRELAVA_GATE_L2");
 	Wld_SendTrigger("PRELAVA_GATE_R1");
 	Wld_SendTrigger("PRELAVA_GATE_R2");
-//	Wld_SendTrigger("PRELAVA_GATE_EXIT");
 	RAISESTATUES=TRUE;
-	//CaveStatueDestroyed=0;
+	CaveStatueDestroyed=0;
 };
 
 func void EVT_PRELAVA_EXIT_SCRIPT()
 {
-	if(CaveStatueDestroyed==4)
+	if(CaveStatueDestroyed>=4)
 	{
       Wld_SendTrigger("PRELAVA_GATE_EXIT");
       Wld_SendTrigger("ANTI_CFANIAK");
       Wld_SendTrigger("LAVA_SHOW_CAM");
       AI_GotoWP(hero,"LAVA_HERO");
       Wld_SendTrigger("CAVE_TIMER");
-
       Lava_CameraStart=TRUE;
 	};
 };
