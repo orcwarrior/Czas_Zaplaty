@@ -31,7 +31,7 @@ func void B_AssessFightSound ()
 	////PrintDebugInt			(PD_ZS_FRAME, "B_AssessFightSound" );
 	if (C_GetAttackReason(victim) == AIV_AR_PERSONALAFFAIRS)||(C_GetAttackReason(other) == AIV_AR_PERSONALAFFAIRS)  
 	{
-			//B_WhirlAround 		(self,	victim);
+			B_WhirlAround 		(self,	victim);
 			return;
 	};	
 	//-------- Kampf Mensch gegen Monster ! --------
@@ -101,7 +101,7 @@ func void B_AssessFightSound ()
 	};	
 
 	//-------- WACHEN checken, ob einer ihrer Schützlinge angegriffen wird --------
-	if (C_ChargeWasAttacked(self, victim, other))
+	if (C_ChargeWasAttacked(self, victim, other) && C_GetAttackReason(victim) != AIV_AR_PERSONALAFFAIRS)
 	{ 
 		////PrintDebugInt		(PD_ZS_CHECK,	"...NSC ist Wache und ein Schützling wurde attackiert!" );
 		if (Npc_GetPermAttitude(victim,other) == ATT_FRIENDLY)		// HINWEIS: Bedingung für 'friendly fire' aus ZS_ReactToDamage!!!
@@ -123,7 +123,7 @@ func void B_AssessFightSound ()
 	}
 
 	//-------- BOSS-Gilden --------
-	else if (C_NpcIsBoss(self)||C_NpcIsGuard(self)||C_NpcIsGuardArcher(self))
+	else if (C_NpcIsBoss(self)||C_NpcIsGuard(self)||C_NpcIsGuardArcher(self))&& (C_GetAttackReason(victim) != AIV_AR_PERSONALAFFAIRS)
 	{
 		////PrintDebugInt		(PD_ZS_CHECK,	"...NSC gehört zu BOSS-Gilde!");
 		B_SmartTurnToNpc	(self,	victim);

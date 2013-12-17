@@ -26,17 +26,17 @@ func void B_Kam_Fight()
 {
    var c_npc thug1; 
    var c_npc thug2;
-   var c_npc kam;
-   
+   var c_npc kam;   
 	thug1 = hlp_getnpc(GRD_2520_Thug);	
 	thug2 = hlp_getnpc(GRD_2521_Thug);
-   kam = hlp_getnpc(GRD_2512_Kam);
-   
-	B_StopProcessInfos(kam);
-	
-   B_StartAfterDialogFight(thug1, other, true);
-	B_StartAfterDialogFight(thug2, other, true);
-	B_StartAfterDialogFight(kam, other, true);
+    kam = hlp_getnpc(GRD_2512_Kam);   
+	B_StopProcessInfos(kam);	
+	// Ork: Niech to bedzie personal affairs, ale
+	// dzieki ATT_HOSTILE na PERM i tak zabij¹ hero, 
+	// jednak inni nie przylacza sie do bojki
+    B_StartAfterDialogFight(thug1, other, false);
+	B_StartAfterDialogFight(thug2, other, false);
+	B_StartAfterDialogFight(kam, other, false);
    Npc_SetPermAttitude	(kam, ATT_HOSTILE);
    Npc_SetPermAttitude	(thug1, ATT_HOSTILE);
    Npc_SetPermAttitude	(thug2, ATT_HOSTILE);

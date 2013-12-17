@@ -173,15 +173,15 @@ FUNC INT NPC_GETTEMPATTITUDE(VAR C_NPC SLF,VAR C_NPC OTH)
 
 
 //////////////////////////////////////////////////////////////////////////
-//C_NpcTypeIsFriend
+//C_npcTypeIsFriend
 //=================
 //Ermittelt, ob der NSC vom Typ FRIEND und 'other' der Spieler ist
 //Ist 'other' nicht der Spieler, so ist es auch unwichtig ob der
-//NSC einen NPCTYPE_FRIEND hat und es wird FALSE zurückgegeben.
+//NSC einen npcType_FRIEND hat und es wird FALSE zurückgegeben.
 //////////////////////////////////////////////////////////////////////////
-FUNC INT C_NPCTYPEISFRIEND(VAR C_NPC SLF,VAR C_NPC OTH)
+FUNC INT C_npcTypeISFRIEND(VAR C_NPC SLF,VAR C_NPC OTH)
 {
-	//PrintDebugInt(PD_ZS_DETAIL,"C_NpcTypeIsFriend()");
+	//PrintDebugInt(PD_ZS_DETAIL,"C_npcTypeIsFriend()");
 
 	IF(NPC_ISPLAYER(OTH)&&((SLF.FLAGS & NPC_FLAG_FRIEND)==NPC_FLAG_FRIEND))
 	{
@@ -199,18 +199,18 @@ FUNC INT C_NPCTYPEISFRIEND(VAR C_NPC SLF,VAR C_NPC OTH)
 //C_NpcIsGuard
 //=============
 //Ermittelt, ob der NSC eine Wache ist. Kriterium:
-//->	NPCTYPE_GUARD -> TRUE
+//->	npcType_GUARD -> TRUE
 //->	eine der typischen "Wach-Gilden" -> TRUE
 //->	ABER: wenn NSC eine Fernkampfwache ist -> FALSE!!!
 //////////////////////////////////////////////////////////////////////////
-FUNC INT C_NPCISGUARD(VAR C_NPC SLF)
+FUNC INT C_NpcIsGuard(VAR C_NPC SLF)
 {
 	//PrintDebugInt(PD_ZS_DETAIL,"C_NpcIsGuard");
 
-	IF((SLF.NPCTYPE==NPCTYPE_GUARD)
-	||(SLF.NPCTYPE==NPCTYPE_OW_GUARD)
-	||(SLF.NPCTYPE==NPCTYPE_MINE_GUARD)
-	||(((SLF.NPCTYPE==NPCTYPE_MAIN)||(SLF.NPCTYPE==NPCTYPE_FRIEND))&&((SLF.GUILD==GIL_GRD)||(SLF.GUILD==GIL_DMB)||(SLF.GUILD==GIL_TPL))))
+	IF((SLF.npcType==npcType_GUARD)
+	||(SLF.npcType==npcType_OW_GUARD)
+	||(SLF.npcType==npcType_MINE_GUARD)
+	||(((SLF.npcType==npcType_MAIN)||(SLF.npcType==npcType_FRIEND))&&((SLF.GUILD==GIL_GRD)||(SLF.GUILD==GIL_DMB)||(SLF.GUILD==GIL_TPL))))
 	{
 		IF(SLF.FIGHT_TACTIC !=FAI_HUMAN_RANGED)
 		{
@@ -229,14 +229,14 @@ FUNC INT C_NPCISGUARD(VAR C_NPC SLF)
 //Ermittelt, ob der NSC eine Wache ist, die nur im Fernkampf-Modus
 //kämpfen und dabei den eigenen Posten nicht verlassen soll
 //////////////////////////////////////////////////////////////////////////
-FUNC INT C_NPCISGUARDARCHER(VAR C_NPC SLF)
+FUNC INT C_NpcIsGuardArcher(VAR C_NPC SLF)
 {
 	//PrintDebugInt(PD_ZS_DETAIL,"C_NpcIsGuardArcher");
 
-	IF((SLF.NPCTYPE==NPCTYPE_GUARD)
-	||(SLF.NPCTYPE==NPCTYPE_OW_GUARD)
-	||(SLF.NPCTYPE==NPCTYPE_MINE_GUARD)
-	||(((SLF.NPCTYPE==NPCTYPE_MAIN)||(SLF.NPCTYPE==NPCTYPE_FRIEND))&&((SLF.GUILD==GIL_GRD)||(SLF.GUILD==GIL_MTR)||(SLF.GUILD==GIL_TPL))))
+	IF((SLF.npcType==npcType_GUARD)
+	||(SLF.npcType==npcType_OW_GUARD)
+	||(SLF.npcType==npcType_MINE_GUARD)
+	||(((SLF.npcType==npcType_MAIN)||(SLF.npcType==npcType_FRIEND))&&((SLF.GUILD==GIL_GRD)||(SLF.GUILD==GIL_MTR)||(SLF.GUILD==GIL_TPL))))
 	{
 		IF(SLF.FIGHT_TACTIC==FAI_HUMAN_RANGED)
 		{
@@ -427,14 +427,14 @@ FUNC INT C_NPCBELONGSTOPSICAMP(VAR C_NPC SLF)
 //===================
 //Ermittelt, ob ein Schützling der NSC-Wache attackiert wurde.
 //////////////////////////////////////////////////////////////////////////
-FUNC INT C_CHARGEWASATTACKED(VAR C_NPC GUARD,VAR C_NPC CHARGE,VAR C_NPC ATTACKER)
+FUNC INT C_ChargeWasAttacked(VAR C_NPC GUARD,VAR C_NPC CHARGE,VAR C_NPC ATTACKER)
 {
 	//PrintDebugInt(PD_ZS_DETAIL,"C_ChargeWasAttacked");
 
-	IF	C_NPCISGUARD(GUARD)
-	||	C_NPCISGUARDARCHER(GUARD)
-	||(GUARD.NPCTYPE==NPCTYPE_GUARD)
-	||(GUARD.NPCTYPE==NPCTYPE_MINE_GUARD)
+	IF	C_NpcIsGuard(GUARD)
+	||	C_NpcIsGuardArcher(GUARD)
+	||(GUARD.npcType==npcType_GUARD)
+	||(GUARD.npcType==npcType_MINE_GUARD)
 	{
 		//PrintDebugInt(PD_ZS_DETAIL,"...NSC ist Wache oder FK-Wache!");
 

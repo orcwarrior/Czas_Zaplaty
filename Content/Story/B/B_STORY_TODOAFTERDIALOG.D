@@ -28,6 +28,33 @@ var int B_AfterDialog_Info_OrcGhost_Kill_disabled;
 
 var int B_AfterDialog_Info_Roderic_Gate_disabled;
 
+// Ork: Dodaje "Generici" bo mog¹ sie przydaæ (choæby nekro nas czêsto usmierca
+// i wyglada to obecnie kiepsko. Tutaj w przeciwienstwie do innych AfterDialog'ów ustawiamy zmienna
+// na true w dialogu, a w funkcji po-dialogu zmeni siê na false.
+var int B_AfterDialog_Generic_KillHero_enabled; 
+var int B_AfterDialog_Generic_KillHeroWithLightning_enabled; 
+var int B_AfterDialog_Generic_KillHeroWithPoison_enabled; //Nie-gwarantowane
+
+
+// FUNCTIONS BODY's:
+// ---
+func void B_AfterDialog_Generic_KillHero()
+{
+	Npc_ChangeAttribute(hero,ATR_HITPOINTS,-hero.attribute[ATR_HITPOINTS_MAX]);
+	B_AfterDialog_Generic_KillHero_enabled = false;
+};
+func void B_AfterDialog_Generic_KillHeroWithLightning()
+{
+	Wld_PlayEffect("spellFX_Thunder_TARGET",hero, hero, 0, 0, DAM_MAGIC, TRUE); 
+	B_AfterDialog_Generic_KillHero();
+	B_AfterDialog_Generic_KillHeroWithLightning_enabled = false;
+};
+func void B_AfterDialog_Generic_KillHeroWithPoison()
+{
+	add_poison(other,hero,19999);
+	B_AfterDialog_Generic_KillHeroWithPoison_enabled = false;
+};
+
 func void	B_AfterDialog_Sly(var c_npc talker)
 {
 	var C_NPC sly_guard1; sly_guard1 = Hlp_GetNpc(GRD_4054_Guard);
@@ -43,14 +70,12 @@ func void	B_AfterDialog_Sly(var c_npc talker)
 	Npc_SetTrueGuild (sly_guard2,GIL_DMB);
 	sly_guard2.guild = GIL_DMB;
 
-
 	Npc_SetTempAttitude(talker,  ATT_HOSTILE); 
 	Npc_SetAttitude(talker,  ATT_HOSTILE);
 	Npc_SetTempAttitude(sly_guard1,  ATT_HOSTILE); 
 	Npc_SetAttitude(sly_guard1,  ATT_HOSTILE);
 	Npc_SetTempAttitude(sly_guard2,  ATT_HOSTILE); 
 	Npc_SetAttitude(sly_guard2,  ATT_HOSTILE);	
-	
 	
 	Npc_SetTarget(sly_guard1,rodney); 
 	AI_StartState(sly_guard1,ZS_ATTACK,1,"");	
@@ -152,6 +177,7 @@ func void	B_AfterDialog_Duke_Patrol(var c_npc talker)
 		B_MisSetPatrolGRDToHostile();			
 	};		
 };
+// Ork: Won mi st¹d z tym XD [TODO]
 var int HH_Ratford_back_from_mages;
 var int DAY_Ratford_back_from_mages;
 FUNC VOID Rtn_MISGotoMages_818 ()
@@ -181,16 +207,13 @@ func void	B_AfterDialog_Ratford_GotoMages(var c_npc talker)
 	// 	AI_Wait		(hero, 10);//wraca od nich
 };
 func void B_AfterDialog_Iskra_Hello(var c_npc talker)
-{
-	
+{	
 	B_AfterDialog_Iskra_Hello_disabled = TRUE;
-	Wld_SendTrigger("CAM_ADANRING_SHOW");
-	
+	Wld_SendTrigger("CAM_ADANRING_SHOW");	
 };
 
 func void B_AfterDialog_hun_4035_jahr_Hello(var c_npc talker)
 {
-
 	Wld_InsertNpc				(jahr_demon,"OC_ROUND_13");
 	var c_npc dmn; dmn = Hlp_GetNpc(jahr_demon);
 
@@ -310,6 +333,20 @@ func void 	B_ThingsToDoAfterDialog(var c_npc talker)
 			B_DoDialogFight();	
 		};
 	};
+	// Generics:
+	if(B_AfterDialog_Generic_KillHero_enabled)
+	{
+		B_AfterDialog_Generic_KillHero();
+	};
+	if(B_AfterDialog_Generic_KillHeroWithLightning_enabled)
+	{
+		B_AfterDialog_Generic_KillHeroWithLightning();
+	};
+	if(B_AfterDialog_Generic_KillHeroWithPoison_enabled)
+	{
+		B_AfterDialog_Generic_KillHeroWithPoison();
+	};
+	
 	
 	if(Hlp_GetInstanceID(talker)==STT_315_Sly)
 	{

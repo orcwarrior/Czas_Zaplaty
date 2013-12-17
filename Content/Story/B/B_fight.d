@@ -1,6 +1,7 @@
 //*****************************************************************************
 //***			Diese Funktion tötet alle Bewohner des FMC					***
 //*****************************************************************************
+// To chyba jedna z pierwszych funkcji jak¹ wogole napisa³em XDD ten styl wciec w tekscie, mhmm...
 func void B_fight()
 {
 	if (Npc_KnowsInfo (hero,DIA_Stt_318_Schatten))
