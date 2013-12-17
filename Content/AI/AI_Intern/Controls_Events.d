@@ -360,9 +360,7 @@ func void KeyEvent_PartyCommands()
 instance herofocus(C_NPC);
 func void KeyEvent_EquipmentTakeAll()
 {
-	printdebug("KeyEvent_EquipmentTakeAll pocz¹tek funkcji");
-	//	print(inttostring(LCtrl_Doubleclick));
-	if(MEM_KeyState(KEY_LCONTROL)==KEY_RELEASED)
+	if(Key_tAction1_State==KEY_RELEASED || Key_tAction2_State==KEY_RELEASED)
 	{
 		//Get hero focus:
 		var int targetptr; var int t_hp;
@@ -506,7 +504,7 @@ func void Hook_AfterOpenStatusScreen()
 func void KeyEvent_SprintDoubleClick()
 {
 	if ((MEM_KeyState(Key_tForward1)==KEY_PRESSED)|| (MEM_KeyState(Key_tForward2)==KEY_PRESSED))
-	&& ((MEM_KeyState(Key_tAction1) == KEY_UP) && (MEM_KeyState(Key_tAction2) == KEY_UP))// Ork: Dzieki temu sprint nie bêdzie sie nam odpalal przy walce
+	&& ((Key_tAction1_State == KEY_UP) && (Key_tAction2_State == KEY_UP))// Ork: Dzieki temu sprint nie bêdzie sie nam odpalal przy walce
 	{
 		//Dont switch sprint on/off IF:
 		//If hero is in inventory navigate in menu

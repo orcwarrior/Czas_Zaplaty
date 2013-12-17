@@ -15,6 +15,13 @@ var int Key_tAction1;
 var int Key_tAction2;
 var int Key_tDown1;
 var int Key_tDown2;
+// Ork: Coś mnie olsniło i jeśli chcemy otrzymywać poprawne stany klawiszy tj.
+// takze PRESSED i REALASED to na możemy pobrać stan konkretnego klawisza tylko raz na klatke:
+// (Coś zaczeło się kopać po wprowadzeniu zastrzezenie ze Sprint można właczyć tylko gdy Ctrl
+// nie jest wcisniety -> zeby podczas walki go nie wlaczac i wylaczac w kółko, po tej zmianie
+// przestało działać 2xCTRL -> Zabierz wszystkie przedmioty z ekwipunku focus'a, dlatego dodaje te zmienne)
+var int Key_tAction1_State;
+var int Key_tAction2_State;
 //---------------------------------------
 // G2 controls style handle
 // I give it up, functions should be ok
@@ -610,7 +617,7 @@ func int Controls_StringToKey(var string str)
 };	
 
 func void Controls_Update()
-{
+{	
 	Printdebug("Update Controls!");
 	var string keystr;
 	keystr = MEM_GetGothOpt ("KEYS","KeyNextA");
@@ -663,10 +670,15 @@ var int f12;
 var int Last_MenusOpened;
 func void FrameCallBack_HandleKeystorkes()
 {
+	//Ork: W zw. z powyzsza notatka (pocz. pliku) [bugfix]
+	Key_tAction1_State = MEM_KeyState(Key_tAction1);
+	Key_tAction2_State = MEM_KeyState(Key_tAction2);
+	
 	var int ptr; var oCNPC hiro;
 	//F12
 	if(MEM_KeyState(KEY_F12)==KEY_PRESSED)
 	{
+	/*
 		return; // Ork: czegos szukam i akurat tu trafilem, to bylo dla czystej zabawy usuwam bo mogło sporo mieszać
 		// 		CheckAdress(MEM_InstToPtr(MEM_World),2024,1,1); 		
 		printdebug_s_i("># lights: ",MEM_World.bspTree_renderLightList_numInArray);
@@ -709,10 +721,11 @@ func void FrameCallBack_HandleKeystorkes()
 			f12 = 0;
 
 		};	
+		*/
 	};
 
 	if(f12==2)
-	{
+	{ /*
 		return;
 		ScaleWorldTime(fracf(205,100));	//475	
 		//MEM_WriteInt(SPAWN_INSERTRANGE_Address,mkf(700));
@@ -738,7 +751,7 @@ func void FrameCallBack_HandleKeystorkes()
 		//exit if end of list
 		if(!npclist)
 		{
-			return;
+			//return;
 		};
 		
 		npcptr = MEM_ReadInt(npclist+4);//.data
@@ -782,14 +795,14 @@ func void FrameCallBack_HandleKeystorkes()
 			MEM_WriteInt(npcptr+12,mkf(5));
 		};
 		MEM_StackPos.position =label; 
-		
+		*/
 	};
 
 	//F5 - Damage Debug
 	if(MEM_KeyState(KEY_F10)==KEY_PRESSED)
 	{
-		return; // jak wyzej, ale ja jeszcze z tego skorzystam :D
-		RS_PrintActualRuneAttribs();
+		//return; // jak wyzej, ale ja jeszcze z tego skorzystam :D
+		//RS_PrintActualRuneAttribs();
 		//PrintScreen ("Damage Pool:",-1, 10, _STR_FONT_ONSCREEN,999119);	
 		//		var int ptr;
 		// 		ptr = MEM_SearchVobByName ("DMG2");
