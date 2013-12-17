@@ -215,3 +215,9 @@ func int Npc_GetAivar(var C_NPC slf, var int offset)
 		return -1; 
 	};
 };
+
+// [NEW] Ork: Doda rekursywnie wartosæ do obecnej wartosci aivaru:
+func void Npc_AddToAivarValue(var C_NPC slf, var int offset, var int valPlus)
+{
+	Npc_SetAivar(slf,offset,Npc_GetAivar(slf,offset) + valPlus);
+};

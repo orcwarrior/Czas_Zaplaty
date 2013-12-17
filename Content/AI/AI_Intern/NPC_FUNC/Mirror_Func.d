@@ -61,7 +61,7 @@ func void mirror_walker_rec(var int i)
 		};
 		if(Npc_GetAivar(v,AIV_MIRROR_DURATION))
 		{
-			Npc_SetAivar(v,AIV_MIRROR_DURATION,-1);
+			Npc_AddToAivarValue(v,AIV_MIRROR_DURATION,-1);
 			if(!Npc_GetAivar(v,AIV_MIRROR_DURATION))
 			{
 					Snd_Play3D 					(v,"MFX_MIRROR_KONIEC");

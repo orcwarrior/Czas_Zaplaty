@@ -658,6 +658,23 @@ FUNC VOID B_DROPWEAPON(VAR C_NPC SLF)
 	};
 };
 
+// Pretty straigh-forward:
+func void B_CreateDefaultWeapon(var C_NPC slf)
+{
+	if(NPC_GetTalentSkill(SLF,NPC_TALENT_2H)>NPC_GetTalentSkill(SLF,NPC_TALENT_1H))
+	{
+		if(!Npc_HasItems(slf,DEF_MW_2H)<1){
+		CreateInvItem(slf,DEF_MW_2H);
+		};
+	}
+	else
+	{
+		if(!Npc_HasItems(slf,DEF_MW_1H)){
+		CreateInvItem(slf,DEF_MW_1H);
+		};	
+	}; 
+};
+
 //////////////////////////////////////////////////////////////////////////
 //B_RegainDroppedWeapon
 //=====================
@@ -683,18 +700,11 @@ FUNC VOID B_RegainDroppedWeapon(VAR C_NPC SLF)
 	};
 	//No weapon regained, create def weapon
 	//I had some oth weapon?  (MW CAT)
-	if(!Npc_GetInvItembyslot(slf,1,0))
-	{
-		if(NPC_GetTalentSkill(SLF,NPC_TALENT_2H)>NPC_GetTalentSkill(SLF,NPC_TALENT_1H))
-		{
-			CreateInvItem(slf,DEF_MW_2H);
-		}
-		else
-		{
-			CreateInvItem(slf,DEF_MW_1H);		
-		};   
-	};  
 	AI_EQUIPBESTMELEEWEAPON(SLF);
+	if(!Npc_HasEquippedMeleeWeapon(slf))
+	{
+		B_CreateDefaultWeapon(slf);
+	};
 	AI_EQUIPBESTRANGEDWEAPON(SLF);	
 };
 //////////////////////////////////////////////////////////////////////////

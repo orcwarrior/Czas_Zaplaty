@@ -132,8 +132,9 @@ PROTOTYPE Mst_Default_SkeletonRanger(C_Npc)
 	protection	[PROT_FLY]			=	55;
 	protection	[PROT_MAGIC]		=	60;	
 	
+	
 //----------------------------------------------------------
-	damagetype 						=	DAM_EDGE;
+	damagetype 						=	DAM_FIRE;
 //	damage		[DAM_INDEX_BLUNT]	=	0;
 //	damage		[DAM_INDEX_EDGE]	=	0;
 //	damage		[DAM_INDEX_POINT]	=	0;
@@ -154,6 +155,9 @@ PROTOTYPE Mst_Default_SkeletonRanger(C_Npc)
  Npc_SetAivar(self,AIV_MM_DrohTime,		 0);
  Npc_SetAivar(self,AIV_MM_FollowTime,	 5);
  Npc_SetAivar(self,AIV_MM_FollowInWater,  FALSE);
+	
+	Npc_SetTalentValue(self, NPC_TALENT_BOW, 80);		
+	Npc_SetTalentSkill(self, NPC_TALENT_BOW, 1);	
 //-------------------------------------------------------------
 	start_aistate				= ZS_MM_Ranger;
 	CreateInvItems (self, ItAt_Kosc, 1);	
@@ -595,6 +599,8 @@ Instance MIS_CRYSTAL_SkeletonFireRanger(Mst_Default_SkeletonRanger)
 	protection	[PROT_EDGE]			=	0;
 	protection	[PROT_POINT]		=	0;	
 	level							=	30;
+	Npc_SetTalentValue(self, NPC_TALENT_BOW, 40);		
+	Npc_SetTalentSkill(self, NPC_TALENT_BOW, 2);
 	
 };
 
@@ -605,7 +611,7 @@ Instance SkeletonRanger(Mst_Default_SkeletonRanger)
 	Set_SkeletonScout_Visuals();
 	CreateInvItems (self, ItRw_Bow_Ske_01, 1);	
 	CreateInvItems (self, ItAmArrow, 15);	
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 	B_SetMonsterLevel();	
 	
 };
@@ -618,6 +624,8 @@ Instance SkeletonFireRanger(Mst_Default_SkeletonRanger)
 	CreateInvItems (self, ItAmFireArrow, 15);	
  Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 	B_SetMonsterLevel();	
+	Npc_SetTalentValue(self, NPC_TALENT_BOW, 100);		
+	Npc_SetTalentSkill(self, NPC_TALENT_BOW, 2);
 };
 Instance SkeletonIceRanger(Mst_Default_SkeletonRanger)
 {
@@ -627,6 +635,8 @@ Instance SkeletonIceRanger(Mst_Default_SkeletonRanger)
 	CreateInvItems (self, ItAmIceArrow, 15);	
  Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 	B_SetMonsterLevel();	
+	Npc_SetTalentValue(self, NPC_TALENT_BOW, 60);		
+	Npc_SetTalentSkill(self, NPC_TALENT_BOW, 1);
 };
 Instance SkeletonPoisonRanger(Mst_Default_SkeletonRanger)
 {
@@ -634,8 +644,10 @@ Instance SkeletonPoisonRanger(Mst_Default_SkeletonRanger)
 	Set_SkeletonScout_Visuals();
 	CreateInvItems (self, ItRw_Bow_Ske_04, 1);	
 	CreateInvItems (self, ItAmPoisonArrow, 15);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 	B_SetMonsterLevel();		
+	Npc_SetTalentValue(self, NPC_TALENT_BOW, 100);		
+	Npc_SetTalentSkill(self, NPC_TALENT_BOW, 2);
 };
 
 
@@ -920,8 +932,9 @@ func void ZS_MM_Ranger()
 	Npc_PercEnable		(self, PERC_OBSERVEINTRUDER,B_MM_NoReact);
 	Npc_PercEnable 		(self, PERC_ASSESSENEMY,	B_MM_NoReact);
 	AI_AlignToWP(self);
-	AI_EquipArmor     (self, ItMw_Dual_01_Left );
-	CreateInvItem     (self, ItMw_Dual_01_Left );			
+	// To chyba nie powinno byæ tutaj :)
+	//AI_EquipArmor     (self, ItMw_Dual_01_Left );
+	//CreateInvItem     (self, ItMw_Dual_01_Left );			
 	
 };
 
@@ -930,10 +943,9 @@ func int ZS_MM_Ranger_loop()
     //PrintDebugNpc(PD_MST_LOOP,"ZS_MM_Ranger_loop");
     if(npc_getdisttoplayer(self)>1800)
     {
-	AI_TUrnToNpc(self,hero);
-	AI_Wait(self,1);
-    return loop_continue;
-	    
+		AI_TUrnToNpc(self,hero);
+		AI_Wait(self,1);
+		return loop_continue;	    
     }
     else
     {
@@ -947,7 +959,7 @@ func void ZS_MM_Ranger_end()
     //PrintDebugNpc(PD_MST_FRAME,"ZS_MM_Ranger_end");
     Npc_SetTarget(self,hero);
     AI_StartState				(self,ZS_Attack,1,"");
-   self.start_aistate				= ZS_Attack;
+    self.start_aistate				= ZS_Attack;
     
 };
 
@@ -989,31 +1001,51 @@ func void ZS_MM_Statue()
 	Npc_PercEnable 		(self, PERC_ASSESSENEMY,	B_MM_NoReact);
 	AI_AlignToWP(self);
 };
-
+var int RAISESTATUES;
 func int ZS_MM_Statue_loop()
 {
     //PrintDebugNpc(PD_MST_LOOP,"ZS_MM_Statue_loop");
-    
-	if	(RAISESTATUES)
+    // Ork: Troche hakierskie, ale da rade raczej
+	if (RAISESTATUES > 0 && RAISESTATUES < 5 && Npc_GetStateTime(self) != 0)
 	{
-		//Wld_PlayEffect("spellFX_MassDeath_GROUND", self, self, 1,0 , DAM_MAGIC, TRUE); //Projetil = TRUE (trifft alle)
-		return LOOP_END;
+		// Ork: Przywracam, ale zmieniam efekt, bo tam chyba by³ problem z Alphapolys kiedy ten uruchamial sie 4x naraz :)
+		Wld_PlayEffect("spellFX_LifeDrain_INCOME", self, self, 1,0 , DAM_MAGIC, TRUE); //Projetil = TRUE (trifft alle)
+		Wld_PlayEffect("RED_FACE", self, self, 0,0 , DAM_MAGIC, TRUE);
+		Wld_PlayEffect("RED_EYE_R", self, self, 0,0 , DAM_MAGIC, TRUE);
+		Wld_PlayEffect("RED_EYE_L", self, self, 0,0 , DAM_MAGIC, TRUE); 
+		//AI_WaitMS(self,Hlp_Random(800)); // desynchronize
+		RAISESTATUES = RAISESTATUES+1; // az dobije do 5
+		Npc_SetStateTime(self,0);
+	};
+	if(RAISESTATUES>=5)
+	{
+		print_s_i("resetStateTime",RAISESTATUES);
+		Npc_SetStateTime(self,0);
+		RAISESTATUES = -1;
+	return LOOP_CONTINUE;
+	};
+	if(RAISESTATUES == -1 && Npc_GetStateTime(self) > 4)
+	{
+		print_s_i("loop END!",Npc_GetStateTime(self));
+		self.name = "¯ywy Pos¹g";
+		return LOOP_END; // Now, attack
 	};
 	Ai_Wait(self,1);
 	return LOOP_CONTINUE;
 };
 
 func void ZS_MM_Statue_end()
-{
+{	//Ork: Troche zmieniam
     //PrintDebugNpc(PD_MST_FRAME,"ZS_MM_Statue_end");
-    Wld_PlayEffect("RED_FACE", self, self, 0,0 , DAM_MAGIC, TRUE);
-    Wld_PlayEffect("RED_EYE_R", self, self, 0,0 , DAM_MAGIC, TRUE);
-    Wld_PlayEffect("RED_EYE_L", self, self, 0,0 , DAM_MAGIC, TRUE); 
+	AI_TurnToNpc(self,hero);
+	AI_ReadyMeleeWeapon(self);
 	Ai_Wait(self, 0.3);    
-    AI_StartState				(self,ZS_MM_AllScheduler,1,"");
-   self.start_aistate				= ZS_MM_AllScheduler;
+	Npc_SetTarget(self,hero);
+    AI_StartState				(self,ZS_Attack,1,"");
+	self.start_aistate				= ZS_Attack;
     
 };
+
 
 func void ZS_MM_MDWAVE()
 {

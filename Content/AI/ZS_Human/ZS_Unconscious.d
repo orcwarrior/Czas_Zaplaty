@@ -104,8 +104,9 @@ func void ZS_Unconscious ()
 		AI_StartState 		(self, ZS_Dead, 0, "");		
 	};
 	//SN 24.09.00: für die PublisherDemo auskommentiert, da die Animationen noch nicht toll sind (Absprache mit Alex) -> wenn bessere Animationen da sind, wieder einkommentieren!
-	//Mdl_ApplyRandomAni	( self, "S_WOUNDEDB","T_WOUNDEDB_TRY");
-	//Mdl_ApplyRandomAniFreq	( self, "S_WOUNDEDB", 8);
+	// They're fuckin awesome O_O
+	Mdl_ApplyRandomAni	( self, "S_WOUNDEDB","T_WOUNDEDB_TRY");
+	Mdl_ApplyRandomAniFreq	( self, "S_WOUNDEDB", 8);
 	
 	if (Npc_CanSeeNpc 	(self, other)  &&  self.guild < GIL_SEPERATOR_ORC )
 	{

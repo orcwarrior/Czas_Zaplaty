@@ -167,7 +167,6 @@ FUNC VOID Sprint_Update()
 	if(SPRINTENABLED)
 	{
 		var int runState; runState = Sprint__NpcRunState(hero);
-		Print_s_i("runState: ",runState);
 		if (runState) // Not walking, so hero is runing
 		{  
 			var int cost; 

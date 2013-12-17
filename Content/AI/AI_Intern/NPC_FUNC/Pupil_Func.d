@@ -1,7 +1,6 @@
 //4,5,6,7,8,9,10,11,12,13-Teleported and alpha set to full opanque(on 3) in next steps setting to full visibility 
 func void PupilBugfix2Handle()
 {
-
 	if(PupilBugfix2>=4)
 	{
 	var oCNPC rbtr;

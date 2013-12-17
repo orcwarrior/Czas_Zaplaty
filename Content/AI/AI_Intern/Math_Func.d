@@ -72,3 +72,8 @@ FUNC INT MATH_PERCENT(VAR INT A,VAR INT B)
 		RETURN C;
 	};
 };
+// Dzielenie z pod³og¹:
+func int Math_Div(var int a,var int b)
+{
+	return (a/b - a%b);
+};

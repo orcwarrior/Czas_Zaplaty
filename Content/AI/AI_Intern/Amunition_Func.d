@@ -19,6 +19,37 @@ func void A_ResetMunition(var C_ITEM weapon)
  	Npc_GetInvItem(self,id);
 };
 
+// Ork: Przyda siê dla keyeventów na nast/poprz amunicje
+// i w sumie gdybym nei by³ tak g³upi i doda³ to odrazu to
+// pozosta³e funkcje tez by pewnie lepiej wygladaly :)
+func int A_AmunitionIDToItmID(var int munID,var int isBow)
+{
+	if(IsBow)
+	{
+		if(munID==A_POINT) 		{ return ItAmArrow;};
+		if(munID==A_POINT_15) 	{ return ItAmArrow_15;};
+		if(munID==A_POINT_25) 	{ return ItAmArrow_25;};
+		if(munID==A_FIRE) 		{ return ItAmFireArrow;};
+		if(munID==A_ICE) 		{ return ItAmIceArrow;};
+		if(munID==A_POISON) 	{ return ItAmPoisonArrow;};
+		if(munID==A_BLUNT) 		{ return ItAmBluntArrow;};
+		// Return ItAmBolt as "default":
+		 return ItAmArrow;
+	}
+	else
+	{
+		//if(munID==B_POINT) 		{ return ItAmBolt;};
+		if(munID==B_POINT_10) 	{ return ItAmBolt_10;};
+		if(munID==B_POINT_25) 	{ return ItAmBolt_25;};
+		if(munID==B_FIRE) 		{ return ItAmFireBolt;};
+		if(munID==B_ICE) 		{ return ItAmIceBolt;};
+		if(munID==B_POISON) 	{ return ItAmPoisonBolt;};
+		if(munID==B_BLUNT) 		{ return ItAmBluntBolt;};
+		// Return ItAmBolt as "default":
+		 return ItAmBolt;
+	};	
+};
+
 func void A_SetMunition(var C_ITEM weapon,var int munition,var int IsBow)
 {
 	printdebug_s_i_s_i("Amu: Set Munition, mun:",munition,", isBow: ",IsBow);

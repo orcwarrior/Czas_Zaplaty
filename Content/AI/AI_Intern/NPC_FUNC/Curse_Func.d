@@ -75,7 +75,7 @@ func void Curse_damage_rec(var int i)
 
 		if(Npc_GetAivar(victim,AIV_CURSE_DURATION))
 		{
-			Npc_SetAivar(v,AIV_CURSE_DURATION,-1);
+			Npc_AddToAivarValue(v,AIV_CURSE_DURATION,-1);
 			if(!Npc_GetAivar(victim,AIV_CURSE_DURATION))
 			{
     	

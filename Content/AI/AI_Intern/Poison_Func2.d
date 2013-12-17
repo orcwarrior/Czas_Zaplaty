@@ -41,7 +41,7 @@ func void poison_damage_rec(var int i)
 	if(Hlp_IsValidNpc(v)&&Npc_GetAivar(v,AIV_POISON))
 	{
 		B_ChangeAttribute (v,ATR_HITPOINTS,-40);
-		Npc_SetAivar(v,AIV_POISON,-1);
+		Npc_AddToAivarValue(v,AIV_POISON,-1);
 // można dodać sprawdzenie, czy zabiliśmy gościa, a wtedy dodać XP.
 	};
 	if(i>1)

@@ -2803,47 +2803,49 @@ func void STARTUP_TriggerScripts()
 };
 func void STARTUP_Runes()
 {
+	// Musz¹ byc w invisible:
 	RuneCharge = RuneChargeMax;	
-	Wld_InsertNpc(RuneSword_Now, "OW_ABYSS_TO_CAVE_MOVE6");
+	Wld_InsertNpc(RuneSword_Now, "INVISIBLE");
 	//1
-	Wld_InsertNpc(RuneSword_Light, "OW_ABYSS_TO_CAVE_MOVE6");	
-	Wld_InsertNpc(RuneSword_FireBolt, "OW_ABYSS_TO_CAVE_MOVE6");	
-	Wld_InsertNpc(RuneSword_ThunderBolt, "OW_ABYSS_TO_CAVE_MOVE6");	
+	Wld_InsertNpc(RuneSword_Light, "INVISIBLE");	
+	Wld_InsertNpc(RuneSword_FireBolt, "INVISIBLE");	
+	Wld_InsertNpc(RuneSword_ThunderBolt, "INVISIBLE");	
 	//2
-	Wld_InsertNpc(RuneSword_Sleep, "OW_ABYSS_TO_CAVE_MOVE6");	
-	Wld_InsertNpc(RuneSword_WindFist, "OW_ABYSS_TO_CAVE_MOVE6");	
-	Wld_InsertNpc(RuneSword_Heal, "OW_ABYSS_TO_CAVE_MOVE6");
-	Wld_InsertNpc(RuneSword_StuningBall, "OW_ABYSS_TO_CAVE_MOVE6");
+	Wld_InsertNpc(RuneSword_Sleep, "INVISIBLE");	
+	Wld_InsertNpc(RuneSword_WindFist, "INVISIBLE");	
+	Wld_InsertNpc(RuneSword_Heal, "INVISIBLE");
+	Wld_InsertNpc(RuneSword_StuningBall, "INVISIBLE");
 	
 	//3
-	Wld_InsertNpc(RuneSword_IceCube, "OW_ABYSS_TO_CAVE_MOVE6");	
-	Wld_InsertNpc(RuneSword_ThunderBall, "OW_ABYSS_TO_CAVE_MOVE6");	
-	Wld_InsertNpc(RuneSword_Charm, "OW_ABYSS_TO_CAVE_MOVE6");	
-	Wld_InsertNpc(RuneSword_Pyrokinesis, "OW_ABYSS_TO_CAVE_MOVE6");		
-	Wld_InsertNpc(RuneSword_FireBall, "OW_ABYSS_TO_CAVE_MOVE6");		
-	Wld_InsertNpc(RuneSword_LifeDrain, "OW_ABYSS_TO_CAVE_MOVE6");		
-	Wld_InsertNpc(RuneSword_Curse, "OW_ABYSS_TO_CAVE_MOVE6");		
+	Wld_InsertNpc(RuneSword_IceCube, "INVISIBLE");	
+	Wld_InsertNpc(RuneSword_ThunderBall, "INVISIBLE");	
+	Wld_InsertNpc(RuneSword_Charm, "INVISIBLE");	
+	Wld_InsertNpc(RuneSword_Pyrokinesis, "INVISIBLE");		
+	Wld_InsertNpc(RuneSword_FireBall, "INVISIBLE");		
+	Wld_InsertNpc(RuneSword_LifeDrain, "INVISIBLE");		
+	Wld_InsertNpc(RuneSword_Curse, "INVISIBLE");		
 
 	//4
-	Wld_InsertNpc(RuneSword_ChainLightning, "OW_ABYSS_TO_CAVE_MOVE6");	
-	Wld_InsertNpc(RuneSword_FireStorm, "OW_ABYSS_TO_CAVE_MOVE6");	
-	Wld_InsertNpc(RuneSword_stormfist, "OW_ABYSS_TO_CAVE_MOVE6");	
-	Wld_InsertNpc(RuneSword_destroyundead, "OW_ABYSS_TO_CAVE_MOVE6");	
-	Wld_InsertNpc(RuneSword_HolyFire, "OW_ABYSS_TO_CAVE_MOVE6");		
-	Wld_InsertNpc(RuneSword_FireWall, "OW_ABYSS_TO_CAVE_MOVE6");		
+	Wld_InsertNpc(RuneSword_ChainLightning, "INVISIBLE");	
+	Wld_InsertNpc(RuneSword_FireStorm, "INVISIBLE");	
+	Wld_InsertNpc(RuneSword_stormfist, "INVISIBLE");	
+	Wld_InsertNpc(RuneSword_destroyundead, "INVISIBLE");	
+	Wld_InsertNpc(RuneSword_HolyFire, "INVISIBLE");		
+	Wld_InsertNpc(RuneSword_FireWall, "INVISIBLE");		
 	//5
-	Wld_InsertNpc(RuneSword_IceWave, "OW_ABYSS_TO_CAVE_MOVE6");	
-	Wld_InsertNpc(RuneSword_FireRain, "OW_ABYSS_TO_CAVE_MOVE6");
-	Wld_InsertNpc(RuneSword_Thunder, "OW_ABYSS_TO_CAVE_MOVE6");
+	Wld_InsertNpc(RuneSword_IceWave, "INVISIBLE");	
+	Wld_InsertNpc(RuneSword_FireRain, "INVISIBLE");
+	Wld_InsertNpc(RuneSword_Thunder, "INVISIBLE");
 	
 	//6	
-	Wld_InsertNpc(RuneSword_BreathofDead, "OW_ABYSS_TO_CAVE_MOVE6");		
-	Wld_InsertNpc(RuneSword_Meteor, "OW_ABYSS_TO_CAVE_MOVE6");			
+	Wld_InsertNpc(RuneSword_BreathofDead, "INVISIBLE");		
+	Wld_InsertNpc(RuneSword_Meteor, "INVISIBLE");			
 	//new
 };
 
 func void STARTUP_HandlerContainers()
 {
+	//Ork: TODO sprecyzuj swiaty,te containery wystarczy zeby byly w WORLD.ZEN
 	//Handlers Containers(R)
 	
 	Wld_InsertNpc(Rodney_Container, "INVISIBLE");		
@@ -3233,12 +3235,10 @@ FUNC VOID STARTUP_DUNGEON()
 	STARTUP_ALLWORDLS();		
 }; // STARTUP_DUNGEON
 
-var int CAVETIME;
-var int RAISESTATUES; // This shit should be in sth like Story/B/Cave ;_;
 
 FUNC VOID INIT_CAVE ()
 {
-	CAVETIME=1;
+	EvtCave_HelperTimer=1;
 	
 	WORLD_CURRENT = WORLD_CATACOMBS;
 	Respawn_SkippedDays(DAY-LastDayIn_CATACOMBS);

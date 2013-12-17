@@ -424,11 +424,9 @@ func void B_SetTimedATT_minus_rec(var int i)
     {
 		if(Npc_GetAivar(v,AIV_TIMEDATTBOOST))
 		{
-				B_PrintDebug("ti");		
-			Npc_SetAivar(v,AIV_TIMEDATTBOOST,-1);
+			Npc_AddToAivarValue(v,AIV_TIMEDATTBOOST,-1);
 			if(Npc_GetAivar(v,AIV_TIMEDATTBOOST)==0)
 			{
-				B_PrintDebug("remove");
 				B_SetTimedATT_Remove(v,i);	
 			};		
 		};

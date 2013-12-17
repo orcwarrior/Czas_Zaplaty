@@ -59,7 +59,8 @@ func void KeyEvent_PreviousAmunition()
 				Am_Unequip(0);
 				AI_RemoveWeapon(hero);	
 				KeyAmunitionChange=2;//to perframetrigger =when it sat to 2 hero is removing weapon
-				printdebug_s_i("Amu: [KEYEVENT] Previous Ammu, new A-Munition:",A_MUNITION);	
+				printdebug_s_i("Amu: [KEYEVENT] Previous Ammu, new A-Munition:",A_MUNITION);
+				Npc_GetInvItem(hero,A_AmunitionIDToItmID(A_MUNITION,true)); //Ork: Item dla opisu ponizej	
 			}
 			else//CBOW
 			{
@@ -69,10 +70,10 @@ func void KeyEvent_PreviousAmunition()
 				Am_Unequip(1);
 				AI_RemoveWeapon(hero);	
 				KeyAmunitionChange=2;//to perframetrigger =when it sat to 2 hero is removing weapon
-				printdebug_s_i("Amu: [KEYEVENT] Previous Ammu, new B-Munition:",B_MUNITION);	
+				printdebug_s_i("Amu: [KEYEVENT] Previous Ammu, new B-Munition:",B_MUNITION);
+				Npc_GetInvItem(hero,A_AmunitionIDToItmID(B_MUNITION,true)); //Ork: Item dla opisu ponizej		
 			};
-			var string msg; msg = "Poprzednia amunicja:\n";
-			Npc_GetInvItem(hero,rw.munition);	
+			var string msg; msg = "Poprzednia amunicja:\n";	
 			msg = ConcatStrings(msg,item.description);
 			PutMsg(msg,"font_default.tga",RGBAToZColor(255,255,255,255),4,"");
 		};
@@ -96,7 +97,8 @@ func void KeyEvent_NextAmunition()
 				Am_Unequip(0);
 				AI_RemoveWeapon(hero);	
 				KeyAmunitionChange=2;//to perframetrigger =when it sat to 2 hero is removing weapon		
-				printdebug_s_i("Amu: [KEYEVENT] Next Ammu, new A-Munition:",A_MUNITION);		
+				printdebug_s_i("Amu: [KEYEVENT] Next Ammu, new A-Munition:",A_MUNITION);	
+				Npc_GetInvItem(hero,A_AmunitionIDToItmID(A_MUNITION,true)); //Ork: Item dla opisu ponizej	
 			}
 			else//CBOW
 			{
@@ -106,10 +108,10 @@ func void KeyEvent_NextAmunition()
 				Am_Unequip(1);
 				AI_RemoveWeapon(hero);	
 				KeyAmunitionChange=2;//to perframetrigger =when it sat to 2 hero is removing weapon
-				printdebug_s_i("Amu: [KEYEVENT] Next Ammu, new A-Munition:",B_MUNITION);	
+				printdebug_s_i("Amu: [KEYEVENT] Next Ammu, new A-Munition:",B_MUNITION);				
+				Npc_GetInvItem(hero,A_AmunitionIDToItmID(B_MUNITION,false)); //Ork: Item dla opisu ponizej:	
 			};
 			var string msg; msg = "Nastepna amunicja:\n";
-			Npc_GetInvItem(hero,rw.munition);	
 			msg = ConcatStrings(msg,item.description);
 			PutMsg(msg,"font_default.tga",RGBAToZColor(255,255,255,255),4,"");
 		};	
@@ -366,17 +368,13 @@ func void KeyEvent_EquipmentTakeAll()
 		var int targetptr; var int t_hp;
 
 		var ocnpc hiro; hiro = Hlp_GetNpc(pc_hero);
-		printdebug("KeyEvent_EquipmentTakeAll przed herofocus");
-
 		PrintDebug_s_i_s_i("Herofocus wynosi: ",herofocus,", hiro.focus_vob wynosi: ",hiro.focus_vob);
 
 		MEM_AssignInst (herofocus,hiro.focus_vob); // <-- tu jest NULL
-		printdebug("KeyEvent_EquipmentTakeAll po herofocus");
 		targetptr =  MEM_InstToPtr(herofocus);
 
 		printdebug(inttostring(targetptr));
 		t_hp = 2;//init
-		printdebug("KeyEvent_EquipmentTakeAll przed targetptr");
 		if(targetptr)
 		{
 			t_hp = MEM_ReadInt(targetptr+388);
@@ -388,7 +386,6 @@ func void KeyEvent_EquipmentTakeAll()
 		}
 		else if(t_hp<2)&&(LCtrl_Doubleclick)&&(MEM_ReadInt(targetptr)==oCNpc_vtbl)//trader container is unconscious/dead
 		{
-			printdebug("KeyEvent_EquipmentTakeAll else if");
 			// Ork: Zastanawiam sie czemu nikt tego wczesniej nie wy³¹czy³ :D		
 			//print(herofocus.name);
 
@@ -410,10 +407,8 @@ func void KeyEvent_EquipmentTakeAll()
 			{//Dead, he shouldn't trash hero focus anymore...
 				MEM_WriteInt(targetptr+160,0);//0 = oCVOB - others causes CRASH!!!
 			};
-			printdebug("KeyEvent_EquipmentTakeAll przed this");
 			var int this;
 			this = MEM_InstToPtr(hiro);
-			printdebug("KeyEvent_EquipmentTakeAll po this");
 			//Close invetories:
 			CALL__thiscall (this,oCNpc__CloseDeadNpc_offset);			
 			CALL__thiscall (this,oCNpc__CloseInventory_offset);			
@@ -510,7 +505,8 @@ func void Hook_AfterOpenStatusScreen()
 // click of Key "Walk Forward"
 func void KeyEvent_SprintDoubleClick()
 {
-	if (MEM_KeyState(Key_tForward1)==KEY_PRESSED)|| (MEM_KeyState(Key_tForward2)==KEY_PRESSED)
+	if ((MEM_KeyState(Key_tForward1)==KEY_PRESSED)|| (MEM_KeyState(Key_tForward2)==KEY_PRESSED))
+	&& ((MEM_KeyState(Key_tAction1) == KEY_UP) && (MEM_KeyState(Key_tAction2) == KEY_UP))// Ork: Dzieki temu sprint nie bêdzie sie nam odpalal przy walce
 	{
 		//Dont switch sprint on/off IF:
 		//If hero is in inventory navigate in menu

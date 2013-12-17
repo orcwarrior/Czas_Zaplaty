@@ -471,7 +471,7 @@ func void B_ResetIterator (VAR C_NPC self)
 		Npc_SetAivar(self,AIV_GUARDITERATOR,  0);
 		Npc_SetAivar(self,AIV_GUARDMEMORY,  0);
 	};
-	Npc_SetAivar(self,AIV_GUARDITERATOR, + 1);
+	Npc_AddToAivarValue(self,AIV_GUARDITERATOR, + 1);
 };
 
 

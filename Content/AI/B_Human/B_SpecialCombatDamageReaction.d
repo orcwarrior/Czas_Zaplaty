@@ -31,49 +31,49 @@ func void B_CheckIceSword(var C_NPC slf,var C_NPC attacker)
 			{
 				Wld_PlayEffect("itemFX_DAM_2", slf, slf, 1,30+damage , DAM_MAGIC, TRUE); //Projetil = TRUE (trifft alle)
 				Wld_PlayEffect("itemFX_DAM_ICE", slf, slf, 1,30+damage , DAM_MAGIC, TRUE); //Projetil = TRUE (trifft alle)		
-				
-				//Pr/int("effect played|spec damage");
-			//	Npc_ClearAIQueue(slf);	
 				AI_StartState		(slf,	ZS_ShortMagicFreeze,	1,	"");	
 			}
 			else
 			{
 					Wld_PlayEffect("itemFX_DAM", slf, slf, 1, 0, DAM_MAGIC, TRUE); //Projetil = TRUE (trifft alle)
-					//Print("effect played|non-specdamage");
 			};
 	};
 };
 
 func void B_CheckSpecialAmunition(var C_NPC slf,var C_NPC attacker)
 {
+	PRINT("SCDMGReact");
 	var C_ITEM readyweap;
 	readyweap = Npc_GetReadiedWeapon(attacker);	
 	if (Npc_HasReadiedRangedWeapon(attacker))//&&(Npc_IsPlayer(attacker))
 	{
-		if ((((A_munition==A_ICE)&&(readyweap.makingmob==1))||((B_munition==B_ICE)&&(readyweap.makingmob==2)))&&Npc_IsPlayer(attacker))||((readyweap.munition==ItAmIceArrow)||(readyweap.munition==ItAmIceBolt))
+		if ((((A_munition==A_ICE)&&(readyweap.makingmob==1))
+		||((B_munition==B_ICE)&&(readyweap.makingmob==2)))&&Npc_IsPlayer(attacker)) // OR NPC:
+		||((readyweap.munition==ItAmIceArrow)||(readyweap.munition==ItAmIceBolt))
 		{				
 		//	Npc_ClearAIQueue(slf);
 			Wld_PlayEffect("spellFX_IceSpell_TARGET", slf, slf, 1,0 , DAM_MAGIC, TRUE);			
 			AI_StartState		(slf,	ZS_MagicFreeze,	1,	"");	
 		}	
-		else if ((((A_munition==A_POISON)&&(readyweap.makingmob==1))||((B_munition==B_POISON)&&(readyweap.makingmob==2)))&&Npc_IsPlayer(attacker))||((readyweap.munition==ItAmPoisonArrow)||(readyweap.munition==ItAmPoisonBolt))
+		else if ((((A_munition==A_POISON)&&(readyweap.makingmob==1))
+		||((B_munition==B_POISON)&&(readyweap.makingmob==2))) && Npc_IsPlayer(attacker))
+		||((readyweap.munition==ItAmPoisonArrow)||(readyweap.munition==ItAmPoisonBolt))
 		{		
-			add_poison(attacker,slf,50);
+			add_poison(attacker,slf, (readyweap.damageTotal/2 - readyweap.damageTotal%2));
 		}
-		else if ((((A_munition==A_FIRE)&&(readyweap.makingmob==1))||((B_munition==B_FIRE)&&(readyweap.makingmob==2)))&&Npc_IsPlayer(attacker))||((readyweap.munition==ItAmFireArrow)||(readyweap.munition==ItAmFireBolt))
+		else if ((((A_munition==A_FIRE)&&(readyweap.makingmob==1))||
+		((B_munition==B_FIRE)&&(readyweap.makingmob==2)))&&Npc_IsPlayer(attacker))||
+		((readyweap.munition==ItAmFireArrow)||(readyweap.munition==ItAmFireBolt))
 		{
 			Snd_Play3D 					(slf,"MFX_Firespell_Humanburn");
-		};
-		
+		};		
 		if(cri_time)
 		{	
 			Npc_ChangeAttribute(slf,ATR_HITPOINTS, -readyweap.damageTotal);
-		};
-		
-		//ATTACH Arrow?
+		};		
+		//ATTACH Arrow? FX
 		if(readyweap.makingmob==1)&&(Hlp_Random(100)>40)&&(Npc_GetDistToPlayer(slf)>400)
 		{
-			//PR/INT("OUCH!");
 			Wld_PlayEffect(concatstrings("V_RANDOM_ARROW_",inttostring(Hlp_Random(7)+2)), slf, slf, 0, 0, DAM_INVALID, FALSE);					
 		};
 	};
@@ -155,8 +155,7 @@ func void B_CheckMirror(var c_npc slf, var c_npc attacker)
 func void B_CheckShield (var C_NPC slf,var C_NPC attacker)
 {
 	if(Npc_GetAivar(slf,AIV_MAGICSHIELD_DURATION) > 0)&&(Npc_GetAivar(slf,AIV_MAGICSHIELD_DURATION) != 6)
-	{
-	
+	{	
 		var int a;
 		a=Npc_GetAivar(slf,AIV_LASTHP)-slf.attribute[ATR_HITPOINTS];
 		if(a==0){return;};			
@@ -175,13 +174,10 @@ func void B_CheckShield (var C_NPC slf,var C_NPC attacker)
 			slf.attribute[ATR_MANA]=0;
 			Npc_ClearAIQueue(slf);
 			Wld_PlayEffect("spellFX_MagicShield_HIT", slf, slf, 2, 0, 0, FALSE);
-			Snd_Play3D 					(slf,"MFX_MAGICSHIELD_HIT");
-			
+			Snd_Play3D 					(slf,"MFX_MAGICSHIELD_HIT");			
 		};
 		
 	};
-	
-
 };
 func void B_CheckImmunity (var C_NPC slf,var C_NPC attacker)
 {
@@ -204,11 +200,7 @@ func void B_CheckIceArmor (var C_NPC slf,var C_NPC attacker)
 	if(Npc_GetAivar(slf,AIV_icearmor_DURATION))
 	{
 			Snd_Play3D 					(slf,"MFX_ICEARMOR_HIT");
-
-
 	};
-	
-
 };
 func void B_CheckPSIDemonspecialFX(var c_npc slf, var c_npc attacker)
 {

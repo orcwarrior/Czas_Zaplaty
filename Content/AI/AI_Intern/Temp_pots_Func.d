@@ -68,19 +68,19 @@ func void temp_potion_trigger()
 		//minus  aiv'ars if they're present
 		if(Npc_GetAivar(slf,AIV_TPBASH))
 		{
-			Npc_SetAivar(slf,AIV_TPBASH,-1);
+			Npc_AddToAivarValue(slf,AIV_TPBASH,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPMULT))
 		{
-			Npc_SetAivar(slf,AIV_TPMULT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPMULT,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPIMMU))
 		{
-			Npc_SetAivar(slf,AIV_TPIMMU,-1);
+			Npc_AddToAivarValue(slf,AIV_TPIMMU,-1);
 		}	
 		else if(Npc_GetAivar(slf,AIV_TPCRIT))
 		{
-			Npc_SetAivar(slf,AIV_TPCRIT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPCRIT,-1);
 		};	
 		if(Npc_GetAivar(slf,AIV_TPBASH)+Npc_GetAivar(slf,AIV_TPMULT)+Npc_GetAivar(slf,AIV_TPIMMU)+Npc_GetAivar(slf,AIV_TPCRIT))==0
 		{	
@@ -95,19 +95,19 @@ func void temp_potion_trigger()
 		//minus aiv'ars if they're present
 		if(Npc_GetAivar(slf,AIV_TPBASH))
 		{
-			Npc_SetAivar(slf,AIV_TPBASH,-1);
+			Npc_AddToAivarValue(slf,AIV_TPBASH,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPMULT))
 		{
-			Npc_SetAivar(slf,AIV_TPMULT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPMULT,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPIMMU))
 		{
-			Npc_SetAivar(slf,AIV_TPIMMU,-1);
+			Npc_AddToAivarValue(slf,AIV_TPIMMU,-1);
 		}	
 		else if(Npc_GetAivar(slf,AIV_TPCRIT))
 		{
-			Npc_SetAivar(slf,AIV_TPCRIT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPCRIT,-1);
 		};	
 		if(Npc_GetAivar(slf,AIV_TPBASH)+Npc_GetAivar(slf,AIV_TPMULT)+Npc_GetAivar(slf,AIV_TPIMMU)+Npc_GetAivar(slf,AIV_TPCRIT))==0
 		{	
@@ -122,19 +122,19 @@ func void temp_potion_trigger()
 		//minus aiv'ars if they're present
 		if(Npc_GetAivar(slf,AIV_TPBASH))
 		{
-			Npc_SetAivar(slf,AIV_TPBASH,-1);
+			Npc_AddToAivarValue(slf,AIV_TPBASH,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPMULT))
 		{
-			Npc_SetAivar(slf,AIV_TPMULT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPMULT,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPIMMU))
 		{
-			Npc_SetAivar(slf,AIV_TPIMMU,-1);
+			Npc_AddToAivarValue(slf,AIV_TPIMMU,-1);
 		}	
 		else if(Npc_GetAivar(slf,AIV_TPCRIT))
 		{
-			Npc_SetAivar(slf,AIV_TPCRIT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPCRIT,-1);
 		};	
 		if(Npc_GetAivar(slf,AIV_TPBASH)+Npc_GetAivar(slf,AIV_TPMULT)+Npc_GetAivar(slf,AIV_TPIMMU)+Npc_GetAivar(slf,AIV_TPCRIT))==0
 		{	
@@ -149,19 +149,19 @@ func void temp_potion_trigger()
 		//minus aiv'ars if they're present
 		if(Npc_GetAivar(slf,AIV_TPBASH))
 		{
-			Npc_SetAivar(slf,AIV_TPBASH,-1);
+			Npc_AddToAivarValue(slf,AIV_TPBASH,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPMULT))
 		{
-			Npc_SetAivar(slf,AIV_TPMULT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPMULT,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPIMMU))
 		{
-			Npc_SetAivar(slf,AIV_TPIMMU,-1);
+			Npc_AddToAivarValue(slf,AIV_TPIMMU,-1);
 		}	
 		else if(Npc_GetAivar(slf,AIV_TPCRIT))
 		{
-			Npc_SetAivar(slf,AIV_TPCRIT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPCRIT,-1);
 		};	
 		if(Npc_GetAivar(slf,AIV_TPBASH)+Npc_GetAivar(slf,AIV_TPMULT)+Npc_GetAivar(slf,AIV_TPIMMU)+Npc_GetAivar(slf,AIV_TPCRIT))==0
 		{	
@@ -176,19 +176,19 @@ func void temp_potion_trigger()
 		//minus aiv'ars if they're present
 		if(Npc_GetAivar(slf,AIV_TPBASH))
 		{
-			Npc_SetAivar(slf,AIV_TPBASH,-1);
+			Npc_AddToAivarValue(slf,AIV_TPBASH,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPMULT))
 		{
-			Npc_SetAivar(slf,AIV_TPMULT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPMULT,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPIMMU))
 		{
-			Npc_SetAivar(slf,AIV_TPIMMU,-1);
+			Npc_AddToAivarValue(slf,AIV_TPIMMU,-1);
 		}	
 		else if(Npc_GetAivar(slf,AIV_TPCRIT))
 		{
-			Npc_SetAivar(slf,AIV_TPCRIT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPCRIT,-1);
 		};	
 		if(Npc_GetAivar(slf,AIV_TPBASH)+Npc_GetAivar(slf,AIV_TPMULT)+Npc_GetAivar(slf,AIV_TPIMMU)+Npc_GetAivar(slf,AIV_TPCRIT))==0
 		{	
@@ -203,19 +203,19 @@ func void temp_potion_trigger()
 		//minus aiv'ars if they're present
 		if(Npc_GetAivar(slf,AIV_TPBASH))
 		{
-			Npc_SetAivar(slf,AIV_TPBASH,-1);
+			Npc_AddToAivarValue(slf,AIV_TPBASH,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPMULT))
 		{
-			Npc_SetAivar(slf,AIV_TPMULT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPMULT,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPIMMU))
 		{
-			Npc_SetAivar(slf,AIV_TPIMMU,-1);
+			Npc_AddToAivarValue(slf,AIV_TPIMMU,-1);
 		}	
 		else if(Npc_GetAivar(slf,AIV_TPCRIT))
 		{
-			Npc_SetAivar(slf,AIV_TPCRIT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPCRIT,-1);
 		};	
 		if(Npc_GetAivar(slf,AIV_TPBASH)+Npc_GetAivar(slf,AIV_TPMULT)+Npc_GetAivar(slf,AIV_TPIMMU)+Npc_GetAivar(slf,AIV_TPCRIT))==0
 		{	
@@ -230,19 +230,19 @@ func void temp_potion_trigger()
 		//minus aiv'ars if they're present
 		if(Npc_GetAivar(slf,AIV_TPBASH))
 		{
-			Npc_SetAivar(slf,AIV_TPBASH,-1);
+			Npc_AddToAivarValue(slf,AIV_TPBASH,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPMULT))
 		{
-			Npc_SetAivar(slf,AIV_TPMULT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPMULT,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPIMMU))
 		{
-			Npc_SetAivar(slf,AIV_TPIMMU,-1);
+			Npc_AddToAivarValue(slf,AIV_TPIMMU,-1);
 		}	
 		else if(Npc_GetAivar(slf,AIV_TPCRIT))
 		{
-			Npc_SetAivar(slf,AIV_TPCRIT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPCRIT,-1);
 		};	
 		if(Npc_GetAivar(slf,AIV_TPBASH)+Npc_GetAivar(slf,AIV_TPMULT)+Npc_GetAivar(slf,AIV_TPIMMU)+Npc_GetAivar(slf,AIV_TPCRIT))==0
 		{	
@@ -257,19 +257,19 @@ func void temp_potion_trigger()
 		//minus aiv'ars if they're present
 		if(Npc_GetAivar(slf,AIV_TPBASH))
 		{
-			Npc_SetAivar(slf,AIV_TPBASH,-1);
+			Npc_AddToAivarValue(slf,AIV_TPBASH,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPMULT))
 		{
-			Npc_SetAivar(slf,AIV_TPMULT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPMULT,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPIMMU))
 		{
-			Npc_SetAivar(slf,AIV_TPIMMU,-1);
+			Npc_AddToAivarValue(slf,AIV_TPIMMU,-1);
 		}	
 		else if(Npc_GetAivar(slf,AIV_TPCRIT))
 		{
-			Npc_SetAivar(slf,AIV_TPCRIT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPCRIT,-1);
 		};	
 		if(Npc_GetAivar(slf,AIV_TPBASH)+Npc_GetAivar(slf,AIV_TPMULT)+Npc_GetAivar(slf,AIV_TPIMMU)+Npc_GetAivar(slf,AIV_TPCRIT))==0
 		{	
@@ -284,19 +284,19 @@ func void temp_potion_trigger()
 		//minus aiv'ars if they're present
 		if(Npc_GetAivar(slf,AIV_TPBASH))
 		{
-			Npc_SetAivar(slf,AIV_TPBASH,-1);
+			Npc_AddToAivarValue(slf,AIV_TPBASH,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPMULT))
 		{
-			Npc_SetAivar(slf,AIV_TPMULT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPMULT,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPIMMU))
 		{
-			Npc_SetAivar(slf,AIV_TPIMMU,-1);
+			Npc_AddToAivarValue(slf,AIV_TPIMMU,-1);
 		}	
 		else if(Npc_GetAivar(slf,AIV_TPCRIT))
 		{
-			Npc_SetAivar(slf,AIV_TPCRIT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPCRIT,-1);
 		};	
 		if(Npc_GetAivar(slf,AIV_TPBASH)+Npc_GetAivar(slf,AIV_TPMULT)+Npc_GetAivar(slf,AIV_TPIMMU)+Npc_GetAivar(slf,AIV_TPCRIT))==0
 		{	
@@ -311,19 +311,19 @@ func void temp_potion_trigger()
 		//minus aiv'ars if they're present
 		if(Npc_GetAivar(slf,AIV_TPBASH))
 		{
-			Npc_SetAivar(slf,AIV_TPBASH,-1);
+			Npc_AddToAivarValue(slf,AIV_TPBASH,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPMULT))
 		{
-			Npc_SetAivar(slf,AIV_TPMULT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPMULT,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPIMMU))
 		{
-			Npc_SetAivar(slf,AIV_TPIMMU,-1);
+			Npc_AddToAivarValue(slf,AIV_TPIMMU,-1);
 		}	
 		else if(Npc_GetAivar(slf,AIV_TPCRIT))
 		{
-			Npc_SetAivar(slf,AIV_TPCRIT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPCRIT,-1);
 		};	
 		if(Npc_GetAivar(slf,AIV_TPBASH)+Npc_GetAivar(slf,AIV_TPMULT)+Npc_GetAivar(slf,AIV_TPIMMU)+Npc_GetAivar(slf,AIV_TPCRIT))==0
 		{	
@@ -338,19 +338,19 @@ func void temp_potion_trigger()
 		//minus aiv'ars if they're present
 		if(Npc_GetAivar(slf,AIV_TPBASH))
 		{
-			Npc_SetAivar(slf,AIV_TPBASH,-1);
+			Npc_AddToAivarValue(slf,AIV_TPBASH,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPMULT))
 		{
-			Npc_SetAivar(slf,AIV_TPMULT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPMULT,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPIMMU))
 		{
-			Npc_SetAivar(slf,AIV_TPIMMU,-1);
+			Npc_AddToAivarValue(slf,AIV_TPIMMU,-1);
 		}	
 		else if(Npc_GetAivar(slf,AIV_TPCRIT))
 		{
-			Npc_SetAivar(slf,AIV_TPCRIT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPCRIT,-1);
 		};	
 		if(Npc_GetAivar(slf,AIV_TPBASH)+Npc_GetAivar(slf,AIV_TPMULT)+Npc_GetAivar(slf,AIV_TPIMMU)+Npc_GetAivar(slf,AIV_TPCRIT))==0
 		{	
@@ -365,19 +365,19 @@ func void temp_potion_trigger()
 		//minus aiv'ars if they're present
 		if(Npc_GetAivar(slf,AIV_TPBASH))
 		{
-			Npc_SetAivar(slf,AIV_TPBASH,-1);
+			Npc_AddToAivarValue(slf,AIV_TPBASH,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPMULT))
 		{
-			Npc_SetAivar(slf,AIV_TPMULT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPMULT,-1);
 		}
 		else if(Npc_GetAivar(slf,AIV_TPIMMU))
 		{
-			Npc_SetAivar(slf,AIV_TPIMMU,-1);
+			Npc_AddToAivarValue(slf,AIV_TPIMMU,-1);
 		}	
 		else if(Npc_GetAivar(slf,AIV_TPCRIT))
 		{
-			Npc_SetAivar(slf,AIV_TPCRIT,-1);
+			Npc_AddToAivarValue(slf,AIV_TPCRIT,-1);
 		};	
 		if(Npc_GetAivar(slf,AIV_TPBASH)+Npc_GetAivar(slf,AIV_TPMULT)+Npc_GetAivar(slf,AIV_TPIMMU)+Npc_GetAivar(slf,AIV_TPCRIT))==0
 		{	

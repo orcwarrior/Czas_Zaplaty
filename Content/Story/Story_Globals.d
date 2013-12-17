@@ -336,6 +336,7 @@ VAR INT RITUAL_END;
 var int freemine_ready_to_opened;
 
 //*Chapter 5**********
+var int EvtCave_HelperTimer;
 
 VAR INT TASK_CHOICE;
 VAR INT PASSAGE_KNOW;

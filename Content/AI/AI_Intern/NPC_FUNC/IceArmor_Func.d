@@ -105,7 +105,7 @@ func void icearmor_minus_rec(var int i)
 		if(Npc_GetAivar(v,AIV_ICEARMOR_DURATION)==0)
 		{
 			print(inttostring(Npc_GetAivar(v,AIV_ICEARMOR_DURATION)));
-			Npc_SetAivar(v,AIV_ICEARMOR_DURATION,-1);
+			Npc_AddToAivarValue(v,AIV_ICEARMOR_DURATION,-1);
 			if(!Npc_GetAivar(v,AIV_ICEARMOR_DURATION))
 			{
 			
