@@ -1019,14 +1019,12 @@ func int ZS_MM_Statue_loop()
 	};
 	if(RAISESTATUES>=5)
 	{
-		print_s_i("resetStateTime",RAISESTATUES);
 		Npc_SetStateTime(self,0);
 		RAISESTATUES = -1;
 	return LOOP_CONTINUE;
 	};
 	if(RAISESTATUES == -1 && Npc_GetStateTime(self) > 4)
 	{
-		print_s_i("loop END!",Npc_GetStateTime(self));
 		self.name = "¯ywy Pos¹g";
 		return LOOP_END; // Now, attack
 	};

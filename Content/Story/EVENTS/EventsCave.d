@@ -17,7 +17,7 @@ func void EVT_CAVE_TIMER ()
 	SendTrigggerCave_Timer=TRUE;
 //	Wld_PlayEffect("DREAM_BLEND", hero, hero, 0, 0, DAM_MAGIC, 0);
 	// Ork: Bugfix, oczekujemy aż hero sobie pogada z nekromantą (przy pierwszym spotkaniu)
-	if(InfoManager_HasFinished() && !EvtCave_HeroRunawaySucess)
+	if((InfoManager_HasFinished() && EvtCave_LavaStartRaising)||EvtCave_HeroRunawaySucess )
 	{
 		EvtCave_HelperTimer=EvtCave_HelperTimer+1;
 	};
@@ -44,9 +44,9 @@ func void EVT_CAVE_TIMER ()
 		DarkMage = Hlp_GetNpc(DMB_1700_Necro);
 		AI_TurnToNpc(hero,DarkMage); SendTrigggerCave_Timer=FALSE;
 		Wld_PlayEffect("DarkMage_STOPLAVA_BLEND", DarkMage, DarkMage, 0, 0, DAM_MAGIC, 0);
-	  	Wld_PlayEffect("DarkMage_STOPLAVA", DarkMage, DarkMage, 0, 0, DAM_MAGIC, 0);
-		
+	  	Wld_PlayEffect("DarkMage_STOPLAVA", DarkMage, DarkMage, 0, 0, DAM_MAGIC, 0);	
 	};
+	
 	// "poczatkowy cinematic" na 1sze spotkanie:
 	if(EvtCave_LavaStartRaising)&&(EvtCave_HelperTimer==3)
 	{
@@ -102,8 +102,8 @@ func void EVT_BRIDGEBREAK ()
 
 func void EVT_ESCAPE_START()
 {
-   EvtCave_HelperTimer=0;
    EvtCave_HeroRunawaySucess=TRUE;
+   EvtCave_HelperTimer=0;
    Wld_SendTrigger("ESCAPE_CAM");
    AI_GotoWP(hero,"ESCAPE_DEADEND");
 };
