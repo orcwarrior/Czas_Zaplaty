@@ -3,9 +3,9 @@ instance GUR_1203_BaalTondral (Npc_Default)
 	//-------- primary data --------
 	name 		=		"Baal Tondral";
 	Npctype 		=		Npctype_Main;
-	guild 		=		GIL_GUR;
+	guild 		=		GIL_PIR;
 	level 		=		28;
-	flags 		=		0;
+	flags 		=		NPC_FLAG_FRIEND;
 	
 	voice 		=		13;
 	id 			=		1203;
@@ -17,6 +17,8 @@ instance GUR_1203_BaalTondral (Npc_Default)
 	attribute[ATR_MANA] 			=	50;
 	attribute[ATR_HITPOINTS_MAX] 	=	388;
 	attribute[ATR_HITPOINTS] 		=	388;
+    protection[PROT_BLUNT] = 250;
+	protection[PROT_EDGE] = 250;
 
 	//-------- visuals --------
 	// 				animations

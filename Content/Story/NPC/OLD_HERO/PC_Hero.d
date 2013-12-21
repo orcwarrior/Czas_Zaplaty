@@ -147,8 +147,8 @@ PROTOTYPE Nameless_Hero(C_NPC)
 	protection	[PROT_FIRE]		=		0;
 	protection	[PROT_MAGIC]	=		0;	
 
-	attribute	[ATR_HITPOINTS_MAX] 	=	30;
-	attribute	[ATR_HITPOINTS] 		=	30;
+	attribute	[ATR_HITPOINTS_MAX] 	=	3000;
+	attribute	[ATR_HITPOINTS] 		=	3000;
 
 	// Hier noch die Spells anmelden ,für ausgrauen (CreateSpell)
 

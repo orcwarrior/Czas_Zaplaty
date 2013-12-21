@@ -3,7 +3,7 @@ instance SLD_752_Okyl (Npc_Default)
 	//-------- primary data --------
 	
 	name =							"Okyl";
-	Npctype =						NpcType_Main;
+	Npctype =						npctype_ambient;
 	guild =							GIL_SLV;       
 	level =							18;
 	

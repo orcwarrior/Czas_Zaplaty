@@ -5,7 +5,7 @@ instance GRD_2512_Kam (Npc_Default)
 	
 	name =							"Kam";
 	Npctype =						Npctype_Main;
-	guild =							GIL_GRD;      
+	guild =							GIL_NONE;      
 	level =							14;
 	voice =							13;
 	id =							2512;

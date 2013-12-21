@@ -4,7 +4,7 @@ instance GRD_2521_Thug (Npc_Default)
 	
 	name =							"Bandzior";
 	Npctype =						Npctype_Main;
-	guild =							GIL_GRD;      
+	guild =							GIL_NONE;      
 	level =							9;
 	
 	voice =							10;

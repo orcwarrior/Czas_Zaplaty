@@ -3,7 +3,7 @@ instance SLV_917_Roscoe (Npc_Default)
 	//-------- primary data --------
 	
 	name =					"Roscoe";
-	Npctype =				Npctype_Main;
+	Npctype =				npctype_ambient;
 	guild =					GIL_SLV;       
 	level =					111;
 	

@@ -4,7 +4,7 @@ instance EBR_105_Raven (Npc_Default)
 	
 	name 		= 	"Kruk";
 	npctype 	= 	npctype_main;
-   guild 		=	GIL_NONE;      
+   guild 		=	GIL_GRD;      
 	level 		=	50;
 	voice 		=	10;
 	id 			=	105;
@@ -14,8 +14,8 @@ instance EBR_105_Raven (Npc_Default)
 	attribute[ATR_DEXTERITY] 	= 75;
 	attribute[ATR_MANA_MAX] 	= 0;
 	attribute[ATR_MANA] 		= 0;
-	attribute[ATR_HITPOINTS_MAX]= 688;
-	attribute[ATR_HITPOINTS] 	= 688;
+	attribute[ATR_HITPOINTS_MAX]= 888;
+	attribute[ATR_HITPOINTS] 	= 888;
 
 	//-------- visuals --------
 	// 				animations

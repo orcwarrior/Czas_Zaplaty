@@ -4,29 +4,32 @@ INSTANCE PC_Psionic(NPC_DEFAULT)
 	//-------- primary data --------
 	name			= "Lester";
 	Npctype			= NPCTYPE_FRIEND;
-	guild			= GIL_PUP;
+	guild			= GIL_PIR;
 	level			= 40;
 	voice			= 5;
 	id			    = 4;
+   flags=NPC_FLAG_FRIEND;
 
 	//--------- abilities --------
 	attribute[ATR_STRENGTH] 	=	140;
 	attribute[ATR_DEXTERITY] 	=	55;
 	attribute[ATR_MANA_MAX] 	=	50;
 	attribute[ATR_MANA] 		=	50;
-	attribute[ATR_HITPOINTS_MAX]=	520;
-	attribute[ATR_HITPOINTS] 	=	520;
+	attribute[ATR_HITPOINTS_MAX]=	1520;
+	attribute[ATR_HITPOINTS] 	=	1520;
+   protection[PROT_BLUNT] = 250;
+	protection[PROT_EDGE] = 250;
 	
 	
 	//-------- visuals --------
 	// 						animations
 	Mdl_SetVisual		(self,"HUMANS.MDS");
 	//							Body-Mesh,Body-Tex,Skin-Color	,Head-MMS		,Head-Tex	,Teeth-Tex ,Armor
-		Mdl_SetVisualBody (self,"hum_body_Naked0",1,0,"Hum_Head_Bald",17,2,HUN_ARMOR_L);
+	Mdl_SetVisualBody (self,"hum_body_Naked0",1,0,"Hum_Head_Bald",17,2,HUN_ARMOR_L);
 
 	MDL_APPLYOVERLAYMDS (self,"Humans_Mage.mds");
 
-    fight_tactic	=	FAI_HUMAN_STRONG;
+   fight_tactic	=	FAI_HUMAN_STRONG;
 	
 	Npc_SetAivar(self,AIV_IMPORTANT,  TRUE);
 
@@ -74,4 +77,16 @@ FUNC VOID Rtn_Stay_4 ()
 {	
    TA_ReadBook(01,00,13,00,"PSI_TEMPLE_ROOMS_IN_02");
 	TA_ReadBook(13,00,01,00,"PSI_TEMPLE_ROOMS_IN_02");
+};
+
+FUNC VOID Rtn_GoToBeast_4 ()
+{	
+   Ta_GuidePC (0,00,12,00,"PSI_TEMPLE_IN"); 
+   Ta_GuidePC (12,00,0,00,"PSI_TEMPLE_IN");
+};
+
+func void Rtn_FightWithBeast_4 ()
+{
+   TA_FollowPC(02,00,14,00, hero.wp);	
+   TA_FollowPC(14,00,02,00, hero.wp);
 };

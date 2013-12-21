@@ -38,7 +38,7 @@ instance RBL_1327_Novize (Npc_Default)
 	//CreateInvItem (self,ItMiJoint);
 	
 	//-------------Daily Routine-------------
- Npc_SetAivar(self,AIV_SPECIALCOMBATDAMAGEREACTION,  TRUE);
+    Npc_SetAivar(self,AIV_SPECIALCOMBATDAMAGEREACTION,  TRUE);
 	daily_routine = Rtn_start_1327;
 };
 

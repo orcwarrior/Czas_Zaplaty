@@ -3,7 +3,7 @@ instance SLD_753_Baloro (Npc_Default)
 	//-------- primary data --------
 	
 	name =							"Baloro";
-	Npctype =					    Npctype_Main;
+	Npctype =					    npctype_ambient;
 	guild =							GIL_SLV;       
 	level =							16;
 	
