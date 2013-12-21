@@ -17,7 +17,7 @@ prototype Nekromanta(C_Npc)
 	attribute[ATR_MANA] 		= 100;
 	attribute[ATR_HITPOINTS_MAX]= 1400;
 	attribute[ATR_HITPOINTS] 	= 1400;
-    PROTECTION[PROT_EDGE]	=100;
+   PROTECTION[PROT_EDGE]	=100;
 	PROTECTION[PROT_BLUNT]	=100;
 	PROTECTION[PROT_POINT]	=100;
 	PROTECTION[PROT_MAGIC]	=100;
@@ -76,18 +76,18 @@ instance DMB_1700_Necro (Nekromanta)
 };
 FUNC VOID Rtn_HIDE_1700 ()
 {
-	TA_Stand(06,00,08,00,"NECRO_START");	
-	TA_Stand(08,00,06,00,"NECRO_START");	
+	TA_Stay(06,00,08,00,"NECRO_START");	
+	TA_Stay(08,00,06,00,"NECRO_START");	
 };
 FUNC VOID Rtn_start_1700 ()
 {
-	TA_Stand(06,00,08,00,"NECRO_LAVA");	
-	TA_Stand(08,00,06,00,"NECRO_LAVA");	
+	TA_Stay(06,00,08,00,"NECRO_LAVA");	
+	TA_Stay(08,00,06,00,"NECRO_LAVA");	
 };
 FUNC VOID Rtn_TESTPASSED_1700 ()
 {
-	TA_Stand(06,00,08,00,"ESCAPE_DARKMAGE");	
-	TA_Stand(08,00,06,00,"ESCAPE_DARKMAGE");	
+	TA_Stay(06,00,08,00,"ESCAPE_DARKMAGE");	
+	TA_Stay(08,00,06,00,"ESCAPE_DARKMAGE");	
 };
 
 instance DMB_1701_NecroInNecroloc (Nekromanta)
