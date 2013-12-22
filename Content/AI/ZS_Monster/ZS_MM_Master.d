@@ -378,14 +378,14 @@ func void B_MM_ReactToDamage ()
 		AI_StartState	(self, ZS_WISP_Attack, 1, "");
 		return;
 	};		
-	if(Npc_GetAivar(other,AIV_MM_REAL_ID) == ID_SKELETONRANGER)&&(C_NpcIsUndead(self))
-	{	
-	AI_ContinueRoutine(self); 		
-	};	
-	if (Npc_GetAivar(self,AIV_MM_SPECREACTTODAMAGE) != FALSE)
-	{
-	B_SpecialCombatDamageReaction(self,other);
-	};
+	//if(Npc_GetAivar(other,AIV_MM_REAL_ID) == ID_SKELETONRANGER)&&(C_NpcIsUndead(self))
+	//{	
+	//AI_ContinueRoutine(self); 		
+	//};	
+	//if (Npc_GetAivar(self,AIV_MM_SPECREACTTODAMAGE) != FALSE)
+	//{
+	//B_SpecialCombatDamageReaction(self,other);
+	//};
     //////PrintDebugNpc	(PD_MST_FRAME,"B_MM_ReactToDamage");
  	//PRINTGlobals	(PD_MST_CHECK);   
 

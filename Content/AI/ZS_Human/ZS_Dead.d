@@ -6,7 +6,7 @@ func void ZS_Dead ()
 	//TODO: if misson on call	
 	B_Story_Mis_AdanWaves_SpawnNextWave();
 	//MultiMissle Orgin of death - player
-	B_CheckPSIDemonspecialFX(self,other);	
+	B_SpecialDmg_PSIDemon(self,other);	
 	
 	//if self==hero quit save (if it meet with condition)
 	Dream_HeroDead();
@@ -107,7 +107,7 @@ func void ZS_Dead ()
       OldCampGrds+=1;
 	};
    
- 	RS_SpecialDamage(self,other);	
+ 	B_SpecialDmg_RuneSword(self,other);	
 	//-------- Erfahrungspunkte für den Spieler ? --------
 	//SN: VORSICHT, auch in B_MagicHurtNpc() vorhanden!
 	if(self.id <= 4064)
@@ -183,8 +183,8 @@ func void ZS_Dead ()
 	//special react to damage:
 	//special react to damage: 
 	//(for hero it's done in damage system)
-	if (!Npc_IsPlayer(other))
-	{
-		B_SpecialCombatDamageReaction(self,other);
-	};
+	//if (!Npc_IsPlayer(other))
+	//{
+	//	B_SpecialCombatDamageReaction(self,other);
+	//};
 };

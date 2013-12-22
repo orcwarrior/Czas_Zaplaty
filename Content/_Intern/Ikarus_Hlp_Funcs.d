@@ -86,7 +86,7 @@ func string Get_NearestNonBlankString(var int ptr)//startpointer, currentpointer
 };
 func int Val_IsPointer(var int val)
 {
-	if(val%4==0)&&(val>6000000)&&(val<268435456)
+	if(val%4==0)&&(val>6000000)&&(val<308435456)
 	{
 		return true;//tmp disabled	
 	};
@@ -103,7 +103,7 @@ func int Val_IsArray(var int adr,var int val)
 
 func int Val_IsZFloat(var int val)
 {
-	if(val>268435456)||(val<-268435456)
+	if(val>368435456)||(val<-268435456)
 	{
 		return true;
 	};

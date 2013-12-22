@@ -1,9 +1,9 @@
 func void B_Orc_AssessDamage()
 {
-		if (Npc_GetAivar(self,AIV_MM_SPECREACTTODAMAGE) != FALSE)
-	{
-		B_SpecialCombatDamageReaction(self,other);
-	};
+	//	if (Npc_GetAivar(self,AIV_MM_SPECREACTTODAMAGE) != FALSE)
+	//{
+	//	B_SpecialCombatDamageReaction(self,other);
+	//};
 	PrintDebugNpc( PD_ORC_FRAME, "B_Orc_AssessDamage" );
 	
 	AI_TurnToNpc( self, other );

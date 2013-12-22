@@ -40,10 +40,10 @@ func void B_Pupil_AssessItem ()
 };
 func void B_Pupil_ReactToDamage ()
 {
-	if (Npc_GetAivar(self,AIV_MM_SPECREACTTODAMAGE) != FALSE)
-	{
-		B_SpecialCombatDamageReaction(self,other);
-	};
+	//if (Npc_GetAivar(self,AIV_MM_SPECREACTTODAMAGE) != FALSE)
+	//{
+	//	B_SpecialCombatDamageReaction(self,other);
+	//};
 	//////PrintDebugNpc	(PD_MST_FRAME,"B_MM_ReactToDamage");
 	//PRINTGlobals	(PD_MST_CHECK);   
 

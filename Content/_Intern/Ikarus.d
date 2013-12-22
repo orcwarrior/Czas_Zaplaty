@@ -398,12 +398,12 @@ func MEMINT_HelperClass MEM_CpyInst (var int inst) {
 };
 
 
-//--------------------------------------
-// Content Instanz auf Pointer zeigen lassen
-// Wenn nicht klar ist, ob gerade
-// der Content Parser verwendet wird.
-// (relativ nutzlos, vor allem für mich)
-//--------------------------------------
+// --------------------------------------
+// Pass Content instance point to Pointer
+// If it is not clear whether just
+// Content of the parser will be used.
+// (Relatively useless, especially for me)
+// --------------------------------------
 
 func void MEM_AssignContentInst (var int inst, var int ptr) {
     if (inst <= 0) {

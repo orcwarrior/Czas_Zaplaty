@@ -3,14 +3,15 @@ func void B_CombatReactToDamage ()
 	////PrintDebugNpc		(PD_ZS_FRAME, "B_CombatReactToDamage" );	
 	
 	//PRINTGlobals 		(PD_ZS_CHECK);
-	if ( Npc_IsPlayer( self ) )
-	{
-		B_SpecialCombatDamageReaction(self,other);	
-	};
-		if (Npc_GetAivar(self,AIV_SPECIALCOMBATDAMAGEREACTION))
-	{
-		B_SpecialCombatDamageReaction(self,other);
-	};
+	// Wywo³ywane przez Hook_oCNpc__OnDamage
+	//if ( Npc_IsPlayer( self ) )
+	//{
+	//	B_SpecialCombatDamageReaction(self,other);	
+	//};
+	//	if (Npc_GetAivar(self,AIV_SPECIALCOMBATDAMAGEREACTION))
+	//{
+	//	B_SpecialCombatDamageReaction(self,other);
+	//};
 	//-------- friendly NSC wird von Spieler attackiert --------
 	if (Npc_IsPlayer(other) && (((self.flags & NPC_FLAG_FRIEND) == NPC_FLAG_FRIEND)||(Npc_GetPermAttitude(self,other)==ATT_FRIENDLY)))
 	{

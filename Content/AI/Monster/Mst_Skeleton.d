@@ -134,7 +134,7 @@ PROTOTYPE Mst_Default_SkeletonRanger(C_Npc)
 	
 	
 //----------------------------------------------------------
-	damagetype 						=	DAM_FIRE;
+//	damagetype 						=	DAM_FIRE;
 //	damage		[DAM_INDEX_BLUNT]	=	0;
 //	damage		[DAM_INDEX_EDGE]	=	0;
 //	damage		[DAM_INDEX_POINT]	=	0;

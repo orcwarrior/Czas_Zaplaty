@@ -17,7 +17,7 @@ func void B_CheckEvasion(var C_NPC slf,var C_NPC attacker)
 	HeroLastHP=hero.attribute[ATR_HITPOINTS];
 		
 };
-func void B_CheckIceSword(var C_NPC slf,var C_NPC attacker)
+func void B_SpecialDmg_IceSword(var C_NPC slf,var C_NPC attacker)
 {
 	var C_ITEM readyweap;
 	readyweap = Npc_GetReadiedWeapon(attacker);	
@@ -40,30 +40,30 @@ func void B_CheckIceSword(var C_NPC slf,var C_NPC attacker)
 	};
 };
 
-func void B_CheckSpecialAmunition(var C_NPC slf,var C_NPC attacker)
+func void B_SpecialDmg_Amunition(var C_NPC slf,var C_NPC attacker)
 {
-	PRINT("SCDMGReact");
 	var C_ITEM readyweap;
-	readyweap = Npc_GetReadiedWeapon(attacker);	
 	if (Npc_HasReadiedRangedWeapon(attacker))//&&(Npc_IsPlayer(attacker))
 	{
-		if ((((A_munition==A_ICE)&&(readyweap.makingmob==1))
-		||((B_munition==B_ICE)&&(readyweap.makingmob==2)))&&Npc_IsPlayer(attacker)) // OR NPC:
-		||((readyweap.munition==ItAmIceArrow)||(readyweap.munition==ItAmIceBolt))
+	readyweap = Npc_GetReadiedWeapon(attacker);	
+	//Ork: Fix specjalnych obra¿eñ od NPC:
+	Npc_GetInvItem(attacker,readyweap.munition);
+	printdebug_ss("DamageReact: Readied Ranged.munition name: ",item.name);
+	printdebug_s_i("DamageReact: Readied Ranged.munition == ItAmPoisonArrow: ",readyweap.munition == ItAmPoisonArrow); // TRUE
+	if(!Hlp_IsValidItem(item)) {return; };
+
+		if ( Hlp_IsItem(item,ItAmIceArrow)|| Hlp_IsItem(item,ItAmIceBolt) ) 
 		{				
-		//	Npc_ClearAIQueue(slf);
+			Npc_ClearAIQueue(slf);
 			Wld_PlayEffect("spellFX_IceSpell_TARGET", slf, slf, 1,0 , DAM_MAGIC, TRUE);			
 			AI_StartState		(slf,	ZS_MagicFreeze,	1,	"");	
 		}	
-		else if ((((A_munition==A_POISON)&&(readyweap.makingmob==1))
-		||((B_munition==B_POISON)&&(readyweap.makingmob==2))) && Npc_IsPlayer(attacker))
-		||((readyweap.munition==ItAmPoisonArrow)||(readyweap.munition==ItAmPoisonBolt))
+		else if ( Hlp_IsItem(item,ItAmPoisonArrow)|| Hlp_IsItem(item,ItAmPoisonBolt) ) 
 		{		
-			add_poison(attacker,slf, (readyweap.damageTotal/2 - readyweap.damageTotal%2));
+			printdebug("DamageReact: Shoot by poisoned arrow!");
+			add_poison(attacker,slf, (readyweap.damageTotal*2/3 - readyweap.damageTotal*2%3));
 		}
-		else if ((((A_munition==A_FIRE)&&(readyweap.makingmob==1))||
-		((B_munition==B_FIRE)&&(readyweap.makingmob==2)))&&Npc_IsPlayer(attacker))||
-		((readyweap.munition==ItAmFireArrow)||(readyweap.munition==ItAmFireBolt))
+		else if( Hlp_IsItem(item,ItAmFireArrow)|| Hlp_IsItem(item,ItAmFireBolt) ) 
 		{
 			Snd_Play3D 					(slf,"MFX_Firespell_Humanburn");
 		};		
@@ -78,10 +78,11 @@ func void B_CheckSpecialAmunition(var C_NPC slf,var C_NPC attacker)
 		};
 	};
 	
-	
 };
 func void B_CheckMirror(var c_npc slf, var c_npc attacker)
 {
+	// Ork: [TODO] Dobra tak naprawde tu wystarczy sprawdzenie HP i LastHP
+	// do tego gdyby odczytac DAMAGE_TYPE z oCDamageDescriptor to by by³a kosa i znaczne uproszczenie :)
 	if(Npc_GetAivar(attacker,AIV_MIRROR_DURATION))
 	{
 	//anti getin looped	
@@ -202,7 +203,7 @@ func void B_CheckIceArmor (var C_NPC slf,var C_NPC attacker)
 			Snd_Play3D 					(slf,"MFX_ICEARMOR_HIT");
 	};
 };
-func void B_CheckPSIDemonspecialFX(var c_npc slf, var c_npc attacker)
+func void B_SpecialDmg_PSIDemon(var c_npc slf, var c_npc attacker)
 {
 	if((Npc_GetAivar(attacker,AIV_MM_REAL_ID) == ID_DEMONPSI))
 	{
@@ -259,32 +260,34 @@ func void B_CheckDual(var c_npc slf, var c_npc attacker)
 };
 func void B_SpecialCombatDamageReaction (var C_NPC slf,var C_NPC attacker)
 {
-	var C_NPC runenow;	
-	runenow				=	Hlp_GetNpc(RuneSword_Now);
+	//printdebug("># SpecialDMG: BEGIN");	
+	//printdebug_s_i("># DamageReact: slf valid: ",Hlp_IsValidNpc(slf)); // TRUE
+	//printdebug_s_i("># DamageReact: attacker valid: ",Hlp_IsValidNpc(attacker)); // TRUE
 	
+	var C_NPC runenow;	
+	runenow				=	Hlp_GetNpc(RuneSword_Now);	
+	//Ork: Npcty s¹ sprawdzane wg. vtbl w Hook'u wywo³ujacym B_SpecialCombatDamageReaction
+	//if(!Hlp_IsValidNpc(slf) || !Hlp_IsValidNpc(attacker)) { return; };
 	//change of rules: npc's with this aiv's sat to 2 are invunerable to special weapons
 	if (Npc_GetAivar(slf,AIV_SPECIALCOMBATDAMAGEREACTION) == 2)
 	{
 		return;
 	};
-// 	if((slf.spawnDelay & NPC_FLAG_INSTANTDEATH) == NPC_FLAG_INSTANTDEATH)&&(slf.attribute[ATR_HITPOINTS]<=1)
-// 	{
-// 		
-// 		Pri/nt("KILL");		
-// 		Npc_ClearAIQueue(slf);		
-// 		B_ChangeAttribute	(slf, ATR_HITPOINTS, -slf.attribute[ATR_HITPOINTS_MAX]);
-// 		
-// 		B_ClearPerceptions	();	
-// 		AI_PlayAniBS(self,"T_DEADB",BS_DEAD);		
-// 		AI_StartState 		(slf, ZS_Dead, 1, "");						
-// 		PrintDebugNpc	(PD_ZS_CHECK, "...NSC ertrinkt!" );		
-// 		return;	
-// 	};
+ 	if((slf.flags & NPC_FLAG_INSTANTDEATH) == NPC_FLAG_INSTANTDEATH)&&(slf.attribute[ATR_HITPOINTS]<=1)
+ 	{		
+ 		Npc_ClearAIQueue(slf);		
+ 		B_ChangeAttribute	(slf, ATR_HITPOINTS, -slf.attribute[ATR_HITPOINTS_MAX]);
+ 		
+ 		//B_ClearPerceptions	();	
+ 		AI_PlayAniBS(self,"T_DEADB",BS_DEAD);		
+ 		AI_StartState 		(slf, ZS_Dead, 1, "");					
+ 		return;	
+ 	};
 	
-	RS_SpecialDamage(slf,attacker);
-	B_CheckIceSword(slf,attacker);
-	B_CheckSpecialAmunition(slf,attacker);
-	B_CheckPSIDemonspecialFX(slf,attacker);
+	B_SpecialDmg_RuneSword(slf,attacker);
+	B_SpecialDmg_IceSword(slf,attacker);
+	B_SpecialDmg_Amunition(slf,attacker);
+	B_SpecialDmg_PSIDemon(slf,attacker);
 	
 	if(!CmpNpc(slf,attacker))&&(Hlp_IsValidNpc(attacker))&&(Npc_GetAivar(slf,AIV_LASTHP)!=slf.attribute[ATR_HITPOINTS])&&(!C_NpcIsMonster(attacker))
 	{
@@ -293,16 +296,7 @@ func void B_SpecialCombatDamageReaction (var C_NPC slf,var C_NPC attacker)
 		B_CheckIceArmor(slf,attacker);	
 		B_CheckEvasion(slf,attacker);	
 		B_CheckBash(slf,attacker);
-		B_CheckImmunity(slf,attacker);		
-		//B_CheckDual(slf,attacker);		
-		//pupil
-		//TODO
-// 		if (HeroHasPupil)&&(Npc_IsPlayer(slf))&&(!Npc_IsInState(mywolf,ZS_Pupil_Attack))
-// 		{
-// 			Npc_SetTarget	(mywolf, attacker);
-// 			Npc_ClearAIQueue(mywolf);
-// 			AI_StartState	(mywolf, ZS_Pupil_Attack, 0, "");
-// 		};
+		B_CheckImmunity(slf,attacker);	
 	};
 	if(Npc_HasBodyflag(slf,BS_STUMBLE))
 	{

@@ -3033,6 +3033,8 @@ FUNC VOID INIT_ALLWORLDS()
 		//HookEngine_Hook_PreUnconscious_JmpAdress = HookEngine(7630776,6, "HOOK_PREUNCONSCIOUS",COPY_INSTR);
 		HookEngine(6924707,5, "HOOK_AFTEROPENSTATUSSCREEN",COPY_INSTR);	
 		HookEngine(4349120,5, "APPLY_MENU_OPTIONS_CZ",COPY_INSTR);	
+		HookEngine(7540706,5, "OCNPC_ONDAMAGE_BEGIN",COPY_INSTR);
+		HookEngine(7541709,7, "OCNPC_ONDAMAGE_POSTEVENTCALL",COPY_INSTR);
 		//HookEngine_Hook_LeftWeaponTrail_JmpAdress = HookEngine(6452024,5, "HOOK_WEAPONTRAIL",COPY_INSTR);	
 		//HookEngine_Hook_PreRenderVobList_JmpAdress = HookEngine(5365779,5, "HOOK_PREVOBLIGHTRENDER",COPY_INSTR);	
 		//HookTesting = HookEngine(5467923,5, "HOOKTESTINGFUNC",COPY_INSTR);			
@@ -3040,13 +3042,6 @@ FUNC VOID INIT_ALLWORLDS()
 	};
 	//OptimizationVobLights_CollectLights();
 	//OptimizationVobLights_UnTriggerAllLights();
-};
-
-func void HOOK_PREDROPVOB()
-{
-	//print("somebody droped sth.");	
-	//CheckAdress(ESPAdr(),128,1,1);
-	//MEM_WriteInt(HookEngine_Hook_PreDropVob_JmpAdress,7023911);
 };
 
 FUNC VOID STARTUP_ALLWORDLS()

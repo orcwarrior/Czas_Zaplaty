@@ -29,14 +29,14 @@ func void ZS_ReactToDamage ()
 	Npc_PercEnable		(self,	PERC_NPCCOMMAND			,	B_CheckSheath);
 	
 			
-	if ( Npc_IsPlayer( self ) )
-	{
-		B_SpecialCombatDamageReaction(self,other);	
-	};
-	if (Npc_GetAivar(self,AIV_SPECIALCOMBATDAMAGEREACTION) != FALSE)
-	{
-		B_SpecialCombatDamageReaction(self,other);
-	};
+	//if ( Npc_IsPlayer( self ) )
+	//{
+	//	B_SpecialCombatDamageReaction(self,other);	
+	//};
+	//if (Npc_GetAivar(self,AIV_SPECIALCOMBATDAMAGEREACTION) != FALSE)
+	//{
+	//	B_SpecialCombatDamageReaction(self,other);
+	//};
 // //Rick Team (3+hero)
 // //hero
 // var C_NPC Rodney;

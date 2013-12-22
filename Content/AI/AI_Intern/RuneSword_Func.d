@@ -603,8 +603,8 @@ func void RUNESWD_DMG_TRIGGER_FUNC()
 	runenow				=	Hlp_GetNpc(RuneSword_Now);	
 	//B_SpellHurtNpc (RUNE_SLF,RUNE_ATTACKER,RuneSWD_voice,RuneSWD_Npctype);
 };
-
-func void RS_SpecialDamage(var C_Npc slf,var C_Npc attacker)
+// Called by B_SpecialCombatDamageReaciton
+func void B_SpecialDmg_RuneSword(var C_Npc slf,var C_Npc attacker)
 {
 	var C_ITEM readyweap;
 	readyweap = Npc_GetReadiedWeapon(attacker);	

@@ -964,6 +964,7 @@ func void HeroDamage_SetDamageToNpc(var int dmg_mul,var int dmg,var c_npc target
 		
 		
 		//special reaction to combat damage:
+		//Ork: To tutaj pozostaje :)
 		B_SpecialCombatDamageReaction(target,hero);
 		
 		//-------------------------------

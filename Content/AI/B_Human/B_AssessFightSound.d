@@ -51,7 +51,7 @@ func void B_AssessFightSound ()
 			/*************************************************/
 			return;
 		}
-		else
+		else if(C_GetAttackReason(other) != AIV_AR_PERSONALAFFAIRS)  
 		{
 			B_SmartTurnToNpc(self, victim);
 			//PRINTAttitudes 	(PD_ZS_CHECK);

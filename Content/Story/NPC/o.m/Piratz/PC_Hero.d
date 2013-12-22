@@ -35,6 +35,7 @@ INSTANCE PC_Hero(NPC_DEFAULT)
 //	Mdl_SetVisualBody (self,"HUM_BODY_NAKED0",9,1,"Hum_Head_Bald",221,0,-1);
 	Mdl_SetVisualBody (self,"HUM_BODY_NAKED0",0,1,"Hum_Head_Fighter",340,1,PIR_ARMOR_Rick);
 	
+	Npc_PercDisable(self,PERC_ASSESSDAMAGE);
 	//-------- talents --------
 //	Npc_SetTalentSkill		( self,HACK_NPC_TALENT_SNEAK,1);	
 //	Npc_SetTalentSkill		(self,NPC_TALENT_1H,2);
@@ -290,8 +291,7 @@ INSTANCE PC_Hero_Hair(NPC_DEFAULT)
 	
 	Npc_SetTalentSkill	(self,HACK_NPC_TALENT_MAGE,6);			
 	Npc_SetAivar(self,TALENT_MAGIC_CIRCLE,  6);
-
-Npc_PercEnable   	(self,PERC_ASSESSDAMAGE 	,B_HeroReactToDamage   	  	);	
+	
 	//Npc_SetTalentSkill	(self,NPC_TALENT_2H,1);
 	//Npc_SetTalentSkill	(self,NPC_TALENT_2H,1);
 //	Npc_SetTalentSkill	(self,NPC_TALENT_BOW,1);
