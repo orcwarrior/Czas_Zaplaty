@@ -6,7 +6,6 @@ PROTOTYPE Mst_Default_OrcSlave(C_Npc)
 {
 	name							=	"Ork-niewolnik";
 	guild							=	GIL_ORCSLAVE;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_ORC);
 	
 	level							=	15;
 //----------------------------------------------------------	
@@ -74,9 +73,10 @@ func void Set_OrcSlave_Visuals()
 
 INSTANCE OrcSlave (Mst_Default_OrcSlave)
 {
-
 	guild							=		GIL_ORCSLAVE;
 	Set_OrcSlave_Visuals();
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCSLAVE);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  2);	
 
 };
 
@@ -97,7 +97,8 @@ INSTANCE OrcPeasantDance (Mst_Default_OrcSlave)
 
 	//-------- ai --------
 	start_aistate	= ZS_Orc_Dance;
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCDANCE);
 	B_SetMonsterLevel();
 };
 
@@ -119,6 +120,7 @@ INSTANCE OrcPeasantDrum (Mst_Default_OrcSlave)
 	//-------- ai --------
 	start_aistate	= ZS_Orc_Drum;
 	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCDRUM);
 	B_SetMonsterLevel();	
 
 };

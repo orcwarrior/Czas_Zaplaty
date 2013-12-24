@@ -6,7 +6,7 @@ PROTOTYPE Mst_Default_Bloodhound(C_Npc)
 {
 	name							=	"Ogar";
 	guild							=	GIL_SHADOWBEAST;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_BLOODHOUND);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_BLOODHOUND);
 	level							=	25;
 //----------------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	170;
@@ -68,7 +68,7 @@ INSTANCE Bloodhound	(Mst_Default_Bloodhound)
 {
 	Set_Bloodhound_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  40);
 	B_SetMonsterLevel();	
 };

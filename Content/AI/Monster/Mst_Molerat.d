@@ -6,7 +6,7 @@ PROTOTYPE Mst_Default_Molerat(C_Npc)
 {
 	name							=	"Kretoszczur";
 	guild							=	GIL_MOLERAT;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_MOLERAT);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_MOLERAT);
 	level							=	5;
 
 //------------------------------------------------------------
@@ -72,6 +72,7 @@ INSTANCE Molerat	(Mst_Default_Molerat)
 	
 	CreateInvItems (self, ItFoMuttonRaw, 2);
 	B_SetMonsterLevel();	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  2);
 };
 
 
@@ -112,6 +113,7 @@ INSTANCE YMolerat	(Mst_Default_Molerat)
 
 	CreateInvItems (self, ItFoMuttonRaw, 1);
 	B_SetMonsterLevel();	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4); // It will respawn as molerat
 };
 
 

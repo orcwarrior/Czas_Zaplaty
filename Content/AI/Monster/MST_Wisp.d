@@ -7,7 +7,6 @@ PROTOTYPE Mst_Default_Wisp(C_Npc)
 	//----- Monster -----
 	name							=	"Dziki ognik";
 	guild							=	GIL_BLOODFLY;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_WISP);
 	level							=	7;
 	
 	//----- Attribute ----	
@@ -69,6 +68,8 @@ INSTANCE Wisp (Mst_Default_Wisp)
 {
 	B_SetVisuals_Wisp();
 	Npc_SetToFistMode(self);
+	Npc_SetAivar(self,AIV_MM_REAL_ID, 	ID_WISP);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  10);	
 };
 INSTANCE Wisp2 (Mst_Default_Wisp)
 {
@@ -76,6 +77,8 @@ INSTANCE Wisp2 (Mst_Default_Wisp)
 	Mdl_ApplyOverlayMds(self,"IRRLICHT_3.MDS");	
 	B_SetVisuals_Wisp();
 	Npc_SetToFistMode(self);
+	Npc_SetAivar(self,AIV_MM_REAL_ID, 	ID_WISP2);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  10);	
 };
 
 INSTANCE WispPSI (Mst_Default_Wisp)
@@ -99,6 +102,7 @@ INSTANCE WispPSI (Mst_Default_Wisp)
 	guild							=	GIL_DEMON;
 	attribute	[ATR_HITPOINTS_MAX]	=	400; 
 	attribute	[ATR_HITPOINTS]		=	400;	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 };
 //*************
 //	IrrlichtMIS
@@ -106,7 +110,6 @@ INSTANCE WispPSI (Mst_Default_Wisp)
 INSTANCE Wisp_Fire (Mst_Default_Wisp)
 {
 	name							=	"Ognisty ognik";	
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_FIREWISP);
  Npc_SetAivar(self,AIV_MM_Behaviour,		 HUNTER);
 	level						= 10;
  Npc_SetAivar(self,AIV_MM_PercRange,		 2200);
@@ -125,6 +128,8 @@ INSTANCE Wisp_Fire (Mst_Default_Wisp)
 	Mdl_ApplyOverlayMds(self,"IRRLICHT_FIRE.MDS");	
 	B_SetVisuals_Wisp();
 	Npc_SetToFistMode(self);
+	Npc_SetAivar(self,AIV_MM_REAL_ID, 	ID_FIREWISP);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  20);	
 };
 
 INSTANCE Wisp_Adanos (Mst_Default_Wisp)

@@ -6,7 +6,7 @@ PROTOTYPE Mst_Default_MinecrawlerWarrior(C_Npc)
 {
 	name							=	"Pe³zacz wojownik";
 	guild							=	GIL_MINECRAWLER;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_MINECRAWLERWARRIOR);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_MINECRAWLERWARRIOR);
 	level							=	22;
 //------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	180;
@@ -69,8 +69,8 @@ INSTANCE MinecrawlerWarrior	(Mst_Default_MinecrawlerWarrior)
 {
 	Set_MinecrawlerWarrior_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);	
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  40);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  40);
 	B_SetMonsterLevel();	
 };
 
@@ -85,6 +85,7 @@ instance OTMinecrawler(Mst_Default_MinecrawlerWarrior)
 
 	Set_MinecrawlerWarrior_Visuals();
 	Npc_SetToFistMode(self);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_MINECRAWLERWARRIOROT);
 //------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	190;
 	attribute	[ATR_DEXTERITY]		=	70;
@@ -109,8 +110,8 @@ instance OTMinecrawler(Mst_Default_MinecrawlerWarrior)
 //	damage		[DAM_INDEX_FIRE]	=	0;
 //	damage		[DAM_INDEX_FLY]		=	0;
 //	damage		[DAM_INDEX_MAGIC]	=	0;
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);	
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  45);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  45);
 	B_SetMonsterLevel();
 };
 

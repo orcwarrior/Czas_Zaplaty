@@ -6,14 +6,14 @@ PROTOTYPE Mst_Default_OrcDog(C_Npc)
 {
 	name							=	"Orkowy pies";
 	guild							=	GIL_ORCDOG;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_BLACKWOLF);
-	level							=	15;		//SN 11.01.01.: geändert, da zu schwach
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_BLACKWOLF);
+	level							=	20;		//SN 11.01.01.: geändert, da zu schwach
 //---------------------------------------------------
-	attribute	[ATR_STRENGTH]		=	130;		//SN 11.01.01.: geändert, da zu schwach
+	attribute	[ATR_STRENGTH]		=	160;		//SN 11.01.01.: geändert, da zu schwach
 	attribute	[ATR_DEXTERITY]		=	80;
 	
-	attribute	[ATR_HITPOINTS_MAX]	=	225;	//SN 11.01.01.: geändert, da zu schwach
-	attribute	[ATR_HITPOINTS]		=	225;
+	attribute	[ATR_HITPOINTS_MAX]	=	305;	//SN 11.01.01.: geändert, da zu schwach
+	attribute	[ATR_HITPOINTS]		=	305;
 
 	attribute	[ATR_MANA_MAX] 		=	0;
 	attribute	[ATR_MANA] 			=	0;
@@ -69,8 +69,8 @@ INSTANCE OrcDog	(Mst_Default_OrcDog)
 {
 	Set_OrcDog_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  2);	
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  20);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  20);
 	B_SetMonsterLevel();	
 
 

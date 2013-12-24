@@ -1,5 +1,8 @@
 
 /* Disabled since We needed own function for handling self._aivars
+   Ork: Kurwa, jestem głupi.
+ 
+
 func void Npc_SetAivar (var C_NPC slf, var int offset, var int value)
 {
 		 if (offset == 	0	) { slf._aivar[	0	] = value; }	

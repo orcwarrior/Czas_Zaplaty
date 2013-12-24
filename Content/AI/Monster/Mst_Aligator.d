@@ -6,7 +6,7 @@ PROTOTYPE Mst_Default_Aligator(C_Npc)
 {
 	name							=	"Aligator";
 	guild							=	GIL_WARAN;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_ALIGATOR);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ALIGATOR);
 	level							=	12;
 //---------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	80;
@@ -70,8 +70,8 @@ INSTANCE Aligator	(Mst_Default_Aligator)
 {
 	Set_Alligator_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);		
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  25);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);		
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  25);
 	B_SetMonsterLevel();
 
 };
@@ -99,6 +99,7 @@ INSTANCE Young_Aligator	(Mst_Default_Aligator)
 	Mdl_SetModelScale(self, 0.6, 0.7, 0.6);
  Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  2);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  20);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_YOUNGALIGATOR);
 	B_SetMonsterLevel();
 };
 /*************************************************************************
@@ -109,7 +110,7 @@ INSTANCE Aligator_Boss	(Mst_Default_Aligator)
 {
 	name						=	"Matka aligatorów";
 	level						=	22;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_ALIGATORBOSS);
+	Npc_SetAivar(self,AIV_MM_REAL_ID, 	ID_ALIGATORBOSS);
 //---------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	120;
 	attribute	[ATR_DEXTERITY]		=	50;
@@ -130,7 +131,7 @@ INSTANCE Aligator_Boss	(Mst_Default_Aligator)
 	Set_Alligator_Visuals();
 	Npc_SetToFistMode(self);
 	Mdl_SetModelScale(self, 1.4, 1.4, 1.4);	
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
 	B_SetMonsterLevel();
 
 //************Items

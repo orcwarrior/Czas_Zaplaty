@@ -6,7 +6,7 @@ PROTOTYPE Mst_Default_Lurker(C_Npc)
 {
 	name							=	"Topielec";
 	guild							=	GIL_LURKER;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_LURKER);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_LURKER);
 	level							=	15;
 //-------------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	100;
@@ -69,8 +69,8 @@ INSTANCE Lurker	(Mst_Default_Lurker)
 {
 	Set_Lurker_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  28);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  28);
 	B_SetMonsterLevel();	
 };
 

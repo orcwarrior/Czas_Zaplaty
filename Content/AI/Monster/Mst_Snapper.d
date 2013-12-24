@@ -6,7 +6,6 @@ PROTOTYPE Mst_Default_Snapper(C_Npc)
 {
 	name							=	"Zêbacz";
 	guild							=	GIL_SNAPPER;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_SNAPPER);
 	level							=	20;
 //---------------------------------------------------------	
 	attribute	[ATR_STRENGTH]		=	170;
@@ -69,7 +68,8 @@ INSTANCE Snapper	(Mst_Default_Snapper)
 {
 	Set_Snapper_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  40);
+	Npc_SetAivar(self,AIV_MM_REAL_ID, 	ID_SNAPPER);
 	B_SetMonsterLevel();
 };

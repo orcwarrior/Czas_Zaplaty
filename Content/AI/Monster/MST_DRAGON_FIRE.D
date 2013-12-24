@@ -5,8 +5,9 @@
 PROTOTYPE Mst_Default_Dragon_Fire(C_Npc)			
 {
 	name							= "Smok";
-	guild							=	GIL_WARAN;//Attacks orcs, meet em on red swamp(+undeads)
-	Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_DRACONIAN);
+	guild							= GIL_WARAN;//Attacks orcs, meet em on red swamp(+undeads)
+	Npc_SetAivar(self,AIV_MM_REAL_ID, ID_DRAGON);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
 	level							= 500;
 	
 	//----- Attribute ----	
@@ -86,7 +87,8 @@ INSTANCE YDragon	(Mst_Default_Dragon_Fire)
 {
    name							= "Ma³y smok";
 	guild							= GIL_MEATBUG;
-   Npc_SetAivar(self,AIV_MM_REAL_ID, ID_DRACONIAN);
+    Npc_SetAivar(self,AIV_MM_REAL_ID, ID_DRAGON);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
 	level							= 1;
 	
 	//----- Attribute ----	
@@ -126,7 +128,8 @@ INSTANCE BlackDragon	(Mst_Default_Dragon_Fire)
 
 	name							= "Pradawny";
 	guild							=	GIL_WARAN;//Attacks orcs, meet em on red swamp(+undeads)
-	Npc_SetAivar(self,AIV_MM_REAL_ID, ID_DRACONIAN);
+	Npc_SetAivar(self,AIV_MM_REAL_ID, ID_DRAGON);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
 	level							= 1000;
 
 	//----- Attribute ----	

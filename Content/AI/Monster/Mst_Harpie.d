@@ -6,7 +6,7 @@ PROTOTYPE Mst_Default_Harpie(C_Npc)
 {
 	name							=	"Harpia";
 	guild							=	GIL_DEMON;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_HARPIE);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_HARPIE);
 	level							=	15;
 //---------------------------------------------------------------	
 	attribute	[ATR_STRENGTH]		=	100;
@@ -68,6 +68,7 @@ INSTANCE Harpie	(Mst_Default_Harpie)
 	Set_Harpie_Visuals();
 	Npc_SetToFistMode(self);
 	B_SetMonsterLevel();	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  9);		
 };
 /*************************************************************************
 **	Mis    														**
@@ -77,10 +78,10 @@ INSTANCE Harp1	(Mst_Default_Harpie)
 	name							=	"Koœcista harpia";
 	attribute	[ATR_STRENGTH]		=	35;		
 	level							=	10;
-
 	Set_Harpie_Visuals();
 	Npc_SetToFistMode(self);
 	B_SetMonsterLevel();	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 };
 
 INSTANCE Harp2	(Mst_Default_Harpie)
@@ -91,6 +92,7 @@ INSTANCE Harp2	(Mst_Default_Harpie)
 	Set_Harpie_Visuals();
 	Npc_SetToFistMode(self);
 	B_SetMonsterLevel();	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
 };
 
 INSTANCE Harp3	(Mst_Default_Harpie)
@@ -102,6 +104,7 @@ INSTANCE Harp3	(Mst_Default_Harpie)
 	Set_Harpie_Visuals();
 	Npc_SetToFistMode(self);
 	B_SetMonsterLevel();	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
 };
 
 INSTANCE Harp4	(Mst_Default_Harpie)
@@ -113,6 +116,7 @@ INSTANCE Harp4	(Mst_Default_Harpie)
 	Set_Harpie_Visuals();
 	Npc_SetToFistMode(self);
 	B_SetMonsterLevel();	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
 };
 
 INSTANCE Harp5	(Mst_Default_Harpie)
@@ -124,4 +128,5 @@ INSTANCE Harp5	(Mst_Default_Harpie)
 	Set_Harpie_Visuals();
 	Npc_SetToFistMode(self);
 	B_SetMonsterLevel();	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
 };

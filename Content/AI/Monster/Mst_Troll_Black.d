@@ -5,8 +5,7 @@ prototype Mst_Default_Troll_Black(C_Npc)
 	guild = GIL_TROLL;
 	level = 300;
 //----------------------------------------------------------		
- Npc_SetAivar(self,AIV_MM_REAL_ID,  ID_BLACKTROLL);
-
+	
 	attribute[ATR_STRENGTH] = 350;
 	attribute[ATR_DEXTERITY] = 450;
 	attribute[ATR_HITPOINTS_MAX] = 3500;
@@ -53,8 +52,10 @@ instance Black_Troll(Mst_Default_Troll_Black)
 	B_SetVisuals_Troll_Black ();
 	Npc_SetToFistMode (self);
  Npc_SetAivar(self,AIV_MM_RestStart, 	 OnlyRoutine);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  7);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  12);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  600);
+ Npc_SetAivar(self,AIV_MM_REAL_ID,  ID_BLACKTROLL);
+
 	B_SetMonsterLevel();		
 };
 instance King_Troll(Mst_Default_Troll_Black)
@@ -62,7 +63,7 @@ instance King_Troll(Mst_Default_Troll_Black)
 	name[0] = "Królewski troll";
 	guild = GIL_TROLL;
 	level = 500;
- Npc_SetAivar(self,AIV_MM_REAL_ID,  ID_KINGTROLL);	
+	Npc_SetAivar(self,AIV_MM_REAL_ID,  ID_KINGTROLL);	
 	attribute[ATR_STRENGTH] = 500;
 	attribute[ATR_DEXTERITY] = 350;
 	attribute[ATR_HITPOINTS_MAX] = 5000;
@@ -78,7 +79,7 @@ instance King_Troll(Mst_Default_Troll_Black)
 	protection	[PROT_MAGIC]		=	9999;
 	B_SetVisuals_King_Troll ();
 	Npc_SetToFistMode (self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  10);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  16);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  750);
 	B_SetMonsterLevel();		
 };

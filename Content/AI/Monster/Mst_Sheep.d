@@ -7,7 +7,7 @@ PROTOTYPE Mst_Default_Sheep(C_Npc)
 	//----- Maonster ----
 	name							=	"Owca";
 	guild							=	GIL_MEATBUG;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_SHEEP);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_SHEEP);
 	level							=	1;
 
 	//----- Attribute ----
@@ -89,8 +89,8 @@ INSTANCE Sheep	(Mst_Default_Sheep)
 
 	Npc_SetToFistMode(self);
 	start_aistate				= ZS_MM_AllScheduler;
- Npc_SetAivar(self,AIV_MM_RoamStart,		 OnlyRoutine);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
+	Npc_SetAivar(self,AIV_MM_RoamStart,		 OnlyRoutine);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
 	CreateInvItems (self, ItFoMuttonRaw, 1);	
 };
 

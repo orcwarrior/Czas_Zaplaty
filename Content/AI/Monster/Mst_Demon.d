@@ -6,7 +6,7 @@ PROTOTYPE Mst_Default_Demon(C_Npc)
 {
 	name							=	"Demon ognia";
 	guild							=	GIL_DEMON;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_DEMON);
+	Npc_SetAivar(self,AIV_MM_REAL_ID, 	ID_DEMON);
 	level							=	50;
 //--------------------------------------------------------	
 	attribute	[ATR_STRENGTH]		=	140;
@@ -68,8 +68,8 @@ INSTANCE Demon (Mst_Default_Demon)
 {
 	Set_Demon_Visuals();
 	Npc_SetToFistMode(self);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);	
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  75);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  75);
 	B_SetMonsterLevel();	
 };
 
@@ -99,8 +99,8 @@ INSTANCE SummonedByNPC_Demon (Mst_Default_Demon)
 	Npc_SetToFistMode(self);
 //---------------------------------------
 	start_aistate	=	ZS_MM_Summoned;
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	//never
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  75);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	//never
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  75);
 	B_SetMonsterLevel();	
 };
 
@@ -185,8 +185,8 @@ INSTANCE Guard_Demon (Mst_Default_Demon)
 //--------------------------------------------------------
 	Set_Demon_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	//never
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  45);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	//never
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  45);
 	B_SetMonsterLevel();	
 };
 

@@ -6,7 +6,7 @@ PROTOTYPE Mst_Default_Sleeper(C_Npc)
 {
 	name							=	"Œni¹cy";
 	guild							=	GIL_TPL;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_SLEEPER);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_SLEEPER);
 	level							=	2000;
 //--------------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	500;
@@ -67,6 +67,7 @@ INSTANCE Sleeper	(Mst_Default_Sleeper)
 {
 	Set_Sleeper_Visuals();
 	Npc_SetToFistMode(self);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 };
 
 func void Rtn_start_Sleeper ()

@@ -6,7 +6,7 @@ PROTOTYPE Mst_Default_Draconian(C_Npc)
 {
 	name							=	"Jaszczurocz³ek myœliwy";
 	guild							=	GIL_WARAN;//Attacks orcs, meet em on red swamp(+undeads)
-   Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIAN);
+
 	
 	npctype							=	NPCTYPE_GUARD;
 	level							=	50;
@@ -83,7 +83,8 @@ INSTANCE DraconianScout	(Mst_Default_Draconian)
 	//-------- visual --------
 	Set_Draconian1_Visuals();
 
-   Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);	
+    Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIANSCOUT);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  8);	
 	B_SetMonsterLevel();	
 	EquipItem (self, ItMw_Draco_01);
 };
@@ -96,7 +97,6 @@ INSTANCE DraconianSolidier	(Mst_Default_Draconian)
 	Set_Draconian0_Visuals();	
 	//-------- general --------
 	name = "Jaszczurocz³ek ¿o³nierz";
-
 	//-------- visual --------
 	
 	Set_Draconian0_Visuals();	
@@ -123,8 +123,9 @@ INSTANCE DraconianSolidier	(Mst_Default_Draconian)
 
 	//-------- inventory --------
 	EquipItem (self, ItMw_Draco_02);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  7);	
- Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);		
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  10);	
+	Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);
+    Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIANSOLIDER);		
 	
 	B_SetMonsterLevel();	
 };
@@ -161,8 +162,9 @@ INSTANCE DraconianOfficer	(Mst_Default_Draconian)
 
 	//-------- inventory --------
 	EquipItem (self, ItMw_Draco_03);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  13);	
- Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);		
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  13);	
+	Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);		
+    Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIANOFFICER);
 	
 	B_SetMonsterLevel();	
 };
@@ -174,10 +176,7 @@ INSTANCE Draco1	(Mst_Default_Draconian)
 	Set_Draconian0_Visuals();	
 	//-------- general --------
 	name							=	"Jaszczurocz³ek ¿o³nierz";
-
 	//-------- visual --------
-	
-	
 	Set_Draconian0_Visuals();	
 	
 	level							=	60;
@@ -202,8 +201,9 @@ INSTANCE Draco1	(Mst_Default_Draconian)
 
 	//-------- inventory --------
 	EquipItem (self, ItMw_Draco_02);
-   Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  7);	
-   Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);		
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);	
+    Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIANSCOUT);	
 	
 	B_SetMonsterLevel();	
 };
@@ -240,8 +240,9 @@ INSTANCE Draco2	(Mst_Default_Draconian)
 
 	//-------- inventory --------
 	EquipItem (self, ItMw_Draco_02);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  7);	
- Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);		
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);	
+    Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIANSCOUT);	
 	
 	B_SetMonsterLevel();	
 };
@@ -251,9 +252,7 @@ INSTANCE Draco3(Mst_Default_Draconian)
 	Set_Draconian0_Visuals();	
 	//-------- general --------
 	name							=	"Jaszczurocz³ek ¿o³nierz";
-
 	//-------- visual --------
-	
 	Set_Draconian0_Visuals();	
 	
 	level							=	60;
@@ -278,8 +277,9 @@ INSTANCE Draco3(Mst_Default_Draconian)
 
 	//-------- inventory --------
 	EquipItem (self, ItMw_Draco_02);
-   Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  7);	
-   Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);		
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);		
+    Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIANSCOUT);
 	
 	B_SetMonsterLevel();	
 };

@@ -178,7 +178,6 @@ func void b_storychangeday()
 	b_setday();
 	b_settodayevents();
 	Respawn_ChangeDay();
-	Respawn_Trigger();
 	Reset_DailyOre();//add daily ore amounts
 	WeatherForecasting();	
 	ADD_DAILYLUMBER();//"dodaæ" drewno do bali

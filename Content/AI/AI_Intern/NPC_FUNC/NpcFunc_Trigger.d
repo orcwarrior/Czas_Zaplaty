@@ -96,6 +96,7 @@ func void EVT_POISON()
 	printdebug("PoisonTrigger<<party_check");
 	party_check();	
 	B_SetTimedATT_minus_rec(max_bonuses);	
+	Respawn_Trigger();
 	
 	
 	// Ork: Pozwole sobie stąd jednorazowo ogarnac appearence func które wymaga opóznionego

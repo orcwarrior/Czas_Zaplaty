@@ -6,7 +6,7 @@ PROTOTYPE Mst_Default_Tiger(C_Npc)
 {
 	name							=	"Tygrys";
 	guild							=	GIL_SHADOWBEAST;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_SHADOWBEAST);
+ Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_TIGER);
 	level							=	30;
 //---------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	140;
@@ -79,6 +79,7 @@ INSTANCE Tiger	(Mst_Default_Tiger)
 	CreateInvItems (self,ItFoMuttonRaw,4);
  Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  75);
+ Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_TIGER);
 	B_SetMonsterLevel();	
 	Mdl_SetModelScale(self, 0.8, 0.7, 0.8);	
 		
@@ -88,7 +89,7 @@ INSTANCE WhiteTiger	(Mst_Default_Tiger)
 {
 	name							=	"Bia³y tygrys";
 	guild							=	GIL_SHADOWBEAST;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_SHADOWBEAST);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_SHADOWBEAST);
 	level							=	40;
 //---------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	190;

@@ -7,7 +7,7 @@ PROTOTYPE Mst_Default_MinecrawlerQueen(C_Npc)
 {
 	name							=	"Królowa pe³zaczy";
 	guild							=	GIL_MINECRAWLER;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_MINECRAWLERQUEEN);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_MINECRAWLERQUEEN);
 	level							=	50;		// SN: wegen XP, real nur Level 15!
 //------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	200;

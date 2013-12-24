@@ -6,7 +6,7 @@ PROTOTYPE Mst_Default_BlackGobbo(C_NPC)
 {
 	name							=	"Czarny goblin";
 	guild							=	GIL_GOBBO;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_BLACKGOBBO);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_BLACKGOBBO);
 	level							=	11;
 //------------------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	85;
@@ -71,6 +71,7 @@ INSTANCE BlackGobboMace	(Mst_Default_BlackGobbo)
 	CreateInvItems (self, ItAt_GobKosc, 1);
 	B_CreateGobboInv();
 	B_SetMonsterLevel();	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
 };
 /*************************************************************************
 **	Black Gobbo Warrior   														**
@@ -92,9 +93,11 @@ INSTANCE BlackGobboWarrior	(Mst_Default_BlackGobbo)
 	protection	[PROT_EDGE]			=	50;
 	
 	name							=	"Goblin wojownik";
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_BLACKGOBBOWARRIOR);
 
 	CreateInvItems (self, ItAt_GobKosc, 1);	
 	B_CreateGobboInv();
 	B_SetMonsterLevel();	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);	
 	
 };

@@ -461,7 +461,6 @@ INSTANCE PC_Hero_IO(NPC_DEFAULT)
 	CreateInvItems (self,ItAmArrow,100);
 	CreateInvItems (self,ItAmBolt,100);			
 	CreateInvItems (self,ItMiNugget,1004); 
-	Npc_PercEnable   	(other,PERC_ASSESSDAMAGE 	,B_HeroReactToDamage   	  	);	
 	};
 
 INSTANCE PC_Hero_EO(NPC_DEFAULT)
@@ -527,7 +526,6 @@ Npc_SetTalentValue(self,NPC_TALENT_CROSSBOW,100);
 	CreateInvItems (self,ItAmPoisonArrow,100);		
 	CreateInvItems (self,ItMiNugget,10004); 
 	CreateInvItems (self,ItLsTorchburning_2,1); 	
-	Npc_PercEnable   	(other,PERC_ASSESSDAMAGE 	,B_HeroReactToDamage   	  	);	
 	fight_tactic = FAI_HUMAN_MASTER;
 	};		
 

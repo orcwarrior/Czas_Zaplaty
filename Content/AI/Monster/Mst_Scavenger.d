@@ -6,7 +6,7 @@ PROTOTYPE Mst_Default_Scavenger(C_Npc)
 {
 	name							=	"Œcierwojad";
 	guild							=	GIL_SCAVENGER;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_SCAVENGER);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_SCAVENGER);
 	level							=	5;
 //---------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	20;
@@ -79,7 +79,8 @@ INSTANCE Scavenger	(Mst_Default_Scavenger)
 	{
 		CreateInvItems (self, ItFoScavengerEgg, 1+Hlp_Random(2));	
 	};
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  2);	
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_SCAVENGER);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  2);	
 	B_SetMonsterLevel();	
 	
 };
@@ -111,7 +112,8 @@ INSTANCE YScavenger	(Mst_Default_Scavenger)
 	Npc_SetToFistMode(self);
 
 	CreateInvItems (self, ItFoMuttonRaw, 1);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  2);	
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_SCAVENGER);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);	
 	B_SetMonsterLevel();	
 };
 

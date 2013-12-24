@@ -18,6 +18,7 @@ const int ERROR_INFORMATION = 3;
 var int Arr_Print_Errors;
 const int ARR_PRINT_ERRORS_DEF = ERROR_WARNINGS; //je nachdem was alles angezeigt werden soll
 
+const int AIVAR_SIZE = 50; // Ork: Tutaj by≥o magiczne 100 -> jednak jak wiadomo, w G1 aivarÛw jest 50 :)
 
 //************************************
 //		Hilfsfunktionen
@@ -307,7 +308,7 @@ func int Arr_IsValidArray (var int arr_ID) {
 
 func int Arr_Walker (var int offset, var int dyn_create)
 {
-	if (offset >= 100) //nur dann brauche ich den n‰chsten Npc
+	if (offset >= AIVAR_SIZE) //nur dann brauche ich den n‰chsten Npc
 	{
 		//Wenn Offset zu groﬂ n‰chsten Npc suchen
 				
@@ -319,7 +320,7 @@ func int Arr_Walker (var int offset, var int dyn_create)
 			{
 				//das Array ist zu kurz? dynamisch verl‰ngern:
 				Arr_AddElement (other); //neues Ding jetzt in other
-				return Arr_Walker (offset - 100, dyn_create); //weiter gehts, 100 sind geschafft
+				return Arr_Walker (offset - AIVAR_SIZE, dyn_create); //weiter gehts, 100 sind geschafft
 			}
 			else
 			{
@@ -330,7 +331,7 @@ func int Arr_Walker (var int offset, var int dyn_create)
 		else
 		{
 			//es geht weiter! 100 habe ich geschafft
-			return Arr_Walker (offset - 100, dyn_create);
+			return Arr_Walker (offset - AIVAR_SIZE, dyn_create);
 		};
 	}
 	else
@@ -386,7 +387,7 @@ func void Arr_SetValue (var int arr_ID, var int offset, var int value)
 	//assert: res == 1.
 	
 	//und den Wert setzen:
-	Npc_SetAivar (other, offset % 100, value);
+	__Npc_SetAivar (other, offset % AIVAR_SIZE, value);
 	
 	Arr_RestoreGlobals();
 };
@@ -431,7 +432,7 @@ func int Arr_GetValue (var int arr_ID, var int offset)
 	}
 	else //alles prima, es kann von other gelesen werden
 	{
-		var int res; res = Npc_GetAivar (other, offset % 100);
+		var int res; res = __Npc_GetAivar (other, offset % AIVAR_SIZE);
 		Arr_RestoreGlobals();
 		return res;
 	};
@@ -473,7 +474,7 @@ func void Arr_ClearFrom (var int offset) //das betreffende Array muss in other s
 	{
 		//Jetzt steht in other das Objekt, indem der Clear tats‰chlich losgeht.
 	
-		Npc_ClearAivarsFrom (other, offset % 100);
+		Npc_ClearAivarsFrom (other, offset % AIVAR_SIZE);
 		
 		//evtl. folgende Elemente auch freigeben:
 		var int tmp;

@@ -6,10 +6,10 @@ INSTANCE Wolf(Mst_Default_Wolf)
 {
 	Set_Wolf_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  16);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  16);
 	B_SetMonsterLevel();	
- Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);	
+	Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);	
 };
 
 /*************************************************************************
@@ -20,10 +20,10 @@ INSTANCE YWolf(Mst_Default_Wolf)
 {
 	Set_Wolf_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  16);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);	
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  16);
 	B_SetMonsterLevel();	
- Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);	
+	Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);	
 	Mdl_SetModelScale(self, 0.8, 0.8, 0.8);
 	level							 = 6;
 	//-------- attributes --------
@@ -46,10 +46,10 @@ INSTANCE YWolf(Mst_Default_Wolf)
 INSTANCE Snf_MolKiller_Wolf	(Mst_Default_Wolf)
 {
 	name= "G³odny wilk";
- Npc_SetAivar(self,AIV_MM_REAL_ID,ID_MIS_SNAFWOLF);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,ID_MIS_SNAFWOLF);
 	Set_Wolf_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
 	level=6;
 	attribute	[ATR_STRENGTH]		=	30;
 	attribute	[ATR_DEXTERITY]		=	20;
@@ -64,6 +64,6 @@ INSTANCE Snf_MolKiller_Wolf	(Mst_Default_Wolf)
 	protection	[PROT_MAGIC]		=	0;
 
 	B_SetMonsterLevel();	
- Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);	
+	Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);	
 	daily_routine = Rtn_MolKillerWolf_1050010;
 };

@@ -6,7 +6,6 @@ PROTOTYPE Mst_Default_UndeadOrcWarrior (C_Npc)
 {
 	name							=	"Opiekun œwi¹tyni";
 	guild							=	GIL_UNDEADORC;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_UNDEADORCWARRIOR);
 	level							=	50;
 //----------------------------------------------------------	
 	attribute	[ATR_STRENGTH]		=	150;//+150
@@ -74,6 +73,7 @@ INSTANCE UndeadOrcWarrior (Mst_Default_UndeadOrcWarrior)
 	EquipItem 				(self, ItMw2hOrcMace01);
 	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  40);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_UNDEADORCWARRIOR);
 	B_SetMonsterLevel();		
 };
 
@@ -99,6 +99,7 @@ INSTANCE UndeadOWH (Mst_Default_UndeadOrcWarrior)
 	EquipItem 				(self, ItMw2hOrcMace01);
  Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  70);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_UNDEADORCWARRIOR);
 	B_SetMonsterLevel();		
 };
 INSTANCE Cave_UndeadOrcWarrior (Mst_Default_UndeadOrcWarrior)
@@ -121,5 +122,6 @@ INSTANCE Cave_UndeadOrcWarrior (Mst_Default_UndeadOrcWarrior)
 	EquipItem 				(self, ItMw2hOrcSword01);
  Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  70);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_UNDEADORCWARRIOR);
 	B_SetMonsterLevel();		
 };

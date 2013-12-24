@@ -6,7 +6,6 @@ PROTOTYPE Mst_Default_Razor(C_Npc)
 {
 	name							=	"Brzytwa";
 	guild							=	GIL_SNAPPER;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_RAZOR);
 	level							=	25;
 //--------------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	190;
@@ -76,9 +75,10 @@ INSTANCE Razor (Mst_Default_Razor)
 {
 	Set_Razor_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);	
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  45);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);	
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  45);
 	B_SetMonsterLevel();	
+	Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_RAZOR);
 };
 INSTANCE RazorNK (Mst_Default_Razor)
 {
@@ -102,7 +102,8 @@ INSTANCE RazorNK (Mst_Default_Razor)
 	protection	[PROT_FIRE]			=	90;
 	protection	[PROT_FLY]			=	10;
 	protection	[PROT_MAGIC]		=	15;
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  40);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  40);
 	B_SetMonsterLevel();	
+	Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_RAZORNK);
 };

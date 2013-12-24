@@ -5,8 +5,7 @@
 //	//PRINTGlobals 		(PD_ZS_CHECK);
 //	B_SpecialCombatDamageReaction(self,other);
 //};
-var C_NPC B_HeroReactToDamage_oth;
-func void B_HeroReactToDamage(var C_NPC oth)
+func void B_HeroReactToDamage()
 {
 	//B_SpecialCombatDamageReaction(hero,oth);
 };

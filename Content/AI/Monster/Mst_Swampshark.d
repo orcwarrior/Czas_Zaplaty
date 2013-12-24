@@ -6,7 +6,6 @@ PROTOTYPE Mst_Default_Swampshark(C_Npc)
 {
 	name							=	"W¹¿ b³otny";
 	guild							=	GIL_SWAMPSHARK;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_SWAMPSHARK);
 	level							=	35;
 //---------------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	170;
@@ -69,8 +68,9 @@ INSTANCE Swampshark	(Mst_Default_Swampshark)
 {
 	Set_Swampshark_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  70);
+ Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_SWAMPSHARK);
 	B_SetMonsterLevel();	
 };
 
@@ -86,7 +86,7 @@ INSTANCE HurtSwampshark(Mst_Default_Swampshark)
 
 	Set_Swampshark_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  70);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  70);
 	B_SetMonsterLevel();	
 };

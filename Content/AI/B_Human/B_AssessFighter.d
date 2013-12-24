@@ -45,7 +45,8 @@ func void B_AssessFighter()
 	{
 		add_CollPool(self);	
 		DailyHello_HeroAttackersCnt += 1;
-		Npc_PercEnable   	(other, 	PERC_ASSESSDAMAGE 	,	B_HeroReactToDamage   	  	);	
+		// Odpowiada za to hook:
+		// Npc_PercEnable   	(other, 	PERC_ASSESSDAMAGE 	,	B_HeroReactToDamage   	  	);	
 	};
 	//***********************************************
 	

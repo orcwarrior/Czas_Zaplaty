@@ -6,7 +6,6 @@ PROTOTYPE Mst_Default_OrcShaman(C_Npc)
 {
 	name							=	"Ork-szaman";
 	guild							=	GIL_ORCSHAMAN;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_ORC);
 	
 	npctype							=	NPCTYPE_GUARD;
 	level							=	30;
@@ -75,6 +74,7 @@ INSTANCE OrcShaman (Mst_Default_OrcShaman)
 	CreateInvItem			(self,	ItArRuneThunderBall);
 	EquipItem				(self,	ItRwOrcstaff);		// für Magiemodus
 	CreateInvItems 				(self, ItAt_OrcSha_Plume, 2);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  7);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  9);	
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCSHAMAN);
 	B_SetMonsterLevel();
 };

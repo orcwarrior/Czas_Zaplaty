@@ -6,7 +6,7 @@ PROTOTYPE Mst_Default_Meatbug(C_Npc)
 {
 	name							=	"Chrz¹szcz";
 	guild							=	GIL_MEATBUG;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_MEATBUG);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_MEATBUG);
 	level							=	1;
 //-------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	1;
@@ -59,7 +59,7 @@ INSTANCE Meatbug	(Mst_Default_Meatbug)
 	//Npc_SetToFistMode(self);  //SN: damit der Kleine keine unnötigen PERC_ASSESSFIGHTER auslöst!
 	
 	CreateInvItems (self, ItAt_Meatbug_01, 1);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  7);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  7);	
 };
 
 INSTANCE DeadMeatbug	(Mst_Default_Meatbug)
@@ -68,5 +68,5 @@ INSTANCE DeadMeatbug	(Mst_Default_Meatbug)
 	//Npc_SetToFistMode(self);  //SN: damit der Kleine keine unnötigen PERC_ASSESSFIGHTER auslöst!
 	
 	CreateInvItems (self, ItAt_Meatbug_01_MIS, 1);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  7);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 };

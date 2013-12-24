@@ -6,7 +6,6 @@ PROTOTYPE Mst_Default_Troll(C_Npc)
 {
 	name							=	"Troll";
 	guild							=	GIL_TROLL;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_TROLL);
 	level							=	200;
 //------------------------------------------------------	
 	attribute	[ATR_STRENGTH]		=	200;
@@ -69,8 +68,9 @@ INSTANCE Troll	(Mst_Default_Troll)
 {
 	Set_Troll_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);	
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  350);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_TROLL);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  9);	
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  350);
 	B_SetMonsterLevel();	
 };
 
@@ -83,7 +83,7 @@ INSTANCE YoungTroll	(Mst_Default_Troll)
 	//-------- general data --------
 	name							=	"M³ody troll";
 	guild							=	GIL_TROLL;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_TROLL);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_YOUNGTROLL);
 	level							=	100;
 	ID								=	MID_YOUNGTROLL;
 	
@@ -131,7 +131,7 @@ INSTANCE YoungTroll	(Mst_Default_Troll)
 	start_aistate				= ZS_MM_AllScheduler;
 
  Npc_SetAivar(self,AIV_MM_RestStart, 	 OnlyRoutine);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  7);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  180);
 	B_SetMonsterLevel();	
 };

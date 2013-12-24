@@ -6,7 +6,6 @@ PROTOTYPE Mst_Default_Shadowbeast(C_Npc)
 {
 	name							=	"Cieniostwór";
 	guild							=	GIL_SHADOWBEAST;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_SHADOWBEAST);
 	level							=	40;
 //---------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	220;
@@ -70,7 +69,8 @@ INSTANCE Shadowbeast	(Mst_Default_Shadowbeast)
 	Set_Shadowbeast_Visuals();
 	Npc_SetToFistMode(self);
 	CreateInvItems (self,ItFoMuttonRaw,4);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  75);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  8);	
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  75);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_SHADOWBEAST);
 	B_SetMonsterLevel();		
 };

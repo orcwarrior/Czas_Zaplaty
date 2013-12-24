@@ -6,7 +6,6 @@ PROTOTYPE Mst_Default_OrcWarrior(C_Npc)
 {
 	name							=	"Ork-¿o³nierz";
 	guild							=	GIL_ORCWARRIOR;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_ORC);
 	
 	npctype							=	NPCTYPE_GUARD;
 	voice							=	17;
@@ -106,7 +105,8 @@ INSTANCE OrcWarrior1	(Mst_Default_OrcWarrior)
 
 	//-------- inventory --------
 	EquipItem (self, ItMw2hOrcaxe01);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCWARRIOR1);
 	B_SetMonsterLevel();	
  Npc_SetAivar(self,AIV_SPECIALCOMBATDAMAGEREACTION,  TRUE);	
 	
@@ -144,6 +144,7 @@ INSTANCE OrcWarrior2	(Mst_Default_OrcWarrior)
 	//-------- inventory --------
 	EquipItem (self, ItMw2hOrcaxe02);
  Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);	
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCWARRIOR2);
  Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);		
 	
 	B_SetMonsterLevel();	
@@ -181,7 +182,8 @@ INSTANCE OrcWarrior3	(Mst_Default_OrcWarrior)
 
 	//-------- inventory --------
 	EquipItem (self, ItMw2hOrcaxe03);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCWARRIOR3);	
 	B_SetMonsterLevel();	
 };
 
@@ -202,7 +204,7 @@ INSTANCE OrcWarrior4	(Mst_Default_OrcWarrior)
 	attribute	[ATR_DEXTERITY]		=	50;
 	
 	attribute	[ATR_HITPOINTS_MAX]	=	350;
-	attribute	[ATR_HITPOINTS]		=	300;
+	attribute	[ATR_HITPOINTS]		=	350;
 
 	attribute	[ATR_MANA_MAX] 		=	0;
 	attribute	[ATR_MANA] 			=	0;
@@ -216,6 +218,7 @@ INSTANCE OrcWarrior4	(Mst_Default_OrcWarrior)
 //----------------------------------------------------------	
 	EquipItem 	(self, ItMw2hOrcaxe04);
  Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  7);	
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCWARRIOR4);
 	B_SetMonsterLevel();	
 };
 /*************************************************************************
@@ -225,7 +228,7 @@ INSTANCE OrcElite1	(Mst_Default_OrcWarrior)
 {
 	//-------- general --------
 	name							=	"Ork-elita";
-	level							=	40;
+	level							=	50;
 
 	//-------- visual --------
 	Set_OrcElite_Visuals();
@@ -245,7 +248,8 @@ INSTANCE OrcElite1	(Mst_Default_OrcWarrior)
 
 	//-------- inventory --------
 	EquipItem 	(self, ItMw2hOrcSword02);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  8);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  8);	
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCELITE);
 	B_SetMonsterLevel();	
 };
 
@@ -276,7 +280,8 @@ INSTANCE OrcElite2	(Mst_Default_OrcWarrior)
 
 	//-------- inventory --------
 	EquipItem 	(self, ItMw2hOrcAxe03_2);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  14);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  13);	
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCGENERAL);
 	B_SetMonsterLevel();	
 };
 
@@ -304,6 +309,7 @@ INSTANCE OrcWarrior_2ndWave	(Mst_Default_OrcWarrior)
 
 	//-------- inventory --------
 	EquipItem (self, ItMw2hOrcaxe01);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
 };
 
 INSTANCE Orc1	(Mst_Default_OrcWarrior)
@@ -327,7 +333,7 @@ INSTANCE Orc1	(Mst_Default_OrcWarrior)
 
 	//-------- inventory --------
 	EquipItem (self, ItMw2hOrcaxe01);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 	B_SetMonsterLevel();	
 };
 
@@ -380,7 +386,7 @@ INSTANCE OrcElder	(Mst_Default_OrcWarrior)
 
 	//-------- inventory --------
 	EquipItem (self, ItMw2hOrcaxe01);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 	B_SetMonsterLevel();	
 };
 
@@ -410,7 +416,7 @@ INSTANCE OrcGen1	(Mst_Default_OrcWarrior)
 
 	//-------- inventory --------
 	EquipItem 	(self, ItMw2hOrcAxe03_2);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  14);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 	B_SetMonsterLevel();	
 };
 
@@ -438,7 +444,7 @@ INSTANCE OrcGen2	(Mst_Default_OrcWarrior)
 
 	//-------- inventory --------
 	EquipItem 	(self, ItMw2hOrcAxe03_2);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  14);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 	B_SetMonsterLevel();	
 };
 
@@ -467,7 +473,7 @@ INSTANCE OrcGen3	(Mst_Default_OrcWarrior)
 
 	//-------- inventory --------
 	EquipItem 	(self, ItMw2hOrcAxe03_2);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  14);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);		
 	B_SetMonsterLevel();	
 };
 

@@ -6,7 +6,6 @@ PROTOTYPE Mst_Default_Dirk(C_Npc)
 {
 	name							=	"Sztyletnik";
 	guild							=	GIL_SNAPPER;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_DIRK);
 	level							=	50;
 //--------------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	230;
@@ -69,8 +68,9 @@ INSTANCE Dirk (Mst_Default_Dirk)
 {
 	Set_Dirk_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);	
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  55);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  9);	
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  60);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_DIRK);
 	B_SetMonsterLevel();	
 };
 
@@ -137,8 +137,8 @@ INSTANCE Pacho_Monster (Mst_Default_Dirk)
 	name							=	"Potwór";	
 	Set_Dirk_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  55);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  55);
 	B_SetMonsterLevel();	
 	start_aistate				= ZS_MisDirk;
 	

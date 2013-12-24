@@ -6,7 +6,7 @@ PROTOTYPE Mst_Default_Bloodfly(C_Npc)
 {
 	name							=	"Krwiopijca";
 	guild							=	GIL_BLOODFLY;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_BLOODFLY);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_BLOODFLY);
 	level							=	7;
 //---------------------------------------------------------------	
 	attribute	[ATR_STRENGTH]		=	50;
@@ -70,8 +70,8 @@ INSTANCE Bloodfly	(Mst_Default_Bloodfly)
 	Set_Bloodfly_Visuals();
 	Npc_SetToFistMode(self);
 	
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  2);	
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  12);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  2);	
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  12);
 	B_SetMonsterLevel();
 };
 

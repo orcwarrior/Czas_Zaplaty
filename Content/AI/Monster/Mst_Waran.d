@@ -6,7 +6,6 @@ PROTOTYPE Mst_Default_Waran(C_Npc)
 {
 	name							=	"Jaszczur";
 	guild							=	GIL_WARAN;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_WARAN);
 	level							=	9;
 //---------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	65;
@@ -71,9 +70,10 @@ INSTANCE Waran	(Mst_Default_Waran)
 {
 	Set_Waran_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  2);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  15);
-	B_SetMonsterLevel();		
+	B_SetMonsterLevel();	
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_WARAN);	
 
 };
 

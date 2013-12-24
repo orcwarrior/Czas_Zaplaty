@@ -6,7 +6,7 @@ PROTOTYPE Mst_Default_FireWaran(C_Npc)
 {
 	name							=	"Ognisty jaszczur";
 	guild							=	GIL_WARAN;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_FIREWARAN);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_FIREWARAN);
 	level							=	25;
 //---------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	130;
@@ -20,7 +20,7 @@ PROTOTYPE Mst_Default_FireWaran(C_Npc)
 //---------------------------------------------------
 	protection	[PROT_BLUNT]		=	150;
 	protection	[PROT_EDGE]			=	150;
-	protection	[PROT_POINT]		=	150;
+	protection	[PROT_POINT]		=	170;
 	protection	[PROT_FIRE]			=	9999;
 	protection	[PROT_FLY]			=	30;
 	protection	[PROT_MAGIC]		=	20;
@@ -71,7 +71,7 @@ INSTANCE FireWaran	(Mst_Default_FireWaran)
 {
 	Set_FireWaran_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  85);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  8);
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  85);
 	B_SetMonsterLevel();
 };

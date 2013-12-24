@@ -65,8 +65,6 @@ func void ZS_AssessEnemy ()
 			B_DrawWeapon	(self,	other);
 			B_CallComrades	();			
 			AI_StartState	(self,	ZS_ProclaimAndPunish,	0,	"");
-			Npc_PercEnable   	(other, 	PERC_ASSESSDAMAGE 	,	B_HeroReactToDamage   	  	);	
-			
 			return;
 		}
 		else
@@ -96,14 +94,12 @@ func void ZS_AssessEnemy ()
 			{
 				B_DrawWeapon(self,	other);
 				AI_StartState(self,	ZS_ProclaimAndPunish,	0,	"");
-				Npc_PercEnable   	(other, 	PERC_ASSESSDAMAGE 	,	B_HeroReactToDamage   	  	);	
 				return;
 			}
 			else
 			{
 				Npc_SetTarget(self,	other);
 				AI_StartState(self,	ZS_Attack,	0,	"");
-				Npc_PercEnable   	(other, 	PERC_ASSESSDAMAGE 	,	B_HeroReactToDamage   	  	);	
 				return;
 			};
 		};

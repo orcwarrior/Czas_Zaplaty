@@ -12,7 +12,7 @@ PROTOTYPE Mst_Default_Wolf(C_Npc)
 {
 	name							=	"Wilk";
 	guild							=	GIL_WOLF;
- Npc_SetAivar(self,AIV_MM_REAL_ID,	 	ID_WOLF);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_WOLF);
 	level							=	10;
 //-----------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	55;
@@ -98,5 +98,6 @@ instance My_Wolf(Mst_Default_Wolf)
    Set_WolfPupil_Visuals();
 
    Mdl_SetModelScale(self, 1.2, 1.2, 1.2);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
    Npc_SetToFistMode(self);
 };

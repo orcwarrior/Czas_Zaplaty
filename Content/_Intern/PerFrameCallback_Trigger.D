@@ -143,10 +143,13 @@ func void F_PERFRAMETRIGGER()
 	FX_Cave();
 	FX_NecroLocation();
 	printdebug("PerFramMission_Funcs");
-	PerFramMission_Funcs();
-	printdebug("PerFrame: END OF F_PERFRAMETRIGGER");
+	PerFramMission_Funcs();	
 	
+	printdebug("PerFrame: Pre-setting next event value");
 	
 	//set trigger fire to next frame
 	trigger._zCVob_nextOnTimer = MEM_ReadInt(MEMINT_zTimer_Address+8);//MEM_Timer.totalTimeFloat; 
+	//Ork: To się jeszcze przyda, właczanie damage debug (wyswietla pieknie obrażenia itd.)
+	//MEM_WriteInt(10328188, 1); // oCNpc::DamageDebug (static)
+	printdebug("PerFrame: END OF F_PERFRAMETRIGGER");
 };

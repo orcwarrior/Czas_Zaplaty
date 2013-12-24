@@ -64,7 +64,7 @@ instance GreenGobboGarbus (Npc_Default)
 	name 		=	"Garbus";
 	npctype		= NPCTYPE_MAIN;
 	guild 		=	GIL_GOBBO;
-	Npc_SetAivar(self,AIV_MM_REAL_ID,	 	ID_GOBBO);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	 	ID_GOBBOSWORD);
 	level 		=  	50;
 	voice 		=  	11;
 	id 			=   2002;
@@ -132,6 +132,7 @@ instance GreenGobboGarbus (Npc_Default)
 	CreateInvItems (self,ItAt_GobKosc,1);
 	B_CreateGobboInv();
  	Mdl_SetModelScale(self,1.2,1.2,1.2);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 	
 	/********************************
 	Ork nie dawa³em rutyn,daj mi jakiegoœ ZS - znaczy zrób jakiegoœ ;P

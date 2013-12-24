@@ -6,7 +6,7 @@ PROTOTYPE Mst_Default_DemonLord(C_Npc)
 {
 	name							=	"Ksi¹¿e demonów";
 	guild							=	GIL_DEMON;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_DEMONLORD);
+	Npc_SetAivar(self,AIV_MM_REAL_ID, 	ID_DEMONLORD);
 	level							=	100;
 //--------------------------------------------------------	
 	attribute	[ATR_STRENGTH]		=	240;
@@ -82,8 +82,8 @@ INSTANCE DemonLord	(Mst_Default_DemonLord)
 {
 	Set_DemonLord_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  21);
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  160);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  160);
 	B_SetMonsterLevel();	
 };
 
@@ -93,7 +93,7 @@ INSTANCE DemonPsi (Mst_Default_DemonLord)
 	Npc_SetToFistMode(self);
 	B_SetMonsterLevel();	
 	damagetype 						=	DAM_MAGIC;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_DEMONPSI);
+	Npc_SetAivar(self,AIV_MM_REAL_ID, 	ID_DEMONPSI);
 	attribute	[ATR_STRENGTH]		=	230;
 	protection	[PROT_BLUNT]		=	83;
 	protection	[PROT_EDGE]			=	80;

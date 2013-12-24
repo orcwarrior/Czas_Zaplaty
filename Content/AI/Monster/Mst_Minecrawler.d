@@ -6,7 +6,7 @@ PROTOTYPE Mst_Default_Minecrawler(C_Npc)
 {
 	name							=	"Pe³zacz";
 	guild							=	GIL_MINECRAWLER;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_MINECRAWLER);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_MINECRAWLER);
 	level							=	16;
 //------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	125;
@@ -76,8 +76,8 @@ INSTANCE Minecrawler	(Mst_Default_Minecrawler)
 {
 	Set_Minecrawler_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  2);
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  25);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  25);
 	B_SetMonsterLevel();	
 };
 
@@ -86,7 +86,7 @@ INSTANCE Spider	(Mst_Default_Minecrawler)
 	Set_Spider_Visuals();
 	Npc_SetToFistMode(self);
 	 Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  2);
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  25);
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  25);
 	name							=	"Pajêczak";
 	B_SetMonsterLevel();	
 };

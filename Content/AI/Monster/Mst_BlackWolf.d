@@ -8,7 +8,6 @@ Trzeba mu tylko teksturê dorobiæ
 instance BlackWolf (Mst_Default_Wolf)
 {
 	name 				= 	"Czarny wilk";
-
 	level				=	14;
 
 	attribute	[ATR_STRENGTH]		=	80;
@@ -28,12 +27,13 @@ instance BlackWolf (Mst_Default_Wolf)
 	Mdl_SetVisualBody		(self,	"Wol_Body",		2,	DEFAULT,	"",			DEFAULT,  	DEFAULT,	-1);
 	Mdl_SetModelScale(self, 1.1, 1.1, 1.1);
 	Npc_SetToFistMode(self);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_BLACKWOLF);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);	
 };
 
 instance BlackWolfBoss (Mst_Default_Wolf)
 {
 	name 				= 	"Przywódca stada";
-
 	level				=	20;
 
 	attribute	[ATR_STRENGTH]		=	90;
@@ -51,4 +51,6 @@ instance BlackWolfBoss (Mst_Default_Wolf)
 
 	Mdl_SetModelScale(self, 1.2, 1.2, 1.2);
 	Npc_SetToFistMode(self);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_BLACKWOLFBOSS);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 };

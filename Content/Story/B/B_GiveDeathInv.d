@@ -131,8 +131,10 @@ func void B_GiveDeathInv ()
 	{
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_FIREWARAN)			{	CreateInvItems(self,ItAt_FWaranTongue,	1);	};	//Zunge eines Feuerwarans
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_WARAN)				{	CreateInvItems(self,ItAt_WaranTongue,1);	};
-		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_DRACONIAN)			{	CreateInvItems(self,ItAt_DraconianTongue,1);	};
-		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_DEMON)			{	CreateInvItems(self,ItAt_DemonTongue,1);	};
+		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_DRACONIANSCOUT
+		||  Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_DRACONIANSOLIDER
+		||  Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_DRACONIANOFFICER) 	{	CreateInvItems(self,ItAt_DraconianTongue,1);	};
+		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_DEMON)				{	CreateInvItems(self,ItAt_DemonTongue,1);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_DEMONLORD)			{	CreateInvItems(self,ItAt_DemonLordTongue,1);	};
 	};	
    

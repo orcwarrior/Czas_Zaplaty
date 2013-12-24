@@ -6,7 +6,6 @@ PROTOTYPE Mst_Default_OrcScout(C_Npc)
 {
 	name							=	"Ork-myœliwy";
 	guild							=	GIL_ORCSCOUT;
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_ORC);	
 	npctype							=	NPCTYPE_GUARD;
 	voice							=	17;
 	level							=	22;
@@ -80,9 +79,10 @@ INSTANCE OrcScout (Mst_Default_OrcScout)
 	EquipItem 				(self, ItMw2hOrcSword01);
 	//EquipItem				(self, ItRw_Crossbow_01);
 	//CreateInvItems			(self,	ItAmBolt,	30);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
 	B_SetMonsterLevel();
 	spawnDelay					= 150;
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCSCOUT);	
 
 };
 
@@ -103,7 +103,8 @@ INSTANCE OrcPeasantEatAndDrink (Mst_Default_OrcScout)
 
 	//-------- ai --------
 	start_aistate	= ZS_Orc_EatAndDrink;
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORC);
 	B_SetMonsterLevel();	
 
 };
@@ -117,25 +118,32 @@ INSTANCE OrcPeasantEatAndDrink (Mst_Default_OrcScout)
 INSTANCE OrcScoutGYD (Mst_Default_OrcScout)
 {
 	name						=	"Ork-zwiadowca";
-	level						=	17;
+	level						=	30;
 
-	attribute	[ATR_STRENGTH]		=	35;  //+90
+	attribute	[ATR_STRENGTH]		=	150;  //+90
 
- Npc_SetAivar(self,AIV_MM_PercRange,			1500);
- Npc_SetAivar(self,AIV_MM_DrohRange,			1200);
- Npc_SetAivar(self,AIV_MM_AttackRange,		1000);
- Npc_SetAivar(self,AIV_MM_DrohTime,			0);
- Npc_SetAivar(self,AIV_MM_FollowTime,		10);
+	Npc_SetAivar(self,AIV_MM_PercRange,		1500);
+	Npc_SetAivar(self,AIV_MM_DrohRange,		1200);
+	Npc_SetAivar(self,AIV_MM_AttackRange,	1000);
+	Npc_SetAivar(self,AIV_MM_DrohTime,		0);
+	Npc_SetAivar(self,AIV_MM_FollowTime,	10);
 
 	start_aistate				=	ZS_GuardPatrol;		// Monster-AI
 	Npc_SetAivar(self,AIV_MM_RoamStart,	OnlyRoutine);
 
 	Set_OrcScout_Visuals	();
 	EquipItem 				(self, ItMw2hOrcSword01);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
-	B_SetMonsterLevel();	
-	
-		spawnDelay					= 250;
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  9);	
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCSCOUTGYD);
+//----------------------------------------------------------	
+	protection	[PROT_BLUNT]		=	65;
+	protection	[PROT_EDGE]			=	65;
+	protection	[PROT_POINT]		=	35;
+	protection	[PROT_FIRE]			=	35;
+	protection	[PROT_FLY]			=	10;
+	protection	[PROT_MAGIC]		=	30;
+	B_SetMonsterLevel();		
+	spawnDelay					= 250;
 
 };
 

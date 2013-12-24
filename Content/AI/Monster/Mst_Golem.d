@@ -7,7 +7,7 @@ PROTOTYPE Mst_Default_Golem(C_Npc)
 	name							=	"Golem";
 	guild							=	GIL_GOLEM;
 	// REAL_ID in Instanzen !!!
-	level							=	100;
+	level							=	50;
 //--------------------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	200;
 	attribute	[ATR_DEXTERITY]		=	150;
@@ -97,16 +97,17 @@ func void Set_CH4Golem_Visuals()
 INSTANCE StoneGolem	(Mst_Default_Golem)
 {
 	name	=	"Kamienny golem";
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_STONEGOLEM);
-	protection	[PROT_BLUNT]		=	70;
+	Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_STONEGOLEM);
+	protection	[PROT_BLUNT]		=	90;
+	attribute	[ATR_STRENGTH]		=	300;
 //--------------------------------------------
 	attribute	[ATR_HITPOINTS_MAX]	=	800;
 	attribute	[ATR_HITPOINTS]		=	800;
 
 	Set_StoneGolem_Visuals();
 	Npc_SetToFistMode	(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  175);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  175);
 	//B_SetMonsterLevel();	
 };
 
@@ -119,7 +120,7 @@ INSTANCE SummonedByPC_StoneGolem (Mst_Default_Golem)
 {
 	//-------- general --------
 	name	=	"Golem";
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_STONEGOLEM);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_STONEGOLEM);
 
 	//-------- visual --------
 	Set_StoneGolem_Visuals();
@@ -139,8 +140,8 @@ INSTANCE SummonedByPC_StoneGolem (Mst_Default_Golem)
 	Npc_SetAivar(self,AIV_MM_DistToMaster,  400);
 	Npc_SetAivar(self,AIV_MM_TimeLooseHP, 	 2);
 	Party_AddNpc(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  165);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  165);
 	//B_SetMonsterLevel();	
 };
 
@@ -148,7 +149,7 @@ INSTANCE SummonedByNPC_StoneGolem (Mst_Default_Golem)
 {
 	//-------- general --------
 	name	=	"Kamienny golem";
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_STONEGOLEM);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,ID_STONEGOLEM);
 
 	//-------- visual --------
 	Set_StoneGolem_Visuals();
@@ -162,8 +163,8 @@ INSTANCE SummonedByNPC_StoneGolem (Mst_Default_Golem)
 	
 	//-------- ai --------
 	start_aistate					= ZS_MM_Summoned;
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  165);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  165);
 	//B_SetMonsterLevel();		
 };
 
@@ -175,14 +176,15 @@ INSTANCE FireGolem	(Mst_Default_Golem)
 {
 	//-------- general --------
 	name	=	"Ognisty golem";
-	Npc_SetAivar(self,AIV_MM_REAL_ID,	 	ID_FIREGOLEM);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	 ID_FIREGOLEM);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
 
 	//-------- visual --------
 	Set_FireGolem_Visuals();
 	Npc_SetToFistMode(self);
 
 	//-------- attributes --------
-	attribute	[ATR_STRENGTH]		=	50;	// da Feuerschaden
+	attribute	[ATR_STRENGTH]		=	80;	// da Feuerschaden
 	protection	[PROT_MAGIC]		=	0;	// betrifft im wesentlichen die Blitz- und Eiszauber
 	attribute	[ATR_HITPOINTS_MAX]	=	650;// da er nur durch Blitz- und Eiszauber verwundbar ist, muﬂ dieser Wert hier sehr viel niedriger sein 
 	attribute	[ATR_HITPOINTS]		=	650;
@@ -200,7 +202,8 @@ INSTANCE MD_FireGolem	(Mst_Default_Golem)
 {
 	//-------- general --------
 	name	=	"Ognisty golem";
- Npc_SetAivar(self,AIV_MM_REAL_ID,	 	ID_FIREGOLEM);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	 	ID_FIREGOLEM);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
 
 	//-------- visual --------
 	Set_FireGolem_Visuals();
@@ -236,7 +239,7 @@ INSTANCE Lesser_firegolem	(Mst_Default_Golem)
 	damagetype 						=	DAM_FIRE;
 
 	//-------- inventory --------
-	level = 20;
+	level = 30;
 	//-------- ai --------
 	//B_SetMonsterLevel();	
 };
@@ -248,7 +251,8 @@ INSTANCE IceGolem	(Mst_Default_Golem)
 {
 	//-------- general --------
 	name	=	"Lodowy golem";
- Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_ICEGOLEM);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,ID_ICEGOLEM);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
 
 	//-------- visual --------
 	Set_IceGolem_Visuals();
@@ -259,7 +263,7 @@ INSTANCE IceGolem	(Mst_Default_Golem)
 	attribute	[ATR_MANA] 			=	500;
 	attribute	[ATR_HITPOINTS_MAX]	=	650;	// da er nur durch Feuerschaden verwundbar
 	attribute	[ATR_HITPOINTS]		=	650;
-	protection	[PROT_FIRE]			=	0;
+	protection	[PROT_FIRE]			=	1;
 	damagetype 						=	DAM_BLUNT;
 
 	//-------- inventory --------
@@ -280,7 +284,7 @@ INSTANCE BridgeGolem	(Mst_Default_Golem)
 {
 	//-------- general --------
 	name	=	"Golem mostowy";
-	level	=	40;
+	level	=	25;
 
 	//-------- visuals --------
 	Set_StoneGolem_Visuals();
@@ -295,8 +299,8 @@ INSTANCE BridgeGolem	(Mst_Default_Golem)
 	attribute	[ATR_HITPOINTS]		=	450;
 
 	protection	[PROT_BLUNT]		=	60;
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  85);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  85);
 	//B_SetMonsterLevel();	
 };
 INSTANCE Guard_Golem	(Mst_Default_Golem)
@@ -344,8 +348,8 @@ INSTANCE TheBeast	(Mst_Default_Golem)
 
 	protection	[PROT_BLUNT]		=	30;
 	start_aistate					= ZS_MM_SleepingGuardian;	
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  40);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  40);
 	//B_SetMonsterLevel();	
 };
 
@@ -435,14 +439,15 @@ INSTANCE SwampGolem	(Mst_Default_Golem)
 	Npc_SetToFistMode(self);
 
 	//-------- attributes --------
-	attribute	[ATR_STRENGTH]		=	100;
+	attribute	[ATR_STRENGTH]		=	110;
 	attribute	[ATR_DEXTERITY]		=	70;
 	
 	attribute	[ATR_HITPOINTS_MAX]	=	350;
 	attribute	[ATR_HITPOINTS]		=	350;
 
 	protection	[PROT_EDGE]		=	100;
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  85);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  10);
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  85);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,  999);
 	//B_SetMonsterLevel();	
 };

@@ -350,16 +350,14 @@ FUNC VOID B_ASSESSMAGIC()
 	//send multicast magic freeze
 	
 	//Who's using runesword?
+	printdebug(concatstrings("AssesMagic casted by ",other.name));
+
 	VAR C_NPC user;
 	user=HLP_GETNPC(RuneSwd_User);
-	//PRINTGlobals(PD_MAGIC);
-	////PrintDebugNpc(PD_MAGIC,"B_AssessMagic");
-	
 	//Warn: Right now only hero can "use" RuneSwd
 	//partially fixed
 	VAR C_ITEM READYWEAP;
 	READYWEAP=NPC_GETREADIEDWEAPON(user);
-	printdebug(concatstrings("AssesMagic casted by ",other.name));
 	//pri/nt("ASSESS MAGIC => INITED ### @@@@");
 	if (
 			(

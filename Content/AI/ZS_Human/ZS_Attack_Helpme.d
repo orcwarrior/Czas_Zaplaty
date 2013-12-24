@@ -6,8 +6,7 @@ func void ZS_Attack_Helpme ()
 	{
 		// add_CollPool(self);	
 		DailyHello_HeroAttackersCnt += 1;
-		Npc_PercEnable   	(other, 	PERC_ASSESSDAMAGE 	,	B_HeroReactToDamage   	  	);	
-	};
+		};
 
 	////////////////////////////////////////////////////////////////////////////
 	//////PrintDebugNpc		(PD_ZS_FRAME, "ZS_Attack_Helpme" );		

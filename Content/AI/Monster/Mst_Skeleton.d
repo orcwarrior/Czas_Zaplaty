@@ -205,11 +205,11 @@ func void Set_SkeletonMage_Visuals()
 
 INSTANCE Skeleton			(Mst_Default_Skeleton)
 {
- Npc_SetAivar(self,AIV_MM_REAL_ID,	 	ID_SKELETON);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	 	ID_SKELETON);
 	Set_Skeleton_Visuals();
 	Npc_SetToFightMode		(self, ItMw_1H_Sword_Old_01);
 	CreateInvItems (self, ItAt_Kosc, 1);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 	B_SetMonsterLevel();
 	
 };
@@ -220,7 +220,8 @@ INSTANCE Skeleton			(Mst_Default_Skeleton)
 
 INSTANCE SkeletonSH			(Mst_Default_Skeleton)
 {
- Npc_SetAivar(self,AIV_MM_REAL_ID,	 	ID_SKELETON);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	 	ID_SKELETON);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 	Set_Skeleton_Visuals();
 	Npc_SetToFightMode		(self, ItMw_1H_Axe_Old_01);
 
@@ -237,7 +238,6 @@ INSTANCE SkeletonSH			(Mst_Default_Skeleton)
  Npc_SetAivar(self,AIV_MM_FollowTime,	 5);
  Npc_SetAivar(self,AIV_MM_FollowInWater,  FALSE);
 	CreateInvItems (self, ItAt_Kosc, 1);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 	B_SetMonsterLevel();
 	
 };
@@ -328,7 +328,7 @@ INSTANCE  SkeletonMDIntroduceDuals	(Mst_Default_SkeletonWarrior)
 	attribute	[ATR_HITPOINTS_MAX]	=	550;
 	attribute	[ATR_HITPOINTS]		=	550;
 	attribute	[ATR_STRENGTH]		=	150;//Balance-Fix(200)
- Npc_SetAivar(self,AIV_MM_REAL_ID,	 	ID_SKELETONWARRIOR);
+	Npc_SetAivar(self,AIV_MM_REAL_ID,	 	ID_SKELETONWARRIOR);
 
 	EquipItem		(self, ItMw_Dual_01_Right);
 	Npc_SetTalentSkill(self,NPC_TALENT_2H,3); 
@@ -338,7 +338,7 @@ INSTANCE  SkeletonMDIntroduceDuals	(Mst_Default_SkeletonWarrior)
 	attribute[ATR_STRENGTH] = attribute[ATR_STRENGTH] + 70; //SN: da Waffe nicht zum Schaden addiert wird!
 	CreateInvItems (self, ItAt_Kosc, 1);
 	CreateInvItem     (self, ItMw_Dual_01_Left );
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 	B_SetMonsterLevel();	
 	
 };
@@ -355,7 +355,8 @@ INSTANCE SkeletonDual1(Mst_Default_SkeletonWarrior)
 	Npc_SetTalentSkill(self,NPC_TALENT_2H,3); 
 	Mdl_ApplyOverlayMds 	(self,	"humans_2hst3.mds");
 	start_aistate	=	ZS_MM_DualEquip;
-
+	
+	fight_tactic =			FAI_HUMAN_MASTER;
 	CreateInvItems (self, ItAt_Kosc, 1);
 	CreateInvItem     (self, ItMw_Dual_01_Left );
  Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
