@@ -162,6 +162,7 @@ FUNC VOID DIA_Necro_Second_Swd()
 		***********************/
 	place_change = place_change + 1;
 	Npc_ExchangeRoutine (self, "next_place");
+	Rick_death = true;
 	//AI_StartState(self,ZS_NekroTP,1,"");
 	
 	/************************
@@ -171,12 +172,6 @@ FUNC VOID DIA_Necro_Second_Swd()
 	//dick_end ();
 };
 
-
-
-// [POPRAWKI DIALOGÓW]: To zaczynamy tutaj, ten dialog nie ma rozpoczynaæ próby, 
-// próba ma siê dziaæ w NECROLOC.ZEN. Dialog trzeba podzieliæ na 2 czêsci w tej tutaj,
-// nekro ma dawaæ tylko runê teleportacji i zapodaæ tipa ze jesli chcemy siê podj¹æ próby
-// to widzimy siê u niego na chacie :)
 FUNC VOID DIA_Necro_Second_Learn()
 {
 	AI_Output (other, self, "DIA_Necro_Second_Learn_15_01"); //Zechcesz zostaæ moim mistrzem?
@@ -188,27 +183,17 @@ FUNC VOID DIA_Necro_Second_Learn()
 	AI_Output (self, other, "DIA_Necro_Second_Learn_11_07"); //Przyda³by mi siê s³u¿¹cy, narzêdzie gotowe wype³niæ m¹ wolê.
 	AI_Output (self, other, "DIA_Necro_Second_Learn_11_08"); //Dobrze wiêc, uczyniê Ci ten zaszczyt. Ale najpierw musisz przejœæ Próbê Mroku, aby dowieœæ swej wartoœci.
 	AI_Output (other, self, "DIA_Necro_Second_Learn_15_09"); //Co to za próba, Panie?
-	AI_Output (self, other, "DIA_Necro_Second_Learn_11_10"); //Tylko ktoœ kto potrafi zabiæ swoje w³asne jestestwo mo¿e staæ siê czar¹ Beliara.
-	AI_Output (other, self, "DIA_Necro_Second_Learn_15_11"); //Jestem gotów.
-	AI_Output (self, other, "DIA_Necro_Second_Learn_11_12"); //Zmierz siê wiêc z samym sob¹, ze swoj¹ si³¹ i s³aboœci¹ aby staæ siê Dzieckiem Ciemnoœci!
+	AI_Output (self, other, "DIA_Necro_Second_Learn_11_10"); //Dowiesz siê w swoim czasie. WeŸ tê runê. Mam nadziejê, ¿e wiesz, co masz z ni¹ zrobiæ...
+	AI_Output (self, other, "DIA_Necro_Second_Learn_11_11"); //A na razie, ¿egnaj!
 
 	//Ork: To chyba zostaje:
-	B_LogEntry(CH4_Nec_BM, "Aby zdobyæ zaufanie nekromanty muszê odbyæ Próbê Mroku.");
+	B_LogEntry(CH4_Nec_BM, "Aby zdobyæ zaufanie nekromanty muszê odbyæ Próbê Mroku. Na razie dosta³em runê? Ciekawe, dok¹d mnie ona doprowadzi?");
 	B_StopProcessInfos(self);
 	place_change = place_change + 1; //Ork: NIE WIEM CO TO ZA ZMIENNA? ZOSTAWIAM NARAZIE TUTAJ
 	Npc_ExchangeRoutine (self, "next_place");//Ork: Dodaje ju¿ runê tutaj, ale dialogów nie tykam :)
 	Create_and_give(ItArRuneTeleportToNecroloc, 1);
-	
-	//AI_StartState(self,ZS_NekroTP,1,"");
-	//TODO
-	//dick_trial ();
 };
 
-
-// [POPRAWKI DIALOGÓW]: W zwiazku z powyzszymi za³o¿eniami, tutaj tworze narazie pusty dialog
-//  Rozmowy przed prób¹ ale ju¿ w necroloc.zen, ogólem zak³adam zeby w tym dialogu nekro ³adnie sie wita³
-//  z Rickiem, no a ¿e po dialogu pojawia sie dialog rozpoczynaj¹cy próbê mroku(?) to wrzuci³bym tu j¹kaœ linie odnosnie tego
-// (Kiedy bêdziesz gotów rozpoczniemy twój¹ próbe ..bleblebel..)
 INSTANCE DIA_Necro_GreetInNecroloc(C_INFO)
 {
 	npc				= DMB_1701_NecroInNecroloc;//Ork: zrobione
@@ -237,14 +222,11 @@ FUNC VOID DIA_Necro_GreetInNecroloc_Info()
 		AI_SetWalkmode(self,NPC_WALK);
 		AI_GotoNpc(self,other);
 	};
-	AI_Output (self, other, "DIA_Necro_GreetInNecroloc_11_01"); //Lorem ipsum.
-	AI_Output (other, self, "DIA_Necro_GreetInNecroloc_15_02"); //Loorem ipsum.
-	AI_Output (self, other, "DIA_Necro_GreetInNecroloc_11_03"); //Loorem ipsum.	
+	AI_Output (self, other, "DIA_Necro_GreetInNecroloc_11_01"); //Na Beliara! Jednak odwa¿y³eœ siê do mnie teleportowaæ!
+	AI_Output (other, self, "DIA_Necro_GreetInNecroloc_15_02"); //Bo chcê wszystko robiæ ku chwalê Beliara, mój panie!
+	AI_Output (self, other, "DIA_Necro_GreetInNecroloc_11_03"); //Dobrze, bardzo dobrze. Daj znaæ, gdy tylko bêdziesz gotowy, aby rozpocz¹æ próbê!
 };
-// [POPRAWKI DIALOGÓW]: W zwiazku z powyzszymi za³o¿eniami, tutaj tworze narazie pusty dialog
-//  Rozmowy przed prób¹ ale ju¿ w necroloc.zen, ogólem zak³adam zeby w tym dialogu nekro ³adnie sie wita³
-//  z Rickiem, no a ¿e po dialogu pojawia sie dialog rozpoczynaj¹cy próbê mroku(?) to wrzuci³bym tu j¹kaœ linie odnosnie tego
-// (Kiedy bêdziesz gotów rozpoczniemy twój¹ próbe ..bleblebel..)
+
 INSTANCE DIA_Necro_ReadyForTest(C_INFO)
 {
 	npc				= DMB_1701_NecroInNecroloc;//Ork: zrobione
@@ -267,12 +249,13 @@ FUNC INT DIA_Necro_ReadyForTest_Condition()
 FUNC VOID DIA_Necro_ReadyForTest_Info()
 {
 	AI_Output (other, self, "DIA_Necro_ReadyForTest_15_01"); //Jestem gotów byœ podda³ mnie próbie.
-	AI_Output (self, other, "DIA_Necro_ReadyForTest_11_02"); //Lorem ipsum.
-	AI_Output (other, self, "DIA_Necro_ReadyForTest_15_03"); //Loorem ipsum.
-	AI_Output (self, other, "DIA_Necro_ReadyForTest_11_04"); //Loorem ipsum.
+   AI_Output (other, self, "DIA_Necro_ReadyForTest_11_02"); //Co to za próba, Panie?
+	AI_Output (self, other, "DIA_Necro_ReadyForTest_11_03"); //Tylko ktoœ kto potrafi zabiæ swoje w³asne jestestwo mo¿e staæ siê czar¹ Beliara.
+	AI_Output (other, self, "DIA_Necro_ReadyForTest_11_04"); //Jestem gotów.
+	AI_Output (self, other, "DIA_Necro_ReadyForTest_11_05"); //Zmierz siê wiêc z samym sob¹, ze swoj¹ si³¹ i s³aboœci¹ aby staæ siê Dzieckiem Ciemnoœci!
 	
-   	Log_CreateTopic	(CH4_Nec_Trial, LOG_MISSION);
-	Log_SetTopicStatus	(CH4_Nec_Trial, LOG_RUNNING);
+   Log_CreateTopic(CH4_Nec_Trial, LOG_MISSION);
+	Log_SetTopicStatus(CH4_Nec_Trial, LOG_RUNNING);
 	B_LogEntry(CH4_Nec_Trial, "Nekromanta podda³ mnie Próbie Mroku. Muszê zmierzyæ siê z... samym sob¹.");
 	B_LogEntry(CH4_Nec_BM, "Aby zdobyæ zaufanie nekromanty muszê odbyæ Próbê Mroku.");
 	B_StopProcessInfos(self);
@@ -289,16 +272,12 @@ FUNC VOID DIA_Necro_ReadyForTest_Info()
 		***********************/
 	Wld_PlayEffect("spellFX_INCOVATION_RED", self, self, 1, 0, DAM_MAGIC, FALSE);
 	Wld_InsertNpc (PC_Hero_AlterEgo, "ESCAPE_MIDDLE2");
-  	
 };
-
 
 /*********************
 Po próbie
 *********************/
 
-
-// [POPRAWKI DIALOGÓW]: Ten dialog teraz jest juz w necroloc.zen, wiêc musi byc poprawiony npc
 INSTANCE DIA_Necro_Trial(C_INFO)
 {
 	npc				= DMB_1701_NecroInNecroloc;//Ork: zrobione
@@ -333,11 +312,6 @@ FUNC VOID DIA_Necro_Trial_Info()
 	AI_GotoNpc(other,self);
 	AI_Output (self, other, "DIA_Necro_Trial_11_01"); //¯yjesz. Beliar Ci sprzyja³. Dowiod³eœ, ¿eœ wart bym uczyni³ Ciê swym narzêdziem.
 	AI_Output (other, self, "DIA_Necro_Trial_15_02"); //To dla mnie zaszczyt, mistrzu.
-	AI_Output (self, other, "DIA_Necro_Trial_11_03"); //Przyjmij tê runê. Teleportuje Ciê do mnie, gdy zajdzie taka potrzeba.
-   
-   //Ork: Rune zapodaje wczesniej.
-   //Create_and_give(ItArRuneTeleportToNecroloc, 1);
-
 	AI_Output (self, other, "DIA_Necro_Trial_11_04"); //Czas rozpocz¹æ naukê i lepiej, ¿ebyœ mnie nie zawiód³!
 
 	Log_SetTopicStatus	(CH4_Nec_Trial, LOG_SUCCESS);
@@ -347,7 +321,6 @@ FUNC VOID DIA_Necro_Trial_Info()
 	Log_CreateTopic	(CH4_Nec_Master, LOG_MISSION);
 	Log_SetTopicStatus	(CH4_Nec_Master, LOG_RUNNING);
 	B_LogEntry(CH4_Nec_Master, "Zosta³em uczniem nekromanty! Muszê to dobrze wykorzystaæ. Powinienem poznaæ mo¿liwie du¿o tajników nekromancji, kto wie czy nie przydadz¹ mi siê kiedyœ w s³usznej sprawie?");
-
 };
 
 // **************************************************
@@ -472,8 +445,7 @@ FUNC VOID DIA_Necro_Swd_Show()
 	AI_Output (other, self, "DIA_Necro_Swd_Show_15_08"); //Nie!
 	
    B_StopProcessInfos	(self);
-	AI_PlayAni		(hero,	"T_PSI_VICTIM");
-	Npc_ChangeAttribute	(hero, ATR_HITPOINTS, -hero.attribute[ATR_HITPOINTS_MAX]);
+	Rick_death = true;
 };
 
 // ---------------------------Tell----------------------------------------
@@ -486,7 +458,7 @@ FUNC VOID DIA_Necro_Swd_Tell()
 	AI_Output (self, other, "DIA_Necro_Swd_Tell_11_04"); //Tak, bêdziesz doskona³ym narzêdziem. Przynieœ mi ten miecz, tylko ja wiem jak tchn¹æ w martw¹ stal potêgê bogów.
 	AI_Output (self, other, "DIA_Necro_Swd_Tell_11_05"); //Muszê rozejrzeæ siê w bibliotece za tym cholernym almanachem...
 	AI_Output (self, other, "DIA_Necro_Swd_Tell_11_06"); //Na co czekasz! IdŸ wype³niæ wolê swego Pana.
-	AI_Output (other, self, "DIA_Necro_Swd_Tell_15_07"); //Jak rozka¿esz, Mistrzu.
+	AI_Output (other, self, "DIA_Necro_Swd_Tell_15_07"); //Jak rozka¿esz, mistrzu.
 	
    B_LogEntry(CH4_GRD_RuneSwd, "Nekromanta wspomnia³ coœ o almanachu w jego bibliotece. Powinienem siê tam rozejrzeæ.");
 	B_LogEntry(CH4_Nec_BM, "Ten Nekromanta to skoñczony dureñ! Jak na razie dobrze odegra³em swoj¹ rolê. Mam mu przynieœæ miecz runiczny - to sobie trochê poczeka. Ten stary cap wspomnia³ coœ o almanachu w swojej bibliotece - chyba powinienem zwiedziæ te cuchn¹ce katakumby.");

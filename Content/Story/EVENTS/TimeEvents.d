@@ -638,6 +638,14 @@ FUNC VOID B_Trigger_CheckMissions()
 		Saturas_saves_Rick = false;
 	};
    
+   if (Rick_death && InfoManager_HasFinished())
+   {
+      AI_PlayAni(hero, "T_PSI_VICTIM");
+      Npc_ChangeAttribute(hero, ATR_HITPOINTS, -hero.attribute[ATR_HITPOINTS_MAX]);
+      
+      Rick_death = false;
+   };
+   
    if ((Saturas_saves_Rick == 2) && InfoManager_HasFinished())
 	{
 		AI_Teleport  (hero, "LOCATION_19_03_ROOM6_BARRELCHAMBER2");
