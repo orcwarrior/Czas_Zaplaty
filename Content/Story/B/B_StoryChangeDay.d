@@ -161,8 +161,9 @@ func void b_setday()
 
 func void b_settodayevents()
 {
+	return;
 	var int rnd;
-//TEMPORARY OFF
+	//TEMPORARY OFF
 	if (last_atak+2+Hlp_Random(4)!=999/*>=Wld_GetDay()*/)&&(!TODAY_ARE_CHALLENGE)&&(Kapitel>3)
 	{
 		TODAY_ARE_CHALLENGE = FALSE;

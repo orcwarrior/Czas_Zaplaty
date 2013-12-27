@@ -135,6 +135,7 @@ const int  oCNpc__DoDie_offset = 6894752;//6934A0 (ocNpc attacker)
 const int  oCNpc__StartFadingAway_offset = 6895984;//0x693970 (void)
 const int  oCNpc__ClearEM_offset = 6956560;//0x6A2610 (void)
 const int  oCNpc__EV_Parade_offset = 6998192;//0x6AC8B0 (csg)
+const int  oCNpcInventory__ClearInventory_offset = 6732880;//0x66BC50 (csg)
 
 const int  oCNpc__DropUnconscious_offset = 6892560;//692C10 (float azi,ocNpc attacker)
                     

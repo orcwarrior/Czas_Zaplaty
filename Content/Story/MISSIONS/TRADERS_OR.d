@@ -120,6 +120,9 @@ instance Drax_Container(Npc_Default)
 	CreateInvItem(self,ItRw_Bow_Long_01);	
 	CreateInvItem(self,ItRw_Crossbow_01);	
 	CreateInvItem(self,ItRw_Crossbow_Old_01);	
+	
+	flags = NPC_FLAG_IMMORTAL;
+	Mdl_SetVisual			(self,	"Meatbug.mds");
 					
 };
 //-----------------------------------------------------------------
@@ -180,11 +183,21 @@ func void  HUN_819_Drax_TRADE_Info()
    
 	if(!Drax_TradeInvGiven)
 	{
+	  printdebug("TRADER: Drax Inv not given");
       var c_npc container; container = HLP_GetNpc(Drax_Container);
-      B_ClearTraderInv(container,self);		
+	  if(!Hlp_IsValidNpc(container))
+	  {
+		printdebug("TRADER: Container not vailid Inv not given");
+		Wld_InsertNpc(Drax_Container,	"INVISIBLE");	
+		container = HLP_GetNpc(Drax_Container);
+	  };
+	  printdebug("TRADER: container => drax ..giving");
+	  //Ork: To mo¿e troche pomóc z lagujacym handlem
+      B_GiveAllInventory(container,self);		
 	};
    
 	Drax_TradeInvGiven=TRUE;
+	printdebug("TRADER: Erase trade multipiler");
 	Trade_EraseValue();
 	Trade_WEAPON_Mul	= mulf(Trade_ALL_Mul,1041865113);//0.15*
 };
