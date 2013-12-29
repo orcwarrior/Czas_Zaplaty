@@ -600,7 +600,7 @@ FUNC VOID Info_Kira_HuntFinish_Info()
 	B_ExchangeRoutine(tab,"START");
 	B_ExchangeRoutine(buk,"START");
 	B_ExchangeRoutine(pos,"START");
-	B_ExchangeRoutine(kor,"START");
+	B_ExchangeRoutine(kor,"PreStart");
 	B_ExchangeRoutine(sno,"START");
 	B_ExchangeRoutine(kro,"START");
 	B_ExchangeRoutine(nik,"START");
