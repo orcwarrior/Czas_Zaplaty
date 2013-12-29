@@ -131,3 +131,13 @@ func void B_unequip_current_mweapon_hero(var int instanceName)
       AI_UnequipWeapons(hero);
    };
 };
+
+func void B_equipment_to_OC()
+{
+   equipment_to_OC += 1;
+
+	if (equipment_to_OC == 2)
+	{
+		B_LogEntry(CH3_RBL_OldCampSpy, "Najwy¿szy czas pójœæ do pó³nocnej bramy i sprawdziæ czy trunek od Piwosza poskutkuje, a zbroja siê do czegoœ przyda...");
+	};
+};

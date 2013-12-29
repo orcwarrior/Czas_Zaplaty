@@ -78,11 +78,11 @@ FUNC VOID DIA_Urt_Hello_Info()
 	AI_Output (self, other, "DIA_Urt_Hello_11_06"); //W koñcu to Twoje ¿ycie. WeŸ tê, œlady krwi ju¿ prawie zasch³y.
 	AI_Output (self, other, "DIA_Urt_Hello_11_07"); //WyobraŸ sobie, ¿e dureñ, który wczeœniej nosi³ ten pancerz schla³ siê i spad³ z palisady. Chyba nawet nikt nie zauwa¿y³ tej straty.
 	AI_Output (other, self, "DIA_Urt_Hello_15_08"); //Dostanê pancerz czy najpierw zagadasz mnie na œmieræ?
-	AI_Output (self, other, "DIA_Urt_Hello_11_09"); //Bierz ³achmany i powodzenia bo bêdziesz go potrzebowa³.
+	AI_Output (self, other, "DIA_Urt_Hello_11_09"); //Bierz ³achmany i powodzenia, bo bêdziesz go potrzebowa³.
 	
-	CreateInvItem		(self,			GRD_ARMOR_L);
-	B_GiveInvItems		(self, other,	GRD_ARMOR_L, 1);
-	AI_EquipArmor				(other, GRD_ARMOR_L);
+	CreateInvItem(self, GRD_ARMOR_L);
+	B_GiveInvItems(self, other, GRD_ARMOR_L, 1);
+	AI_EquipArmor(other, GRD_ARMOR_L);
    
 	AI_Output (other, self, "DIA_Urt_Hello_15_10"); //Dziêki... Ale ta zbroja cuchnie!
 	AI_Output (self, other, "DIA_Urt_Hello_11_11"); //Dam Ci dobr¹ radê. Staraj siê nie rzucaæ w oczy.
@@ -91,8 +91,10 @@ FUNC VOID DIA_Urt_Hello_Info()
 	AI_Output (self, other, "DIA_Urt_Hello_11_14"); //Skontaktuj siê z naszym cz³owiekiem, tylko tak bêdziesz móg³ wyjœæ ¿ywy z obozu.
 	AI_Output (self, other, "DIA_Urt_Hello_11_15"); //Byæ mo¿e jeszcze siê spotkamy...
 
-	B_LogEntry		(CH3_RBL_OldCampSpy, "Mam ju¿ zbrojê stra¿nika. Czas pójœæ do pó³nocnej bramy i sprawdziæ czy trunek od Piwosza poskutkuje.");
-	B_StopProcessInfos	(self);
+	B_LogEntry(CH3_RBL_OldCampSpy, "Mam ju¿ zbrojê stra¿nika.");
+   B_equipment_to_OC();
+   
+	B_StopProcessInfos(self);
 
 	/***************************
 	Koleœ ma iœæ do obozu ale najpierw przebraæ siê w pancerz no i stra¿nicy nie powinno go atakowaæ

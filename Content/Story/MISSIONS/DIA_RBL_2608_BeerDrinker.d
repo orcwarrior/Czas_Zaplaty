@@ -319,7 +319,8 @@ FUNC VOID DIA_Drunk_SpecialBooz_Info()
    AI_Output (other, self, "DIA_Drunk_SpecialBooz_15_12"); //Dziêki. Zapamiêtam to.
 	AI_Output (self, other, "DIA_Drunk_SpecialBooz_11_13"); //Wystarczy, ¿e pokrzy¿ujesz plany tego wieprza Gomeza, przyjacielu. Powodzenia. Hik...
 	
-   B_LogEntry		(CH3_RBL_OldCampSpy, "Dosta³em od Piwosza nalewkê spirytusow¹, to musi zadzia³aæ na stra¿nika przy pó³nocnej bramie. Czas ruszaæ na spotkanie z losem.");
+   B_LogEntry(CH3_RBL_OldCampSpy, "Dosta³em od Piwosza nalewkê spirytusow¹, to musi zadzia³aæ na stra¿nika przy pó³nocnej bramie.");
+   B_equipment_to_OC();
 }; 
 
 INSTANCE DIA_Drunk_Lazur2 (C_INFO)
