@@ -51,6 +51,7 @@ FUNC INT DIA_Scorpio_Hello_Condition()
 FUNC VOID DIA_Scorpio_Hello_Info()
 {
 	AI_TurnToNpc (self,other);
+   AI_DrawWeapon (hero);
 	AI_Output (self, other, "DIA_Scorpio_Hello_11_01"); //Schowaj ¿elazo, zanim komuœ stanie siê krzywda.
 	AI_Output (other, self, "DIA_Scorpio_Hello_15_02"); //Twój kumpel mnie obrazi³.
 	AI_Output (self, other, "DIA_Scorpio_Hello_11_03"); //Cz³owieku on ma pochlastane struny g³osowe. 
