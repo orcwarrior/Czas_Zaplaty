@@ -290,7 +290,7 @@ FUNC VOID DIA_HUN_858_Quentin_Talk_Info()
 	}
 	else
 	{
-		PrintScreen("Wymagane 30 % walki broni¹ jednorêczn¹ lub dwurêczn¹!", -1, _YPOS_MESSAGE_Joincamp, "font_old_10_white.tga", _TIME_MESSAGE_LOGENTRY);
+		PrintScreen("Wymagane 30 % walki broni¹ jednorêczn¹ lub dwurêczn¹!", -1, _YPOS_MESSAGE_Joincamp, "font_old_10_white.tga", _TIME_MESSAGE_REQUIRE_ATTRIBUTE);
 		AI_Output (self, other, "DIA_HUN_858_Quentin_Talk_07_19"); //Nie wydaje mi siê.
 		AI_Output (self, other, "DIA_HUN_858_Quentin_Talk_07_20"); //PrzyjdŸ, jak przestaniesz œmierdzieæ ¿ó³todziobem, wtedy pogadamy.
 		B_StopProcessInfos(self); 

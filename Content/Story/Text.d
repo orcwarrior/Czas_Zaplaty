@@ -500,6 +500,7 @@ const int	_YPOS_MESSAGE_CANNOTSTEAL		=	6;
 // ***************************************************************************************
 const int	_TIME_MESSAGE_GIVEN				=	8;
 const int	_TIME_MESSAGE_TAKEN				=	8;
+const int   _TIME_MESSAGE_REQUIRE_ATTRIBUTE = 3;
 const int	_TIME_MESSAGE_LOGENTRY			=	1*8;
 const int	_TIME_MESSAGE_XPGAINED			=	1*8;
 const int	_TIME_MESSAGE_LEVELUP			=	5*8;
