@@ -291,12 +291,12 @@ INSTANCE Whistlers_Schwert (WeaponsMelee)
 
 	value 				=	110;
 
-	damageTotal			= 	50;
+	damageTotal			= 	20;
 	damagetype 			= 	  DAM_EDGE;
 	range    			=  	100;
 
 	cond_atr[2]   		= 	ATR_STRENGTH;
-	cond_value[2]  		= 	48;
+	cond_value[2]  		= 	28;
 	//owner 				  = STT_309_Whistler;		raus wegen Mission
 	visual 				=	"ItMw_1H_Sword_02.3DS";
 

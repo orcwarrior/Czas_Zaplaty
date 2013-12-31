@@ -153,7 +153,7 @@ INSTANCE whistler_toy (WeaponsMelee)
 
 	value 				=	100;
 
-	damageTotal			= 	24;
+	damageTotal			= 	25;
 	damagetype 			= 	DAM_EDGE;
 	range    			=  	100;		
 
