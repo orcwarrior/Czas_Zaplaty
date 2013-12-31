@@ -54,7 +54,7 @@ Npc_SetTalentValue(self,NPC_TALENT_2H,55);
 
 FUNC VOID Rtn_start_2605 ()
 {
-    TA_SitCampfire	(00,00,09,20,"HC_UNDERTREE");	
+    TA_SitCampfire	(00,00,09,00,"HC_UNDERTREE");	
     TA_Smith_Sharp	(09,00,14,00,"OM_SMITH_02");
     TA_Stand	(14,00,15,00,"OM_SMITH_02");
     TA_Smith_Sharp	(15,00,18,05,"OM_SMITH_03");

@@ -87,23 +87,33 @@ FUNC VOID DIA_HUN_859_AIDAN_GoBring_Info()
 	AI_Output (other, self, "DIA_HUN_859_AIDAN_GoBring_15_04"); //Muszê przekonaæ Cavalorna, ¿e nadajê siê na jednego z was.
 	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_05"); //Aha. Czyli biegasz po obozie i robisz za kap³ana Adanosa.
 	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_06"); //Tak siê sk³ada, ¿e mam coœ, w czym mo¿esz mi pomóc.
-	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_07"); //Widzisz tego idiotê Garrego?
-	AI_TurnToNpc(other,garry);	
-	AI_TurnToNpc(self,garry);	
-	Ai_wait(hero,1);//Orc: 6 sekund to masa czasu!
-	Ai_wait(self,1);//Orc: 6 sekund to masa czasu!
-	AI_TurnToNpc(other,self);
-	AI_TurnToNpc(self,other);	
-	AI_Output (other, self, "DIA_HUN_859_AIDAN_GoBring_15_08"); //Chyba lubi swoj¹ pracê?
-	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_09"); //Niestety. Ju¿ dawno nie widzia³em wiêkszego partacza.
-	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_10"); //Garry nie zrobi³ jeszcze ani jednego porz¹dnego ostrza.
-	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_11"); //Problem tkwi w tym, ¿e on uwa¿a inaczej. Wydaje mu siê, ¿e wykuwa pierdolone dzie³a sztuki.
-	AI_Output (other, self, "DIA_HUN_859_AIDAN_GoBring_15_12"); //Mo¿e dam mu w ³eb i zakopiemy œcierwo pod palisad¹?
-	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_13"); //Nieg³upi pomys³, ale Cavalorn urwa³ by nam za to jaja.
-	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_14"); //Wystarczy, ¿e namówisz go do zmiany profesji.
-	AI_Output (other, self, "DIA_HUN_859_AIDAN_GoBring_15_15"); //Mogê spróbowaæ.
-	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_16"); //Je¿eli uda Ci siê uwolniæ mnie od tego nieudacznika, to wstawiê siê za Tob¹ u Cavalorna.
-	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_17"); //A teraz wracam do roboty.
+   
+   if (Wld_IsTime (00,00,09,00))
+   {
+      AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_07"); //Mam problem z pewnym typkiem. Na razie go nie widaæ, ale jak go zobaczysz od razu bêdziesz wiedzia³, ¿e to najwiêkszy partacz.
+      AI_Output (other, self, "DIA_HUN_859_AIDAN_GoBring_15_08"); //Co z nim nie tak?
+   }
+   else
+   {
+      AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_09"); //Widzisz tego idiotê Garrego?
+      AI_TurnToNpc(other,garry);	
+      AI_TurnToNpc(self,garry);	
+      Ai_wait(hero,1);//Orc: 6 sekund to masa czasu!
+      Ai_wait(self,1);//Orc: 6 sekund to masa czasu!
+      AI_TurnToNpc(other,self);
+      AI_TurnToNpc(self,other);	
+      AI_Output (other, self, "DIA_HUN_859_AIDAN_GoBring_15_10"); //Chyba lubi swoj¹ pracê?
+      AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_11"); //Niestety. Ju¿ dawno nie widzia³em wiêkszego partacza.
+   };
+   
+	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_12"); //Garry nie zrobi³ jeszcze ani jednego porz¹dnego ostrza.
+	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_13"); //Problem tkwi w tym, ¿e on uwa¿a inaczej. Wydaje mu siê, ¿e wykuwa pierdolone dzie³a sztuki.
+	AI_Output (other, self, "DIA_HUN_859_AIDAN_GoBring_15_14"); //Mo¿e dam mu w ³eb i zakopiemy œcierwo pod palisad¹?
+	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_15"); //Nieg³upi pomys³, ale Cavalorn urwa³ by nam za to jaja.
+	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_16"); //Wystarczy, ¿e namówisz go do zmiany profesji.
+	AI_Output (other, self, "DIA_HUN_859_AIDAN_GoBring_15_17"); //Mogê spróbowaæ.
+	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_18"); //Je¿eli uda Ci siê uwolniæ mnie od tego nieudacznika, to wstawiê siê za Tob¹ u Cavalorna.
+	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_19"); //A teraz wracam do roboty.
 	
    Log_CreateTopic(CH1_Rbl_AidanHelp, LOG_MISSION);
 	Log_SetTopicStatus(CH1_Rbl_AidanHelp, LOG_RUNNING);
