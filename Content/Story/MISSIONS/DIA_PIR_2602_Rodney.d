@@ -48,7 +48,7 @@ FUNC VOID DIA_PIR_2602_Rodney_Hello_Info()
 	AI_Output (self, other,"DIA_PIR_2602_Rodney_Hello_08_10"); //Cholerny sztorm... Do tego ca³y ³adunek szlag trafi³.
 	AI_Output (self, other,"DIA_PIR_2602_Rodney_Hello_08_11"); //Uda³o mi siê na szczêœcie odzyskaæ kilka pak i skrzyñ.
 	AI_Output (self, other,"DIA_PIR_2602_Rodney_Hello_08_12"); //Niektóre rzeczy mogê Ci tanio odsprzedaæ.
-	AI_Output (self, other,"DIA_PIR_2602_Rodney_Hello_08_13"); //Acha. PrzyjdŸ do mnie, jak bêdziesz mia³ chwilkê.
+	AI_Output (self, other,"DIA_PIR_2602_Rodney_Hello_08_13"); //Aha. PrzyjdŸ do mnie, jak bêdziesz mia³ chwilkê.
 	AI_Output (self, other,"DIA_PIR_2602_Rodney_Hello_08_14"); //Bêdê mia³ ma³¹ proœbê. Nie po¿a³ujesz.	
 };
 
