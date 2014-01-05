@@ -76,13 +76,15 @@ Func Void B_TransferCategory(Var C_Npc Slf,Var Int Cat,Var C_Npc Oth)
 				CreateInvItem(Oth,Itemid);
 				Mem_Stackpos.Position = Label; 	
 			}
-			else if(lastItemID == itemID) // Bugfix #67
-			{
-				skipItems+=1;			
-				printdebug_ss("INV/TRADER: Bugfix: same as previous item: ",item.name);
-				printdebug_s_i("INV/TRADER: items skipped: ",skipItems);
-				//Npc_RemoveInvItem(Slf,Itemid);
-			}	
+			// issue #105 (niestety, jeśli handlarze beda juz lagowali grę
+			// wtedy błąd pozostanie nie-naprawiony).
+			//else if(lastItemID == itemID) // Bugfix #67
+			//{
+			//	skipItems+=1;			
+			//	printdebug_ss("INV/TRADER: Bugfix: same as previous item: ",item.name);
+			//	printdebug_s_i("INV/TRADER: items skipped: ",skipItems);
+			//	//Npc_RemoveInvItem(Slf,Itemid);
+			//}	
 			else // Category != Weapon
 			{
 				amount = Npc_HasItems(slf,Itemid);
