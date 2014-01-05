@@ -661,6 +661,8 @@ FUNC VOID B_DROPWEAPON(VAR C_NPC SLF)
 // Pretty straigh-forward:
 func void B_CreateDefaultWeapon(var C_NPC slf)
 {
+	// issue #95
+	if(C_NpcIsMonster(slf)) { return; };
 	if(NPC_GetTalentSkill(SLF,NPC_TALENT_2H)>NPC_GetTalentSkill(SLF,NPC_TALENT_1H))
 	{
 		if(!Npc_HasItems(slf,DEF_MW_2H)<1){
