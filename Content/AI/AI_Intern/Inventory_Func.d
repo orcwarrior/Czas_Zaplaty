@@ -87,7 +87,6 @@ Func Void B_TransferCategory(Var C_Npc Slf,Var Int Cat,Var C_Npc Oth)
 			else // Category != Weapon
 			{
 				amount = Npc_HasItems(slf,Itemid);
-				if(amount<=0) { amount = 1;}; // Ork: Bugfix #67
 				if(Show_HeroTransferedItem)&&(Npc_IsPlayer(oth))
 				{
 					name = item.description; if(Hlp_StrCmp(name,"")){name = item.name;};
@@ -188,7 +187,7 @@ FUNC VOID B_ClearInvENTORY(VAR C_NPC SLF)//, var int Category)
 	B_ClearCategory(SLF,7);
 	B_ClearCategory(SLF,8);
 };
-func void b_cleartraderinv(var c_npc slf,var c_npc oth)//, var int category)
+func void B_ClearTraderInv(var c_npc slf,var c_npc oth)//, var int category)
 {
 	var c_item MeleeWeap;var c_item RangedWeap;var int amunition_amount;var int id;
 	var int hasmw;var int hasrw;

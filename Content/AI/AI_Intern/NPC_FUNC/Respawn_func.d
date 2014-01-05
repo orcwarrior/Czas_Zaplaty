@@ -10,6 +10,7 @@ var int Respawn_Array_ID;
 var int Respawn_Array_WP;
 var int Respawn_Array_Day;//in minutes
 var int Respawn_Array_LastUsedIDX;
+// Used only to init, arrays can be dynamically resized
 const int respawn_slots = 200;
 
 func void Respawn_Init()//at Init_Allworlds
@@ -80,23 +81,35 @@ func int Respawn_FindLastUsed (var int arr_ID, var int start, var int last)
 
 func void Respawn_Include(var c_npc slf)
 {
+	killed_Counter+=1;
+	//break if daytorespawn invalid
+	if(Npc_GetAivar(slf,AIV_MM_DAYTORESPAWN)==999)||(Npc_GetAivar(slf,AIV_MM_DAYTORESPAWN)==0)
+	{ return; };
+	
 	//Find first free index in array
 	var int idx; // RespawnID Array look for 0 value in range 0..respawn_slots-1
-	idx = Arr_SearchFor (Respawn_Array_ID,0,0,respawn_slots-1);
+	var int respArrLenght; respArrLenght = Arr_Length (Respawn_Array_ID);
+	idx = Arr_SearchFor (Respawn_Array_ID,0,0,respArrLenght-1);
 	
 	if(idx>Respawn_Array_LastUsedIDX)
 	{
 		Respawn_Array_LastUsedIDX = idx;	
+	}
+	else if(idx == -1) // Array is full, resize it:
+	{
+		respArrLenght = respArrLenght + 50;
+		Arr_SetLength(Respawn_Array_ID,respArrLenght);
+		Arr_SetLength(Respawn_Array_Day,respArrLenght);
+		Arr_SetLength(Respawn_Array_WP,respArrLenght);
+		idx = Arr_SearchFor (Respawn_Array_ID,0,0,respArrLenght-1);
 	};
-	//break if daytorespawn invalid
-	if(Npc_GetAivar(slf,AIV_MM_DAYTORESPAWN)==999)||(Npc_GetAivar(slf,AIV_MM_DAYTORESPAWN)==0)
-	{ return; };
+	if(idx == -1) { printdebug("Respawn: Something went wrong! found-idx: -1, exiting!"); return;};
+	
 	printdebug_ss("respawn: Include:",slf.name);
 	printdebug_s_i("respawn: realID:",Npc_GetAivar(slf,AIV_MM_REAL_ID));
 	printdebug_ss("respawn: ... at:",slf.wp);
 	printdebug_s_i_s_i("respawn: ... days2respawn:",Npc_GetAivar(slf,AIV_MM_DAYTORESPAWN),", arrIDX: ",idx);
 	
-	killed_Counter+=1;
 	//Set ID,WP and Time
 	var int realID;
 	realID = Npc_GetAivar(slf,AIV_MM_REAL_ID);

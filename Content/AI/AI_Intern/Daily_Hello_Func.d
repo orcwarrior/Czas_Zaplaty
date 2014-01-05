@@ -30,7 +30,8 @@ FUNC VOID B_DailyHello__SayResponse(var int npcID,var string msg)
 	print_s_i_s_i("Hero resp Say...see: ",Npc_CanSeeNpc(hero,oth),", dawn: ",C_NpcIsDown(hero));
 	if(!C_NpcIsDown(hero))
 	{
-		if(!Hlp_IsValidNpc(oth) || Npc_GetDistToNpc(hero,oth) > 500)
+		// Fix: #85 (Przywitanie przerywa dialog)
+		if(!Hlp_IsValidNpc(oth) || Npc_GetDistToNpc(hero,oth) > 500 || !InfoManager_HasFinished())
 		{
 			return;
 		};
@@ -132,6 +133,11 @@ func void B_DailyHello_Update()//(var c_npc trgtnpc)// <-poprostu getTarget
 		{
 			if((npc_canseenpc(other,hero))&&(npc_getdisttonpc(other,hero)< 380))
 			{
+				// Poprawka #102 (witanie dopiero po pierwszym spotkaniu)
+				if(Npc_GetAivar(other,AIV_HELLOSAYED) == 0) // Jeszcze nie widział bohatera 'na oczy'
+				{
+					Npc_SetAivar(other,AIV_HELLOSAYED,day+1);
+				};
 				if(npc_getaivar(other,AIV_HELLOSAYED) < day)
 				{
 					npc_setaivar(other,AIV_HELLOSAYED,day);
