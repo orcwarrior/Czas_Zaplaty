@@ -3,7 +3,8 @@
 // Function fired by Poison_trigger
 // every 125ms
 //---------------------------------------
-var int MusicSys_Inited;
+var int MusicSys_Inited; 
+var int MusicSys_VolumeReinited; // issue #104
 var string MusicSys_Theme;
 var string MusicSys_OldTheme;
 var string MusicSys_OldThemePrefix;
@@ -61,8 +62,7 @@ func int MusicSys__parseMusicVolume(var string vol)
 	};
 	
 	// printscreen_s_i("Sprasowany vol:  ",result
-	// ,5,20,7);
-	
+	// ,5,20,7);	
 	return result;
 };
 
@@ -95,19 +95,21 @@ func void MusicSystem_PlayMusic(var string file, var int volume)
 // Called by Apply_Menu_Options hook
 func void MusicSys_VolumeUpdate()
 {
-	printdebug("Vol Update start");
 	var string configMusicVol; configMusicVol = MEM_GetGothOpt ("SOUND","musicVolume"); 
 	var string configEnabled; configEnabled = MEM_GetGothOpt ("SOUND","musicEnabled"); 
-	printdebug("Vol UPD STR COmpare");
+	printdebug_ss("MS: [Config] musicVolume: ",configMusicVol);
+	printdebug_ss("MS: [Config] musicEnabled: ",configEnabled);
 	
 	if(STR_ToInt(configEnabled) == 0)
 	{
+		printdebug("MS: Music disabled, vol: 0!");
 		MusicSys_MusicVolume = FLOATNULL;
 	}
 	// Trzeba 'sparsować' floata zapisanego jako string:
 	else
 	{
 		MusicSys_MusicVolume = MusicSys__parseMusicVolume(configMusicVol);
+		printdebug_ss("MS: Music enabled, parsing vol: ",configMusicVol);
 	};
 	printdebug("MS: VOLUME UPDATE");
 	MusicSystem_SetVolume(MusicSys_MusicVolume);
@@ -256,8 +258,10 @@ func void MusicSystem_Callback()
 	var int musiczone; // Pointer to zCMusicZone object that hero is in
 	var int herostatus; // Jakiś magiczny status odnosnie obecnego stanu bohatera: eksploracja / walka / zagr?
 	var string filename;
-	printdebug("MS:MusicSystem_Callback()");
-	
+	// If volume is 0, quit.
+	if(MusicSys_MusicVolume == FLOATNULL) { 
+		printdebug("MS: Music volume is 0, quitting update"); return; };
+		
 	//First, handle the boss-fight motives:
 	// Exctract this block of code to function?
 	if(BOSSFIGHT_CURRENT>0)
@@ -286,8 +290,7 @@ func void MusicSystem_Callback()
 	else
 	{	// There is no changes in music zone, but we should keep eye
 		// on herostatus -> so when he start's to fight we sould change Theme to it's fight variation
-		
-		printdebug("MS:musiczone == lastmusiczone");
+		//printdebug("MS:musiczone == lastmusiczone");
 		herostatus = MEM_ReadInt(MUSIC_HeroStatus_Address);
 		if(herostatus!=MusicSystem_HeroStatus_Last)//change music std->fgt/fgt->std (same theme)
 		{

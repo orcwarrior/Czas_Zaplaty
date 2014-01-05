@@ -74,7 +74,6 @@ Func Void B_TransferCategory(Var C_Npc Slf,Var Int Cat,Var C_Npc Oth)
 				
 				Npc_RemoveInvItem(Slf,Itemid);
 				CreateInvItem(Oth,Itemid);
-
 				Mem_Stackpos.Position = Label; 	
 			}
 			else if(lastItemID == itemID) // Bugfix #67

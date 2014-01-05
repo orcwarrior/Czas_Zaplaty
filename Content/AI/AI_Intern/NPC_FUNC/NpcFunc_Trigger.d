@@ -103,6 +103,10 @@ func void EVT_POISON()
 	// ponownego ustawienia tekstury twarzy bohatera:
 	if(Appr_Inited == 2)
 	{ Appr_RefreshHeroAppearance(); Appr_Inited = 1;};
-	
+	if (!MusicSys_VolumeReinited)
+	{
+		MusicSys_VolumeReinited=true;
+		MusicSys_VolumeUpdate();
+	};
 	Wld_SendTrigger("POISON_TRIGGER");
 };

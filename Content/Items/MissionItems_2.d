@@ -257,15 +257,15 @@ FUNC VOID Use_Katrakanat_book()
 					//	Snd_Play 		("FoundRiddler");
 					if (katar_rytual == FALSE)
 					{
-						Wld_PlayEffect("spellFX_MassDeath_GROUND", self, self, 1, 0, DAM_MAGIC, FALSE);
+						Wld_PlayEffect("spellFX_MassDeath_GROUND", self, null, 0, 0, 0, true);
                   
-                  if (!open_kart)
-                  {
-                     Wld_SpawnNpcRange (self, Skeleton,4,800);
-                     Wld_SpawnNpcRange (self, SkeletonWarrior, 2, 800);
-                     Wld_SpawnNpcRange (self, SkeletonMage, 1, 800);
-                     Npc_RemoveInvItems(self, Katrakanat_book,1);
-                  };
+						if (!open_kart)
+						{
+							Wld_SpawnNpcRange (self, Skeleton,4,800);
+							Wld_SpawnNpcRange (self, SkeletonWarrior, 2, 800);
+							Wld_SpawnNpcRange (self, SkeletonMage, 1, 800);
+							Npc_RemoveInvItems(self, Katrakanat_book,1);
+						};
 					};	
                
                open_kart = TRUE;

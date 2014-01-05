@@ -3013,6 +3013,9 @@ FUNC VOID INIT_ALLWORLDS()
 	
 	Wld_InsertNpc(MOD_ITEMMASTER, "INVISIBLE");		
 	
+	// issue #104 (it will call VolumeUpdate function by 0.125 trigger)
+	MusicSys_VolumeReinited = false;
+	
 	SkyPreset_ReInit = true;
 	SkyController_Ptr = 0;// This is critical! Without it Function FX_TransitionDoFrameStep could cause a crash
 	// (function can be called before skycontroller_ptr has valid value pointing to skycontroller_outdoor class

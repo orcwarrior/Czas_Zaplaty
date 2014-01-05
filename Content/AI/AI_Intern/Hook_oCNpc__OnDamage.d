@@ -12,6 +12,15 @@ func void OCNPC_ONDAMAGE_POSTEVENTCALL()
 	var int oCNpc_slf_Adr_in_oCDamageDescriptor;
 	var int oCNpc_oth_Adr_in_oCDamageDescriptor;
 	oCNpc_slf_Adr_in_oCDamageDescriptor = Hook_oCNPC_OnDamage_slfAdr;
+	printDebug_s_i(">#DamageReact: pre read other addr, ECX: ",getECX());
+	printDebug_s_i(">#DamageReact: ... this (org ECX) adr: ",Hook_oCNPC_OnDamage_slfAdr);
+	if(ECX > Hook_oCNPC_OnDamage_slfAdr*2 || ECX < oCNpc_vtbl)
+	{
+		//printDebug(">#DamageReact: We gon' check addr!");
+		//CheckAdress(ECX,100,1,false);	
+		//CheckAdress(ECX,100,1,true);
+		return;
+	};
 	oCNpc_oth_Adr_in_oCDamageDescriptor = MEM_ReadInt(getECX() + 76);//0x48
 	//_slf = MEM_CpyInst(slf);
 	//_oth = MEM_CpyInst(oth);
