@@ -1,7 +1,7 @@
-CONST INT B_SPRINT_COST_BASE = 530;
+CONST INT B_SPRINT_COST_BASE = 540;
 CONST INT B_SPRINT_COST_MAXLVLBASEDBONUS = 90;
-CONST INT B_SPRINT_COST_REGULARRUN = 220;
-CONST INT B_SPRINT_COST_STANDINGBONUS = 60;
+CONST INT B_SPRINT_COST_REGULARRUN = 190; // Ork: Troche szybsza regeneracja przy zwyk³ym biegu
+CONST INT B_SPRINT_COST_STANDINGBONUS = 50;
 
 instance StaminaBar(oCViewStatusBar) {};
 
@@ -115,9 +115,11 @@ func int Sprint__CalculateSprintCost(var int runState)
 		var int lvlBonus; lvlBonus = hero.level * 2;
 		if(lvlBonus > B_SPRINT_COST_MAXLVLBASEDBONUS) { lvlBonus = B_SPRINT_COST_MAXLVLBASEDBONUS; };
 		cost = cost - lvlBonus;
+		printdebug_s_i("Sprint: Sprint-Cost Run: ",cost);
 	}
 	else if(runState == B_SPRINT_RUNSTATE_JUMPRUN) 
-	{ cost = B_SPRINT_COST_REGULARRUN; };
+	{ cost = B_SPRINT_COST_REGULARRUN; 
+		printdebug_s_i("Sprint: Sprint-Cost JumpRun: ",cost);};
 	return cost;
 };
 func void Sprint__TurnOff(var int oCStatusBarSwim_Ptr)
@@ -142,7 +144,7 @@ FUNC VOID Sprint_Update()
 	hiro = hlp_getnpc(pc_hero);			
 	var int swimbar; swimbar = MEM_ReadInt (MEMINT_oGame_Pointer_Address);
 	swimbar = MEM_ReadInt(swimbar+144);//game.swimBar			
-	//Show DiveBar Bugfix		
+	//Show bar when diving:	
 	Sprint__DivingBugfix(swimbar);
 
 	if (Sprint_UpClicked>0)//clicked one time, decrease wait time for another click
@@ -155,12 +157,14 @@ FUNC VOID Sprint_Update()
 		Sprint_UpClicked = 0;//Reset			
 		if(SPRINTENABLED)
 		{ 
+			printdebug("Sprint: Disabled");
 			Sprint__TurnOff(swimbar);
 		}
 		else 
 		{ 	// Enable Sprint:
 			SPRINTENABLED=TRUE; 
-			oCStatusBar_SetAlpha(swimbar,255);			
+			oCStatusBar_SetAlpha(swimbar,255);		
+			printdebug("Sprint: Enabled, applying mds");
 			Mdl_ApplyOverlayMDS(HERO,"HUMANS_SPRINT.MDS");
 		};
 	};	
@@ -179,15 +183,17 @@ FUNC VOID Sprint_Update()
 			{// Ork: Sprint was just enabled, set mds
 				SPRINTENABLED = TRUE;
 			}
-			else if(gf(mkf(-5000),hiro.divectr))
+			// Ork: poprawka zbyt d³ugiego biegania po wykoñczeniu paska (bylo 5000)
+			else if(gf(mkf(-2500),hiro.divectr))
 			{	// PLAY TIRED ANI AND WAIT
 				AI_Wait(hero, 0.1);
 				Sprint__TurnOff(swimbar); // Ork: Pasek sprintu wy³aczamy dopiero pe³nym zregenerowaniu [NEW]
 				oCStatusBar_SetAlpha(swimbar,255);	
 				AI_SetWalkmode(hero,NPC_WALK);
 				MEM_InsertKeyEvent(KEY_CAPITAL);
+				printdebug("Sprint: Player tired, disabling");
 			};
-		}else
+		}else if (!Ani_BodyStateContains(hero,BS_DIVE) && lf (hiro.divectr,hiro.divetime)) // poprawka #99
 		{
 			hiro.divectr=addf(hiro.divectr,mkf(B_SPRINT_COST_STANDINGBONUS)); // some regenerating bonus	
 		};
@@ -201,22 +207,24 @@ FUNC VOID Sprint_Update()
 		oCStatusBar_UpdateValue(swimbar,hiro.divectr,mkf(300));
 		
 		if(!hlp_StrCmp(Sprint_ReInited,"YES"))
-		{
-			//budzis ty by³
+		{ //budzis ty by³
 			oCStatusBar_SetAlpha(swimbar,255);
 		};		
 	}
-	else // SPRINTENABLED==FALSE
+	// issue #84 (dzieki warunkowi pasek nie powinien wzrastaæ ponad max. poziom)
+	else if(lf (hiro.divectr,hiro.divetime)) // cur DiveValue < max DiveValue => regenerate
 	{
 		//hero is regenerating
 		if (Sprint__NpcRunState(hero) != B_SPRINT_RUNSTATE_OTHER)
 		{ // take some stamina for RUNNING/JUMP-RUNNING (it will results as slower stamina raising on runing)
 			hiro.divectr=subf(hiro.divectr,mkf(B_SPRINT_COST_REGULARRUN)); 
-		}else
+			printdebug("Sprint: Regenerate - regular run");
+		}else if (!Ani_BodyStateContains(hero,BS_DIVE)) // poprawka #99
 		{
 			hiro.divectr=addf(hiro.divectr,mkf(B_SPRINT_COST_STANDINGBONUS)); // some regenerating bonus	
+			printdebug("Sprint: Regenerate - standing bonus");
 		};
-		if(hiro.divectr<MAXSPRINTTIME)
+		if(lf (hiro.divectr,hiro.divetime))
 		{// Params: Bar, curValue, maxValue
 			oCStatusBar_UpdateValue(swimbar,hiro.divectr,mkf(300));
 		}
