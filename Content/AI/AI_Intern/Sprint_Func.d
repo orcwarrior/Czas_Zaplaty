@@ -124,6 +124,7 @@ func int Sprint__CalculateSprintCost(var int runState)
 };
 func void Sprint__TurnOff(var int oCStatusBarSwim_Ptr)
 {
+	if((Ani_BodyStateContains(hero,BS_FALL)) {return;};// poprawka Splash
 	SPRINTENABLED = false; 
 	MDL_REMOVEOVERLAYMDS(HERO,"HUMANS_SPRINT.MDS");
 };
@@ -160,7 +161,7 @@ FUNC VOID Sprint_Update()
 			printdebug("Sprint: Disabled");
 			Sprint__TurnOff(swimbar);
 		}
-		else 
+		else if(!Ani_BodyStateContains(hero,BS_FALL)) // poprawka Splash
 		{ 	// Enable Sprint:
 			SPRINTENABLED=TRUE; 
 			oCStatusBar_SetAlpha(swimbar,255);		
