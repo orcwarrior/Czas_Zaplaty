@@ -767,6 +767,6 @@ INSTANCE Recept_ItRw_Crossbow_04 (Recept_Proto)
 	scemeName				=	"NONE";	
 	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ kuszê wojenn¹";
 	on_state[0]			=	UseRecept;
-   description = name;
+	description = name;
 };
 

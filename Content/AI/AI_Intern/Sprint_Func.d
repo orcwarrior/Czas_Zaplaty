@@ -124,7 +124,7 @@ func int Sprint__CalculateSprintCost(var int runState)
 };
 func void Sprint__TurnOff(var int oCStatusBarSwim_Ptr)
 {
-	if((Ani_BodyStateContains(hero,BS_FALL)) {return;};// poprawka Splash
+	if (Ani_BodyStateContains(hero,BS_FALL)) {return;};// poprawka Splash
 	SPRINTENABLED = false; 
 	MDL_REMOVEOVERLAYMDS(HERO,"HUMANS_SPRINT.MDS");
 };

@@ -188,6 +188,7 @@ FUNC VOID B_ClearInvENTORY(VAR C_NPC SLF)//, var int Category)
 	B_ClearCategory(SLF,7);
 	B_ClearCategory(SLF,8);
 };
+// (Called when dialog with trader ENDs)
 func void B_ClearTraderInv(var c_npc slf,var c_npc oth)//, var int category)
 {
 	var c_item MeleeWeap;var c_item RangedWeap;var int amunition_amount;var int id;
@@ -229,8 +230,21 @@ func void B_ClearTraderInv(var c_npc slf,var c_npc oth)//, var int category)
 	{
 	};
 	b_transfercategory(slf,3,oth);//rings runes
-	//todo: add others mages exceptions
+	
 
+	B_TransferCategory(SLF,4,OTH);
+	B_TransferCategory(SLF,5,OTH);
+	B_TransferCategory(SLF,6,OTH);
+	B_TransferCategory(SLF,7,OTH);
+	B_TransferCategory(SLF,8,OTH);
+	
+	// Clear inventory by engine func:
+	var int oCNpcInventory_slf_adr;
+	oCNpcInventory_slf_adr = MEM_InstToPtr(slf) + 1360; // 0x550 -> offset of oCNpcInv in oCNpcInv
+	CALL__thiscall(oCNpcInventory_slf_adr,oCNpcInventory__ClearInventory_offset);
+	
+	// Recovering NPC equipment:
+	//todo: add others mages exceptions
 	if(self.id==2602)&&(rodneymage_day==1024)&&(npc_getaivar(self,aiv_wasdefeatedbysc)==false)
 	{
 		createinvitem(self,itarrunethunderbolt);
@@ -253,17 +267,6 @@ func void B_ClearTraderInv(var c_npc slf,var c_npc oth)//, var int category)
 		};
 		ai_equipbestRangedWeapon(slf);
 	};
-
-	B_TransferCategory(SLF,4,OTH);
-	B_TransferCategory(SLF,5,OTH);
-	B_TransferCategory(SLF,6,OTH);
-	B_TransferCategory(SLF,7,OTH);
-	B_TransferCategory(SLF,8,OTH);
-	
-	// Clear inventory by engine func:
-	var int oCNpcInventory_slf_adr;
-	oCNpcInventory_slf_adr = MEM_InstToPtr(slf) + 1360; // 0x550 -> offset of oCNpcInv in oCNpcInv
-	CALL__thiscall(oCNpcInventory_slf_adr,oCNpcInventory__ClearInventory_offset);
 	//oCNpcInventory__ClearInventory_offset
 };
 
@@ -318,8 +321,8 @@ FUNC VOID B_TRANSFERItem(VAR C_NPC SLF,VAR STRING TARGET)//, var int Category)
 **		B_GiveAllInventory												**
 **		=============													**
 **																		**
-**		Move whole Inventory from self									**
-**		to other														**
+**		Move whole Inventory from self	to other						**
+**		refs: Called when trade begins.									**
 *************************************************************************/
 FUNC VOID B_GiveAllInventory(VAR C_NPC SLF,var C_Npc Oth)//, var int Category)
 {

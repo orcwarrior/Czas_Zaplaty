@@ -190,7 +190,7 @@ INSTANCE Recept_ItAmPoisonArrow(ReceptAmunition_Proto)
 	needitm[2]						=	ItMa_Iron;		
 	protection[0]						=	ItFo_Poison;				
 	value 					=	300;//600 - cena strza³(50)
-	range				=	30;//na 100% szans wykucia
+	range				=	35;//na 100% szans wykucia
 
 	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ zatrute strza³y.";//		
 };
@@ -310,7 +310,7 @@ INSTANCE Recept_ItAmPoisonBolt(ReceptAmunition_Proto)
 	needitm[2]						=	ItFo_Poison;		
 	
 	value 					=	300;//50 - cena strza³(50)
-	range				=	33;//na 100% szans wykucia
+	range				=	40;//na 100% szans wykucia
 
 	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ zatrute be³ty.";	
 };
