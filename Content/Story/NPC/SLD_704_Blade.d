@@ -41,7 +41,7 @@ instance SLD_704_Blade (Npc_Default)
 
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_2H_Sword_Light_06);
+	EquipItem (self,MTR_MW_03);
 	EquipItem (self,ItRw_Bow_Long_02);
 	CreateInvItems(self,ItAmArrow,22);
 	CreateInvItems (self,ItFoRice,9);

@@ -49,8 +49,8 @@ instance ORG_833_Buster (Npc_Default)
 	CreateInvItem (self,ItMi_Stuff_Barbknife_01);
 	CreateInvItem (self,ItFoMutton);
 	CreateInvItem (self,ItAt_Claws_01);
-	EquipItem 		(self,ItMw_1H_HSword_Short_08);
-	EquipItem (self,ItRw_Bow_Small_04);
+	EquipItem 		(self,MTR_MW_01);
+	EquipItem (self,ItRw_Bow_Small_02);
 	CreateInvItems (self,ItAmArrow,40);
 	
 	//-------------Daily Routine-------------

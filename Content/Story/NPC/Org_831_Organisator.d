@@ -14,7 +14,7 @@ instance Org_831_Organisator (Npc_Default)
 
 	//-------- abilities --------
 
-	attribute[ATR_STRENGTH] =		15;
+	attribute[ATR_STRENGTH] =		20;
 	attribute[ATR_DEXTERITY] =		15;
 	attribute[ATR_MANA_MAX] =		0;
 	attribute[ATR_MANA] =			0;
@@ -42,7 +42,7 @@ instance Org_831_Organisator (Npc_Default)
 	
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1H_Mace_01);
+	EquipItem (self,ALL_MW_01);
 	CreateInvItems (self,ItKeLockpick,2);		
 	CreateInvItems(self,ItMiNugget,11);
 	CreateInvItems (self,ItFoRice,7);

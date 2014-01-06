@@ -41,7 +41,7 @@ instance STT_302_Viper (Npc_Default)
 	//-------- inventory --------
 	
 	CreateInvItems (self,ItMinugget,750);
-	CreateInvItem  (self,ItMw_1H_Sword_Short_04);
+	CreateInvItem  (self,STT_MW_02);
 	
 	
 	//-------------Daily Routine-------------

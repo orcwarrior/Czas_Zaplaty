@@ -5,7 +5,7 @@ instance Org_838_Organisator (Npc_Default)
 	name =							Name_Organisator;
 	Npctype =						Npctype_Ambient;
 	guild =							GIL_SLV;       
-	level =							4;
+	level =							5;
 	
 	voice =							13;
 	id =							838;
@@ -13,7 +13,7 @@ instance Org_838_Organisator (Npc_Default)
 
 	//-------- abilities --------
 
-	attribute[ATR_STRENGTH] =		15;
+	attribute[ATR_STRENGTH] =		22;
 	attribute[ATR_DEXTERITY] =		15;
 	attribute[ATR_MANA_MAX] =		0;
 	attribute[ATR_MANA] =			0;
@@ -41,7 +41,7 @@ instance Org_838_Organisator (Npc_Default)
 	
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1H_Mace_01);
+	EquipItem (self,ALL_MW_01);
 	CreateInvItems (self,ItKeLockpick,1);		
 	CreateInvItems(self,ItMiNugget,13);
 	CreateInvItems (self,ItFoRice,7);

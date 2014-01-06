@@ -49,7 +49,7 @@ instance ORG_842_Shrike (Npc_Default)
 	CreateInvItem (self,ItFoMutton);
 	CreateInvItem (self,ItFoLoaf);
 	CreateInvItem (self,ItAt_Teeth_01);
-	EquipItem (self,ItMw_1H_Mace_02);
+	EquipItem (self,HUN_MW_01);
 	EquipItem (self,ItRw_Bow_Small_02);
 	CreateInvItems (self,ItAmArrow,20);
 	

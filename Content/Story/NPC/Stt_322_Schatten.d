@@ -36,7 +36,7 @@ instance Stt_322_Schatten (Npc_Default)
 		
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_Short_02);
+	EquipItem	(self,STT_MW_02);
 	EquipItem	(self,ItRw_Bow_Small_03);
 	CreateInvItems	(self,ItAmArrow,15);
 	

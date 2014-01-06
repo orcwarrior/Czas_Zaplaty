@@ -35,7 +35,7 @@ instance Non_20251_Run (Npc_Default)
 	//-------- Talente ----------
 
 	Npc_SetTalentSkill (self,NPC_TALENT_BOW,1);
-	Npc_SetTalentSkill (self,NPC_TALENT_1H,1);
+	Npc_SetTalentSkill (self,NPC_TALENT_2H,1);
 	
 
 	//-------- inventory --------   
@@ -46,7 +46,7 @@ instance Non_20251_Run (Npc_Default)
 	CreateInvItems (self,ItFoBooze,2);
 	CreateInvItems (self,ItLsTorch,2);
 	CreateInvItems (self,ItFo_Potion_Health_01,1);
-	EquipItem (self,ItMw_1H_Mace_02);
+	EquipItem (self,HUN_MW_04);
 
 	
 	//-------------Daily Routine-------------

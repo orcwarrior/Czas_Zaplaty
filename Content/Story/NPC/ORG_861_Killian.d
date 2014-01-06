@@ -14,7 +14,7 @@ instance ORG_861_Killian (Npc_Default)
 
 	//-------- abilities --------
 
-	attribute[ATR_STRENGTH] =		30;
+	attribute[ATR_STRENGTH] =		40;
 	attribute[ATR_DEXTERITY] =		30;
 	attribute[ATR_MANA_MAX] =		0;
 	attribute[ATR_MANA] =			0;
@@ -48,7 +48,7 @@ instance ORG_861_Killian (Npc_Default)
 	CreateInvItems (self,ItLsTorch,2);
 	CreateInvItems (self,ItFo_Potion_Health_01,2);
 	
-	EquipItem (self,ItMw_1H_Mace_02);
+	EquipItem (self,ALL_MW_01);
 	
 
 	//-------------Daily Routine-------------

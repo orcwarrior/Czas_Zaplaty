@@ -52,8 +52,6 @@ INSTANCE PC_Nyul(NPC_DEFAULT)
 //----------------------------------------
 //Melee_weapons.d
 //----------------------------------------
-	EquipItem		(self,ItMw_2H_Staff_02);
-	CreateInvItem	(self,ItMw_1H_Sword_Long_05);
 //----------------------------------------
 //Ranged_weapons.d
 //----------------------------------------

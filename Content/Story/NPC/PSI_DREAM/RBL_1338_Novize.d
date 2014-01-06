@@ -2,7 +2,7 @@ instance RBL_1338_Novize (Npc_Default)
 {
 	//-------- primary data --------
 	name 		=		Name_Novize;
-	Npctype 		=		Npctype_Ambient;
+	Npctype 	=		Npctype_Ambient;
 	guild 		=		GIL_RBL;
 	level 		=		14;
 	
@@ -35,7 +35,7 @@ instance RBL_1338_Novize (Npc_Default)
 	
 	//-------- inventory --------
 
-	EquipItem (self,ItMw_1H_Mace_01);
+	EquipItem (self,ALL_MW_02);
 	//CreateInvItem (self,ItFoSoup);
 	//CreateInvItem (self,ItMiJoint);
  

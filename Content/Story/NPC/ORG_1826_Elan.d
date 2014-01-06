@@ -50,8 +50,8 @@ instance ORG_1826_Elan (Npc_Default)
 	CreateInvItem	(self,ItMi_Stuff_Cup_01);
 	CreateInvItem	(self,ItFoLoaf);
 	CreateInvItem	(self,ItAt_Teeth_01);
-	EquipItem 		(self,ItMw_1H_Mace_07);
-	CreateInvItem 		(self,ItRw_Bow_Long_02);
+	EquipItem 		(self,MTR_MW_01);
+	CreateInvItem 		(self,RBL_RW_01);
 	CreateInvItems	(self,ItAmArrow,150);
 	
 	//-------------Daily Routine-------------

@@ -37,7 +37,7 @@ instance VLK_562_Buddler (Npc_Default)
 	
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1h_Mace_02);
+	EquipItem (self,ItMw_1h_Mace_02); // "Unique"
 	CreateInvItem (self,ItFoApple);
 
 

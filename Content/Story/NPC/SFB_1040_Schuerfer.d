@@ -41,7 +41,7 @@ instance SFB_1040_Schuerfer (Npc_Default)
 	CreateInvItems (self,ItMiNugget,6);
 	CreateInvItem (self,ItMi_Stuff_Plate_01);
 	EquipItem (self,ItMwPickaxe);
-	EquipItem (self,ItMw_1H_Sword_Short_01);
+	EquipItem (self,STT_MW_01);
 	
 		
 	//-------------Daily Routine-------------

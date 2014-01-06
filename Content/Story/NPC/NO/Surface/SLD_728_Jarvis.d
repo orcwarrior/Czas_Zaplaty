@@ -13,7 +13,7 @@ instance SLD_728_Jarvis (Npc_Default)
 
 	//-------- abilities --------
 	attribute[ATR_STRENGTH] =		75;
-	attribute[ATR_DEXTERITY] =		55;
+	attribute[ATR_DEXTERITY] =		65;
 	attribute[ATR_MANA_MAX] =		0;
 	attribute[ATR_MANA] =			0;
 	attribute[ATR_HITPOINTS_MAX] =	232;
@@ -38,7 +38,7 @@ instance SLD_728_Jarvis (Npc_Default)
 
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1H_Sword_06);
+	EquipItem (self,RBL_MW_03);
 	EquipItem (self,ItRw_Bow_Long_01);
 	CreateInvItems(self,ItAmArrow,20);
 	CreateInvItems (self,ItFoRice,7);

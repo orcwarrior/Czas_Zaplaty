@@ -6,7 +6,7 @@ instance Org_829_Organisator (Npc_Default)
 	name =					Name_Torwache;
 	Npctype =				NPCTYPE_MAIN;
 	guild =							GIL_SLV;       
-	level =							4;
+	level =							15;
 	
 	voice =							6;
 	id =							829;
@@ -15,12 +15,12 @@ instance Org_829_Organisator (Npc_Default)
 
 	//-------- abilities --------
 
-	attribute[ATR_STRENGTH] =		15;
+	attribute[ATR_STRENGTH] =		75;
 	attribute[ATR_DEXTERITY] =		15;
 	attribute[ATR_MANA_MAX] =		0;
 	attribute[ATR_MANA] =			0;
-	attribute[ATR_HITPOINTS_MAX] =	88;
-	attribute[ATR_HITPOINTS] =		88;
+	attribute[ATR_HITPOINTS_MAX] =	168;
+	attribute[ATR_HITPOINTS] =		168;
 
 	//-------- visuals --------
 	// 				animations
@@ -37,14 +37,13 @@ instance Org_829_Organisator (Npc_Default)
 	//-------- Talente --------
 	
 	Npc_SetTalentSkill (self,NPC_TALENT_BOW,1);
-	Npc_SetTalentSkill (self,NPC_TALENT_1H,1);	
+	Npc_SetTalentSkill (self,NPC_TALENT_2H,1);	
 	
 	Npc_SetTalentSkill (self,HACK_NPC_TALENT_SNEAK,1);	
 	
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1H_Mace_01);
-	CreateInvItems (self,ItKeLockpick,1);		
+	EquipItem (self,MTR_MW_02);	
 	CreateInvItems(self,ItMiNugget,9);
 	CreateInvItems (self,ItFoRice,8);
 	CreateInvItems (self,ItFoBooze,2);

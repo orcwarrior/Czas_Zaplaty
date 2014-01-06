@@ -44,7 +44,7 @@ instance Non_20252_Smoke (Npc_Default)
 	CreateInvItems(self,ItMiNugget,13);
 	CreateInvItems (self,ItLsTorch,2);
 	CreateInvItems (self,ItFo_Potion_Health_01,1);
-	EquipItem (self,ItMw_1H_Mace_02);
+	EquipItem (self,HUN_MW_03);
 
 	
 	//-------------Daily Routine-------------

@@ -37,7 +37,7 @@ instance STT_346_Virat (Npc_Default)
 		
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_Short_04);
+	EquipItem	(self,STT_MW_01);
 	EquipItem	(self,ItRw_Bow_Small_03);
 	CreateInvItems	(self,ItAmArrow,20);
 	CreateInvItem	(self,ItKeLockpick);

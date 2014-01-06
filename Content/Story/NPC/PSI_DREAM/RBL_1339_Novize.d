@@ -36,7 +36,7 @@ instance RBL_1339_Novize (Npc_Default)
 	
 	//-------- inventory --------
 
-	EquipItem (self,ItMw_1H_Mace_01);
+	EquipItem (self,ALL_MW_03);
 	//CreateInvItem (self,ItFoSoup);
 	//CreateInvItem (self,ItMiJoint);
  
