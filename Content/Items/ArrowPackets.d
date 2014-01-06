@@ -1,6 +1,7 @@
 FUNC VOID ArrowPack01()
 {
-CreateInvItems(hero,ItAmArrow,25);	
+   CreateInvItems(hero,ItAmArrow,25);	
+   PrintScreen("Otrzyma³eœ 25 strza³.",-1,-1,"font_old_20_white.tga",2);
 };
 
 /******************************************************************************************/
