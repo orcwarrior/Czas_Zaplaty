@@ -5,7 +5,7 @@ instance SLD_708_Soeldner (Npc_Default)
 	name =					NAME_Soeldner;
 	Npctype =				NPCTYPE_AMBIENT;
 	guild =					GIL_SLV;      
-	level =					8;
+	level =					12;
 	
 	voice =					11;
 	id =					856;
@@ -14,7 +14,7 @@ instance SLD_708_Soeldner (Npc_Default)
 	//-------- abilities --------
 
 	attribute[ATR_STRENGTH] =		120;
-	attribute[ATR_DEXTERITY] =		20;
+	attribute[ATR_DEXTERITY] =		80;
 	attribute[ATR_MANA_MAX] =		0;
 	attribute[ATR_MANA] =			0;
 	attribute[ATR_HITPOINTS_MAX] =	136;
@@ -51,8 +51,8 @@ instance SLD_708_Soeldner (Npc_Default)
 	CreateInvItem (self,ItFoMutton);
 	CreateInvItem (self,ItFoLoaf);
 	CreateInvItem (self,ItAt_Teeth_01);
-	EquipItem (self,ItMw_1H_Mace_03);
-	EquipItem (self,ItRw_Bow_Long_01);
+	EquipItem (self,MTR_MW_02);
+	EquipItem (self,MTR_RW_01);
 	CreateInvItems (self,ItAmArrow,20);
 	
 	//-------------Daily Routine-------------

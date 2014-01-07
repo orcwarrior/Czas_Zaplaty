@@ -456,10 +456,8 @@ func VOID STARTUP_SUB_NEWCAMP ()
 	// 	Wld_InsertNpc(ORG_807_Organisator, "NC_DAM"); //Hut 14
 	// 	Wld_InsertNpc(ORG_810_Organisator, "NC_DAM"); //Hut 12
 	// 	Wld_InsertNpc(ORG_811_Organisator, "NC_DAM"); //Hut 17
-	// 	Wld_InsertNpc(ORG_815_Organisator, "NC_DAM"); //Hut 29
 	// 	Wld_InsertNpc(ORG_816_Organisator, "NC_DAM"); //Hut 28
 	// 	Wld_InsertNpc(ORG_817_Organisator, "NC_DAM"); //Hut 13
-	// 	Wld_InsertNpc(ORG_820_Organisator, "NC_DAM"); //Hut 12
 	// 	Wld_InsertNpc(ORG_821_Organisator, "NC_DAM"); //Hut 25, Tavern Top
 	// 	Wld_InsertNpc(ORG_822_Organisator, "NC_DAM"); //Hut 16
 
@@ -563,10 +561,6 @@ Lee/Saturas camps
 
 
 	//Hut 15
-
-	// 	Wld_InsertNpc(ORG_875_Tuersteher, "NC_DAM"); 	//Kneipen-Tuersteher
-	// 	Wld_InsertNpc(ORG_876_Tuersteher, "NC_DAM"); 	//Kneipen-Tuersteher
-	// 	Wld_InsertNpc(ORG_873_Cipher, "NC_DAM");	
 
 	//-----------Schürfer in Bar--------------------------------
 

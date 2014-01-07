@@ -36,23 +36,14 @@ instance ORG_890_Organisator (Npc_Default)
 	//-------- Talente ----------
 
 	Npc_SetTalentSkill (self,NPC_TALENT_BOW,1);
-	Npc_SetTalentSkill (self,NPC_TALENT_1H,1);
+	Npc_SetTalentSkill (self,NPC_TALENT_2H,1);
 	
 
 	//-------- inventory --------   
-	                                 
-	CreateInvItems (self,ItKeLockpick,2);		
-	CreateInvItems(self,ItMiNugget,12);
-	CreateInvItems (self,ItFoRice,7);
-	CreateInvItems (self,ItFoBooze,2);
-	CreateInvItems (self,ItLsTorch,1);
-	CreateInvItems (self,ItFo_Potion_Health_01,3);
-	CreateInvItem (self,ItMi_Stuff_Barbknife_01);
-	CreateInvItem (self,ItFoMutton);
-	CreateInvItem (self,ItAt_Claws_01);
-	EquipItem (self,ItMw_1H_Mace_03);
-	EquipItem (self,ItRw_Bow_Long_01);
-	CreateInvItems (self,ItAmArrow,20);
+	                                   
+	CreateInvItems (self,ItFoRice,1);
+	CreateInvItems (self,ItFoBooze,1);
+	EquipItem (self,DEF_MW_2H);
 	
 
 	//-------------Daily Routine-------------

@@ -5,18 +5,18 @@ instance ORG_873_Cipher (Npc_Default)
 	name =					"Cipher";
 	Npctype =				Npctype_Main;
 	guild =					GIL_GRD;      
-	level =					8;
+	level =					10;
 	voice =					12;
 	id =					873;
 
 	//-------- abilities --------
 
-	attribute[ATR_STRENGTH] =		30;
-	attribute[ATR_DEXTERITY] =		30;
+	attribute[ATR_STRENGTH] =		40;
+	attribute[ATR_DEXTERITY] =		70;
 	attribute[ATR_MANA_MAX] =		0;
 	attribute[ATR_MANA] =			0;
-	attribute[ATR_HITPOINTS_MAX] =	136;
-	attribute[ATR_HITPOINTS] =		136;
+	attribute[ATR_HITPOINTS_MAX] =	146;
+	attribute[ATR_HITPOINTS] =		146;
 
 	//-------- visuals --------
 	// 				animations
@@ -28,7 +28,7 @@ instance ORG_873_Cipher (Npc_Default)
 	B_Scale (self);	
 	Mdl_SetModelFatness (self,0);		
 	
-	fight_tactic	=	FAI_HUMAN_STRONG;
+	fight_tactic	=	FAI_HUMAN_RANGED;
 	
 	//-------- Talente ----------
 
@@ -46,8 +46,8 @@ instance ORG_873_Cipher (Npc_Default)
 	CreateInvItem (self,ItMi_Stuff_Barbknife_01);
 	CreateInvItem (self,ItMi_Stuff_Cup_01);
 	CreateInvItem (self,ItAt_Claws_01);
-	EquipItem (self,ItMw_1H_Mace_03);
-	EquipItem (self,ItRw_Bow_Long_01);
+	EquipItem (self,MTR_MW_01);
+	EquipItem (self,MTR_RW_01);
 	CreateInvItems (self,ItAmArrow,20);
 	
 	//-------------Daily Routine-------------

@@ -5,7 +5,7 @@ instance VLK_556_Buddler (Npc_Default)
 	name =							Name_Buddler;
 	npctype =						npctype_ambient;
 	guild =							GIL_SLV;      
-	level =							3;
+	level =							4;
 	
 	
 	voice =							1;
@@ -37,7 +37,7 @@ instance VLK_556_Buddler (Npc_Default)
 
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1h_Mace_03);
+	EquipItem (self,ALL_MW_02);
 	CreateInvItem (self,ItMwPickaxe);
 	CreateInvItem (self,ItFoLoaf);
 	CreateInvItem (self,ItFoBeer);

@@ -35,7 +35,7 @@ instance Non_20250_Grd (Npc_Default)
 	//-------- Talente ----------
 
 	Npc_SetTalentSkill (self,NPC_TALENT_BOW,1);
-	Npc_SetTalentSkill (self,NPC_TALENT_1H,1);
+	Npc_SetTalentSkill (self,NPC_TALENT_2H,1);
 	
 
 	//-------- inventory --------   
@@ -50,7 +50,7 @@ instance Non_20250_Grd (Npc_Default)
 	CreateInvItem (self,ItFoMutton);
 	CreateInvItem (self,ItFoLoaf);
 	CreateInvItem (self,ItAt_Claws_01);
-	EquipItem (self,ItMw_1H_Mace_03);
+	EquipItem (self,MTR_MW_02);
 	EquipItem (self,ItRw_Bow_Long_01);
 	CreateInvItems (self,ItAmArrow,20);
 	

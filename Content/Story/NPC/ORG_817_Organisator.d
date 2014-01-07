@@ -13,7 +13,7 @@ instance ORG_817_Organisator (Npc_Default)
 
 	//-------- abilities --------
 
-	attribute[ATR_STRENGTH] =		30;
+	attribute[ATR_STRENGTH] =		45;
 	attribute[ATR_DEXTERITY] =		30;
 	attribute[ATR_MANA_MAX] =		0;
 	attribute[ATR_MANA] =			0;
@@ -49,7 +49,7 @@ instance ORG_817_Organisator (Npc_Default)
 	CreateInvItem (self,ItMi_Stuff_Plate_01);
 	CreateInvItem (self,ItFoMutton);
 	CreateInvItem (self,ItAt_Claws_01);
-	EquipItem (self,ItMw_1H_Mace_03);
+	EquipItem (self,MTR_MW_01);
 	EquipItem (self,ItRw_Bow_Long_01);
 	CreateInvItems (self,ItAmArrow,20);
 	

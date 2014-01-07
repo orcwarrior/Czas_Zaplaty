@@ -5,7 +5,7 @@ instance Non_20253_Stay (Npc_Default)
 	name =					"Uciekinier";
 	Npctype =				NPCTYPE_ROGUE;
 	guild =					GIL_NONE;      
-	level =					15;
+	level =					13;
 	
 	voice =					6;
 	id =					20253;
@@ -46,7 +46,7 @@ instance Non_20253_Stay (Npc_Default)
 	CreateInvItems (self,ItFo_Potion_Health_01,1);
 	CreateInvItem (self,ItFoMutton);
 	CreateInvItem (self,ItAt_Claws_01);
-	EquipItem (self,ItMw_1H_Mace_03);
+	EquipItem (self,GRD_MW_01);
 	EquipItem (self,ItRw_Bow_Long_02);
 	CreateInvItems (self,ItAmArrow,30);
 	

@@ -35,25 +35,13 @@ instance ORG_891_Organisator (Npc_Default)
 	//-------- Talente ----------
 
 	Npc_SetTalentSkill (self,NPC_TALENT_BOW,1);
-	Npc_SetTalentSkill (self,NPC_TALENT_1H,1);
+	Npc_SetTalentSkill (self,NPC_TALENT_2H,1);
 	
-	
+
 	//-------- inventory --------   
-	                                 
-	CreateInvItems (self,ItKeLockpick,2);		
-	CreateInvItems(self,ItMiNugget,16);
-	CreateInvItems (self,ItFoRice,7);
-	CreateInvItems (self,ItFoBooze,3);
-	CreateInvItems (self,ItLsTorch,3);
-	CreateInvItems (self,ItFo_Potion_Health_01,1);
-	CreateInvItem (self,ItMi_Stuff_Plate_01);
-	CreateInvItem (self,ItMi_Stuff_Cup_01);
-	CreateInvItem (self,ItFoLoaf);
-	CreateInvItem (self,ItAt_Teeth_01);
-	EquipItem (self,ItMw_1H_Mace_03);
-	EquipItem (self,ItRw_Bow_Long_01);
-	CreateInvItems (self,ItAmArrow,20);
-	CreateInvItem	(self,ItMi_Stuff_OldCoin_02);
+	                                   
+	CreateInvItems (self,ItFoRice,1);
+	EquipItem (self,DEF_MW_2H);
 
 	//-------------Daily Routine-------------
 	/*B_InitNPCAddins(self);*/		daily_routine = Rtn_FMCstart_891;

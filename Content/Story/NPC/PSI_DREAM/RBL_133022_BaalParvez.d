@@ -34,7 +34,7 @@ instance RBL_410_BaalParvez (Npc_Default)
 	
 	//-------- inventory --------
 
-	EquipItem (self,ItMw_1H_Mace_04);
+	EquipItem (self,RBL_MW_02);
 	CreateInvItem	(self,ItMi_Stuff_OldCoin_02);	
 	CreateInvItems	(self,ItMiNugget,50);
 	CreateInvItems	(self,ItFo_Potion_Health_03,1);
