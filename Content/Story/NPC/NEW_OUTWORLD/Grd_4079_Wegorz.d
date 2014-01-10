@@ -2,7 +2,7 @@ instance Grd_2519_Wegorz (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Wêgorz";
+	name 		=	"W?gorz";
 	npctype 	= 	npctype_main;
 	guild 		=	GIL_NONE;
 	level 		=	50;
@@ -11,7 +11,7 @@ instance Grd_2519_Wegorz (Npc_Default)
 
 
 	//-------- abilities --------
-	attribute[ATR_STRENGTH] 	= 110;
+	attribute[ATR_STRENGTH] 	= 125;
 	attribute[ATR_DEXTERITY] 	= 100;
 	attribute[ATR_MANA_MAX] 	= 0;
 	attribute[ATR_MANA] 		= 0;
@@ -44,7 +44,7 @@ instance Grd_2519_Wegorz (Npc_Default)
 			
 	//-------- inventory --------                                    
 
-	EquipItem	(self,ItMw_1H_Sword_Bastard_04);
+	EquipItem	(self,GRD_MW_04);
 	CreateInvItems(self,ItFo_Potion_Health_03,4);
 
 

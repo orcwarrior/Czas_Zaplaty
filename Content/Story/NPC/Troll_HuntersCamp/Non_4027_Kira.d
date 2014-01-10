@@ -43,7 +43,7 @@ instance Non_4027_Kira (Npc_Default)
 	Npc_SetTalentSkill (self,NPC_TALENT_1H,2);
 	Npc_SetTalentSkill (self,NPC_TALENT_CROSSBOW,2);	
 	//-------- inventory --------                                    
-	EquipItem	(self,ItMw_1H_Sword_Broad_03);
+	EquipItem	(self,ALL_MW_05);
 	EquipItem	(self,GRD_RW_02);
 	CreateInvItems (self,ItAmBolt,30);
 	CreateInvItems (self,ItAmPoisonBolt,11);

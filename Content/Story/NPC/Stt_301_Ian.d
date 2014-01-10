@@ -40,8 +40,8 @@ instance STT_301_Ian (Npc_Default)
 	Npc_SetTalentSkill (self,NPC_TALENT_PICKLOCK,1);Npc_SetTalentValue(self,NPC_TALENT_PICKLOCK,60); 		
 	
 	//-------- inventory --------
-	EquipItem	(self,ItMw_1H_Sword_04);
-	EquipItem	(self,ItRw_Bow_Small_03);
+	EquipItem	(self,GRD_MW_02);
+	EquipItem	(self,STT_RW_02);
 	CreateInvItems	(self,ItAmArrow,25);
 	
 	

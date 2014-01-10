@@ -385,6 +385,31 @@ INSTANCE GRD_MW_02 (WeaponsMelee)
 	TEXT[4] 			= NAME_OneHanded;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 };
+INSTANCE GRD_MW_02U (WeaponsMelee)
+{	
+	name 				=	"Dobry Miecz stra¿nika";
+
+	mainflag 			=	ITEM_KAT_NF;
+	flags 				=	ITEM_SWD|ITEM_MULTI;	
+	material 			=	MAT_METAL;
+
+	value 				=	180; 	
+
+	damageTotal			= 	65;
+	damagetype 			= 	DAM_EDGE;
+	range    			=  	100;		
+
+	cond_atr[2]   		= 	ATR_STRENGTH;
+	cond_value[2]  		= 	55; //12 
+	cond_value[2]  		=	(3*cond_value[2])/2-((3*cond_value[2])/2)%1; 
+	visual 				=	"ItMw_1H_Sword_03.3DS";
+
+	description			= name;
+	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
+	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
+	TEXT[4] 			= NAME_OneHanded;
+	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
+};
 INSTANCE GRD_MW_03 (WeaponsMelee)
 {	
 	name 				=	"Kiepski miecz dwurêczny stra¿nika";
@@ -424,8 +449,7 @@ INSTANCE GRD_MW_04 (WeaponsMelee)
 	range    			=  	150;		
 
 	cond_atr[2]   		= 	ATR_STRENGTH;
-	cond_value[2]  		= 	60; 
-	cond_value[2]  		=	(3*cond_value[2])/2-((3*cond_value[2])/2)%1; 
+	cond_value[2]  		= 	70; 
 	visual 				=	"ItMw_2H_Sword_01.3DS";
 
 	description			= name;
@@ -1040,7 +1064,7 @@ INSTANCE ALL_MW_02 (WeaponsMelee)
 	range    			=  	100;		
 
 	cond_atr[2]   		= 	ATR_STRENGTH;
-	cond_value[2]  		= 	22;
+	cond_value[2]  		= 	20;
 	  visual 				=	"ItMw_1H_Nailmace_01.3DS";
 
 	description			= name;
@@ -1085,12 +1109,12 @@ INSTANCE ALL_MW_05 (WeaponsMelee)
 
 	value 				=	3000;
 
-	damageTotal			=Math_Round(   44*5/2);
+	damageTotal			=	Math_Round(   44*5/2);
 	damagetype			=	DAM_EDGE;
 	range    			=  	100;		
 
 	cond_atr[2]   		= 	ATR_STRENGTH;
-	cond_value[2]  		=Math_Round( 	38*16/5);
+	cond_value[2]  		=	Math_Round( 	38*16/5);
 	  visual 				=	"ItMw_1H_Axe_03.3DS";
 
 	description			= name;

@@ -1,6 +1,6 @@
 instance GRD_2502_Witten (Npc_Default)
 {
-	//tak samo jak z Kerestelem musisz wszystko zobaczyæ czy jest dobrze ;)
+	//tak samo jak z Kerestelem musisz wszystko zobaczy? czy jest dobrze ;)
 
 	//-------- primary data --------
 	

@@ -36,7 +36,7 @@ instance GRD_286_Gardist (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_02);
+	EquipItem	(self,GRD_MW_02U);
 	CreateInvItem	(self,ItFoCheese);
 	CreateInvItem	(self,ItFoApple);
 	CreateInvItems	(self,ItMiNugget,10);

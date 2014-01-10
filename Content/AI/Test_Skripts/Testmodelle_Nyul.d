@@ -48,7 +48,7 @@ INSTANCE PC_Nyul(NPC_DEFAULT)
 	
 	
 	//-------- inventory --------
-
+/*
 //----------------------------------------
 //Melee_weapons.d
 //----------------------------------------
@@ -151,6 +151,7 @@ INSTANCE PC_Nyul(NPC_DEFAULT)
 //---------------------------------------------------------------------
 	CreateInvItems(self,ItFo_Potion_Mana_01, 10);
 	CreateInvItems(self,ItFo_Potion_Health_01, 10);
+	*/
 };
 
 INSTANCE Nyul_16(NPC_DEFAULT)
@@ -194,30 +195,30 @@ INSTANCE Nyul_16(NPC_DEFAULT)
 	
 
 	//-------- inventory --------
-	EquipItem		(self,ItMw_1H_Sword_Bastard_04);
-	CreateInvItem	(self,ItMw_2H_Sword_Old_01);
-	EquipItem		(self,ItRw_Bow_Long_06);
-	CreateInvItems	(self,ItAmArrow,					200);
-
-	CreateInvItems	(self,ItArScrollFireball,			5);
-	CreateInvItems	(self,ItArScrollThunderbolt,		10);
-	CreateInvItems	(self,ItArScrollThunderball,		5);
-	CreateInvItems	(self,ItArScrollChainLightning,		5);
-	CreateInvItems	(self,ItArscrollIceCube,			5);
-
-	CreateInvItems	(self,ItArScrollWindfist,			10);
-
-	CreateInvItems	(self,ItFo_mutton_01,				20);		
-	CreateInvItems	(self,ItFoBeer,						20);
-	CreateInvItems	(self,ItFo_Plants_Trollberrys_01,	20);
-	
-	CreateInvItems	(self,ItKeLockpick,					30);
-	CreateInvItems	(self,ItLsTorch,					30);
-	CreateInvItems	(self,ItMiNugget,					1000);
-	CreateInvItem 	(self,ItWrWorldmap);
-	
-	CreateInvItems	(self,ItFo_Potion_Mana_03, 			20);
-	CreateInvItems	(self,ItFo_Potion_Health_03, 		20);
+//	EquipItem		(self,ItMw_1H_Sword_Bastard_04);
+//	CreateInvItem	(self,ItMw_2H_Sword_Old_01);
+//	EquipItem		(self,ItRw_Bow_Long_06);
+//	CreateInvItems	(self,ItAmArrow,					200);
+//
+//	CreateInvItems	(self,ItArScrollFireball,			5);
+//	CreateInvItems	(self,ItArScrollThunderbolt,		10);
+//	CreateInvItems	(self,ItArScrollThunderball,		5);
+//	CreateInvItems	(self,ItArScrollChainLightning,		5);
+//	CreateInvItems	(self,ItArscrollIceCube,			5);
+//
+//	CreateInvItems	(self,ItArScrollWindfist,			10);
+//
+//	CreateInvItems	(self,ItFo_mutton_01,				20);		
+//	CreateInvItems	(self,ItFoBeer,						20);
+//	CreateInvItems	(self,ItFo_Plants_Trollberrys_01,	20);
+//	
+//	CreateInvItems	(self,ItKeLockpick,					30);
+//	CreateInvItems	(self,ItLsTorch,					30);
+//	CreateInvItems	(self,ItMiNugget,					1000);
+//	CreateInvItem 	(self,ItWrWorldmap);
+//	
+//	CreateInvItems	(self,ItFo_Potion_Mana_03, 			20);
+//	CreateInvItems	(self,ItFo_Potion_Health_03, 		20);
 };
 
 
@@ -261,33 +262,33 @@ INSTANCE Nyul_21(NPC_DEFAULT)
 	//Npc_SetTalentSkill	(self, NPC_TALENT_CROSSBOW,1);
 
 	//-------- inventory --------
-	EquipItem		(self,ItMw_2H_Sword_03);
-	EquipItem		(self,ItRw_Bow_Long_01);
-	CreateInvItems	(self,ItAmArrow,					100);
-
-	CreateInvItem	(self,ItArRuneLight);
-	CreateInvItem	(self,ItArRuneFirebolt);
-	CreateInvItem	(self,ItArRuneTeleport2);
-
-	CreateInvItems	(self,ItArScrollFireball,			5);
-	CreateInvItems	(self,ItArScrollThunderbolt,		10);
-	CreateInvItems	(self,ItArScrollThunderball,		5);
-	CreateInvItems	(self,ItArScrollChainLightning,		5);
-	CreateInvItems	(self,ItArscrollIceCube,			5);
-
-	CreateInvItems	(self,ItArScrollWindfist,			10);
-	
-	CreateInvItems	(self,ItFo_mutton_01,				20);		
-	CreateInvItems	(self,ItFoBeer,						20);
-	CreateInvItems	(self,ItFo_Plants_Trollberrys_01,	20);
-	
-	CreateInvItems	(self,ItKeLockpick,					30);
-	CreateInvItems	(self,ItLsTorch,					30);
-	CreateInvItems	(self,ItMiNugget,					1000);
-	CreateInvItem 	(self,ItWrWorldmap);
-	
-	CreateInvItems	(self,ItFo_Potion_Mana_03, 			20);
-	CreateInvItems	(self,ItFo_Potion_Health_03, 		20);
+//	EquipItem		(self,ItMw_2H_Sword_03);
+//	EquipItem		(self,ItRw_Bow_Long_01);
+//	CreateInvItems	(self,ItAmArrow,					100);
+//
+//	CreateInvItem	(self,ItArRuneLight);
+//	CreateInvItem	(self,ItArRuneFirebolt);
+//	CreateInvItem	(self,ItArRuneTeleport2);
+//
+//	CreateInvItems	(self,ItArScrollFireball,			5);
+//	CreateInvItems	(self,ItArScrollThunderbolt,		10);
+//	CreateInvItems	(self,ItArScrollThunderball,		5);
+//	CreateInvItems	(self,ItArScrollChainLightning,		5);
+//	CreateInvItems	(self,ItArscrollIceCube,			5);
+//
+//	CreateInvItems	(self,ItArScrollWindfist,			10);
+//	
+//	CreateInvItems	(self,ItFo_mutton_01,				20);		
+//	CreateInvItems	(self,ItFoBeer,						20);
+//	CreateInvItems	(self,ItFo_Plants_Trollberrys_01,	20);
+//	
+//	CreateInvItems	(self,ItKeLockpick,					30);
+//	CreateInvItems	(self,ItLsTorch,					30);
+//	CreateInvItems	(self,ItMiNugget,					1000);
+//	CreateInvItem 	(self,ItWrWorldmap);
+//	
+//	CreateInvItems	(self,ItFo_Potion_Mana_03, 			20);
+//	CreateInvItems	(self,ItFo_Potion_Health_03, 		20);
 };
 
 

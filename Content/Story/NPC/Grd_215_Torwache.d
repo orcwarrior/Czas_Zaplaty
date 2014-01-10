@@ -38,7 +38,7 @@ instance GRD_215_Torwache (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_01);
+	EquipItem	(self,GRD_MW_02);
 	CreateInvItem	(self,ItFoApple);
 	CreateInvItems	(self,ItMiNugget,10);
 

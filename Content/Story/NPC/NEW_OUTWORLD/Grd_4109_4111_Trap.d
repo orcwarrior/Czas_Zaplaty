@@ -2,7 +2,7 @@ instance Grd_4109_Trap (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Stra¿nik";
+	name 		=	"Stra?nik";
 	npctype		=	npctype_main;
 	guild 		=	GIL_NONE;
 	level 		=	25;
@@ -57,7 +57,7 @@ instance Grd_4110_Trap (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Stra¿nik";
+	name 		=	"Stra?nik";
 	npctype		=	npctype_main;
 	guild 		=	GIL_NONE;
 	level 		=	25;
@@ -113,7 +113,7 @@ instance Grd_4111_Trap (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Stra¿nik";
+	name 		=	"Stra?nik";
 	npctype		=	npctype_main;
 	guild 		=	GIL_NONE;
 	level 		=	25;
@@ -168,7 +168,7 @@ instance Grd_4112_Trap (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Stra¿nik";
+	name 		=	"Stra?nik";
 	npctype		=	npctype_main;
 	guild 		=	GIL_NONE;
 	level 		=	25;

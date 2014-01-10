@@ -46,11 +46,10 @@ INSTANCE Lukor_Bugfixbook(C_Item)
 		Doc_PrintLines	( nDocID,  1, "");
 
 		Doc_Show		( nDocID );
-		
-		var C_NPC bugfix_baallukor; bugfix_baallukor = Hlp_GetNpc(GUR_1211_BaalLukor);
-		Npc_ExchangeRoutine	(bugfix_baallukor, "Follow");
-		Npc_RemoveInvItem (hero, Lukor_Bugfixbook);
-		Wld_RemoveItem(Lukor_Bugfixbook);
+		////var C_NPC bugfix_baallukor; bugfix_baallukor = Hlp_GetNpc(GUR_1211_BaalLukor);
+		//Npc_ExchangeRoutine	(bugfix_baallukor, "Follow");
+		//Npc_RemoveInvItem (hero, Lukor_Bugfixbook);
+		//Wld_RemoveItem(Lukor_Bugfixbook);
 	};
 INSTANCE Lester_Bugfixbook(C_Item)
 {	

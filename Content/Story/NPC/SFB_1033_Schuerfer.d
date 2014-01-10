@@ -40,7 +40,7 @@ instance SFB_1033_Schuerfer (Npc_Default)
 	CreateInvItems (self,ItFoRice,5);
 	CreateInvItems (self,ItMiNugget,8);
 	EquipItem (self,ItMwPickaxe);
-	EquipItem (self,ItMw_1H_Nailmace_01);
+	EquipItem (self,ALL_MW_02);
 	
 	
 	//-------------Daily Routine-------------

@@ -36,7 +36,7 @@ instance VLK_4098_Buddler (Npc_Default)
 	
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1h_Club_01);
+	EquipItem (self,DEF_MW_1H);
 	CreateInvItem (self,ItFoApple);
 
 
@@ -48,7 +48,7 @@ FUNC VOID Rtn_start_4098 ()
 {
 
 	/*******************
-le¿y sobie martwy 
+le?y sobie martwy 
 	********************/
 
 	TA_Stand		(08,00,20,00,"OW_PATH_168");
@@ -96,7 +96,7 @@ instance VLK_4099_Buddler (Npc_Default)
 	
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1h_Club_01);
+	EquipItem (self,ALL_MW_01);
 	CreateInvItem (self,ItFoApple);
 
 
@@ -108,7 +108,7 @@ FUNC VOID Rtn_start_4099 ()
 {
 
 	/*******************
-le¿y sobie martwy 
+le?y sobie martwy 
 	********************/
 
 	TA_Stand		(08,00,20,00,"OW_PATH_169");
@@ -151,7 +151,7 @@ instance VLK_4100_Buddler (Npc_Default)
 
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1h_Club_01);
+	EquipItem (self,DEF_MW_1H);
 	CreateInvItem (self,ItFoApple);
 
 	//-------------Daily Routine-------------
@@ -162,7 +162,7 @@ FUNC VOID Rtn_start_4100 ()
 {
 
 	/*******************
-le¿y sobie martwy 
+le?y sobie martwy 
 	********************/
 
 	TA_Stand		(08,00,20,00,"OW_PATH_169");
@@ -206,7 +206,7 @@ instance VLK_4101_Buddler (Npc_Default)
 	
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1h_Club_01);
+	EquipItem (self,DEF_MW_1H);
 	CreateInvItem (self,ItFoApple);
 
 

@@ -39,8 +39,8 @@ instance VLK_9999_Ziutek (Npc_Default)
 	
 	//-------- inventory --------                                    
 
-	CreateInvItem		(self,ItMw_1h_HSword_Short_06);
-	EquipItem		(self,ItRw_Bow_Long_01);
+///	CreateInvItem		(self,ItMw_1h_HSword_Short_06);
+//	EquipItem		(self,ItRw_Bow_Long_01);
 	CreateInvItems		(self,ItAmArrow,30);
 	CreateInvItems		(self,ItMiHammer,2);
 	

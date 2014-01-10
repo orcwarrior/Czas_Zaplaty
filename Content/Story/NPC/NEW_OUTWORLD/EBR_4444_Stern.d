@@ -37,7 +37,7 @@ instance EBR_4444_Stern (Npc_Default)
 	Npc_SetTalentSkill (self,NPC_TALENT_BOW,2);
 			
 	//-------- inventory --------               
-	EquipItem	(self,ItMw_1H_Sword_Bastard_04);	
+	EquipItem	(self,GRD_MW_02U);	
 	CreateInvItem(self,ItFo_Potion_Health_03);
 	CreateInvItem(self,Ring_des_Geschicks);
 

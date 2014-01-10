@@ -1,5 +1,5 @@
 instance ORG_810_Organisator (Npc_Default)
-// hat den mittleren Organistor-Dress und Bogen3,weil er Attentäter ist
+// hat den mittleren Organistor-Dress und Bogen3,weil er Attent?ter ist
 {
 	//-------- primary data --------
 	
@@ -51,7 +51,7 @@ instance ORG_810_Organisator (Npc_Default)
 	CreateInvItem (self,ItMi_Stuff_Barbknife_01);
 	CreateInvItem (self,ItFoLoaf);
 	CreateInvItem (self,ItAt_Teeth_01);
-	EquipItem (self,ItMw_1h_Mace_War_02);
+	EquipItem (self,MTR_MW_02);
 	EquipItem (self,ItRw_Bow_Long_01);
 	CreateInvItems (self,ItAmArrow,20);
 

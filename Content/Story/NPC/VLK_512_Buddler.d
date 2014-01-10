@@ -39,7 +39,7 @@ instance VLK_512_Buddler (Npc_Default)
 	
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1h_Nailmace_01);
+	EquipItem (self,ALL_MW_02);
 	CreateInvItem (self,ItMwPickaxe);
 	CreateInvItem (self,ItFoLoaf);
 	CreateInvItem (self,ItLsTorch);
@@ -48,7 +48,7 @@ instance VLK_512_Buddler (Npc_Default)
 	/*B_InitNPCAddins(self);*/		daily_routine = Rtn_start_512;
 	};
 
-FUNC VOID Rtn_start_512 () //Durchgangshütte Bloodwyn/Markt
+FUNC VOID Rtn_start_512 () //Durchgangsh?tte Bloodwyn/Markt
 {
 	TA_Sleep	    (23,00,08,00,"OCR_HUT_14");
 	TA_Smalltalk	(08,00,12,00,"OCR_OUTSIDE_HUT_63_SMALLTALK");

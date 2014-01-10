@@ -35,7 +35,7 @@ instance GRD_114_Gardist (Npc_Default)
 	Npc_SetTalentSkill (self,NPC_TALENT_CROSSBOW,2);		
 			
 	//-------- inventory --------
-	EquipItem	(self,ItMw_1H_Sword_02);
+	EquipItem	(self,GRD_MW_02U);
 	EquipItem	(self,ItRw_Crossbow_01);
 	CreateInvItems	(self,ItAmBolt,30);
 	

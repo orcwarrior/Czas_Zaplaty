@@ -26,7 +26,7 @@ instance STT_304_Schatten (Npc_Default)
 	Mdl_SetVisualBody (self,"hum_body_Naked0",0,0,"Hum_Head_Bald",14,2,STT_ARMOR_H);
         
 	B_Scale (self);
-	Mdl_SetModelFatness(self,-2.3);
+	Mdl_SetModelFatness(self,-1.3);
 	
 	fight_tactic	=	FAI_HUMAN_STRONG; 
 
@@ -37,8 +37,8 @@ instance STT_304_Schatten (Npc_Default)
 		
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_Bastard_01);
-	EquipItem	(self,ItRw_Bow_Small_03);
+	EquipItem	(self,GRD_MW_01);
+	EquipItem	(self,STT_RW_01);
 	CreateInvItems	(self,ItAmArrow,14);
 	CreateInvItem	(self,ItFo_Potion_Water_01);
 	CreateInvItem	(self,ItFoApple);

@@ -37,7 +37,7 @@ instance VLK_565_Buddler (Npc_Default)
 	
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1h_Club_01);
+	EquipItem (self,ALL_MW_01);
 	CreateInvItem (self,ItFoApple);
 
 

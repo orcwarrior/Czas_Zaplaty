@@ -2,7 +2,7 @@ instance STT_344_Warrior (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Trupismród";
+	name 		=	"Trupismr?d";
 	npctype		= 	npctype_main;
 	guild 		=	GIL_GRD;
 	level 		=	20;

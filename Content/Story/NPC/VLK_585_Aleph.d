@@ -38,7 +38,7 @@ instance VLK_585_Aleph (Npc_Default)
 	
 	//-------- inventory --------                                    
 
-	CreateInvItem		(self,ItMw_1h_Nailmace_01);
+	CreateInvItem		(self,ALL_MW_02);
 	CreateInvItem	(self,ItMwPickaxe);
 
 	CreateInvItems	(self,ItKe_OM_03,1);	// Mission-Item!

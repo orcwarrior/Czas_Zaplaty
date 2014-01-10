@@ -23,7 +23,7 @@ instance Grd_4081_Edwin (Npc_Default)
 	Mdl_SetVisual		(self,"HUMANS.MDS");
 	Mdl_ApplyOverlayMds	(self,"Humans_Arrogance.mds");
 	//			body mesh     ,bdytex,skin,head mesh     ,headtex,teethtex,ruestung	
-	Mdl_SetVisualBody (self,"hum_body_Naked0",0,1,"Hum_Head_FatBald",24,1,HUN_ARMOR_M); //Ork: Te zbroje magnatÃ³w to IMO szczyt gÅ‚upoty
+	Mdl_SetVisualBody (self,"hum_body_Naked0",0,1,"Hum_Head_FatBald",24,1,HUN_ARMOR_M); //Ork: Te zbroje magnatów to IMO szczyt g³upoty
         
     	B_Scale (self); 
 	Mdl_SetModelFatness(self,0);
@@ -32,7 +32,7 @@ instance Grd_4081_Edwin (Npc_Default)
 	Mdl_SetModelScale(self,1.1,1.1,1.1);
 
 	Npc_SetAivar(self,AIV_IMPORTANT,  TRUE);
-	Npc_SetAivar(self,AIV_ITEMSCHWEIN, TRUE); // Ork: Troche glupio gdy tak tÄ™po gapi sie na Å‚ojenie ekwipunku w kopalni
+	Npc_SetAivar(self,AIV_ITEMSCHWEIN, TRUE); // Ork: Troche glupio gdy tak têpo gapi sie na ³ojenie ekwipunku w kopalni
 	
 	fight_tactic	=	FAI_HUMAN_MASTER;
 	

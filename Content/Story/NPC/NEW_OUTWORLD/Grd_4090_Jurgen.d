@@ -41,7 +41,7 @@ instance Grd_4090_Jurgen (Npc_Default)
 			
 	//-------- inventory --------                                    
 
-	EquipItem	(self,ItMw_1H_Sword_Bastard_02);
+	EquipItem	(self,GRD_MW_02U);
 	CreateInvItem	(self,ItFoCheese);
 	CreateInvItem	(self,ItFoApple);
 	CreateInvItem	(self,ItLsTorch);

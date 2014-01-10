@@ -5,17 +5,17 @@ instance Grd_1246_Jeff (Npc_Default)
 	name 		= 	"Jeff";
 	npctype		= 	npctype_guard;
 	guild 		=	GIL_GRD;
-	level 		=	45;
+	level 		=	20;
 	voice		=	7;
 	id 			=	1246;
-		
+	//Ork: Balans atrybutów z dupy
 	//-------- abilities --------
 	attribute[ATR_STRENGTH] 	= 80;
-	attribute[ATR_DEXTERITY] 	= 80;
+	attribute[ATR_DEXTERITY] 	= 90;
 	attribute[ATR_MANA_MAX] 	= 0;
 	attribute[ATR_MANA] 		= 0;
-	attribute[ATR_HITPOINTS_MAX]= 560;
-	attribute[ATR_HITPOINTS] 	= 560;
+	attribute[ATR_HITPOINTS_MAX]= 260;
+	attribute[ATR_HITPOINTS] 	= 260;
 
 	//-------- visuals --------
 	// 			animations
@@ -38,10 +38,11 @@ instance Grd_1246_Jeff (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_Long_04);
+	EquipItem	(self,GRD_MW_04);
+	EquipItem	(self,GRD_RW_02);
 	CreateInvItems	(self,ItAmBolt,10);
 	CreateInvItem	(self,ItFoMutton);
-	CreateInvItems	(self,ItMiNugget,100);
+	CreateInvItems	(self,ItMiNugget,15);
 	CreateInvItem	(self,ItFo_Potion_Health_03);
 	CreateInvItem	(self,ItLsTorch);
 

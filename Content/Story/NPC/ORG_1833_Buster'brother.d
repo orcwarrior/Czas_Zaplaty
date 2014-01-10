@@ -51,7 +51,7 @@ instance ORG_1833_BusterBrother (Npc_Default)
 	CreateInvItem (self,ItMi_Stuff_Barbknife_01);
 	CreateInvItem (self,ItFoMutton);
 	CreateInvItem (self,ItAt_Claws_01);
-	EquipItem (self,ItRw_Bow_Small_03);
+	EquipItem (self,MTR_RW_01);
 	CreateInvItems (self,ItAmArrow,10);
 	EquipItem 		(self,ItMw_1H_HSword_Short_10);
 	

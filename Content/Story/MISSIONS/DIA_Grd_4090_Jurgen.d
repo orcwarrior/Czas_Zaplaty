@@ -41,6 +41,7 @@ FUNC INT DIA_Jurgen_Hi_Condition()
 
 FUNC VOID DIA_Jurgen_Hi_Info()
 {
+	//Ork: Powodowa³o Crasha w jednym z wys³anych save'ów o,O
 	B_FullStop (hero);
 
 	AI_Output (self, other, "DIA_Jurgen_Hi_11_01"); //Gdzie leziesz. Wracaj do kilofa!
@@ -75,14 +76,13 @@ FUNC INT DIA_Jurgen_First_Condition()
 FUNC VOID DIA_Jurgen_First_Info()
 {
 	var C_NPC tor; tor = Hlp_GetNpc(Sld_737_Torlof);
-	B_FullStop (hero);
+	//B_FullStop (hero);
 	AI_TurnToNpc(self, tor);
 	AI_Output (self, other, "DIA_Jurgen_First_11_01"); //Przed chwil¹ jeden z moich ludzi policzy³ paczki. Zdaje siê Torlof, ¿e znowu bêdziesz mia³ kogoœ na sumieniu.
 
 	/************************
 	Ork gdzieœ w pobli¿y wyjœcia z kopalni niech bêdzie jakieœ ma³e sk³adowisko z pakami rudy i mo¿e niec tam npce czasami chodz¹, ¿e niby sk³aduj¹ tam urobek - bêdzie to fajnie wygl¹daæ
 	*************************/
-
 	B_StopProcessInfos(self);
 };	
 
@@ -109,7 +109,9 @@ FUNC VOID DIA_Jurgen_Second_Info()
 {
 	var C_NPC tor; tor = Hlp_GetNpc(Sld_737_Torlof);
 	B_FullStop(hero);
-   B_FullStop(sher);
+	if(Hlp_IsValidNpc(sher)){
+	  B_FullStop(sher);
+	};
 	AI_TurnToNpc(self, tor);
 
 	AI_Output (self, other, "DIA_Jurgen_Second_11_00"); //Czy¿by? Wiesz jakie s¹ zasady. Przykro mi Torlof, ale któryœ z kopaczy musi zap³aciæ krwi¹ za Twoj¹ nieudolnoœæ.
@@ -126,7 +128,7 @@ FUNC VOID DIA_Jurgen_Second_Info()
 	AI_Output (self, other, "DIA_Jurgen_Second_11_03"); //To ju¿ Twój problem. Ale nie przejmuj siê, za chwilê nic ju¿ nie bêdzie Ci zaprz¹taæ g³owy.
 	B_StopProcessInfos(self);
 	AI_GotoWP(sher, "FM_09");
-   Npc_ExchangeRoutine(sher, "Death");
+    Npc_ExchangeRoutine(sher, "Death");
 };	
 
 // **************************************************

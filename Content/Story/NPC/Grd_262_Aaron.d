@@ -35,7 +35,7 @@ instance GRD_262_Aaron (Npc_Default)
 			
 	//-------- inventory --------
 	
-	CreateInvItem		(self,ItMw_1H_Sword_02);
+	CreateInvItem		(self,GRD_MW_02);
 	CreateInvItem		(self,ItRw_Crossbow_01);
 	CreateInvItems	(self,ItAmBolt,30);
 	CreateInvItem	(self,ItFoCheese);

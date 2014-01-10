@@ -50,7 +50,7 @@ instance ORG_820_Organisator (Npc_Default)
 	CreateInvItem (self,ItMi_Stuff_Cup_01);
 	CreateInvItem (self,ItFoLoaf);
 	CreateInvItem (self,ItAt_Claws_01);
-	EquipItem (self,ItMw_1H_Mace_03);
+	EquipItem (self,RBL_MW_02);
 	EquipItem (self,ItRw_Bow_Long_01);
 	CreateInvItems (self,ItAmArrow,20);
 	

@@ -39,7 +39,7 @@ instance Grd_207_Gardist (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_02);
+	EquipItem	(self,GRD_MW_02U);
 	EquipItem	(self,GRD_RW_02);
 	CreateInvItems	(self,ItAmBolt,30);
 	CreateInvItem	(self,ItFoCheese);
@@ -67,7 +67,7 @@ instance dead_guard (Npc_Default)
 {
 	//-------- primary data --------
 	//When Hero Runs - headshoot
-	name 		=	"Martwy stra¿nik";
+	name 		=	"Martwy stra?nik";
 	npctype		=	NPCTYPE_GUARD;
 	guild 		=	GIL_GRD;
 	level 		=	15;
@@ -96,7 +96,7 @@ instance dead_guard (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_02);
+	EquipItem	(self,GRD_MW_01);
 	EquipItem	(self,GRD_RW_02);
 	CreateInvItems	(self,ItAmBolt,30);
 	CreateInvItem	(self,ItFoCheese);

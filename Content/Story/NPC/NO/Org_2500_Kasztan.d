@@ -42,7 +42,7 @@ instance ORG_2500_Kasztan (Npc_Default)
 	CreateInvItem	(self,ItMi_Stuff_Cup_01);
 	CreateInvItem	(self,ItFoLoaf);
 	CreateInvItem	(self,ItAt_Teeth_01);
-	EquipItem 		(self,ItMw_1H_Sword_02);
+	EquipItem 		(self,GRD_MW_02);
 	
 	//-------------Daily Routine-------------
 	daily_routine = Rtn_PreStart_2500;

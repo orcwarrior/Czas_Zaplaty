@@ -32,7 +32,7 @@ instance VLK_527_Buddler (Npc_Default)
     	
     	Npc_SetAivar(self,AIV_IMPORTANT,  TRUE);
 	
-	fight_tactic	=	FAI_HUMAN_MASTER; 
+	fight_tactic	=	FAI_HUMAN_STRONG; 
 
 	//-------- Talents  --------                                    
 
@@ -40,7 +40,7 @@ instance VLK_527_Buddler (Npc_Default)
 	
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1h_Sword_04);
+	EquipItem (self,ItMw_1h_Sword_01);
 	CreateInvItem (self,ItMwPickaxe);
 	CreateInvItem (self,ItFoLoaf);
 	CreateInvItem (self,ItFoBeer);

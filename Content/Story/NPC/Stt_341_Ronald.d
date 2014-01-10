@@ -38,7 +38,7 @@ instance Stt_341_Ronald (Npc_Default)
 	
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Nailmace_01);
+	EquipItem	(self,ALL_MW_02);
 	CreateInvItem	(self,ItMi_Stuff_Cup_01);
 	
 	//-------------Daily Routine-------------

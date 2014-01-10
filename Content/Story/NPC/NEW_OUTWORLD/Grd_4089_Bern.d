@@ -5,18 +5,18 @@ instance Grd_4089_Bern (Npc_Default)
 	name 		=	"Bern";
 	npctype 	= 	npctype_main;
 	guild 		=	GIL_NONE;
-	level 		=	40;
+	level 		=	30;
 	voice 		=	11;
 	id 			=	4089;
 
 
 	//-------- abilities --------
-	attribute[ATR_STRENGTH] 	= 100;
+	attribute[ATR_STRENGTH] 	= 120;
 	attribute[ATR_DEXTERITY] 	= 90;
 	attribute[ATR_MANA_MAX] 	= 0;
 	attribute[ATR_MANA] 		= 0;
-	attribute[ATR_HITPOINTS_MAX]= 320;
-	attribute[ATR_HITPOINTS] 	= 320;
+	attribute[ATR_HITPOINTS_MAX]= 380;
+	attribute[ATR_HITPOINTS] 	= 380;
 
 	//-------- visuals --------
 	// 				animations
@@ -44,10 +44,10 @@ instance Grd_4089_Bern (Npc_Default)
 			
 	//-------- inventory --------                                    
 
-	EquipItem	(self,ItMw_1H_Sword_Bastard_01);
+	EquipItem	(self,GRD_MW_02U);
 	CreateInvItem	(self,ItFoCheese);
 	CreateInvItem	(self,ItFoApple);
-	CreateInvItems	(self,ItMiNugget,120);
+	CreateInvItems	(self,ItMiNugget,24);
 	CreateInvItem	(self,ItLsTorch);
 
 
@@ -61,7 +61,7 @@ FUNC VOID Rtn_Start_4089 ()
 
 /*****************
 
-stoi na stra¿y wejœcia do kopalni zamiast Carlosa
+stoi na stra?y wej?cia do kopalni zamiast Carlosa
 ******************/
 
 	TA_Guard		    (07,00,20,00,"FMC_FM_ENTRANCE");

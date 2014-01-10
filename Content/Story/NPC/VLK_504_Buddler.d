@@ -38,7 +38,7 @@ instance VLK_504_Buddler (Npc_Default)
 	
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1H_Nailmace_01);
+	EquipItem (self,ALL_MW_02);
 	CreateInvItem (self,ItMwPickaxe);
 	CreateInvItem (self,Itfo_Potion_Water_01);
 	CreateInvItem (self,ItLsTorch);

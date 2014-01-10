@@ -4,7 +4,7 @@ instance VLK_582_Melvin(Npc_Default)
 	
 	name =							"Melvin";
 	npctype =						npctype_main;
-	guild =							GIL_RBL;   //SN: Absicht,da Melvin übergelaufen!!!   
+	guild =							GIL_RBL;   //SN: Absicht,da Melvin ?bergelaufen!!!   
 	level =							5;
 	
 	
@@ -38,14 +38,14 @@ instance VLK_582_Melvin(Npc_Default)
 	
 	//-------- inventory --------                                    
 
-	CreateInvItem			(self,ItMw_1h_Club_01);
+	CreateInvItem			(self,ALL_MW_01);
 	CreateInvItem		(self,ItFoApple);
 
 	//-------------Daily Routine-------------
 	/*B_InitNPCAddins(self);*/		daily_routine = Rtn_start_582;
 };
 
-FUNC VOID Rtn_start_582 () //ST: Joru-Schüler
+FUNC VOID Rtn_start_582 () //ST: Joru-Sch?ler
 {
 	TA_Sleep		(00,00,08,00,"PSI_12_HUT_IN_BED");
 	TA_Listen		(08,00,00,00,"PSI_12_HUT_EX_TEACH");

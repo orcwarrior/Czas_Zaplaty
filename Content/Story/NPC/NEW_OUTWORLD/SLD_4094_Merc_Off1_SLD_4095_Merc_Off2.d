@@ -1,13 +1,13 @@
 /********************
 
-Ork to s¹ najemnicy,którzy oebjm¹ dowództwo w 2 zdobytych przyczu³kach.
+Ork to s? najemnicy,kt?rzy oebjm? dow?dztwo w 2 zdobytych przyczu?kach.
 **********************/
 
 instance SLD_4094_Merc_Off1 (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Dowódca najemników";
+	name 		=	"DowÃ³dca najemnik?w";
 	npctype 	= 	npctype_main;
 	guild 		=	GIL_MTR;
 	level 		=	50;
@@ -45,7 +45,7 @@ instance SLD_4094_Merc_Off1 (Npc_Default)
 			
 	//-------- inventory --------                                    
 
-	EquipItem	(self,ItMw_1H_Sword_Bastard_04);
+	EquipItem	(self,GRD_MW_02U);
 	CreateInvItem	(self,ItFoCheese);
 	CreateInvItem	(self,ItFoApple);
 	CreateInvItem	(self,ItLsTorch);
@@ -89,7 +89,7 @@ instance SLD_4095_Merc_Off2 (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Dowódca najemników";
+	name 		=	"DowÃ³dca najemnik?w";
 	npctype 	= 	npctype_main;
 	guild 		=	GIL_MTR;
 	level 		=	50;
@@ -127,7 +127,7 @@ instance SLD_4095_Merc_Off2 (Npc_Default)
 			
 	//-------- inventory --------                                    
 
-	EquipItem	(self,ItMw_1H_Sword_Bastard_04);
+	EquipItem	(self,GRD_MW_02U);
 	CreateInvItem	(self,ItFoCheese);
 	CreateInvItem	(self,ItFoApple);
 	CreateInvItem	(self,ItLsTorch);

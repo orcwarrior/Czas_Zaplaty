@@ -39,7 +39,7 @@ instance VLK_502_Buddler (Npc_Default)
 	                                                            
 	//-------- inventory --------             
                                                   
-	EquipItem (self,ItMw_1h_Club_01);       
+	EquipItem (self,DEF_MW_1H);       
 	CreateInvItem (self,ItMiLute);
 	CreateInvItem (self,Itfo_Potion_Water_01);
 

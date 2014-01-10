@@ -299,7 +299,7 @@ INSTANCE PC_Hero_Hair(NPC_DEFAULT)
 	
 
 	//-------------------------	
-	CreateInvItems 	(self,ItAt_Meatbug_01,10);	
+/*	CreateInvItems 	(self,ItAt_Meatbug_01,10);	
 	CreateInvItems 	(self,ItFo_Plants_mushroom_01,20);		
 	CreateInvItems (self,ItMiNugget,104); 
 	CreateInvItems (self,ItAmFireArrow,100); 	
@@ -403,7 +403,7 @@ INSTANCE PC_Hero_Hair(NPC_DEFAULT)
 	CreateInvItems(self,ItLsTorch,20);
 	CreateInvItems(self,ItMiNugget,1000);	
 	CreateInvItems (self,ItMiBlackOre,80);		
-
+*/
 	
 };
 INSTANCE PC_Hero_IO(NPC_DEFAULT)
@@ -454,13 +454,14 @@ INSTANCE PC_Hero_IO(NPC_DEFAULT)
 	//-------------------------
 	//CreateInvItem 	(self,ItWr_Fire_Letter_01);
 	//CreateInvItem 	(self,ItMw_1H_Warhammer_01);		
-	CreateInvItems (self,ItMw_1H_Sword_Long_02,1);	
+/*	CreateInvItems (self,ItMw_1H_Sword_Long_02,1);	
 	CreateInvItems (self,ItMw_2H_Sword_Light_02,1);
 	CreateInvItems (self,ItRw_Bow_Long_04,1);	
 	CreateInvItems (self,ItRw_CrossBow_02,1);	
 	CreateInvItems (self,ItAmArrow,100);
 	CreateInvItems (self,ItAmBolt,100);			
 	CreateInvItems (self,ItMiNugget,1004); 
+	*/
 	};
 
 INSTANCE PC_Hero_EO(NPC_DEFAULT)
@@ -511,7 +512,7 @@ Npc_SetTalentValue(self,NPC_TALENT_CROSSBOW,100);
 	//-------------------------
 	//CreateInvItem 	(self,ItWr_Fire_Letter_01);
 	//CreateInvItem 	(self,ItMw_1H_Warhammer_01);		
-	CreateInvItems (self,ItMw_2H_IceSword_3,1);
+/*	CreateInvItems (self,ItMw_2H_IceSword_3,1);
 	CreateInvItems (self,ItMw_1H_IceSword_3,1);		
 	CreateInvItems (self,ItMw_2H_Sword_Heavy_05,1);
 	CreateInvItems (self,ItRw_Bow_War_02,1);	
@@ -527,6 +528,7 @@ Npc_SetTalentValue(self,NPC_TALENT_CROSSBOW,100);
 	CreateInvItems (self,ItMiNugget,10004); 
 	CreateInvItems (self,ItLsTorchburning_2,1); 	
 	fight_tactic = FAI_HUMAN_MASTER;
+*/
 	};		
 
 
@@ -686,7 +688,7 @@ INSTANCE PC_Hero_L7(NPC_DEFAULT)
 	//Npc_SetTalentSkill	(self,NPC_TALENT_CROSSBOW,1);
 	
 	//-------- inventory --------
-	CreateInvItem		(self,ItMw_1H_Sword_05);
+/*	CreateInvItem		(self,ItMw_1H_Sword_05);
 	CreateInvItem		(self,ItRw_Bow_Small_04);
 	CreateInvItems  (self,ItAmArrow,100);
 	CreateInvItems  (self,ItMiNugget,50);
@@ -695,6 +697,7 @@ INSTANCE PC_Hero_L7(NPC_DEFAULT)
 	CreateInvItems  (self,ItLsTorch,20);
 	CreateInvItems	(self,ItFo_Potion_Health_03,20);
 	CreateInvItems	(self,ItFo_Potion_Mana_03,20);
+*/
 };
 
 // ***************************************************************************
@@ -741,7 +744,7 @@ INSTANCE PC_Hero_L11(NPC_DEFAULT)
 	//Npc_SetTalentSkill	(self,NPC_TALENT_2H,1);
 	Npc_SetTalentSkill	(self,NPC_TALENT_BOW,1);
 	//Npc_SetTalentSkill	(self,NPC_TALENT_CROSSBOW,1);
-	
+/*	
 	//-------- inventory --------
 	CreateInvItem		(self,ItMw_1H_Sword_Long_05);
 	CreateInvItem		(self,ItRw_Bow_Long_02);
@@ -749,6 +752,7 @@ INSTANCE PC_Hero_L11(NPC_DEFAULT)
 	CreateInvItems  (self,ItMiNugget,400);
 	CreateInvItems  (self,ItKeLockpick,30);
 	CreateInvItems  (self,ItLsTorch,20);
+	*/
 };
 
 // ***************************************************************************

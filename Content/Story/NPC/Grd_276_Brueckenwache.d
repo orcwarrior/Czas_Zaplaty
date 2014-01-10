@@ -10,7 +10,7 @@ instance GRD_276_Brueckenwache (Npc_Default)
 	id 			=	276;
 		
 	//-------- abilities --------
-	attribute[ATR_STRENGTH] 	= 48;
+	attribute[ATR_STRENGTH] 	= 60;
 	attribute[ATR_DEXTERITY] 	= 35;
 	attribute[ATR_MANA_MAX] 	= 0;
 	attribute[ATR_MANA] 		= 0;
@@ -38,7 +38,7 @@ instance GRD_276_Brueckenwache (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_01);
+	EquipItem	(self,GRD_MW_02);
 	CreateInvItem	(self,ItFoApple);
 	CreateInvItems	(self,ItMiNugget,10);
 

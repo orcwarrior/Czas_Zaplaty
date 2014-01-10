@@ -50,7 +50,7 @@ instance ORG_833_Buster (Npc_Default)
 	CreateInvItem (self,ItFoMutton);
 	CreateInvItem (self,ItAt_Claws_01);
 	EquipItem 		(self,MTR_MW_01);
-	EquipItem (self,ItRw_Bow_Small_02);
+	EquipItem (self,MTR_RW_01);
 	CreateInvItems (self,ItAmArrow,40);
 	
 	//-------------Daily Routine-------------

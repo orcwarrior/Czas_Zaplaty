@@ -45,7 +45,7 @@ instance NON_4071_Irshakk (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_02);
+//	EquipItem	(self,ItMw_1H_Sword_02);
 	CreateInvItem(self,BlowPerl);
 	CreateInvItems	(self,ItAmArrow,15);
 	CreateInvItem	(self,ItFoCheese);

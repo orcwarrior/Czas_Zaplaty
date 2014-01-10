@@ -38,7 +38,7 @@ instance GRD_241_Gardist (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_03);
+	EquipItem	(self,GRD_MW_02U);
 	EquipItem	(self,ItRw_Crossbow_01);
 	CreateInvItems	(self,ItAmBolt,30);
 	CreateInvItem	(self,ItFoMutton);
@@ -50,14 +50,14 @@ instance GRD_241_Gardist (Npc_Default)
 	/*B_InitNPCAddins(self);*/		daily_routine = Rtn_start_241;
 };
 
-FUNC VOID Rtn_start_241 ()//### unbeschäftigter Gardist!
+FUNC VOID Rtn_start_241 ()//### unbesch?ftigter Gardist!
 {
 	TA_GuardPalisade	(06,00,21,00,"OCR_PALISADE_WALK_14"); 
 	TA_GuardPalisade	(21,00,06,00,"OCR_PALISADE_WALK_14"); 
 };
 
 
-FUNC VOID Rtn_OMFull_241 ()//### unbeschäftigter Gardist!
+FUNC VOID Rtn_OMFull_241 ()//### unbesch?ftigter Gardist!
 {
 	TA_GuardPatrol	(03,00,04,00,"OCR_MAINGATE_SQUARE");
 	TA_GuardPatrol	(04,00,05,00,"OCR_TO_HUT_72");

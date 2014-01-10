@@ -36,14 +36,14 @@ instance SLD_732_Soeldner (Npc_Default)
 	//-------- Talente --------
 	
 	Npc_SetTalentSkill (self,NPC_TALENT_1H,2);
-	Npc_SetTalentSkill (self,NPC_TALENT_2H,1);
+	Npc_SetTalentSkill (self,NPC_TALENT_2H,2);
 	Npc_SetTalentSkill (self,NPC_TALENT_BOW,1);	
 	
 
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1H_Mace_War_03);
-	EquipItem (self,ItRw_Bow_Long_01);
+	EquipItem (self,MTR_MW_03);
+	EquipItem (self,ItRw_Bow_Long_04);
 	CreateInvItems(self,ItAmArrow,20);
 	CreateInvItems (self,ItFoRice,7);
 	CreateInvItems (self,ItFoLoaf,5);

@@ -41,7 +41,7 @@ instance NON_4072_Urksh (Npc_Default)
 	//-------- inventory --------
 	
 
-	EquipItem (self,ItMw_2H_Axe_Old_01);
+	//EquipItem (self,ItMw_2H_Axe_Old_01);
 
 	
 	//-------------Daily Routine-------------

@@ -40,8 +40,8 @@ instance SLD_751_Soeldner (Npc_Default)
 
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1H_Mace_War_03);
-	EquipItem (self,ItRw_Bow_Long_01);
+	EquipItem (self,MTR_MW_03);
+	EquipItem (self,ItRw_Bow_Long_04);
 	CreateInvItems(self,ItAmArrow,20);
 	CreateInvItems (self,ItFoRice,8);
 	CreateInvItems (self,ItFoLoaf,5);

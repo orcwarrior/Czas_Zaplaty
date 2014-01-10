@@ -35,7 +35,7 @@ instance GRD_271_Ulbert (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_01);
+	EquipItem	(self,GRD_MW_01);
 	CreateInvItem	(self,ItFoApple);
 	CreateInvItems	(self,ItMiNugget,10);
 	EquipItem	(self,ItRw_Crossbow_01);

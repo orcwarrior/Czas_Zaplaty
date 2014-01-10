@@ -36,7 +36,7 @@ instance Stt_339_Cooper (Npc_Default)
 		
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_02);
+	EquipItem	(self,GRD_MW_02);
 	EquipItem	(self,ItRw_Bow_Long_02);
 	CreateInvItems	(self,ItAmArrow,20);
 	CreateInvItem	(self,ITKECOOPERKEY);

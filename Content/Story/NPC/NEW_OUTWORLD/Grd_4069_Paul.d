@@ -38,7 +38,7 @@ instance GRD_4069_Paul (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_02);
+	EquipItem	(self,GRD_MW_04);
 	CreateInvItem(self,BlowPerl);
 	CreateInvItems	(self,ItAmArrow,25);
 	CreateInvItem	(self,ItFoCheese);
@@ -52,7 +52,7 @@ instance GRD_4069_Paul (Npc_Default)
 };
 
 
-/***************Daj mu zmienn¹ rutynê
+/***************Daj mu zmienn? rutyn?
 ***************/
 
 

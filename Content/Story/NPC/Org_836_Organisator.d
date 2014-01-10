@@ -40,7 +40,7 @@ instance Org_836_Organisator (Npc_Default)
 	Npc_SetTalentSkill (self,HACK_NPC_TALENT_SNEAK,1);	
 	
 	//-------- inventory --------                                    
-	EquipItem (self,ItMw_1H_Sword_01);
+	EquipItem (self,MTR_MW_01);
 	CreateInvItems (self,ItKeLockpick,1);		
 	CreateInvItems(self,ItMiNugget,12);
 	CreateInvItems (self,ItFoRice,7);

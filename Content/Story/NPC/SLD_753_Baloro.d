@@ -40,7 +40,7 @@ instance SLD_753_Baloro (Npc_Default)
 
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1H_Mace_War_03);
+	EquipItem (self,MTR_MW_02);
 	CreateInvItems (self,ItFoRice,8);
 	CreateInvItems (self,ItFoLoaf,8);
 	CreateInvItems (self,ItFoMutton,6);

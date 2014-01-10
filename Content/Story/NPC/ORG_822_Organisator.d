@@ -49,7 +49,7 @@ instance ORG_822_Organisator (Npc_Default)
 	CreateInvItem (self,ItMi_Stuff_Cup_01);
 	CreateInvItem (self,ItFoMutton);
 	CreateInvItem (self,ItAt_Teeth_01);
- 	EquipItem (self,ItMw_1H_Mace_War_01);		
+ 	EquipItem (self,MTR_MW_01);		
 	EquipItem (self,ItRw_Bow_Long_01);
 	CreateInvItems (self,ItAmArrow,20);
 	

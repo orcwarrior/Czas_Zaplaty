@@ -2,7 +2,7 @@ instance Grd_2513_Kasacz (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"K¹sacz";
+	name 		=	"K?sacz";
 	npctype 	= 	npctype_main;
 	guild 		=	GIL_NONE;
 	level 		=	50;
@@ -42,7 +42,7 @@ instance Grd_2513_Kasacz (Npc_Default)
 			
 	//-------- inventory --------                                    
 
-	EquipItem	(self,ItMw_1H_Sword_Bastard_03);
+	EquipItem	(self,GRD_MW_02U);
 	CreateInvItems(self,ItFo_Potion_Health_03,4);
 
 	//-------------Daily Routine-------------

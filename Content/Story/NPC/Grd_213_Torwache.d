@@ -40,7 +40,7 @@ instance GRD_213_Torwache (Npc_Default)
 	//-------- inventory --------
 	
 	EquipItem	(self,ItRw_Crossbow_01);
-   CreateInvItem		(self,ItMw_1H_Sword_01);
+   CreateInvItem		(self,GRD_MW_02);
 	CreateInvItems	(self,ItAmBolt,30);
 	CreateInvItem	(self,ItFoCheese);
 	CreateInvItem	(self,ItFoApple);

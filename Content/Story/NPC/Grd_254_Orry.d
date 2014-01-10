@@ -38,7 +38,7 @@ instance GRD_254_Orry (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_01);
+	EquipItem	(self,GRD_MW_01);
 	CreateInvItems	(self,ItAmBolt,10);
 	CreateInvItem	(self,ItFoApple);
 	CreateInvItems	(self,ItMiNugget,50);      

@@ -288,7 +288,7 @@ instance GRD_2517_Guard (Npc_Default)
 	//-------- inventory --------
 	
 	EquipItem	(self,GRD_MW_01_short);
-	EquipItem	(self,GRD_RW_01);
+	EquipItem	(self,GRD_MW_02);
 
 	CreateInvItems	(self,ItAmBolt,70);
 	CreateInvItem	(self,ItFoApple);

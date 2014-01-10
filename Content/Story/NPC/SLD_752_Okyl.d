@@ -13,7 +13,7 @@ instance SLD_752_Okyl (Npc_Default)
 
 	//-------- abilities --------
 
-	attribute[ATR_STRENGTH] =		90;
+	attribute[ATR_STRENGTH] =		150;
 	attribute[ATR_DEXTERITY] =		70;
 	attribute[ATR_MANA_MAX] =		0;
 	attribute[ATR_MANA] =			0;
@@ -42,7 +42,7 @@ instance SLD_752_Okyl (Npc_Default)
 
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_2H_Axe_Heavy_02);
+	EquipItem (self,GRD_MW_03);
 	EquipItem (self,ItRw_Bow_Long_01);
 	CreateInvItems(self,ItAmArrow,20);
 	CreateInvItems (self,ItFoRice,7);

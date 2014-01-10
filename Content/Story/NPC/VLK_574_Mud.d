@@ -2,7 +2,7 @@ instance VLK_574_Mud (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Wrzód";
+	name =							"Wrz?d";
 	npctype =						npctype_ambient;
 	guild =							GIL_NONE;      
 	level =							0;
@@ -36,11 +36,11 @@ instance VLK_574_Mud (Npc_Default)
 	fight_tactic	=	FAI_HUMAN_COWARD; 
 
 	//-------- Senses --------                                    
-	senses = SENSE_SEE|SENSE_HEAR|SENSE_SMELL;// für DIREKTES ansprechen
+	senses = SENSE_SEE|SENSE_HEAR|SENSE_SMELL;// f?r DIREKTES ansprechen
 	
 	//-------- inventory --------                                    
 
-	CreateInvItem 	(self,ItMw_1h_Club_01);
+	CreateInvItem 	(self,DEF_MW_1H);
 	CreateInvItems (self,ItMiNugget,5);
 	CreateInvItem  (self,Itfo_Potion_Water_01);
 	//-------------Daily Routine-------------

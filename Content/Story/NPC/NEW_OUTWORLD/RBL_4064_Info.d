@@ -39,7 +39,7 @@ instance RBL_4064_Info (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_02);
+	EquipItem	(self,GRD_MW_02);
 	CreateInvItems	(self,ItMiNugget,120);     
 	
 	//-------------Daily Routine-------------

@@ -2,7 +2,7 @@ instance Grd_613_Gardist (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Siódemka";
+	name 		=	"Si?demka";
 	npctype		= 	npctype_guard;
 	guild 		=	GIL_GRD;
 	level 		=	20;

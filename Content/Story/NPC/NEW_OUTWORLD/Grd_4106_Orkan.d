@@ -14,8 +14,8 @@ instance Grd_4106_Orkan (Npc_Default)
 	attribute[ATR_DEXTERITY] 	= 100;
 	attribute[ATR_MANA_MAX] 	= 0;
 	attribute[ATR_MANA] 		= 0;
-	attribute[ATR_HITPOINTS_MAX]= 440;
-	attribute[ATR_HITPOINTS] 	= 440;
+	attribute[ATR_HITPOINTS_MAX]= 340;
+	attribute[ATR_HITPOINTS] 	= 340;
 
 	//-------- visuals --------
 	// 				animations
@@ -38,7 +38,7 @@ instance Grd_4106_Orkan (Npc_Default)
 			
 	//-------- inventory --------                                    
 
-	EquipItem	(self,ItMw_1H_Sword_Bastard_04);
+	EquipItem	(self,GRD_MW_02U);
 	CreateInvItems(self,ItFo_Potion_Health_03,4);
 
 	//-------------Daily Routine-------------
@@ -48,9 +48,9 @@ instance Grd_4106_Orkan (Npc_Default)
 FUNC VOID Rtn_start_4106 ()	//FM
 {
    /***********************************
-   Ork przyda³oby siê zrobiæ rutynê z chlaniem,czyli koleœ siedzi i pije,wstaje i ma chód pijanego,idzie spaæ. Chocia¿ kilku npecom w so,no i or by siê przyda³o to zrobiæ,doda³oby realizmu i w ogóle.
+   Ork przyda?oby si? zrobi? rutyn? z chlaniem,czyli kole? siedzi i pije,wstaje i ma ch?d pijanego,idzie spa?. Chocia? kilku npecom w so,no i or by si? przyda?o to zrobi?,doda?oby realizmu i w og?le.
 
-   I w³asnie orkan by móg³ mieæ tak¹ rutynê
+   I w?asnie orkan by m?g? mie? tak? rutyn?
    //TODO: Zastanowic sie nadtym,tymczasowo TA_STAND
    *********************************/
    

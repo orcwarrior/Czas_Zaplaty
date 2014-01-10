@@ -1,4 +1,4 @@
-//### Trademodul checken,wenn die Stärke der Armbrust und Rüstungen feststeht
+//### Trademodul checken,wenn die St?rke der Armbrust und R?stungen feststeht
 //### Eintrag in das Journal wegen Tauschhandel
 
 instance ORG_811_Organisator (Npc_Default)
@@ -52,7 +52,7 @@ instance ORG_811_Organisator (Npc_Default)
 	CreateInvItem (self,ItMi_Stuff_Barbknife_01);
 	CreateInvItem (self,ItFoMutton);
 	CreateInvItem (self,ItAt_Teeth_01);		
- 	EquipItem (self,ItMw_1H_Mace_War_01);		
+ 	EquipItem (self,MTR_MW_01);		
 	EquipItem (self,ItRw_Bow_Long_01);
 	CreateInvItems (self,ItAmArrow,20);
 

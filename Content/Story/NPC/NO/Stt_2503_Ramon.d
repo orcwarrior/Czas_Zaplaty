@@ -1,6 +1,6 @@
 instance STT_2503_Ramon (Npc_Default)
 {
-	//orc: tak samo jak w wypadku innych NPC...musisz sam dobraæ jakieœ parametry ;P
+	//orc: tak samo jak w wypadku innych NPC...musisz sam dobra? jakie? parametry ;P
 	//-------- primary data --------
 	name 			=		"Ramon";
 	npctype			=		npctype_Main;
@@ -39,7 +39,7 @@ instance STT_2503_Ramon (Npc_Default)
 	CreateInvItem	(self,RamonAmulet);
 	
 	EquipItem	( self,GRD_MW_01 );
-	EquipItem	( self,ItRw_Bow_Small_02);
+	EquipItem	( self,STT_RW_01);
 	CreateInvItems	(self,ItAmArrow,18);
 	CreateInvItems	(self,ItKeLockpick,3);
 	CreateInvItems	(self,ItFoBeer,2);
@@ -50,6 +50,6 @@ instance STT_2503_Ramon (Npc_Default)
 
 FUNC VOID Rtn_start_2503 ()
 {        
-	//musisz mu ustawiæ jakiœ WP
+	//musisz mu ustawi? jaki? WP
 	TA_Boss		(00,00,20,00,"OC1");
 };

@@ -5,7 +5,7 @@ instance SLD_731_Soeldner (Npc_Default)
 	name =					Name_Soeldner;
 	Npctype =				NPCTYPE_GUARD;
 	guild =					GIL_SLV;
-	level =					16;
+	level =					18;
 	
 	voice =					11;
 	id =					731;
@@ -41,8 +41,8 @@ instance SLD_731_Soeldner (Npc_Default)
 
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1H_Mace_War_03);
-	EquipItem (self,ItRw_Bow_Long_01);
+	EquipItem (self,MTR_MW_03);
+	EquipItem (self,ItRw_Bow_Long_04);
 	CreateInvItems(self,ItAmArrow,20);
 	CreateInvItems (self,ItFoRice,7);
 	CreateInvItems (self,ItFoLoaf,5);

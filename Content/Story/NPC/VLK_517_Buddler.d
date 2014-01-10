@@ -41,7 +41,7 @@ instance VLK_517_Buddler (Npc_Default)
 	
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1h_Club_01);
+	EquipItem (self,DEF_MW_1H);
 	CreateInvItem (self,Itfo_Potion_Water_01);
 	CreateInvItem (self,ItMi_Stuff_Barbknife_01);
 	//-------------Daily Routine-------------

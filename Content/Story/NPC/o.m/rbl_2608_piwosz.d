@@ -43,13 +43,13 @@ instance RBL_2608_BeerDrinker (Npc_Default)
 	daily_routine = Rtn_start_2608;
 };
 
-FUNC VOID Rtn_start_2608 () //Händler
+FUNC VOID Rtn_start_2608 () //H?ndler
 {
     TA_SitAround    (19,30,16,30,"SIT_CIPHER");
     TA_Stand		(16,30,19,30,"TAVERNE1");
 
 };
-FUNC VOID Rtn_alarm_2608 () //Händler
+FUNC VOID Rtn_alarm_2608 () //H?ndler
 {
     TA_SitAround    (19,30,16,30,"SIT_CIPHER");
     TA_Stand		(16,30,19,30,"TAVERNE1");

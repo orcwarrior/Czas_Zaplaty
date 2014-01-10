@@ -5,12 +5,12 @@ instance Grd_1245_Cad (Npc_Default)
 	name 		= 	"Cad";
 	npctype		= 	npctype_ambient;
 	guild 		=	GIL_GRD;
-	level 		=	50;
+	level 		=	25;
 	voice		=	7;
 	id 			=	1245;
 		
 	//-------- abilities --------
-	attribute[ATR_STRENGTH] 	= 80;
+	attribute[ATR_STRENGTH] 	= 100;
 	attribute[ATR_DEXTERITY] 	= 80;
 	attribute[ATR_MANA_MAX] 	= 0;
 	attribute[ATR_MANA] 		= 0;
@@ -38,7 +38,7 @@ instance Grd_1245_Cad (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_2H_Sword_01);
+	EquipItem	(self,GRD_MW_04);
 	EquipItem	(self,ItRw_Crossbow_02);
 	CreateInvItems	(self,ItAmBolt,10);
 	CreateInvItem	(self,ItFoMutton);

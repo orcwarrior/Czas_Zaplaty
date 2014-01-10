@@ -33,7 +33,7 @@ instance GRD_285_Gardist (Npc_Default)
 	Npc_SetTalentSkill (self,NPC_TALENT_1H,2);		
 			
 	//-------- inventory --------
-	CreateInvItem		(self,ItMw_1H_Sword_Broad_04);
+	CreateInvItem		(self,GRD_MW_02U);
 	CreateInvItem	(self,ItFoApple);
 	CreateInvItems	(self,ItMiNugget,10);		        
 	

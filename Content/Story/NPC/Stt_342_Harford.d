@@ -38,7 +38,7 @@ instance Stt_342_Harford (Npc_Default)
 	//-------- inventory --------
 	
 	EquipItem	(self,ItMw_1H_Sword_Short_03);
-	EquipItem	(self,ItRw_Bow_Small_01);
+	EquipItem	(self,STT_RW_01);
 	CreateInvItems	(self,ItAmArrow,20);
 	CreateInvItem	(self,ItKeLockpick);
 	CreateInvItem	(self,ItFo_Potion_Water_01);

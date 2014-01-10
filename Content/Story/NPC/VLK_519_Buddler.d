@@ -38,7 +38,7 @@ instance VLK_519_Buddler (Npc_Default)
 	
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1h_Club_01);
+	EquipItem (self,DEF_MW_1H);
 	CreateInvItem (self,ItFoApple);
 
 	//-------------Daily Routine-------------

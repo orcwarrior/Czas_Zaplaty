@@ -38,7 +38,7 @@ instance Grd_4129_PaulPatrol (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_01);
+	EquipItem	(self,GRD_MW_01);
 	CreateInvItem	(self,ItFoCheese);
 	CreateInvItem	(self,ItFoMutton);
 	CreateInvItem	(self,ItFoBeer);
@@ -50,7 +50,7 @@ instance Grd_4129_PaulPatrol (Npc_Default)
 };
 
 
-/***************Daj mu zmienn¹ rutynê
+/***************Daj mu zmienn? rutyn?
 ***************/
 
 

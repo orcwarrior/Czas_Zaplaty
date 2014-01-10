@@ -32,7 +32,7 @@ instance VLK_4000_Buddler (Npc_Default)
 
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1h_Club_01);
+	EquipItem (self,ALL_MW_01);
 	CreateInvItem (self,ItFoApple);
 
 	//-------------Daily Routine-------------
@@ -42,7 +42,7 @@ instance VLK_4000_Buddler (Npc_Default)
 FUNC VOID Rtn_start_4000 ()
 {
 	/*******************
-	Gdzieœ na pla¿y
+	Gdzie? na pla?y
 	********************/
 
 	TA_SitCampfire	(08,00,20,00,"OW_PIR_CAMPFIRE");

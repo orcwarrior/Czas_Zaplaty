@@ -13,7 +13,7 @@ instance SLD_758_Soeldner (Npc_Default)
 
 	//-------- abilities --------
 
-	attribute[ATR_STRENGTH] =		70;
+	attribute[ATR_STRENGTH] =		75;
 	attribute[ATR_DEXTERITY] =		70;
 	attribute[ATR_MANA_MAX] =		0;
 	attribute[ATR_MANA] =			0;
@@ -41,7 +41,7 @@ instance SLD_758_Soeldner (Npc_Default)
 
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1H_Mace_War_03);
+	EquipItem (self,MTR_MW_02);
 	EquipItem (self,ItRw_Bow_Long_01);
 	CreateInvItems(self,ItAmArrow,20);
 	CreateInvItems (self,ItFoRice,7);

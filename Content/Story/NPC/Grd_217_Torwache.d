@@ -38,7 +38,7 @@ instance GRD_217_Torwache (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_01);
+	EquipItem	(self,GRD_MW_02);
 	CreateInvItem	(self,ItFoApple);
 	CreateInvItems	(self,ItMiNugget,10);      
 	
@@ -48,8 +48,8 @@ instance GRD_217_Torwache (Npc_Default)
 
 FUNC VOID Rtn_start_217 ()
 {
-	TA_Guard		(06,00,14,00,"OCR_NORTHGATE_RIGHT_GUARD");// in späteren Kapiteln,wenn SC nicht mehr durchdarf TA_GuardPassage
-	TA_Guard		(14,00,06,00,"OCR_NORTHGATE_RIGHT_GUARD");// in späteren Kapiteln,wenn SC nicht mehr durchdarf TA_GuardPassage
+	TA_Guard		(06,00,14,00,"OCR_NORTHGATE_RIGHT_GUARD");// in sp?teren Kapiteln,wenn SC nicht mehr durchdarf TA_GuardPassage
+	TA_Guard		(14,00,06,00,"OCR_NORTHGATE_RIGHT_GUARD");// in sp?teren Kapiteln,wenn SC nicht mehr durchdarf TA_GuardPassage
 };
 
 

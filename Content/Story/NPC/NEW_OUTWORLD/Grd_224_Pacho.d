@@ -6,7 +6,7 @@ instance GRD_224_Pacho (Npc_Default)
 	npctype		= 	NPCTYPE_MAIN;
 	guild 		=	GIL_RBL;
 	level 		=	15;
-	voice 		=	0;//by³o minus 1 ale wywala³o 0 to pusty plik mowy budzis
+	voice 		=	0;//by?o minus 1 ale wywala?o 0 to pusty plik mowy budzis
 	id 			=	224;
 	flags			= NPC_FLAG_IMMORTAL;
 		
@@ -134,7 +134,7 @@ func int ZS_GuidePCPacho_End ()
 {	
 	////PrintDebugNpc		(PD_TA_FRAME,"ZS_GuidePCPacho_End");
 
-	//-------- aktive Wahrnehmungen wieder auf Default zurückstellen -------
+	//-------- aktive Wahrnehmungen wieder auf Default zur?ckstellen -------
 	self.senses_range	 = hero.senses_range;
 	self.senses			 = hero.senses;
 };

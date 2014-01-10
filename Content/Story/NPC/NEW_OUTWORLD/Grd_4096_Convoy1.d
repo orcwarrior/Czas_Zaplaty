@@ -2,7 +2,7 @@ instance Grd_4096_Convoy1 (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Dowódca konwoju";
+	name 		=	"Dow?dca konwoju";
 	npctype		=	npctype_main;
 	guild 		=	GIL_GRD;
 	level 		=	25;

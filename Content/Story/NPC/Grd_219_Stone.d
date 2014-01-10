@@ -40,14 +40,14 @@ instance GRD_219_Stone (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_02);
+	EquipItem	(self,GRD_MW_02U);
 	//EquipItem	(self,ItRw_Crossbow_01);
 	//CreateInvItems	(self,ItAmBolt,30);
 	CreateInvItem	(self,ItFoCheese);
 	CreateInvItem	(self,ItFoApple);
 	CreateInvItems	(self,ItMiNugget,10);
 	CreateInvItem	(self,ItLsTorch);
-	//DEN SCHLÜSSEL HAT SKIP
+	//DEN SCHL?SSEL HAT SKIP
 	
 	//-------------Daily Routine-------------
 	/*B_InitNPCAddins(self);*/		daily_routine = Rtn_start_219;

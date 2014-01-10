@@ -53,13 +53,13 @@ instance Grd_4087_Carlos (Npc_Default)
 
 FUNC VOID Rtn_Start_4087 ()
 {
-	TA_Guard(07,00,20,00,"OW_PATH_07_21_GUARD_MIDDLE"); // stoi na stra¿y wejœciem na pola ry¿owe
+	TA_Guard(07,00,20,00,"OW_PATH_07_21_GUARD_MIDDLE"); // stoi na stra?y wej?ciem na pola ry?owe
 	TA_GuardPassage(20,00,07,00,"OW_PATH_07_21_GUARD_MIDDLE");
 };
 
 FUNC VOID Rtn_STAY_4087 ()
 {
-	TA_Guard(07,00,20,00,"NC_PATH49"); // czeka na Ricka, za bram¹, któr¹ pilnuje Kil
+	TA_Guard(07,00,20,00,"NC_PATH49"); // czeka na Ricka, za bram?, kt?r? pilnuje Kil
 	TA_Guard(20,00,07,00,"NC_PATH49");
 };
 
@@ -71,12 +71,12 @@ FUNC VOID Rtn_Kociol_4087 ()
 
 FUNC VOID Rtn_DEAD_4087 ()
 {
-	TA_Guard(07,00,20,00,"OW_ORC_LOOKOUT_2_02"); //tam gdzie ma le¿eæ martwy,gdzieœ u orkow
+	TA_Guard(07,00,20,00,"OW_ORC_LOOKOUT_2_02"); //tam gdzie ma le?e? martwy,gdzie? u orkow
 	TA_Guard(20,00,07,00,"OW_ORC_LOOKOUT_2_02");
 };
 
 //FMC_FM_ENTRANCE
 /***********************
-Stoi na stra¿y przed kopalni¹
+Stoi na stra?y przed kopalni?
 
 *************************/

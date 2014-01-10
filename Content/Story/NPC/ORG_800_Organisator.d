@@ -51,7 +51,7 @@ instance ORG_800_Organisator (Npc_Default)
 	CreateInvItem (self,ItFoMutton);
 	CreateInvItem (self,ItFoLoaf);
 	CreateInvItem (self,ItAt_Claws_01);
-	EquipItem (self,ItMw_1H_Mace_War_04);
+	EquipItem (self,MTR_MW_02);
 	EquipItem (self,ItRw_Bow_Long_01);
 	CreateInvItems (self,ItAmArrow,20);
 

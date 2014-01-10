@@ -3,7 +3,7 @@ instance Non_1503_Wegelagerer (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=		"W³óczêga";
+	name 		=		"WÅ‚Ã³czÄ™ga";
 	npctype 	=		npctype_ambient;
 	guild 		=		GIL_NONE;      
 	level 		=		9;
@@ -36,7 +36,7 @@ instance Non_1503_Wegelagerer (Npc_Default)
 	//-------- Talents  --------                                    
 
 	//-------- inventory --------                                    
-	EquipItem 		(self,ItMw_1H_Nailmace_01);
+	EquipItem 		(self,ALL_MW_01);
 	CreateInvItems	(self,ItMiNugget,11);
 	CreateInvItem 	(self,ItFoLoaf);
 	CreateInvItem 	(self,ItFoBeer);

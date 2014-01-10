@@ -37,7 +37,7 @@ instance Grd_620_Gardist (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_2H_Sword_Old_02);
+	EquipItem	(self,GRD_MW_04);
 	CreateInvItem	(self,ItFo_Potion_Water_01);
 	CreateInvItem	(self,ItFoBeer);
 	CreateInvItem	(self,ItLsTorch);

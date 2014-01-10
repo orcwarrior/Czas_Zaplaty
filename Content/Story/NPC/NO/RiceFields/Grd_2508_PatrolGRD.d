@@ -3,7 +3,7 @@ instance Grd_2508_PatrolGRD (Npc_Default)
 
 	//-------- primary data --------
 	
-	name 		=	"Stra¿nik";
+	name 		=	"Stra?nik";
 	npctype		=	npctype_main;
 	guild 		=	GIL_GRD;
 	level 		=	16;

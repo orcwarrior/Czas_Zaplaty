@@ -35,7 +35,7 @@ instance VLK_557_Buddler (Npc_Default)
 	
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1h_Nailmace_01);
+	EquipItem (self,ALL_MW_02);
 	CreateInvItem (self,ItMwPickaxe);
 	
 	CreateInvItem (self,ItFoBeer);

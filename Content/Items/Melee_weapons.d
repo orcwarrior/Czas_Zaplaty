@@ -1546,9 +1546,9 @@ instance ItMw_1H_Axe_Old_01 (WeaponsMelee)
 	flags 				=	ITEM_AXE|ITEM_MULTI;	
 	material 			=	MAT_WOOD;
 
-	value 				=	169;
+	value 				=	100;
 
-	damageTotal     	=	32;
+	damageTotal     	=	30;
 	damagetype			=	  DAM_EDGE;
 	range    			=  	100;		
 
@@ -1884,7 +1884,7 @@ INSTANCE ItMw_1H_Sword_03 (WeaponsMelee)
 
 	cond_atr[2]   		= 	ATR_STRENGTH;
 	cond_value[2]  		=	51;
-	visual 			  =	"ItMw_1H_Sword_03.3DS";
+	visual 			  	=	"ItMw_1H_Sword_03.3DS";
 
 	description			= name;
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;

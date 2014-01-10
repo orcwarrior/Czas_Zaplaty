@@ -37,7 +37,7 @@ instance GRD_228_Gardist (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_02);
+	EquipItem	(self,GRD_MW_02);
 	EquipItem	(self,ItRw_Crossbow_01);
 	CreateInvItems	(self,ItAmBolt,30);
 	CreateInvItem	(self,ItFoCheese);
@@ -83,14 +83,14 @@ FUNC VOID Rtn_start_228 ()
 	TA_Sleep		(20,00,24,00,"OCR_MAINGATE_GUARDROOM");	
 */
 
-//---- SN 05.10.00: Für Drehkreuzwachen-Prototyp ----
+//---- SN 05.10.00: F?r Drehkreuzwachen-Prototyp ----
 /*
     TA_StandAround	(08,00,23,00,"OCR_MAINGATE_GUARDROOM");
     TA_Sleep		        (23,00,08,00,"OCR_MAINGATE_GUARDROOM");	
 */
 
 	TA_GuardWheelOpen		(07,55,19,55,"OCR_NORTHGATE_VWHEEL");
-	TA_GuardWheelOpen		(19,55,07,55,"OCR_NORTHGATE_VWHEEL");		//SN 09.01.01: geändert,damit Tore rund um die Uhr offen sind
+	TA_GuardWheelOpen		(19,55,07,55,"OCR_NORTHGATE_VWHEEL");		//SN 09.01.01: ge?ndert,damit Tore rund um die Uhr offen sind
 //-------------------------------------------------------------------
 };
 

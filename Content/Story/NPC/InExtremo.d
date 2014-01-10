@@ -389,10 +389,10 @@ FUNC VOID Rtn_off_396 ()
 
 
 /////////////////////////////////////////
-// STEVE GÄTCHEN	  ///////////////////
+// STEVE Gï¿½TCHEN	  ///////////////////
 /////////////////////////////////////////
 
-// Ansager für In Extremo
+// Ansager fï¿½r In Extremo
 
 instance IE_397_Announcer(Npc_Default)
 {
@@ -553,7 +553,7 @@ instance IEFan1 (Npc_Default)
 
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1h_Nailmace_01);
+	EquipItem (self,ALL_MW_01);
 	CreateInvItem (self,ItFoLoaf);
 	CreateInvItem (self,ItFoBeer);
 
@@ -674,7 +674,7 @@ instance IEFan3 (Npc_Default)
 
 	//-------- inventory --------                                    
 
-	EquipItem (self,ItMw_1h_Nailmace_01);
+	EquipItem (self,ALL_MW_01);
 	CreateInvItem (self,ItFoLoaf);
 	CreateInvItem (self,ItFoBeer);
 

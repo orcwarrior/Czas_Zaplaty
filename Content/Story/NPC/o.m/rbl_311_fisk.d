@@ -43,7 +43,7 @@ instance RBL_311_Fisk (Npc_Default)
 	daily_routine = Rtn_start_311;
 };
 
-FUNC VOID Rtn_start_311 () //Händler
+FUNC VOID Rtn_start_311 () //H?ndler
 {
 	TA_Boss			(18,30,07,00,"FISKBARMAN");
     TA_SitAround    (07,00,08,30,"SIT_FOX");

@@ -37,7 +37,7 @@ instance STT_340_Lucjusz (Npc_Default)
 	//-------- inventory --------
 	
 	EquipItem	(self,STT_MW_02);
-	EquipItem	(self,ItRw_Bow_Small_03);
+	EquipItem	(self,STT_RW_02);
 	CreateInvItems	(self,ItAmArrow,32);
 	CreateInvItem	(self,ItFo_Potion_Water_01);
 	CreateInvItem	(self,ItFoApple);

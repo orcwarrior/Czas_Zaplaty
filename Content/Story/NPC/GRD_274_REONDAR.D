@@ -37,8 +37,8 @@ instance GRD_274_Reondar (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_1H_Sword_01);
-	EquipItem	(self,GRD_RW_01);
+	EquipItem	(self,GRD_MW_01);
+	EquipItem	(self,GRD_MW_02);
 	CreateInvItems	(self,ItAmBolt,20);
 	CreateInvItem	(self,ItFoCheese);
 	CreateInvItem	(self,ItFoApple);

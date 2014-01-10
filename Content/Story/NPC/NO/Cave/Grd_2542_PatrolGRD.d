@@ -35,7 +35,7 @@ instance Grd_2542_PatrolGRD (Npc_Default)
 			
 	//-------- inventory --------
 	
-	EquipItem	(self,ItMw_2H_Axe_Heavy_04);
+	EquipItem	(self,GRD_MW_02U);
 	//pousuwalem kusze bo zaczynal nas atakowac z kuszy
 	CreateInvItems	(self,ItMinugget,130);
 	

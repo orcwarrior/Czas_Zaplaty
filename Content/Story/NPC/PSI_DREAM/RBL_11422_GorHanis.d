@@ -35,7 +35,7 @@ instance RBL_416_GorHanis (Npc_Default)
 	
 	//-------- inventory --------
 	
-	EquipItem (self,ItMw_1H_Sword_01);
+	EquipItem (self,ALL_MW_05);
 	CreateInvItem (self,ItFoSoup);
 	CreateInvItem (self,ItMiJoint_1);
 	CreateInvItem	(self,ItMi_Stuff_OldCoin_02);	
