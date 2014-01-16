@@ -174,7 +174,7 @@ instance arrow_cristal(C_Item)
 {
 	name 					=	"Kryszta³";
 
-	mainflag 				=	ITEM_KAT_MAGIC;
+	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MULTI;
 
 	value 					=	250;
