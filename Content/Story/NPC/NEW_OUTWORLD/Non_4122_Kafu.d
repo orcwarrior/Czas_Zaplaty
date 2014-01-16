@@ -4,7 +4,7 @@ instance Non_4122_Kafu (Npc_Default)
 	
 	name 		=	"Kafu";
 	npctype		=	npctype_main;
-	guild 		=	GIL_KDW;      
+	guild 		=	GIL_NONE;      
 	level 		=	35;
 	voice 		=	4;
 	id 			=	4122;
