@@ -20,8 +20,8 @@ FUNC INT DIA_Wolf_Hello_Condition()
 
 FUNC VOID DIA_Wolf_Hello_Info()
 {
-	AI_Output			(other, self,"DIA_Wolf_Hello_15_00"); //Kim jesteœ?
-	AI_Output			(self, other,"DIA_Wolf_Hello_09_01"); //Jestem p³atnerzem. Mówi¹ na mnie Wilk.
+	AI_Output(other, self,"DIA_Wolf_Hello_15_00"); //Kim jesteœ?
+	AI_Output(self, other,"DIA_Wolf_Hello_09_01"); //Jestem p³atnerzem. Mówi¹ na mnie Wilk.
 };
 
 var int wolf_trade_info;
@@ -197,11 +197,11 @@ FUNC INT DIA_Wolf_RBL2_Condition()
 
 FUNC VOID DIA_Wolf_RBL2_Info()
 {
-	AI_Output			(other, self,"DIA_Wolf_RBL2_15_00"); //'Chcia³em zapytaæ o ³uki.'
-	AI_Output			(self, other,"DIA_Wolf_RBL2_09_01"); //Dobrze trafi³eœ, mam najlepszy towar w ca³ej cholernej Kolonii.
-	AI_Output			(self, other,"DIA_Wolf_RBL2_09_02"); //(szeptem) Pozb¹dŸ siê jakoœ Pluskwy, inaczej nie pogadamy...
-	AI_Output			(self, other,"DIA_Wolf_RBL2_09_03"); //To moczymorda, jakiœ trunek powinien za³atwiæ sprawê.
-	B_LogEntry		(CH4_NC_RBLBosses, "Nie us³yszê odpowiedzi, dopóki nie pozbêdê siê Pluskwy. Stra¿nik podobno nie wylewa za kirys.");
+	AI_Output(other, self,"DIA_Wolf_RBL2_15_00"); //'Chcia³em zapytaæ o ³uki.'
+	AI_Output(self, other,"DIA_Wolf_RBL2_09_01"); //Dobrze trafi³eœ, mam najlepszy towar w ca³ej cholernej Kolonii.
+	AI_Output(self, other,"DIA_Wolf_RBL2_09_02"); //(szeptem) Pozb¹dŸ siê jakoœ Pluskwy, inaczej nie pogadamy...
+	AI_Output(self, other,"DIA_Wolf_RBL2_09_03"); //To moczymorda, jakiœ trunek powinien za³atwiæ sprawê.
+	B_LogEntry(CH4_NC_RBLBosses, "Nie us³yszê odpowiedzi, dopóki nie pozbêdê siê Pluskwy. Stra¿nik podobno nie wylewa za kirys.");
    
    ORG_855_Wolf_TRADE2_Info();
 };
@@ -222,7 +222,7 @@ INSTANCE DIA_Wolf_RBL (C_INFO)
 
 FUNC INT DIA_Wolf_RBL_Condition()
 {
-	if (Npc_KnowsInfo (hero, DIA_Cavalorn_SpyEnd))
+	if (Npc_KnowsInfo (hero, DIA_Gorn_RebelTalk))
 	{
 		return 1;
 	};
@@ -230,24 +230,24 @@ FUNC INT DIA_Wolf_RBL_Condition()
 
 FUNC VOID DIA_Wolf_RBL_Info()
 {
-	AI_Output			(other, self,"DIA_Wolf_RBL_15_00"); //Gorn napomkn¹³, ¿e dobrze siê ustawi³eœ po ataku.
-	AI_Output			(self, other,"DIA_Wolf_RBL_09_01"); //A Tobie co do tego?
-	AI_Output			(other, self,"DIA_Wolf_RBL_15_02"); //Powiedzmy, ¿e kogoœ interesuje to co dzieje siê w waszym obozie.
-	AI_Output			(self, other,"DIA_Wolf_RBL_09_03"); //Hmm... Na pierwszy rzut oka œmierdzisz stra¿nikiem, ale wyczuwam te¿ subtelny sw¹d rebelianta.
-	AI_Output			(self, other,"DIA_Wolf_RBL_09_04"); //Cavalorn Ciê tu przys³a³?
-	AI_Output			(other, self,"DIA_Wolf_RBL_15_05"); //Widzê, ¿e celnie strzelasz nie tylko z ³uku.
-	AI_Output			(self, other,"DIA_Wolf_RBL_09_06"); //Masz jak¹œ propozycjê?
-	AI_Output			(other, self,"DIA_Wolf_RBL_15_07"); //Tak. Przejêcie Nowego Obozu przez Gomeza nie tylko na was rzuci³o blady cieñ strachu.
-	AI_Output			(other, self,"DIA_Wolf_RBL_15_08"); //W odwecie zaatakowaliœmy Star¹ Kopalniê.
-	AI_Output			(self, other,"DIA_Wolf_RBL_09_09"); //NieŸle. Co Gomez zrobi³?
-	AI_Output			(other, self,"DIA_Wolf_RBL_15_10"); //Stra¿nicy zaatakowali nasz obóz, ale odes³aliœmy ich z pozdrowieniami dla Gomeza. Przynajmniej tych, którzy prze¿yli.
-	AI_Output			(self, other,"DIA_Wolf_RBL_09_11"); //Porz¹dna jatka! Sporo mnie ominê³o. Mamy tu marny przep³yw informacji.
-	AI_Output			(self, other,"DIA_Wolf_RBL_09_12"); //Rzeczywiœcie, mamy zbie¿ne cele. Jak Cavalorn chce to za³atwiæ?
-	AI_Output			(other, self,"DIA_Wolf_RBL_15_13"); //Najpierw mam siê rozejrzeæ w sytuacji i je¿eli zajdzie taka potrzeba, mam wam pomóc.
-	AI_Output			(other, self,"DIA_Wolf_RBL_15_14"); //PóŸniej nadejdzie pora na wykopanie st¹d stra¿ników.
-	AI_Output			(self, other,"DIA_Wolf_RBL_09_15"); //W porz¹dku. Co chcesz wiedzieæ?
+	AI_Output(other, self,"DIA_Wolf_RBL_15_00"); //Gorn napomkn¹³, ¿e dobrze siê ustawi³eœ po ataku.
+	AI_Output(self, other,"DIA_Wolf_RBL_09_01"); //A Tobie co do tego?
+	AI_Output(other, self,"DIA_Wolf_RBL_15_02"); //Powiedzmy, ¿e kogoœ interesuje to co dzieje siê w waszym obozie.
+	AI_Output(self, other,"DIA_Wolf_RBL_09_03"); //Hmm... Na pierwszy rzut oka œmierdzisz stra¿nikiem, ale wyczuwam te¿ subtelny sw¹d rebelianta.
+	AI_Output(self, other,"DIA_Wolf_RBL_09_04"); //Cavalorn Ciê tu przys³a³?
+	AI_Output(other, self,"DIA_Wolf_RBL_15_05"); //Widzê, ¿e celnie strzelasz nie tylko z ³uku.
+	AI_Output(self, other,"DIA_Wolf_RBL_09_06"); //Masz jak¹œ propozycjê?
+	AI_Output(other, self,"DIA_Wolf_RBL_15_07"); //Tak. Przejêcie Nowego Obozu przez Gomeza nie tylko na was rzuci³o blady cieñ strachu.
+	AI_Output(other, self,"DIA_Wolf_RBL_15_08"); //W odwecie zaatakowaliœmy Star¹ Kopalniê.
+	AI_Output(self, other,"DIA_Wolf_RBL_09_09"); //NieŸle. Co Gomez zrobi³?
+	AI_Output(other, self,"DIA_Wolf_RBL_15_10"); //Stra¿nicy zaatakowali nasz obóz, ale odes³aliœmy ich z pozdrowieniami dla Gomeza. Przynajmniej tych, którzy prze¿yli.
+	AI_Output(self, other,"DIA_Wolf_RBL_09_11"); //Porz¹dna jatka! Sporo mnie ominê³o. Mamy tu marny przep³yw informacji.
+	AI_Output(self, other,"DIA_Wolf_RBL_09_12"); //Rzeczywiœcie, mamy zbie¿ne cele. Jak Cavalorn chce to za³atwiæ?
+	AI_Output(other, self,"DIA_Wolf_RBL_15_13"); //Najpierw mam siê rozejrzeæ w sytuacji i je¿eli zajdzie taka potrzeba, mam wam pomóc.
+	AI_Output(other, self,"DIA_Wolf_RBL_15_14"); //PóŸniej nadejdzie pora na wykopanie st¹d stra¿ników.
+	AI_Output(self, other,"DIA_Wolf_RBL_09_15"); //W porz¹dku. Co chcesz wiedzieæ?
 
-	B_LogEntry		(CH4_NC_RBLBosses, "Wilk z chêci¹ odpowie na moje pytania.");
+	B_LogEntry(CH4_NC_RBLBosses, "Wilk z chêci¹ odpowie na moje pytania.");
 };
 
 //****************************************
@@ -275,10 +275,10 @@ FUNC VOID DIA_Wolf_RBL1_Info()
 {
 	var C_NPC plus; plus = Hlp_GetNpc(Grd_4086_Pluskwa);
 
-	AI_Output			(other, self,"DIA_Wolf_RBL1_15_00"); //Na pocz¹tek powiesz mi jak wygl¹da sytuacja.
-	AI_Output			(self, other,"DIA_Wolf_RBL1_09_01"); //Nieciekawie, ale z perspektyw¹ na przysz³oœæ.
+	AI_Output(other, self,"DIA_Wolf_RBL1_15_00"); //Na pocz¹tek powiesz mi jak wygl¹da sytuacja.
+	AI_Output(self, other,"DIA_Wolf_RBL1_09_01"); //Nieciekawie, ale z perspektyw¹ na przysz³oœæ.
 	AI_TurnToNpc(self, plus);
-	AI_Output			(self, other,"DIA_Wolf_RBL1_09_02"); //Cholera... Znowu ten gnojek. Udawaj, ¿e pytasz o ³uki...
+	AI_Output(self, other,"DIA_Wolf_RBL1_09_02"); //Cholera... Znowu ten gnojek. Udawaj, ¿e pytasz o ³uki...
 	AI_TurnToNpc(self, other);
 	B_StopProcessInfos	(self);
 
@@ -313,14 +313,14 @@ FUNC INT DIA_Wolf_Reward_Condition()
 FUNC VOID DIA_Wolf_Reward_Info()
 {
 	B_GiveXP(500);
-	AI_Output			(other, self,"DIA_Wolf_Reward_15_00"); //Pozby³em siê Pluskwy.
-	AI_Output			(self, other,"DIA_Wolf_Reward_09_01"); //Nie masz pojêcia jaki Ci jestem wdziêczny.
-	AI_Output			(self, other,"DIA_Wolf_Reward_09_02"); //Mam dla Ciebie propozycjê.
-	AI_Output			(other, self,"DIA_Wolf_Reward_15_03"); //Ca³y zamieniam siê w s³uch.
-	AI_Output			(self, other,"DIA_Wolf_Reward_09_04"); //Przynieœ mi 15 p³ytek pe³zaczy, a zrobiê Ci porz¹dny pancerz.
-	AI_Output			(other, self,"DIA_Wolf_Reward_15_05"); //Dziêki, Wilk. Pomyœlê o tym.
+	AI_Output(other, self,"DIA_Wolf_Reward_15_00"); //Pozby³em siê Pluskwy.
+	AI_Output(self, other,"DIA_Wolf_Reward_09_01"); //Nie masz pojêcia jaki Ci jestem wdziêczny.
+	AI_Output(self, other,"DIA_Wolf_Reward_09_02"); //Mam dla Ciebie propozycjê.
+	AI_Output(other, self,"DIA_Wolf_Reward_15_03"); //Ca³y zamieniam siê w s³uch.
+	AI_Output(self, other,"DIA_Wolf_Reward_09_04"); //Przynieœ mi 15 p³ytek pe³zaczy, a zrobiê Ci porz¹dny pancerz.
+	AI_Output(other, self,"DIA_Wolf_Reward_15_05"); //Dziêki, Wilk. Pomyœlê o tym.
 
-	B_LogEntry		(CH4_NC_RBLBosses, "Wilk z wdziêcznoœci zrobi dla mnie pancerz z p³ytek pe³zaczy. Tylko najpierw muszê siê dowiedzieæ jak pozyskiwaæ p³ytki i przynieœæ mu co najmniej 15 sztuk.");
+	B_LogEntry(CH4_NC_RBLBosses, "Wilk z wdziêcznoœci zrobi dla mnie pancerz z p³ytek pe³zaczy. Tylko najpierw muszê siê dowiedzieæ jak pozyskiwaæ p³ytki i przynieœæ mu co najmniej 15 sztuk.");
 };
 
 //****************************************
@@ -346,8 +346,8 @@ FUNC INT DIA_Wolf_Questions_Condition()
 
 FUNC VOID DIA_Wolf_Questions_Info()
 {
-	AI_Output			(other, self,"DIA_Wolf_Questions_15_00"); //Czas zadaæ kilka pytañ.
-	AI_Output			(self, other,"DIA_Wolf_Questions_09_01"); //Strzelaj, brachu!
+	AI_Output(other, self,"DIA_Wolf_Questions_15_00"); //Czas zadaæ kilka pytañ.
+	AI_Output(self, other,"DIA_Wolf_Questions_09_01"); //Strzelaj, brachu!
 };
 
 //****************************************
@@ -373,14 +373,14 @@ FUNC INT DIA_Wolf_Questions1_Condition()
 
 FUNC VOID DIA_Wolf_Questions1_Info()
 {
-	AI_Output			(other, self,"DIA_Wolf_Questions1_15_00"); //Co planujesz?
-	AI_Output			(self, other,"DIA_Wolf_Questions1_09_01"); //To zale¿y od rozwoju sytuacji.
-	AI_Output			(self, other,"DIA_Wolf_Questions1_09_02"); //W tej chwili czekam, patrzê i s³ucham.
-	AI_Output			(other, self,"DIA_Wolf_Questions1_15_03"); //Mo¿e nadesz³a pora, ¿eby zrobiæ pierwszy ruch?
-	AI_Output			(self, other,"DIA_Wolf_Questions1_09_04"); //Mo¿liwe, ale ja go nie wykonam, to zbyt ryzykowne.
-	AI_Output			(other, self,"DIA_Wolf_Questions1_15_05"); //Rozumiem. Postaram siê znaleŸæ jak¹œ zachêtê.
+	AI_Output(other, self,"DIA_Wolf_Questions1_15_00"); //Co planujesz?
+	AI_Output(self, other,"DIA_Wolf_Questions1_09_01"); //To zale¿y od rozwoju sytuacji.
+	AI_Output(self, other,"DIA_Wolf_Questions1_09_02"); //W tej chwili czekam, patrzê i s³ucham.
+	AI_Output(other, self,"DIA_Wolf_Questions1_15_03"); //Mo¿e nadesz³a pora, ¿eby zrobiæ pierwszy ruch?
+	AI_Output(self, other,"DIA_Wolf_Questions1_09_04"); //Mo¿liwe, ale ja go nie wykonam, to zbyt ryzykowne.
+	AI_Output(other, self,"DIA_Wolf_Questions1_15_05"); //Rozumiem. Postaram siê znaleŸæ jak¹œ zachêtê.
 
-	B_LogEntry		(CH4_NC_RBLBosses, "Wilk woli siê nie wychylaæ. Muszê go przekonaæ, ¿e nie jest sam, i ¿e najwy¿sza pora wykopaæ stra¿ników jak najdalej st¹d.");
+	B_LogEntry(CH4_NC_RBLBosses, "Wilk woli siê nie wychylaæ. Muszê go przekonaæ, ¿e nie jest sam, i ¿e najwy¿sza pora wykopaæ stra¿ników jak najdalej st¹d.");
 };
 
 //****************************************
@@ -408,17 +408,17 @@ FUNC VOID DIA_Wolf_Questions2_Info()
 {
 	wolf_cooperate = TRUE;
 
-	AI_Output			(other, self,"DIA_Wolf_Questions2_15_00"); //Mam dla ciebie ciekaw¹ wiadomoœæ.
-	AI_Output			(self, other,"DIA_Wolf_Questions2_09_01"); //Mów.
-	AI_Output			(other, self,"DIA_Wolf_Questions2_15_02"); //Lares te¿ ma ju¿ doœæ stra¿ników. Mam Ci przekazaæ, ¿e on i jego ludzie tylko czekaj¹ na sygna³.
-	AI_Output			(self, other,"DIA_Wolf_Questions2_09_03"); //No proszê, jednak coœ siê dzieje. Jestem z wami, ale pod jednym warunkiem.
-	AI_Output			(other, self,"DIA_Wolf_Questions2_15_04"); //Chyba domyœlam siê do czego zmierzasz...
-	AI_Output			(self, other,"DIA_Wolf_Questions2_09_05"); //Do walki musi nas poprowadziæ Lee!
-	AI_Output			(other, self,"DIA_Wolf_Questions2_15_06"); //Zajmê siê tym. Najwa¿niejsze, ¿e jesteœ z nami.
-	AI_Output			(self, other,"DIA_Wolf_Questions2_09_07"); //Porozmawiam z ludŸmi, przygotujê wszystko jak nale¿y. Wystarczy, ¿e dacie sygna³, a Kocio³ sp³ynie krwi¹ stra¿ników.
+	AI_Output(other, self,"DIA_Wolf_Questions2_15_00"); //Mam dla ciebie ciekaw¹ wiadomoœæ.
+	AI_Output(self, other,"DIA_Wolf_Questions2_09_01"); //Mów.
+	AI_Output(other, self,"DIA_Wolf_Questions2_15_02"); //Lares te¿ ma ju¿ doœæ stra¿ników. Mam Ci przekazaæ, ¿e on i jego ludzie tylko czekaj¹ na sygna³.
+	AI_Output(self, other,"DIA_Wolf_Questions2_09_03"); //No proszê, jednak coœ siê dzieje. Jestem z wami, ale pod jednym warunkiem.
+	AI_Output(other, self,"DIA_Wolf_Questions2_15_04"); //Chyba domyœlam siê do czego zmierzasz...
+	AI_Output(self, other,"DIA_Wolf_Questions2_09_05"); //Do walki musi nas poprowadziæ Lee!
+	AI_Output(other, self,"DIA_Wolf_Questions2_15_06"); //Zajmê siê tym. Najwa¿niejsze, ¿e jesteœ z nami.
+	AI_Output(self, other,"DIA_Wolf_Questions2_09_07"); //Porozmawiam z ludŸmi, przygotujê wszystko jak nale¿y. Wystarczy, ¿e dacie sygna³, a Kocio³ sp³ynie krwi¹ stra¿ników.
 
 	lee_back = lee_back + 1;
-	B_LogEntry		(CH4_NC_RBLBosses, "Wilk i jego ludzie wezmê udzia³ w powstaniu, ale najpierw muszê przekonaæ Lee, ¿eby stan¹³ na czele rebelii.");
+	B_LogEntry(CH4_NC_RBLBosses, "Wilk i jego ludzie wezmê udzia³ w powstaniu, ale najpierw muszê przekonaæ Lee, ¿eby stan¹³ na czele rebelii.");
 };
 
 //****************************************
@@ -444,36 +444,36 @@ FUNC INT DIA_Wolf_Questions3_Condition()
 
 FUNC VOID DIA_Wolf_Questions3_Info()
 {
-	AI_Output			(other, self,"DIA_Wolf_Questions3_15_00"); //Co wiesz o Hrabim?
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_01"); //To i owo. Ale to doœæ grz¹ski temat.
-	AI_Output			(other, self,"DIA_Wolf_Questions3_15_02"); //Muszê dowiedzieæ siê jak najwiêcej o tym bydlaku!
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_03"); //Nie wiem czy to dobry pomys³. Czasami lepiej wiedzieæ mniej, d³u¿ej siê wtedy ¿yje, przyjacielu.
-	AI_Output			(other, self,"DIA_Wolf_Questions3_15_04"); //Nie przyszed³em tu po dobre rady, tylko po odpowiedzi.
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_05"); //W porz¹dku. Powiem Ci co wiem.
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_06"); //Prawdziwym przywódc¹ stra¿ników w tym obozie jest Hrabia.
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_07"); //Fletcher to tylko pionek, który w ka¿dej chwili mo¿e znikn¹æ z gry.
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_08"); //Hrabia jest bezwzglêdny, ale nie szalony. Zmierza do celu po trupach, jednak zawsze ch³odno rachuje.
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_09"); //Wydaje mi siê, ¿e Hrabia nie dzia³a sam. Raz widzia³em go w towarzystwie Kruka. Ci dwaj znaj¹ siê podobno z lepszych czasów.
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_10"); //Coœ Ci powiem, ten duet mo¿e pogr¹¿yæ ca³¹ Koloniê. 
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_11"); //Wszyscy trzês¹ portkami przed Gomezam, ale tak naprawdê trzeba baæ siê Kruka i jego popleczników.
-	AI_Output			(other, self,"DIA_Wolf_Questions3_15_12"); //To wszystko?
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_13"); //Jeszcze jedno. Hrabia... On czegoœ szuka. Lub raczej kogoœ. Jestem pewien, ¿e nikt o tym nie wie, nawet Kruk.
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_14"); //I móg³bym daæ sobie uci¹æ wszystkie cz³onki, ¿e dlatego znalaz³ siê w Kolonii.
-	AI_Output			(other, self,"DIA_Wolf_Questions3_15_15"); //Sk¹d te przypuszczenia?
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_16"); //Hrabia rozmawia³ ze mn¹, tu¿ po ataku. Jeszcze nigdy siê tak nie spoci³em ze strachu jak w obecnoœci tego cz³owieka.
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_17"); //On jest pusty od œrodka, wypalony i zimny...
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_18"); //Zapyta³ mnie czy kiedyœ s³ysza³em o Xardasie. Oczywiœcie zaprzeczy³em.
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_19"); //Ale nie tylko o niego pyta³.
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_20"); //Niedawno trafi³ tu taki jeden, który te¿ zd¹¿y³ ju¿ sporo namieszaæ.
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_21"); //Nikt nie wie jak naprawdê siê nazywa, wiêc wszyscy mówi¹ na niego Bezimienny.
-	AI_Output			(other, self,"DIA_Wolf_Questions3_15_22"); //Bezimienny? Ma³o oryginalnie.
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_23"); //Mo¿liwe, ale to swój ch³op i te¿ chce siê st¹d jak najszybciej wyrwaæ. Powiedzia³em tylko to co i tak wiedz¹ wszyscy. 
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_24"); //Przeszy³ mnie wtedy tymi swoimi zimnymi œlepiami i kaza³ odejœæ. Brrry...
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_25"); //Hmm. Wy dwaj jesteœcie jakby... szalami tej samej wagi. Ty i Hrabia.
-	AI_Output			(other, self,"DIA_Wolf_Questions3_15_26"); //Nie rozumiem.
-	AI_Output			(self, other,"DIA_Wolf_Questions3_09_27"); //Myœlê, ¿e dobrze wiesz o czym mówiê. Do zobaczenia, przyjacielu.
-	B_LogEntry		(CH1_Rbl_Hrabia, "Stra¿nikom w Nowym Obozie naprawdê przewodzi Hrabia. Wilk twierdzi te¿, ¿e Hrabia pracuje dla Kruka. Mimo to najemnik uwa¿a, ¿e Hrabia nie trafi³ do Kolonii przez przypadek. Podobno wypytywa³ go o Xardasa i jakiegoœ Bezimiennego. Ta historia zaczyna siê robiæ coraz ciekawsza.");
-	B_LogEntry		(CH1_Rbl_NoName, "Wilk powiedzia³ mi, ¿e Hrabia wypytywa³ o Xardasa i Bezimiennego. Najemnik uwa¿a, ¿e to w³aœnie ci dwaj mog¹ byæ powodem przybycia Hrabiego do Kolonii.");
+	AI_Output(other, self,"DIA_Wolf_Questions3_15_00"); //Co wiesz o Hrabim?
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_01"); //To i owo. Ale to doœæ grz¹ski temat.
+	AI_Output(other, self,"DIA_Wolf_Questions3_15_02"); //Muszê dowiedzieæ siê jak najwiêcej o tym bydlaku!
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_03"); //Nie wiem czy to dobry pomys³. Czasami lepiej wiedzieæ mniej, d³u¿ej siê wtedy ¿yje, przyjacielu.
+	AI_Output(other, self,"DIA_Wolf_Questions3_15_04"); //Nie przyszed³em tu po dobre rady, tylko po odpowiedzi.
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_05"); //W porz¹dku. Powiem Ci co wiem.
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_06"); //Prawdziwym przywódc¹ stra¿ników w tym obozie jest Hrabia.
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_07"); //Fletcher to tylko pionek, który w ka¿dej chwili mo¿e znikn¹æ z gry.
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_08"); //Hrabia jest bezwzglêdny, ale nie szalony. Zmierza do celu po trupach, jednak zawsze ch³odno rachuje.
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_09"); //Wydaje mi siê, ¿e Hrabia nie dzia³a sam. Raz widzia³em go w towarzystwie Kruka. Ci dwaj znaj¹ siê podobno z lepszych czasów.
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_10"); //Coœ Ci powiem, ten duet mo¿e pogr¹¿yæ ca³¹ Koloniê. 
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_11"); //Wszyscy trzês¹ portkami przed Gomezam, ale tak naprawdê trzeba baæ siê Kruka i jego popleczników.
+	AI_Output(other, self,"DIA_Wolf_Questions3_15_12"); //To wszystko?
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_13"); //Jeszcze jedno. Hrabia... On czegoœ szuka. Lub raczej kogoœ. Jestem pewien, ¿e nikt o tym nie wie, nawet Kruk.
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_14"); //I móg³bym daæ sobie uci¹æ wszystkie cz³onki, ¿e dlatego znalaz³ siê w Kolonii.
+	AI_Output(other, self,"DIA_Wolf_Questions3_15_15"); //Sk¹d te przypuszczenia?
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_16"); //Hrabia rozmawia³ ze mn¹, tu¿ po ataku. Jeszcze nigdy siê tak nie spoci³em ze strachu jak w obecnoœci tego cz³owieka.
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_17"); //On jest pusty od œrodka, wypalony i zimny...
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_18"); //Zapyta³ mnie czy kiedyœ s³ysza³em o Xardasie. Oczywiœcie zaprzeczy³em.
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_19"); //Ale nie tylko o niego pyta³.
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_20"); //Niedawno trafi³ tu taki jeden, który te¿ zd¹¿y³ ju¿ sporo namieszaæ.
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_21"); //Nikt nie wie jak naprawdê siê nazywa, wiêc wszyscy mówi¹ na niego Bezimienny.
+	AI_Output(other, self,"DIA_Wolf_Questions3_15_22"); //Bezimienny? Ma³o oryginalnie.
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_23"); //Mo¿liwe, ale to swój ch³op i te¿ chce siê st¹d jak najszybciej wyrwaæ. Powiedzia³em tylko to co i tak wiedz¹ wszyscy. 
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_24"); //Przeszy³ mnie wtedy tymi swoimi zimnymi œlepiami i kaza³ odejœæ. Brrry...
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_25"); //Hmm. Wy dwaj jesteœcie jakby... szalami tej samej wagi. Ty i Hrabia.
+	AI_Output(other, self,"DIA_Wolf_Questions3_15_26"); //Nie rozumiem.
+	AI_Output(self, other,"DIA_Wolf_Questions3_09_27"); //Myœlê, ¿e dobrze wiesz o czym mówiê. Do zobaczenia, przyjacielu.
+	B_LogEntry(CH1_Rbl_Hrabia, "Stra¿nikom w Nowym Obozie naprawdê przewodzi Hrabia. Wilk twierdzi te¿, ¿e Hrabia pracuje dla Kruka. Mimo to najemnik uwa¿a, ¿e Hrabia nie trafi³ do Kolonii przez przypadek. Podobno wypytywa³ go o Xardasa i jakiegoœ Bezimiennego. Ta historia zaczyna siê robiæ coraz ciekawsza.");
+	B_LogEntry(CH1_Rbl_NoName, "Wilk powiedzia³ mi, ¿e Hrabia wypytywa³ o Xardasa i Bezimiennego. Najemnik uwa¿a, ¿e to w³aœnie ci dwaj mog¹ byæ powodem przybycia Hrabiego do Kolonii.");
 };
 
 /*********************
@@ -679,7 +679,7 @@ func VOID DIA_Wolf_Sudden_Info()
 	AI_Output(hero,self,"DIA_Wolf_Sudden_15_18"); //Bywaj, Wilk i trzymaj tê swoj¹ sforê na krótkim postronku. Przynajmniej na razie.
 	AI_Output(self,hero,"DIA_Wolf_Sudden_09_19"); //Wracaj ostro¿nie, przyjacielu.
 
-	B_LogEntry		(CH5_NO_Wolf, "Uda³o siê, porozmawia³em z Wilkiem. Przekaza³em mu wiadomoœæ od Lee. Sfora bêdzie czekaæ na krzyk harpii. Oby nie czekali za d³ugo... Muszê porozmawiaæ z Lee.");
+	B_LogEntry(CH5_NO_Wolf, "Uda³o siê, porozmawia³em z Wilkiem. Przekaza³em mu wiadomoœæ od Lee. Sfora bêdzie czekaæ na krzyk harpii. Oby nie czekali za d³ugo... Muszê porozmawiaæ z Lee.");
 };
 
 //---------------------------------------------------------------------
