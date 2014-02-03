@@ -163,6 +163,7 @@ FUNC void  STT_Balam_DiegoCome_Info()
 	AI_Output (self, other,"STT_Balam_DiegoCome_Info_07_05"); //Œwietna robota.
 	Log_SetTopicStatus	(CH3_RBL_Shadows, LOG_SUCCESS);
 	B_LogEntry		(CH3_RBL_Shadows, "Diego jest ju¿ w obozie. Balam jest pewien, ¿e zdo³a przekonaæ cienie do walki z Gomezem.");
+	B_LogEntry(CH3_RBL_OldCampSpy, "Cienie s¹ z nami!");
 	
 	B_StopProcessInfos	(self);	
 };

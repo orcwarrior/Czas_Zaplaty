@@ -265,6 +265,7 @@ FUNC VOID DIA_Urt_Buddler_Info()
 
 	Log_SetTopicStatus	(CH3_RBL_Buddler, LOG_SUCCESS);
 	B_LogEntry		(CH3_RBL_Buddler, "Zdoby³em poparcie wszystkich przywódców kopaczy.");
+	B_LogEntry(CH3_RBL_OldCampSpy, "Uda³o siê zdobyæ poparcie kopaczy. Teraz czas na zdobycie zaufania cieni.");
 
 	Log_CreateTopic	(CH3_RBL_Shadows, LOG_MISSION);
 	Log_SetTopicStatus	(CH3_RBL_Shadows, LOG_RUNNING);
