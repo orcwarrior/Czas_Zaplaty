@@ -681,7 +681,7 @@ INSTANCE DIA_Fingers_Task (C_INFO)
 
 FUNC INT DIA_Fingers_Task_Condition()
 {
-	if (Npc_KnowsInfo (hero, DIA_Fingers_AfterFight ))
+	if (Npc_KnowsInfo (hero, DIA_Fingers_AfterFight) && Npc_KnowsInfo (hero, DIA_Cavalorn_SpyEnd))
 	{
 		return 1;
 	};
