@@ -127,7 +127,7 @@ FUNC void  STT_Balam_Diego_Info()
 	//TODO:/CORRECT: Crappy dialog added by orc
 	AI_Output (self, other,"STT_Balam_Diego_Info_07_06"); //Poczekaj! Mam pomys≥.
 	AI_Output (self, other,"STT_Balam_Diego_Info_07_07"); //Magowie ognia potrafili teleportowaÊ siÍ poza mury zamku i wrÛciÊ kiedy przysz≥a im na to ochota.
-	AI_Output (self, other,"STT_Balam_Diego_Info_07_08"); //Niestety Gomez wszystkich zarøna≥.
+	AI_Output (self, other,"STT_Balam_Diego_Info_07_08"); //Niestety Gomez wszystkich zarønπ≥.
 	AI_Output (other, self,"STT_Balam_Diego_Info_15_09"); //Chyba jednak nie wszystkich, wiem gdzie znaleüÊ jednego z nich.
 	AI_Output (self, other,"STT_Balam_Diego_Info_07_10"); //W takim razie powodzenia.
 	B_LogEntry		(CH3_RBL_Shadows, "Znalaz≥em sposÛb na przemycenie Diego do Starego Obozu. MuszÍ porozmawiaÊ z Miltenem, moøe zosta≥a mu jakaú runa teleportacyjna.");
@@ -192,7 +192,7 @@ FUNC void  STT_Balam_Spy_Info()
 {
 	AI_Output (other, self,"STT_Balam_Spy_Info_15_01"); //Jak wyglπda sytuacja?
 	AI_Output (self, other,"STT_Balam_Spy_Info_07_02"); //èle.
-	AI_Output (self, other,"STT_Balam_Spy_Info_07_03"); //Dorwali Diego. cienie straci≥y pewnoúÊ siebie i poszli w rozsypkÍ. WπtpiÍ, øe chociaø co drugi chwyci za miecz kiedy uderzymy na straønikÛw. 
+	AI_Output (self, other,"STT_Balam_Spy_Info_07_03"); //Dorwali Diego. Cienie straci≥y pewnoúÊ siebie i poszli w rozsypkÍ. WπtpiÍ, øe chociaø co drugi chwyci za miecz, kiedy uderzymy na straønikÛw. 
 	AI_Output (self, other,"STT_Balam_Spy_Info_07_04"); //Nie wiem jak kopacze. Jakiú skurwiel musia≥ wypaplaÊ straønikom, øe Diego wrÛci≥.
 	AI_Output (self, other,"STT_Balam_Spy_Info_07_05"); //Musimy znaleüÊ i uciszyÊ tÍ gnidÍ jak najszybciej!
 	AI_Output (other, self,"STT_Balam_Spy_Info_15_06"); //Tu siÍ z tobπ zgadzam.
@@ -204,7 +204,7 @@ FUNC void  STT_Balam_Spy_Info()
 	AI_Output (other, self,"STT_Balam_Spy_Info_15_10"); //Skπd te podejrzenia?
 	AI_Output (self, other,"STT_Balam_Spy_Info_07_11"); //Znam kogoú kto zna≥ Urta przed tym jak trafi≥ do Kolonii. Kiedyú pogadaliúmy sobie od serca, by≥em wtedy jeszcze szkodnikiem w Nowym Obozie.
 	AI_Output (other, self,"STT_Balam_Spy_Info_15_12"); //Szkodnikiem? To jak trafi≥eú tutaj?
-	AI_Output (self, other,"STT_Balam_Spy_Info_07_13"); //Mia≥em juø doúÊ s≥uchania Laresa. A w zamku akurat zwolni≥ siÍ etat kucharza. Zawsze lubi≥em pichciÊ wiÍc zaryzykowa≥em i nie øa≥ujÍ.
+	AI_Output (self, other,"STT_Balam_Spy_Info_07_13"); //Mia≥em juø doúÊ s≥uchania Laresa. A w zamku akurat zwolni≥ siÍ etat kucharza. Zawsze lubi≥em pichciÊ, wiÍc zaryzykowa≥em i nie øa≥ujÍ.
 	AI_Output (other, self,"STT_Balam_Spy_Info_15_14"); //SprawdzÍ Twojπ wersjÍ. Kim jest ten znajomy?
 	AI_Output (self, other,"STT_Balam_Spy_Info_07_15"); //To Cipher. Znajdziesz go w Nowym Obozie. Nie wiem co teraz robi, ale wiem co rozwiπøe mu jÍzyk. Ziele.
 	AI_Output (self, other,"STT_Balam_Spy_Info_07_16"); //Weü ze sobπ coú do palenia to siÍ dogadacie.
