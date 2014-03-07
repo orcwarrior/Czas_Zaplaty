@@ -1363,42 +1363,59 @@ func void DAMAGE_TRIGGER_FUNC()
 	var int ptr;
 	WLD_SendTrigger("DAMAGE_TRIGGER");
 	MEM_SetShowDebug(1);
-	if(!HeroDamage_HeroCanDoHit()){return;};//break if hero ani isn't in hitanibounds, etc.
+	if(!HeroDamage_HeroCanDoHit()){ printdebug("Exit from DAMAGE_TRIGGER_FUNC"); return;};//break if hero ani isn't in hitanibounds, etc.
 	printdebug("DamageTrigger>>START");
 	
 	if(Npc_HasReadiedMeleeWeapon(hero))
 	{
+		printdebug("DamageTrigger>>Npc_HasReadiedMeleeWeapon");
 		//R damage init
 		if(!R_SWDDMG_PTR)
 		{
+			printdebug("DamageTrigger>>!R_SWDDMG_PTR");
 			Wld_PlayEffect("R_SWORDDAMAGE", hero, hero, 0, 0, DAM_INVALID, FALSE); 
 			ptr = MEM_InstGetOffset(hero);
+			printdebug("DamageTrigger>>MEM_InstGetOffset(hero)");
 			ptr = MEM_ReadInt(ptr+36);//hero zCTree
+			printdebug("DamageTrigger>>MEM_ReadInt(ptr+36)");
 			ptr = MEM_ReadInt(ptr);//parent zCTree
-			ptr = MEM_ReadInt(ptr+4);//child zCTree        
-			R_SWDDMG_PTR = I_zCTreeSearchVFX(ptr,0);               
+			printdebug("DamageTrigger>>MEM_ReadInt(ptr)");
+			ptr = MEM_ReadInt(ptr+4);//child zCTree   
+			printdebug("DamageTrigger>>MEM_ReadInt(ptr+4)");			
+			R_SWDDMG_PTR = I_zCTreeSearchVFX(ptr,0);  
+			printdebug("DamageTrigger>>R_SWDDMG_PTR");			
 		};
 		if(DUALEQUIPED)&&(!L_SWDDMG_PTR)
 		{
+			printdebug("DamageTrigger>>DUALEQUIPED");
 			Wld_PlayEffect("L_SWORDDAMAGE", hero, hero, 0, 0, DAM_INVALID, FALSE); 
 			ptr = MEM_InstGetOffset(hero);
+			printdebug("DamageTrigger>>MEM_InstGetOffset(hero)");
 			ptr = MEM_ReadInt(ptr+36);//hero zCTree
+			printdebug("DamageTrigger>>MEM_ReadInt(ptr+36)");
 			ptr = MEM_ReadInt(ptr);//parent zCTree
-			ptr = MEM_ReadInt(ptr+4);//child zCTree        
-			L_SWDDMG_PTR = I_zCTreeSearchVFX(ptr,1);               
+			printdebug("DamageTrigger>>MEM_ReadInt(ptr)");
+			ptr = MEM_ReadInt(ptr+4);//child zCTree    
+			printdebug("DamageTrigger>>MEM_ReadInt(ptr+4)");			
+			L_SWDDMG_PTR = I_zCTreeSearchVFX(ptr,1);     
+			printdebug("DamageTrigger>>L_SWDDMG_PTR");			
 		};             
 	}
 	else if(!Npc_HasReadiedMeleeWeapon(hero))
 	{
+		printdebug("DamageTrigger>>!Npc_HasReadiedMeleeWeapon(hero)");	
 		if(R_SWDDMG_PTR){ R_SWDDMG_PTR=0;};    
 		if(L_SWDDMG_PTR){ L_SWDDMG_PTR=0;};    
 		return;                        
 	};
 	
+	printdebug("DamageTrigger>>HeroDamageInit");	
 	HeroDamageInit();
 	
+	printdebug("DamageTrigger>>CollPool_NpcListCheck(RIGHTHAND_WEAPON)");	
 	CollPool_NpcListCheck(RIGHTHAND_WEAPON);
 	if(DUALEQUIPED){
+		printdebug("DamageTrigger>>DUALEQUIPED");	
 		CollPool_NpcListCheck(LEFTHAND_WEAPON);
 	};
 	
