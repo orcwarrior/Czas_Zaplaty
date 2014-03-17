@@ -2799,41 +2799,41 @@ func void STARTUP_Runes()
 {
 	// Musz¹ byc w invisible:
 	RuneCharge = RuneChargeMax;	
-	Wld_InsertNpc(RuneSword_Now, "INVISIBLE");
+	Wld_InsertNpc(RuneSword_Now, "GAME_START");
 	//1
-	Wld_InsertNpc(RuneSword_Light, "INVISIBLE");	
-	Wld_InsertNpc(RuneSword_FireBolt, "INVISIBLE");	
-	Wld_InsertNpc(RuneSword_ThunderBolt, "INVISIBLE");	
+	Wld_InsertNpc(RuneSword_Light, "GAME_START");	
+	Wld_InsertNpc(RuneSword_FireBolt, "GAME_START");	
+	Wld_InsertNpc(RuneSword_ThunderBolt, "GAME_START");	
 	//2
-	Wld_InsertNpc(RuneSword_Sleep, "INVISIBLE");	
-	Wld_InsertNpc(RuneSword_WindFist, "INVISIBLE");	
-	Wld_InsertNpc(RuneSword_Heal, "INVISIBLE");
-	Wld_InsertNpc(RuneSword_StuningBall, "INVISIBLE");
+	Wld_InsertNpc(RuneSword_Sleep, "GAME_START");	
+	Wld_InsertNpc(RuneSword_WindFist, "GAME_START");	
+	Wld_InsertNpc(RuneSword_Heal, "GAME_START");
+	Wld_InsertNpc(RuneSword_StuningBall, "GAME_START");
 	
 	//3
-	Wld_InsertNpc(RuneSword_IceCube, "INVISIBLE");	
-	Wld_InsertNpc(RuneSword_ThunderBall, "INVISIBLE");	
-	Wld_InsertNpc(RuneSword_Charm, "INVISIBLE");	
-	Wld_InsertNpc(RuneSword_Pyrokinesis, "INVISIBLE");		
-	Wld_InsertNpc(RuneSword_FireBall, "INVISIBLE");		
-	Wld_InsertNpc(RuneSword_LifeDrain, "INVISIBLE");		
-	Wld_InsertNpc(RuneSword_Curse, "INVISIBLE");		
+	Wld_InsertNpc(RuneSword_IceCube, "GAME_START");	
+	Wld_InsertNpc(RuneSword_ThunderBall, "GAME_START");	
+	Wld_InsertNpc(RuneSword_Charm, "GAME_START");	
+	Wld_InsertNpc(RuneSword_Pyrokinesis, "GAME_START");		
+	Wld_InsertNpc(RuneSword_FireBall, "GAME_START");		
+	Wld_InsertNpc(RuneSword_LifeDrain, "GAME_START");		
+	Wld_InsertNpc(RuneSword_Curse, "GAME_START");		
 
 	//4
-	Wld_InsertNpc(RuneSword_ChainLightning, "INVISIBLE");	
-	Wld_InsertNpc(RuneSword_FireStorm, "INVISIBLE");	
-	Wld_InsertNpc(RuneSword_stormfist, "INVISIBLE");	
-	Wld_InsertNpc(RuneSword_destroyundead, "INVISIBLE");	
-	Wld_InsertNpc(RuneSword_HolyFire, "INVISIBLE");		
-	Wld_InsertNpc(RuneSword_FireWall, "INVISIBLE");		
+	Wld_InsertNpc(RuneSword_ChainLightning, "GAME_START");	
+	Wld_InsertNpc(RuneSword_FireStorm, "GAME_START");	
+	Wld_InsertNpc(RuneSword_stormfist, "GAME_START");	
+	Wld_InsertNpc(RuneSword_destroyundead, "GAME_START");	
+	Wld_InsertNpc(RuneSword_HolyFire, "GAME_START");		
+	Wld_InsertNpc(RuneSword_FireWall, "GAME_START");		
 	//5
-	Wld_InsertNpc(RuneSword_IceWave, "INVISIBLE");	
-	Wld_InsertNpc(RuneSword_FireRain, "INVISIBLE");
-	Wld_InsertNpc(RuneSword_Thunder, "INVISIBLE");
+	Wld_InsertNpc(RuneSword_IceWave, "GAME_START");	
+	Wld_InsertNpc(RuneSword_FireRain, "GAME_START");
+	Wld_InsertNpc(RuneSword_Thunder, "GAME_START");
 	
 	//6	
-	Wld_InsertNpc(RuneSword_BreathofDead, "INVISIBLE");		
-	Wld_InsertNpc(RuneSword_Meteor, "INVISIBLE");			
+	Wld_InsertNpc(RuneSword_BreathofDead, "GAME_START");		
+	Wld_InsertNpc(RuneSword_Meteor, "GAME_START");			
 	//new
 };
 
@@ -2842,16 +2842,16 @@ func void STARTUP_HandlerContainers()
 	//Ork: TODO sprecyzuj swiaty,te containery wystarczy zeby byly w WORLD.ZEN
 	//Handlers Containers(R)
 	
-	Wld_InsertNpc(Rodney_Container, "INVISIBLE");		
-	Wld_InsertNpc(Drax_Container,	"INVISIBLE");		
-	Wld_InsertNpc(Fisk_Container,	"INVISIBLE");		
-	Wld_InsertNpc(Fox_Container, "INVISIBLE");		
-	Wld_InsertNpc(Taran_Container, "INVISIBLE");		
-	Wld_InsertNpc(Leren_Container, "INVISIBLE");		
-	Wld_InsertNpc(Jeff_Container,	"INVISIBLE");	
-	Wld_InsertNpc(Vam_Container,	"INVISIBLE");
-	Wld_InsertNpc(Riordian_Container,	"INVISIBLE"); //dodane 2012-11-14
-	Wld_InsertNpc(Wolf_Container,	"INVISIBLE"); //dodane 2012-11-14
+	Wld_InsertNpc(Rodney_Container, "WP_INTRO01");		
+	Wld_InsertNpc(Drax_Container,	"WP_INTRO01");		
+	Wld_InsertNpc(Fisk_Container,	"WP_INTRO01");		
+	Wld_InsertNpc(Fox_Container, "WP_INTRO01");		
+	Wld_InsertNpc(Taran_Container, "WP_INTRO01");		
+	Wld_InsertNpc(Leren_Container, "WP_INTRO01");		
+	Wld_InsertNpc(Jeff_Container,	"WP_INTRO01");	
+	Wld_InsertNpc(Vam_Container,	"WP_INTRO01");
+	Wld_InsertNpc(Riordian_Container, "WP_INTRO01"); //dodane 2012-11-14
+	Wld_InsertNpc(Wolf_Container,	"WP_INTRO01"); //dodane 2012-11-14
 };	
 
 func void STARTUP_NewsNPC()
