@@ -67,7 +67,7 @@ instance dead_guard (Npc_Default)
 {
 	//-------- primary data --------
 	//When Hero Runs - headshoot
-	name 		=	"Martwy stra?nik";
+	name 		=	"Martwy strażnik";
 	npctype		=	NPCTYPE_GUARD;
 	guild 		=	GIL_GRD;
 	level 		=	15;
