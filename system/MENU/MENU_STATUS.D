@@ -237,7 +237,7 @@ INSTANCE MENU_ITEM_EXP_TITLE(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_LEVEL_NEXT_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_PLY_Y + 3*STAT_DY;	
-	text[0]	= "Nast. Poziom";
+	text[0]	= "Nast. poziom";
 	fontName = STAT_FONT_DEFAULT;
 	flags	= flags & ~IT_SELECTABLE;
 };
@@ -529,10 +529,10 @@ INSTANCE MENU_ITEM_TALENT_11(C_MENU_ITEM_DEF)        { posx = STAT_B_X3;posy = S
 
 
 // FAke talent 12: Magic Circles     POS 1
-INSTANCE MENU_ITEM_TALENT_14_TITLE(C_MENU_ITEM_DEF)  {	text[0]		=  "Krêgi Magii";posx = STAT_B_X1;posy = STAT_TAL_SPECIAL_Y + 1*STAT_DY;	fontName = STAT_FONT_DEFAULT;flags=flags & ~IT_SELECTABLE; };
+INSTANCE MENU_ITEM_TALENT_14_TITLE(C_MENU_ITEM_DEF)  {	text[0]		=  "Krêgi magii";posx = STAT_B_X1;posy = STAT_TAL_SPECIAL_Y + 1*STAT_DY;	fontName = STAT_FONT_DEFAULT;flags=flags & ~IT_SELECTABLE; };
 INSTANCE MENU_ITEM_TALENT_14(C_MENU_ITEM_DEF)        { 	text[0]		=  "0";	posx = STAT_B_X3;		  posy = STAT_TAL_SPECIAL_Y + 1*STAT_DY;	fontName = STAT_FONT_DEFAULT;flags=flags & ~IT_SELECTABLE; };
 // FAke talent 13: Dual Swords POS 5
-INSTANCE MENU_ITEM_TALENT_15_TITLE(C_MENU_ITEM_DEF)  {	text[0]		=  "Walka Dwoma Mieczami";	 posx = STAT_B_X1;	posy = STAT_TAL_SPECIAL_Y + 5*STAT_DY;	fontName = STAT_FONT_DEFAULT;flags=flags & ~IT_SELECTABLE; };
+INSTANCE MENU_ITEM_TALENT_15_TITLE(C_MENU_ITEM_DEF)  {	text[0]		=  "Walka dwoma mieczami";	 posx = STAT_B_X1;	posy = STAT_TAL_SPECIAL_Y + 5*STAT_DY;	fontName = STAT_FONT_DEFAULT;flags=flags & ~IT_SELECTABLE; };
 INSTANCE MENU_ITEM_TALENT_15(C_MENU_ITEM_DEF)        { 	text[0]		=  "Nie";	 posx = STAT_B_X3;	posy = STAT_TAL_SPECIAL_Y + 5*STAT_DY;	fontName = STAT_FONT_DEFAULT;flags=flags & ~IT_SELECTABLE; };
 
 // FAke talent 14: Sneaking   POS 2
@@ -540,7 +540,7 @@ INSTANCE MENU_ITEM_TALENT_16_TITLE(C_MENU_ITEM_DEF)  {	text[0]		=  "Skradanie"; 
 INSTANCE MENU_ITEM_TALENT_16(C_MENU_ITEM_DEF)        { 	text[0]		=  "Nie";		 posx = STAT_B_X3;posy = STAT_TAL_SPECIAL_Y + 2*STAT_DY;	fontName = STAT_FONT_DEFAULT;flags=flags & ~IT_SELECTABLE; };
 
 // FAke talent 15: Rune Sword   POS 6
-INSTANCE MENU_ITEM_TALENT_17_TITLE(C_MENU_ITEM_DEF)  {	text[0]		=  "Miecz Runiczny"; posx = STAT_B_X1;posy = STAT_TAL_SPECIAL_Y + 6*STAT_DY;	fontName = STAT_FONT_DEFAULT;flags=flags & ~IT_SELECTABLE; };
+INSTANCE MENU_ITEM_TALENT_17_TITLE(C_MENU_ITEM_DEF)  {	text[0]		=  "Miecz runiczny"; posx = STAT_B_X1;posy = STAT_TAL_SPECIAL_Y + 6*STAT_DY;	fontName = STAT_FONT_DEFAULT;flags=flags & ~IT_SELECTABLE; };
 INSTANCE MENU_ITEM_TALENT_17(C_MENU_ITEM_DEF)        { 	text[0]		=  "Nie";  posx = STAT_B_X3;posy = STAT_TAL_SPECIAL_Y + 6*STAT_DY;	fontName = STAT_FONT_DEFAULT;flags=flags & ~IT_SELECTABLE; };
 
 
