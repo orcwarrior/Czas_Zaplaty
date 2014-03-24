@@ -1,6 +1,5 @@
 
 
-
 INSTANCE ItRw_Bow_Small_01 (Bow)
 {
 	name 				=	"Krótki ³uk";
@@ -11,7 +10,7 @@ INSTANCE ItRw_Bow_Small_01 (Bow)
 
 	value 				=	200;//20;
 
-	damageTotal			=	20;
+	damageTotal			=	multiplier * 20;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 
@@ -36,7 +35,7 @@ INSTANCE ItRw_Bow_Small_02 (Bow)
 
 	value 				=	288;
 
-	damageTotal			=	24;
+	damageTotal			=	multiplier * 24;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -60,7 +59,7 @@ INSTANCE ItRw_Bow_Small_03 (Bow)
 
 	value 				=	392;
 
-	damageTotal			=	28;
+	damageTotal			=	multiplier * 28;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -84,7 +83,7 @@ INSTANCE ItRw_Bow_Small_04 (Bow)
 
 	value 				=	512;
 
-	damageTotal			=	32;
+	damageTotal			=	multiplier * 32;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -108,7 +107,7 @@ INSTANCE ItRw_Bow_Small_05 (Bow)
 
 	value 				=	648;
 
-	damageTotal			=	36;
+	damageTotal			=	multiplier * 36;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		=	ATR_DEXTERITY;
@@ -135,7 +134,7 @@ INSTANCE ItRw_Bow_Long_01 (Bow)
 
 	value 				=	800;
 
-	damageTotal			=	40;
+	damageTotal			=	multiplier * 40;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -159,7 +158,7 @@ INSTANCE ItRw_Bow_Long_02 (Bow)
 
 	value 				=	968;
 
-	damageTotal			=	44;
+	damageTotal			=	multiplier * 44;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -183,7 +182,7 @@ INSTANCE ItRw_Bow_Long_03 (Bow)
 
 	value 				=	1152;
 
-	damageTotal			=	48;
+	damageTotal			=	multiplier * 48;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -207,7 +206,7 @@ INSTANCE ItRw_Bow_Long_04 (Bow)
 
 	value 				=	1352;
 
-	damageTotal			=	52;
+	damageTotal			=	multiplier * 52;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -231,7 +230,7 @@ INSTANCE ItRw_Bow_Long_05 (Bow)
 
 	value 				=	1568;
 
-	damageTotal			=	56;
+	damageTotal			=	multiplier * 56;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -255,7 +254,7 @@ INSTANCE ItRw_Bow_Long_06 (Bow)
 
 	value 				=	1800;
 
-	damageTotal			=	60;
+	damageTotal			=	multiplier * 60;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -278,7 +277,7 @@ INSTANCE ItRw_Bow_Long_07 (Bow)
 
 	value 				=	2048;
 
-	damageTotal			=	64;
+	damageTotal			=	multiplier * 64;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -302,7 +301,7 @@ INSTANCE ItRw_Bow_Long_08 (Bow)
 
 	value 				=	2312;
 
-	damageTotal			=	68;
+	damageTotal			=	multiplier * 68;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -326,7 +325,7 @@ INSTANCE ItRw_Bow_Long_09 (Bow)
 
 	value 				=	2592;
 
-	damageTotal			=	72;
+	damageTotal			=	multiplier * 72;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -352,7 +351,7 @@ INSTANCE ItRw_Bow_War_01 (Bow)
 
 	value 				=	2888;
 
-	damageTotal			=	76;
+	damageTotal			=	multiplier * 76;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -376,7 +375,7 @@ INSTANCE ItRw_Bow_War_02 (Bow)
 
 	value 				=	3120;
 
-	damageTotal			=	79;
+	damageTotal			=	multiplier * 79;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -400,7 +399,7 @@ INSTANCE ItRw_Bow_War_03 (Bow)
 
 	value 				=	3362;
 
-	damageTotal			=	82;
+	damageTotal			=	multiplier * 82;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -424,7 +423,7 @@ INSTANCE ItRw_Bow_War_04 (Bow)
 
 	value 				=	3612;
 
-	damageTotal			=	85;
+	damageTotal			=	multiplier * 85;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -448,7 +447,7 @@ INSTANCE ItRw_Bow_War_05 (Bow)
 
 	value 				=	3872;
 
-	damageTotal			=	88;
+	damageTotal			=	multiplier * 88;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -474,7 +473,7 @@ INSTANCE ItRw_Crossbow_01(CrossBow)
 
 	value 				=	1250;
 
-	damageTotal			= 	50;
+	damageTotal			= 	multiplier * 50;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmBolt;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -499,7 +498,7 @@ INSTANCE ItRw_Crossbow_Old_01(CrossBow)
 
 	value 				=	50;
 
-	damageTotal			= 	30;
+	damageTotal			= 	multiplier * 30;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmBolt;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -522,7 +521,7 @@ INSTANCE ItRw_Crossbow_02(CrossBow)
 
 	value 				=	3612;
 
-	damageTotal			= 	85;
+	damageTotal			= 	multiplier * 85;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmBolt;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -547,7 +546,7 @@ INSTANCE ItRw_Crossbow_03(CrossBow)
 
 	value 				=	4050;
 
-	damageTotal			= 	90;
+	damageTotal			= 	multiplier * 90;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmBolt;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -571,7 +570,7 @@ INSTANCE ItRw_Crossbow_04(CrossBow)
 
 	value 				=	5000;
 
-	damageTotal			= 	100;
+	damageTotal			= 	multiplier * 100;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmBolt;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -594,7 +593,7 @@ INSTANCE ItRw_Crossbow_05(CrossBow)
 
 	value 				=	1800;
 
-	damageTotal			= 	60;
+	damageTotal			= 	multiplier * 60;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmBolt;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -618,7 +617,7 @@ INSTANCE ItRw_AidanCBow(CrossBow)
 
 	value 				=	2450;
 
-	damageTotal			= 	70;
+	damageTotal			= 	multiplier * 70;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmBolt;
 	cond_atr[2]   		= 	ATR_DEXTERITY;

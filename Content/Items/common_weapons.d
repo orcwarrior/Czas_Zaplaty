@@ -387,7 +387,7 @@ INSTANCE GRD_MW_02 (WeaponsMelee)
 };
 INSTANCE GRD_MW_02U (WeaponsMelee)
 {	
-	name 				=	"Dobry Miecz stra¿nika";
+	name 				=	"Dobry miecz stra¿nika";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD|ITEM_MULTI;	
@@ -626,7 +626,7 @@ INSTANCE RBL_RW_01 (Bow)
 
 	value 				=	80;//80;
 
-	damageTotal			=	30;
+	damageTotal			=	multiplier * 30;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -648,7 +648,7 @@ INSTANCE RBL_RW_02 (Bow)
 
 	value 				=	180;//80;
 
-	damageTotal			=	50;
+	damageTotal			=	multiplier * 50;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -673,7 +673,7 @@ INSTANCE HUN_RW_01 (Bow)
 
 	value 				=	195;//80;
 
-	damageTotal			=	55;
+	damageTotal			=	multiplier * 55;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -695,7 +695,7 @@ INSTANCE HUN_RW_02 (Bow)
 
 	value 				=	235;//80;
 
-	damageTotal			=	70;
+	damageTotal			=	multiplier * 70;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -717,7 +717,7 @@ INSTANCE HUN_RW_03 (CrossBow)
 
 	value 				=	250;//80;
 
-	damageTotal			=	75;
+	damageTotal			=	multiplier * 75;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmBolt;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -739,7 +739,7 @@ INSTANCE GRD_RW_01(CrossBow)
 
 	value 				=	150;
 
-	damageTotal			= 	50;
+	damageTotal			= 	multiplier * 50;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmBolt;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -761,7 +761,7 @@ INSTANCE GRD_RW_02(CrossBow)
 
 	value 				=	280;
 
-	damageTotal			= 	80;
+	damageTotal			= 	multiplier * 80;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmBolt;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -784,7 +784,7 @@ INSTANCE STT_RW_01 (Bow)
 
 	value 				=	70;//80;
 
-	damageTotal			=	20;
+	damageTotal			=	multiplier * 20;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -806,7 +806,7 @@ INSTANCE STT_RW_02 (Bow)
 
 	value 				=	70;//80;
 
-	damageTotal			=	36;
+	damageTotal			=	multiplier * 36;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -829,7 +829,7 @@ INSTANCE MTR_RW_01 (Bow)
 
 	value 				=	185;//80;
 
-	damageTotal			=	50;
+	damageTotal			=	multiplier * 50;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -851,7 +851,7 @@ INSTANCE MTR_RW_02 (CrossBow)
 
 	value 				=	200;//80;
 
-	damageTotal			=	75;
+	damageTotal			=	multiplier * 75;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmBolt;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -1133,7 +1133,7 @@ INSTANCE ALL_RW_01 (Bow)
 
 	value 				=	60;//20;
 
-	damageTotal			=	25;
+	damageTotal			=	multiplier * 25;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 
@@ -1157,7 +1157,7 @@ INSTANCE ALL_RW_02 (Bow)
 
 	value 				=	100;
 
-	damageTotal			=	35;
+	damageTotal			=	multiplier * 35;
 	damagetype			=	DAM_POINT;
 	munition			=	ItAmArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -1183,7 +1183,7 @@ INSTANCE ALL_FIREBOW_01 (Bow)
 
 	value 				=	100;
 
-	damageTotal			=	25;
+	damageTotal			=	multiplier * 25;
 	damagetype			=	DAM_FIRE;
 	munition			=	ItAmFireArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -1205,7 +1205,7 @@ INSTANCE ALL_ICEBOW_01 (Bow)
 
 	value 				=	100;
 
-	damageTotal			=	40;
+	damageTotal			=	multiplier * 40;
 	damagetype			=	DAM_MAGIC;
 	munition			=	ItAmIceArrow;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -1228,7 +1228,7 @@ INSTANCE ALL_FIRECBOW_01 (CrossBow)
 
 	value 				=	150;//80;
 
-	damageTotal			=	40;
+	damageTotal			=	multiplier * 40;
 	damagetype			=	DAM_FIRE;
 	munition			=	ItAmFireBolt;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
@@ -1250,7 +1250,7 @@ INSTANCE ALL_ICECBOW_01 (CrossBow)
 
 	value 				=	150;//80;
 
-	damageTotal			=	65;
+	damageTotal			=	multiplier * 65;
 	damagetype			=	DAM_MAGIC;
 	munition			=	ItAmIceBolt;
 	cond_atr[2]   		= 	ATR_DEXTERITY;
