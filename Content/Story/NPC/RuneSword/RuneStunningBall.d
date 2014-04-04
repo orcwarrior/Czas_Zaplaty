@@ -15,7 +15,7 @@ instance RuneSword_StuningBall (Npc_Default)
 	4-WATER	
 	5-WIND
 */
-	name	=	"Og³uszaj¹ca Kula";
+	name	=	"Og³uszaj¹ca kula";
 	slot	=	"spellFX_StuningBall";	
 	flags	=	SPL_SENDCAST_StuningBall;
 	voice	=	0;
@@ -23,4 +23,9 @@ instance RuneSword_StuningBall (Npc_Default)
 	exp	=	RuneID_StuningBall;	
 	lp	=	1;
 
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,ORG_ARMOR_H);
 };

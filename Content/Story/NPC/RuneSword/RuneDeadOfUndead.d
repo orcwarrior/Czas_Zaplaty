@@ -15,7 +15,7 @@ instance RuneSword_destroyundead(Npc_Default)
 	4-WATER	
 	5-WIND
 */
-	name	=	"Œmieræ O¿ywieñcom";
+	name	=	"Œmieræ o¿ywieñcom";
 	slot	=	"spellFX_Destroyundead_SENDPERCEPTION";	
 	flags	=	SPL_SENDCAST_DESTROYUNDEAD;
 	voice	=	SPL_DAMAGE_DESTROYUNDEAD;
@@ -23,4 +23,9 @@ instance RuneSword_destroyundead(Npc_Default)
 	exp	=	RuneID_Destroyundead;	
 	lp	=	1;
 
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
 };

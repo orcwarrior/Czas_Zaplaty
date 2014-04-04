@@ -2799,41 +2799,41 @@ func void STARTUP_Runes()
 {
 	// Musz¹ byc w invisible:
 	RuneCharge = RuneChargeMax;	
-	Wld_InsertNpc(RuneSword_Now, "GAME_START");
+	Wld_InsertNpc(RuneSword_Now, "INVISIBLE1");
 	//1
-	Wld_InsertNpc(RuneSword_Light, "GAME_START");	
-	Wld_InsertNpc(RuneSword_FireBolt, "GAME_START");	
-	Wld_InsertNpc(RuneSword_ThunderBolt, "GAME_START");	
+	Wld_InsertNpc(RuneSword_Light, "INVISIBLE1");	
+	Wld_InsertNpc(RuneSword_FireBolt, "INVISIBLE1");	
+	Wld_InsertNpc(RuneSword_ThunderBolt, "INVISIBLE1");	
 	//2
-	Wld_InsertNpc(RuneSword_Sleep, "GAME_START");	
-	Wld_InsertNpc(RuneSword_WindFist, "GAME_START");	
-	Wld_InsertNpc(RuneSword_Heal, "GAME_START");
-	Wld_InsertNpc(RuneSword_StuningBall, "GAME_START");
+	Wld_InsertNpc(RuneSword_Sleep, "INVISIBLE2");	
+	Wld_InsertNpc(RuneSword_WindFist, "INVISIBLE2");	
+	Wld_InsertNpc(RuneSword_Heal, "INVISIBLE2");
+	Wld_InsertNpc(RuneSword_StuningBall, "INVISIBLE2");
 	
 	//3
-	Wld_InsertNpc(RuneSword_IceCube, "GAME_START");	
-	Wld_InsertNpc(RuneSword_ThunderBall, "GAME_START");	
-	Wld_InsertNpc(RuneSword_Charm, "GAME_START");	
-	Wld_InsertNpc(RuneSword_Pyrokinesis, "GAME_START");		
-	Wld_InsertNpc(RuneSword_FireBall, "GAME_START");		
-	Wld_InsertNpc(RuneSword_LifeDrain, "GAME_START");		
-	Wld_InsertNpc(RuneSword_Curse, "GAME_START");		
+	Wld_InsertNpc(RuneSword_IceCube, "INVISIBLE3");	
+	Wld_InsertNpc(RuneSword_ThunderBall, "INVISIBLE3");	
+	Wld_InsertNpc(RuneSword_Charm, "INVISIBLE3");	
+	Wld_InsertNpc(RuneSword_Pyrokinesis, "INVISIBLE3");		
+	Wld_InsertNpc(RuneSword_FireBall, "INVISIBLE4");		
+	Wld_InsertNpc(RuneSword_LifeDrain, "INVISIBLE4");		
+	Wld_InsertNpc(RuneSword_Curse, "INVISIBLE4");		
 
 	//4
-	Wld_InsertNpc(RuneSword_ChainLightning, "GAME_START");	
-	Wld_InsertNpc(RuneSword_FireStorm, "GAME_START");	
-	Wld_InsertNpc(RuneSword_stormfist, "GAME_START");	
-	Wld_InsertNpc(RuneSword_destroyundead, "GAME_START");	
-	Wld_InsertNpc(RuneSword_HolyFire, "GAME_START");		
-	Wld_InsertNpc(RuneSword_FireWall, "GAME_START");		
+	Wld_InsertNpc(RuneSword_ChainLightning, "INVISIBLE4");	
+	Wld_InsertNpc(RuneSword_FireStorm, "INVISIBLE5");	
+	Wld_InsertNpc(RuneSword_stormfist, "INVISIBLE5");	
+	Wld_InsertNpc(RuneSword_destroyundead, "INVISIBLE5");	
+	Wld_InsertNpc(RuneSword_HolyFire, "INVISIBLE5");		
+	Wld_InsertNpc(RuneSword_FireWall, "INVISIBLE6");		
 	//5
-	Wld_InsertNpc(RuneSword_IceWave, "GAME_START");	
-	Wld_InsertNpc(RuneSword_FireRain, "GAME_START");
-	Wld_InsertNpc(RuneSword_Thunder, "GAME_START");
+	Wld_InsertNpc(RuneSword_IceWave, "INVISIBLE6");	
+	Wld_InsertNpc(RuneSword_FireRain, "INVISIBLE6");
+	Wld_InsertNpc(RuneSword_Thunder, "INVISIBLE6");
 	
 	//6	
-	Wld_InsertNpc(RuneSword_BreathofDead, "GAME_START");		
-	Wld_InsertNpc(RuneSword_Meteor, "GAME_START");			
+	Wld_InsertNpc(RuneSword_BreathofDead, "INVISIBLE7");		
+	Wld_InsertNpc(RuneSword_Meteor, "INVISIBLE7");			
 	//new
 };
 
@@ -2842,16 +2842,16 @@ func void STARTUP_HandlerContainers()
 	//Ork: TODO sprecyzuj swiaty,te containery wystarczy zeby byly w WORLD.ZEN
 	//Handlers Containers(R)
 	
-	Wld_InsertNpc(Rodney_Container, "WP_INTRO01");		
-	Wld_InsertNpc(Drax_Container,	"WP_INTRO01");		
-	Wld_InsertNpc(Fisk_Container,	"WP_INTRO01");		
-	Wld_InsertNpc(Fox_Container, "WP_INTRO01");		
-	Wld_InsertNpc(Taran_Container, "WP_INTRO01");		
-	Wld_InsertNpc(Leren_Container, "WP_INTRO01");		
-	Wld_InsertNpc(Jeff_Container,	"WP_INTRO01");	
-	Wld_InsertNpc(Vam_Container,	"WP_INTRO01");
-	Wld_InsertNpc(Riordian_Container, "WP_INTRO01"); //dodane 2012-11-14
-	Wld_InsertNpc(Wolf_Container,	"WP_INTRO01"); //dodane 2012-11-14
+	Wld_InsertNpc(Rodney_Container, "INVISIBLE7");		
+	Wld_InsertNpc(Drax_Container,	"INVISIBLE7");		
+	Wld_InsertNpc(Fisk_Container,	"INVISIBLE8");		
+	Wld_InsertNpc(Fox_Container, "INVISIBLE8");		
+	Wld_InsertNpc(Taran_Container, "INVISIBLE8");		
+	Wld_InsertNpc(Leren_Container, "INVISIBLE8");		
+	Wld_InsertNpc(Jeff_Container,	"INVISIBLE9");	
+	Wld_InsertNpc(Vam_Container,	"INVISIBLE9");
+	Wld_InsertNpc(Riordian_Container, "INVISIBLE10"); //dodane 2012-11-14
+	Wld_InsertNpc(Wolf_Container,	"INVISIBLE10"); //dodane 2012-11-14
 };	
 
 func void STARTUP_NewsNPC()

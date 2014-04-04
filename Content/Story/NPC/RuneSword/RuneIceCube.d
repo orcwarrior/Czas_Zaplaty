@@ -15,7 +15,7 @@ instance RuneSword_IceCube(Npc_Default)
 	4-WATER	
 	5-WIND
 */
-	name	=	"Bry³a Lodu";
+	name	=	"Bry³a lodu";
 	slot	=	"spellFX_IceCube";	
 	flags	=	SPL_SENDCAST_ICECUBE;
 	voice	=	SPL_FREEZE_DAMAGE;
@@ -23,4 +23,9 @@ instance RuneSword_IceCube(Npc_Default)
 	exp	=	RuneID_Icecube;	
 	lp	=	4;
 
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
 };

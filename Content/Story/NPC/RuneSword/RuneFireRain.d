@@ -15,7 +15,7 @@ instance RuneSword_FireRain(Npc_Default)
 	4-WATER	
 	5-WIND
 */
-	name	=	"Deszcz Ognia";
+	name	=	"Deszcz ognia";
 	slot	=	"runeFX_FireRain_RAIN";	
 	flags	=	SPL_SENDCAST_FIRERAIN;
 	voice	=	SPL_DAMAGE_FIRERAIN*2;
@@ -23,4 +23,9 @@ instance RuneSword_FireRain(Npc_Default)
 	exp	=	RuneID_Firerain;	
 	lp	=	2;
 
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
 };

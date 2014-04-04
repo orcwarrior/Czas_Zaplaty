@@ -15,7 +15,7 @@ instance RuneSword_breathofdead(Npc_Default)
 	4-WATER	
 	5-WIND
 */
-	name	=	"Tchnienie Œmierci";
+	name	=	"Tchnienie œmierci";
 	slot	=	"spellFX_BreathOfDeath";	
 	flags	=	SPL_SENDCAST_BREATHOFDEATH;//All of theese values will be divided by n (right now n=4)
 	voice	=	SPL_DAMAGE_BREATHOFDEATH;
@@ -23,4 +23,9 @@ instance RuneSword_breathofdead(Npc_Default)
 	exp	=	RuneID_Breathofdeath;	
 	lp	=	1;
 
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
 };

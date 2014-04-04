@@ -73,7 +73,13 @@ instance Rodney_Container(Npc_Default)
 
 	CreateInvItem(self,ItRw_Bow_Small_01);	
 	CreateInvItem(self,ItRw_Bow_Long_01);	
-	CreateInvItem(self,ItRw_Crossbow_01);					
+	CreateInvItem(self,ItRw_Crossbow_01);	
+
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
 };
 //-----------------------------------------------------------------
 // EXIT RODNEY
@@ -174,6 +180,12 @@ instance Riordian_Container(Npc_Default)
    {
       B_GiveRiordianChapter6Potions(self);
    };
+	
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
 };
 //-----------------------------------------------------------------
 // EXIT RIORDIAN

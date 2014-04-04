@@ -24,4 +24,9 @@ instance RuneSword_pyrokinesis(Npc_Default)
 	exp	=	RuneID_Pyrokinesis;	
 	lp	=	6;
 
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
 };

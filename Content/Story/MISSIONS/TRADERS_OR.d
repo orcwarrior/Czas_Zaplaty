@@ -122,8 +122,11 @@ instance Drax_Container(Npc_Default)
 	CreateInvItem(self,ItRw_Crossbow_Old_01);	
 	
 	flags = NPC_FLAG_IMMORTAL;
-	Mdl_SetVisual			(self,	"Meatbug.mds");
-					
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
 };
 //-----------------------------------------------------------------
 // EXIT DRAX
@@ -246,7 +249,13 @@ instance Fisk_Container(Npc_Default)
 	CreateInvItems(self,ItFo_Stew,4);
 	CreateInvItems(self, ItKeLockpick,5);
 
-	CreateInvItems(self, ItWrWorldmap,1);				
+	CreateInvItems(self, ItWrWorldmap,1);	
+
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
 };
 
 // **************************************************
@@ -327,6 +336,12 @@ instance Vam_Container(Npc_Default)
 	CreateInvItems(self,ItMa_Bowlumber_01,10);
 	CreateInvItems(self,ItMa_Bowlumber_02,5);
 	CreateInvItems(self,ItMa_Bowlumber_03,5);
+	
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
 };
 
 // **************************************************
@@ -507,7 +522,13 @@ instance Taran_Container(Npc_Default)
 	CreateInvItems(self,ItFo_Potion_Mana_01,10);		
 	CreateInvItems(self,ItFo_Potion_Mana_02,7);		
 	CreateInvItems(self,ItFo_Potion_Mana_03,5);		
-	CreateInvItems(self,ItFo_Potion_Mana_04,3);			
+	CreateInvItems(self,ItFo_Potion_Mana_04,3);	
+
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
 };
 
 // **************************************************
@@ -664,6 +685,12 @@ instance Leren_Container(Npc_Default)
 	//-------- Bücher --------
   	CreateInvItem (self,ItWr_Book_Circle_01);
 	CreateInvItem (self,ItWr_Book_Circle_02);
+	
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
 };
 
 // **************************************************
@@ -824,7 +851,13 @@ instance FOX_Container(Npc_Default)
 	CreateInvItem(self,ItRw_Bow_Small_01);	
 	CreateInvItem(self,ItRw_Bow_Long_03);	
 	CreateInvItem(self,ItRw_Bow_Long_01);	
-	CreateInvItem(self,ItRw_Crossbow_03);			
+	CreateInvItem(self,ItRw_Crossbow_03);	
+
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
 };
 //-----------------------------------------------------------------
 // EXIT FOX

@@ -70,6 +70,12 @@ instance Jeff_Container(Npc_Default)
 	CreateInvItems(self, ItFo_Potion_Str_Dex_1_temp,1);
 
 	CreateInvItem(self,ItRw_Bow_Long_03);	
+	
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
 };
 //-----------------------------------------------------------------
 // EXIT Jeff

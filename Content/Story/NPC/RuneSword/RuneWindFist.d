@@ -15,7 +15,7 @@ instance RuneSword_WindFist(Npc_Default)
 	4-WATER	
 	5-WIND
 */
-	name	=	"Uderzenie Wiatru";
+	name	=	"Uderzenie wiatru";
 	slot	=	"runeFX_Windfist_Target";	
 	flags	=	SPL_SENDCAST_WINDFIST;
 	voice	=	SPL_DAMAGE_WINDFIST*3;
@@ -23,4 +23,9 @@ instance RuneSword_WindFist(Npc_Default)
 	exp	=	RuneID_Windfist;	
 	lp	=	5;
 
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,ORG_ARMOR_H);
 };

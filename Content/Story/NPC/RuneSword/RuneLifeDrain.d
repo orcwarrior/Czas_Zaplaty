@@ -15,7 +15,7 @@ instance RuneSword_LifeDrain(Npc_Default)
 	4-WATER	
 	5-WIND
 */
-	name	=	"Wyssanie ¯ycia";
+	name	=	"Wyssanie ¿ycia";
 	slot	=	"spellFX_LifeDrain_COLLIDE";	
 	flags	=	SPL_LIFEDRAIN_DRAIN_PER_MP*2;
 	voice	=	0;//damage by script
@@ -23,4 +23,9 @@ instance RuneSword_LifeDrain(Npc_Default)
 	exp	=	RuneID_LifeDrain;	
 	lp	=	1;
 
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
 };

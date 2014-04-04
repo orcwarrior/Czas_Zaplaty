@@ -15,7 +15,7 @@ instance RuneSword_FireWall(Npc_Default)//name should be changed,but fuck it
 	4-WATER	
 	5-WIND
 */
-	name	=	"Chaotyczny Pocisk";
+	name	=	"Chaotyczny pocisk";
 	slot	=	"spellFX_FireWall";	
 	flags	=	SPL_SENDCAST_FIREWALL;
 	voice	=	3*SPL_DAMAGE_FIREWALL;
@@ -23,4 +23,9 @@ instance RuneSword_FireWall(Npc_Default)//name should be changed,but fuck it
 	exp	=	RuneID_FireWall;	
 	lp	=	1;
 
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
 };

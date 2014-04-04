@@ -15,7 +15,7 @@ instance RuneSword_IceWave(Npc_Default)
 	4-WATER	
 	5-WIND
 */
-	name	=	"Lodowa Fala";
+	name	=	"Lodowa fala";
 	slot	=	"spellFX_Icewave";	
 	flags	=	SPL_SENDCAST_ICEWAVE;
 	voice	=	SPL_FREEZE_DAMAGE;
@@ -23,4 +23,9 @@ instance RuneSword_IceWave(Npc_Default)
 	exp	=	RuneID_Icewave;	
 	lp	=	4;
 
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
 };
