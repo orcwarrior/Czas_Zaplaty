@@ -1,7 +1,7 @@
 instance STT_315_Sly (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Z?y";
+	name 		=		"Z³y";
 	npctype 	=		NPCTYPE_MAIN;
 	guild 		=		GIL_GRD;
 	level 		=		115;

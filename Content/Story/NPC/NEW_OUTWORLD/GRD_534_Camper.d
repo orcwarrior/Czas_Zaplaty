@@ -2,7 +2,7 @@ instance GRD_534_Camper (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Stra?nik";
+	name =							"Stra¿nik";
 	npctype =						npctype_main;
 	guild =							GIL_DMB;      
 	level =							13;
