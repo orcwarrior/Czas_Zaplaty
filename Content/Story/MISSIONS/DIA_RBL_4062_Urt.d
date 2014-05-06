@@ -126,7 +126,7 @@ INSTANCE DIA_Urt_Again (C_INFO)
 
 FUNC INT DIA_Urt_Again_Condition()
 {
-	if (Npc_KnowsInfo(hero,DIA_Grd_217_First ))&&(Npc_KnowsInfo(hero,DIA_Urt_Hello ))&&(Npc_GetDistToNpc(self,hero) < 800)
+	if (Npc_KnowsInfo(hero,DIA_Grd_215_First))&&(Npc_KnowsInfo(hero,DIA_Urt_Hello ))&&(Npc_GetDistToNpc(self,hero) < 800)
 	{
 		return 1;
 	};

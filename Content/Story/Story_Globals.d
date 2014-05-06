@@ -211,6 +211,7 @@ var int Rick_goesTo_freemine;
 var int Raven_fights_Rick;
 var int Rick_death;
 var int equipment_to_OC;
+var int isOpenedGateOC;
 
 var int Scorpio_teacher;
 //MIS_Katrakanat_pieces

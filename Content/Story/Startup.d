@@ -3138,7 +3138,7 @@ FUNC VOID STARTUP_WORLD ()
 	//AI_StartState			(hero,	ZS_Unconscious,	1,	"");
 	//B_FullStop			(hero);
 	//B_ProcessInfos (her);
-	
+	Wld_SendTrigger("EVT_OC_MAINGATE01_01");
 	SetSkyPreset(SKYPRESET_START,TRANS_STEP);//Init first day sky: see Skypresets_Func
 }; // STARTUP_WORLD
 

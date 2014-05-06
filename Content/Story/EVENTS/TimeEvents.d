@@ -496,9 +496,11 @@ FUNC VOID B_Trigger_CheckMissions()
 		};
 	};
 
-	if (npc_getdisttowp(hero, "OCR_MAINGATE_SQUARE") < 300)
+	if (isOpenedGateOC && npc_getdisttowp(hero, "OCR_MAINGATE_SQUARE") < 700)
 	{
 		B_ExchangeRoutine(grd_230, "start");
+		isOpenedGateOC = false;
+		Wld_SendTrigger("EVT_OC_MAINGATE01_01");
 	};
 
 	if (npc_getdisttowp(hero, "HIDDEN_IN") < 500 && (Npc_KnowsInfo(hero, DIA_Urt_Kelvin)))

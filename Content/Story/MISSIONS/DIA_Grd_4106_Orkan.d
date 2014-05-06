@@ -60,7 +60,7 @@ INSTANCE DIA_Orkan_Again (C_INFO)
 
 FUNC INT DIA_Orkan_Again_Condition()
 {
-	if (Npc_KnowsInfo (hero, DIA_Cord_ConvoysPeopleDone4))&&(Npc_KnowsInfo (hero, DIA_Grd_217_Again))&&(Npc_KnowsInfo (hero, DIA_Orkan_First))
+	if (Npc_KnowsInfo (hero, DIA_Cord_ConvoysPeopleDone4))&&(Npc_KnowsInfo (hero, DIA_Grd_215_Again))&&(Npc_KnowsInfo (hero, DIA_Orkan_First))
 	{
 		return 1;
 	};
