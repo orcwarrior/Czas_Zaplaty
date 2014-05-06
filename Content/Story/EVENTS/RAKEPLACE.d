@@ -185,4 +185,6 @@ func void EVT_RAKESUCCESINSERTITEM()
 		Wld_InsertItem(ItMi_Martin_Ring, "LOCATION_15_IN_2");	
       Wld_InsertItem(ItMi_NuggetSack_03, "LOCATION_15_IN_2");	
 	};
+	
+	CreateInvItems(hero, ItMwPickAxe, 1);
 };
