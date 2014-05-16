@@ -163,7 +163,10 @@ func void ZS_Dead ()
 	};
 	if	C_NpcIsMonster(self)||C_NpcIsOrc(self)
 	{
-		B_GiveDeathInv (); 	// für Monster
+		if (self.guild != GIL_PUPIL)
+		{
+			B_GiveDeathInv (); 	// für Monster
+		};
 		if(!Npc_IsPlayer(other))
 		{		
 		};
