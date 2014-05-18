@@ -15,12 +15,12 @@ func VOID STARTUP_SUB_PSICAMP ()
 	Wld_InsertNpc(PSI_NovLZombie, "PSI_PATH_TEMPLE_3"); //  Beter
 	Wld_InsertNpc(PSI_NovLZombie, "PSI_PATH_TEMPLE_2"); //H Beter
 	Wld_InsertNpc(PSI_NovLZombie, "PSI_PATH_TEMPLE_3"); //H Beter
-	Wld_InsertNpc(PSI_NovLZombie, "PSI_PSI_TEMPLE_COURT_1"); //H Beter
-	Wld_InsertNpc(PSI_NovLZombie, "PSI_PSI_TEMPLE_COURT_2_MOVE"); //H Beter
-	Wld_InsertNpc(PSI_NovLZombie, "PSI_PSI_TEMPLE_COURT_3_MOVE"); //H Beter
-	Wld_InsertNpc(PSI_NovLZombie, "PSI_PSI_TEMPLE_COURT_4_MOVE"); //L Beter
-	Wld_InsertNpc(PSI_NovHZombie, "PSI_PSI_TEMPLE_COURT_3"); //  Beter
-	Wld_InsertNpc(PSI_NovHZombie, "PSI_PSI_TEMPLE_COURT_4"); //L Beter
+	Wld_InsertNpc(PSI_NovLZombie, "PSI_TEMPLE_COURT_1"); //H Beter
+	Wld_InsertNpc(PSI_NovLZombie, "PSI_TEMPLE_COURT_2_MOVEMENT"); //H Beter
+	Wld_InsertNpc(PSI_NovLZombie, "PSI_TEMPLE_COURT_3_MOVEMENT"); //H Beter
+	Wld_InsertNpc(PSI_NovLZombie, "PSI_TEMPLE_COURT_3_MOVEMENT"); //L Beter
+	Wld_InsertNpc(PSI_NovHZombie, "PSI_TEMPLE_COURT_3"); //  Beter
+	Wld_InsertNpc(PSI_NovHZombie, "PSI_TEMPLE_COURT_4"); //L Beter
 	Wld_InsertNpc(PSI_NovMZombie, "PSI_SWAMP_0"); //  Beter
 	Wld_InsertNpc(PSI_NovMZombie, "PSI_SWAMP_0"); //H Beter
 	Wld_InsertNpc(PSI_NovMZombie, "PSI_SWAMP_1"); //H Beter
@@ -51,7 +51,7 @@ func VOID STARTUP_SUB_PSICAMP ()
 	Wld_InsertNpc(PSI_NovMZombie, "PSI_PATH_4_5"); //Hut 31, Fortuno-Platz
 	Wld_InsertNpc(PSI_NovLZombie, "PSI_PATH_2_2_GUARD"); //Schüler 2, Baal Cadar
 	Wld_InsertNpc(PSI_NovLZombie, "PSI_PATH_5"); //Schüler 2, Baal Cadar
-	Wld_InsertNpc(PSI_NovLZombie, "PSI_PSI_TEMPLE_COURT_1_MOVE"); //Schüler Baal Tondral (Platz 2)
+	Wld_InsertNpc(PSI_NovLZombie, "PSI_TEMPLE_COURT_1_MOVE"); //Schüler Baal Tondral (Platz 2)
 	Wld_InsertNpc(PSI_NovMZombie, "PSI_PATH_TEMPLE"); //Schüler 2, Baal Cadar
 
 	//---------------Templer-------------------------------------------------
@@ -1443,7 +1443,7 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_InsertNpc(Skeleton, "TRUP1");
 	Wld_InsertNpc(SkeletonWarrior, "TRUP2");
 	Wld_InsertNpc(Skeleton, "TRUP4");
-	Wld_InsertNpc(SkeletonWarrior, "TRUP5");
+	Wld_InsertNpc(SkeletonWarrior, "TRUP");
 	Wld_InsertNpc(SkeletonScout, "SZKIELET");
 	//Wld_InsertNpc(Bloodfly, "SPAWN_OW_BLOODFLY_12");
 	//Wld_InsertNpc(Bloodfly, "SPAWN_OW_BLOODFLY_12");
@@ -1495,14 +1495,14 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_InsertNpc(Young_Aligator, "SPAWN_OW_NEARBGOBBO_LURKER_A1");
 	Wld_InsertNpc(Aligator, "SPAWN_OW_MINICOAST_LURKER_A1");
 	Wld_InsertNpc(Young_Aligator, "OW_LAKE_NC_LURKER_SPAWN01");
-	Wld_InsertNpc(Young_Aligator, "OW_MOVEMENT_LURKER_NEARGOBBO01");
-	Wld_InsertNpc(Aligator, "OW_MOVEMENT_LURKER_NEARGOBBO01");	
+	Wld_InsertNpc(Young_Aligator, "OW_MOVEMENT_LURKER_NEARBGOBBO01");
+	Wld_InsertNpc(Aligator, "OW_MOVEMENT_LURKER_NEARBGOBBO01");	
 	Wld_InsertNpc(Young_Aligator, "OW_PATH_WARAN06_SPAWN01");
 	Wld_InsertNpc(Aligator, "OW_PATH_WARAN06_SPAWN01");
 	Wld_InsertNpc(Aligator, "OW_PATH_WARAN05_SPAWN02");
-	Wld_InsertNpc(Aligator, "OW_MOVEMENT_LURKER_NEARGOBBO01");
+	Wld_InsertNpc(Aligator, "OW_MOVEMENT_LURKER_NEARBGOBBO01");
 	Wld_InsertNpc(Aligator, "OW_PATH_OW_PATH_WARAN05_SPAWN01");
-	Wld_InsertNpc(Aligator, "OW_MOVEMENT_LURKER_NEARGOBBO03");
+	Wld_InsertNpc(Aligator, "OW_MOVEMENT_LURKER_NEARBGOBBO03");
 	Wld_InsertNpc(Aligator, "OW_PATH_OW_PATH_WARAN05_SPAWN01");
 	Wld_InsertNpc(Young_Aligator, "SPAWN_OW_BLACKGOBBO_A1");
 	Wld_InsertNpc(Aligator, "SPAWN_OW_BLACKGOBBO_A1");
@@ -1853,8 +1853,8 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_InsertNpc(Snapper, "OW_MONSTER_NAVIGATE");
 	Wld_InsertNpc(Snapper, "OW_MONSTER_NAVIGATE");
 	Wld_InsertNpc(Snapper, "OW_MONSTER_NAVIGATE");
-	Wld_InsertNpc(Snapper, "OW_MONSTER_NAVIGATE02");
-	Wld_InsertNpc(Snapper, "OW_MONSTER_NAVIGATE02");
+	Wld_InsertNpc(Snapper, "OW_MONSTER_NAVIGATE_02");
+	Wld_InsertNpc(Snapper, "OW_MONSTER_NAVIGATE_02");
 	Wld_InsertNpc(Snapper, "OW_PATH_179");
 	Wld_InsertNpc(Snapper, "OW_PATH_179");
 
@@ -2005,7 +2005,7 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_InsertNpc(SwampGolem, "PATH_AROUND_PSI12");	
 	Wld_InsertNpc(DraconianSolidier, "PATH_TAKEHERB_2_2");	
 	Wld_InsertNpc(DraconianSolidier, "PATH_TAKEHERB_2_2");	
-	Wld_InsertNpc(DraconianScout, "PATH_TAKEHERB_2_1");		
+	Wld_InsertNpc(DraconianScout, "PATH_TAKE_HERB_2_1");		
 	Wld_InsertNpc(DraconianScout, "PATH_TAKE_HERB_2_1_MOVEMENT");		
 	Wld_InsertNpc(DraconianOfficer, "PATH_TAKE_HERB_MOVEMENT2");		
 	Wld_InsertNpc(Bloodfly, "PATH_TAKE_BLOODFLY_SPAWN");		
