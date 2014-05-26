@@ -279,7 +279,7 @@ func void B_SpecialCombatDamageReaction (var C_NPC slf,var C_NPC attacker)
  		B_ChangeAttribute	(slf, ATR_HITPOINTS, -slf.attribute[ATR_HITPOINTS_MAX]);
  		
  		//B_ClearPerceptions	();	
- 		AI_PlayAniBS(self,"T_DEADB",BS_DEAD);		
+ 		AI_PlayAniBS(slf,"T_DEADB",BS_DEAD);		
  		AI_StartState 		(slf, ZS_Dead, 1, "");					
  		return;	
  	};
