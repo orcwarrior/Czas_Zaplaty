@@ -1,4 +1,5 @@
 var int Hook_oCNPC_OnDamage_slfAdr;
+const int MAX_RANGE_INT = 1073741823; //2^30 - 1
 // NOTE: Hooki działają poprawnie tylko w wypadku obrażeń
 // zadanych w zwarciu oraz od obrażeń zadanych z broni dystansowych.
 func void OCNPC_ONDAMAGE_Begin()
@@ -28,7 +29,12 @@ func void OCNPC_ONDAMAGE_POSTEVENTCALL()
 	};
 
 	oCNpc_oth_Adr_in_oCDamageDescriptor = MEM_ReadInt(getECX() + 76);//0x48
-
+	
+	if (oCNpc_oth_Adr_in_oCDamageDescriptor > MAX_RANGE_INT)
+	{
+		printdebug(">#DamageReact: Out of range int!");
+		return;
+	};
 	//_slf = MEM_CpyInst(slf);
 	//_oth = MEM_CpyInst(oth);
 	//Ork: PERCe kompletnie wyłączam i opieram się wyłacznie na tym hook'u
