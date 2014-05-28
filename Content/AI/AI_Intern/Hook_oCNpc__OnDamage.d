@@ -29,6 +29,7 @@ func void OCNPC_ONDAMAGE_POSTEVENTCALL()
 	};
 
 	oCNpc_oth_Adr_in_oCDamageDescriptor = MEM_ReadInt(getECX() + 76);//0x48
+	printDebug_s_i(">#DamageReact: ... oCNpc_oth_Adr_in_oCDamageDescriptor: ", oCNpc_oth_Adr_in_oCDamageDescriptor);
 	
 	if (oCNpc_oth_Adr_in_oCDamageDescriptor > MAX_RANGE_INT)
 	{
