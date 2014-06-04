@@ -558,7 +558,7 @@ FUNC VOID DIA_RATFORD_Rock_Info()
 	Log_CreateTopic(CH2_RBL_Journey, LOG_MISSION);
 	Log_SetTopicStatus(CH2_RBL_Journey, LOG_RUNNING);
 	B_LogEntry(CH2_RBL_Journey, "Ratford chce, ¿ebym rozejrza³ siê w ruinach jakiejœ œwi¹tyni. Podobno magowie wyczuli tam jakieœ Ÿród³o mocy, które mog³oby nam pomóc w walce z Gomezem. Ratford da³ mi mapê z zaznaczon¹ lokacj¹ tej œwi¹tyni. Znowu czeka mnie spacer wœród kurzu i zbutwia³ych koœci...");
-
+	B_LogEntry(CH2_RBL_Hunter, "Ratford wys³a³ mnie do ruin, aby zadowoliæ magów, szukaj¹c jakiegoœ Ÿród³a mocy.");
 	//OW_GROBOWIEC_01
 };
 
@@ -801,7 +801,8 @@ FUNC VOID DIA_RATFORD_Search_Info()
 	AI_Output (other, self, "DIA_RATFORD_Search_15_21"); //Jak zawsze to ja muszê odwalaæ brudn¹ robotê...
 
 	B_LogEntry(CH2_RBL_MysteryBook, "Muszê odnaleŸæ pozosta³ych piêæ czêœci Katrakanat - kamienia demonów. To co mo¿na przywo³aæ po z³o¿eniu kamienia mo¿e pomóc nam w walce z Gomezem... albo nas zabiæ. Nie mam jednak wyboru, to nie na mnie spadnie krew niewinnych, je¿eli coœ pójdzie nie tak jak powinno.");
-
+	B_LogEntry(CH2_RBL_Hunter, "Tajemniczym Ÿród³em z ruin by³a ksiêga, w której zapisano miejsca ukrycia piêciu czêœci kamienia Katrakanat.");
+	
 	Wld_InsertItem(katrakanat_piece2,"FP_KATRAKANAT_1_SPAWN");
 	Wld_InsertItem(katrakanat_piece3,"FP_KATRAKANAT_2_SPAWN");
 	Wld_InsertItem(katrakanat_piece4,"FP_KATRAKANAT_3_SPAWN");
