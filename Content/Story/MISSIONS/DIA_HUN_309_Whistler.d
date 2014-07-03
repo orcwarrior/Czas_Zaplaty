@@ -135,8 +135,9 @@ FUNC VOID DIA_HUN_309_Whistler_List_Info()
 {
 	AI_Output (other, self, "DIA_HUN_309_Whistler_List_15_01"); //Mam pytanie co do listy.
 	AI_Output (self, other, "DIA_HUN_309_Whistler_List_11_02"); //A Ty jeszcze tu jesteœ? Nie potrafisz czytaæ?
+	AI_TurnAway(other, self);
 	B_UseFakeScroll(other);
-   AI_TurnToNpc (other, self);
+   AI_WhirlAround(other, self);
 	AI_Output (other, self, "DIA_HUN_309_Whistler_List_15_03"); //Nie mam problemów z odczytaniem listy, tylko zastanawiam siê po co ci ser i wódka do wykucia miecza?
 	AI_Output (self, other, "DIA_HUN_309_Whistler_List_11_04"); //A co Ciê to obchodzi?
 	AI_Output (other, self, "DIA_HUN_309_Whistler_List_15_05"); //Obchodzi, skoro mam biegaæ za tym po ca³ej Kolonii.
