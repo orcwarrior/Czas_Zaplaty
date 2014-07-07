@@ -24,25 +24,25 @@ FUNC VOID Info_PartyNPC_GivePotion_Info()
 	if (Npc_HasItems(other,ItFo_Potion_Health_01))
 	{
 		Npc_GetInvItem(other,ItFo_Potion_Health_01);
-		Info_AddChoice(Info_PartyNPC_GivePotion, item.name, Info_PartyNPC_GivePotion_hp01);
+		Info_AddChoice(Info_PartyNPC_GivePotion, item.description, Info_PartyNPC_GivePotion_hp01);
 	};
 	
 	if (Npc_HasItems(other,ItFo_Potion_Health_02))
 	{
 		Npc_GetInvItem(other,ItFo_Potion_Health_02);
-		Info_AddChoice(Info_PartyNPC_GivePotion, item.name, Info_PartyNPC_GivePotion_hp02);
+		Info_AddChoice(Info_PartyNPC_GivePotion, item.description, Info_PartyNPC_GivePotion_hp02);
 	};
 
 	if (Npc_HasItems(other,ItFo_Potion_Health_03))
 	{
 		Npc_GetInvItem(other,ItFo_Potion_Health_03);
-		Info_AddChoice(Info_PartyNPC_GivePotion, item.name, Info_PartyNPC_GivePotion_hp03);
+		Info_AddChoice(Info_PartyNPC_GivePotion, item.description, Info_PartyNPC_GivePotion_hp03);
 	};
 	
 	if (Npc_HasItems(other,ItFo_Potion_Health_04))
 	{
 		Npc_GetInvItem(other,ItFo_Potion_Health_04);
-		Info_AddChoice(Info_PartyNPC_GivePotion, item.name, Info_PartyNPC_GivePotion_hp04);
+		Info_AddChoice(Info_PartyNPC_GivePotion, item.description, Info_PartyNPC_GivePotion_hp04);
 	};
 };
 
