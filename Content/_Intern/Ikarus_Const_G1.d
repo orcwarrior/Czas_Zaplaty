@@ -445,7 +445,7 @@ const int MEM_NpcID_Offset = 256; //0x100
 const int MEM_NpcName_Offset = 260; //0x104
 
 //Ork: Poprawione
-const string MEM_FARFARAWAY = "INVISIBLE";		//dort wird der Mem-Helper gespawnt
+const string MEM_FARFARAWAY = "INVISIBLE10";		//dort wird der Mem-Helper gespawnt
 const string MEM_HELPER_NAME = "MEMHLP";    //so heißt er
 
 //MEM_ArrayInsert alloziert schon beim ersten Element für soviele Elemente Speicher

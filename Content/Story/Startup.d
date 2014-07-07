@@ -2848,15 +2848,15 @@ func void STARTUP_HandlerContainers()
 	Wld_InsertNpc(Fox_Container, "INVISIBLE8");		
 	Wld_InsertNpc(Taran_Container, "INVISIBLE8");		
 	Wld_InsertNpc(Leren_Container, "INVISIBLE8");		
-	Wld_InsertNpc(Jeff_Container,	"INVISIBLE9");	
+	Wld_InsertNpc(Jeff_Container,	"INVISIBLE8");	
 	Wld_InsertNpc(Vam_Container,	"INVISIBLE9");
-	Wld_InsertNpc(Riordian_Container, "INVISIBLE10"); //dodane 2012-11-14
-	Wld_InsertNpc(Wolf_Container,	"INVISIBLE10"); //dodane 2012-11-14
+	Wld_InsertNpc(Riordian_Container, "INVISIBLE9"); //dodane 2012-11-14
+	Wld_InsertNpc(Wolf_Container,	"INVISIBLE9"); //dodane 2012-11-14
 };	
 
 func void STARTUP_NewsNPC()
 {
-	Wld_InsertNpc(Mob_Spawner, "INVISIBLE");
+	Wld_InsertNpc(Mob_Spawner, "INVISIBLE9");
 };
 
 FUNC VOID INIT_Variables()
@@ -3005,7 +3005,7 @@ FUNC VOID INIT_ALLWORLDS()
 	
 	MEM_InitGlobalInst();//ikarus
 	
-	Wld_InsertNpc(MOD_ITEMMASTER, "INVISIBLE");		
+	Wld_InsertNpc(MOD_ITEMMASTER, "INVISIBLE9");		
 	
 	// issue #104 (it will call VolumeUpdate function by 0.125 trigger)
 	MusicSys_VolumeReinited = false;
