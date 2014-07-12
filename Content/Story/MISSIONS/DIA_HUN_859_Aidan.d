@@ -1147,8 +1147,14 @@ INSTANCE DIA_HUN_859_AIDAN_Repair_Axe (C_INFO)
 
 FUNC INT DIA_HUN_859_AIDAN_Repair_Axe_Condition()
 {
-	if (Npc_KnowsInfo (hero, DIA_HUN_859_AIDAN_GarryCome)) && (!repaired_axe_Rick) && (NPC_HasItems(other, Rick_Axe_1)>=1)
+	/*if (Npc_KnowsInfo (hero, DIA_HUN_859_AIDAN_GarryCome)) && (!repaired_axe_Rick) && (NPC_HasItems(other, Rick_Axe_1)>=1)
 	{
+		return 1;
+	};*/
+	
+	if (NPC_GetDistToWP(self, "OM_SMITH_03") < 1000) && (!repaired_axe_Rick) && (NPC_HasItems(other, Rick_Axe_1)>=1)
+	{
+		B_unequip_current_mweapon_hero(Rick_Axe_1);
 		return 1;
 	};
 };
@@ -1157,12 +1163,18 @@ FUNC VOID DIA_HUN_859_AIDAN_Repair_Axe_Info()
 {
 	repaired_axe_Rick = TRUE; 
    
-   B_unequip_current_mweapon_hero(Rick_Axe_1);
-   
 	AI_Output (other, self, "DIA_HUN_859_AIDAN_Repair_Axe_15_01"); //Czy móg³byœ podostrzyæ mi mój topór?
 	AI_Output (self, other, "DIA_HUN_859_AIDAN_Repair_Axe_11_02"); //Jasne! Daj mi go, a po chwili znów bêdziesz móg³ posiekaæ kogoœ na kawa³ki.
-   Give_and_remove(Rick_Axe_1, 1);
+   
+	AI_GotoWP(self, "OM_SMITH_03");
+	B_StartUseMob(self, "BSSHARP");
+	AI_Wait(self, 1);
+	B_StopUseMob(self, "BSSHARP");
+	Give_and_remove(Rick_Axe_1, 1);
    Create_and_give(Rick_Axe_2a, 1);
+	AI_GotoNPC(self, other);
+	AI_TurnToNPC(self, other);
+	
 	AI_Output (self, other, "DIA_HUN_859_AIDAN_Repair_Axe_15_03"); //Proszê, niech ci dobrze s³u¿y. 
 	AI_Output (other, self, "DIA_HUN_859_AIDAN_Repair_Axe_15_04"); //Dziêki.
 };

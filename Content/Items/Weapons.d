@@ -835,7 +835,7 @@ INSTANCE Rick_Axe_2a (WeaponsMelee)
 	visual 				=	"ItMw_1H_Axe_01.3DS";
 
 	description			= name;
-	TEXT[1]				= NAME_Damage;					COUNT[2]	= damageTotal;
+	TEXT[1]				= NAME_Damage;					COUNT[1]	= damageTotal;
 	TEXT[2]				= "To mój topór, Aidan go naprawi³";	
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
 	TEXT[4] 			= NAME_OneHanded;
