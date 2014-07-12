@@ -115,8 +115,7 @@ func void B_give_ore(var C_NPC typ, var int LP_Cost)
    if(!C_NpcTypeIsFriend(self,typ))
    {
       msg = ConcatStrings("Odda³eœ bry³ek: ",IntToString(ORECOST_LP*LP_cost));
-      PutMsg(MSG,"font_default.tga",RGBAToZColor(255,160,100,255),_TIME_MESSAGE_GIVEN,"");
-      PrintScreen (msg, -1,_YPOS_MESSAGE_GIVEN,"FONT_OLD_10_WHITE.TGA",_TIME_MESSAGE_GIVEN);
+      PutMsg(msg,"font_default.tga",RGBAToZColor(255,160,100,255),_TIME_MESSAGE_GIVEN,"");
       Npc_RemoveInvItems(typ,itminugget,10*LP_cost);
    };	
    typ.lp = typ.lp - LP_cost;
