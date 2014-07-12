@@ -500,7 +500,7 @@ INSTANCE DIA_RBL_581_Snaf_Aloes (C_INFO)
 
 FUNC INT DIA_RBL_581_Snaf_Aloes_Condition()
 {
-	if (NPC_HasItems(other,aloes)>=1)&&(aloes_find)
+	if (NPC_HasItems(other,aloes)>=1)&&(aloes_find)&& (!Npc_KnowsInfo (hero, DIA_rbl_1331_baaltaran_Aloes))
 	{
 		return 1;
 	};

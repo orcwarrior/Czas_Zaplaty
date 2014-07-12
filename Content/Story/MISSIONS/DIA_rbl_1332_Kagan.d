@@ -400,7 +400,7 @@ INSTANCE DIA_rbl_1332_baalkagan_Aloes (C_INFO)
 
 FUNC INT DIA_rbl_1332_baalkagan_Aloes_Condition()
 {
-	if (NPC_HasItems(other,aloes)>=1)&&(aloes_find)
+	if (NPC_HasItems(other,aloes)>=1)&&(aloes_find)&& (!Npc_KnowsInfo (hero, DIA_rbl_1331_baaltaran_Aloes))
 	{
 		return 1;
 	};
@@ -410,5 +410,5 @@ FUNC VOID DIA_rbl_1332_baalkagan_Aloes_Info()
 {
 	//crappy dialog created by orc
 	AI_Output (other, self, "DIA_rbl_1332_baalkagan_Aloes_15_01"); //Potrafisz przyrz¹dziæ miksturê z aloesu?
-	AI_Output (self, other, "DIA_rbl_1332_baalkagan_Aloes_11_02"); //Nie, ale Taran na pewno da sobie rade, pomaga³ kiedyœ przygotowywaæ Guru mikstury pozwalaj¹ce na kontakt z Œniacym.
+	AI_Output (self, other, "DIA_rbl_1332_baalkagan_Aloes_11_02"); //Nie, ale Taran na pewno da sobie radê, pomaga³ kiedyœ przygotowywaæ guru mikstury pozwalaj¹ce na kontakt ze Œni¹cym.
 }; 

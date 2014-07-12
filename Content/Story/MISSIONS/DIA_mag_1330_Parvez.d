@@ -57,7 +57,7 @@ INSTANCE DIA_mag_1330_baalparvez_Aloes (C_INFO)
 
 FUNC INT DIA_mag_1330_baalparvez_Aloes_Condition()
 {
-	if (NPC_HasItems(other,aloes)>=1)&&(aloes_find)
+	if (NPC_HasItems(other,aloes)>=1)&&(aloes_find) && (!Npc_KnowsInfo (hero, DIA_rbl_1331_baaltaran_Aloes))
 	{
 		return 1;
 	};
