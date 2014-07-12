@@ -1147,12 +1147,8 @@ INSTANCE DIA_HUN_859_AIDAN_Repair_Axe (C_INFO)
 
 FUNC INT DIA_HUN_859_AIDAN_Repair_Axe_Condition()
 {
-	/*if (Npc_KnowsInfo (hero, DIA_HUN_859_AIDAN_GarryCome)) && (!repaired_axe_Rick) && (NPC_HasItems(other, Rick_Axe_1)>=1)
-	{
-		return 1;
-	};*/
-	
-	if (NPC_GetDistToWP(self, "OM_SMITH_03") < 1000) && (!repaired_axe_Rick) && (NPC_HasItems(other, Rick_Axe_1)>=1)
+	if (Npc_KnowsInfo (hero, DIA_HUN_859_AIDAN_GarryCome)) && (!repaired_axe_Rick) && (NPC_HasItems(other, Rick_Axe_1)>=1) 
+		&& (NPC_GetDistToWP(self, "OM_SMITH_03") < 1000)
 	{
 		B_unequip_current_mweapon_hero(Rick_Axe_1);
 		return 1;
