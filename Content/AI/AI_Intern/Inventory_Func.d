@@ -100,16 +100,9 @@ Func Void B_TransferCategory(Var C_Npc Slf,Var Int Cat,Var C_Npc Oth)
 					};
 					PutMsg(msg,"font_default.tga",RGBAToZColor(255,255,255,255),2,"");	
 				};	
-				if(item.flags&ITEM_MULTI == ITEM_MULTI)
-				{
-					Npc_RemoveInvItems(Slf,Itemid,amount);
-					CreateInvItems(Oth,Itemid,amount);
-				}
-				else
-				{
-					Npc_RemoveInvItem(Slf,Itemid);
-					CreateInvItem(Oth,Itemid);				
-				};
+
+				Npc_RemoveInvItems(Slf,Itemid,amount);
+				CreateInvItems(Oth,Itemid,amount);
 			};
 		}
 		else
