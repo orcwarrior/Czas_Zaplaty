@@ -930,9 +930,13 @@ FUNC VOID B_SETPERMATTITUDE(VAR INT NPCINSTANCE,VAR INT NEWATTITUDE)
 FUNC VOID B_LOGENTRY(VAR STRING TOPIC,VAR STRING ENTRY)
 {
 	////PrintDebugNpc(PD_ZS_DETAIL,"B_LogEntry");
-
+	
+	var string msg;
+	msg = concatstrings(TOPIC, ")");
+	msg = concatstrings("\n(", msg);
+	msg = concatstrings(NAME_NewLogEntry, msg);
 	LOG_ADDENTRY(TOPIC,ENTRY);
-	PutMsg(NAME_NewLogEntry,"font_default.tga",RGBAToZColor(255,255,255,255),_TIME_MESSAGE_LOGENTRY,"");
+	PutMsg(msg,"font_default.tga",RGBAToZColor(255,255,255,255),_TIME_MESSAGE_LOGENTRY,"");
 	
 	Snd_Play("LogEntry");
 };

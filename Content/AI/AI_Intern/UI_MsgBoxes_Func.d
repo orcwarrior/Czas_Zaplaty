@@ -12,6 +12,9 @@ const int Msg_PosY = 35 * 82;//82 -one percent 2870
 const int Msg_PosX = 5 * 82;
 const int MsgBox_SizeY = 55;//in px
 const int MsgBox_SizeX = 250;
+const int MsgBox_SizeX_2 = 370;
+
+const int maxCharsInline = 20;
 
 class UIMsg 
 {
@@ -144,7 +147,6 @@ func void UIMsg_FormatAndPrintText(var UIMsg Msg)
 {
 	// [TODO]Ork: To powinno być zalezne od rozdzielczości, troche testów w roznych
 	// rozdzialkach i uda sie ustalic jakąs funkcje liniową dla odp. il znaków w linii. 
-	const int maxCharsInline = 32; //zmienione przez Adanosa 2012-04-30
 	const int xStartOfWindow = 5;
 	var int yStartOf1Line; yStartOf1Line = 1584 - CalcPixelPosY(8)/2;
 	var int yStartOf2Line; yStartOf2Line = 3850 - CalcPixelPosY(8)/2;
@@ -358,6 +360,7 @@ func void Msg_FadeOut(var UIMsg Msg)
 
 func void Msg_InitView(var UIMsg Msg)
 {
+	var int local_MsgBox_SizeX;
 		//Remove old view if it was present:
 		if(Msg_2nd.msgView>0)
 		{
@@ -377,7 +380,17 @@ func void Msg_InitView(var UIMsg Msg)
         			  
 		//SetPos
  		var int x;var int y;
-		x = CalcPixelPosX(MsgBox_SizeX); y = CalcPixelPosY(MsgBox_SizeY);
+		if (Str_Len(Msg.text)>=maxCharsInline)
+		{
+			local_MsgBox_SizeX = MsgBox_SizeX_2;
+		}
+		else
+		{
+			local_MsgBox_SizeX = MsgBox_SizeX;
+		};
+		
+		x = CalcPixelPosX(local_MsgBox_SizeX);
+		y = CalcPixelPosY(MsgBox_SizeY);
 		CALL_IntParam(Msg_PosY-y);
         CALL_IntParam(Msg_PosX);//zcview
         CALL__thiscall (vptr,zCView_SetPos_offset); 
@@ -385,7 +398,7 @@ func void Msg_InitView(var UIMsg Msg)
         MEM_WriteInt(Msg.msgView+72,Msg_PosY-CalcPixelPosY(MsgBox_SizeY));              
 
         CALL_IntParam(CalcPixelPosY(MsgBox_SizeY));//S Y
-        CALL_IntParam(CalcPixelPosX(MsgBox_SizeX));//S X
+        CALL_IntParam(CalcPixelPosX(local_MsgBox_SizeX));//S X
         CALL__thiscall (vptr,zCView_SetSize_offset);
   
         //Set Alpha
