@@ -266,6 +266,8 @@ FUNC VOID Use_Katrakanat_book()
 							Wld_SpawnNpcRange (self, SkeletonMage, 1, 800);
 							Npc_RemoveInvItems(self, Katrakanat_book,1);
 						};
+						
+						self.attribute[ATR_HITPOINTS] -= self.attribute[ATR_HITPOINTS_MAX] / 4;
 					};	
                
                open_kart = TRUE;
