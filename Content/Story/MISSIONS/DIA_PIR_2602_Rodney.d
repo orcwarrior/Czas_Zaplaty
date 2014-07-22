@@ -494,7 +494,7 @@ FUNC VOID DIA_Rodney_Help_Info()
 	AI_Output (self, other,"DIA_Rodney_Help_11_12"); //Rozmawia³em ju¿ z Miltenem i Lerenem. Zrobi³em kilka prostych zadañ i dosta³em powa¿niejsze zlecenie.
 	AI_Output (self, other,"DIA_Rodney_Help_11_13"); //Leren odkry³, ¿e w podziemiach Klasztoru Zmiennokszta³tnych pogrzebano jakiœ potê¿ny artefakt.
 	AI_Output (self, other,"DIA_Rodney_Help_11_14"); //Jednak klucz do podziemi znajduje siê w jakiejœ orkowej cytadeli.
-	AI_Output (self, other,"DIA_Rodney_Help_11_15"); //Pomijaj¹c to, ¿e nie mam pojêcie, gdzie mo¿na znaleŸæ te ruiny to wiesz, ¿e ja nigdy nie nale¿a³em do najodwa¿niejszych.
+	AI_Output (self, other,"DIA_Rodney_Help_11_15"); //Pomijaj¹c to, ¿e nie mam pojêcia, gdzie mo¿na znaleŸæ te ruiny to wiesz, ¿e ja nigdy nie nale¿a³em do najodwa¿niejszych.
 	AI_Output (self, other,"DIA_Rodney_Help_11_16"); //Nie mam zamiaru ryzykowaæ ¿ycia nawet za cenê spe³nienia marzeñ.
 	AI_Output (other, self,"DIA_Rodney_Help_15_17"); //Rozumiem. Czyli szukasz idioty, który znajdzie Cytadelê, nie da siê zabiæ orkom i odnajdzie klucz?
 	AI_Output (self, other,"DIA_Rodney_Help_11_18"); //Gdybym szuka³ idioty to nie rozmawia³bym z Tob¹. Masz wyj¹tkowe zdolnoœci, zawsze spadasz na cztery ³apy i wychodzisz ca³o z najgorszych opresji. To rzadka przywara...

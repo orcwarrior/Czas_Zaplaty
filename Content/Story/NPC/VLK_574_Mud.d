@@ -2,7 +2,7 @@ instance VLK_574_Mud (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Wrz?d";
+	name =							"Wrzód";
 	npctype =						npctype_ambient;
 	guild =							GIL_NONE;      
 	level =							0;
