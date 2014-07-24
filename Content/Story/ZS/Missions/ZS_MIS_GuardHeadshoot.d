@@ -12,7 +12,7 @@ func void ZS_MIS_GuardHeadshoot ()
 	Npc_PercEnable  	(self, 	PERC_MOVEMOB			,	B_MoveMob				    );			
 	
 	self.senses = 			SENSE_SEE|SENSE_HEAR|SENSE_SMELL;
-	self.attribute[ATR_STRENGTH] = 900;
+	self.attribute[ATR_STRENGTH] = 130;
 	self.damagetype 						=	DAM_POINT;
 	self.damage		[DAM_INDEX_POINT]	=	1001;	
 	//-------- Vorbereitungen --------
