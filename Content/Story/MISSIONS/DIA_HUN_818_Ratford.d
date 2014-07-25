@@ -1549,10 +1549,8 @@ FUNC VOID DIA_RATFORD_OCA_Info()
 	AI_Output (self, other, "DIA_RATFORD_OCA_07_07"); //Spotkamy siê u Cavalorna. PrzyjdŸ tam, jak najszybciej!
 	B_LogEntry(CH3_RBL_OldCampAttack, "Ratford musi naradziæ siê z Cavalornem. Spotkanie odbêdzie siê w chacie Cavalorna, mam siê tam, jak najszybciej stawiæ.");
 	Npc_ExchangeRoutine	(self, "MEETING");
-	var C_NPC cav; cav = Hlp_GetNpc(HUN_336_Cavalorn);
-	Npc_ExchangeRoutine	(cav, "MEETING");
-	var C_NPC mil; mil = Hlp_GetNpc(PC_MAGE);
-	Npc_ExchangeRoutine	(mil, "MEETING");
+	B_ExchangeRoutine	(cavalorn, "MEETING");
+	B_ExchangeRoutine	(milten, "MEETING");
 	B_StopProcessInfos	(self);
 };
 
