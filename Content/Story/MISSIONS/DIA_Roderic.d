@@ -248,7 +248,7 @@ FUNC void DIA_Roderic_Axe_Info()
 	CreateInvItems (self, GhostAxe1, 1);
 	AI_EquipBestMeleeWeapon	(self);
 	AI_ReadyMeleeWeapon		(self);
-	AI_Output 	(self, hero,"DIA_Roderic_Axe_11_03"); //Moc rytua³y sp³ynê³a na ostrze. Ruszajmy, niech dokona siê przeznaczenie!
+	AI_Output 	(self, hero,"DIA_Roderic_Axe_11_03"); //Moc rytua³u sp³ynê³a na ostrze. Ruszajmy, niech dokona siê przeznaczenie!
 	B_LogEntry		(CH3_RBL_RodneyHelp, "Odda³em Roderikowi topór. Czeka nas przeprawa przez œcie¿kê us³an¹ pu³apkami i walka z jakimœ nieumar³ym szaleñcem. No có¿, sam tego chcia³em...");
 	Party_AddNpc(self);
 	B_StopProcessInfos	(self);
