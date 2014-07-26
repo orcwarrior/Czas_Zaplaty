@@ -52,55 +52,49 @@ prototype GRD_TRAP (C_NPC)
 	//-------------Daily Routine-------------
 	start_aistate = ZS_MIS_INFO_TRAP;	
 	Npc_SetAivar(self,AIV_SPECIALCOMBATDAMAGEREACTION,  TRUE);
-    	fight_tactic	=	FAI_HUMAN_STRONG;
-
-
-
-
+   fight_tactic	=	FAI_HUMAN_STRONG;
 };
 
 instance GRD_2730_Gardist (GRD_TRAP)
 {
 	id 			= 	2730;
 	flags		= NPC_FLAG_BRAVE|NPC_FLAG_INSTANTDEATH|NPC_FLAG_KILLER;
-	
 };
+
 instance GRD_2731_Gardist (GRD_TRAP)
 {
 	id 			= 	2731;
 	flags		= NPC_FLAG_BRAVE|NPC_FLAG_INSTANTDEATH|NPC_FLAG_KILLER;
-	
 };
+
 instance GRD_2732_Gardist (GRD_TRAP)
 {
 	id 			= 	2732;
 	flags		= NPC_FLAG_BRAVE|NPC_FLAG_INSTANTDEATH|NPC_FLAG_KILLER;
-	B_InitGrdFunc(self,90,2);
-	
 };
+
 instance GRD_2733_Gardist (GRD_TRAP)
 {
 	id 			= 	2733;
 	flags		= NPC_FLAG_BRAVE|NPC_FLAG_INSTANTDEATH|NPC_FLAG_KILLER;
-	
 };
+
 FUNC VOID Rtn_follow_2730 ()
 {
-	TA_FollowPC			(01,01,01,00,"");
-
+	TA_FollowPC(01,01,01,00,"");
 };
+
 FUNC VOID Rtn_follow_2731 ()
 {
-	TA_FollowPC			(01,01,01,00,"");
-
+	TA_FollowPC(01,01,01,00,"");
 };
+
 FUNC VOID Rtn_follow_2732 ()
 {
-	TA_FollowPC			(01,01,01,00,"");
-
+	TA_FollowPC(01,01,01,00,"");
 };
+
 FUNC VOID Rtn_follow_2733 ()
 {
-	TA_FollowPC			(01,01,01,00,"");
-
+	TA_FollowPC(01,01,01,00,"");
 };
