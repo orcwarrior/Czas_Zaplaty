@@ -468,7 +468,7 @@ FUNC INT DIA_Cavalorn_RebelCampTrust_Condition()
  Dwa mozliwe wybory:
  (umieszczone na poczatku inaczej
  niestety by sie nie skompilowalo :)
- Ostatni ID kwesti = 60
+ Ostatni ID kwesti = 61
 -----------------------------*/
 
 func void DIA_Cavalorn_RebelCampTrust_ItCanWait()
@@ -496,11 +496,13 @@ func void DIA_Cavalorn_RebelCampTrust_BecomeRebelNow()
       };
       
       rbl_camp_trust = TRUE;
+		AI_Output (self, other,"DIA_Cavalorn_RebelCampTrust_12_41"); //Zas³u¿y³eœ na nasze zaufanie. Odt¹d jesteœ jednym z nas.
       AI_Output (self, other,"DIA_Cavalorn_RebelCampTrust_12_44"); //Nie pozostaje mi nic innego jak wypiæ za Twoje zdrowie.
       CreateInvItems (self,ItFoBeer,2);
       B_GiveInvItems (self, other,ItFoBeer, 1);   
       AI_UseItem (other,ItFobeer);
       AI_UseItem (self,ItFobeer);
+
       AI_Output (self, other,"DIA_Cavalorn_RebelCampTrust_12_45"); //Witaj wœród nas, Rick.
       AI_Output (other, self, "DIA_Cavalorn_RebelCampTrust_15_46"); //Nie bêdziesz tego ¿a³owa³.
       AI_Output (self, other,"DIA_Cavalorn_RebelCampTrust_12_47"); //To siê dopiero oka¿e, przyjacielu.
@@ -762,8 +764,8 @@ FUNC VOID DIA_Cavalorn_RebelCampTrust_Info()
    else if (Cavalorn_Cavalorn_know == TRUE)&&(recruit_finish == TRUE)
    {
       rbl_count_trust = rbl_count_trust + 25;      
-      AI_Output (self, other,"DIA_Cavalorn_RebelCampTrust_12_41"); //Zas³u¿y³eœ na nasze zaufanie. Odt¹d jesteœ jednym z nas.
-
+      
+		AI_Output (self, other,"DIA_Cavalorn_RebelCampTrust_12_61"); //Masz moje poparcie. Rekruci siê dobrze spisuj¹.
    }
    else if (Cavalorn_ORRecruitCount>0)&&(Cavalorn_ORRecruitCount<5)
    {
