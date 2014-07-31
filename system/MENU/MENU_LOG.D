@@ -42,7 +42,7 @@ const int LOG_ITEM_CONT_X 		= 4350;
 
 INSTANCE MENU_ITEM_SEL_MISSIONS_ACT(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Bie¿¹ce Misje";
+	text[0]		=	"Bie¿¹ce misje";
 	posx		=	500;
 	posy		=   	LOG_ITEM_Y1+120;
 	dimx 		= 	LOG_ITEM_DX1;
@@ -56,7 +56,7 @@ INSTANCE MENU_ITEM_SEL_MISSIONS_ACT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_SEL_MISSIONS_OLD(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Zakoñczone\nMisje";
+	text[0]		=	"Zakoñczone\nmisje";
 	
 	posx		=	1550;
 	posy		=   	LOG_ITEM_Y1-70;
@@ -72,7 +72,7 @@ INSTANCE MENU_ITEM_SEL_MISSIONS_OLD(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_SEL_MISSIONS_FAILED(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Niezaliczone\nMisje";
+	text[0]		=	"Niezaliczone\nmisje";
 	
 	posx		=	2580;
 	posy		=   	LOG_ITEM_Y1-50;
@@ -88,7 +88,7 @@ INSTANCE MENU_ITEM_SEL_MISSIONS_FAILED(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_SEL_LOG(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Informacje Ogólne";
+	text[0]		=	"Informacje ogólne";
 	
 	posx		=	5770;
 	posy		=   	LOG_ITEM_Y1;
