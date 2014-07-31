@@ -4,7 +4,7 @@ instance STT_315_Sly (Npc_Default)
 	name 		=		"Z³y";
 	npctype 	=		NPCTYPE_MAIN;
 	guild 		=		GIL_GRD;
-	level 		=		115;
+	level 		=		15;
 	
 	
 	voice 		=		10;
