@@ -363,30 +363,23 @@ func void KeyEvent_EquipmentTakeAll()
 	if(Key_tAction1_State==KEY_RELEASED || Key_tAction2_State==KEY_RELEASED)
 	{
 		//Get hero focus:
-		var int targetptr; var int t_hp;
+		var int targetptr;
 
 		var ocnpc hiro; hiro = Hlp_GetNpc(pc_hero);
-		PrintDebug_s_i_s_i("Herofocus wynosi: ",herofocus,", hiro.focus_vob wynosi: ",hiro.focus_vob);
+		PrintDebug_s_i_s_i("Herofocus equals to: ", herofocus, ", hiro.focus_vob equals to: ", hiro.focus_vob);
 
 		MEM_AssignInst (herofocus,hiro.focus_vob); // <-- tu jest NULL
 		targetptr =  MEM_InstToPtr(herofocus);
 
 		printdebug(inttostring(targetptr));
-		t_hp = 2;//init
-		if(targetptr)
-		{
-			t_hp = MEM_ReadInt(targetptr+388);
-		};
-		printdebug("KeyEvent_EquipmentTakeAll drugi if");
+
 		if(!LCtrl_Doubleclick)//first click of doubleclick
 		{
 			LCtrl_Doubleclick = 6;//6*0.125=750ms
 		}
-		else if(t_hp<2)&&(LCtrl_Doubleclick)&&(MEM_ReadInt(targetptr)==oCNpc_vtbl)//trader container is unconscious/dead
+		else if(C_BodyStateContains(herofocus,BS_DEAD) || C_BodyStateContains(herofocus,BS_UNCONSCIOUS))
+		   &&(LCtrl_Doubleclick)&&(MEM_ReadInt(targetptr)==oCNpc_vtbl)//trader container is unconscious/dead
 		{
-			// Ork: Zastanawiam sie czemu nikt tego wczesniej nie wy³¹czy³ :D		
-			//print(herofocus.name);
-
 			//Transfer whole inventory except armor:
 			Show_HeroTransferedItem=true;
 			B_GiveAllInventory(herofocus,hero);
@@ -401,7 +394,7 @@ func void KeyEvent_EquipmentTakeAll()
 			Show_HeroTransferedItem=false;
 			
 			targetptr = hiro.focus_vob;
-			if(t_hp==0)
+			if(C_BodyStateContains(herofocus,BS_DEAD))
 			{//Dead, he shouldn't trash hero focus anymore...
 				MEM_WriteInt(targetptr+160,0);//0 = oCVOB - others causes CRASH!!!
 			};
