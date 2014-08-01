@@ -61,7 +61,7 @@ func int Spell_Logic_TeleportToNecroloc(var int manaInvested)
 
 func int Spell_Logic_TeleportFromDungeonToWorldzen(var int manaInvested)
 {
-   if (B_PrintTeleportTooFarAway (WORLD_MONSTARYDUNGEONZEN))
+   if (B_PrintTeleportTooFarAway (WORLD_MONASTERYDUNGEONZEN))
    {
       if (manaInvested>= SPL_SENDCAST_TELEPORT)
       {

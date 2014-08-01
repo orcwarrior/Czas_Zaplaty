@@ -3160,9 +3160,9 @@ FUNC VOID STARTUP_WORLD ()
 
 func void INIT_DUNGEON()
 {
-	WORLD_CURRENT = WORLD_MONSTARYDUNGEONZEN;
-	Respawn_SkippedDays(DAY-LastDayIn_MONSTARYDUNGEONZEN);
-	LastDayIn_MONSTARYDUNGEONZEN= DAY;//Set Last Day in psi dream to today's day		
+	WORLD_CURRENT = WORLD_MONASTERYDUNGEONZEN;
+	Respawn_SkippedDays(DAY-LastDayIn_MONASTERYDUNGEONZEN);
+	LastDayIn_MONASTERYDUNGEONZEN= DAY;//Set Last Day in psi dream to today's day		
 	B_InitMonsterAttitudes();
 	B_InitGuildAttitudes();	
 	INIT_ALLWORLDS();		
@@ -3849,21 +3849,21 @@ FUNC VOID STARTUP_OR_DEEP ()
 
 
 /*********************
-Labirynt
+Labyrinth
 *********************/
 
-FUNC VOID INIT_LABIRYNT ()
+FUNC VOID INIT_LABYRINTH ()
 {
 	INIT_ALLWORLDS();	
 
-	WORLD_CURRENT = WORLD_LABIRYNT;
+	WORLD_CURRENT = WORLD_LABYRINTH;
 	respawn_dur_minus = 10000;
 	B_InitMonsterAttitudes();
 	B_InitGuildAttitudes();
 	Init_GlobalNpc();
 };
 
-FUNC VOID STARTUP_LABIRYNT ()
+FUNC VOID STARTUP_LABYRINTH ()
 {
 	Wld_InsertNpc(dead_guard, "DUNG5");			
 	Wld_InsertNpc(dead_guard, "DUNG7");		
@@ -3882,6 +3882,6 @@ FUNC VOID STARTUP_LABIRYNT ()
 	Wld_InsertNpc(SkeletonFireRanger,"DUNG53");
 	Wld_InsertNpc(Skeleton2HSwdWarrior, "DUNG19");
 	
-	INIT_LABIRYNT();	
+	INIT_LABYRINTH();	
 	STARTUP_ALLWORDLS();	
-}; // STARTUP_LABIRYNT
+}; // STARTUP_LABYRINTH
