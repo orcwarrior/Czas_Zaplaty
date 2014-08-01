@@ -940,11 +940,11 @@ FUNC VOID B_Trigger_CheckMissions()
 		};
 	};
 
-	if(Hero_GotoGYD)//&&
+	if(Hero_GotoGYD == 1)//&&
 	{
 		var c_npc nameless; nameless = Hlp_GetNpc(Nameless_ThirdMeetGYD);
 		
-		if(Hlp_IsValidNpc(nameless))
+		if(Hlp_IsValidNpc(nameless) && !NPC_isDead(nameless))
 		{
 			nameless_light_timer=nameless_light_timer+1;
 			

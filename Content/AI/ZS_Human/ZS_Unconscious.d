@@ -20,15 +20,15 @@ func int  Npc_CanBeUnconscious(var oCNpc slf,var oCNpc oth)
 func void HOOK_PREUNCONSCIOUS()
 {
 	var oCNpc npc; var oCNpc oth;
-
+	printdebug("HOOK_PREUNCONSCIOUS >> assign");
 	//ECX to oCNPC wiec ECX+0x100 to C_NPC (taki cast nie dzia³a, caloœæ oparta na oCNPC
 	MEM_AssignContentInst (npc,GetECX());	
 	MEM_AssignContentInst (oth,GetESP()+128);	
-	
+	printdebug("HOOK_PREUNCONSCIOUS >> Before call");
 	//Npc_ClearAiQueue(self) -> but in oCNPC way ;-)
 	CALL__thiscall (MEM_InstToPtr(npc), oCNpc__ClearEM_offset);
 	CALL__thiscall (npc.anictrl, oCAniCtrl_Human_StopTurnAnis_offset);
-	
+	printdebug("HOOK_PREUNCONSCIOUS >> After call");
 	if(Npc_CanBeUnconscious(npc,oth))
 	{//Npc Normalnie upada na ziemie
 	MEM_WriteInt(HookEngine_Hook_PreUnconscious_JmpAdress,7630776+6);	
@@ -37,7 +37,7 @@ func void HOOK_PREUNCONSCIOUS()
 	{//Npc odrazu umiera (7630776 = 1 arg. wywolania HookEngine w Startup + 6 = 2 arg. wywo³ania
 	MEM_WriteInt(HookEngine_Hook_PreUnconscious_JmpAdress,7632080);	
 	};
-		
+	printdebug("HOOK_PREUNCONSCIOUS >> end");
 };
 
 
