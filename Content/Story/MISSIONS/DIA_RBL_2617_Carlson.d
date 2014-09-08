@@ -369,6 +369,8 @@ FUNC VOID DIA_RBL_2617_Carlson_Leaf_agree_Info()
 	AI_Output (self, other, "DIA_RBL_2617_Carlson_Leaf_agree_11_02"); //Wielkie dziêki, naprawdê nie wiesz, jak bardzo jestem ci wdziêczny. A co do pancerza przyjdŸ za kilka dni, wtedy bêdzie gotowy.
    
    Carlson_armor = B_SetDayTolerance()+3;
+	
+	B_LogEntry(CH2_RBL_armor, "Powinienem przyjœæ za trzy dni po pancerz.");
 };
 
 //***********************************************
