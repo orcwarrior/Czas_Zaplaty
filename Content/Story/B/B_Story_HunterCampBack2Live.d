@@ -87,16 +87,7 @@ func void B_STORY_HunterCampBack2Live()
 	B_ExchangeRoutine(j,"start");
 	B_ExchangeRoutine(k,"start");		
 	B_ExchangeRoutine(l,"start");
-   
-	if(OR_ATTACKED>2)
-	{
-      B_ExchangeRoutine(m,"AfterFight");   					
-	}
-	else
-	{
-      B_ExchangeRoutine(m,"start");   						
-	};
-   
+   B_ExchangeRoutine(m,"AfterFight");   					
 	B_ExchangeRoutine(n,"start"); 
 	B_ExchangeRoutine(o,"start");   					
 	B_ExchangeRoutine(p,"start");		

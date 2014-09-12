@@ -186,8 +186,8 @@ func void ZS_Dead ()
 	//special react to damage:
 	//special react to damage: 
 	//(for hero it's done in damage system)
-	//if (!Npc_IsPlayer(other))
-	//{
-	//	B_SpecialCombatDamageReaction(self,other);
-	//};
+	if (!Npc_IsPlayer(other))
+	{
+		B_SpecialCombatDamageReaction(self,other);
+	};
 };
