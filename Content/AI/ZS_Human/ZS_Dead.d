@@ -110,7 +110,7 @@ func void ZS_Dead ()
  	B_SpecialDmg_RuneSword(self,other);	
 	//-------- Erfahrungspunkte für den Spieler ? --------
 	//SN: VORSICHT, auch in B_MagicHurtNpc() vorhanden!
-	if(self.id <= 4064)
+	if(self.id == 4064)
 	{
 		var C_npc crossbowman;
 		crossbowman = Hlp_GetNpc(GRD_2732_Gardist);
