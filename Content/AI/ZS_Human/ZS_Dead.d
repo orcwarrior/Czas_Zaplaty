@@ -52,6 +52,13 @@ func void ZS_Dead ()
 		Npc_SetAivar(self,AIV_DEALDAY, 1);
 	};*/
 	
+	if (Npc_HasItems(self, ItMw_Dual_01_Left))
+	{
+		AI_UnequipArmor(self);
+		Npc_RemoveInvItem(self, ItMw_Dual_01_Left);
+		CreateInvItem(self, ItMw_Dual_01_Left);
+	};
+	
 	//Killing Truan wave minion hurts him:
 	if(Npc_GetAivar(self,AIV_MM_REAL_ID) == ID_SKELETON_MDWAVE)
 	{
