@@ -35,10 +35,10 @@ INSTANCE DIA_Bern_First (C_INFO)
 
 FUNC INT DIA_Bern_First_Condition()
 {
-	//if (Npc_GetDistToNpc(self,hero) < 1000)&&(Npc_KnowsInfo (hero, DIA_Torlof_Fight))
-	//{
+	if (Npc_GetDistToNpc(self,hero) < 1000)&&(Npc_KnowsInfo (hero, DIA_Torlof_Fight))
+	{
 		return 1;
-	//};
+	};
 };
 
 FUNC VOID DIA_Bern_First_Info()
