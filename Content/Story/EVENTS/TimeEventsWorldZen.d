@@ -552,7 +552,7 @@ func void TimeEventsWorldZen()
 			};
 		};
 
-		if (DreamID == DREAM_BLOODYSWAMP) && (Rick_wants_to_sleep < NumberSecondsToDreamSleep) && (WORLD_CURRENT == WORLD_WORLDZEN)
+		if (DreamID == DREAM_BLOODYSWAMP) && (Rick_wants_to_sleep < NumberSecondsToDreamSleep)
 		{
 			Rick_wants_to_sleep+=1;
 			
@@ -579,6 +579,14 @@ func void TimeEventsWorldZen()
 				Dream_StartUp(DreamID);
 				SleepFX_PerFrameHandle();
 			};
+		};
+		
+		if (removeNamelessFromWorldZen)
+		{
+			removeNamelessFromWorldZen = false;
+			var c_npc nameless; nameless = Hlp_GetNpc(Nameless_ThirdMeet);
+			AI_Teleport(nameless, "INVISIBLE");
+			Npc_ExchangeRoutine(nameless, "INVISIBLE");
 		};
 	};
 };
