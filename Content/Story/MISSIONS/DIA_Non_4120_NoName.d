@@ -393,15 +393,13 @@ FUNC void  DIA_NoName_RBL4_Info()
    
 	B_LogEntry		(CH1_Rbl_NoName, "No i po sprawie. W sumie Bezimienny jest dobrym kompanem. Mo¿e warto to kiedyœ powtórzyæ?");
 	/*******************
-Bezio od³¹cza siê do Dicka, nie wiem gdzie ma iœc wiêc to twoja dzia³a Ork
-*******************/
+	Bezio od³¹cza siê od Dicka, nie wiem gdzie ma iœæ, wiêc to twoja dzia³a Ork
+	*******************/
 	Party_RemoveNpc(self);
    
 	Hero_GotoGYD = 2;
 	removeNamelessFromWorldZen = true;
-   var C_NPC nameless_third; nameless_third = Hlp_GetNpc(Nameless_ThirdMeet);
 	Npc_ExchangeRoutine(self,"INVISIBLEGRYD");
-   Npc_ExchangeRoutine(nameless_third,"INVISIBLE");
 	B_StopProcessInfos	(self);
 };
 
