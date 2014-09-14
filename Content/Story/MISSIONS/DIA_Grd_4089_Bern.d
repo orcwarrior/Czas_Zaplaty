@@ -35,10 +35,10 @@ INSTANCE DIA_Bern_First (C_INFO)
 
 FUNC INT DIA_Bern_First_Condition()
 {
-	if (Npc_GetDistToNpc(self,hero) < 1000)&&(Npc_KnowsInfo (hero, DIA_Torlof_Fight))
-	{
+	//if (Npc_GetDistToNpc(self,hero) < 1000)&&(Npc_KnowsInfo (hero, DIA_Torlof_Fight))
+	//{
 		return 1;
-	};
+	//};
 };
 
 FUNC VOID DIA_Bern_First_Info()
@@ -58,15 +58,16 @@ FUNC VOID DIA_Bern_First_Info()
 		AI_Output (self, other, "DIA_Bern_First_11_08"); //Ca³kiem mu odbi³o. Dorwa³ jakiœ wielki miecz i ruszy³ z nim na tereny orków. Powiedzia³, ¿e teraz jest niezniszczalny!
 	};
    
-	AI_Output (self, other, "DIA_Bern_First_11_09"); //Ja st¹d spadam...
-	B_LogEntry		(CH4_GRD_RuneSwd, "Carlos uciek³ z moim mieczem gdzieœ na tereny orków. Muszê go, jak najszybciej poszukaæ!");
-	B_StopProcessInfos	(self);
+	AI_Output(self, other, "DIA_Bern_First_11_09"); //Ja st¹d spadam...
+	B_LogEntry(CH4_GRD_RuneSwd, "Carlos uciek³ z moim mieczem gdzieœ na tereny orków. Muszê go, jak najszybciej poszukaæ!");
+	B_StopProcessInfos(self);
 
 	/************
 	Niech stra¿nik odejdzie kawa³ek a potem zmiana rutyny i marsz do Fletchera czy gdzies tam
 	**************/
 
-	Npc_ExchangeRoutine(self,"GO");
+	AI_SetWalkmode(self, NPC_RUN);
+	Npc_ExchangeRoutine(self, "GO");
 	
 	var C_NPC carl; carl = Hlp_GetNpc(Grd_4087_Carlos);
 	Npc_ChangeAttribute(carl, ATR_HITPOINTS, -carl.attribute[ATR_HITPOINTS_MAX]);

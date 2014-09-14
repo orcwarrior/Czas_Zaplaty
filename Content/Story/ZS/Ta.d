@@ -87,6 +87,7 @@ func void TA_PracticeSword		(var int start_h, var int start_m, var int stop_h, v
 func void TA_PracticeSwordBB		(var int start_h, var int start_m, var int stop_h, var int stop_m, VAR string waypoint)	{TA_Min		(self,	start_h,start_m, stop_h, stop_m,ZS_PracticeSword ,		waypoint);};
 func void TA_JACKIL			(var int start_h, var int start_m, var int stop_h, var int stop_m, VAR string waypoint)	{TA_Min		(self,	start_h,start_m, stop_h, stop_m,ZS_PracticeSword ,		waypoint);};
 func void TA_JACKGETWEPON			(var int start_h, var int start_m, var int stop_h, var int stop_m, VAR string waypoint)	{TA_Min		(self,	start_h,start_m, stop_h, stop_m,ZS_PracticeSword ,		waypoint);};
+func void TA_RunToWP			(var int start_h, var int start_m, var int stop_h, var int stop_m, VAR string waypoint)	{TA_Min		(self,	start_h,start_m, stop_h, stop_m, ZS_RunToWP,	waypoint);};
 //*********************************************
 //     Arena
 //*********************************************
