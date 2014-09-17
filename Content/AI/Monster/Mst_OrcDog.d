@@ -6,7 +6,7 @@ PROTOTYPE Mst_Default_OrcDog(C_Npc)
 {
 	name							=	"Orkowy pies";
 	guild							=	GIL_ORCDOG;
-	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_BLACKWOLF);
+	Npc_SetAivar(self, AIV_MM_REAL_ID, ID_ORCDOG);
 	level							=	20;		//SN 11.01.01.: geändert, da zu schwach
 //---------------------------------------------------
 	attribute	[ATR_STRENGTH]		=	160;		//SN 11.01.01.: geändert, da zu schwach
