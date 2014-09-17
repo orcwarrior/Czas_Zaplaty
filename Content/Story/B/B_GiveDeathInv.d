@@ -21,7 +21,7 @@ func void B_GiveDeathInv ()
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_WARAN)				{	CreateInvItems(self,ItAt_WaranTeeth,4);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_FIREWARAN)			{	CreateInvItems(self,ItAt_FireWaranTeeth,4);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_LURKER)				{	CreateInvItems(self,ItAt_LurkerTeeth,2);	};
-		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_BLACKWOLF)			{	CreateInvItems(self,ItAt_OrcDogTeeth,2);	};
+		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_BLACKWOLF)			{	CreateInvItems(self,ItAt_WolfTeeth,2);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_ALIGATOR)			{	CreateInvItems(self,ItAt_AligatTeeth,2);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_SWAMPSHARK)			{	CreateInvItems(self,ItAt_SwampshTeeth,	3); };	//Zähne eines Sumpfhais
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_TROLL)				{	CreateInvItems(self,ItAt_TrollTeeth,	2);	};	//Hauer eines Trolls
@@ -50,7 +50,7 @@ func void B_GiveDeathInv ()
       };		
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_BLOODHOUND)			{	CreateInvItems(self,ItAt_BloodHoundClaws,2);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_SHADOWBEAST)			{	CreateInvItems(self,ItAt_ShadClaws,4);	};	
-		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_BLACKWOLF)			{	CreateInvItems(self,ItAt_OrcDogClaws,2);	};
+		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_BLACKWOLF)			{	CreateInvItems(self,ItAt_WolfClaws,2);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_ALIGATOR)			{	CreateInvItems(self,ItAt_AligatClaws,4);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_DIRK)			{	CreateInvItems(self,ItAt_DirkClaws,		4); };
 	};
