@@ -22,9 +22,9 @@ instance BlackWolf (Mst_Default_Wolf)
 	protection	[PROT_FLY]			=	5;
 	protection	[PROT_MAGIC]		=	10;
 	
-	Mdl_SetVisual			(self,"Wolf.mds");
+	Mdl_SetVisual(self,"Wolf.mds");
 	//					Body-Mesh		Body-Tex	Skin-Color	Head-MMS	Head-Tex	Teeth-Tex	ARMOR
-	Mdl_SetVisualBody		(self,	"Wol_Body",		2,	DEFAULT,	"",			DEFAULT,  	DEFAULT,	-1);
+	Mdl_SetVisualBody(self,	"Wol_Body",	1,	DEFAULT,	"", DEFAULT, DEFAULT, -1);
 	Mdl_SetModelScale(self, 1.1, 1.1, 1.1);
 	Npc_SetToFistMode(self);
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_BLACKWOLF);
@@ -49,6 +49,7 @@ instance BlackWolfBoss (Mst_Default_Wolf)
 	protection	[PROT_FLY]			=	5;
 	protection	[PROT_MAGIC]		=	10;
 
+	Mdl_SetVisualBody(self,	"Wol_Body",	1,	DEFAULT,	"", DEFAULT, DEFAULT, -1);
 	Mdl_SetModelScale(self, 1.2, 1.2, 1.2);
 	Npc_SetToFistMode(self);
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_BLACKWOLFBOSS);
