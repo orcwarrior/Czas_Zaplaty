@@ -188,13 +188,7 @@ func void B_ClearTraderInv(var c_npc slf,var c_npc oth)//, var int category)
 	var int hasmw;var int hasrw;
 
 	hasmw=0;
-	if(npc_hasreadiedMeleeWeapon(slf))
-	{
-		MeleeWeap=npc_getreadiedweapon(slf);
-		hasmw=1;
-		Npc_RemoveInvItem(slf,hlp_getinstanceid(MeleeWeap));
-	}
-	else if(npc_hasequippedMeleeWeapon(slf))
+	if(npc_hasequippedMeleeWeapon(slf))
 	{
 		MeleeWeap=npc_getequippedMeleeWeapon(slf);
 		hasmw=1;
@@ -203,13 +197,7 @@ func void B_ClearTraderInv(var c_npc slf,var c_npc oth)//, var int category)
 
 	hasrw=0;
 
-	if(npc_hasreadiedRangedWeapon(slf))
-	{
-		RangedWeap=npc_getreadiedweapon(slf);
-		hasrw=1;
-		Npc_RemoveInvItem(slf,hlp_getinstanceid(RangedWeap));
-	}
-	else if(npc_hasequippedRangedWeapon(slf))
+	if(npc_hasequippedRangedWeapon(slf))
 	{
 		RangedWeap=npc_getequippedRangedWeapon(slf);
 		hasrw=1;
@@ -219,12 +207,8 @@ func void B_ClearTraderInv(var c_npc slf,var c_npc oth)//, var int category)
 	b_transfercategory(slf,1,oth);
 	//dont clear armors
 	//b_clearcategory(slf,2);
-	if(self.id==2602)&&(rodneymage_day==1024)
-	{
-	};
-	b_transfercategory(slf,3,oth);//rings runes
-	
 
+	b_transfercategory(slf,3,oth);//rings runes
 	B_TransferCategory(SLF,4,OTH);
 	B_TransferCategory(SLF,5,OTH);
 	B_TransferCategory(SLF,6,OTH);
