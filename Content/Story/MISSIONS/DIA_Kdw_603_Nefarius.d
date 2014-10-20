@@ -233,11 +233,16 @@ FUNC VOID  Info_Nefarius_Stones_Info()
    if (NPC_HasItems(hero,ItMw_2H_RuneSWD_01)>=1)
 	{
 		AI_Output (other, self,"Info_Nefarius_Stones_15_08"); //Oto on.
-		AI_UnequipWeapons(hero);
-		EquipItem(hero,ItMw_2H_RuneSWD_01);
+		var c_item hero_weapon; hero_weapon = Npc_GetEquippedMeleeWeapon(hero);
+		
+		if (!Hlp_IsItem(hero_weapon, ItMw_2H_RuneSWD_01))
+		{
+			Equip_Item(hero, ItMw_2H_RuneSWD_01);
+		};
+		
 		AI_ReadyMeleeWeapon(hero);
 		AI_PlayAni(hero, "T_1HSINSPECT");
-		AI_UnequipWeapons(hero);
+		AI_RemoveWeapon(hero);
 		AI_Output (self, other,"Info_Nefarius_Stones_04_09"); //Cudowny orê¿!
 	}
 	else
