@@ -214,10 +214,10 @@ FUNC VOID Info_Bartender_StigmaMeet_Info()
 	AI_Output (other, self,"Info_Bartender_StigmaMeet_15_01"); //Mam dla Ciebie propozycjê nie do odrzucenia.
 	AI_Output (self, other,"Info_Bartender_StigmaMeet_06_02"); //Pos³uchaj...
 	AI_Output (other, self,"Info_Bartender_StigmaMeet_15_03"); //Nie, to Ty pos³uchaj!
-	AI_DrawWeapon (self);
+	AI_DrawWeapon (hero);
 	AI_Output (other, self,"Info_Bartender_StigmaMeet_15_04"); //Zrobisz co mówiê, albo wytnê Ci kilka dodatkowych otworów.
 	AI_Output (self, other,"Info_Bartender_StigmaMeet_06_05"); //Spokojnie, schowaj ¿elastwo. Dogadamy siê.
-	AI_RemoveWeapon (self);
+	AI_RemoveWeapon (hero);
 	AI_Output (other, self,"Info_Bartender_StigmaMeet_15_06"); //Mam zamiar dowieœæ Krisowi, ¿e to Nia morduje. Pinto jest ze mn¹.
 	AI_Output (other, self,"Info_Bartender_StigmaMeet_15_07"); //Potrzebujê kilku œwiadków, ¿eby Kris nic nie kombinowa³.
 	AI_Output (self, other,"Info_Bartender_StigmaMeet_06_08"); //Wiem, ¿e bêdê tego ¿a³owa³, ale niech bêdzie.
