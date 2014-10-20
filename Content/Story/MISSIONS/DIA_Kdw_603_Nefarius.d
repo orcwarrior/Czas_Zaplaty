@@ -203,7 +203,7 @@ FUNC VOID  Info_Nefarius_All_Info()
 
 // ****************************
 
-instance  Info_Nefarius_Stones (C_INFO)
+instance Info_Nefarius_Stones (C_INFO)
 {
 	npc			=	KDW_603_Nefarius;
 	nr			=	5;
@@ -214,7 +214,7 @@ instance  Info_Nefarius_Stones (C_INFO)
 	description =	"Saturas przys³a³ mnie po kamienie ogniskuj¹ce.";
 };                       
 
-FUNC int  Info_Nefarius_Stones_Condition()
+FUNC int Info_Nefarius_Stones_Condition()
 {
 	return focus_get;
 };
@@ -230,20 +230,19 @@ FUNC VOID  Info_Nefarius_Stones_Info()
 	AI_Output (other, self,"Info_Nefarius_Stones_15_06"); //A wiêc wszystko zaczê³o siê, gdy znalaz³em pewiem miecz... (Rick opowiada historiê miecza runicznego)
 	AI_Output (self, other,"Info_Nefarius_Stones_04_07"); //Niesamowite. Nie s¹dzi³em, ¿e to ostrze w ogóle istnieje. Poka¿esz miecz?
 	
-   if (NPC_HasItems(hero,ItMw_2H_RuneSWD_01)>=1)
+   if (NPC_HasItems(hero, ItMw_2H_RuneSWD_01) >= 1)
 	{
 		AI_Output (other, self,"Info_Nefarius_Stones_15_08"); //Oto on.
 		var c_item hero_weapon; hero_weapon = Npc_GetEquippedMeleeWeapon(hero);
 		
 		if (!Hlp_IsItem(hero_weapon, ItMw_2H_RuneSWD_01))
 		{
-			Equip_Item(hero, ItMw_2H_RuneSWD_01);
+			B_EquipItem(hero, ItMw_2H_RuneSWD_01);
 		};
 		
 		AI_ReadyMeleeWeapon(hero);
 		AI_PlayAni(hero, "T_1HSINSPECT");
 		AI_RemoveWeapon(hero);
-		AI_Output (self, other,"Info_Nefarius_Stones_04_09"); //Cudowny orê¿!
 	}
 	else
 	{
@@ -251,7 +250,36 @@ FUNC VOID  Info_Nefarius_Stones_Info()
 		AI_Output (self, other,"Info_Nefarius_Stones_04_11"); //Szkoda...
 	};
 	
-   AI_Output (self, other,"Info_Nefarius_Stones_04_12"); //W porz¹dku, oddam Ci kamienie, ale pod jednym warunkiem.
+   AI_StopProcessInfos(self);
+};
+
+instance Info_Nefarius_Stones_Part2 (C_INFO)
+{
+	npc			=	KDW_603_Nefarius;
+	nr			=	5;
+	condition	=	Info_Nefarius_Stones_Part2_Condition;
+	information	=	Info_Nefarius_Stones_Part2_Info;
+	permanent	= 0;
+	important 	= 1;
+	description =	".";
+};                       
+
+FUNC int Info_Nefarius_Stones_Part2_Condition()
+{
+	if (Npc_KnowsInfo(hero, Info_Nefarius_Stones))
+	{
+		return 1;
+	};
+};
+
+FUNC VOID Info_Nefarius_Stones_Part2_Info()
+{
+	if (NPC_HasItems(hero, ItMw_2H_RuneSWD_01) >= 1)
+	{
+		AI_Output (self, other,"Info_Nefarius_Stones_04_09"); //Cudowny orê¿!
+	};
+	
+	AI_Output (self, other,"Info_Nefarius_Stones_04_12"); //W porz¹dku, oddam Ci kamienie, ale pod jednym warunkiem.
 	AI_Output (other, self,"Info_Nefarius_Stones_15_13"); //Czego ¿¹dasz w zamian?
 	AI_Output (self, other,"Info_Nefarius_Stones_04_14"); //Jestem pewien, ¿e na terenie obecnej Kolonii Karnej ukryto coœ niezwykle wartoœciowego.
 	AI_Output (self, other,"Info_Nefarius_Stones_04_15"); //Jest to skarb o niewyobra¿alnej wartoœci, spuœcizna wielu narodów, dzie³o, które samym swym istnieniem wprawia w zachwyt tego, kto choæ raz na nie spojrzy!
@@ -263,7 +291,6 @@ FUNC VOID  Info_Nefarius_Stones_Info()
 	
    B_LogEntry(CH4_RBL_FocusStones, "Nefarius odda mi kamienie ogniskuj¹ce w zamian za pomoc w odnalezieniu jakiegoœ legendarnego skarbu. Kto wie, mo¿e upiekê dwie pieczenie przy jednym ogniu?");
 };
-
 // ****************************
 
 instance  Info_Nefarius_Treasure (C_INFO)

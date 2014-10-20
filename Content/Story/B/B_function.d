@@ -141,14 +141,3 @@ func void B_equipment_to_OC()
 		B_LogEntry(CH3_RBL_OldCampSpy, "Najwy¿szy czas pójœæ do pó³nocnej bramy i sprawdziæ czy trunek od Piwosza poskutkuje, a zbroja siê do czegoœ przyda...");
 	};
 };
-
-func void Equip_Item(var C_NPC slf, var int item)
-{
-	if (!Npc_HasItems(slf, item))
-	{
-		return;
-	};
-
-	CALL_PtrParam(MEM_InstToPtr(item));
-	CALL__thiscall(MEM_InstToPtr(slf), oCNpc__Equip_offset);
-};
