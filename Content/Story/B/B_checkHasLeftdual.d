@@ -5,6 +5,14 @@
 
 func void B_checkHasLeftdual()
 {
+	var C_ITEM armor;
+	armor = Npc_GetEquippedArmor(self);
+	
+	if (!Hlp_StrCmp(armor.name, ""))
+	{
+		return;
+	};
+		
 	if (Npc_HasItems(self, ItMw_Dual_01_Left))
 	{
 		AI_UnequipArmor(self);
