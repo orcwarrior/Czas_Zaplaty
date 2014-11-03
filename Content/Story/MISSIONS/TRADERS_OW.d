@@ -5,6 +5,7 @@
 //-Rodney
 //-Riordian
 //-Wilk
+//-Karczmarz z Orlego Gniazda (EN)
 //
 
 // ************************************************************
@@ -14,10 +15,11 @@
 // ************************************************************
 
 // ************************************************************
-// 			  		 VARIBLE
+// 			  		 VARIABLE
 // ************************************************************
 var int Rodney_TradeInvGiven;
 var int Riordian_TradeInvGiven;
+var int Bartender_TradeInvGiven;
 
 // ************************************************************
 // 			  		CONTAINER
@@ -259,3 +261,96 @@ func void KDW_605_Riordian_TRADE_Info()
 	Trade_POTION_Mul	= mulf(Trade_ALL_Mul,1043542835);	//0.175
 	Trade_DOC_Mul	 	= mulf(Trade_ALL_Mul,1045220557);	//0.20
 };
+
+// ************************************************************
+// 			  		CONTAINER
+// ************************************************************
+instance Bartender_Container(Npc_Default)
+{
+	name	=	"Magazynek karczmarza";
+	//trader start inventory
+	CreateInvItems(self, ItMINugget, 500);
+
+	CreateInvItems(self,ItFoMutton,5);
+	CreateInvItems(self,ItFoCheese,2);
+	CreateInvItems(self,ItFoSoup,5);
+	CreateInvItems(self,ItFoWine,10);
+	CreateInvItems(self,ItFo_Gin,10);
+	CreateInvItems(self,ItFo_Addon_Rum,3);
+	CreateInvItems(self,ItFo_Stew,4);
+	CreateInvItems(self,ItFoBeer,10);
+	CreateInvItems(self,ItFo_BeerMug,5);
+
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
+};
+
+// ************************************************************
+// 			  				   EXIT 
+// ************************************************************
+
+INSTANCE Info_Bartender_EXIT(C_INFO)
+{
+	npc			= Grd_657_Gardist;
+	nr			= 999;
+	condition			= Info_Bartender_EXIT_Condition;
+	information			= Info_Bartender_EXIT_Info;
+	permanent			= 1;
+	description 		= DIALOG_ENDE;
+};                       
+
+FUNC INT Info_Bartender_EXIT_Condition()
+{
+	return 1;
+};
+
+FUNC VOID Info_Bartender_EXIT_Info()
+{	
+	Bartender_TradeInvGiven=FALSE;
+	var c_npc container; container = HLP_GetNpc(Bartender_Container);
+	B_ClearTraderInv(self, container);
+	B_StopProcessInfos(self);
+};
+
+// ************************************************************
+
+INSTANCE Info_Bartender_Again (C_INFO)
+{
+	npc			= Grd_657_Gardist;
+	condition		= Info_Bartender_Again_Condition;
+	information		= Info_Bartender_Again_Info;
+	important		= 0;
+	permanent		= 1;
+	nr				   = 990;
+	description 	= "Przep³uka³bym gard³o.";
+	trade 			= 1;
+};                       
+
+FUNC INT Info_Bartender_Again_Condition()
+{	
+	if (Npc_KnowsInfo (hero, Info_Bartender_Hello))
+	{
+		return 1;
+	};
+};
+
+FUNC VOID Info_Bartender_Again_Info()
+{	
+	AI_Output (other, self,"Info_Bartender_Again_15_01"); //Przep³uka³bym gard³o.
+	AI_Output (self, other,"Info_Bartender_Again_06_02"); //Je¿eli tylko masz rudê...
+	
+	if(!Bartender_TradeInvGiven)
+	{
+      var c_npc container; container = HLP_GetNpc(Bartender_Container);
+      B_ClearTraderInv(container, self);		
+	};
+	Bartender_TradeInvGiven=TRUE;
+	
+	//Giving "Friendly" prices
+	Trade_EraseValue();	//BUGFIX has to be in every trade dialog
+	Trade_FOOD_Mul	 	= mulf(Trade_ALL_Mul,1049414861);	//0.275
+};
+

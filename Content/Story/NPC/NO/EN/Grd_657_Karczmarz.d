@@ -38,8 +38,6 @@ instance Grd_657_Gardist (Npc_Default)
 	//-------- inventory --------
 	
 	EquipItem	(self,GRD_MW_01);
-	CreateInvItem	(self,ItFo_Milk);
-	CreateInvItem	(self,ItFo_Stew);
 	CreateInvItem	(self,ItLsTorch);
 	
 	//-------------Daily Routine-------------
@@ -48,8 +46,8 @@ instance Grd_657_Gardist (Npc_Default)
 
 FUNC VOID Rtn_start_657 ()
 {
-	TA_Stand		(03,00,05,00,"NC_EN_TAVERN_BAR");
-	TA_Stand	(05,00,03,00,"NC_EN_TAVERN_BAR");
+	TA_Stand(03,00,05,00,"NC_EN_TAVERN_BAR");
+	TA_Stand(05,00,03,00,"NC_EN_TAVERN_BAR");
 };
 
 

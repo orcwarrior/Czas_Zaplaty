@@ -1,29 +1,3 @@
-
-// ************************************************************
-// 			  				   EXIT 
-// ************************************************************
-
-
-INSTANCE Info_Bartender_EXIT(C_INFO)
-{
-	npc			= Grd_657_Gardist;
-	nr			= 999;
-	condition			= Info_Bartender_EXIT_Condition;
-	information			= Info_Bartender_EXIT_Info;
-	permanent			= 1;
-	description 		= DIALOG_ENDE;
-};                       
-
-FUNC INT Info_Bartender_EXIT_Condition()
-{
-	return 1;
-};
-
-FUNC VOID Info_Bartender_EXIT_Info()
-{	
-	B_StopProcessInfos	(self);
-};
-
 // ************************************************************
 // 		Hello
 // ************************************************************
@@ -41,53 +15,14 @@ INSTANCE Info_Bartender_Hello (C_INFO)
 
 FUNC INT Info_Bartender_Hello_Condition()
 {	
-
-
 	return 1;
-
-
 };
+
 FUNC VOID Info_Bartender_Hello_Info()
 {	
-
 	AI_Output (other, self,"Info_Bartender_Hello_15_00"); //Czym siê zajmujesz?
 	AI_Output (self, other,"Info_Bartender_Hello_06_01"); //Sprzedajê najlepsz¹ ry¿ówkê w tej zapad³ej dziurze.
-
 };
-
-
-
-
-// ************************************************************
-
-INSTANCE Info_Bartender_Again (C_INFO)
-{
-	npc			= Grd_657_Gardist;
-	nr			= 2;
-	condition		= Info_Bartender_Again_Condition;
-	information		= Info_Bartender_Again_Info;
-	important		= 0;
-	permanent		= 1;
-	description 		= "Przep³uka³bym gard³o.";
-	trade 			= 1;
-};                       
-
-FUNC INT Info_Bartender_Again_Condition()
-{	
-
-	if (Npc_KnowsInfo (hero, Info_Bartender_Hello))
-	{
-		return 1;
-	};
-
-};
-FUNC VOID Info_Bartender_Again_Info()
-{	
-	AI_Output (other, self,"Info_Bartender_Again_15_01"); //Przep³uka³bym gard³o.
-	AI_Output (self, other,"Info_Bartender_Again_06_02"); //Je¿eli tylko masz rudê...
-};
-
-
 
 // ************************************************************
 
@@ -127,9 +62,7 @@ FUNC VOID Info_Bartender_Stigma_Info()
 	AI_TurnToNpc (self, other);
 	AI_Output (self, other,"Info_Bartender_Stigma_06_10"); //200 bry³ek, wróæ jak siê zdecydujesz.
 
-
 };
-
 
 // ************************************************************
 
@@ -147,13 +80,12 @@ INSTANCE Info_Bartender_Stigma1 (C_INFO)
 
 FUNC INT Info_Bartender_Stigma1_Condition()
 {	
-
 	if (Npc_KnowsInfo (hero, Info_Bartender_Stigma))&&(NPC_HasItems(other,ItMiNugget)>=200)
 	{
 		return 1;
 	};
-
 };
+
 FUNC VOID Info_Bartender_Stigma1_Info()
 {	
 	investigation = investigation + 1;
@@ -182,8 +114,6 @@ FUNC VOID Info_Bartender_Stigma1_Info()
 	AI_Output (self, other,"Info_Bartender_Stigma1_06_19"); //A teraz daj mi spokój, nie chcê, ¿eby ktoœ widzia³ jak z Tob¹ rozmawiam.
 	B_LogEntry		(CH4_Non_Eagle, "Ta historia z zabójstwami nabiera rumieñców. Karczmarz opowiedzia³ mi ciekaw¹ historiê. Znamiê, zanim straci³ jêzyk, by³ doœæ rozmowny. Twierdzi³, ¿e Nia to niebezpieczna kobieta, dla której liczy siê tylko w³adza i ostra zabawa. Ober¿ysta zwróci³ uwagê na to, ¿e zabójstwa rozpoczê³y siê po tym jak Hrabia opuœci³ Gniazdo. Ciekawe czego jeszcze siê dowiem?");
 };
-
-
 
 // ************************************************************
 

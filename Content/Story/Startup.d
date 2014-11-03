@@ -2852,6 +2852,7 @@ func void STARTUP_HandlerContainers()
 	Wld_InsertNpc(Vam_Container,	"INVISIBLE9");
 	Wld_InsertNpc(Riordian_Container, "INVISIBLE9"); //dodane 2012-11-14
 	Wld_InsertNpc(Wolf_Container,	"INVISIBLE9"); //dodane 2012-11-14
+	Wld_InsertNpc(Bartender_Container, "INVISIBLE9");
 };	
 
 func void STARTUP_NewsNPC()
