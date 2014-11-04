@@ -47,14 +47,13 @@ instance SLV_640_Slave (Npc_Default)
 
 FUNC VOID Rtn_start_640 ()
 {
-	TA_RepairHut	(00,10,10,10,"NC_EN_BARACK_REPAIR_04");
-    TA_SlaveRest    (10,10,16,10,"NC_EN_SLVCAMP_03");		
-	TA_RepairHut	(16,10,00,10,"NC_EN_BARACK_REPAIR_04");
+	TA_RepairHut(00,10,10,10,"NC_EN_BARACK_REPAIR_04");
+   TA_SlaveRest(10,10,16,10,"NC_EN_SLVCAMP_03");		
+	TA_RepairHut(16,10,00,10,"NC_EN_BARACK_REPAIR_04");
 };
 
 FUNC VOID Rtn_prestart_640 ()
 {
-    TA_SlaveRest    (10,00,22,00,"NC_EN_MAINPATH_05");	
-    TA_SlaveRest    (22,00,10,00,"NC_EN_MAINPATH_05");			
-
+   TA_Drained_YBerion(10,00,22,00,"NC_EN_MAINPATH_05");	
+   TA_Drained_YBerion(22,00,10,00,"NC_EN_MAINPATH_05");			
 };
