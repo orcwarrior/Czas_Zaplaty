@@ -193,19 +193,19 @@ INSTANCE MIS_PACHOTROLL	(Mst_Default_Troll)
 	senses							=	SENSE_HEAR | SENSE_SEE | SENSE_SMELL;
 	senses_range					=	4000;
 
- Npc_SetAivar(self,AIV_MM_Behaviour,			 PASSIVE);
+	Npc_SetAivar(self,AIV_MM_Behaviour,			 PASSIVE);
 	
- Npc_SetAivar(self,AIV_MM_PercRange,			 3000);
- Npc_SetAivar(self,AIV_MM_DrohRange,			 2500);
- Npc_SetAivar(self,AIV_MM_AttackRange,		 2000);
- Npc_SetAivar(self,AIV_MM_DrohTime,			 5);
- Npc_SetAivar(self,AIV_MM_FollowTime,		 10);
- Npc_SetAivar(self,AIV_MM_FollowInWater,		 FALSE);
+	Npc_SetAivar(self,AIV_MM_PercRange,			 3000);
+	Npc_SetAivar(self,AIV_MM_DrohRange,			 2500);
+	Npc_SetAivar(self,AIV_MM_AttackRange,		 2000);
+	Npc_SetAivar(self,AIV_MM_DrohTime,			 5);
+	Npc_SetAivar(self,AIV_MM_FollowTime,		 10);
+	Npc_SetAivar(self,AIV_MM_FollowInWater,		 FALSE);
 
 	start_aistate				= ZS_MM_AllScheduler;
 
- Npc_SetAivar(self,AIV_MM_RestStart, 	 OnlyRoutine);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);	
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  180);
+	Npc_SetAivar(self,AIV_MM_RestStart, 	 OnlyRoutine);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN, 9999);	
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  180);
 	B_SetMonsterLevel();	
 };
