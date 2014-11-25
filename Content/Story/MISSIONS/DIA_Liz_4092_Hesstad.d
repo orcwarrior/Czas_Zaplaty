@@ -352,6 +352,9 @@ FUNC VOID DIA_Hess_HelpOk_Info()
 	Log_SetTopicStatus(CH5_NON_OrCHunting, LOG_RUNNING);
 	B_LogEntry(CH5_NON_OrCHunting, "Hesstad ma œwietny plan - wyr¿n¹æ ca³y obóz orków! No nic, skoro ju¿ da³em s³owo, nie bêdê go cofa³. Na szczêœcie wystarczy 'tylko' wyr¿n¹æ wszystkich dowódców i genera³a co w sumie wychodzi na to samo, bo aby siê do nich dostaæ musimy przebiæ siê przez orkowy obóz. Aha - Hesstad nie mo¿e zgin¹æ, bo wtedy ten ich Pradawny mo¿e urz¹dziæ w Kolonii niez³y bajzel.");
 	
+	Party_AddNpc(self);
+	Npc_ExchangeRoutine(self, "GD1");
+	
 	Wld_InsertNpc(OrcGen1, "ORC_GEN12");
 	Wld_InsertNpc(OrcElite1, "ORC_ELITE_TRAIN1");	
 	Wld_InsertNpc(OrcElite1, "ORC_ELITE_TRAIN2");
@@ -362,9 +365,6 @@ FUNC VOID DIA_Hess_HelpOk_Info()
 	Wld_InsertNpc(OrcElder, "ORC_ELDER");
 	Wld_InsertNpc(OrcElite1, "ORK_ELITE1");	
 	Wld_InsertNpc(OrcElite1, "ORK_ELITE2");	
-	
-	Party_AddNpc(self);
-	Npc_ExchangeRoutine	(self, "GD1");
 };
 
 INSTANCE DIA_Hess_Help1(C_INFO)
@@ -392,6 +392,8 @@ FUNC VOID DIA_Hess_Help1_Info()
 	AI_GotoNpc(hero, self);
 	AI_Output (self, other, "DIA_Hess_Help1_11_01"); //Przyb¹dŸcie wojownicy, czas przelaæ orkow¹ krew!
 
+	Npc_ExchangeRoutine(self, "GD2");	
+	
 	Wld_InsertNpc(DraconianScout, "OW_ORC_PATH");
 	Wld_InsertNpc(DraconianScout, "OW_ORC_PATH");
 
@@ -401,7 +403,6 @@ FUNC VOID DIA_Hess_Help1_Info()
 	
 	Wld_InsertNpc(DraconianOfficer, "OW_ORC_PATH");
 	
-	Npc_ExchangeRoutine	(self, "GD2");	
 	B_StopProcessInfos(self);	
 };	
 
@@ -430,14 +431,15 @@ FUNC VOID DIA_Hess_Help11_Info()
 	AI_GotoNpc(hero, self);
 	AI_Output (self, other, "DIA_Hess_Help11_11_01"); //Wzywam was bracia, stañcie u mego boku!
 
+	Npc_ExchangeRoutine(self, "GD3");
+	
 	Wld_InsertNpc(DraconianScout, "OW_ORC_PATH_06_1");
 	Wld_InsertNpc(DraconianScout, "OW_ORC_PATH_06_1");
-		Wld_InsertNpc(DraconianScout, "OW_ORC_PATH_06_1");
+	Wld_InsertNpc(DraconianScout, "OW_ORC_PATH_06_1");
 	Wld_InsertNpc(DraconianSolidier, "OW_ORC_PATH_06_1");
 	Wld_InsertNpc(DraconianSolidier, "OW_ORC_PATH_06_1");
 	Wld_InsertNpc(DraconianOfficer, "OW_ORC_PATH_06_1");
 	
-	Npc_ExchangeRoutine	(self, "GD3");	
 	B_StopProcessInfos(self);	
 };	
 
@@ -466,13 +468,14 @@ FUNC VOID DIA_Hess_Help111_Info()
 	AI_GotoNpc(hero, self);
 	AI_Output (self, other, "DIA_Hess_Help11_111_01"); //Odpowiedzcie na zew ognia!
 
+	Npc_ExchangeRoutine(self, "GD4");
+	
 	Wld_InsertNpc(DraconianScout, "OW_ORC_PATH_06_10");
 	Wld_InsertNpc(DraconianSolidier, "OW_ORC_PATH_06_10");
 	Wld_InsertNpc(DraconianSolidier, "OW_ORC_PATH_06_10");
 	Wld_InsertNpc(DraconianSolidier, "OW_ORC_PATH_06_10");
 	Wld_InsertNpc(DraconianOfficer, "OW_ORC_PATH_06_10");
-	
-	Npc_ExchangeRoutine	(self, "GD4");	
+		
 	B_StopProcessInfos(self);	
 };	
 
@@ -501,13 +504,14 @@ FUNC VOID DIA_Hess_Help1111_Info()
 	AI_GotoNpc(hero, self);
 	AI_Output (self, other, "DIA_Hess_Help11_1111_01"); //Czas na ostateczn¹ walkê! Do mnie bracia!
 
+	Npc_ExchangeRoutine(self, "GD5");	
+	
 	Wld_InsertNpc(DraconianScout, "OW_ORC_BOSS2");
 	Wld_InsertNpc(DraconianScout, "OW_ORC_BOSS2");
 	Wld_InsertNpc(DraconianSolidier, "OW_ORC_BOSS2");
 	Wld_InsertNpc(DraconianSolidier, "OW_ORC_BOSS2");
 	Wld_InsertNpc(DraconianOfficer, "OW_ORC_BOSS2");	
 	
-	Npc_ExchangeRoutine	(self, "GD5");	
 	B_StopProcessInfos(self);	
 };	
 
@@ -549,9 +553,9 @@ Niech wszystkie ¿ywe jaszczurki udaj¹ siê do krêgu tam siê przeprowadzi mod³y
 *******************/
 
 	Party_RemoveNpc(self);
-	Npc_ExchangeRoutine	(self, "START");
+	Npc_ExchangeRoutine(self, "START");
 	B_StopProcessInfos(self);
-	AI_Teleport  (self, "START");
+	AI_Teleport(self, "START");
 };
 
 INSTANCE DIA_Hess_Orks2 (C_INFO)
