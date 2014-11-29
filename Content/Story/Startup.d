@@ -1965,9 +1965,9 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 
 	
 	//----------------------------SUMPF-------------------------------------
-	Wld_InsertNpc(DraconianSolidier, "PATH_NEW_AROUND_PSI29");
-	Wld_InsertNpc(DraconianSolidier, "PATH_NEW_AROUND_PSI28");
-	Wld_InsertNpc(DraconianSolidier, "PATH_NEW_AROUND_PSI23");
+	Wld_InsertNpc(DraconianSoldier, "PATH_NEW_AROUND_PSI29");
+	Wld_InsertNpc(DraconianSoldier, "PATH_NEW_AROUND_PSI28");
+	Wld_InsertNpc(DraconianSoldier, "PATH_NEW_AROUND_PSI23");
 	Wld_InsertNpc(DraconianScout, "PATH_NEW_AROUND_PSI25");
 	Wld_InsertNpc(DraconianScout, "PATH_NEW_AROUND_PSI27");		
 	Wld_InsertNpc(DraconianOfficer, "PATH_NEW_AROUND_PSI26");	
@@ -1979,10 +1979,10 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_InsertNpc(Bloodfly, "PATH_NEW_AROUND_PSI21");					
 	Wld_InsertNpc(Bloodfly, "PATH_NEW_AROUND_PSI21");	
 	Wld_InsertNpc(DraconianScout, "PATH_NEW_AROUND_PSI17");  		
-	Wld_InsertNpc(DraconianSolidier, "PATH_NEW_AROUND_PSI17");			
-	Wld_InsertNpc(DraconianSolidier, "PATH_NEW_AROUND_PSI20");  		
-	Wld_InsertNpc(DraconianSolidier, "PATH_NEW_AROUND_PSI20C");	
-	Wld_InsertNpc(DraconianSolidier, "PATH_NEW_AROUND_PSI18");
+	Wld_InsertNpc(DraconianSoldier, "PATH_NEW_AROUND_PSI17");			
+	Wld_InsertNpc(DraconianSoldier, "PATH_NEW_AROUND_PSI20");  		
+	Wld_InsertNpc(DraconianSoldier, "PATH_NEW_AROUND_PSI20C");	
+	Wld_InsertNpc(DraconianSoldier, "PATH_NEW_AROUND_PSI18");
 	Wld_InsertNpc(SwampGolem, "PATH_NEW_AROUND_PSI18_2");
 	Wld_InsertNpc(Skeleton2HAxeWarrior, "PATH_NEW_AROUND_PSI16");
 	Wld_InsertNpc(Skeleton2HAxeWarrior, "PATH_NEW_AROUND_PSI16");
@@ -2003,8 +2003,8 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_InsertNpc(Bloodfly, "OW_PATH_BLOODFLY08_SPAWN01");		
 	Wld_InsertNpc(SwampShark, "PATH_AROUND_PSI17");	
 	Wld_InsertNpc(SwampGolem, "PATH_AROUND_PSI12");	
-	Wld_InsertNpc(DraconianSolidier, "PATH_TAKEHERB_2_2");	
-	Wld_InsertNpc(DraconianSolidier, "PATH_TAKEHERB_2_2");	
+	Wld_InsertNpc(DraconianSoldier, "PATH_TAKEHERB_2_2");	
+	Wld_InsertNpc(DraconianSoldier, "PATH_TAKEHERB_2_2");	
 	Wld_InsertNpc(DraconianScout, "PATH_TAKE_HERB_2_1");		
 	Wld_InsertNpc(DraconianScout, "PATH_TAKE_HERB_2_1_MOVEMENT");		
 	Wld_InsertNpc(DraconianOfficer, "PATH_TAKE_HERB_MOVEMENT2");		
@@ -2023,12 +2023,12 @@ FUNC VOID STARTUP_SUB_SURFACE ()
 	Wld_InsertNpc(Lurker, "PATH_TAKE_HERB_022");		
 	Wld_InsertNpc(Lurker, "PATH_TAKE_HERB_021");
 	Wld_InsertNpc(SwampGolem, "PATH_TAKE_HERB_020");
-	Wld_InsertNpc(DraconianSolidier, "PATH_TAKE_HERB_03");	
-	Wld_InsertNpc(DraconianSolidier, "PATH_TAKE_HERB_03");		
+	Wld_InsertNpc(DraconianSoldier, "PATH_TAKE_HERB_03");	
+	Wld_InsertNpc(DraconianSoldier, "PATH_TAKE_HERB_03");		
 	Wld_InsertNpc(DraconianScout, "PATH_TAKE_HERB_04");		
 	Wld_InsertNpc(DraconianOfficer, "PATH_TAKE_HERB_02");		
-	Wld_InsertNpc(DraconianSolidier, "PATH_TAKE_HERB_03_MOVEMENT");		
-	Wld_InsertNpc(DraconianSolidier, "PATH_TAKE_HERB_03_MOVEMENT2");		
+	Wld_InsertNpc(DraconianSoldier, "PATH_TAKE_HERB_03_MOVEMENT");		
+	Wld_InsertNpc(DraconianSoldier, "PATH_TAKE_HERB_03_MOVEMENT2");		
 	Wld_InsertNpc(Aligator, "PATH_TAKE_HERB_05");		
 	Wld_InsertNpc(Aligator, "PATH_TAKE_HERB_05");		
 	Wld_InsertNpc(Waran, "PATH_TAKE_HERB_06_MOVEMENT2");		

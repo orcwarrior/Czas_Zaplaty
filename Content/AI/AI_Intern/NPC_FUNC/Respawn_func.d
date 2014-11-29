@@ -161,7 +161,7 @@ func int Respawn__RealIDToInstance(var int realID)
 	else if (realID==ID_FIREWISP) { return Wisp_Fire; }
 	else if (realID==ID_BLACKGOBBOWARRIOR) { return BlackGobboWarrior; }	
 	else if (realID==ID_BLACKWOLFBOSS) { return BlackWolfBoss; }
-	else if (realID==ID_DRACONIANSOLIDER) { return DraconianSolidier; }
+	else if (realID==ID_DRACONIANSOLDIER) { return DraconianSoldier; }
 	else if (realID==ID_DRACONIANOFFICER) { return DraconianOfficer; }
 	else if (realID==ID_DRAGON) { return Dragon_Fire; }
 	else if (realID==ID_GOBBOSWORD) { return GreenGobboSword; }

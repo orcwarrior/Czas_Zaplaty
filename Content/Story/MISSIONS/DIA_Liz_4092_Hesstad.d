@@ -380,7 +380,7 @@ INSTANCE DIA_Hess_Help1(C_INFO)
 
 FUNC INT DIA_Hess_Help1_Condition()
 {
-	if (Npc_KnowsInfo (hero, DIA_Hess_Help))&&(Npc_GetDistToWP(self,"OW_ORC_PATH") < 500)
+	if (Npc_KnowsInfo (hero, DIA_Hess_Help))&&(Npc_GetDistToWP(self,"OW_ORC_PATH") < 1000)
 	{
 		return 1;
 	};
@@ -394,14 +394,14 @@ FUNC VOID DIA_Hess_Help1_Info()
 
 	Npc_ExchangeRoutine(self, "GD2");	
 	
-	Wld_InsertNpc(DraconianScout, "OW_ORC_PATH");
-	Wld_InsertNpc(DraconianScout, "OW_ORC_PATH");
+	Wld_InsertNpc(DraconianScoutFriendly, "OW_ORC_PATH");
+	Wld_InsertNpc(DraconianScoutFriendly, "OW_ORC_PATH");
 
-	Wld_InsertNpc(DraconianSolidier, "OW_ORC_PATH");
-	Wld_InsertNpc(DraconianSolidier, "OW_ORC_PATH");
-	Wld_InsertNpc(DraconianSolidier, "OW_ORC_PATH");
+	Wld_InsertNpc(DraconianSoldierFriendly, "OW_ORC_PATH");
+	Wld_InsertNpc(DraconianSoldierFriendly, "OW_ORC_PATH");
+	Wld_InsertNpc(DraconianSoldierFriendly, "OW_ORC_PATH");
 	
-	Wld_InsertNpc(DraconianOfficer, "OW_ORC_PATH");
+	Wld_InsertNpc(DraconianOfficerFriendly, "OW_ORC_PATH");
 	
 	B_StopProcessInfos(self);	
 };	
@@ -419,7 +419,7 @@ INSTANCE DIA_Hess_Help11(C_INFO)
 
 FUNC INT DIA_Hess_Help11_Condition()
 {
-	if (Npc_KnowsInfo (hero, DIA_Hess_Help1))&&(Npc_GetDistToWP(self,"OW_ORC_PATH_06_1") < 500)
+	if (Npc_KnowsInfo (hero, DIA_Hess_Help1))&&(Npc_GetDistToWP(self,"OW_ORC_PATH_06_1") < 1000)
 	{
 		return 1;
 	};
@@ -433,12 +433,12 @@ FUNC VOID DIA_Hess_Help11_Info()
 
 	Npc_ExchangeRoutine(self, "GD3");
 	
-	Wld_InsertNpc(DraconianScout, "OW_ORC_PATH_06_1");
-	Wld_InsertNpc(DraconianScout, "OW_ORC_PATH_06_1");
-	Wld_InsertNpc(DraconianScout, "OW_ORC_PATH_06_1");
-	Wld_InsertNpc(DraconianSolidier, "OW_ORC_PATH_06_1");
-	Wld_InsertNpc(DraconianSolidier, "OW_ORC_PATH_06_1");
-	Wld_InsertNpc(DraconianOfficer, "OW_ORC_PATH_06_1");
+	Wld_InsertNpc(DraconianScoutFriendly, "OW_ORC_PATH_06_1");
+	Wld_InsertNpc(DraconianScoutFriendly, "OW_ORC_PATH_06_1");
+	Wld_InsertNpc(DraconianScoutFriendly, "OW_ORC_PATH_06_1");
+	Wld_InsertNpc(DraconianSoldierFriendly, "OW_ORC_PATH_06_1");
+	Wld_InsertNpc(DraconianSoldierFriendly, "OW_ORC_PATH_06_1");
+	Wld_InsertNpc(DraconianOfficerFriendly, "OW_ORC_PATH_06_1");
 	
 	B_StopProcessInfos(self);	
 };	
@@ -456,7 +456,7 @@ INSTANCE DIA_Hess_Help111(C_INFO)
 
 FUNC INT DIA_Hess_Help111_Condition()
 {
-	if (Npc_KnowsInfo (hero, DIA_Hess_Help11))&&(Npc_GetDistToWP(self,"OW_ORC_PATH_06_10") < 500)
+	if (Npc_KnowsInfo (hero, DIA_Hess_Help11))&&(Npc_GetDistToWP(self,"OW_ORC_PATH_06_10") < 1000)
 	{
 		return 1;
 	};
@@ -470,11 +470,11 @@ FUNC VOID DIA_Hess_Help111_Info()
 
 	Npc_ExchangeRoutine(self, "GD4");
 	
-	Wld_InsertNpc(DraconianScout, "OW_ORC_PATH_06_10");
-	Wld_InsertNpc(DraconianSolidier, "OW_ORC_PATH_06_10");
-	Wld_InsertNpc(DraconianSolidier, "OW_ORC_PATH_06_10");
-	Wld_InsertNpc(DraconianSolidier, "OW_ORC_PATH_06_10");
-	Wld_InsertNpc(DraconianOfficer, "OW_ORC_PATH_06_10");
+	Wld_InsertNpc(DraconianScoutFriendly, "OW_ORC_PATH_06_10");
+	Wld_InsertNpc(DraconianSoldierFriendly, "OW_ORC_PATH_06_10");
+	Wld_InsertNpc(DraconianSoldierFriendly, "OW_ORC_PATH_06_10");
+	Wld_InsertNpc(DraconianSoldierFriendly, "OW_ORC_PATH_06_10");
+	Wld_InsertNpc(DraconianOfficerFriendly, "OW_ORC_PATH_06_10");
 		
 	B_StopProcessInfos(self);	
 };	
@@ -492,7 +492,7 @@ INSTANCE DIA_Hess_Help1111(C_INFO)
 
 FUNC INT DIA_Hess_Help1111_Condition()
 {
-	if (Npc_KnowsInfo (hero, DIA_Hess_Help111))&&(Npc_GetDistToWP(self,"OW_ORC_BOSS2") < 500)
+	if (Npc_KnowsInfo (hero, DIA_Hess_Help111))&&(Npc_GetDistToWP(self,"OW_ORC_BOSS2") < 1000)
 	{
 		return 1;
 	};
@@ -506,11 +506,11 @@ FUNC VOID DIA_Hess_Help1111_Info()
 
 	Npc_ExchangeRoutine(self, "GD5");	
 	
-	Wld_InsertNpc(DraconianScout, "OW_ORC_BOSS2");
-	Wld_InsertNpc(DraconianScout, "OW_ORC_BOSS2");
-	Wld_InsertNpc(DraconianSolidier, "OW_ORC_BOSS2");
-	Wld_InsertNpc(DraconianSolidier, "OW_ORC_BOSS2");
-	Wld_InsertNpc(DraconianOfficer, "OW_ORC_BOSS2");	
+	Wld_InsertNpc(DraconianScoutFriendly, "OW_ORC_BOSS2");
+	Wld_InsertNpc(DraconianScoutFriendly, "OW_ORC_BOSS2");
+	Wld_InsertNpc(DraconianSoldierFriendly, "OW_ORC_BOSS2");
+	Wld_InsertNpc(DraconianSoldierFriendly, "OW_ORC_BOSS2");
+	Wld_InsertNpc(DraconianOfficerFriendly, "OW_ORC_BOSS2");	
 	
 	B_StopProcessInfos(self);	
 };	
@@ -546,7 +546,7 @@ FUNC VOID DIA_Hess_Orks_Info()
 	AI_Output (self, other, "DIA_Hess_Orks_11_05"); //Znajdziesz mnie tam œmiertelniku gdzie wszystko siê zaczê³o.
 
 	Log_SetTopicStatus(CH5_NON_OrCHunting, LOG_SUCCESS);
-	B_LogEntry(CH5_NON_OrCHunting, "Uda³o siê, orkowie gryz¹ ziemiê. Hesstad powiedzia³, ¿e znajdê go tam gdzie wszystko siê zaczê³o. W¹tpiê w istnienie tego ich Ojca Smoków, ale kto wie...");
+	B_LogEntry(CH5_NON_OrCHunting, "Uda³o siê, orkowie gryz¹ ziemiê. Hesstad powiedzia³, ¿e znajdê go tam, gdzie wszystko siê zaczê³o. W¹tpiê w istnienie tego ich Ojca Smoków, ale kto wie...");
 
 	/******************
 Niech wszystkie ¿ywe jaszczurki udaj¹ siê do krêgu tam siê przeprowadzi mod³y
@@ -555,7 +555,6 @@ Niech wszystkie ¿ywe jaszczurki udaj¹ siê do krêgu tam siê przeprowadzi mod³y
 	Party_RemoveNpc(self);
 	Npc_ExchangeRoutine(self, "START");
 	B_StopProcessInfos(self);
-	AI_Teleport(self, "START");
 };
 
 INSTANCE DIA_Hess_Orks2 (C_INFO)
@@ -571,7 +570,7 @@ INSTANCE DIA_Hess_Orks2 (C_INFO)
 
 FUNC INT DIA_Hess_Orks2_Condition()
 {
-	if (Npc_KnowsInfo (hero, DIA_Hess_Orks))&&(Npc_GetDistToNpc(self,hero) < 1500)
+	if (Npc_KnowsInfo (hero, DIA_Hess_Orks))&&(Npc_GetDistToNpc(self,hero) < 1500)&&(Npc_GetDistToWP(self, "PSI_TELEPORT") < 1000)
 	{
 		return 1;
 	};

@@ -129,7 +129,7 @@ CONST INT ONLYROUTINE=-1;
 	CONST INT ID_BLACKGOBBOWARRIOR			 = 52; // BlackGobboWarrior | 4 | 15
 	
 	CONST INT ID_BLACKWOLFBOSS				 = 54; // BlackWolfBoss
-	CONST INT ID_DRACONIANSOLIDER			 = 55; // DraconianSolidier | 9  | 60
+	CONST INT ID_DRACONIANSOLDIER			 = 55; // DraconianSoldier | 9  | 60
 	CONST INT ID_DRACONIANOFFICER			 = 56; // DraconianOfficer | 13 | 75
 	CONST INT ID_DRAGON						 = 57; // Dragon_Fire/oth.. | X | 500
 	CONST INT ID_GOBBOSWORD					 = 58; // GreenGobboSword | 3 | 8	

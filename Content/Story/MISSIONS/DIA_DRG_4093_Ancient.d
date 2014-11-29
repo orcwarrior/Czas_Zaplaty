@@ -27,7 +27,7 @@ FUNC VOID DIA_Ancient_Exit_Info()
 /**************************************************
  					Jaszczury:
 DraconianScout
-DraconianSolidier
+DraconianSoldier
 DraconianOfficer
 Draco1
 Draco2

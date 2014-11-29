@@ -83,8 +83,19 @@ INSTANCE DraconianScout	(Mst_Default_Draconian)
 	//-------- visual --------
 	Set_Draconian1_Visuals();
 
-    Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIANSCOUT);
+   Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIANSCOUT);
 	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  8);	
+	B_SetMonsterLevel();	
+	EquipItem (self, ItMw_Draco_01);
+};
+
+INSTANCE DraconianScoutFriendly(Mst_Default_Draconian)
+{
+	//-------- visual --------
+	Set_Draconian1_Visuals();
+	guild = GIL_NONE;
+
+   Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIANSCOUT);
 	B_SetMonsterLevel();	
 	EquipItem (self, ItMw_Draco_01);
 };
@@ -92,7 +103,7 @@ INSTANCE DraconianScout	(Mst_Default_Draconian)
 /*************************************************************************
 **	Draconian Solidier - avg dmg & edurance 														**
 *************************************************************************/
-INSTANCE DraconianSolidier	(Mst_Default_Draconian)
+INSTANCE DraconianSoldier	(Mst_Default_Draconian)
 {
 	Set_Draconian0_Visuals();	
 	//-------- general --------
@@ -125,7 +136,45 @@ INSTANCE DraconianSolidier	(Mst_Default_Draconian)
 	EquipItem (self, ItMw_Draco_02);
 	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  10);	
 	Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);
-    Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIANSOLIDER);		
+    Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIANSOLDIER);		
+	
+	B_SetMonsterLevel();	
+};
+
+INSTANCE DraconianSoldierFriendly(Mst_Default_Draconian)
+{
+	Set_Draconian0_Visuals();	
+	//-------- general --------
+	name = "Jaszczurocz³ek ¿o³nierz";
+	guild = GIL_NONE;
+	
+	//-------- visual --------
+	Set_Draconian0_Visuals();	
+	
+	level							=	60;
+//----------------------------------------------------------	
+	attribute	[ATR_STRENGTH]		=	270;//+154
+	attribute	[ATR_DEXTERITY]		=	90;
+	
+	attribute	[ATR_HITPOINTS_MAX]	=	580;
+	attribute	[ATR_HITPOINTS]		=	580;
+
+	attribute	[ATR_MANA_MAX] 		=	0;
+	attribute	[ATR_MANA] 			=	0;
+	
+//----------------------------------------------------------	
+	protection	[PROT_BLUNT]		=	95;
+	protection	[PROT_EDGE]			=	110;
+	protection	[PROT_POINT]		=	100;
+	protection	[PROT_FIRE]			=	100;
+	protection	[PROT_FLY]			=	100;
+	protection	[PROT_MAGIC]		=	60;
+//----------------------------------------------------------	
+
+	//-------- inventory --------
+	EquipItem (self, ItMw_Draco_02);	
+	Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);
+   Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIANSOLDIER);		
 	
 	B_SetMonsterLevel();	
 };
@@ -165,6 +214,41 @@ INSTANCE DraconianOfficer	(Mst_Default_Draconian)
 	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  13);	
 	Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);		
     Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIANOFFICER);
+	
+	B_SetMonsterLevel();	
+};
+
+INSTANCE DraconianOfficerFriendly(Mst_Default_Draconian)
+{
+	//-------- general --------
+	name							=	"Oficer jaszczurocz³eków";
+	level							=	75;
+	guild = GIL_NONE;
+	Mdl_SetModelScale(self, 1.1, 1.1, 1.1);
+	Set_Draconian2_Visuals();	
+//----------------------------------------------------------	
+	attribute	[ATR_STRENGTH]		=	350;
+	attribute	[ATR_DEXTERITY]		=	150;
+	
+	attribute	[ATR_HITPOINTS_MAX]	=	700;
+	attribute	[ATR_HITPOINTS]		=	700;
+
+	attribute	[ATR_MANA_MAX] 		=	0;
+	attribute	[ATR_MANA] 			=	0;
+	
+//----------------------------------------------------------	
+	protection	[PROT_BLUNT]		=	120;
+	protection	[PROT_EDGE]			=	150;
+	protection	[PROT_POINT]		=	110;
+	protection	[PROT_FIRE]			=	120;
+	protection	[PROT_FLY]			=	150;
+	protection	[PROT_MAGIC]		=	90;
+//----------------------------------------------------------	
+
+	//-------- inventory --------
+	EquipItem (self, ItMw_Draco_03);
+	Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);		
+   Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIANOFFICER);
 	
 	B_SetMonsterLevel();	
 };
