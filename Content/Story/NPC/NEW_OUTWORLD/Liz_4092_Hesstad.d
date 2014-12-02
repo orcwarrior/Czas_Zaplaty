@@ -9,10 +9,10 @@ instance Liz_4092_Hesstad (Mst_Default_Draconian)
 	//-------- primary data --------
 	
 	name 		=	"Hesstad";
-	npctype 	= 	npctype_main;
+	npctype 	= 	NPCTYPE_FRIEND;
 	guild 		=	GIL_NONE;
 	level 		=	90;
-	voice 		=	11;
+	voice 		=	17;
 	id 			=	4092;
 	spawnDelay	=	NPC_FLAG_BRAVE;
 	
