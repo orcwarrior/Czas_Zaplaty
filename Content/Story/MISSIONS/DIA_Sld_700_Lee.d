@@ -843,7 +843,7 @@ Ork twoja dzia³a. Zabicie skryptem stra¿ników z tamtej stra¿nicy i wsadzenie tam
 hide_clear ();
 **********************************/
 
-	AI_Output (self, other,"DIA_Lee_RBLFound_08_05"); //Kiedy Ciê nie by³y wydarzy³o siê coœ... nieoczekiwanego.
+	AI_Output (self, other,"DIA_Lee_RBLFound_08_05"); //Kiedy Ciê nie by³o, wydarzy³o siê coœ... nieoczekiwanego.
 	AI_Output (other, self,"DIA_Lee_RBLFound_15_06"); //Co tym razem?
 	AI_Output (self, other,"DIA_Lee_RBLFound_08_07"); //W Orlim GnieŸdzie rozgorza³a walka. Nie wiemy dok³adnie co siê sta³o, ale by³o ostro.
 	AI_Output (self, other,"DIA_Lee_RBLFound_08_08"); //Fletcher i jego ludzie zamiast zaatakowaæ chcieli uciekaæ, ale najemnicy zdrowo ich przetrzebili.
