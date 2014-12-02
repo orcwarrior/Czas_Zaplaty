@@ -75,13 +75,13 @@ FUNC int  DIA_Fletcher_Hello_Condition()
 
 func void  DIA_Fletcher_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Fletcher_Hello_15_00"); //GroŸnie wygl¹dasz.
-	AI_Output (self, other,"DIA_Fletcher_Hello_06_01"); //Bo jestem niebezpiecznym cz³owiekiem. Nie znam Ciê. Sk¹d siê tu wzi¹³eœ?
-	AI_Output (other, self,"DIA_Fletcher_Hello_15_02"); //By³em na patrolu, mieliœmy pecha, napatoczyliœmy siê na bandê z Obozu Rebeliantów. I oto jestem...
-	AI_Output (self, other,"DIA_Fletcher_Hello_06_03"); //Hmm. Rzeczywiœcie czekaliœmy na wsparcie, ale nie jednoosobowe.
-	AI_Output (other, self,"DIA_Fletcher_Hello_15_04"); //Na razie muszê Ci wystarczyæ.
-	AI_Output (self, other,"DIA_Fletcher_Hello_06_05"); //Coœ jeszcze?
-	AI_Output (other, self,"DIA_Fletcher_Hello_15_06"); //Nic, pójdê siê czegoœ napiæ, mia³em ciê¿ki dzieñ.
+	AI_Output (other, self,"DIA_Fletcher_HelloCZ_15_00"); //GroŸnie wygl¹dasz.
+	AI_Output (self, other,"DIA_Fletcher_HelloCZ_06_01"); //Bo jestem niebezpiecznym cz³owiekiem. Nie znam Ciê. Sk¹d siê tu wzi¹³eœ?
+	AI_Output (other, self,"DIA_Fletcher_HelloCZ_15_02"); //By³em na patrolu, mieliœmy pecha, napatoczyliœmy siê na bandê z Obozu Rebeliantów. I oto jestem...
+	AI_Output (self, other,"DIA_Fletcher_HelloCZ_06_03"); //Hmm. Rzeczywiœcie czekaliœmy na wsparcie, ale nie jednoosobowe.
+	AI_Output (other, self,"DIA_Fletcher_HelloCZ_15_04"); //Na razie muszê Ci wystarczyæ.
+	AI_Output (self, other,"DIA_Fletcher_HelloCZ_06_05"); //Coœ jeszcze?
+	AI_Output (other, self,"DIA_Fletcher_HelloCZ_15_06"); //Nic, pójdê siê czegoœ napiæ, mia³em ciê¿ki dzieñ.
 };	
 
 // ************************************************************
