@@ -538,7 +538,7 @@ Ork Gorn ma byæ gdzieœ w pobli¿u Lee przez ca³y czas, przyda siê dopiero póŸniej
 **********************/
 
 	B_FullStop (hero);
-	AI_GotoNpc(other,self);
+	//AI_GotoNpc(other,self);
 	AI_Output (self, other,"DIA_Lee_RBLBegin_08_01"); //Wróci³em, najwy¿szy czas, ¿eby upuœciæ krwi stra¿nikom.
 	AI_Output (other, self,"DIA_Lee_RBLBegin_15_02"); //Cieszy mnie to! Od czego zaczniemy?
 	AI_Output (self, other,"DIA_Lee_RBLBegin_08_03"); //My?
