@@ -75,9 +75,9 @@ FUNC INT Info_Stigma_Hello1_Condition()
 		return 1;
 	};
 };
+
 FUNC VOID Info_Stigma_Hello1_Info()
 {	
-
 	AI_Output (other, self,"Info_Stigma_Hello1_15_00"); //Przysy³a mnie Nia.
 	AI_Output (self, other,"Info_Stigma_Hello1_06_01"); //(na twarzy mê¿czyzny pojawia siê przera¿enie)
 	AI_Output (other, self,"Info_Stigma_Hello1_15_02"); //Co siê sta³o? Wygl¹dasz jakbyœ zobaczy³ ducha.
@@ -116,9 +116,7 @@ FUNC INT Info_Stigma_Hello2_Condition()
 	};
 };
 FUNC VOID Info_Stigma_Hello2_Info()
-{	
-	var C_NPC nia; nia = Hlp_GetNpc(Non_660_Nia);
-
+{
 	B_FullStop (hero);
 	//AI_GotoNpc(other,self);
 	AI_TurnToNpc (self, other);

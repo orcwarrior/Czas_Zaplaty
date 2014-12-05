@@ -28,6 +28,8 @@ var int B_AfterDialog_Info_OrcGhost_Kill_disabled;
 
 var int B_AfterDialog_Info_Roderic_Gate_disabled;
 
+var int B_AfterDialog_Stigma_Death_disabled;
+
 // Ork: Dodaje "Generici" bo mog¹ sie przydaæ (choæby nekro nas czêsto usmierca
 // i wyglada to obecnie kiepsko. Tutaj w przeciwienstwie do innych AfterDialog'ów ustawiamy zmienna
 // na true w dialogu, a w funkcji po-dialogu zmeni siê na false.
@@ -323,7 +325,23 @@ func void B_AfterDialog_Info_Roderic_Gate(var c_npc talker)
 	B_AfterDialog_Info_Roderic_Gate_disabled = true;
 };
 
-func void 	B_ThingsToDoAfterDialog(var c_npc talker)
+func void B_AfterDialog_Stigma_Death(var c_npc talker)
+{
+	var C_NPC sti; sti = Hlp_GetNpc(Grd_614_Gardist);
+	var C_NPC nia; nia = Hlp_GetNpc(Non_660_Nia);
+	sti.attribute[ATR_HITPOINTS] = sti.attribute[ATR_HITPOINTS_MAX]/10;
+
+	Npc_SetPermAttitude	(sti, ATT_HOSTILE);
+	Npc_SetTarget (self,sti);
+	Npc_SetTarget (sti,nia);
+	AI_StartState (sti,ZS_ATTACK,1,"");
+	B_StartAfterDialogFight(self,sti,true);
+	B_StartAfterDialogFight(sti,nia,true);
+	
+	B_AfterDialog_Stigma_Death_disabled = true;
+};
+
+func void B_ThingsToDoAfterDialog(var c_npc talker)
 {
 	// Fight after a dialog?
 	if(AfterDialogFight_slf)
@@ -431,5 +449,10 @@ func void 	B_ThingsToDoAfterDialog(var c_npc talker)
 	if(Hlp_GetInstanceID(talker)==Roderic)&&(Npc_KnowsInfo(hero,DIA_Roderic_Wheel))&&(!B_AfterDialog_Info_Roderic_Gate_disabled)
 	{
 		B_AfterDialog_Info_Roderic_Gate(talker); 	 	
+	}; 
+	
+	if(Hlp_GetInstanceID(talker)==Grd_611_Gardist)&&(Npc_KnowsInfo(hero, Info_Georg_Again1))&&(!B_AfterDialog_Stigma_Death_disabled)
+	{
+		B_AfterDialog_Stigma_Death(talker); 	 	
 	}; 
 };

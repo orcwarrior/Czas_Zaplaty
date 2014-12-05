@@ -63,7 +63,6 @@ FUNC VOID Rtn_prestart_660 ()
 {
 	TA_Stand		(08,00,22,00,"NIA_INSPECT");
 	TA_Stand		(22,02,08,00,"NIA_INSPECT");
-	
 };
 
 
@@ -74,7 +73,6 @@ FUNC VOID Rtn_wait_660 ()
 	TA_Stand		(08,00,12,02,"NC_EN_TAVERN_02");
 	TA_SitAround	(12,02,19,02,"NC_EN_TAVERN_07");
 	TA_Stand		(19,02,22,00,"NC_EN_TAVERN_02");
-	
 };
 
 

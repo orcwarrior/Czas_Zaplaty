@@ -113,8 +113,6 @@ FUNC INT Info_Georg_Again1_Condition()
 };
 FUNC VOID Info_Georg_Again1_Info()
 {	
-	var C_NPC sti; sti = Hlp_GetNpc(Grd_614_Gardist);
-	var C_NPC nia; nia = Hlp_GetNpc(Non_660_Nia);
 	B_FullStop (hero);
 	AI_GotoNpc(other,self);
 	AI_Output (self, other,"Info_Georg_Again1_06_01"); //Dawno na to czeka³em œwirze!
@@ -122,26 +120,13 @@ FUNC VOID Info_Georg_Again1_Info()
 	AI_Output (other, self,"Info_Georg_Again1_15_02"); //Co tu siê dzieje?!
 	AI_Output (self, other,"Info_Georg_Again1_06_03"); //Zdychaj!
 
-	B_StopProcessInfos	(self);
-	
-	sti.attribute[ATR_HITPOINTS] = (sti.attribute[ATR_HITPOINTS_MAX] - sti.attribute[ATR_HITPOINTS_MAX]);
-
-	Npc_SetPermAttitude	(sti, ATT_HOSTILE);
-	Npc_SetTarget (self,sti);
-	Npc_SetTarget (sti,nia);
-	AI_StartState (sti,ZS_ATTACK,1,"");
-	B_StartAfterDialogFight(self,sti,true);
-	B_StartAfterDialogFight(sti,nia,true);
-
+	B_StopProcessInfos(self);
 
 	/****************************
-Ork trzeba by zrobiæ tak, ¿eby Znamiê rzuci³ siê na Niê a Georg na Znamiê. Georg musi zabiæ Znamiê zanim ten zabije Niê, ale Znamiê musi j¹ co najmniej raniæ.
-Dick niech robi wtedy co chce, ale mo¿e zaatakowaæ tylko Znamiê.
+	Ork trzeba by zrobiæ tak, ¿eby Znamiê rzuci³ siê na Niê a Georg na Znamiê. Georg musi zabiæ Znamiê zanim ten zabije Niê, ale Znamiê musi j¹ co najmniej raniæ.
+	Dick niech robi wtedy co chce, ale mo¿e zaatakowaæ tylko Znamiê.
 
-
-****************************/
-
-
+	****************************/
 };
 
 
