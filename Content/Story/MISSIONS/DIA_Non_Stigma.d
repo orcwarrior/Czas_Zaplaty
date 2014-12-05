@@ -127,7 +127,7 @@ FUNC VOID Info_Stigma_Hello2_Info()
 	AI_Output (other, self,"Info_Stigma_Hello2_15_01"); //S³ucham.
 	AI_PlayAni ( self, "T_SEARCH");
 	AI_TurnToNpc (self, other);
-	AI_Output (self, other,"Info_Stigma_Hello2_06_02"); //(mê¿czyzna gestykuluje rêkami, wskazujê na Niê)
+	AI_Output (self, other,"Info_Stigma_Hello2_06_02"); //(mê¿czyzna gestykuluje rêkami, wskazuje na Niê)
 	AI_Output (other, self,"Info_Stigma_Hello2_15_03"); //Nie rozumiem...
 	AI_DrawWeapon (self);
 	B_StopProcessInfos	(self);
