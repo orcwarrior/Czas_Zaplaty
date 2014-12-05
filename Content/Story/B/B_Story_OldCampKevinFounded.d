@@ -30,10 +30,6 @@ func void B_Story_OldCampKevinFounded()
 	
 	slf.flags		= NPC_FLAG_BRAVE|NPC_FLAG_INSTANTDEATH|NPC_FLAG_KILLER;
 
-	slf = Hlp_GetNPC(GRD_230_Gardist);
-	B_ExchangeRoutine(slf,"HS");	
-	slf.flags		= NPC_FLAG_BRAVE|NPC_FLAG_INSTANTDEATH|NPC_FLAG_KILLER;
-
 	slf = Hlp_GetNPC(GRD_12461_Gardist);
 	B_ExchangeRoutine(slf,"HS");
 	
