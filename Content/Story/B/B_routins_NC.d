@@ -751,11 +751,6 @@ func void B_NC_Free()
 	var C_NPC n22; n22 = Hlp_GetNpc(SLD_750_Soeldner);
 	Npc_ExchangeRoutine	(n22, "NC2");
 
-//NC_PATH_JARVIS - PC_Fighter  NC2 
-
-	var C_NPC n23; n23 = Hlp_GetNpc(PC_Fighter);
-	Npc_ExchangeRoutine	(n23, "NC2");
-
 //NC_MAINGATE_VWHEEL - SLD_751_Soeldner  NC2
 
 	var C_NPC n24; n24 = Hlp_GetNpc(SLD_751_Soeldner);
