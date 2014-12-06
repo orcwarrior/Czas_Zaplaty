@@ -141,11 +141,11 @@ PROTOTYPE Nameless_Hero(C_NPC)
 	attribute	[ATR_MANA_MAX] 	=		50;
 	attribute	[ATR_MANA] 		=		50;
 	
-	protection	[PROT_EDGE]		=		0;
-	protection	[PROT_BLUNT]	=		0;
-	protection	[PROT_POINT]	=		0;
-	protection	[PROT_FIRE]		=		0;
-	protection	[PROT_MAGIC]	=		0;	
+	protection	[PROT_EDGE]		=		9999;
+	protection	[PROT_BLUNT]	=		9999;
+	protection	[PROT_POINT]	=		9999;
+	protection	[PROT_FIRE]		=		9999;
+	protection	[PROT_MAGIC]	=		9999;	
 
 	attribute	[ATR_HITPOINTS_MAX] 	=	3000;
 	attribute	[ATR_HITPOINTS] 		=	3000;
