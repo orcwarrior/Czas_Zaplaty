@@ -130,10 +130,6 @@ func void DIA_Cup_What_Drunk()
 	B_StopProcessInfos	(self); 
 };
 
-
-
-
-
 INSTANCE DIA_Cup_Again (C_INFO)
 {
 	npc				= RBL_2619_Cup;
@@ -147,13 +143,10 @@ INSTANCE DIA_Cup_Again (C_INFO)
 
 FUNC INT DIA_Cup_Again_Condition()
 {
-
 	if (Npc_KnowsInfo(other,DIA_Hark_Again))&&(hark_trial == 3)
 	{ 
 		return TRUE; 
 	}; 
-
-
 };
 
 FUNC VOID DIA_Cup_Again_Info()
@@ -168,8 +161,6 @@ FUNC VOID DIA_Cup_Again_Info()
 	B_StopProcessInfos	(self);
 	B_StartAfterDialogFight(self,hark,false);
 	B_StartAfterDialogFight(hark,self,false);
-	Npc_ExchangeRoutine	(self,"start");//normal routine outside tavern, too
-	Npc_ExchangeRoutine	(hark,"start");//normal routine outside tavern, too
 };
 
 

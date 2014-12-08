@@ -198,6 +198,7 @@ FUNC INT DIA_Hark_Again1_Condition()
 
 FUNC VOID DIA_Hark_Again1_Info()
 {
+	var C_NPC cup; cup = Hlp_GetNpc(RBL_2619_Cup);
 	B_GiveXP(150);
 	hark_trial = hark_trial  +1;//5
    
@@ -209,6 +210,9 @@ FUNC VOID DIA_Hark_Again1_Info()
 	
    B_LogSetTopicStatus(CH1_Rbl_Hark, LOG_SUCCESS);
 	B_LogEntry(CH1_Rbl_Hark, "Sprawa z Harkiem i Kuflem za³atwiona. Trzeba przyznaæ, ¿e rozrywkowi ci rebelianci.");
+	
+	Npc_ExchangeRoutine(self,"start");//normal routine outside tavern, too
+	Npc_ExchangeRoutine(cup,"start");//normal routine outside tavern, too
 };
 
 INSTANCE DIA_Hark_Again2 (C_INFO)
