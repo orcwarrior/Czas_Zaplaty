@@ -158,6 +158,7 @@ FUNC VOID DIA_Cup_Again_Info()
 	AI_Output (self, other, "DIA_Cup_Again_11_04"); //Tego ju¿ za wiele. Idê skopaæ mu to t³uste dupsko!
 	var c_npc hark; hark = hlp_getnpc(RBL_2618_HARK);
 
+	Npc_SetAivar(self, AIV_BEENATTACKED, 0);
 	B_StopProcessInfos	(self);
 	B_StartAfterDialogFight(self,hark,false);
 	B_StartAfterDialogFight(hark,self,false);
