@@ -114,12 +114,6 @@ func void B_kill_guard_in_NC()
       B_KillNpc(Grd_2535_PatrolGRD);
    };	
 
-	var C_NPC scatty; scatty = Hlp_GetNpc(GRD_900_Scatty);
-	if (!Npc_isDead(scatty))
-   {
-      B_KillNpc(GRD_900_Scatty);
-   };	
-
 	var C_NPC n90; n90 = Hlp_GetNpc(Grd_2539_PatrolGRD);
 	if (!Npc_isDead(n90))
    {
@@ -232,5 +226,11 @@ func void B_kill_guard_in_NC()
 	if (!Npc_isDead(n111))
    {
       B_KillNpc(Grd_682_PatrolGRD);
+   };
+	
+	var C_NPC grd20300; grd20300 = Hlp_GetNpc(GRD_20300_Gardist);
+	if (!Npc_isDead(grd20300))
+   {
+      B_KillNpc(GRD_20300_Gardist);
    };
 };

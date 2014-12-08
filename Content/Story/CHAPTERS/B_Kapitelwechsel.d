@@ -72,6 +72,11 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 	//***************************************************************************
 	else if (neues_Kapitel == 5)
 	{
+		B_KillNpc(GRD_900_Scatty);
+		B_KillNpc(GRD_2538_Kil);
+		B_KillNpc(GRD_2520_Thug);
+		B_KillNpc(GRD_2521_Thug);
+		
 		//PrintDebugNpc	(PD_MISSION, "---=== DAS FÜNFTE KAPITEL ===---");
 		introducechapter ("Rozdzia³ 5","Wysoka stawka","chapter5.tga","chapter.wav", 6000);
 		//introducechapter ("Chapter 5","The custodians of the portal","chapter5.tga","chapter.wav", 6000);
