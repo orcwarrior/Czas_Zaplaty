@@ -188,9 +188,9 @@ INSTANCE DIA_Hark_Again1 (C_INFO)
 
 FUNC INT DIA_Hark_Again1_Condition()
 {
-	//var C_NPC cup; cup = Hlp_GetNpc(RBL_2619_Cup);
+	var C_NPC cup; cup = Hlp_GetNpc(RBL_2619_Cup);
 
-	if (Npc_KnowsInfo(other,DIA_Cup_Again))&&(hark_trial == 4)
+	if (Npc_KnowsInfo(other,DIA_Cup_Again)) && (hark_trial == 4) && (Npc_GetAivar(cup, AIV_BEENATTACKED) == TRUE)
 	{ 
 		return TRUE; 
 	}; 
