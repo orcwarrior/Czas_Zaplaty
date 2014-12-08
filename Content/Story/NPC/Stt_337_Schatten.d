@@ -43,6 +43,7 @@ instance STT_337_Schatten (Npc_Default)
 	CreateInvItem	(self,ItFo_Potion_Water_01);
 	CreateInvItem	(self,ItFoApple);
 	CreateInvItem	(self,ItKeLockpick);
+	CreateInvItem	(self,ItMi_Stuff_OldCoin_02);
 	
 	
 	//-------------Daily Routine-------------

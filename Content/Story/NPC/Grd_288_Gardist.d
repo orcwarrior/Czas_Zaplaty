@@ -44,7 +44,9 @@ instance GRD_288_Gardist (Npc_Default)
 	CreateInvItems	(self,ItMiNugget,20);
 	CreateInvItem	(self,ItFo_Potion_Health_01);
 	CreateInvItem	(self,ItLsTorch);
+	CreateInvItem	(self,ItMi_Stuff_OldCoin_02);
 	CreateInvItem	 (self,ItRw_Crossbow_01 );
+	CreateInvItem	(self,ItMi_Stuff_OldCoin_02);
 
 	//-------------Daily Routine-------------
 	/*B_InitNPCAddins(self);*/		daily_routine = Rtn_FMstart_288;

@@ -45,6 +45,7 @@ instance Grd_20272_GRD (Npc_Default)
 	
 	CreateInvItems	(self,ItFo_Potion_Health_01,2);
 	CreateInvItems	(self,ItFo_Potion_Health_02,1);
+	CreateInvItem	(self,ItMi_Stuff_OldCoin_02);
 
 	//------------- ai -------------
 	B_InitNPCAddins(self);	

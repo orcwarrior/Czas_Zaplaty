@@ -40,6 +40,7 @@ instance GRD_291_Gardist (Npc_Default)
 	EquipItem	(self,GRD_MW_01);
 	CreateInvItem	(self,ItFoApple);
 	CreateInvItems	(self,ItMiNugget,10);
+	CreateInvItem	(self,ItMi_Stuff_OldCoin_02);
 	
 	//-------------Daily Routine-------------
 	/*B_InitNPCAddins(self);*/		daily_routine = Rtn_FMstart_291;
