@@ -149,6 +149,8 @@ FUNC INT DIA_Kron_Fight1_Condition()
 
 FUNC VOID DIA_Kron_Fight1_Info()
 {
+	Npc_SetTempAttitude(self, ATT_FRIENDLY);
+	
 	AI_Output (other, self, "DIA_Kron_Fight1_15_01"); //Zdychaj cholerny orku!
 	AI_Output (self, other, "DIA_Kron_Fight1_11_02"); //Moja nie walczyæ, Morra odejœæ.
 	AI_DrawWeapon (other);
