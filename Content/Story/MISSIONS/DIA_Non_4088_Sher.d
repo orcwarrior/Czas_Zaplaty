@@ -51,13 +51,13 @@ FUNC VOID DIA_Sher_GoAway_Info()
 	AI_Output (self, other, "DIA_Sher_GoAway_11_03"); //Robiê to dla twojego dobra, ch³opcze.
 	AI_Output (self, other, "DIA_Sher_GoAway_11_04"); //Kiedyœ mi za to podziêkujesz...
 
-	B_StopProcessInfos	(self);
+	B_StopProcessInfos(self);
 
 	/**************
 	Wypad z kopalni, nie ma wstêpu przed odpowiednim w¹tkiem fabularnym xD
 	*************/
 
-	AI_GotoWP		(hero, "FM_02");
+	AI_GotoWP(hero, "FM_02");
 };
 
 // **************************************************
@@ -281,6 +281,7 @@ FUNC VOID DIA_Sher_End_Info()
 	AI_Output (self, hero, "DIA_Sher_End_11_08"); //Powiedzmy, ¿e mam przeczucie, ¿e dziêki tobie sporo siê tu zmieni na lepsze.
 	
    AI_TurnToNpc(self, jur);
+	AI_TurnToNpc(jur, hero);
 	
    AI_Output (self, hero, "DIA_Sher_End_11_12"); //Na co czekasz Jurgen? Tylko zrób to jak nale¿y, od jednego ciêcia.
 	

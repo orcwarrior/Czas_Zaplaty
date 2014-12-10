@@ -238,6 +238,7 @@ FUNC VOID DIA_Torlof_TalkingWithJurgen_Info()
    var C_NPC jurgen; jurgen = Hlp_GetNpc(Grd_4090_Jurgen);
 	B_FullStop (hero);
 	AI_TurnToNpc(self, jurgen);
+	AI_TurnToNpc(jurgen, hero);
    
    AI_Output (self, other, "DIA_Jurgen_First_11_00"); //Daj mi jeszcze kilka chwil...
    
@@ -257,6 +258,7 @@ instance DIA_Torlof_Fight (C_INFO)
 
 FUNC int DIA_Torlof_Fight_Condition()
 {
+	var C_NPC sher; sher = Hlp_GetNpc(Non_4088_Sher);
 	if (Npc_KnowsInfo (hero, DIA_Jurgen_Third))&&(Npc_IsDead(sher))&&(Npc_GetDistToNpc(self,hero) < 1000)
 	{
 		return 1;
