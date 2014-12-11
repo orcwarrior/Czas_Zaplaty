@@ -137,30 +137,33 @@ func void ZS_Dead ()
 		};
 	};
    
-	if(C_NpcIsHuman(other) && Npc_GetAivar(other,AIV_PARTYMEMBER))||(C_NpcIsMonster(other) && Npc_GetAivar(other,AIV_MM_PARTYMEMBER))
+	if !(self.flags & NPC_FLAG_INSTANTDEATH)
 	{
-      B_DeathXP(2);
-      
-		if(HeroHasPupil)&&(CmpNpc(MyWolf,other))
+		if(C_NpcIsHuman(other) && Npc_GetAivar(other,AIV_PARTYMEMBER))||(C_NpcIsMonster(other) && Npc_GetAivar(other,AIV_MM_PARTYMEMBER))
 		{
-			Pupil_DeathXP(1);		
+			B_DeathXP(2);
+			
+			if(HeroHasPupil)&&(CmpNpc(MyWolf,other))
+			{
+				Pupil_DeathXP(1);		
+			}
+			else if(HeroHasPupil)
+			{
+				Pupil_DeathXP(2);			
+			};
 		}
-		else if(HeroHasPupil)
+		else if	(Npc_IsPlayer   (other))
 		{
-			Pupil_DeathXP(2);			
-		};
-	}
-   else if	(Npc_IsPlayer   (other))
-	{
-      B_DeathXP(1);
-		//exp points GIVEN in DamageSystem_Func!!!
-		/*if(!Npc_IsInFightMode(other,FMODE_MELEE))
-		{
-         B_DeathXP(1);
-		};*/
-		if(HeroHasPupil)
-		{
-			Pupil_DeathXP(2);		
+			B_DeathXP(1);
+			//exp points GIVEN in DamageSystem_Func!!!
+			/*if(!Npc_IsInFightMode(other,FMODE_MELEE))
+			{
+				B_DeathXP(1);
+			};*/
+			if(HeroHasPupil)
+			{
+				Pupil_DeathXP(2);		
+			};
 		};
 	};
 	if	C_NpcIsMonster(self)||C_NpcIsOrc(self)

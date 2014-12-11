@@ -985,7 +985,6 @@ func void HeroDamage_SetDamageToNpc(var int dmg_mul,var int dmg,var c_npc target
 			//sets aiv'ar:
 			Npc_SetAivar(target,AIV_WASDEFEATEDBYSC,  TRUE);                      
 			B_DamageSysGiveXP(target,1);
-			
 		}
 		//-------------------------------
 		//Target is human/monster
@@ -1001,7 +1000,10 @@ func void HeroDamage_SetDamageToNpc(var int dmg_mul,var int dmg,var c_npc target
 			AI_StandUpQuick(target);
 			CALL_IntParam (0);
 			CALL__thiscall (target_ptr, oCNpc__DoDie_offset);
-			B_DamageSysGiveXP(target,1);
+			if (Npc_GetAivar(target,AIV_WASDEFEATEDBYSC) == FALSE)
+			{
+				B_DamageSysGiveXP(target,1);
+			};
 			//sets aiv'ar:
 			Npc_SetAivar(target,AIV_WASDEFEATEDBYSC,  TRUE);                      
 		}
