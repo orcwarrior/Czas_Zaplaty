@@ -64,10 +64,10 @@ FUNC INT DIA_Convoy1_First_Condition()
 FUNC VOID DIA_Convoy1_First_Info()
 {
 	var C_NPC con; con = Hlp_GetNpc(Grd_4097_Convoy2);
-	CreateInvItems (self,foodpackage,2);
-	CreateInvItems (con,foodpackage,2);
-	B_FullStop (hero);
-	AI_GotoNpc(other, self);
+	CreateInvItems(self,foodpackage,2);
+	CreateInvItems(con,foodpackage,2);
+	B_FullStop(hero);
+	AI_GotoNpc(hero, self);
 
 	var C_ITEM myarmor;
 	myarmor = Npc_GetEquippedArmor(hero);
@@ -90,8 +90,13 @@ FUNC VOID DIA_Convoy1_First_Info()
 	B_LogEntry(CH5_NC_Convoys, "Znalaz³em konwojentów. Muszê zabraæ im paczki zanim wszystko ze¿r¹!");
 	B_StopProcessInfos(self);
 
+	self.npctype = NPCTYPE_ROGUE;
+	self.flags = NPC_FLAG_INSTANTDEATH;
+	con.npctype = NPCTYPE_ROGUE;
+	con.flags = NPC_FLAG_INSTANTDEATH;
+	Npc_SetPermAttitude(self, ATT_HOSTILE);
+	Npc_SetPermAttitude(con, ATT_HOSTILE);
 	B_StartAfterDialogFight(self,other,true);
-   B_StartAfterDialogFight(con,other,true);
 };           
 
 INSTANCE DIA_ConvoyCommander_First (C_INFO)
@@ -115,7 +120,7 @@ FUNC INT DIA_ConvoyCommander_First_Condition()
 
 FUNC VOID DIA_ConvoyCommander_First_Info()
 {
-	var C_NPC con1; con1 = Hlp_GetNpc(Grd_4103_Convoy);
+	var C_NPC con; con = Hlp_GetNpc(Grd_4103_Convoy);
 	var C_NPC con2; con2 = Hlp_GetNpc(Grd_4104_Convoy);
 	var C_NPC con3; con3 = Hlp_GetNpc(Grd_4105_Convoy);
 	
@@ -138,8 +143,17 @@ FUNC VOID DIA_ConvoyCommander_First_Info()
 	B_LogEntry(CH5_NC_Convoys, "Znalaz³em konwojentów. Czas wys³aæ ich do Beliara.");
 	B_StopProcessInfos(self);
 
+	self.npctype = NPCTYPE_ROGUE;
+	self.flags = NPC_FLAG_INSTANTDEATH;
+	con.npctype = NPCTYPE_ROGUE;
+	con.flags = NPC_FLAG_INSTANTDEATH;
+	con2.npctype = NPCTYPE_ROGUE;
+	con2.flags = NPC_FLAG_INSTANTDEATH;
+	con3.npctype = NPCTYPE_ROGUE;
+	con3.flags = NPC_FLAG_INSTANTDEATH;
+	Npc_SetPermAttitude(self, ATT_HOSTILE);
+	Npc_SetPermAttitude(con, ATT_HOSTILE);
+	Npc_SetPermAttitude(con2, ATT_HOSTILE);
+	Npc_SetPermAttitude(con3, ATT_HOSTILE);
 	B_StartAfterDialogFight(self,other,true);
-	B_StartAfterDialogFight(con1,other,true);
-	B_StartAfterDialogFight(con2,other,true);
-	B_StartAfterDialogFight(con3,other,true);
 };
