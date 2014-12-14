@@ -51,6 +51,12 @@ FUNC VOID Rtn_start_904 ()
 	TA_PickRice		(07,20,20,00,"NC_DAM_BOTTOM");
 };
 
+FUNC VOID Rtn_NCFree_826 ()
+{
+	TA_Stand (08,00,23,00,"HC_SHOP_01");
+	TA_Stand (23,00,08,00,"HC_SHOP_01");
+};
+
 /*
 FUNC VOID Rtn_PreStart_826 ()
 {
