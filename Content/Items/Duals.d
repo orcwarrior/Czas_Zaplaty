@@ -418,7 +418,7 @@ Instance Itmw_Dual_01_Left(Dualleft)
 //Varrant Swd
 Instance Itmw_Dual_02_Right(Dualright)
 {
-	Name="Dual02R";
+	Name="Runiczne ostrze burzy";
 
 	Mainflag=Item_Kat_Nf;
 	Flags=Item_2Hd_Swd;
@@ -444,7 +444,7 @@ Instance Itmw_Dual_02_Right(Dualright)
 
 Instance Itmw_Dual_02_Left(Dualleft)
 {
-	Name="Dual02L";
+	Name="Runiczne ostrze burzy";
 
 	Value=3600;
 	Wear=Wear_Head;
@@ -465,7 +465,7 @@ Instance Itmw_Dual_02_Left(Dualleft)
 
 Instance Itmw_Dual_03_Right(Dualright)
 {
-	Name="Dual03L";
+	Name="Runiczny miecz szeroki";
 
 	Mainflag=Item_Kat_Nf;
 	Flags=Item_2Hd_Swd;
@@ -491,7 +491,7 @@ Instance Itmw_Dual_03_Right(Dualright)
 
 Instance Itmw_Dual_03_Left(Dualleft)
 {
-	Name="Dual03L";
+	Name="Runiczny miecz szeroki";
 
 	Value=3600;
 	Wear=Wear_Head;
@@ -512,7 +512,7 @@ Instance Itmw_Dual_03_Left(Dualleft)
 
 Instance Itmw_Dual_04_Right(Dualright)
 {
-	Name="Dual04R";
+	Name="Runiczna szeroka katana";
 
 	Mainflag=Item_Kat_Nf;
 	Flags=Item_2Hd_Swd;
@@ -538,7 +538,7 @@ Instance Itmw_Dual_04_Right(Dualright)
 
 Instance Itmw_Dual_04_Left(Dualleft)
 {
-	Name="Dual04";
+	Name="Runiczna szeroka katana";
 
 	Value=3600;
 	Wear=Wear_Head;
@@ -559,7 +559,7 @@ Instance Itmw_Dual_04_Left(Dualleft)
 
 Instance Itmw_Dual_05_Right(Dualright)
 {
-	Name="Dual05R";
+	Name="Runiczna katana";
 
 	Mainflag=Item_Kat_Nf;
 	Flags=Item_2Hd_Swd;
@@ -586,7 +586,7 @@ Instance Itmw_Dual_05_Right(Dualright)
 
 Instance Itmw_Dual_05_Left(Dualleft)
 {
-	Name="Dual05L";
+	Name="Runiczna katana";
 
 	Value=3600;
 	Wear=Wear_Head;
@@ -607,7 +607,7 @@ Instance Itmw_Dual_05_Left(Dualleft)
 
 Instance Itmw_Dual_06_Right(Dualright)
 {
-	Name="Dual06R";
+	Name="Runiczna szabla";
 
 	Mainflag=Item_Kat_Nf;
 	Flags=Item_2Hd_Swd;
@@ -634,7 +634,7 @@ Instance Itmw_Dual_06_Right(Dualright)
 
 Instance Itmw_Dual_06_Left(Dualleft)
 {
-	Name="Dual06L";
+	Name="Runiczna szabla";
 
 	Value=3600;
 	Wear=Wear_Head;
@@ -655,7 +655,7 @@ Instance Itmw_Dual_06_Left(Dualleft)
 
 Instance Itmw_Dual_07_Right(Dualright)
 {
-	Name="Dual07R";
+	Name="Runiczna maczeta";
 
 	Mainflag=Item_Kat_Nf;
 	Flags=Item_2Hd_Swd;
@@ -682,7 +682,7 @@ Instance Itmw_Dual_07_Right(Dualright)
 
 Instance Itmw_Dual_07_Left(Dualleft)
 {
-	Name="Dual07L";
+	Name="Runiczna maczeta";
 
 	Value=3600;
 	Wear=Wear_Head;
