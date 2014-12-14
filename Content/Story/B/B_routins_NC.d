@@ -36,6 +36,7 @@ func void B_NC_LeeBack()
 
 	var C_NPC n4; n4 = Hlp_GetNpc(SLV_907_Lares);
 	Npc_ExchangeRoutine(n4, "NC1");
+	AI_EquipBestMeleeWeapon(n4);
 	CreateInvItem(n4, ORG_ARMOR_H);
 	AI_EquipArmor(n4, ORG_ARMOR_H);
 
@@ -633,8 +634,10 @@ dodac wp dla Fletchera na skale
 	
 	var C_NPC mordrag; mordrag = Hlp_GetNpc(SLV_904_Mordrag);
 	Npc_ExchangeRoutine(mordrag, "NCFree");
-	CreateInvItem(n4, ORG_ARMOR_L);
-	AI_EquipArmor(n4, ORG_ARMOR_L);
+	EquipItem(mordrag, ItMw_1H_Mace_02);
+	EquipItem(mordrag, ItRw_Bow_Long_01);
+	CreateInvItem(mordrag, ORG_ARMOR_L);
+	AI_EquipArmor(mordrag, ORG_ARMOR_L);
    
    Wld_InsertNpc(DemonLord, "NC_EN_1");
    Wld_InsertNpc(DemonLord, "NC_EN_1");
