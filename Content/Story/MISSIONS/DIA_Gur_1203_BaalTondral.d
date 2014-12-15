@@ -41,45 +41,21 @@ FUNC INT DIA_BaalTondralDream_Hi_Condition()
 
 FUNC VOID DIA_BaalTondralDream_Hi_Info()
 {
-	AI_Output (self, other,"DIA_BaalTondralDream_Hi_13_00"); //Œni¹cy oœwieci³ mój umys³! Bestia z³o¿y mu pok³on, a ty bêdziesz tym, który ugnie jej kolana!
-   AI_Output (other, self, "DIA_BaalTondralDream_Hi_15_01"); //Cz³owieku, dobrze siê czujesz?
-	AI_Output (self, other,"DIA_BaalTondralDream_Hi_13_02"); //Milcz psubracie! Wypij ten wywar i do boju!!!
-   AI_Output (other, self, "DIA_BaalTondralDream_Hi_15_03"); //Oszala³eœ? Przecie¿ to trucizna!
-	AI_Output (self, other,"DIA_BaalTondralDream_Hi_13_04"); //Powiedzia³em pij! Nie sprzeciwiaj siê woli Œni¹cego!
-   CreateInvItems (other, ItFobeer, 1);
-	AI_UseItem (other, ItFobeer);
+	AI_Output(self, other,"DIA_BaalTondralDream_Hi_13_00"); //Œni¹cy oœwieci³ mój umys³! Bestia z³o¿y mu pok³on, a ty bêdziesz tym, który ugnie jej kolana!
+   AI_Output(other, self, "DIA_BaalTondralDream_Hi_15_01"); //Cz³owieku, dobrze siê czujesz?
+	AI_Output(self, other,"DIA_BaalTondralDream_Hi_13_02"); //Milcz psubracie! Wypij ten wywar i do boju!!!
+   AI_Output(other, self, "DIA_BaalTondralDream_Hi_15_03"); //Oszala³eœ? Przecie¿ to trucizna!
+	AI_Output(self, other,"DIA_BaalTondralDream_Hi_13_04"); //Powiedzia³em pij! Nie sprzeciwiaj siê woli Œni¹cego!
+   CreateInvItems(other, ItFo_PoisonInDream, 1);
+	AI_UseItem(other, ItFo_PoisonInDream);
+	
+	drankPoisonInDream = true;
+	B_AfterDialog_Generic_KillHeroWithPoison_enabled = true;
    
    B_LogEntry(CH4_RBL_Beast, "To by³ sen... Bestiê mo¿na zabiæ tylko za pomoc¹ trucizny. Potrzebujê te¿ kogoœ, kto pomo¿e mi w zrealizowaniu tego zamierzenia - muszê porozmawiaæ z Baal Tondralem.");
    B_StopProcessInfos(self);
 };
 
-INSTANCE DIA_BaalTondralDream_Dead(C_INFO)
-{
-	npc			= GUR_12030_BaalTondral_Dream;
-	nr			= 1;
-	condition	= DIA_BaalTondralDream_Dead_Condition;
-	information	= DIA_BaalTondralDream_Dead_Info;
-	permanent	= 0;
-	important	= 1;
-};                       
-
-FUNC INT DIA_BaalTondralDream_Dead_Condition()
-{
-	if (Npc_KnowsInfo(hero, DIA_BaalTondralDream_Hi))
-	{
-		return 1;
-	};
-};
-
-FUNC VOID DIA_BaalTondralDream_Dead_Info()
-{
-   Dream_finished = true;
-   
-   B_StopProcessInfos(self);
-   B_StopProcessInfos(hero);
-   
-   hero.attribute[ATR_HITPOINTS] = 0;
-};
 // **************************************************
 // 						 EXIT 
 // **************************************************

@@ -340,10 +340,27 @@ INSTANCE ItFo_Poison(C_Item)
 	TEXT[5]				= NAME_Value;					COUNT[5]	= 100;
 };
 
-	FUNC VOID Usepoison()
-	{ 
- 		add_poison(gomez,self,1000);
-	};
+FUNC VOID Usepoison()
+{ 
+	add_poison(gomez,self,1000);
+};
+	
+INSTANCE ItFo_PoisonInDream(C_Item)
+{
+	name 			=	NAME_Trank;
+
+	mainflag 		=	ITEM_KAT_POTIONS;
+	flags 			=	ITEM_MULTI;
+
+	value 			=	100;	
+
+	visual 			=	"ItFo_Potion_Strength_01.3ds";
+	material 		=	MAT_GLAS;
+	scemeName		=	"POTIONFAST";
+
+	description			= "Trucizna";
+	TEXT[5]				= NAME_Value;					COUNT[5]	= 100;
+};
 /*
 //--------------------
 // Others from Animalthropies

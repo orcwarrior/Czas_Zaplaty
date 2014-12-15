@@ -392,6 +392,7 @@ FUNC VOID B_Trigger_CheckMissions()
 	TimeEventsFreemine();
 	TimeEventsLabyrinth();
 	TimeEventsOrcGraveyard();
+	TimeEventsDream();
 };
 
 var int mob;

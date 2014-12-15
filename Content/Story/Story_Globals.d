@@ -339,7 +339,8 @@ VAR INT FOCUS_GET;
 VAR INT NECROMANT_AGREE;
 VAR INT RITUAL_END;
 var int freemine_ready_to_opened;
-
+var int isFirstTalkingInDream;
+var int drankPoisonInDream;
 //*Chapter 5**********
 var int EvtCave_HelperTimer;
 

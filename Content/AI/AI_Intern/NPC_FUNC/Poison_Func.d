@@ -137,7 +137,7 @@ func void poison_damage_rec(var int i)
 	{	
 		if(Npc_GetAivar(v,AIV_POISON))
 		{
-			if(v.attribute[ATR_HITPOINTS]==1)
+			if(v.attribute[ATR_HITPOINTS]==1 && !CmpNpc(o,v))
 			{				
 				if(Npc_IsPlayer(o))
 				{
