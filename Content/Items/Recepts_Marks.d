@@ -1,4 +1,4 @@
-INSTANCE Recept_ItMa_Iron(C_Item)
+INSTANCE Recept_ItMa_Iron(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -17,7 +17,7 @@ INSTANCE Recept_ItMa_Iron(C_Item)
 	on_state[0]				=	UseRecept;	
 };
 
-INSTANCE Recept_ItMa_Steel(C_Item)
+INSTANCE Recept_ItMa_Steel(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -37,7 +37,7 @@ INSTANCE Recept_ItMa_Steel(C_Item)
 	on_state[0]				=	UseRecept;	
 };
 
-INSTANCE Recept_ItMa_GoodSteel(C_Item)
+INSTANCE Recept_ItMa_GoodSteel(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -57,7 +57,7 @@ INSTANCE Recept_ItMa_GoodSteel(C_Item)
 	on_state[0]				=	UseRecept;	
 };
 
-INSTANCE Recept_ItMa_ExclusiveSteel(C_Item)
+INSTANCE Recept_ItMa_ExclusiveSteel(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -77,7 +77,7 @@ INSTANCE Recept_ItMa_ExclusiveSteel(C_Item)
 	on_state[0]				=	UseRecept;	
 };
 
-INSTANCE Recept_ItMa_MagicBillet(C_Item)
+INSTANCE Recept_ItMa_MagicBillet(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -98,7 +98,7 @@ INSTANCE Recept_ItMa_MagicBillet(C_Item)
 	on_state[0]				=	UseRecept;	
 };
 
-INSTANCE Recept_ItMa_silverbillet(C_Item)
+INSTANCE Recept_ItMa_silverbillet(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -117,7 +117,7 @@ INSTANCE Recept_ItMa_silverbillet(C_Item)
 	on_state[0]				=	UseRecept;	
 };
 
-INSTANCE Recept_ItMa_goldbillet(C_Item)
+INSTANCE Recept_ItMa_goldbillet(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -136,7 +136,7 @@ INSTANCE Recept_ItMa_goldbillet(C_Item)
 	on_state[0]				=	UseRecept;	
 };
 
-INSTANCE Recept_ItFo_Poison(C_Item)
+INSTANCE Recept_ItFo_Poison(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;

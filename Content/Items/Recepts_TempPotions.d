@@ -1,4 +1,4 @@
-INSTANCE Recept_ItFo_Potion_HP_1_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_HP_1_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -18,7 +18,7 @@ INSTANCE Recept_ItFo_Potion_HP_1_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_MP_1_temp(C_Item)                                     
+INSTANCE Recept_ItFo_Potion_MP_1_temp(Recept_Proto)                                     
 {                                                                                 
 	name 					=	"Recepta";                                                           
 	mainflag 				=	ITEM_KAT_DOCS;                                                    
@@ -38,7 +38,7 @@ INSTANCE Recept_ItFo_Potion_MP_1_temp(C_Item)
    description = name;
 };                
 
-INSTANCE Recept_ItFo_Potion_DEX_1_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_DEX_1_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -58,7 +58,7 @@ INSTANCE Recept_ItFo_Potion_DEX_1_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Str_1_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_Str_1_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -78,7 +78,7 @@ INSTANCE Recept_ItFo_Potion_Str_1_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Edg_1_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_Edg_1_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -98,7 +98,7 @@ INSTANCE Recept_ItFo_Potion_Edg_1_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_pnt_1_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_pnt_1_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -118,7 +118,7 @@ INSTANCE Recept_ItFo_Potion_pnt_1_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_fir_1_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_fir_1_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -138,7 +138,7 @@ INSTANCE Recept_ItFo_Potion_fir_1_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_mag_1_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_mag_1_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -158,7 +158,7 @@ INSTANCE Recept_ItFo_Potion_mag_1_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Prot_Total_1_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_Prot_Total_1_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -181,7 +181,7 @@ INSTANCE Recept_ItFo_Potion_Prot_Total_1_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Prot_Total_2_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_Prot_Total_2_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -204,7 +204,7 @@ INSTANCE Recept_ItFo_Potion_Prot_Total_2_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Str_Dex_1_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_Str_Dex_1_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -225,7 +225,7 @@ INSTANCE Recept_ItFo_Potion_Str_Dex_1_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Str_Dex_2_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_Str_Dex_2_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -246,7 +246,7 @@ INSTANCE Recept_ItFo_Potion_Str_Dex_2_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_HP_MP_1_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_HP_MP_1_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -267,7 +267,7 @@ INSTANCE Recept_ItFo_Potion_HP_MP_1_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_HP_MP_2_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_HP_MP_2_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -288,7 +288,7 @@ INSTANCE Recept_ItFo_Potion_HP_MP_2_temp(C_Item)
    description = name;
 };
                                                        
-INSTANCE Recept_ItFo_Potion_HP_2_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_HP_2_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -308,7 +308,7 @@ INSTANCE Recept_ItFo_Potion_HP_2_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_MP_2_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_MP_2_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -328,7 +328,7 @@ INSTANCE Recept_ItFo_Potion_MP_2_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_DEX_2_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_DEX_2_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -349,7 +349,7 @@ INSTANCE Recept_ItFo_Potion_DEX_2_temp(C_Item)
 };
 
 
-INSTANCE Recept_ItFo_Potion_STR_2_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_STR_2_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -369,7 +369,7 @@ INSTANCE Recept_ItFo_Potion_STR_2_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Str_3_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_Str_3_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -389,7 +389,7 @@ INSTANCE Recept_ItFo_Potion_Str_3_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_DEX_3_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_DEX_3_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -409,7 +409,7 @@ INSTANCE Recept_ItFo_Potion_DEX_3_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_MP_3_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_MP_3_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -429,7 +429,7 @@ INSTANCE Recept_ItFo_Potion_MP_3_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_HP_3_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_HP_3_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -449,7 +449,7 @@ INSTANCE Recept_ItFo_Potion_HP_3_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Edg_3_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_Edg_3_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -469,7 +469,7 @@ INSTANCE Recept_ItFo_Potion_Edg_3_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_pnt_3_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_pnt_3_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -489,7 +489,7 @@ INSTANCE Recept_ItFo_Potion_pnt_3_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_fir_3_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_fir_3_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -509,7 +509,7 @@ INSTANCE Recept_ItFo_Potion_fir_3_temp(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_mag_3_temp(C_Item)
+INSTANCE Recept_ItFo_Potion_mag_3_temp(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;

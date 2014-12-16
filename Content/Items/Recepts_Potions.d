@@ -1,4 +1,4 @@
-INSTANCE Recept_ItFo_Potion_Mana_01(C_Item)
+INSTANCE Recept_ItFo_Potion_Mana_01(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -18,7 +18,7 @@ INSTANCE Recept_ItFo_Potion_Mana_01(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Mana_02(C_Item)
+INSTANCE Recept_ItFo_Potion_Mana_02(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -38,7 +38,7 @@ INSTANCE Recept_ItFo_Potion_Mana_02(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Mana_03(C_Item)
+INSTANCE Recept_ItFo_Potion_Mana_03(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -58,7 +58,7 @@ INSTANCE Recept_ItFo_Potion_Mana_03(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Mana_04(C_Item)
+INSTANCE Recept_ItFo_Potion_Mana_04(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -78,7 +78,7 @@ INSTANCE Recept_ItFo_Potion_Mana_04(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Health_01(C_Item)
+INSTANCE Recept_ItFo_Potion_Health_01(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -98,7 +98,7 @@ INSTANCE Recept_ItFo_Potion_Health_01(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Health_02(C_Item)
+INSTANCE Recept_ItFo_Potion_Health_02(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -118,7 +118,7 @@ INSTANCE Recept_ItFo_Potion_Health_02(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Health_03(C_Item)
+INSTANCE Recept_ItFo_Potion_Health_03(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -138,7 +138,7 @@ INSTANCE Recept_ItFo_Potion_Health_03(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Health_04(C_Item)
+INSTANCE Recept_ItFo_Potion_Health_04(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -158,7 +158,7 @@ INSTANCE Recept_ItFo_Potion_Health_04(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Strength_02(C_Item)
+INSTANCE Recept_ItFo_Potion_Strength_02(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -178,7 +178,7 @@ INSTANCE Recept_ItFo_Potion_Strength_02(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Strength_03(C_Item)
+INSTANCE Recept_ItFo_Potion_Strength_03(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -198,7 +198,7 @@ INSTANCE Recept_ItFo_Potion_Strength_03(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Dex_02(C_Item)
+INSTANCE Recept_ItFo_Potion_Dex_02(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -218,7 +218,7 @@ INSTANCE Recept_ItFo_Potion_Dex_02(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Dex_03(C_Item)
+INSTANCE Recept_ItFo_Potion_Dex_03(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -238,7 +238,7 @@ INSTANCE Recept_ItFo_Potion_Dex_03(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Health_Perma_02(C_Item)
+INSTANCE Recept_ItFo_Potion_Health_Perma_02(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -258,7 +258,7 @@ INSTANCE Recept_ItFo_Potion_Health_Perma_02(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Health_Perma_03(C_Item)
+INSTANCE Recept_ItFo_Potion_Health_Perma_03(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -278,7 +278,7 @@ INSTANCE Recept_ItFo_Potion_Health_Perma_03(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Mana_Perma_02(C_Item)
+INSTANCE Recept_ItFo_Potion_Mana_Perma_02(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -298,7 +298,7 @@ INSTANCE Recept_ItFo_Potion_Mana_Perma_02(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Mana_Perma_03(C_Item)
+INSTANCE Recept_ItFo_Potion_Mana_Perma_03(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
@@ -318,7 +318,7 @@ INSTANCE Recept_ItFo_Potion_Mana_Perma_03(C_Item)
    description = name;
 };
 
-INSTANCE Recept_ItFo_Potion_Haste_02(C_Item)
+INSTANCE Recept_ItFo_Potion_Haste_02(Recept_Proto)
 {
 	name 					=	"Recepta";
 	mainflag 				=	ITEM_KAT_DOCS;
