@@ -13,7 +13,7 @@ INSTANCE Recept_ItFo_Potion_Mana_01(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ esencjê magicznej energii";
+	text[1]  				=	"esencjê magicznej energii";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -33,7 +33,7 @@ INSTANCE Recept_ItFo_Potion_Mana_02(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ wyci¹g magicznej energii";
+	text[1]  				=	"wyci¹g magicznej energii";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -53,7 +53,7 @@ INSTANCE Recept_ItFo_Potion_Mana_03(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ eliksir magicznej energii";
+	text[1]  				=	"eliksir magicznej energii";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -73,7 +73,7 @@ INSTANCE Recept_ItFo_Potion_Mana_04(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ pe³niê magicznej energii";
+	text[1]  				=	"pe³niê magicznej energii";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -93,7 +93,7 @@ INSTANCE Recept_ItFo_Potion_Health_01(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ esencjê uzdrawiaj¹c¹";
+	text[1]  				=	"esencjê uzdrawiaj¹c¹";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -113,7 +113,7 @@ INSTANCE Recept_ItFo_Potion_Health_02(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ wyci¹g uzdrawiaj¹cy";
+	text[1]  				=	"wyci¹g uzdrawiaj¹cy";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -133,7 +133,7 @@ INSTANCE Recept_ItFo_Potion_Health_03(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ eliksir uzdrawiaj¹cy";
+	text[1]  				=	"eliksir uzdrawiaj¹cy";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -153,7 +153,7 @@ INSTANCE Recept_ItFo_Potion_Health_04(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ pe³niê ¿ycia";
+	text[1]  				=	"pe³niê ¿ycia";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -173,7 +173,7 @@ INSTANCE Recept_ItFo_Potion_Strength_02(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ wyci¹g si³y";
+	text[1]  				=	"wyci¹g si³y";
 	on_state[0]				=	UseRecept;
    description = name;
 };
@@ -193,7 +193,7 @@ INSTANCE Recept_ItFo_Potion_Strength_03(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ eliksir si³y";
+	text[1]  				=	"eliksir si³y";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -213,7 +213,7 @@ INSTANCE Recept_ItFo_Potion_Dex_02(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ wyci¹g zwinnoœci";
+	text[1]  				=	"wyci¹g zwinnoœci";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -233,7 +233,7 @@ INSTANCE Recept_ItFo_Potion_Dex_03(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ eliksir zwinnoœci";
+	text[1]  				=	"eliksir zwinnoœci";
 	on_state[0]				=	UseRecept;
    description = name;
 };
@@ -253,7 +253,7 @@ INSTANCE Recept_ItFo_Potion_Health_Perma_02(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ wyci¹g ¿ycia";
+	text[1]  				=	"wyci¹g ¿ycia";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -273,7 +273,7 @@ INSTANCE Recept_ItFo_Potion_Health_Perma_03(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ eliksir ¿ycia";
+	text[1]  				=	"eliksir ¿ycia";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -293,7 +293,7 @@ INSTANCE Recept_ItFo_Potion_Mana_Perma_02(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ wyci¹g ducha";
+	text[1]  				=	"wyci¹g ducha";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -313,7 +313,7 @@ INSTANCE Recept_ItFo_Potion_Mana_Perma_03(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ eliksir ducha";
+	text[1]  				=	"eliksir ducha";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -333,7 +333,7 @@ INSTANCE Recept_ItFo_Potion_Haste_02(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ napój szybkoœci";
+	text[1]  				=	"napój szybkoœci";
 	on_state[0]				=	UseRecept;	
    description = name;
 };

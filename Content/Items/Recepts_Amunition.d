@@ -81,7 +81,8 @@ PROTOTYPE ReceptAmunition_Proto(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ przedmiot";		
+	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ";
+	text[1] 				=	"przedmiot";	
 	on_state[0]			=	UseRecept;		
 	TEXT[4]				= NAME_Value;					COUNT[4]	= item.value;
 	
@@ -101,7 +102,7 @@ INSTANCE Recept_ItAmArrow (ReceptAmunition_Proto)
 	value 					=	25;//50 - cena strza³(50)
 	range				=	10;//na 100% szans wykucia
 
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ strza³y.";//Wpisana nazwa miecza!			
+	text[1] 				=	"strza³y.";			
 };
 
 INSTANCE Recept_ItAmArrow_15 (ReceptAmunition_Proto)
@@ -118,7 +119,7 @@ INSTANCE Recept_ItAmArrow_15 (ReceptAmunition_Proto)
 	value 					=	100;//50 - cena strza³(50)
 	range				=	25;//na 100% szans wykucia
 
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ strza³y z piór harpii.";			
+	text[1] 				=	"strza³y z piór harpii.";			
 };
 
 INSTANCE Recept_ItAmArrow_25 (ReceptAmunition_Proto)
@@ -135,7 +136,7 @@ INSTANCE Recept_ItAmArrow_25 (ReceptAmunition_Proto)
 	value 					=	500;//50 - cena strza³(50)
 	range				=	40;//na 100% szans wykucia
 
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ z³ote strza³y.";//Wpisana nazwa miecza!			
+	text[1] 				=	"z³ote strza³y.";			
 };
 
 INSTANCE Recept_ItAmFireArrow (ReceptAmunition_Proto)
@@ -154,7 +155,7 @@ INSTANCE Recept_ItAmFireArrow (ReceptAmunition_Proto)
 	value 					=	1500;//3000 - cena strza³(50)
 	range				=	75;//na 100% szans wykucia
 
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ ogniste strza³y.";//Wpisana nazwa miecza!			
+	text[1] 				=	"ogniste strza³y.";		
 };
 
 INSTANCE Recept_ItAmIceArrow (ReceptAmunition_Proto)
@@ -173,7 +174,7 @@ INSTANCE Recept_ItAmIceArrow (ReceptAmunition_Proto)
 	value 					=	1250;//50 - cena strza³(50)
 	range				=	60;//na 100% szans wykucia
 
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ lodowe strza³y.";//		
+	text[1] 				=	"lodowe strza³y.";//		
 };
 
 INSTANCE Recept_ItAmPoisonArrow(ReceptAmunition_Proto)
@@ -192,7 +193,7 @@ INSTANCE Recept_ItAmPoisonArrow(ReceptAmunition_Proto)
 	value 					=	300;//600 - cena strza³(50)
 	range				=	35;//na 100% szans wykucia
 
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ zatrute strza³y.";//		
+	text[1] 				=	"zatrute strza³y.";//		
 };
 
 INSTANCE Recept_ItAmBluntArrow(ReceptAmunition_Proto)
@@ -209,7 +210,7 @@ INSTANCE Recept_ItAmBluntArrow(ReceptAmunition_Proto)
 	value 					=	25;//50 - cena strza³(50)
 	range				=	10;//na 100% szans wykucia
 
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ og³uszaj¹ce strza³y.";//Wpisana nazwa miecza!		
+	text[1] 				=	"og³uszaj¹ce strza³y.";		
 };
 //==================
 // BOLTS
@@ -227,7 +228,7 @@ INSTANCE Recept_ItAmBolt(ReceptAmunition_Proto)
 	value 					=	25;//50 - cena strza³(50)
 	range				=	15;//na 100% szans wykucia
 
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ be³ty.";//Wpisana nazwa miecza!		
+	text[1] 				=	"wytworzyæ be³ty.";	
 };
 
 
@@ -243,7 +244,7 @@ INSTANCE Recept_ItAmBolt_10(ReceptAmunition_Proto)
 	value 					=	125;//50 - cena strza³(50)
 	range				=	25;//na 100% szans wykucia
 
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ stalowe be³ty.";//Wpisana nazwa miecza!		
+	text[1] 				=	"stalowe be³ty.";	
 };
 
 INSTANCE Recept_ItAmBolt_25(ReceptAmunition_Proto)
@@ -258,7 +259,7 @@ INSTANCE Recept_ItAmBolt_25(ReceptAmunition_Proto)
 	value 					=	900;//50 - cena strza³(50)
 	range				=	50;//na 100% szans wykucia
 
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ z³ote be³ty.";//Wpisana nazwa miecza!		
+	text[1] 				=	"z³ote be³ty.";	
 };
 
 INSTANCE Recept_ItAmFireBolt(ReceptAmunition_Proto)
@@ -276,7 +277,7 @@ INSTANCE Recept_ItAmFireBolt(ReceptAmunition_Proto)
 	value 					=	1500;//50 - cena strza³(50)
 	range				=	80;//na 100% szans wykucia
 
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ ogniste be³ty.";//Wpisana nazwa miecza!		
+	text[1] 				=	"ogniste be³ty.";	
 };
 
 INSTANCE Recept_ItAmIceBolt(ReceptAmunition_Proto)
@@ -294,7 +295,7 @@ INSTANCE Recept_ItAmIceBolt(ReceptAmunition_Proto)
 	value 					=	1250;//50 - cena strza³(50)
 	range				=	65;//na 100% szans wykucia
 
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ lodowe be³ty.";	
+	text[1] 				=	"lodowe be³ty.";	
 };
 
 INSTANCE Recept_ItAmPoisonBolt(ReceptAmunition_Proto)
@@ -312,7 +313,7 @@ INSTANCE Recept_ItAmPoisonBolt(ReceptAmunition_Proto)
 	value 					=	300;//50 - cena strza³(50)
 	range				=	40;//na 100% szans wykucia
 
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ zatrute be³ty.";	
+	text[1] 				=	"zatrute be³ty.";	
 };
 
 INSTANCE Recept_ItAmBluntBolt(ReceptAmunition_Proto)
@@ -328,5 +329,5 @@ INSTANCE Recept_ItAmBluntBolt(ReceptAmunition_Proto)
 	value 					=	25;//50 - cena strza³(50)
 	range				=	15;//na 100% szans wykucia
 
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ og³uszaj¹ce be³ty.";//Wpisana nazwa miecza!		
+	text[1] 				=	"og³uszaj¹ce be³ty.";
 };

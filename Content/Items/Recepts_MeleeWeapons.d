@@ -75,8 +75,8 @@ INSTANCE Recept_ItMw_1H_Sword_Short_01 (Recept_Proto)
 	visual 					=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 
-	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ krótki miecz";//Wpisana nazwa miecza!		
+	scemeName				=	"NONE";		
+	text[1] 				=	"krótki miecz";//Wpisana nazwa miecza!	
 	on_state[0]			=	UseRecept;
    description = name;
 };
@@ -103,7 +103,7 @@ INSTANCE Recept_ItMw_1H_Sword_Short_02 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ ch³opski miecz";//Wpisana nazwa miecza!		
+	text[1] 				=	"ch³opski miecz";//Wpisana nazwa miecza!	
 	on_state[0]			=	UseRecept;		
    description = name;
 };
@@ -128,7 +128,7 @@ INSTANCE Recept_ItMw_1H_Sword_Short_03 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ jêzyk topielca";//Wpisana nazwa miecza!		
+	text[1] 				=	"jêzyk topielca";//Wpisana nazwa miecza!		
 	on_state[0]			=	UseRecept;		
    description = name;
 };
@@ -155,7 +155,7 @@ INSTANCE Recept_ItMw_1H_Sword_Short_04 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ k³uj¹cy cierñ";//Wpisana nazwa miecza!		
+	text[1] 				=	"k³uj¹cy cierñ";//Wpisana nazwa miecza!		
 	on_state[0]			=	UseRecept;		
    description = name;
 };
@@ -182,7 +182,7 @@ INSTANCE Recept_ItMw_1H_Sword_Short_05 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ z¹b kopacza";//Wpisana nazwa miecza!		
+	text[1] 				=	"z¹b kopacza";//Wpisana nazwa miecza!		
 	on_state[0]			=	UseRecept;		
    description = name;
 };
@@ -199,7 +199,7 @@ INSTANCE Recept_ItMw_2H_Staff_01(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ kostur";
+	text[1]  				=	"kostur";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -219,7 +219,7 @@ INSTANCE Recept_ItMw_2H_Staff_02(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ laskê sêdziowsk¹";
+	text[1]  				=	"laskê sêdziowsk¹";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -240,7 +240,7 @@ INSTANCE Recept_ItMw_2H_Staff_03(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ laskê kap³añsk¹";
+	text[1]  				=	"laskê kap³añsk¹";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -266,7 +266,7 @@ INSTANCE Recept_ItMw_1H_Sword_01 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ miecz";//Wpisana nazwa miecza!		
+	text[1] 				=	"miecz";//Wpisana nazwa miecza!		
 	on_state[0]			=	UseRecept;		
    description = name;
 };
@@ -295,7 +295,7 @@ INSTANCE Recept_ItMw_1H_Sword_02 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ miecz sêdziego";//Wpisana nazwa miecza!		
+	text[1] 				=	"miecz sêdziego";//Wpisana nazwa miecza!		
 	on_state[0]			=	UseRecept;		
    description = name;
 };
@@ -317,7 +317,7 @@ INSTANCE Recept_ItMw_1H_Sword_03(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ miecz stra¿nika";
+	text[1]  				=	"miecz stra¿nika";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -339,7 +339,7 @@ INSTANCE Recept_ItMw_1H_Sword_04(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ miecz bojowy";
+	text[1]  				=	"miecz bojowy";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -361,7 +361,7 @@ INSTANCE Recept_ItMw_1H_Sword_05(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ miecz wojenny";
+	text[1]  				=	"miecz wojenny";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -382,7 +382,7 @@ INSTANCE Recept_ItMw_1H_Mace_01(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ maczuga";
+	text[1]  				=	"maczugê";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -404,7 +404,7 @@ INSTANCE Recept_ItMw_1H_Mace_02(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ æwiekowana maczuga";
+	text[1]  				=	"æwiekowan¹ maczugê";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -426,7 +426,7 @@ INSTANCE Recept_ItMw_1H_Mace_03(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ ¿¹d³o krwiopijcy";
+	text[1]  				=	"¿¹d³o krwiopijcy";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -448,7 +448,7 @@ INSTANCE Recept_ItMw_1H_Mace_04(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ stalowy jêzyk";
+	text[1]  				=	"stalowy jêzyk";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -470,7 +470,7 @@ INSTANCE Recept_ItMw_1H_Mace_War_01(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ morgensztern";
+	text[1]  				=	"morgensztern";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -491,7 +491,7 @@ INSTANCE Recept_ItMw_1H_Mace_War_02(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ ¿elazna maczuga";
+	text[1]  				=	"¿elazn¹ maczugê";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -512,7 +512,7 @@ INSTANCE Recept_ItMw_1H_Mace_War_03(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ ³omotacz";
+	text[1]  				=	"³omotacz";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -534,7 +534,7 @@ INSTANCE Recept_ItMw_1H_Mace_War_04(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie moge wytworzyæ ³amacz serc";
+	text[1]  				=	"³amacz serc";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -555,7 +555,7 @@ INSTANCE Recept_ItMw_1H_Sword_Long_01(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ d³ugi miecz";
+	text[1]  				=	"d³ugi miecz";
 	on_state[0]				=	UseRecept;	
    description = name;
 };
@@ -575,7 +575,7 @@ INSTANCE Recept_ItMw_1H_Sword_Long_02(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ miecz strachu";
+	text[1]  				=	"miecz strachu";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_1H_Sword_Long_03(Recept_Proto)
@@ -595,7 +595,7 @@ INSTANCE Recept_ItMw_1H_Sword_Long_03(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ miecz nienawiœci";
+	text[1]  				=	"miecz nienawiœci";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_1H_Sword_Long_04(Recept_Proto)
@@ -615,7 +615,7 @@ INSTANCE Recept_ItMw_1H_Sword_Long_04(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ miecz zwyciêstwa";
+	text[1]  				=	"miecz zwyciêstwa";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_1H_Sword_Long_05(Recept_Proto)
@@ -635,7 +635,7 @@ INSTANCE Recept_ItMw_1H_Sword_Long_05(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ miecz œmierci";
+	text[1]  				=	"miecz œmierci";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_1H_Warhammer_01(Recept_Proto)
@@ -654,7 +654,7 @@ INSTANCE Recept_ItMw_1H_Warhammer_01(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ m³ot Orków";
+	text[1]  				=	"m³ot Orków";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_1H_Warhammer_02(Recept_Proto)
@@ -674,7 +674,7 @@ INSTANCE Recept_ItMw_1H_Warhammer_02(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ m³ot wojenny";
+	text[1]  				=	"m³ot wojenny";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_1H_Warhammer_03(Recept_Proto)
@@ -694,7 +694,7 @@ INSTANCE Recept_ItMw_1H_Warhammer_03(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ boski m³ot";
+	text[1]  				=	"boski m³ot";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -716,7 +716,7 @@ INSTANCE Recept_ItMw_1H_Axe_01(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ topór";
+	text[1]  				=	"topór";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_1H_Axe_02(Recept_Proto)
@@ -737,7 +737,7 @@ INSTANCE Recept_ItMw_1H_Axe_02(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ gruchotacz";
+	text[1]  				=	"gruchotacz";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_1H_Axe_03(Recept_Proto)
@@ -758,7 +758,7 @@ INSTANCE Recept_ItMw_1H_Axe_03(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ ³amacz koœci";
+	text[1]  				=	"³amacz koœci";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_1H_Sword_Broad_01(Recept_Proto)
@@ -778,7 +778,7 @@ INSTANCE Recept_ItMw_1H_Sword_Broad_01(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ miecz szeroki";
+	text[1]  				=	"miecz szeroki";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_1H_Sword_Broad_02(Recept_Proto)
@@ -799,7 +799,7 @@ INSTANCE Recept_ItMw_1H_Sword_Broad_02(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ wyrok wojownika";
+	text[1]  				=	"wyrok wojownika";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_1H_Sword_Broad_03(Recept_Proto)
@@ -821,7 +821,7 @@ INSTANCE Recept_ItMw_1H_Sword_Broad_03(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ szept burzy";
+	text[1]  				=	"szept burzy";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_1H_Sword_Broad_04(Recept_Proto)
@@ -843,7 +843,7 @@ INSTANCE Recept_ItMw_1H_Sword_Broad_04(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ rêkê stra¿nika";
+	text[1]  				=	"rêkê stra¿nika";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_1H_Sword_Bastard_02(Recept_Proto)
@@ -864,7 +864,7 @@ INSTANCE Recept_ItMw_1H_Sword_Bastard_02(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ rzeŸnika";
+	text[1]  				=	"rzeŸnika";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_1H_Sword_Bastard_03(Recept_Proto)
@@ -884,7 +884,7 @@ INSTANCE Recept_ItMw_1H_Sword_Bastard_03(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ kata";
+	text[1]  				=	"kata";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_1H_Sword_Bastard_04(Recept_Proto)
@@ -905,7 +905,7 @@ INSTANCE Recept_ItMw_1H_Sword_Bastard_04(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ wrzask berserkera";
+	text[1]  				=	"wrzask berserkera";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -927,7 +927,7 @@ INSTANCE Recept_ItMw_2H_Axe_Old_02(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ krwawego ¿niwiarza";
+	text[1]  				=	"krwawego ¿niwiarza";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -949,7 +949,7 @@ INSTANCE Recept_ItMw_2H_Axe_Old_03(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ starego sêdziego";
+	text[1]  				=	"starego sêdziego";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -970,7 +970,7 @@ INSTANCE Recept_ItMw_2H_Sword_Light_01(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ lekki miecz dwurêczny";
+	text[1]  				=	"lekki miecz dwurêczny";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -991,7 +991,7 @@ INSTANCE Recept_ItMw_2H_Sword_Light_02(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ miecz nadzorcy";
+	text[1]  				=	"miecz nadzorcy";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -1013,7 +1013,7 @@ INSTANCE Recept_ItMw_2H_Sword_Light_03(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ ostrze najemnika";
+	text[1]  				=	"ostrze najemnika";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -1035,7 +1035,7 @@ INSTANCE Recept_ItMw_2H_Sword_Light_04(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ miecz królewski";
+	text[1]  				=	"miecz królewski";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -1058,7 +1058,7 @@ INSTANCE Recept_ItMw_2H_Sword_Light_05(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ miecz demonów";
+	text[1]  				=	"miecz demonów";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -1080,7 +1080,7 @@ INSTANCE Recept_ItMw_2H_Axe_light_01(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ lekki topór bojowy";
+	text[1]  				=	"lekki topór bojowy";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -1103,7 +1103,7 @@ INSTANCE Recept_ItMw_2H_Axe_light_02(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ grzmot";
+	text[1]  				=	"grzmot";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -1126,7 +1126,7 @@ INSTANCE Recept_ItMw_2H_Axe_light_03(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ chrzêst";
+	text[1]  				=	"chrzêst";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -1148,7 +1148,7 @@ INSTANCE Recept_ItMw_2H_Sword_01(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ dwurêczniaka";
+	text[1]  				=	"dwurêczniaka";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -1169,7 +1169,7 @@ INSTANCE Recept_ItMw_2H_Sword_02(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ ostrze bohatera";
+	text[1]  				=	"ostrze bohatera";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -1191,7 +1191,7 @@ INSTANCE Recept_ItMw_2H_Sword_03(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ krwawe ostrze";
+	text[1]  				=	"krwawe ostrze";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_2H_Sword_Heavy_01(Recept_Proto)
@@ -1210,7 +1210,7 @@ INSTANCE Recept_ItMw_2H_Sword_Heavy_01(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ ciê¿ki dwurêczniak";
+	text[1]  				=	"ciê¿ki dwurêczniak";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_2H_Sword_Heavy_02(Recept_Proto)
@@ -1229,7 +1229,7 @@ INSTANCE Recept_ItMw_2H_Sword_Heavy_02(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ gniewn¹ stal";
+	text[1]  				=	"gniewn¹ stal";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_2H_Sword_Heavy_03(Recept_Proto)
@@ -1247,7 +1247,7 @@ INSTANCE Recept_ItMw_2H_Sword_Heavy_03(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ wœciek³¹ stal";
+	text[1]  				=	"wœciek³¹ stal";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_2H_Sword_Heavy_04(Recept_Proto)
@@ -1266,7 +1266,7 @@ INSTANCE Recept_ItMw_2H_Sword_Heavy_04(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ mœciw¹ stal";
+	text[1]  				=	"mœciw¹ stal";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -1286,7 +1286,7 @@ INSTANCE Recept_ItMw_2H_Sword_Heavy_05(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ korsarza";
+	text[1]  				=	"korsarza";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_2H_Axe_Heavy_01(Recept_Proto)
@@ -1306,7 +1306,7 @@ INSTANCE Recept_ItMw_2H_Axe_Heavy_01(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ topór wojenny";
+	text[1]  				=	"topór wojenny";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_2H_Axe_Heavy_02(Recept_Proto)
@@ -1325,7 +1325,7 @@ INSTANCE Recept_ItMw_2H_Axe_Heavy_02(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ krzyk wojownika";
+	text[1]  				=	"krzyk wojownika";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_2H_Axe_Heavy_03(Recept_Proto)
@@ -1346,7 +1346,7 @@ INSTANCE Recept_ItMw_2H_Axe_Heavy_03(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ piêœæ barbarzyñcy";
+	text[1]  				=	"piêœæ barbarzyñcy";
 	on_state[0]				=	UseRecept;	
 };
 INSTANCE Recept_ItMw_2H_Axe_Heavy_04(Recept_Proto)
@@ -1366,6 +1366,6 @@ INSTANCE Recept_ItMw_2H_Axe_Heavy_04(Recept_Proto)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ piêœæ trolla";
+	text[1]  				=	"piêœæ trolla";
 	on_state[0]				=	UseRecept;	
 };

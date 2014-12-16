@@ -88,7 +88,8 @@ PROTOTYPE Recept_Proto(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ przedmiot";			
+	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ";	
+	text[1] 				=	"przedmiot";
 	on_state[0]			=	UseRecept;		
 	TEXT[4]				= NAME_Value;					COUNT[4]	= value;
    description = name;

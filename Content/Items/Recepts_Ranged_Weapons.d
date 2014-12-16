@@ -75,7 +75,7 @@ INSTANCE Recept_ItRw_Bow_Small_01 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ krótki ³uk";//Wpisana nazwa broni!		
+	text[1] 				=	"krótki ³uk";//Wpisana nazwa broni!		
 	on_state[0]			=	UseRecept;		
    description = name;
 };
@@ -102,7 +102,7 @@ INSTANCE Recept_ItRw_Bow_Small_02 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ ³uk kawaleryjski";//Wpisana nazwa broni!		
+	text[1] 				=	"³uk kawaleryjski";//Wpisana nazwa broni!		
 	on_state[0]			=	UseRecept;		
    description = name;
 };
@@ -129,7 +129,7 @@ INSTANCE Recept_ItRw_Bow_Small_03 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ ³uk polowy";//Wpisana nazwa broni!		
+	text[1] 				=	"³uk polowy";//Wpisana nazwa broni!		
 	on_state[0]			=	UseRecept;		
    description = name;
 };
@@ -156,7 +156,7 @@ INSTANCE Recept_ItRw_Bow_Small_04 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ ³uk myœliwski";	
+	text[1] 				=	"³uk myœliwski";	
 	on_state[0]			=	UseRecept;		
    description = name;
 };
@@ -185,7 +185,7 @@ INSTANCE Recept_ItRw_Bow_Small_05 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ ³uk koœciany";	
+	text[1] 				=	"³uk koœciany";	
 	on_state[0]			=	UseRecept;		
    description = name;
 };
@@ -216,7 +216,7 @@ INSTANCE Recept_ItRw_Bow_Long_01 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ d³ugi ³uk";	
+	text[1] 				=	"d³ugi ³uk";	
 	on_state[0]			=	UseRecept;		
    description = name;
 };
@@ -251,7 +251,7 @@ INSTANCE Recept_ItRw_Bow_Long_02 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ ³uk kolczasty";	
+	text[1] 				=	"³uk kolczasty";	
 	on_state[0]			=	UseRecept;		
    description = name;
 };
@@ -278,7 +278,7 @@ INSTANCE Recept_ItRw_Bow_Long_03 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ ³uk wierzbowy";	
+	text[1] 				=	"³uk wierzbowy";	
 	on_state[0]			=	UseRecept;	
    description = name;
 };
@@ -309,7 +309,7 @@ INSTANCE Recept_ItRw_Bow_Long_04 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ ³uk dêbowy";	
+	text[1] 				=	"³uk dêbowy";	
 	on_state[0]			=	UseRecept;	
    description = name;
 };
@@ -340,7 +340,7 @@ INSTANCE Recept_ItRw_Bow_Long_05 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ wilcze k³y";	
+	text[1] 				=	"wilcze k³y";	
 	on_state[0]			=	UseRecept;
    description = name;
 };
@@ -367,7 +367,7 @@ INSTANCE Recept_ItRw_Bow_Long_06 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ podmuch wiatru";	
+	text[1] 				=	"podmuch wiatru";	
 	on_state[0]			=	UseRecept;
    description = name;
 };
@@ -401,7 +401,7 @@ INSTANCE Recept_ItRw_Bow_Long_07 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ ³uk ¿o³nierski";	
+	text[1] 				=	"³uk ¿o³nierski";	
 	on_state[0]			=	UseRecept;		
    description = name;
 };
@@ -432,7 +432,7 @@ INSTANCE Recept_ItRw_Bow_Long_08 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ ³uk z poro¿a";	
+	text[1] 				=	"³uk z poro¿a";	
 	on_state[0]			=	UseRecept;
    description = name;
 };
@@ -459,7 +459,7 @@ INSTANCE Recept_ItRw_Bow_Long_09 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ ³uk Nimroda";	
+	text[1] 				=	"³uk Nimroda";	
 	on_state[0]			=	UseRecept;
    description = name;
 };
@@ -493,7 +493,7 @@ INSTANCE Recept_ItRw_Bow_War_01 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ ³uk wojenny";	
+	text[1] 				=	"³uk wojenny";	
 	on_state[0]			=	UseRecept;
    description = name;
 };
@@ -522,7 +522,7 @@ INSTANCE Recept_ItRw_Bow_War_02 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ pogromcê orków";	
+	text[1] 				=	"pogromcê orków";	
 	on_state[0]			=	UseRecept;
    description = name;
 };
@@ -555,7 +555,7 @@ INSTANCE Recept_ItRw_Bow_War_03 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ gromow³adnego";	
+	text[1] 				=	"gromow³adnego";	
 	on_state[0]			=	UseRecept;
    description = name;
 };
@@ -590,7 +590,7 @@ INSTANCE Recept_ItRw_Bow_War_04 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ piekielny ³uk";	
+	text[1] 				=	"piekielny ³uk";	
 	on_state[0]			=	UseRecept;
    description = name;
 };
@@ -627,7 +627,7 @@ INSTANCE Recept_ItRw_Bow_War_05 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ ³uk œmierci";	
+	text[1] 				=	"³uk œmierci";	
 	on_state[0]			=	UseRecept;
    description = name;
 };
@@ -661,7 +661,7 @@ INSTANCE Recept_ItRw_Crossbow_01 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ lekk¹ kuszê";//Wpisana nazwa broni!		
+	text[1] 				=	"lekk¹ kuszê";//Wpisana nazwa broni!		
 	on_state[0]			=	UseRecept;
    description = name;
 };
@@ -697,7 +697,7 @@ INSTANCE Recept_ItRw_Crossbow_02 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ kuszê";
+	text[1] 				=	"kuszê";
 	on_state[0]			=	UseRecept;
    description = name;
 };
@@ -730,7 +730,7 @@ INSTANCE Recept_ItRw_Crossbow_03 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ ciê¿k¹ kuszê";
+	text[1] 				=	"ciê¿k¹ kuszê";
 	on_state[0]			=	UseRecept;
    description = name;
 };
@@ -765,7 +765,7 @@ INSTANCE Recept_ItRw_Crossbow_04 (Recept_Proto)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"NONE";	
-	text[0] 				=	"Dziêki tej recepcie mogê wytworzyæ kuszê wojenn¹";
+	text[1] 				=	"kuszê wojenn¹";
 	on_state[0]			=	UseRecept;
 	description = name;
 };

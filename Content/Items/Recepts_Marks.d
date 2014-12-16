@@ -12,7 +12,8 @@ INSTANCE Recept_ItMa_Iron(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ sztabkê ¿elaza";
+	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ";
+	text[1]  				=	"sztabkê ¿elaza";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -31,7 +32,8 @@ INSTANCE Recept_ItMa_Steel(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ sztabkê stali";
+	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ";
+	text[1]  				=	"sztabkê stali";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -50,7 +52,8 @@ INSTANCE Recept_ItMa_GoodSteel(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ sztabkê utwardzanej stali";
+	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ";
+	text[1]  				=	"sztabkê utwardzanej stali";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -90,7 +93,8 @@ INSTANCE Recept_ItMa_MagicBillet(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ sztabkê magicznego kruszcu";
+	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ";
+	text[1]  				=	"sztabkê magicznego kruszcu";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -108,7 +112,8 @@ INSTANCE Recept_ItMa_silverbillet(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ sztabkê srebra";
+	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ";
+	text[1]  				=	"sztabkê srebra";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -126,7 +131,8 @@ INSTANCE Recept_ItMa_goldbillet(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ sztabkê z³ota";
+	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ";
+	text[1]  				=	"sztabkê z³ota";
 	on_state[0]				=	UseRecept;	
 };
 
@@ -144,6 +150,7 @@ INSTANCE Recept_ItFo_Poison(C_Item)
 	visual 				=	"ItWr_Scroll_01.3ds";
 	material 				=	MAT_LEATHER;
 	scemeName 				=	"NONE";
-	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ truciznê";
+	text[0]  				=	"Dziêki tej recepcie mogê wytworzyæ";
+	text[1]  				=	"truciznê";
 	on_state[0]				=	UseRecept;	
 };
