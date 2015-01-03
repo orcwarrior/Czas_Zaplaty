@@ -11,8 +11,8 @@ instance Grd_2542_PatrolGRD (Npc_Default)
 	id 			=	2542;
 		
 	//-------- abilities --------
-	attribute[ATR_STRENGTH] 	= 180; 
-	attribute[ATR_DEXTERITY] 	= 140; 
+	attribute[ATR_STRENGTH] 	= 110; 
+	attribute[ATR_DEXTERITY] 	= 90; 
 	attribute[ATR_MANA_MAX] 	= 0;
 	attribute[ATR_MANA] 		= 0;
 	attribute[ATR_HITPOINTS_MAX]=	self.level*12+290;    
