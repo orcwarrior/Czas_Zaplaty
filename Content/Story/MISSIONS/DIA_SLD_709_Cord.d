@@ -635,7 +635,7 @@ Dodaj tej najemników którzy przyszli z Cordem
 	AI_Output (self, other, "DIA_Cord_ConvoyTrapEnd1_14_01"); //Ju¿ po wszystkim.
 	AI_Output (self, other, "DIA_Cord_ConvoyTrapEnd1_14_02"); //Szkoda, ¿e musia³o dojœæ do krwawego fina³u. Zawsze szanowa³em Orkana i Kirgo.
 	AI_Output (other, self, "DIA_Cord_ConvoyTrapEnd1_15_04"); //Zdaje siê, ¿e solidnie zapracowa³em na nagrodê.
-	AI_Output (self, other, "DIA_Cord_ConvoyTrapEnd1_14_05"); //Zaiste, opowieœcie o tobie piracie nie by³y przesadzone.
+	AI_Output (self, other, "DIA_Cord_ConvoyTrapEnd1_14_05"); //Zaiste, opowieœci o tobie piracie nie by³y przesadzone.
 	cord_price = cord_price + 1;
 	AI_Output (self, other, "DIA_Cord_ConvoyTrapEnd1_14_06"); //Twoja nagroda, zas³u¿y³eœ na ni¹.
 
