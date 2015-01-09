@@ -73,8 +73,14 @@ FUNC VOID Rtn_FOLLOW_263 ()
    TA_FollowPC (12,00,0,00,"FP_ROAM_OW_SNAPPER_OW_ORC"); 
 }; 
 
+FUNC VOID Rtn_WaitInTrap_263 () 
+{ 
+   TA_Stay(00,00,12,00,"FP_ROAM_OW_SNAPPER_OW_ORC"); 
+   TA_Stay(12,00,0,00,"FP_ROAM_OW_SNAPPER_OW_ORC"); 
+}; 
+
 FUNC VOID Rtn_NC1_263 ()
 {
-   TA_StandAround				(00,00,12,00,"NC_TAVERN_ROOM07");	
-	TA_StandAround				(12,00,24,00,"NC_TAVERN_ROOM07");	
+   TA_StandAround(00,00,12,00,"NC_TAVERN_ROOM07");	
+	TA_StandAround(12,00,24,00,"NC_TAVERN_ROOM07");	
 };

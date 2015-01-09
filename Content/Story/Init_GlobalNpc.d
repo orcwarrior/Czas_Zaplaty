@@ -39,7 +39,7 @@ var C_NPC cup;
 
 var C_NPC cord;
 var C_NPC kirgo;
-var C_NPC ashgan;
+var C_NPC asghan;
 
 var C_NPC poison_memory;
 var C_NPC mirror_memory;
@@ -202,7 +202,7 @@ func void Init_GlobalNpc_World()
    mordrag = Hlp_GetNpc(SLV_904_Mordrag);
    cord = Hlp_GetNpc(SLD_709_Cord);
    kirgo = Hlp_GetNpc(Grd_251_Kirgo); 
-   ashgan = Hlp_GetNpc(Grd_263_Asghan);
+   asghan = Hlp_GetNpc(Grd_263_Asghan);
    
    beast = Hlp_GetNpc(MonsterOfSwamp);
    lester = Hlp_GetNpc(PC_Psionic);

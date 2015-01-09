@@ -109,5 +109,6 @@ FUNC void  DIA_Asghan_End_Info()
 	AI_Output(self, other,"DIA_Asghan_End_Info_06_02"); //Odetchnê. Mam ju¿ doœæ wojowania w Kolonii. 
 	AI_Output(self, other,"DIA_Asghan_End_Info_06_03"); //Oby tê cholern¹ barierê jak najszybciej trafi³ szlag.
 	AI_Output(other, self,"DIA_Asghan_End_Info_15_04"); //Oby. Bywaj.
+	
 	Npc_ExchangeRoutine(self,"NC1");
 };

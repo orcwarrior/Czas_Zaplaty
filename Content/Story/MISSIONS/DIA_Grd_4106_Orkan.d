@@ -126,7 +126,7 @@ FUNC VOID DIA_Orkan_Escort_Info()
 	{
 		orkan_go = TRUE;
 		AI_Output (self, other, "DIA_Orkan_Escort_11_02"); //Uda³o Ci siê kogoœ zwerbowaæ?
-		AI_Output (other, self, "DIA_Orkan_Escort_15_03"); //Kirgo i Ashgan rusz¹ razem z konwojem.
+		AI_Output (other, self, "DIA_Orkan_Escort_15_03"); //Kirgo i asghan rusz¹ razem z konwojem.
 		AI_Output (self, other, "DIA_Orkan_Escort_11_04"); //Naprawdê siê zgodzili? Co za idioci. Ale brakuje jeszcze jednego szaleñca.
 		AI_Output (other, self, "DIA_Orkan_Escort_15_05"); //Ostatnim ochotnikiem bêdê ja.
 		AI_Output (self, other, "DIA_Orkan_Escort_11_06"); //Jesteœ pewien?
@@ -203,16 +203,22 @@ FUNC VOID DIA_Orkan_EscortGo1_Info()
 
 	Npc_ExchangeRoutine(self,"GUIDE");
 	Npc_ExchangeRoutine(kirgo,"FOLLOW");
-	Npc_ExchangeRoutine(ashgan,"FOLLOW");
+	Npc_ExchangeRoutine(asghan,"FOLLOW");
 
 	CreateInvItems (self,weaponpackage,2);
 	CreateInvItems (kirgo,weaponpackage,2);
-	CreateInvItems (ashgan,weaponpackage,2);
+	CreateInvItems (asghan,weaponpackage,2);
 	CreateInvItems (other,weaponpackage,2);
 	
-	Npc_ExchangeRoutine(cord,"TRAP");
-	
 	B_StopProcessInfos(self);
+	
+	Npc_ExchangeRoutine(cord, "TRAP");
+	
+	Wld_InsertNPC(SLD_7506_SoeldnerCordTrap, "WP_CONVOY_04");
+	Wld_InsertNPC(SLD_7507_SoeldnerCordTrap, "WP_CONVOY_05");
+	Wld_InsertNPC(SLD_7508_SoeldnerCordTrap, "OW_PATH_022");
+	Wld_InsertNPC(SLD_7509_SoeldnerCordTrap, "OW_PATH_023");
+	Wld_InsertNPC(SLD_7510_SoeldnerCordTrap, "OW_PATH_025");
 };
 
 // **************************************************
@@ -249,7 +255,16 @@ FUNC VOID DIA_Orkan_EscortTrap_Info()
 	B_StopProcessInfos(self);
 
 	AI_DrawWeapon (kirgo);
-	AI_DrawWeapon (ashgan);
+	AI_DrawWeapon (asghan);
+	AI_GotoNpc(cord, self);
+	Npc_ExchangeRoutine(cord, "TRAPTALK");
+	Npc_ExchangeRoutine(kirgo, "WaitInTrap");
+	Npc_ExchangeRoutine(asghan, "WaitInTrap");
+	AI_TurnToNpc(cord, hero);
+	
+	Wld_InsertNPC(SLD_7511_SoeldnerCordTrap, "WP_CONVOY_01");
+	Wld_InsertNPC(SLD_7512_SoeldnerCordTrap, "WP_CONVOY_02");
+	Wld_InsertNPC(SLD_7513_SoeldnerCordTrap, "WP_CONVOY_03");
 };
 
 // **************************************************
@@ -305,7 +320,7 @@ FUNC VOID DIA_Orkan_EscortTrapTalk_Die()
 
 	B_StopProcessInfos(self); 
 	B_StartAfterDialogFight(self,other,true);
-	B_StartAfterDialogFight(ashgan,other,true);
+	B_StartAfterDialogFight(asghan,other,true);
 	B_StartAfterDialogFight(kirgo,other,true);
 };
 
@@ -321,12 +336,12 @@ FUNC VOID DIA_Orkan_EscortTrapTalk_Mine()
 	AI_Output (self, other, "DIA_Orkan_EscortTrapTalk_Mine_11_04"); //A wy?
 	AI_TurnToNpc(self, kirgo);
 	AI_PlayAni(kirgo,"T_YES");
-	AI_TurnToNpc(self, ashgan);
-	AI_PlayAni(ashgan,"T_YES");
+	AI_TurnToNpc(self, asghan);
+	AI_PlayAni(asghan,"T_YES");
 
 	B_StopProcessInfos(self); 
 	B_StartAfterDialogFight(self,other,true);
-	B_StartAfterDialogFight(ashgan,other,true);
+	B_StartAfterDialogFight(asghan,other,true);
 	B_StartAfterDialogFight(kirgo,other,true);
 };
 
@@ -344,13 +359,14 @@ FUNC VOID DIA_Orkan_EscortTrapTalk_Join()
 	
    AI_TurnToNpc(self, kirgo);
 	AI_PlayAni(kirgo,"T_YES");
-	AI_TurnToNpc(self, ashgan);
-	AI_PlayAni(ashgan,"T_YES");
+	AI_TurnToNpc(self, asghan);
+	AI_PlayAni(asghan,"T_YES");
 	
    AI_Output (self, other, "DIA_Orkan_EscortTrapTalk_Join_11_08"); //Wa¿ne, ¿e jest je komu kopaæ i co wypiæ.
 	AI_Output (self, other, "DIA_Orkan_EscortTrapTalk_Join_11_09"); //A co na to nasz wymuskany Pan Najmita?
 	
    AI_TurnToNpc(self, cord);
+	AI_TurnToNpc(cord, hero);
 	merc_trap = 2;
 	B_StopProcessInfos(self); 
 };

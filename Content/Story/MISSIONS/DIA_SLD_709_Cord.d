@@ -522,6 +522,7 @@ FUNC void DIA_Cord_ConvoyConvoyTrap_Info()
 	AI_TurnToNpc(self, other);
 	AI_TurnToNpc(other, self);
 	AI_PlayAni(self,"T_YES");
+	AI_TurnToNpc(ork, hero);
 	B_StopProcessInfos	(self);
 };
 
@@ -549,8 +550,6 @@ FUNC void  DIA_Cord_ConvoyConvoyTrapEnd_Info()
 {
 	B_FullStop (hero);
 	var C_NPC ork; ork = Hlp_GetNpc(Grd_4106_Orkan);
-	var C_NPC kir; kir = Hlp_GetNpc(Grd_251_Kirgo);
-	var C_NPC ash; ash = Hlp_GetNpc(Grd_263_Asghan);
 
 	/*********************
 Dodaj tej najemników którzy przyszli z Cordem
@@ -587,8 +586,13 @@ Ork nagroda rudy zale¿y od cord_price sam ustal co na jakim poziomie byæ powinno
 		B_GiveInvItems (other,self,weaponpackage,NPC_HasItems(hero,weaponpackage));
 		Npc_RemoveInvItems(self,weaponpackage,NPC_HasItems(self,weaponpackage));
 	};
+	
+	Npc_RemoveInvItems(ork, weaponpackage, NPC_HasItems(ork, weaponpackage));
+	Npc_RemoveInvItems(kirgo, weaponpackage, NPC_HasItems(kirgo, weaponpackage));
+	Npc_RemoveInvItems(asghan, weaponpackage, NPC_HasItems(asghan, weaponpackage));
    
 	AI_TurnToNpc(self, ork);
+	AI_TurnToNpc(ork, hero);
 	Log_SetTopicStatus	(CH5_NC_Convoys,	LOG_SUCCESS);
 	B_LogEntry		(CH5_NC_Convoys, "Sprawa z konwojami zakoñczona. Uda³o mi siê namówiæ kilku stra¿ników do zmiany strony barykady. Oby w Nowym Obozie wytrzymali d³u¿ej ni¿ w Starym.");
 	B_StopProcessInfos	(self);
