@@ -489,6 +489,25 @@ FUNC void DIA_Cord_ConvoysPeopleDone4_Info()
 
 //************************************************************
 
+func void B_EndTrapChangeRoutine()
+{
+	var C_NPC sldCordTrap7506; sldCordTrap7506 = Hlp_GetNpc(SLD_7506_SoeldnerCordTrap);
+	Npc_ExchangeRoutine(sldCordTrap7506, "HIDE");
+	var C_NPC sldCordTrap7507; sldCordTrap7507 = Hlp_GetNpc(SLD_7507_SoeldnerCordTrap);
+	Npc_ExchangeRoutine(sldCordTrap7507, "HIDE");
+	var C_NPC sldCordTrap7508; sldCordTrap7508 = Hlp_GetNpc(SLD_7508_SoeldnerCordTrap);
+	Npc_ExchangeRoutine(sldCordTrap7508, "HIDE");
+	var C_NPC sldCordTrap7509; sldCordTrap7509 = Hlp_GetNpc(SLD_7509_SoeldnerCordTrap);
+	Npc_ExchangeRoutine(sldCordTrap7509, "HIDE");
+	var C_NPC sldCordTrap7510; sldCordTrap7510 = Hlp_GetNpc(SLD_7510_SoeldnerCordTrap);
+	Npc_ExchangeRoutine(sldCordTrap7510, "HIDE");
+	var C_NPC sldCordTrap7511; sldCordTrap7511 = Hlp_GetNpc(SLD_7511_SoeldnerCordTrap);
+	Npc_ExchangeRoutine(sldCordTrap7511, "HIDE");
+	var C_NPC sldCordTrap7512; sldCordTrap7512 = Hlp_GetNpc(SLD_7512_SoeldnerCordTrap);
+	Npc_ExchangeRoutine(sldCordTrap7512, "HIDE");
+	var C_NPC sldCordTrap7513; sldCordTrap7513 = Hlp_GetNpc(SLD_7513_SoeldnerCordTrap);
+	Npc_ExchangeRoutine(sldCordTrap7513, "HIDE");
+};
 //CINEMATIC?
 //DIA_Cord_ConvoyConvoyTrap
 //DIA_Cord_ConvoyConvoyTrapEnd etc.
@@ -597,6 +616,8 @@ Ork nagroda rudy zale¿y od cord_price sam ustal co na jakim poziomie byæ powinno
 	B_LogEntry		(CH5_NC_Convoys, "Sprawa z konwojami zakoñczona. Uda³o mi siê namówiæ kilku stra¿ników do zmiany strony barykady. Oby w Nowym Obozie wytrzymali d³u¿ej ni¿ w Starym.");
 	B_StopProcessInfos	(self);
 	Npc_ExchangeRoutine(self,"NC1");
+	
+	B_EndTrapChangeRoutine();
 };
 
 //************************************************************
@@ -627,9 +648,6 @@ FUNC int DIA_Cord_ConvoyTrapEnd1_Condition()
 FUNC void  DIA_Cord_ConvoyTrapEnd1_Info()
 {
 	B_FullStop (hero);
-	var C_NPC ork; ork = Hlp_GetNpc(Grd_4106_Orkan);
-	var C_NPC kir; kir = Hlp_GetNpc(Grd_251_Kirgo);
-	var C_NPC ash; ash = Hlp_GetNpc(Grd_263_Asghan);
 
 	/*********************
 Dodaj tej najemników którzy przyszli z Cordem
@@ -667,6 +685,8 @@ Ork nagroda w rudzie zale¿y od cord_price sam ustal co na jakim poziomie byæ pow
 	B_LogEntry		(CH5_NC_Convoys, "Sprawa z konwojami zakoñczona. Stra¿nicy nie ¿yj¹, Cord ma swoj¹ broñ, wszyscy s¹ zadowoleni - no mo¿e prócz stra¿ników.");
 	B_StopProcessInfos	(self);
 	Npc_ExchangeRoutine(self,"NC1");
+	
+	B_EndTrapChangeRoutine();
 };
 
 //************************************************************
