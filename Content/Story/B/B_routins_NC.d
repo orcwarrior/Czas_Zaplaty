@@ -1445,4 +1445,6 @@ func void B_Pirats_Wait()
 	
 	var C_NPC aa5; aa5 = Hlp_GetNpc(PIR_2612_JACKALLIGATOR);
 	Npc_ExchangeRoutine	(aa5, "DEFEND"); 
+	
+	Npc_ExchangeRoutine(ratford, "DEFEND");
 };

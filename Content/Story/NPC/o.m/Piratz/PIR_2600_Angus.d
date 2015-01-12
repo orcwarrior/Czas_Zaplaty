@@ -156,6 +156,6 @@ FUNC VOID Rtn_DEFEND_2600 ()
 
 FUNC VOID Rtn_Follow_2600 () 
 { 
-   Ta_FollowPC (0,00,12,00,"HIDDEOUT1"); 
-   Ta_FollowPC (12,00,0,00,"HIDDEOUT1"); 
+   Ta_FollowPC (0,00,12,00,hero.wp); 
+   Ta_FollowPC (12,00,0,00,hero.wp); 
 };

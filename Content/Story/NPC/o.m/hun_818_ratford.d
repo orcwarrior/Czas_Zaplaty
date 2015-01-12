@@ -133,6 +133,13 @@ func void Rtn_Meeting_818()
 
 FUNC VOID Rtn_Follow_818 () 
 { 
-   Ta_FollowPC (0,00,12,00,"HIDDEOUT1"); 
-   Ta_FollowPC (12,00,0,00,"HIDDEOUT1"); 
+   Ta_FollowPC (0,00,12,00,hero.wp); 
+   Ta_FollowPC (12,00,0,00,hero.wp); 
 };
+
+FUNC VOID Rtn_DEFEND_818 () 
+{ 
+   Ta_Guard (0,00,12,00,"OCC_LADDER_TOP"); 
+   Ta_Guard (12,00,0,00,"OCC_LADDER_TOP"); 
+};
+

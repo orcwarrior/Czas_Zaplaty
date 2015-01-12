@@ -2408,6 +2408,8 @@ FUNC VOID DIA_Cavalorn_Tunel1_Info()
    B_Dungeon_Trap();
    // Ork: Bossfight tutaj? chyba tak:
       BOSSFIGHT_CURRENT = BOSSFIGHT_FGT4;
+		
+	B_ExchangeRoutine(gomez, "HIDE");
 };
 
 //********************************************************
@@ -2479,7 +2481,7 @@ FUNC VOID DIA_Cavalorn_TunelTrapAfter_Info()
    AI_TurnToNpc(self, other);
    AI_Output (self, other,"DIA_Cavalorn_TunelTrapAfter_12_01"); //Tych mamy z g³owy, teraz musimy przebiæ siê do zamku.
    AI_Output (self, other,"DIA_Cavalorn_TunelTrapAfter_12_02"); //Za mn¹!   
-   Npc_ExchangeRoutine(self,"CASTLE");   
+   Npc_ExchangeRoutine(self,"FightInCastle");   
    B_StopProcessInfos(self);
 };
 
@@ -2536,7 +2538,7 @@ INSTANCE DIA_Cavalorn_CastleIn (C_INFO)
 FUNC INT DIA_Cavalorn_CastleIn_Condition()
 {
 
-   if (Npc_KnowsInfo (hero,DIA_Cavalorn_Castle))&&(Npc_GetDistToWP (self,"OCC_BARONS_ENTRANCE_DOWNSTAIRS") < 200)
+   if (Npc_KnowsInfo (hero,DIA_Cavalorn_Castle))&&(Npc_GetDistToWP (self,"OCC_BARONS_ENTRANCE_DOWNSTAIRS") < 500)
    {
       return 1;
    };
@@ -2570,7 +2572,7 @@ INSTANCE DIA_Cavalorn_CastleIn1 (C_INFO)
 
 FUNC INT DIA_Cavalorn_CastleIn1_Condition()
 {
-   if (Npc_KnowsInfo (hero,DIA_Cavalorn_CastleIn))&&(Npc_GetDistToWP (self,"OCC_LADDER_TOP") < 200)
+   if (Npc_KnowsInfo (hero,DIA_Cavalorn_CastleIn))&&(Npc_GetDistToWP (self,"OCC_LADDER_TOP") < 500)
    {
       return 1;
    };

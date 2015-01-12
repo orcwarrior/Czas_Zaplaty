@@ -66,3 +66,10 @@ func VOID Rtn_OT_100 ()
 	TA_Ebr_HangAround	(07,00,20,00,"OCC_BARONS_GREATHALL_THRONE");
 	TA_Ebr_HangAround	(20,00,07,00,"OCC_BARONS_GREATHALL_THRONE");
 };
+
+func VOID Rtn_Hide_100 ()
+{
+	TA_Stand(07,00,20,00,"INVISIBLE");
+	TA_Stand(20,00,07,00,"INVISIBLE");
+};
+

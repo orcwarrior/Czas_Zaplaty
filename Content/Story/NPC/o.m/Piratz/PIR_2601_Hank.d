@@ -104,30 +104,29 @@ FUNC VOID Rtn_RICKHELP_2601 ()
 FUNC VOID Rtn_Alarm_2601 ()
 {
 	TA_KillingGRDs(08,00,07,59,"HC_RANGED3"); 
-	 
 };
+
 FUNC VOID Rtn_Challenge_2601 ()
 {	
-	
 	TA_KillingGRDs (18,00,19,00,"OM_CHALLENGE_TEAM_A");
 	TA_KillingGRDs (19,00,18,00,"OM_CHALLENGE_TEAM_A");
 };
+
 Func Void Rtn_Fan_2601 ()
 {
-	 TA_ChallengeFans(08,00,07,59,"OM_FAN_3"); 
+	TA_ChallengeFans(08,00,07,59,"OM_FAN_3"); 
 };	
 FUNC VOID Rtn_FOLLOWALLIGATOR_2601 () 
 { 
-TA_FollowPC (0,00,12,00,"SPAWN_TALL_PATH_BANDITOS_02_04"); 
-TA_FollowPC (12,00,0,00,"SPAWN_TALL_PATH_BANDITOS_02_04"); 
+	TA_FollowPC (0,00,12,00,"SPAWN_TALL_PATH_BANDITOS_02_04"); 
+	TA_FollowPC (12,00,0,00,"SPAWN_TALL_PATH_BANDITOS_02_04"); 
 }; 
 
 FUNC VOID Rtn_PatrolTrap_2601 () 
 { 
-TA_STAND(0,00,12,00,"LOCATION_15_IN_2"); 
-TA_STAND (12,00,0,00,"LOCATION_15_IN_2"); 
+	TA_STAND(0,00,12,00,"LOCATION_15_IN_2"); 
+	TA_STAND (12,00,0,00,"LOCATION_15_IN_2"); 
 }; 
-
 
 FUNC VOID Rtn_TRAP_2601 () 
 { 
@@ -143,6 +142,6 @@ FUNC VOID Rtn_DEFEND_2601 ()
 
 FUNC VOID Rtn_Follow_2601 () 
 { 
-   Ta_FollowPC (0,00,12,00,"HIDDEOUT1"); 
-   Ta_FollowPC (12,00,0,00,"HIDDEOUT1"); 
+   Ta_FollowPC (0,00,12,00,hero.wp); 
+   Ta_FollowPC (12,00,0,00,hero.wp); 
 };
