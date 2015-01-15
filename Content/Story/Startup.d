@@ -3853,7 +3853,7 @@ FUNC VOID STARTUP_OR_DEEP ()
 Labyrinth
 *********************/
 
-FUNC VOID INIT_LABYRINTH ()
+FUNC VOID INIT_LABIRYNT ()
 {
 	INIT_ALLWORLDS();	
 
@@ -3864,7 +3864,7 @@ FUNC VOID INIT_LABYRINTH ()
 	Init_GlobalNpc();
 };
 
-FUNC VOID STARTUP_LABYRINTH ()
+FUNC VOID STARTUP_LABIRYNT ()
 {
 	Wld_InsertNpc(dead_guard, "DUNG5");			
 	Wld_InsertNpc(dead_guard, "DUNG7");		
@@ -3883,6 +3883,6 @@ FUNC VOID STARTUP_LABYRINTH ()
 	Wld_InsertNpc(SkeletonFireRanger,"DUNG53");
 	Wld_InsertNpc(Skeleton2HSwdWarrior, "DUNG19");
 	
-	INIT_LABYRINTH();	
+	INIT_LABIRYNT();	
 	STARTUP_ALLWORDLS();	
-}; // STARTUP_LABYRINTH
+}; // STARTUP_LABIRYNT
