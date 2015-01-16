@@ -2572,7 +2572,7 @@ INSTANCE DIA_Cavalorn_CastleIn1 (C_INFO)
 
 FUNC INT DIA_Cavalorn_CastleIn1_Condition()
 {
-   if (Npc_KnowsInfo (hero,DIA_Cavalorn_CastleIn))&&(Npc_GetDistToWP (self,"OCC_LADDER_TOP") < 500)
+   if (Npc_KnowsInfo (hero,DIA_Cavalorn_CastleIn))&&(Npc_GetDistToWP (self,"OCC_LADDER_TOP") < 800)
    {
       return 1;
    };
@@ -2587,6 +2587,7 @@ FUNC VOID DIA_Cavalorn_CastleIn1_Info()
 
    B_LogEntry(CH6_RBL_PayDay, "Gomez uciek³ do podziemi, idziemy jego tropem.");
    Npc_ExchangeRoutine(self, "DEFEND");
+	Wld_InsertItem(ITKE_DUNG_KEY,"OCC_CELLAR_FIRST_ROOM");
    
    B_Pirats_Wait();
 
