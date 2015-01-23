@@ -276,8 +276,8 @@ func void MusicSystem_Callback()
 		MusicSystem_PlayMusic(bossFightMotif,MusicSys_MusicVolume);
 		return;
 	};
-	printscreen_ss("Music Zone: ",MusicSystem_GetTheme()
-	,5,8,7);
+	//printscreen_ss("Music Zone: ",MusicSystem_GetTheme()
+	//,5,8,7);
 	musiczone = MEM_ReadInt(MUSIC_Zone_Address);
 	// Zmiana strefy muzycznej / wczytanie gry (zmiana adresu music zone)
 	if(musiczone!=MusicSystem_MusicZoneAddress_Last)//change music: std->std or fgt->fgt
