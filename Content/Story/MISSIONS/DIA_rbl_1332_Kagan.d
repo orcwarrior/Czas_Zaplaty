@@ -184,7 +184,7 @@ FUNC VOID DIA_BaalKagan_OrderHelp_Info()
 	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp1_13_33"); //PóŸniej zaniesiesz paczkê Taranowi.
 	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp1_15_34"); //To wszystko?
 	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp1_13_35"); //Tak, mówi³em, ¿e dla kogoœ takiego jak Ty to ¿aden wysi³ek.
-	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp1_13_36"); //Tylko musisz paczkê najpierw przynieœæ mi. Je¿eli zaniesiesz j¹ od razu do Tarana to mój misterny plan szlag trafi.
+	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp1_13_36"); //Tylko musisz paczkê najpierw przynieœæ mi. Je¿eli zaniesiesz j¹ od razu do Tarana, to mój misterny plan szlag trafi.
 	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp1_15_37"); //No dobra, a co ja bêdê z tego mia³?
 	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp1_13_38"); //Zap³acê Ci... 300 bry³ek.
 	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp1_15_39"); //To za ma³o.
@@ -195,7 +195,7 @@ FUNC VOID DIA_BaalKagan_OrderHelp_Info()
 	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp1_13_44"); //Ale z ciebie skurwiel! Niech bêdzie. Dostaniesz udzia³ w utargu. Powiedzmy... 10 procent.
 	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp1_15_45"); //Mam lepszy pomys³. Odpalisz mi 20 procent co 10 dni. 
 	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp1_13_46"); //Ty...
-	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp1_15_47"); //Uwa¿aj na s³owa je¿eli lubisz swój jêzyk.
+	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp1_15_47"); //Uwa¿aj na s³owa, je¿eli lubisz swój jêzyk.
 	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp1_13_48"); //Niech Ciê szlag! Dobra, przynieœ mi tê cholern¹ paczkê. Zaczynam ¿a³owaæ, ¿e wda³em siê z Tob¹ w interesy...
 
 	Log_CreateTopic		(CH2_RBL_Stuff,	LOG_MISSION);

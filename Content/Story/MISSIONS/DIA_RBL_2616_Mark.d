@@ -213,7 +213,7 @@ FUNC VOID DIA_Mark_Camp2_Info()
 	AI_Output (other, self, "DIA_Mark_Camp2_15_01"); //Jak siê tu ¿yje?
 	AI_Output (self, other, "DIA_Mark_Camp2_11_02"); //Jak i wszêdzie.
 	AI_Output (self, other, "DIA_Mark_Camp2_11_03"); //Musisz jeœæ, sraæ i czasem nadstawiæ dupê jakiemuœ skurwielowi, co by sobie pochêdo¿y³, zamiast wypru³ Ci flaki.
-	AI_Output (self, other, "DIA_Mark_Camp2_11_04"); //No i jeszcze orki. Ale z nimi nie da siê pogadaæ. Najlepsza metoda na prze¿ycie to szybko przebieraæ nogami i nie ogl¹daæ siê za siebie, dopóki nie zobaczysz bramy obozu.
+	AI_Output (self, other, "DIA_Mark_Camp2_11_04"); //No i jeszcze orkowie. Ale z nimi nie da siê pogadaæ. Najlepsza metoda na prze¿ycie to szybko przebieraæ nogami i nie ogl¹daæ siê za siebie, dopóki nie zobaczysz bramy obozu.
 	
 	B_LogEntry(CH1_Rbl_MarkInfo, "Przyjemne miejsce ten obóz rebeliantów, muszê uwa¿aæ na to co mówiê i z kim rozmawiam.");
 };

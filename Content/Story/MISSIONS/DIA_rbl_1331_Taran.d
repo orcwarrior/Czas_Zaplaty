@@ -242,7 +242,7 @@ FUNC VOID DIA_BaalTaran_CanYouTeachMe_Info()
    AI_Output (self, other, "DIA_BaalTaran_CanYouTeachMe_15_02"); //Tak, mogê nauczyæ ciê, jak zwiêkszyæ swoj¹ duchow¹ si³ê.
    
    Log_CreateTopic(GE_TeacherOR, LOG_NOTE);
-   B_LogEntry(GE_TeacherOR, "BaalTaran mo¿e mi pomóc zwiêkszyæ manê.");
+   B_LogEntry(GE_TeacherOR, "Taran mo¿e mi pomóc zwiêkszyæ manê.");
 };
 // **************************************************
 //					Was ist Bruderschaft
@@ -353,7 +353,7 @@ FUNC int  DIA_BaalTaran_WhatDo_Condition()
 FUNC VOID  DIA_BaalTaran_WhatDo_Info()
 {
 	AI_Output (other, self,"DIA_BaalTaran_WhatDo_15_00"); //Jak trafi³eœ do Obozu Rebeliantów?
-	AI_Output (self, other,"DIA_BaalTaran_WhatDo_05_01"); //Mia³em ju¿ doœæ tych œwirów na bagnie. Cavalorn m¹drze gada. Je¿eli zrobimy porz¹dek z Gomezem  to wtedy mo¿emy zacz¹æ ponowne negocjacje z królem.
+	AI_Output (self, other,"DIA_BaalTaran_WhatDo_05_01"); //Mia³em ju¿ doœæ tych œwirów na bagnie. Cavalorn m¹drze gada. Je¿eli zrobimy porz¹dek z Gomezem, to wtedy mo¿emy zacz¹æ ponowne negocjacje z królem.
 	AI_Output (self, other,"DIA_BaalTaran_WhatDo_05_02"); //Na pewno Arcymag Krêgu Ognia znajdzie sposób na zniszczenie bariery. Niech sobie Rhobar zabiera rudê, my chcemy siê tylko wyrwaæ z tego gówna.
 };
 
@@ -383,7 +383,7 @@ FUNC VOID  DIA_BaalTaran_WhatDo1_Info()
 	AI_Output (self, other,"DIA_BaalTaran_WhatDo1_05_01"); //Sprzedajê ziele, na tym znam siê najlepiej.
 	AI_Output (self, other,"DIA_BaalTaran_WhatDo1_05_02"); //Chcesz coœ kupiæ?
 	Log_CreateTopic   	(CH2_DrugTrader,LOG_NOTE);
-	B_LogEntry			(CH2_DrugTrader,"BaalTaran w Obozie Rebeliantów sprzedaje ziele.");
+	B_LogEntry			(CH2_DrugTrader,"Taran w Obozie Rebeliantów sprzedaje ziele.");
 };
 
 // **************************************************
@@ -420,7 +420,7 @@ FUNC VOID  DIA_BaalTaran_WhatDo3_Info()
 	AI_Output (self, other,"DIA_BaalTaran_WhatDo3_05_09"); //Wróæ jak zmienisz zdanie.
 	Log_CreateTopic	(CH3_RBL_Destiny, LOG_MISSION);
 	Log_SetTopicStatus	(CH3_RBL_Destiny, LOG_RUNNING);
-	B_LogEntry		(CH3_RBL_Destiny, "Baal Taran twierdzi, ¿e potrafi zajrzeæ w przysz³oœæ. Za 200 bry³ek powie mi co mnie czeka. Mo¿e warto spróbowaæ?");
+	B_LogEntry		(CH3_RBL_Destiny, "Taran twierdzi, ¿e potrafi zajrzeæ w przysz³oœæ. Za 200 bry³ek powie mi co mnie czeka. Mo¿e warto spróbowaæ?");
 };
 
 // **************************************************
@@ -467,7 +467,7 @@ FUNC VOID  DIA_BaalTaran_WhatDo4_Info()
 	Mdl_RemoveOverlayMds(self,"humans_skeleton_fly.mds");
 	AI_Output (self, other,"DIA_BaalTaran_WhatDo4_05_16"); //Nie mam ju¿ si³... OdejdŸ...
 	Log_SetTopicStatus	(CH3_RBL_Destiny, LOG_SUCCESS);
-	B_LogEntry		(CH3_RBL_Destiny, "BaalTaran ukaza³ mi przysz³oœæ, nie wiem jednak ile w jego s³owach jest prawdy... Poza tym ka¿dy musi w koñcu umrzeæ, kto chcia³by ¿yæ wiecznie? ");
+	B_LogEntry		(CH3_RBL_Destiny, "Taran ukaza³ mi przysz³oœæ, nie wiem jednak ile w jego s³owach jest prawdy... Poza tym ka¿dy musi w koñcu umrzeæ, kto chcia³by ¿yæ wiecznie? ");
 	B_StopProcessInfos	( self );
 };
 
@@ -538,7 +538,7 @@ FUNC VOID  DIA_BaalTaran_Stuff_Info()
 	B_GiveInvItems (self, other, ItMiJoint_3, 1);
 
 	taran_gone = B_SetDayTolerance()+1;
-	B_LogEntry		(CH2_RBL_Stuff,	"Baal Taran dosta³ doprawiona paczkê ziela. Czas odebraæ zap³atê.");
+	B_LogEntry		(CH2_RBL_Stuff,	"Taran dosta³ doprawiona paczkê ziela. Czas odebraæ zap³atê.");
 };
 
 // **************************************************
@@ -599,7 +599,7 @@ FUNC VOID  DIA_BaalTaran_Hanis_Info()
 	AI_Output (other, self,"DIA_BaalTaran_Hanis_15_03"); //Nie sprzeda³eœ mu ostatnio jakiegoœ ziela? Czegoœ specjalnego?
 	AI_Output (self, other,"DIA_BaalTaran_Hanis_05_04"); //Nie. Nie sprzeda³em mu nic, odk¹d nie zap³aci³ za zew nocy. 
 	AI_Output (other, self,"DIA_BaalTaran_Hanis_15_05"); //Dziêki.
-	B_LogEntry		(CH2_RBL_Mem, "To nie BaalTaran sprzeda³ ziele Kharimowi.");
+	B_LogEntry		(CH2_RBL_Mem, "To nie Taran sprzeda³ ziele Kharimowi.");
 };
 
 //***************************************************************

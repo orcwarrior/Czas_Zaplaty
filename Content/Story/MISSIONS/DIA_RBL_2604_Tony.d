@@ -652,7 +652,7 @@ FUNC VOID RBL_2604_Tony_Guard_Yes()
 	AI_Output (self, other,"RBL_2604_Tony_Guard_Yes_Info_07_05"); //Bêdê na ciebie czeka³.
 	Log_CreateTopic	(CH1_Rbl_TonyGuard, LOG_MISSION);
 	B_LogSetTopicStatus	(CH1_Rbl_TonyGuard, LOG_RUNNING);
-	B_LogEntry		(CH1_Rbl_TonyGuard, "¯eby zostaæ jednym z rebeliantów zgodzi³em siê stan¹æ za Toniego na warcie w nocy. Muszê dotrwaæ do rana inaczej Tony mo¿e mieæ nieprzyjemnoœci a ja nie zdobêdê jego poparcia.");
+	B_LogEntry		(CH1_Rbl_TonyGuard, "¯eby zostaæ jednym z rebeliantów zgodzi³em siê stan¹æ za Toniego na warcie w nocy. Muszê dotrwaæ do rana, inaczej Tony mo¿e mieæ nieprzyjemnoœci, a ja nie zdobêdê jego poparcia.");
 	Info_ClearChoices (RBL_2604_Tony_Guard);
 	B_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self,"GUIDESENTRY");	
