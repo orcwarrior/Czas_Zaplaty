@@ -78,6 +78,7 @@ FUNC VOID DIA_RBL_2604_Tony_Warn_Info()
 	AI_Output (other, self,"DIA_RBL_2604_Tony_Warn_15_10"); //Stary Obóz? A sk¹d ja mam wiedzieæ, ¿e mówisz prawdê?
 	AI_Output (self, other,"DIA_RBL_2604_Tony_Warn_08_11"); //Udowodniê to. Zaprowadzê was do Obozu Rebeliantów, do którego teraz nale¿ê.
 	Log_CreateTopic	(CH1_Pir_RebelCamp, LOG_MISSION);
+	B_LogSetTopicStatus(CH1_Rbl_RebelCamp, LOG_RUNNING);
 	B_LogEntry		(CH1_Pir_RebelCamp, "Spotkaliœmy kolesia w czerwonej zbroi, który twierdzi, ¿e jest uciekinierem ze Starego Obozu. W zamian za ¿ycie chce nam udowodniæ, ¿e mówi prawdê i zaprowadzi nas do Obozu Rebeliantów, do którego podobno teraz nale¿y."); 
 	
 	//Npc_ExchangeRoutine(self,"START");	
