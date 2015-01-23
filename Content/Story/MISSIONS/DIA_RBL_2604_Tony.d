@@ -145,7 +145,7 @@ FUNC void  RBL_2604_Tony_RebelCamp_Info()
 	AI_Output (other, self,"RBL_2604_Tony_RebelCamp_Info_15_01"); //Obóz Rebeliantów?
 	AI_Output (self, other,"RBL_2604_Tony_RebelCamp_Info_07_02"); //Tak. A co w tym dziwnego?
 	AI_Output (other, self,"RBL_2604_Tony_RebelCamp_Info_15_03"); //Nie s¹dzi³em, ¿e mordercy, gwa³ciciele i z³odzieje odczuwaj¹ potrzebê rebelii.
-	AI_Output (self, other,"RBL_2604_Tony_RebelCamp_Info_07_04"); //Nikt nie lubi¹ jak siê mu mówi co ma robiæ.
+	AI_Output (self, other,"RBL_2604_Tony_RebelCamp_Info_07_04"); //Nikt nie lubi, jak siê mu mówi co ma robiæ.
 	AI_Output (self, other,"RBL_2604_Tony_RebelCamp_Info_07_05"); //W Starym Obozie wszystko krêci siê wokó³ rudy i Gomeza. Wychylisz siê i czapa.
 	AI_Output (self, other,"RBL_2604_Tony_RebelCamp_Info_07_06"); //W Nowym Obozie nikt Ciê nie szanuje, chyba, ¿e jesteœ s³ugusem na posy³ki Magów Wody.
 	AI_Output (self, other,"RBL_2604_Tony_RebelCamp_Info_07_07"); //A Bractwo to banda æpunów wierz¹cych w urojonego bo¿ka.
@@ -267,7 +267,7 @@ FUNC void  RBL_2604_Tony_OLDCAMP_Jobs()
 		AI_Output (self, other,"RBL_2604_Tony_OLDCAMP_Jobs_Info_07_08"); //Wiedz¹ o tym magnaci, stra¿nicy jak i cienie. Kto wie jak to siê skoñczy...
 		AI_Output (self, other,"RBL_2604_Tony_OLDCAMP_Jobs_Info_07_09"); //Najgorzej maj¹ kopacze. Od œwitu do zmierzchu haruj¹ w pocie czo³a przy wydobyciu rudy.	
 		AI_Output (self, other,"RBL_2604_Tony_OLDCAMP_Jobs_Info_07_10"); //A jedyne co z tego maj¹ to ¿arcie i obelgi stra¿ników.	
-		AI_Output (self, other,"RBL_2604_Tony_OLDCAMP_Jobs_Info_07_11"); //Gdyby kopacze stanêli po stronie cieni to Gomez mia³by spory problem.
+		AI_Output (self, other,"RBL_2604_Tony_OLDCAMP_Jobs_Info_07_11"); //Gdyby kopacze stanêli po stronie cieni, to Gomez mia³by spory problem.
 		B_LogEntry		(CH1_Pir_OldCamp, "Sytuacja w Starym Obozie wydaje siê doœæ napiêta. Magnaci i stra¿nicy nie ufaj¹ cieniom, nie mog¹ jednak otwarcie przeciwko nim wyst¹piæ, bo za bardzo os³abi³oby to si³y obozu. Warto te¿ pamiêtaæ o kopaczach, którzy szczerze nienawidz¹ stra¿ników.");	
 	}
 	else

@@ -153,7 +153,7 @@ FUNC VOID DIA_PIR_2602_Rodney_What_Info()
 	AI_Output (self, other,"DIA_PIR_2602_Rodney_What_08_02"); //Tak, mam ma³¹ proœbê.
 	AI_Output (self, other,"DIA_PIR_2602_Rodney_What_08_03"); //Widzisz, wiêkszoœæ ³adunku posz³a na dno. Ale trochê wala siê jeszcze tu i ówdzie na brzegu. 
 	AI_Output (self, other,"DIA_PIR_2602_Rodney_What_08_04"); //Nie mam teraz czasu, ¿eby samemu pozbieraæ to co ocala³o.
-	AI_Output (self, other,"DIA_PIR_2602_Rodney_What_08_05"); //Przynieœæ mi tyle paczek, ile zdo³asz.
+	AI_Output (self, other,"DIA_PIR_2602_Rodney_What_08_05"); //Przynieœ mi tyle paczek, ile zdo³asz.
 	AI_Output (self, other,"DIA_PIR_2602_Rodney_What_08_06"); //Szczególnie interesuj¹ mnie paczki z ekwipunkiem, jak miecze, kusze czy ³uki.
 	AI_Output (other, self,"DIA_PIR_2602_Rodney_What_15_07"); //A co ja bêdê z tego mia³?
 	AI_Output (self, other,"DIA_PIR_2602_Rodney_What_08_08"); //Moj¹ wdziêcznoœæ oczywiœcie!

@@ -120,7 +120,7 @@ FUNC VOID DIA_PIR_2601_Hank_WhereAreWe_Info()
 	AI_Output (self, other,"DIA_PIR_2601_Hank_WhereAreWe_09_20"); //Poczekamy a¿ zapadnie zmrok i wtedy obejrzymy sobie okolicê.								
 	
    Log_CreateTopic(CH1_Pir_Colony, LOG_NOTE);
-	B_LogEntry(CH1_Pir_Colony, "Po tym jak dopad³ nas paskudny sztorm trafiliœmy do Koloni Karnej na wyspie Khorinis. Do tego ca³¹ Koloniê otacza jakaœ magiczna bariera. Trzeba bêdzie znaleŸæ sposób, ¿eby siê st¹d wyrwaæ i to jak najszybciej.");
+	B_LogEntry(CH1_Pir_Colony, "Po tym jak dopad³ nas paskudny sztorm trafiliœmy do Kolonii Karnej na wyspie Khorinis. Do tego ca³¹ Koloniê otacza jakaœ magiczna bariera. Trzeba bêdzie znaleŸæ sposób, ¿eby siê st¹d wyrwaæ i to jak najszybciej.");
 };
 
 INSTANCE DIA_PIR_2601_Hank_WhatDo (C_INFO)

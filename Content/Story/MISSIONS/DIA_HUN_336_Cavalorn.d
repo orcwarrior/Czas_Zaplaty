@@ -1343,7 +1343,7 @@ FUNC VOID DIA_Cavalorn_Pass_Info()
    AI_Output (self, other,"DIA_Cavalorn_Pass_12_11"); //Za bardzo s¹ nam potrzebni.
    AI_Output (other, self, "DIA_Cavalorn_Pass_15_12"); //Czyli w pewnym sensie to z³o konieczne, tak?
    AI_Output (self, other,"DIA_Cavalorn_Pass_12_13"); //Niezupe³nie. My pomagamy im, oni nam. Uzupe³niamy siê, to raczej symbioza, chocia¿ to g³ównie my pomagamy im.
-   AI_Output (other, self, "DIA_Cavalorn_Pass_15_14"); //Rozumiem, ¿e nie rozmawiaj¹ z pierwszy lepszym skazañcem.
+   AI_Output (other, self, "DIA_Cavalorn_Pass_15_14"); //Rozumiem, ¿e nie rozmawiaj¹ z pierwszym lepszym skazañcem.
    AI_Output (self, other,"DIA_Cavalorn_Pass_12_15"); //To zale¿y. Udowodnij coœ wart, wtedy pogadamy.
 
    Log_CreateTopic(CH2_RBL_Mags, LOG_MISSION);
