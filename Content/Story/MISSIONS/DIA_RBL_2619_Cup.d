@@ -151,17 +151,18 @@ FUNC INT DIA_Cup_Again_Condition()
 
 FUNC VOID DIA_Cup_Again_Info()
 {
+	var c_npc hark; hark = hlp_getnpc(RBL_2618_HARK);
+	var c_npc cup; cup = hlp_getnpc(RBL_2619_Cup);
 	hark_trial = hark_trial +1;//4
+	
 	AI_Output (other, self, "DIA_Cup_Again_15_01"); //To Ci siê nie spodoba.
 	AI_Output (self, other, "DIA_Cup_Again_11_02"); //Co ten sukinsyn powiedzia³?
 	AI_Output (other, self, "DIA_Cup_Again_15_03"); //Hark powiedzia³, ¿e to pewnie po tatusiu œmierdzisz i wygl¹dasz jak ork.
 	AI_Output (self, other, "DIA_Cup_Again_11_04"); //Tego ju¿ za wiele. Idê skopaæ mu to t³uste dupsko!
-	var c_npc hark; hark = hlp_getnpc(RBL_2618_HARK);
-
-	Npc_SetAivar(self, AIV_BEENATTACKED, 0);
+	
 	B_StopProcessInfos	(self);
-	B_StartAfterDialogFight(self,hark,false);
-	B_StartAfterDialogFight(hark,self,false);
+	B_StartAfterDialogFight(cup,hark,false);
+	Npc_SetTarget(cup, hark);
 };
 
 
@@ -179,7 +180,7 @@ INSTANCE DIA_Cup_Again1 (C_INFO)
 FUNC INT DIA_Cup_Again1_Condition()
 {
 
-	if (Npc_KnowsInfo(other,DIA_Hark_Again1))&&(hark_trial == 5)
+	if (Npc_KnowsInfo(other,DIA_Hark_Again1))&&(hark_trial == 6)
 	{ 
 		return TRUE; 
 	}; 
@@ -189,7 +190,7 @@ FUNC INT DIA_Cup_Again1_Condition()
 
 FUNC VOID DIA_Cup_Again1_Info()
 {
-	hark_trial = hark_trial +1;//6
+	hark_trial = hark_trial +1;//7
 	AI_Output (other, self, "DIA_Cup_Again1_15_01"); //Warto by³o?
 	AI_Output (self, other, "DIA_Cup_Again1_11_02"); //ZejdŸ mi z oczu cholerny pod¿egaczu!
 	B_StopProcessInfos	(self);

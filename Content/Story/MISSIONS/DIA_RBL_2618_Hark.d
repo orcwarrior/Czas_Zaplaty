@@ -188,9 +188,7 @@ INSTANCE DIA_Hark_Again1 (C_INFO)
 
 FUNC INT DIA_Hark_Again1_Condition()
 {
-	var C_NPC cup; cup = Hlp_GetNpc(RBL_2619_Cup);
-
-	if (Npc_KnowsInfo(other,DIA_Cup_Again)) && (hark_trial == 4) && (Npc_GetAivar(cup, AIV_BEENATTACKED) == TRUE)
+	if (Npc_KnowsInfo(other,DIA_Cup_Again)) && (hark_trial == 5)
 	{ 
 		return TRUE; 
 	}; 
@@ -200,7 +198,7 @@ FUNC VOID DIA_Hark_Again1_Info()
 {
 	var C_NPC cup; cup = Hlp_GetNpc(RBL_2619_Cup);
 	B_GiveXP(150);
-	hark_trial = hark_trial  +1;//5
+	hark_trial = hark_trial  +1;//6
    
 	AI_Output (self, other, "DIA_Hark_Again1_11_01"); //Sprowokowanie tego idioty nie by³o takie trudne.
 	AI_Output (other, self, "DIA_Hark_Again1_15_02"); //Faktycznie Kufel jest doœæ wra¿liwy na punkcie rodziny.
@@ -236,7 +234,7 @@ FUNC INT DIA_Hark_Again2_Condition()
 
 FUNC VOID DIA_Hark_Again2_Info()
 {
-	hark_trial = 5;//Za chuja by to nie dzia³a³o
+	hark_trial = 20;//Za chuja by to nie dzia³a³o
    
 	AI_Output (other, self, "DIA_Hark_Again2_15_01"); //Nie uda³o mi siê sprowokowaæ Kufla.
 	AI_Output (self, other, "DIA_Hark_Again2_11_02"); //Dupa jesteœ i tyle. Nawet Wrzód by sobie lepiej poradzi³.

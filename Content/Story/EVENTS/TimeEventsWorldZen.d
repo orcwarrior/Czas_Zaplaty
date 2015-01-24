@@ -17,6 +17,11 @@ func void TimeEventsWorldZen()
 			AI_SetWalkmode(tony, NPC_RUN);
 		};
 		
+		if (hark_trial == 4 && cup.attribute[ATR_HITPOINTS] < 10)
+		{
+			hark_trial += 1;
+		};
+		
 		if(hero_is_in_kevin_room_ontime==1)
 		{
 			if((npc_HasItems(hero, kevin_diary)+npc_HasItems(hero, ITKE_STORAGE_01)+npc_HasItems(hero, ITKE_GOMEZ_01))>=3)
