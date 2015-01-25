@@ -118,7 +118,6 @@ const  string	CH2_RBL_Raport				=	"Raport z Nowego Obozu";
 const  string	CH2_RBL_armor			=	"Delikatna sprawa";
 const  string	CH2_RBL_DrunkmanSecret		=	"Sekret Piwosza";
 const  string	CH2_NON_Deep				=	"G³êbia";
-const  string	CH2_DrugTrader				=	"Handlarz zielem";
 //TODO: Do poprawki shera 			  \/ 2x
 const  string	CH2_RBL_Mem					=	"Banicja";
 const  string	CH2_RBL_Stuff				=	"Konkurencja";

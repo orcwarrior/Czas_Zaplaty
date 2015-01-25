@@ -382,8 +382,8 @@ FUNC VOID  DIA_BaalTaran_WhatDo1_Info()
 	AI_Output (other, self,"DIA_BaalTaran_WhatDo1_15_00"); //Czym siê zajmujesz w obozie?
 	AI_Output (self, other,"DIA_BaalTaran_WhatDo1_05_01"); //Sprzedajê ziele, na tym znam siê najlepiej.
 	AI_Output (self, other,"DIA_BaalTaran_WhatDo1_05_02"); //Chcesz coœ kupiæ?
-	Log_CreateTopic   	(CH2_DrugTrader,LOG_NOTE);
-	B_LogEntry			(CH2_DrugTrader,"Taran w Obozie Rebeliantów sprzedaje ziele.");
+
+	B_LogEntry(GE_TraderOR, "Taran w Obozie Rebeliantów sprzedaje ziele.");
 };
 
 // **************************************************
