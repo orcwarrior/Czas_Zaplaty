@@ -25,6 +25,31 @@ FUNC VOID DIA_Fox_Hello_Info()
 	B_StopProcessInfos	( self );
 };
 
+INSTANCE DIA_Fox_Trade(C_INFO)
+{
+	npc				= RBL_2614_FOX;
+	nr				= 1;
+	condition		= DIA_Fox_Trade_Condition;
+	information		= DIA_Fox_Trade_Info;
+	permanent		= 0;
+	important		= 0;
+	description		= "Zajmujesz siê handlem?"; 
+};
+
+FUNC INT DIA_Fox_Trade_Condition()
+{
+	return 1;
+};
+
+FUNC VOID DIA_Fox_Trade_Info()
+{
+	AI_Output (other, self, "DIA_Fox_Trade_15_01"); //Zajmujesz siê handlem?
+	AI_Output (self, other, "DIA_Fox_Trade_11_02"); //Tak, handlujê broni¹ byœcie siê mogli wzajemnie ok³adaæ.
+	
+	Log_CreateTopic(GE_TraderOR,	LOG_NOTE);
+	B_LogEntry(GE_TraderOR,	"Fox sprzedaje broñ w obozie.");
+};
+
 // **************************************************
 
 INSTANCE DIA_Fox_Again (C_INFO)
