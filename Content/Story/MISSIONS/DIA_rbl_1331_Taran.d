@@ -91,7 +91,7 @@ FUNC VOID DIA_rbl_1331_baaltaran_Aloes_Info()
 	{
 		AI_Output (self, other, "DIA_rbl_1331_baaltaran_Aloes_11_06"); //Hmm, zajmie mi to sporo pracy, do tego kosztowne ingrediencje no i op³ata manipulacyjna...
 		AI_Output (self, other, "DIA_rbl_1331_baaltaran_Aloes_11_07"); //300 bry³ek!
-		B_LogEntry		(CH1_Rbl_Plant, "Taran zgodzi³ siê uwarzyæ miksturê z aloesu ale za 300 bry³ek rudy. Jednak czasami warto uwa¿aæ komu siê podpada."); 
+		B_LogEntry		(CH1_Rbl_Plant, "Taran zgodzi³ siê uwarzyæ miksturê z aloesu, ale za 300 bry³ek rudy. Jednak czasami warto uwa¿aæ komu siê podpada."); 
 		Taran_300ore = TRUE;
 	}
 	else
@@ -455,11 +455,11 @@ FUNC VOID  DIA_BaalTaran_WhatDo4_Info()
 	AI_Output (self, other,"DIA_BaalTaran_WhatDo4_05_04"); //Niestety znalaz³eœ tylko œmieræ i niepewnoœæ jutra.
 	AI_Output (other, self,"DIA_BaalTaran_WhatDo4_15_05"); //Tyle to sam wiem. Mia³eœ przepowiadaæ przysz³oœæ, a nie rozgrzebywaæ przesz³oœæ.
 	AI_Output (self, other,"DIA_BaalTaran_WhatDo4_05_06"); //Czeka Ciê d³uga droga, na której koñcu napotkasz... œmieræ.
-	AI_Output (self, other,"DIA_BaalTaran_WhatDo4_05_07"); //Przyjaciele wytrwaj¹ przy Tobie do koñca jednak spoczniesz sam tam gdzie z³o wziê³o swój pocz¹tek.
+	AI_Output (self, other,"DIA_BaalTaran_WhatDo4_05_07"); //Przyjaciele wytrwaj¹ przy Tobie do koñca, jednak spoczniesz sam tam, gdzie z³o wziê³o swój pocz¹tek.
 	AI_Output (other, self,"DIA_BaalTaran_WhatDo4_15_08"); //Kiedy to siê stanie?
-	AI_Output (self, other,"DIA_BaalTaran_WhatDo4_05_09"); //Wtedy gdy nadejdzie w³aœciwy czas...
+	AI_Output (self, other,"DIA_BaalTaran_WhatDo4_05_09"); //Wtedy, gdy nadejdzie w³aœciwy czas...
 	AI_Output (self, other,"DIA_BaalTaran_WhatDo4_05_10"); //Ale bêdzie Ci dane wybraæ swój los. Bogowie nie nakreœlili Twego przeznaczenia, sam je ukszta³tujesz...
-	AI_Output (self, other,"DIA_BaalTaran_WhatDo4_05_11"); //Wczeœniej zostaniesz zdradzony jednak odp³acisz zdrajcy krwi¹...
+	AI_Output (self, other,"DIA_BaalTaran_WhatDo4_05_11"); //Wczeœniej zostaniesz zdradzony, jednak odp³acisz zdrajcy krwi¹...
 	AI_Output (self, other,"DIA_BaalTaran_WhatDo4_05_12"); //Ogieñ i œmieræ krocz¹ w Twym cieniu... Tak bêdzie do koñca Twych dni.
 	AI_Output (self, other,"DIA_BaalTaran_WhatDo4_05_13"); //Pozorna prawda, wrogowie, którzy stan¹ siê przyjació³mi...
 	AI_Output (self, other,"DIA_BaalTaran_WhatDo4_05_14"); //Kl¹twa Pana Mroku...
@@ -529,7 +529,7 @@ FUNC VOID  DIA_BaalTaran_Stuff_Info()
 	AI_Output (other, self,"DIA_BaalTaran_Stuff_15_01"); //Mam paczkê od Gilberta.
 	AI_Output (self, other,"DIA_BaalTaran_Stuff_05_02"); //Co? Dlaczego akurat Tobie j¹ da³? Poza tym mam jeszcze zapas.
 	AI_Output (other, self,"DIA_BaalTaran_Stuff_15_03"); //Spotka³em go niedaleko Starego Obozu. Kiedyœ trochê mu pomog³em, a widaæ, ¿e wiek robi ju¿ swoje.
-	AI_Output (other, self,"DIA_BaalTaran_Stuff_15_04"); //Powiedzia³, ¿e ma dla Ciebie przesy³kê wiêc zaoferowa³em pomoc. Ot i ca³a tajemnica.
+	AI_Output (other, self,"DIA_BaalTaran_Stuff_15_04"); //Powiedzia³, ¿e ma dla Ciebie przesy³kê, wiêc zaoferowa³em pomoc. Ot i ca³a tajemnica.
 	AI_Output (self, other,"DIA_BaalTaran_Stuff_05_05"); //Staruszek pospieszy³ siê z dostaw¹. Ale w sumie co to za ró¿nica.
 	AI_Output (self, other,"DIA_BaalTaran_Stuff_05_06"); //Daj paczkê. A to za fatygê.
 	B_GiveInvItems (other, self, package_stuff, 1);

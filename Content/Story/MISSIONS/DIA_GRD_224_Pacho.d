@@ -58,7 +58,7 @@ FUNC VOID DIA_Pacho_Hello_Info()
 	AI_Output (other, self, "DIA_Pacho_Hello_15_01"); //Co siê tak gapisz?
 	AI_Output (self, other, "DIA_Pacho_Hello_11_02"); //Ekkhhhrrr... Khhhrrrr...
 
-	AI_Output (other, self, "DIA_Pacho_Hello_15_03"); //Nie udawaj idioty. Je¿eli próbujesz mnie sprowokowaæ to œwietnie Ci idzie...
+	AI_Output (other, self, "DIA_Pacho_Hello_15_03"); //Nie udawaj idioty. Je¿eli próbujesz mnie sprowokowaæ, to œwietnie Ci idzie...
 	//AI_DrawWeapon (hero);
 	B_ExchangeRoutine(Skorpio, "FOLLOW");
 	B_StopProcessInfos(self);
@@ -224,10 +224,10 @@ FUNC VOID DIA_Pacho_Map_Info()
 	AI_Output (self, other, "DIA_Pacho_Map_11_41"); //To by³a pokaŸna sumka. Naprawdê okr¹g³a. Do tego ta b³yskotka Gomeza...
 	AI_Output (other, self, "DIA_Pacho_Map_15_42"); //Zaczynam rozumieæ. Nie zrezygnowa³eœ z rudy, ale obawiasz siê bestii.
 	AI_Output (self, other, "DIA_Pacho_Map_11_43"); //Dok³adnie. Skorpionowi ju¿... nie ufam. Ruda nim zaw³adnê³a. 
-	AI_Output (self, other, "DIA_Pacho_Map_11_44"); //Gdybym z nim poszed³, to pewnie zosta³ bym tam na wieki z no¿em w plecach.
+	AI_Output (self, other, "DIA_Pacho_Map_11_44"); //Gdybym z nim poszed³, to pewnie zosta³bym tam na wieki z no¿em w plecach.
 	AI_Output (self, other, "DIA_Pacho_Map_11_45"); //Ty... wzbudzasz zaufanie. A przede wszystkim pomog³eœ, kiedy tego najbardziej potrzebowa³em.
 	AI_Output (self, other, "DIA_Pacho_Map_11_46"); //Dlaczego nie mielibyœmy na tym skorzystaæ obaj?
-	AI_Output (self, other, "DIA_Pacho_Map_11_47"); //Podzielimy siê równo po po³owie, do tego mo¿esz wzi¹æ b³yskotkê Gomeza?
+	AI_Output (self, other, "DIA_Pacho_Map_11_47"); //Podzielimy siê równo po po³owie, do tego mo¿esz wzi¹æ b³yskotkê Gomeza.
 	AI_Output (other, self, "DIA_Pacho_Map_15_48"); //Jestem piratem. Sk¹d pewnoœæ, ¿e nie poder¿nê ci gard³a, kiedy ju¿ bêdziemy na miejscu?
 	AI_Output (self, other, "DIA_Pacho_Map_11_49"); //Znam siê na ludziach. Co Ty na to?
 
@@ -471,7 +471,7 @@ FUNC VOID DIA_Pacho_AfterDigEnd_Info()
 	AI_Output (self, other, "DIA_Pacho_AfterDigEnd_11_06"); //Nazywa siê Hrabia.
 	AI_Output (self, other, "DIA_Pacho_AfterDigEnd_11_07"); //Czasami widywa³em go, jak zapuszcza³ siê sam na tereny orków.
 	AI_Output (self, other, "DIA_Pacho_AfterDigEnd_11_08"); //Raz za nim poszed³em.
-	AI_Output (self, other, "DIA_Pacho_AfterDigEnd_11_09"); //Kiedy natrafi³em na kilkanaœcie wyr¿niêtych wargów i kilka martwych patroli orków wróci³em.
+	AI_Output (self, other, "DIA_Pacho_AfterDigEnd_11_09"); //Kiedy natrafi³em na kilkanaœcie wyr¿niêtych wargów i kilka martwych patroli orków, wróci³em.
 	AI_Output (self, other, "DIA_Pacho_AfterDigEnd_11_10"); //Za Hrabi¹ kroczy œmieræ piracie i lepiej nie wchodziæ mu w drogê.
 	AI_Output (other, self, "DIA_Pacho_AfterDigEnd_15_11"); //A co z rud¹ Gomeza?
 	AI_Output (self, other, "DIA_Pacho_AfterDigEnd_11_12"); //Je¿eli Hrabia po³o¿y³ na niej ³apy, to lepiej o niej zapomnij. Szkoda stawiaæ ¿ycie za kilka bry³ek.

@@ -1458,7 +1458,7 @@ func void HUN_818_Ratford_TROPHY_CLAWS()
 	{
 		PrintScreen	("Nowa umiejêtnoœæ: zdobywanie pazurów", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-		B_LogEntry (GE_AnimalTrophies,"Umiejêtnoœæ wyci¹gania pazurów jaszczurów, zêbaczy, topielców, k¹saczy i brzytew");
+		B_LogEntry (GE_AnimalTrophies,"Umiejêtnoœæ wyci¹gania pazurów jaszczurów, zêbaczy, topielców, k¹saczy i brzytew.");
 		hero.lp-=LPCOST_GetClaws;
 		Knows_GetClaws=TRUE;
 		B_GiveInvItems(other,self,ItMiNugget,50*LPCOST_GetClaws);
@@ -1481,7 +1481,7 @@ func void HUN_818_Ratford_TROPHY_FUR()
 	{
 		PrintScreen	("Nowa umiejêtnoœæ: œci¹ganie futer", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-		B_LogEntry (GE_AnimalTrophies,"Umiejêtnoœæ œci¹gania futer z wilków, orkowy psów, cieniostworów i trolli");
+		B_LogEntry (GE_AnimalTrophies,"Umiejêtnoœæ œci¹gania futer z wilków, orkowych psów, cieniostworów i trolli.");
 		hero.lp-=LPCOST_GetFur;
 		Knows_GetFur=TRUE;
 		B_GiveInvItems(other,self,ItMiNugget,50*LPCOST_GetFur);

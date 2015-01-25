@@ -107,7 +107,7 @@ FUNC VOID  DIA_Gilbert_Ask_Info()
 	AI_Output (other, self,"DIA_Gilbert_Ask_15_02"); //W rzeczy samej. Drax straci³ ca³y zapas konfitur, a popyt nadal roœnie.
 	AI_Output (self, other,"DIA_Gilbert_Ask_04_03"); //Mia³em dostarczyæ kolejn¹ partiê kilka dni temu, ale chyba zwichn¹³em nogê schodz¹c z grani.
 	AI_Output (other, self,"DIA_Gilbert_Ask_15_04"); //To niedobrze.
-	AI_Output (self, other,"DIA_Gilbert_Ask_04_05"); //Mi to mówisz? Ledwo dowlok³em siê z powrotem do kryjówki. Wolê nie myœleæ co wœciek³e psy Gomeza by ze mn¹ zrobi³y gdyby mnie dorwali.
+	AI_Output (self, other,"DIA_Gilbert_Ask_04_05"); //Mi to mówisz? Ledwo dowlok³em siê z powrotem do kryjówki. Wolê nie myœleæ co wœciek³e psy Gomeza by ze mn¹ zrobi³y, gdyby mnie dorwali.
 	AI_Output (other, self,"DIA_Gilbert_Ask_15_06"); //A¿ tak zalaz³eœ im za skórê?
 	AI_Output (self, other,"DIA_Gilbert_Ask_04_07"); //Od jakiegoœ czasu pomagam rebeliantom. Raz podczas wymiany z Draxem zaskoczy³o nas kilku stra¿ników.
 	AI_Output (self, other,"DIA_Gilbert_Ask_04_08"); //Dwóch za³atwiliœmy, ale jeden da³ nogê. Do tego ten gnojek zna³ mnie ju¿ wczeœniej. W Starym Obozie jestem spalony.
@@ -118,7 +118,7 @@ FUNC VOID  DIA_Gilbert_Ask_Info()
 	AI_Output (self, other,"DIA_Gilbert_Ask_04_13"); //To œwietnie. Przynieœ mi jagód zerwanych z co najmniej 10 krzaczków.
 	AI_Output (self, other,"DIA_Gilbert_Ask_04_14"); //Powinno tego wystarczyæ na jakieœ 20 weków konfitur.
 	AI_Output (other, self,"DIA_Gilbert_Ask_15_15"); //W porz¹dku, rozejrzê siê za jagodami. 
-	AI_Output (self, other,"DIA_Gilbert_Ask_04_16"); //Aha i jeszcze jedno. Je¿eli znajdziesz wiêcej jagód to wezmê ka¿d¹ iloœæ. Bez obaw, zap³acê rud¹.
+	AI_Output (self, other,"DIA_Gilbert_Ask_04_16"); //Aha i jeszcze jedno. Je¿eli znajdziesz wiêcej jagód, to wezmê ka¿d¹ iloœæ. Bez obaw, zap³acê rud¹.
 	B_LogEntry		(CH1_Rbl_FindGilbert, "Gilbert zrobi konfitury dla Draxa, ale muszê przynieœæ mu jagód. Wystarczy owoców z 10 krzaków. Za jagody Gilbert zap³aci rud¹.");
 };
 
@@ -270,7 +270,7 @@ FUNC VOID DIA_Gilbert_Stuff_Info()
 {
 	AI_Output (other, self,"DIA_Gilbert_Stuff_15_00"); //Przyszed³em po paczkê dla Baal Tarana.
 	AI_Output (self, other,"DIA_Gilbert_Stuff_07_01"); //Trochê za wczeœnie, nie uzbiera³em jeszcze wszystkich zió³.
-	AI_Output (other, self,"DIA_Gilbert_Stuff_15_02"); //Nie szkodzi. Taranowi bardzo zale¿y na towarze bo ostatnio przyby³o mu klientów.
+	AI_Output (other, self,"DIA_Gilbert_Stuff_15_02"); //Nie szkodzi. Taranowi bardzo zale¿y na towarze, bo ostatnio przyby³o mu klientów.
 	AI_Output (self, other,"DIA_Gilbert_Stuff_07_03"); //W porz¹dku. W takim razie policzê mu trochê mniej. Wystarczy 200 bry³ek.
 	B_LogEntry		(CH2_RBL_Stuff,	"Cholera o tym nie pomyœla³em. Gilbert chce za paczkê 200 bry³ek.");
 };

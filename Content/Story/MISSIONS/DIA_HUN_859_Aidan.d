@@ -109,7 +109,7 @@ FUNC VOID DIA_HUN_859_AIDAN_GoBring_Info()
 	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_12"); //Garry nie zrobi³ jeszcze ani jednego porz¹dnego ostrza.
 	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_13"); //Problem tkwi w tym, ¿e on uwa¿a inaczej. Wydaje mu siê, ¿e wykuwa pierdolone dzie³a sztuki.
 	AI_Output (other, self, "DIA_HUN_859_AIDAN_GoBring_15_14"); //Mo¿e dam mu w ³eb i zakopiemy œcierwo pod palisad¹?
-	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_15"); //Nieg³upi pomys³, ale Cavalorn urwa³ by nam za to jaja.
+	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_15"); //Nieg³upi pomys³, ale Cavalorn urwa³by nam za to jaja.
 	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_16"); //Wystarczy, ¿e namówisz go do zmiany profesji.
 	AI_Output (other, self, "DIA_HUN_859_AIDAN_GoBring_15_17"); //Mogê spróbowaæ.
 	AI_Output (self, other, "DIA_HUN_859_AIDAN_GoBring_11_18"); //Je¿eli uda Ci siê uwolniæ mnie od tego nieudacznika, to wstawiê siê za Tob¹ u Cavalorna.

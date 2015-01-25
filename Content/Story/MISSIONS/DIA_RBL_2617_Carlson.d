@@ -74,7 +74,7 @@ FUNC VOID DIA_Carlson_Hello_Rbl()
 	AI_Output (other, self, "DIA_Carlson_Hello_Rbl_15_03"); //Chyba d³ugo tu siedzisz.
 	AI_Output (self, other, "DIA_Carlson_Hello_Rbl_11_04"); //No, jakiœ czas. 
 	AI_Output (other, self, "DIA_Carlson_Hello_Rbl_15_05"); //Rebelianci to zbieranina tych, którzy maj¹ doœæ pozosta³ych obozów.
-	AI_Output (self, other, "DIA_Carlson_Hello_Rbl_11_06"); //Brzmi ciekawie. Mo¿e powinien siê tam wybraæ...
+	AI_Output (self, other, "DIA_Carlson_Hello_Rbl_11_06"); //Brzmi ciekawie. Mo¿e powinienem siê tam wybraæ...
 	AI_Output (other, self, "DIA_Carlson_Hello_Rbl_15_07"); //Mogê Ciê tam zaprowadziæ.
 	AI_Output (self, other, "DIA_Carlson_Hello_Rbl_11_08"); //Zastanowiê siê nad tym.
    

@@ -140,7 +140,7 @@ FUNC VOID DIA_Quentin_CanYouTeachMe_Info()
    AI_Output (self, other, "DIA_Quentin_CanYouTeachMe_15_06"); //Wiem te¿ jak szybko zregenerowaæ si³y. 
    
    Log_CreateTopic(GE_TeacherOR, LOG_NOTE);
-   B_LogEntry(GE_TeacherOR, "Quentin to dobry wojownik i mo¿e mnie wiele nauczyæ. Mo¿e mi pokazaæ, jak sprawnie walczyæ broni¹ jednorêczn¹, zna kilka æwiczeñ poprawiaj¹cych zrêcznoœæ i wie jak szybko zregenerowaæ si³y ¿yciowe.");
+   B_LogEntry(GE_TeacherOR, "Quentin to dobry wojownik i mo¿e mnie wiele nauczyæ. Mo¿e mi pokazaæ, jak sprawnie walczyæ broni¹ jednorêczn¹ oraz dwurêczn¹, zna kilka æwiczeñ poprawiaj¹cych zrêcznoœæ i wie jak szybko zregenerowaæ si³y ¿yciowe.");
 };
 
 INSTANCE DIA_HUN_858_Quentin_After (C_INFO)

@@ -228,7 +228,7 @@ FUNC INT DIA_BaalKagan_StuffHave_Condition()
 FUNC VOID DIA_BaalKagan_StuffHave_Info()
 {	
 	AI_Output			(other, self,"DIA_BaalKagan_StuffHave_15_01"); //Mam przesy³kê od Gilberta.
-	AI_Output			(self, other,"DIA_BaalKagan_StuffHave_13_02"); //Nareszcie. Daj ziele to je doprawiê...
+	AI_Output			(self, other,"DIA_BaalKagan_StuffHave_13_02"); //Nareszcie. Daj ziele, to je doprawiê...
 	B_GiveInvItems (other, self, package_stuff, 1);
 	Ai_Wait (self,2);	
 	B_GiveInvItems (self, other, package_stuff, 1);
@@ -344,7 +344,7 @@ FUNC VOID DIA_BaalKagan_Hanis_Info()
 	AI_Output			(self, other,"DIA_BaalKagan_Hanis_13_04"); //Hmm. Znam tylko jedn¹ tak¹ roœlinê. To kl¹twa berserkera.
 	AI_Output			(self, other,"DIA_BaalKagan_Hanis_13_05"); //Bardzo rzadkie ziele. 
 	AI_Output			(other, self,"DIA_BaalKagan_Hanis_15_06"); //Komuœ je sprzeda³eœ?
-	AI_Output			(self, other,"DIA_BaalKagan_Hanis_13_07"); //Jakiœ czas temu Kharim pyta³ mnie o podobny specyfik. Akurat znalaz³em ziele na orkowym cmentarzu. Sporo za nie zap³aci³ wiêc o nic wiêcej nie pyta³em.
+	AI_Output			(self, other,"DIA_BaalKagan_Hanis_13_07"); //Jakiœ czas temu Kharim pyta³ mnie o podobny specyfik. Akurat znalaz³em ziele na orkowym cmentarzu. Sporo za nie zap³aci³, wiêc o nic wiêcej nie pyta³em.
 	AI_Output			(other, self,"DIA_BaalKagan_Hanis_15_08"); //Bardzo mi pomog³eœ. Bywaj.
 
 	B_LogEntry		(CH2_RBL_Mem, "To Baal Kagan sprzeda³ Kharimowi kl¹twê berserkera - ziele, po którym cz³owiek wpada w sza³. W koñcu mam dowody na to, ¿e Gor Hanis jest niewinny. Muszê porozmawiaæ z Ratfordem.");

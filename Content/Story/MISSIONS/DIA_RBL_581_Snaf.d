@@ -154,7 +154,7 @@ func void DIA_Snaf_Help_Yes()
 
 	Log_CreateTopic(CH1_Rbl_SnafScoop, LOG_MISSION);
 	Log_SetTopicStatus(CH1_Rbl_SnafScoop, LOG_RUNNING);
-	B_LogEntry(CH1_Rbl_SnafScoop, "Snaf zgubi³ gdzieœ swoj¹ warzechê. Mówi³ coœ o ataku wilków podczas popasu kretoszczurów wiêc pewnie gdzieœ tam powinienem jej poszukaæ.");
+	B_LogEntry(CH1_Rbl_SnafScoop, "Snaf zgubi³ gdzieœ swoj¹ warzechê. Mówi³ coœ o ataku wilków podczas popasu kretoszczurów, wiêc pewnie gdzieœ tam powinienem jej poszukaæ.");
 
 	snaf_help = TRUE;
 
@@ -221,7 +221,7 @@ FUNC VOID DIA_Snaf_AfterGo_Info()
 	snaf_help_no=false;
 	Log_CreateTopic(CH1_Rbl_SnafScoop, LOG_MISSION);
 	Log_SetTopicStatus(CH1_Rbl_SnafScoop, LOG_RUNNING);
-	B_LogEntry(CH1_Rbl_SnafScoop, "Snaf zgubi³ gdzieœ swoj¹ warzechê. Mówi³ coœ o ataku wilków podczas popasu kretoszczurów wiêc pewnie gdzieœ tam powinienem jej poszukaæ.");
+	B_LogEntry(CH1_Rbl_SnafScoop, "Snaf zgubi³ gdzieœ swoj¹ warzechê. Mówi³ coœ o ataku wilków podczas popasu kretoszczurów, wiêc pewnie gdzieœ tam powinienem jej poszukaæ.");
 
 	/***************
 

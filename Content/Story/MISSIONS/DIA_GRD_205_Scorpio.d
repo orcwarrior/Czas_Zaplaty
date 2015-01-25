@@ -748,7 +748,7 @@ FUNC VOID DIA_Scorpio_Map_Info()
    if (Wld_GetDay() <= skorpio_map)
 	{
 		B_GiveXP(150);
-		AI_Output (self, other, "DIA_Scorpio_Map_11_02"); //Œwietnie. Zd¹¿y³eœ w dwa dni tak jak prosi³em.
+		AI_Output (self, other, "DIA_Scorpio_Map_11_02"); //Œwietnie. Zd¹¿y³eœ w dwa dni, tak jak prosi³em.
 		AI_Output (self, other, "DIA_Scorpio_Map_11_03"); //WeŸ rudê, uczciwie zarobi³eœ.
       
 		CreateInvItems (self,ItMiNugget,100);
@@ -830,7 +830,7 @@ FUNC VOID DIA_Scorpio_Traitor_Yes()
 	AI_Output (other, self, "DIA_Scorpio_Traitor_Yes_15_07"); //Kiedy Pacho poka¿e mi, gdzie zakopa³ rudê, rozwalê mu ³eb.
 	AI_Output (self, other, "DIA_Scorpio_Traitor_Yes_11_08"); //Mów dalej...
 	AI_Output (other, self, "DIA_Scorpio_Traitor_Yes_15_09"); //Zanim wyruszymy dam Ci znaæ, pójdziesz za nami.
-	AI_Output (other, self, "DIA_Scorpio_Traitor_Yes_15_10"); //W odpowiednim momencie pomo¿esz mi wykopaæ rudê i bêdziesz uwa¿a³ na tê niby bestiê.
+	AI_Output (other, self, "DIA_Scorpio_Traitor_Yes_15_10"); //W odpowiednim momencie pomo¿esz mi wykopaæ rudê i bêdziesz uwa¿a³ na t¹ niby bestiê.
 	AI_Output (other, self, "DIA_Scorpio_Traitor_Yes_15_11"); //I najwa¿niejsze. Wezmê trzy czwarte rudy i b³yskotkê Gomeza.
 	AI_Output (self, other, "DIA_Scorpio_Traitor_Yes_11_12"); //Po moim trupie!
 	AI_Output (other, self, "DIA_Scorpio_Traitor_Yes_15_13"); //To da siê za³atwiæ.
@@ -841,7 +841,7 @@ FUNC VOID DIA_Scorpio_Traitor_Yes()
 	
    AI_RemoveWeapon (self);
 	
-   AI_Output (self, other, "DIA_Scorpio_Traitor_Yes_11_15"); //Je¿eli bajka o tej bestii jest prawd¹ to mo¿e byæ gor¹co...
+   AI_Output (self, other, "DIA_Scorpio_Traitor_Yes_11_15"); //Je¿eli bajka o tej bestii jest prawd¹, to mo¿e byæ gor¹co...
 	AI_Output (self, other, "DIA_Scorpio_Traitor_Yes_11_16"); //Dobra niech bêdzie. Jest tego tyle, ¿e nawet czwarta czêœæ mi wystarczy.
 	AI_Output (self, other, "DIA_Scorpio_Traitor_Yes_11_17"); //Daj mi znak, zanim wyruszycie. Pod¹¿ê za wami.
 	AI_Output (other, self, "DIA_Scorpio_Traitor_Yes_15_18"); //Tylko pamiêtaj, ¿e je¿eli Pacho Ciê dostrze¿e, to nasza umowa jest niewa¿na.
