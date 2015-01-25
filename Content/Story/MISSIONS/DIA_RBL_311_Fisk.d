@@ -24,6 +24,9 @@ FUNC VOID DIA_Fisk_Hello_Info()
 	AI_Output (self, other, "DIA_Fisk_Hello_12_01"); //Coœ podaæ, ¿ó³todziobie?
 	AI_Output (other, self, "DIA_Fisk_Hello_15_02"); //Nie zwyk³em p³ukaæ gard³a l¹dowymi szczynami. Masz coœ mocniejszego?
 	AI_Output (self, other, "DIA_Fisk_Hello_12_03"); //Mo¿e i mam. Sam sprawdŸ.
+	
+	Log_CreateTopic(GE_TraderOR, LOG_NOTE);
+	B_LogEntry(GE_TraderOR,	"U Fiska mogê siê czegoœ napiæ i najeœæ.");
 };
 
 // **************************************************
