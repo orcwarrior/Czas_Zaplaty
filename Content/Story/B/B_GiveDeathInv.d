@@ -34,6 +34,7 @@ func void B_GiveDeathInv ()
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_ORC)					{	CreateInvItems(self,ItAt_OrcTeeth,	2);		};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_ALIGATORBOSS)		{	CreateInvItems(self,ItAt_BossAlgTeeth,	4);		};	
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_DIRK)		{	CreateInvItems(self,ItAt_DirkTeeth,	4);		};	
+		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_ORCDOG)		{	CreateInvItems(self, ItAt_OrcDogTeeth, 2);	};
 	};
 
 	if (Knows_GetClaws == TRUE)
@@ -53,6 +54,7 @@ func void B_GiveDeathInv ()
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_BLACKWOLF)			{	CreateInvItems(self,ItAt_WolfClaws,2);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_ALIGATOR)			{	CreateInvItems(self,ItAt_AligatClaws,4);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_DIRK)			{	CreateInvItems(self,ItAt_DirkClaws,		4); };
+		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_ORCDOG)		{	CreateInvItems(self, ItAt_OrcDogClaws, 2);	};
 	};
 	
 	if (Knows_GetWTF == TRUE)
