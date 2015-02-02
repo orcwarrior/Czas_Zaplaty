@@ -1354,13 +1354,13 @@ FUNC VOID EVT_RECIPEREAD ()
 					Doc_SetPages	( nDocID,  1 );                         //wieviel Pages
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		); 
 				if(L1_Red) 		{ Doc_SetFont 	( nDocID, -1, "FONT_15_BOOK_RED.tga"); } else { Doc_SetFont 	( nDocID, -1, "FONT_15_BOOK.tga"); };					
-					Doc_SetMargins	( nDocID, -1, 21, 15, 10, 20, 1   		);  //  0 -> margins are in pixels
+					Doc_SetMargins	( nDocID, -1, 45, 15, 10, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, L1					);
 					Doc_SetFont 	( nDocID, -1, "FONT_10_BOOK.tga"	   			); 	// -1 -> all pages 					
-					Doc_SetMargins	( nDocID, -1, 310, 15, 10, 20, 1   		);  //  0 -> margins are in pixels
+					Doc_SetMargins	( nDocID, -1, 150, 15, 10, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "SK£ADNIKI"					);		
-					Doc_SetMargins	( nDocID, -1, 210, 62, 10, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_SetMargins	( nDocID, -1, 210, 62, 10, 20, 1   		);  //  0 -> margins are in pixels
+					Doc_SetMargins	( nDocID, -1, 160, 62, 10, 20, 1   		);  //  0 -> margins are in pixels
+					Doc_SetMargins	( nDocID, -1, 160, 62, 10, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, ""					);									
 				if(L2_Red) 		{ Doc_SetFont 	( nDocID, -1, "FONT_10_BOOK_RED.tga"); } else { Doc_SetFont 	( nDocID, -1, "FONT_10_BOOK.tga"); };					
 					Doc_PrintLine	( nDocID,  0, L2				);	
