@@ -1,57 +1,63 @@
 instance PIR_2602_Rodney (Npc_Default) 
 { 
-//-------- primary data -------- 
+	//-------- primary data -------- 
 
-name = "Rodney"; 
-npctype = npctype_main; 
-guild = GIL_PIR; 
-level = 20; 
-voice = 8; 
-id = 2602; 
-flags=NPC_FLAG_FRIEND;
-spawnDelay=NPC_FLAG_BRAVE;
+	name = "Rodney"; 
+	npctype = npctype_main; 
+	guild = GIL_PIR; 
+	level = 20; 
+	voice = 8; 
+	id = 2602; 
+	flags=NPC_FLAG_FRIEND;
+	spawnDelay=NPC_FLAG_BRAVE;
 
-//-------- abilities -------- 
-attribute[ATR_STRENGTH] = 70; 
-attribute[ATR_DEXTERITY] = 80; 
-attribute[ATR_MANA_MAX] = 100; 
-attribute[ATR_MANA] = 100; 
-attribute[ATR_HITPOINTS_MAX]= 400; 
-attribute[ATR_HITPOINTS] = 400; 
+	//-------- abilities -------- 
+	attribute[ATR_STRENGTH] = 70; 
+	attribute[ATR_DEXTERITY] = 80; 
+	attribute[ATR_MANA_MAX] = 100; 
+	attribute[ATR_MANA] = 100; 
+	attribute[ATR_HITPOINTS_MAX]= 400; 
+	attribute[ATR_HITPOINTS] = 400; 
+	protection[PROT_BLUNT] = 50;
+	protection[PROT_EDGE] =	50;
+	protection[PROT_POINT] = 50;
+	protection[PROT_FIRE] =	50;
+	protection[PROT_FLY]	= 50;
+	protection[PROT_MAGIC] = 50;
 
-//-------- visuals -------- 
-// animations 
-Mdl_SetVisual (self,"HUMANS.MDS"); 
-Mdl_ApplyOverlayMds (self,"Humans_Militia.mds"); 
-// body mesh ,bdytex,skin,head mesh ,headtex,teethtex,ruestung 
-Mdl_SetVisualBody (self,"hum_body_Naked0",1,3 ,"Hum_Head_Bald",5 ,2,PIR_ARMOR_L); 
+	//-------- visuals -------- 
+	// animations 
+	Mdl_SetVisual (self,"HUMANS.MDS"); 
+	Mdl_ApplyOverlayMds (self,"Humans_Militia.mds"); 
+	// body mesh ,bdytex,skin,head mesh ,headtex,teethtex,ruestung 
+	Mdl_SetVisualBody (self,"hum_body_Naked0",1,3 ,"Hum_Head_Bald",5 ,2,PIR_ARMOR_L); 
 
-B_Scale (self); 
-Mdl_SetModelFatness(self,1); 
+	B_Scale (self); 
+	Mdl_SetModelFatness(self,1); 
 
-Npc_SetAivar(self,AIV_IMPORTANT,  TRUE); 
+	Npc_SetAivar(self,AIV_IMPORTANT,  TRUE); 
 
-    	fight_tactic	=	FAI_HUMAN_MASTER; 
+			fight_tactic	=	FAI_HUMAN_MASTER; 
 
-//-------- Talente -------- 
+	//-------- Talente -------- 
 
-Npc_SetTalentSkill (self,NPC_TALENT_1H,2);  
-Npc_SetTalentSkill (self,NPC_TALENT_2H,1); 
-Npc_SetTalentSkill (self,NPC_TALENT_BOW,2);
-Npc_SetTalentValue(self,NPC_TALENT_1H,70);
-Npc_SetTalentValue(self,NPC_TALENT_BOW,60);
+	Npc_SetTalentSkill (self,NPC_TALENT_1H,2);  
+	Npc_SetTalentSkill (self,NPC_TALENT_2H,1); 
+	Npc_SetTalentSkill (self,NPC_TALENT_BOW,2);
+	Npc_SetTalentValue(self,NPC_TALENT_1H,70);
+	Npc_SetTalentValue(self,NPC_TALENT_BOW,60);
 
-	Npc_SetTalentSkill	(self,HACK_NPC_TALENT_MAGE,6);			
-	Npc_SetAivar(self,TALENT_MAGIC_CIRCLE,  (		6));
-//-------- inventory -------- 
+		Npc_SetTalentSkill	(self,HACK_NPC_TALENT_MAGE,6);			
+		Npc_SetAivar(self,TALENT_MAGIC_CIRCLE,  (		6));
+	//-------- inventory -------- 
 
-CreateInvItem (self,ItMw_Pir_01); 
-CreateInvItem (self,ItFoMutton); 
-CreateInvItems (self,ItFo_Potion_Health_01,5); 
-CreateInvItem (self,ItLsTorch); 
+	CreateInvItem (self,ItMw_Pir_01); 
+	CreateInvItem (self,ItFoMutton); 
+	CreateInvItems (self,ItFo_Potion_Health_01,5); 
+	CreateInvItem (self,ItLsTorch); 
 
-//-------------Daily Routine------------- 
-/*B_InitNPCAddins(self);*/		daily_routine = Rtn_start_2602; 
+	//-------------Daily Routine------------- 
+	/*B_InitNPCAddins(self);*/		daily_routine = Rtn_start_2602; 
 }; 
 FUNC VOID Rtn_InHC_2602 () 
 { 

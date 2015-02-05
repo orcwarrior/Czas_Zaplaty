@@ -18,6 +18,12 @@ instance PIR_2600_Angus (Npc_Default)
    attribute[ATR_MANA] = 0; 
    attribute[ATR_HITPOINTS_MAX]= 680; 
    attribute[ATR_HITPOINTS] = 680; 
+	protection[PROT_BLUNT] = 50;
+	protection[PROT_EDGE] =	50;
+	protection[PROT_POINT] = 50;
+	protection[PROT_FIRE] =	50;
+	protection[PROT_FLY]	= 50;
+	protection[PROT_MAGIC] = 50;
 
    //-------- visuals -------- 
    // animations 

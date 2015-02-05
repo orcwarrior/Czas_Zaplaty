@@ -18,6 +18,12 @@ instance PIR_2601_Hank (Npc_Default)
    attribute[ATR_MANA] = 0; 
    attribute[ATR_HITPOINTS_MAX]= 600; 
    attribute[ATR_HITPOINTS] = 600; 
+	protection[PROT_BLUNT] = 50;
+	protection[PROT_EDGE] =	50;
+	protection[PROT_POINT] = 50;
+	protection[PROT_FIRE] =	50;
+	protection[PROT_FLY]	= 50;
+	protection[PROT_MAGIC] = 50;
 
    //-------- visuals -------- 
    // animations 
