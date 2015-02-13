@@ -94,10 +94,10 @@ FUNC INT DIA_Spider_Escape_Condition()
 
 FUNC VOID DIA_Spider_Escape_Info()
 {
-	AI_Output (other, self, "DIA_Spider_Escape_15_02"); //Podobno wiesz coœ o wyjœciu?
+	AI_Output (other, self, "DIA_Spider_Escape_15_00"); //Podobno wiesz coœ o wyjœciu?
 	AI_Output (self, other, "DIA_Spider_Escape_11_01"); //Tylko paj¹ki znaj¹ prawdê! Ich zapytaj...
 	AI_Output (other, self, "DIA_Spider_Escape_15_02"); //Jakie paj¹ki?
-	AI_Output (self, other, "DIA_Spider_Escape_11_01"); //Te, które chodz¹ po wodzie.
+	AI_Output (self, other, "DIA_Spider_Escape_11_03"); //Te, które chodz¹ po wodzie.
 
 	Info_ClearChoices (DIA_Spider_Escape);
 	Info_AddChoice (DIA_Spider_Escape, "Jak mam zapytaæ... paj¹ka?", DIA_Spider_Escape_Ask);
@@ -165,7 +165,7 @@ FUNC VOID DIA_Spider_Escape_Ask_How()
 	AI_Output (other, self, "DIA_Spider_Escape_Ask_How_15_08"); //Mów do cholery!
 	AI_Output (self, other, "DIA_Spider_Escape_Ask_How_11_09"); //Mia³em kiedyœ kumpla. Mówiliœmy na niego Wydra, bo œwietnie p³ywa³.
 	AI_Output (other, self, "DIA_Spider_Escape_Ask_How_15_10"); //I co z tego?
-	AI_Output (self, other, "DIA_Spider_Escape_Ask_How_11_11"); //Koleœ upar³ siê, ¿e podwodne tunele muszê prowadziæ na powierzchnie.
+	AI_Output (self, other, "DIA_Spider_Escape_Ask_How_11_11"); //Koleœ upar³ siê, ¿e podwodne tunele musz¹ prowadziæ na powierzchniê.
 	AI_Output (self, other, "DIA_Spider_Escape_Ask_How_11_12"); //Pewnego dnia rozebra³ siê do golizny, wzi¹³ spory wdech i skoczy³ do wody.
 	AI_Output (other, self, "DIA_Spider_Escape_Ask_How_15_13"); //I?
 	AI_Output (self, other, "DIA_Spider_Escape_Ask_How_11_14"); //No i tyle go widzieliœmy.
@@ -203,12 +203,12 @@ FUNC VOID DIA_Spider_Escape2_Info()
 {
 	AI_Output (other, self, "DIA_Spider_Escape2_15_01"); //O co chodzi z tymi paj¹kami?
 	AI_Output (self, other, "DIA_Spider_Escape2_11_02"); //A jak myœlisz?
-	AI_Output (self, other, "DIA_Spider_Escape2_11_03"); //Nikt nie zapuszcza siê g³êbiej w tunele bo tam a¿ siê roi od tych skurwieli.		
+	AI_Output (self, other, "DIA_Spider_Escape2_11_03"); //Nikt nie zapuszcza siê g³êbiej w tunele, bo tam a¿ siê roi od tych skurwieli.		
 	AI_Output (other, self, "DIA_Spider_Escape2_15_04"); //Mo¿e tam jest wyjœcie?
-	AI_Output (self, other, "DIA_Spider_Escape2_11_05"); //W¹tpiê, ¿eby ktoœ tam wszed³ i po¿y³ wystarczaj¹co d³ugo aby o tym opowiedzieæ.
+	AI_Output (self, other, "DIA_Spider_Escape2_11_05"); //W¹tpiê, ¿eby ktoœ tam wszed³ i po¿y³ wystarczaj¹co d³ugo, aby o tym opowiedzieæ.
 	AI_Output (self, other, "DIA_Spider_Escape2_11_06"); //Ale mo¿esz spróbowaæ, zostanie wiêcej szczurów dla nas.
 	AI_Output (other, self, "DIA_Spider_Escape2_15_07"); //Dlaczego?
 	AI_Output (self, other, "DIA_Spider_Escape2_11_08"); //Bo umarli nie musz¹ jeœæ.
 	AI_Output (other, self, "DIA_Spider_Escape2_15_09"); //Aleœ ty zabawny.
-	AI_Output (self, other, "DIA_Spider_Escape2_11_10"); //Jak nie chcesz mnie zabiæ to zejdŸ mi z oczu. Mam sporo do przemyœlenia...
+	AI_Output (self, other, "DIA_Spider_Escape2_11_10"); //Jak nie chcesz mnie zabiæ, to zejdŸ mi z oczu. Mam sporo do przemyœlenia...
 };

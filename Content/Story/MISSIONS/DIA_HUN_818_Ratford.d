@@ -384,7 +384,7 @@ FUNC VOID DIA_RATFORD_IwillBecameHunter_Info()
 	AI_Output (other, self, "DIA_RATFORD_IwillBecameHunter_15_04"); //Po co mi o tym mówisz?
 	AI_Output (self, other, "DIA_RATFORD_IwillBecameHunter_07_05"); //Najwy¿sza pora sprawdziæ, kim naprawdê jesteœ i na co Ciê staæ.
 	AI_Output (other, self, "DIA_RATFORD_IwillBecameHunter_15_06"); //Co przez to rozumiesz?
-	AI_Output (self, other, "DIA_RATFORD_IwillBecameHunter_07_07"); //Dam Ci zadanie i tylko od Ciebie zale¿y, jak¹ drog¹ pod¹¿ysz by je rozwi¹zaæ.
+	AI_Output (self, other, "DIA_RATFORD_IwillBecameHunter_07_07"); //Dam Ci zadanie i tylko od Ciebie zale¿y, jak¹ drog¹ pod¹¿ysz, by je rozwi¹zaæ.
 	AI_Output (self, other, "DIA_RATFORD_IwillBecameHunter_07_08"); //Niedaleko st¹d pojawi³ siê patrol stra¿ników. Masz siê ich pozbyæ, to jak to zrobisz zale¿y tylko od Ciebie.
 	AI_Output (other, self, "DIA_RATFORD_IwillBecameHunter_15_09"); //Rozumiem. Mo¿esz ju¿ uwa¿aæ ten problem za rozwi¹zany.
 	AI_Output (self, other, "DIA_RATFORD_IwillBecameHunter_07_10"); //Wróæ, kiedy tak bêdzie.

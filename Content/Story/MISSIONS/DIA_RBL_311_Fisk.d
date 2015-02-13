@@ -307,7 +307,7 @@ INSTANCE DIA_FISK_Spy1 (C_INFO)
 	information		= DIA_FISK_Spy1_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "Podobno musia³eœ uciekaæ z Obozu Stra¿ników przez jakiegoœ skazañca."; 
+	description		= "Podobno musia³eœ uciekaæ z obozu stra¿ników przez jakiegoœ skazañca."; 
 };
 
 FUNC INT DIA_FISK_Spy1_Condition()
@@ -322,20 +322,20 @@ FUNC VOID DIA_FISK_Spy1_Info()
 {
 	tony_spy = tony_spy + 1;
    
-	AI_Output (other, self, "DIA_FISK_Spy1_15_01"); //Podobno musia³eœ uciekaæ z Obozu Stra¿ników przez jakiegoœ skazañca.
+	AI_Output (other, self, "DIA_FISK_Spy1_15_01"); //Podobno musia³eœ uciekaæ z obozu stra¿ników przez jakiegoœ skazañca.
 	AI_Output (self, other, "DIA_FISK_Spy1_07_02"); //To nie by³ zwyczajny skazaniec. 
 	AI_Output (self, other, "DIA_FISK_Spy1_07_03"); //Powiedzmy, ¿e sprzeda³em mu wiêcej ni¿ powinienem.
 	AI_Output (other, self, "DIA_FISK_Spy1_15_04"); //A Gomezowi siê to nie spodoba³o.
 	AI_Output (self, other, "DIA_FISK_Spy1_07_05"); //W rzeczy samej. Nie mia³em wielkiego wyboru. Nie chcia³em podzieliæ losu Magów Ognia czy niektórych spoœród Cieni.
 	AI_Output (other, self, "DIA_FISK_Spy1_15_06"); //Myœlisz, ¿e Gomez móg³by mieæ w obozie swojego szpiega?
-	AI_Output (self, other, "DIA_FISK_Spy1_07_07"); //Je¿eli myœlisz o mnie to nawet za górê rudy bym dla niego nie pracowa³.
+	AI_Output (self, other, "DIA_FISK_Spy1_07_07"); //Je¿eli myœlisz o mnie, to nawet za górê rudy bym dla niego nie pracowa³.
 	AI_Output (self, other, "DIA_FISK_Spy1_07_08"); //Gomez to szaleniec, który prêdzej czy póŸniej zap³aci za swoje zbrodnie.
 	AI_Output (self, other, "DIA_FISK_Spy1_07_09"); //Nie sypn¹³bym Cavalorna i ch³opaków - nie gryzie siê rêki, która Ciê karmi, piracie.
 	AI_Output (other, self, "DIA_FISK_Spy1_15_10"); //To mo¿e ktoœ inny?
 	AI_Output (self, other, "DIA_FISK_Spy1_07_11"); //Nie wiem... Chocia¿ coœ ci powiem. Tony by³ kumplem Szakala, a to jeden z najbardziej zaufanych ludzi Gomeza.
 	AI_Output (self, other, "DIA_FISK_Spy1_07_12"); //Z tego co wiem nikt ze stra¿ników nie œciga³ Toniego kiedy to niby ucieka³ z obozu Gomeza.
-	AI_Output (self, other, "DIA_FISK_Spy1_07_13"); //Ale to tylko moje spostrze¿enia. Mogê siê myliæ, dlatego trzymam jêzyk za zêbami. Nie oskar¿am nikogo je¿eli nie mam dowodów.
-	AI_Output (other, self, "DIA_FISK_Spy1_15_14"); //To rzadka zaleta. Przemyœlê to co powiedzia³eœ...
+	AI_Output (self, other, "DIA_FISK_Spy1_07_13"); //Ale to tylko moje spostrze¿enia. Mogê siê myliæ, dlatego trzymam jêzyk za zêbami. Nie oskar¿am nikogo, je¿eli nie mam dowodów.
+	AI_Output (other, self, "DIA_FISK_Spy1_15_14"); //To rzadka zaleta. Przemyœlê to, co powiedzia³eœ...
 	
    B_LogEntry		(CH2_Rbl_Spy, "Fisk raczej nie jest cz³owiekiem Gomeza. I nawet on zauwa¿y³, ¿e z Tonym jest coœ nie tak. Zwróci³ mi uwagê na to, ¿e Szakal i Tony byli przyjació³mi. Powinienem o tym pamiêtaæ.");
 	

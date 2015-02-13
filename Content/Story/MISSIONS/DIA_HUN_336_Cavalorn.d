@@ -1005,7 +1005,7 @@ FUNC VOID DIA_Cavalorn_BlackTroll_Info()
    AI_Output (other, self, "DIA_Cavalorn_BlackTroll_15_11"); //Pomijaj¹c wybór emisariusza, reszta planu wydaje siê doœæ rozs¹dna.
    AI_Output (self, other,"DIA_Cavalorn_BlackTroll_12_12"); //Wprost przeciwnie. Jesteœ idealnym kandydatem.
    AI_Output (self, other,"DIA_Cavalorn_BlackTroll_12_13"); //Nikt ciê tu nie zna, nikomu jeszcze nie zalaz³eœ za skórê.
-   AI_Output (self, other,"DIA_Cavalorn_BlackTroll_12_14"); //£owcy to banda twardych drani. ¯yj¹ tylko po to by zabijaæ bestie i chyba to lubi¹.
+   AI_Output (self, other,"DIA_Cavalorn_BlackTroll_12_14"); //£owcy to banda twardych drani. ¯yj¹ tylko po to, by zabijaæ bestie i chyba to lubi¹.
    AI_Output (self, other,"DIA_Cavalorn_BlackTroll_12_15"); //Oczywiœcie nie robi¹ tego bezinteresownie. 
    AI_Output (self, other,"DIA_Cavalorn_BlackTroll_12_16"); //Je¿eli ktoœ ma wystarczaj¹co du¿o odwagi, to jest to ca³kiem niez³y sposób na zdobycie maj¹tku.
    AI_Output (self, other,"DIA_Cavalorn_BlackTroll_12_17"); //W koñcu bariera nie bêdzie trwaæ wiecznie. Kiedy szlag j¹ trafi, ³owcy bêd¹ mogli sprzedaæ trofea i nieŸle siê na tym ob³owi¹.
@@ -2086,7 +2086,7 @@ FUNC VOID DIA_Cavalorn_Spy1_Tony()
    AI_Output (other, self, "DIA_Cavalorn_Spy1_Tony_15_03"); //Jego historyjki nie trzymaj¹ siê kupy.
    AI_Output (other, self, "DIA_Cavalorn_Spy1_Tony_15_04"); //Do tego jako jedyny wzbudza tak¿e nieufnoœæ innych. Kilka razy opuœci³ obóz, myœl¹c, ¿e nikt go nie widzi.
    AI_Output (self, other,"DIA_Cavalorn_Spy1_Tony_12_05"); //To wszystko?
-   AI_Output (other, self, "DIA_Cavalorn_Spy1_Tony_15_06"); //Nie. Przeb¹kiwa³ coœ o tym, ¿e Szakal to jego przyjaciel. Odszed³ ze Starego obozu bez konkretnych powodów.
+   AI_Output (other, self, "DIA_Cavalorn_Spy1_Tony_15_06"); //Nie. Przeb¹kiwa³ coœ o tym, ¿e Szakal to jego przyjaciel. Odszed³ ze Starego Obozu bez konkretnych powodów.
    AI_Output (other, self, "DIA_Cavalorn_Spy1_Tony_15_07"); //No i to nasze spotkanie...
    AI_Output (self, other,"DIA_Cavalorn_Spy1_Tony_12_08"); //Tak?
    AI_Output (other, self, "DIA_Cavalorn_Spy1_Tony_15_09"); //Kiedy zobaczy³em go po raz pierwszy, sta³ w otoczeniu stra¿ników.
@@ -2137,7 +2137,7 @@ FUNC VOID DIA_Cavalorn_Spy11_Info()
    AI_Output (other, self, "DIA_Cavalorn_Spy11_15_05"); //Wiem, ale bêdê ostro¿ny. Poza tym nie mam wyboru. To mo¿e byæ jedyna szansa, ¿eby dowiedzieæ siê czegoœ wiêcej.
    AI_Output (self, other,"DIA_Cavalorn_Spy11_12_06"); //Masz racjê, ale miej oczy szeroko otwarte. Nie nara¿aj siê niepotrzebnie.
    AI_Output (other, self, "DIA_Cavalorn_Spy11_15_07"); //Poradzê sobie, bywaj.
-   B_LogEntry(CH2_Rbl_Spy, "Powiedzia³em Cavalornowi o spotkaniu z Tonim. Cavalorn przestrzeg³ mnie, ¿e to mo¿e byæ pu³apka. Muszê zaryzykowaæ, w koñcu wychodzi³em ca³o z gorszych opresji.");
+   B_LogEntry(CH2_Rbl_Spy, "Powiedzia³em Cavalornowi o spotkaniu z Tonym. Cavalorn przestrzeg³ mnie, ¿e to mo¿e byæ pu³apka. Muszê zaryzykowaæ, w koñcu wychodzi³em ca³o z gorszych opresji.");
 };
 
 INSTANCE DIA_Cavalorn_SpyEnd (C_INFO)

@@ -191,7 +191,7 @@ FUNC INT DIA_Milten_RickPassage_Condition()
 func VOID DIA_Milten_RickPassage_Info()
 {
 	AI_Output (other, self,"DIA_Milten_RickPassage_15_00"); //Spójrz na ten pergamin.
-	AI_Output (self, other,"DIA_Milten_RickPassage_02_01"); //Królewska pieczêæ. No dobra, skoro Cavalorn Ci ufa to chyba nie mam wyboru.
+	AI_Output (self, other,"DIA_Milten_RickPassage_02_01"); //Królewska pieczêæ. No dobra, skoro Cavalorn Ci ufa, to chyba nie mam wyboru.
 	AI_Output (other, self,"DIA_Milten_RickPassage_15_02"); //Mogê wejœæ do œrodka?
 	AI_Output (self, other,"DIA_Milten_RickPassage_02_03"); //WchodŸ, Leren na pewno siê ucieszy.
 	AI_Output (self, other,"DIA_Milten_RickPassage_02_04"); //Mo¿esz te¿ skorzystaæ z naszych zapasów zwojów i roœlin.

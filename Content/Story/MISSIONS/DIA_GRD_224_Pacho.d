@@ -634,7 +634,7 @@ FUNC VOID DIA_Pacho_HuntingBegin_Info()
 	AI_Output (self, other, "DIA_Pacho_HuntingBegin_11_04"); //Dowiedzia³em siê czegoœ bardzo ciekawego.
 	AI_Output (self, other, "DIA_Pacho_HuntingBegin_11_05"); //Podobno k³y przywódcy stada maj¹ bardzo przydatne w³aœciwoœci.
 	AI_Output (other, self, "DIA_Pacho_HuntingBegin_15_06"); //Czyli jakie?
-	AI_Output (self, other, "DIA_Pacho_HuntingBegin_11_07"); //Je¿eli zrobiæ z nich gwizdek to mo¿na zyskaæ sojusznika w walce.
+	AI_Output (self, other, "DIA_Pacho_HuntingBegin_11_07"); //Je¿eli zrobiæ z nich gwizdek, to mo¿na zyskaæ sojusznika w walce.
 	AI_Output (other, self, "DIA_Pacho_HuntingBegin_15_08"); //Nie rozumiem.
 	AI_Output (self, other, "DIA_Pacho_HuntingBegin_11_09"); //Na g³os gwizdka przybêd¹ wilki i bêd¹ walczyæ po stronie tego, kto u¿y³ piszcza³ki.
 	AI_Output (other, self, "DIA_Pacho_HuntingBegin_15_10"); //To rzeczywiœcie ciekawe. Oczywiœcie, o ile to prawda.

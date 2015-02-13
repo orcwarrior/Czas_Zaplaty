@@ -375,5 +375,5 @@ FUNC VOID DIA_PIR_2601_Hank_Stew_Info()
 	AI_Output (self, other, "DIA_PIR_2601_Hank_Stew_11_02"); //Dobra, daj mi go. Przynajmniej zaspokojê swój g³ód.
 	
    B_GiveInvItems (other, self, ItFo_Stew, 1);
-	B_LogEntry		(CH2_Rbl_Food, "Hankowi bez problemu wsadzi³em gulasz."); 
+	B_LogEntry		(CH2_Rbl_Food, "Hankowi bez problemu wcisn¹³em gulasz."); 
 };

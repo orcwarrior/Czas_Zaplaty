@@ -450,7 +450,7 @@ FUNC VOID DIA_Quentin_Spy_Info()
 	AI_Output (self, other, "DIA_Quentin_Spy_07_08"); //Gdy nadejdzie czas zap³aty. 
 	AI_Output (self, other, "DIA_Quentin_Spy_07_09"); //Wystarczy ju¿ tego strzêpienia jêzyka...
    
-	B_LogEntry(CH2_Rbl_Spy, "Quentin ¿yje tylko po to by walczyæ. Twierdzi, ¿e walczy z samym sob¹, ¿e przygotowuje siê do 'czegoœ'. Tylko do czego?");
+	B_LogEntry(CH2_Rbl_Spy, "Quentin ¿yje tylko po to, by walczyæ. Twierdzi, ¿e walczy z samym sob¹, ¿e przygotowuje siê do 'czegoœ'. Tylko do czego?");
 	
 	if (spy_count == 12)
 	{

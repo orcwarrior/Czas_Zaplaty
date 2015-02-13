@@ -222,9 +222,9 @@ FUNC VOID DIA_Fox_Camp_Info()
 	AI_Output (other, self, "DIA_Fox_Camp_15_09"); //Dobra, przestañ mêdrkowaæ bo Ci g³owa od tego spuchnie. Pomogê Ci z gulaszem.
 	AI_Output (self, other, "DIA_Fox_Camp_11_10"); //Wiedzia³em, ¿e siê domyœlisz.
 	AI_Output (self, other, "DIA_Fox_Camp_11_11"); //Przetrz¹œnij skrzyniê na zapleczu. Znajdziesz tam wystarczaj¹c¹ iloœæ porcji gulaszu.
-	AI_Output (self, other, "DIA_Fox_Camp_11_12"); //Rozdaj potrawkê ch³opakom w obozie. Jak skoñczysz wróæ do mnie.
+	AI_Output (self, other, "DIA_Fox_Camp_11_12"); //Rozdaj potrawkê ch³opakom w obozie. Jak skoñczysz, wróæ do mnie.
 	AI_Output (other, self, "DIA_Fox_Camp_15_13"); //O to siê nie bój. Przyda³by mi siê nowy pancerz.
-	AI_Output (self, other, "DIA_Fox_Camp_11_14"); //Roznieœ gulasz to pogadamy o pancerzu.
+	AI_Output (self, other, "DIA_Fox_Camp_11_14"); //Roznieœ gulasz, to pogadamy o pancerzu.
 	AI_Output (other, self, "DIA_Fox_Camp_15_15"); //Umowa stoi.
 	
    B_LogEntry		(CH2_Rbl_RebelCampLife, "Fox zatrudni³ mnie do roznoszenia gulaszu po obozie. Te¿ mi obowi¹zki...");
@@ -314,7 +314,7 @@ FUNC VOID DIA_FOX_Spy_Info()
 	AI_Output (other, self, "DIA_FOX_Spy_15_01"); //Jak to jest byæ kwatermistrzem rebeliantów?
 	AI_Output (self, other, "DIA_FOX_Spy_11_02"); //A jak to jest byæ piratem, hê?
 	AI_Output (other, self, "DIA_FOX_Spy_15_03"); //Nigdy siê nad tym nie zastanawia³em...
-	AI_Output (self, other, "DIA_FOX_Spy_11_04"); //Ani ja wiêc daj sobie spokój z takimi pytaniami.
+	AI_Output (self, other, "DIA_FOX_Spy_11_04"); //Ani ja, wiêc daj sobie spokój z takimi pytaniami.
 	AI_Output (other, self, "DIA_FOX_Spy_15_05"); //A jak tu trafi³eœ?
 	AI_Output (self, other, "DIA_FOX_Spy_11_06"); //Powiedzmy, ¿e nie dano mi wyboru. Jasne?
 	AI_Output (other, self, "DIA_FOX_Spy_15_07"); //Powiedzmy, ¿e tak.
@@ -357,20 +357,20 @@ FUNC VOID DIA_FOX_Spy1_Info()
 	AI_Output (other, self, "DIA_FOX_Spy1_15_01"); //Ilu was pozosta³o?
 	AI_Output (self, other, "DIA_FOX_Spy1_11_02"); //Co masz na myœli?
 	AI_Output (other, self, "DIA_FOX_Spy1_15_03"); //By³eœ kurierem Magów. Z tego co wiem, nie mia³eœ wyboru i musia³eœ przystaæ do Obozu Rebeliantów.
-	AI_Output (self, other, "DIA_FOX_Spy1_11_04"); //Sporo wiesz, jak na kogoœ kto jest tu od niedawna.
+	AI_Output (self, other, "DIA_FOX_Spy1_11_04"); //Sporo wiesz jak na kogoœ, kto jest tu od niedawna.
 	AI_Output (self, other, "DIA_FOX_Spy1_11_05"); //Rzeczywiœcie by³em kurierem magów. To by³a dobra posada.
-	AI_Output (self, other, "DIA_FOX_Spy1_11_06"); //Jednak kiedy Gomez rozprawi³ siê z magami ognia wszystko siê spapra³o.
+	AI_Output (self, other, "DIA_FOX_Spy1_11_06"); //Jednak kiedy Gomez rozprawi³ siê z magami ognia, wszystko siê spapra³o.
 	AI_Output (self, other, "DIA_FOX_Spy1_11_07"); //W Starym Obozie nie mia³em czego szukaæ, w Nowym te¿ za mn¹ nie przepadano, a o Sekcie wolê nie s³yszeæ.
 	AI_Output (self, other, "DIA_FOX_Spy1_11_08"); //Wtedy znalaz³em obóz Cavalorna. Urz¹dzi³em siê tutaj jak mog³em.
 	AI_Output (other, self, "DIA_FOX_Spy1_15_09"); //W interesie kwatermistrza jest, ¿eby obóz dobrze prosperowa³.
 	AI_Output (self, other, "DIA_FOX_Spy1_11_10"); //Wiem co mam robiæ. Nie chcesz mi chyba zarzuciæ niegospodarnoœci?!
-	AI_Output (other, self, "DIA_FOX_Spy1_15_11"); //Nie o tym mówiê. Wydaje mi siê, ¿e jest tu ktoœ kto d¹¿y do czegoœ zupe³nie odmiennego.
+	AI_Output (other, self, "DIA_FOX_Spy1_15_11"); //Nie o tym mówiê. Wydaje mi siê, ¿e jest tu ktoœ, kto d¹¿y do czegoœ zupe³nie odmiennego.
 	AI_Output (self, other, "DIA_FOX_Spy1_11_12"); //Hmm, parszywy wilk w stadzie? Je¿eli dobrze Ciê zrozumia³em to uwa¿asz, ¿e jest wœród nas zdrajca?
 	AI_Output (other, self, "DIA_FOX_Spy1_15_13"); //Tak.
 	AI_Output (self, other, "DIA_FOX_Spy1_11_14"); //Znam wszystkich z tego obozu, ale nikogo nie przy³apa³em na knuciu...
 	AI_Output (self, other, "DIA_FOX_Spy1_11_15"); //Jedyne co mi zawsze nie pasowa³o to przybycie Twoje i Toniego.
-	AI_Output (self, other, "DIA_FOX_Spy1_11_16"); //Co do Ciebie to udowodni³eœ ju¿, ¿e warto Ci zaufaæ.
-	AI_Output (self, other, "DIA_FOX_Spy1_11_17"); //Co do Toniego to nie zmieni³em zdania.
+	AI_Output (self, other, "DIA_FOX_Spy1_11_16"); //Co do Ciebie, to udowodni³eœ ju¿, ¿e warto Ci zaufaæ.
+	AI_Output (self, other, "DIA_FOX_Spy1_11_17"); //Co do Toniego, to nie zmieni³em zdania.
 	AI_Output (other, self, "DIA_FOX_Spy1_15_18"); //Co masz na myœli?
 	AI_Output (self, other, "DIA_FOX_Spy1_11_19"); //Tony nadal œmierdzi Starym Obozem. To tylko przeczucie, ale mu nie ufam.
 	AI_Output (other, self, "DIA_FOX_Spy1_15_20"); //Dziêki, to mi wystarczy.

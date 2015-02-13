@@ -46,7 +46,7 @@ FUNC INT DIA_Snow_Hello_Condition()
 FUNC VOID DIA_Snow_Hello_Info()
 {
 	AI_Output (other, self, "DIA_Snow_Hello_15_01"); //Paskudne miejsce.
-	AI_Output (self, other, "DIA_Snow_Hello_11_02"); //Mówisz o Kolonii czy o naszym zacnym obozie?
+	AI_Output (self, other, "DIA_Snow_Hello_11_02"); //Mówisz o Kolonii, czy o naszym zacnym obozie?
 	AI_Output (other, self, "DIA_Snow_Hello_15_03"); //A co to za ró¿nica?
 	AI_Output (self, other, "DIA_Snow_Hello_11_04"); //Racja, ¿adna. Skoro ju¿ tutaj wœciubi³eœ nos, to bêdê mia³ dla Ciebie pewn¹ propozycjê.
 	AI_Output (self, other, "DIA_Snow_Hello_11_05"); //Ale najpierw pogadaj z szefow¹, ona lubi witaæ nowych... cz³onków.

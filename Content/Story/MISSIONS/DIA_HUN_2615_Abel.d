@@ -563,7 +563,7 @@ FUNC VOID DIA_Abel_SpyKillEnd_Info()
 	
    if (Npc_KnowsInfo(other,DIA_Tony_SecretsMeet))
 	{
-		AI_Output (self, other, "DIA_Abel_SpyKillEnd_07_05"); //Aidan widzia³, jak spotka³eœ siê z Tonim i zabi³eœ go z zimn¹ krwi¹!
+		AI_Output (self, other, "DIA_Abel_SpyKillEnd_07_05"); //Aidan widzia³, jak spotka³eœ siê z Tonym i zabi³eœ go z zimn¹ krwi¹!
 	};
    
 	AI_Output (self, other, "DIA_Abel_SpyKillEnd_07_06"); //Wiemy co siê sta³o! Nie wy³gasz siê.

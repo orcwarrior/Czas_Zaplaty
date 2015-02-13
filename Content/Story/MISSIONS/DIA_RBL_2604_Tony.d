@@ -889,7 +889,7 @@ FUNC VOID DIA_Tony_Spy1_Info()
 	AI_Output (other, self, "DIA_Tony_Spy1_15_01"); //Podobno nie zawsze wybierasz proste œcie¿ki.
 	AI_Output (self, other, "DIA_Tony_Spy1_11_02"); //Nie rozumiem...
 	AI_Output (other, self, "DIA_Tony_Spy1_15_03"); //Chodz¹ s³uchy, ¿e nie zawsze mówisz prawdê.
-	AI_Output (self, other, "DIA_Tony_Spy1_11_04"); //W koñcu jesteœmy w Koloni Karnej. Tutaj ka¿dy mówi to co chce. Masz z tym jakiœ problem?
+	AI_Output (self, other, "DIA_Tony_Spy1_11_04"); //W koñcu jesteœmy w Kolonii Karnej. Tutaj ka¿dy mówi to co chce. Masz z tym jakiœ problem?
 	AI_Output (other, self, "DIA_Tony_Spy1_15_05"); //Mo¿e i mam. Nale¿ymy do tego samego... stada. Brak zaufania nas os³abia.
 	AI_Output (self, other, "DIA_Tony_Spy1_11_06"); //Wtykasz nos w nie swoje sprawy. Mo¿e zrobi³em b³¹d przyprowadzaj¹c Ciê tutaj.
 	AI_Output (self, other, "DIA_Tony_Spy1_11_07"); //ZejdŸ mi z oczu.
@@ -939,7 +939,7 @@ FUNC VOID DIA_Tony_Secrets1_Info()
    AI_DrawWeapon (self);
 	
    AI_Output (self, other, "DIA_Tony_Secrets1_11_09"); //Nie bêdê obojêtnie s³ucha³ podobnych kalumnii! Zaraz ze¿resz to co powiedzia³eœ razem z ostrzem...
-	AI_Output (other, self, "DIA_Tony_Secrets1_15_10"); //Zaczekaj! Gdybym przyszed³ tu po to ¿eby Ciê za³atwiæ to ju¿ le¿a³byœ martwy.
+	AI_Output (other, self, "DIA_Tony_Secrets1_15_10"); //Zaczekaj! Gdybym przyszed³ tu po to, ¿eby Ciê za³atwiæ, to ju¿ le¿a³byœ martwy.
 	
    AI_RemoveWeapon (self);
    
@@ -1037,9 +1037,9 @@ FUNC VOID DIA_Tony_Secrets_Join()
 	AI_Output (other, self, "DIA_Tony_Secrets_Join_15_05"); //Swoje us³ugi i spor¹ wiedzê o planach Cavalorna.
 	AI_Output (self, other, "DIA_Tony_Secrets_Join_11_06"); //Powiedz mi wszystko, a ja przeka¿ê Twoje s³owa komu trzeba.
 	AI_Output (other, self, "DIA_Tony_Secrets_Join_15_07"); //Nie jestem idiot¹. Chcê osobiœcie porozmawiaæ z Twoim kontaktem.
-	AI_Output (self, other, "DIA_Tony_Secrets_Join_11_08"); //To nie takie proste... Nikt Ciê nie zna, nikt Ci nie ufaæ..
-	AI_Output (other, self, "DIA_Tony_Secrets_Join_15_09"); //Przecie¿ rozmawiamy czysto hipotetycznie. A co do ryzyka to tylko ja je ponoszê.
-	AI_Output (other, self, "DIA_Tony_Secrets_Join_15_10"); //Je¿eli stwierdz¹, ¿e to co wiem to za ma³o to skoñczê jako nawóz gdzieœ w kniei.
+	AI_Output (self, other, "DIA_Tony_Secrets_Join_11_08"); //To nie takie proste... Nikt Ciê nie zna, nikt Ci nie ufa...
+	AI_Output (other, self, "DIA_Tony_Secrets_Join_15_09"); //Przecie¿ rozmawiamy czysto hipotetycznie. A co do ryzyka, to tylko ja je ponoszê.
+	AI_Output (other, self, "DIA_Tony_Secrets_Join_15_10"); //Je¿eli stwierdz¹, ¿e to co wiem to za ma³o, to skoñczê jako nawóz gdzieœ w kniei.
 	AI_Output (self, other, "DIA_Tony_Secrets_Join_11_11"); //Hmm... Dobra, tutaj jest za du¿o ciekawskich uszu i oczu.
 	AI_Output (self, other, "DIA_Tony_Secrets_Join_11_12"); //Dokoñczymy tê hipotetyczn¹ rozmowê póŸniej. Bêdê tu czeka³ po zmroku.
 	AI_Output (other, self, "DIA_Tony_Secrets_Join_15_13"); //Przyjdê na pewno.

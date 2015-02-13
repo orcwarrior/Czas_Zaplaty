@@ -73,7 +73,7 @@ func void UseDebt_List ()
 				Doc_PrintLine	( nDocID,  0, ""					);
 				Doc_PrintLine	( nDocID,  0, "Lewy i Prawy to bracia, obozuj¹ na szlaku"					);
 				Doc_PrintLines	( nDocID,  0, "z prze³êczy. Nieopodal Starego Obozu - to œwiry uwa¿aj."					);
-				Doc_PrintLine	( nDocID,  0, "Leaf i Aidan to cwaniaki z twojego obozu wiêc"					);
+				Doc_PrintLine	( nDocID,  0, "Leaf i Aidan to cwaniaki z twojego obozu, wiêc"					);
 				Doc_PrintLine	( nDocID,  0, "nie powinieneœ mieæ problemu z odzyskaniem"					);
 				Doc_PrintLine	( nDocID,  0, "rudy."					);
 				Doc_PrintLine	( nDocID,  0, "Nie zapomnij o odsetkach!"					);
@@ -146,7 +146,7 @@ func void ItWrPiwoszNote_List ()
 					Doc_PrintLine	( nDocID,  0, "..."					);
 					Doc_PrintLines	( nDocID,  0, "Nie wiem, co mnie dziœ trafi³o, ale wlaz³em do opuszczonej jaskini na skraju lasu."					);
 					Doc_PrintLine	( nDocID,  0, "..."					);
-					Doc_PrintLines	( nDocID,  0, "W jaskini musia³ mieszkaæ jakiœ alchemik, postanowi³em ¿e to jakoœ wykorzystam, u¿yjê jego sprzêtu do pêdzenia bimbru, he he."	);
+					Doc_PrintLines	( nDocID,  0, "W jaskini musia³ mieszkaæ jakiœ alchemik, postanowi³em, ¿e to jakoœ wykorzystam, u¿yjê jego sprzêtu do pêdzenia bimbru, he he."	);
 					Doc_PrintLine	( nDocID,  0, "..."					);
 					Doc_PrintLines	( nDocID,  0, "Nie mam pojêcia ile tego napêdzi³em, ale na pewno od cholery, wezmê czêœæ do obozu, resztê zostawiê sobie na póŸniej.");
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -638,7 +638,7 @@ INSTANCE magpass(C_Item)
 	on_state[0]				=	Usemagpass;
 	description				=	"Przepustka do magów";
 
-	TEXT[0]					=	"Papier jest zniszczony ale woskowa";
+	TEXT[0]					=	"Papier jest zniszczony, ale woskowa";
 	TEXT[1]					=	"pieczêæ jest w dobrym stanie";
 
 };

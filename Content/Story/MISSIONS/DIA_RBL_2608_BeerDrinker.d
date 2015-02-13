@@ -79,7 +79,7 @@ FUNC VOID DIA_Drunk_Lazur_Info()
 	AI_Output (self, other, "DIA_Drunk_Lazur_11_03"); //Nie znajdziesz napitków o tym samym aromacie, o tym samym bukiecie. Nawet wytrawione, znaczy wytrawne gard³o nie jest w stanie...
 	AI_Output (other, self, "DIA_Drunk_Lazur_15_04"); //To fascynuj¹ce, ale szukam lazurowego trzmiela. I jest to jedyny powód, dla którego odwiedzi³em obozowego ochleja.
 	AI_Output (self, other, "DIA_Drunk_Lazur_11_05"); //Teraz to urazi³eœ mnie do ¿ywego... hik.
-	AI_Output (self, other, "DIA_Drunk_Lazur_11_06"); //Nawet gdybym mia³ w mojej skrzyni trzmiela to i tak bym go nie odda³ nikomu! Rozumiesz? NIKOMU!
+	AI_Output (self, other, "DIA_Drunk_Lazur_11_06"); //Nawet gdybym mia³ w mojej skrzyni trzmiela, to i tak bym go nie odda³ nikomu! Rozumiesz? NIKOMU!
 	AI_Output (other, self, "DIA_Drunk_Lazur_15_07"); //Skoñczmy z t¹ fars¹, dobrze zap³acê.
 	AI_Output (self, other, "DIA_Drunk_Lazur_11_08"); //Nie ka¿dego i nie wszystko mo¿na kupiæ, piracie.
 	AI_Output (self, other, "DIA_Drunk_Lazur_11_09"); //I nie zbli¿aj siê do mojego kufra... hik!

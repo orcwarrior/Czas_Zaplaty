@@ -315,7 +315,7 @@ FUNC VOID DIA_RBL_2617_Carlson_armor_Info()
    AI_Output (other, self, "DIA_RBL_2617_Carlson_armor_15_04"); //Mo¿emy przejœæ do sedna sprawy?
    AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_05"); //Ach tak mogê ci wykuæ pancerz, ale przys³uga za przys³ugê.
    AI_Output (other, self, "DIA_RBL_2617_Carlson_armor_15_06"); //¯e co!? Znowu mam robiæ za jakiegoœ ch³opca na posy³ki?
-   AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_07"); //Mam ci zrobiæ ten pancerz czy nie?
+   AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_07"); //Mam ci zrobiæ ten pancerz, czy nie?
    AI_Output (other, self, "DIA_RBL_2617_Carlson_armor_15_08"); //Ech... no dobra, mów, czego chcesz.
    
    AI_PlayAni ( self, "T_SEARCH");

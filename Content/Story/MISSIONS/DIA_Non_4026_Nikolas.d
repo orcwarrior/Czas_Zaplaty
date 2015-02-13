@@ -50,7 +50,7 @@ FUNC VOID DIA_Nikolas_Hello_Info()
 	AI_Output (other, self, "DIA_Nikolas_Hello_15_03"); //Przyjaciel.
 	AI_Output (self, other, "DIA_Nikolas_Hello_11_04"); //Ja nie mam przyjació³, przynajmniej nie poœród ¿ywych.
 	AI_Output (other, self, "DIA_Nikolas_Hello_15_05"); //W takim razie wolê pozostaæ odstêpstwem od tej normy.
-	AI_Output (self, other, "DIA_Nikolas_Hello_11_06"); //Skoro nalegasz. Choæ dla mnie nie liczy siê d³ugoœæ ¿ycia tylko jego intensywnoœæ.
+	AI_Output (self, other, "DIA_Nikolas_Hello_11_06"); //Skoro nalegasz. Choæ dla mnie nie liczy siê d³ugoœæ ¿ycia, tylko jego intensywnoœæ.
 	AI_Output (other, self, "DIA_Nikolas_Hello_15_07"); //Zdaje siê, ¿e na brak wra¿eñ nie mo¿esz narzekaæ.
 	AI_Output (self, other, "DIA_Nikolas_Hello_11_08"); //Przynajmniej czujê, ¿e ¿yjê. Muszê wracaæ do zajêæ, bywaj.
 	

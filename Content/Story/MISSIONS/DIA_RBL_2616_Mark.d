@@ -304,7 +304,7 @@ FUNC VOID DIA_Mark_Camp4_Info()
 	AI_Output (self, other, "DIA_Mark_Camp4_11_11"); //Mo¿na by rzec, ¿e ¿yliœmy w stanie b³ogiej równowagi.
 	AI_Output (self, other, "DIA_Mark_Camp4_11_12"); //Wszystko by³o dobrze, dopóki w Kolonii nie pojawi³ siê pewien Bezimienny idiota, który zacz¹³ wszêdzie wtykaæ nos.	
 	
-	B_LogEntry(CH1_Rbl_MarkInfo, "Kiedyœ w Koloni Karnej rz¹dzi³y trzy g³ówne obozy: Stary, Nowy i na bagnie.");
+	B_LogEntry(CH1_Rbl_MarkInfo, "Kiedyœ w Kolonii Karnej rz¹dzi³y trzy g³ówne obozy: Stary, Nowy i na bagnie.");
 };
 
 // **************************************************
@@ -456,7 +456,7 @@ FUNC VOID DIA_Mark_Spy_Info()
 	AI_Output (self, other, "DIA_Mark_Spy_11_02"); //Masz na myœli pirata wtykaj¹cego wszêdzie nos?
 	AI_Output (other, self, "DIA_Mark_Spy_11_03"); //Pytam powa¿nie. Ktoœ w obozie wêszy dla Gomeza.
 	AI_Output (self, other, "DIA_Mark_Spy_11_04"); //O kurwa! To ju¿ po nas!
-	AI_Output (other, self, "DIA_Mark_Spy_15_05"); //Ciszej bo ktoœ nas us³yszy! Uspokój siê i mów czy nie zauwa¿y³eœ czegoœ dziwnego.	
+	AI_Output (other, self, "DIA_Mark_Spy_15_05"); //Ciszej, bo ktoœ nas us³yszy! Uspokój siê i mów, czy nie zauwa¿y³eœ czegoœ dziwnego.	
 	AI_Output (self, other, "DIA_Mark_Spy_11_06"); //Hmm, tu nic nie jest normalne.
 	AI_Output (self, other, "DIA_Mark_Spy_11_07"); //Ka¿dy ma jakieœ tajemnice, a ja wolê sie od nich trzymaæ z daleka.
 	AI_Output (self, other, "DIA_Mark_Spy_11_08"); //Popytaj innych, nie chcê sobie narobiæ wrogów.

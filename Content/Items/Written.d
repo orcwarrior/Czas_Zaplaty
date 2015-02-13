@@ -1834,7 +1834,7 @@ func void UsemBrief ()
 //******************************************************************************************/
 INSTANCE Dziennik_stra¿nika(C_Item)
 {	
-	name 					=	"Dziennik Ulf'a";
+	name 					=	"Dziennik Ulfa";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1845,8 +1845,8 @@ INSTANCE Dziennik_stra¿nika(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Dziennik Ulf'a";
-	TEXT[0]				= "Stra¿nika który uczestniczy³ w bitwie nieopodal obozu mysliwych";
+	description			= "Dziennik Ulfa";
+	TEXT[0]				= "Stra¿nika, który uczestniczy³ w bitwie nieopodal obozu mysliwych";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
 	////COUNT[1]			= ;
@@ -1875,15 +1875,15 @@ INSTANCE Dziennik_stra¿nika(C_Item)
  
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID, 1, "font_10_book.tga"	); 	
-					Doc_PrintLine	( nDocID,  0, "Dziennik Wyzszego stra¿nika gomeza Ulfa"		);
+					Doc_PrintLine	( nDocID,  0, "Dziennik Wy¿szego stra¿nika gomeza Ulfa"		);
 					Doc_PrintLine	( nDocID,  0, ""		   			); 	// -1 -> all pages 
 									Doc_SetFont 	( nDocID, 0, "font_10_book.tga"	);
-					Doc_PrintLine	( nDocID,  0, "Dzieñ 11 w koloni"					); 	
+					Doc_PrintLine	( nDocID,  0, "Dzieñ 11. w kolonii"					); 	
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"		); 				
 					Doc_PrintLines	( nDocID,  0, "Gomez kaza³ wyruszyc w pogoni za nadzorc¹ kopalñ w górniczej dolinie");
 					Doc_PrintLines	( nDocID,  0, "Razem ze mn¹ wyruszaj¹: Osobisty stra¿nik Gomeza znaj¹cy siê na magi Gerfan Stra¿nik Diego Bardzo zaciêty i waleczny i Cieñ o imienu Ergom.... a i jeszcze Kali paraj¹cy siê kusz¹");
 					Doc_SetFont 	( nDocID, 0, "font_10_book.tga"	);
-					Doc_PrintLines	( nDocID,  0, "Dzieñ 12 w koloni");
+					Doc_PrintLines	( nDocID,  0, "Dzieñ 12. w kolonii");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	);
 					Doc_PrintLines	( nDocID,  0, "Postanowiliœmy odpocz¹æ w starej chacie przy wodzie");
 					
@@ -1891,7 +1891,7 @@ INSTANCE Dziennik_stra¿nika(C_Item)
 
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID, 0, "font_10_book.tga"	);
-					Doc_PrintLine	( nDocID,  1, "Dzieñ 13 w koloni"					);					
+					Doc_PrintLine	( nDocID,  1, "Dzieñ 13. w kolonii"					);					
 					Doc_PrintLines	( nDocID,  1, "");
 					Doc_SetFont 	( nDocID, 0, "font_10_book.tga"	);
 					Doc_PrintLines	( nDocID,  1, "Znale¿liœmy ich i przygotowaliœmy pu³apkê wszystko jest jak trzeba zaraz zaraz oni zaatakowali nas pierwsi mus³a mnie strza³a....a teraz wbi³ mi ktoœ broñ w plecy prawie spad³em z urwiska wyj¹³em broñ zabi³em tego co mnie zaatakowa³ stoja nad urwiskiem chcê wyci¹gn¹c  z pleców bron trafia mnie strzal.........trace równowage............spada.....");
@@ -1942,7 +1942,7 @@ func void Usedeep_letter1 ()
 					Doc_PrintLine	( nDocID,  0, "Chyba zachlejê siê na œmieræ. Przynajmniej");
 					Doc_PrintLine	( nDocID,  0, "nie bêdê musia³ ogl¹daæ ka¿dej, paskudnej");
 					Doc_PrintLine	( nDocID,  0, "mordy, a szczególnie mordy Pomroki. Ten");					
-					Doc_PrintLine	( nDocID,  0, "goœc mnie dra¿ni. Idiota chyba myœli, ¿e jest");
+					Doc_PrintLine	( nDocID,  0, "goœæ mnie dra¿ni. Idiota chyba myœli, ¿e jest");
 					Doc_PrintLine	( nDocID,  0, "królem Rhobarem II. Wszystko chce zagarn¹æ");
 					Doc_PrintLine	( nDocID,  0, "dla siebie, a resztê ma w dupie. Nakopa³bym");
                Doc_PrintLine	( nDocID,  0, "mu do tej t³ustej dupy, ale goœæ jest za dobry.");

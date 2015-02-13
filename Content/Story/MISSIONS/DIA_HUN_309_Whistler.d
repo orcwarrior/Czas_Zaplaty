@@ -551,7 +551,7 @@ FUNC VOID DIA_Whistler_Spy1_Info()
 	AI_Output (self, other, "DIA_Whistler_Spy1_11_12"); //Mam trzech kandydatów na zdrajcê: Aidana, R¹czkê i Toniego.
 	AI_Output (other, self, "DIA_Whistler_Spy1_15_13"); //Dlaczego akurat oni?
 	AI_Output (self, other, "DIA_Whistler_Spy1_11_14"); //Aidan doœæ czêsto znika wieczorami. Nikt nie wie, gdzie chadza i po co. 
-	AI_Output (self, other, "DIA_Whistler_Spy1_11_15"); //Co do R¹czki to jego t³umaczenie, ¿e podpad³ Gomezowi, bo popar³ jakiegoœ skazañca trochê mi œmierdzi.
+	AI_Output (self, other, "DIA_Whistler_Spy1_11_15"); //Co do R¹czki, to jego t³umaczenie, ¿e podpad³ Gomezowi, bo popar³ jakiegoœ skazañca trochê mi œmierdzi.
 	AI_Output (self, other, "DIA_Whistler_Spy1_11_16"); //Znowu Tony jest tu najkrócej i najmniej go znam. Do tego nied³ugo po tym jak go przygarnêliœmy, pojawi³y siê przecieki.
 	AI_Output (other, self, "DIA_Whistler_Spy1_15_17"); //Rozumiem. Dobry z ciebie obserwator.
 	AI_Output (self, other, "DIA_Whistler_Spy1_11_18"); //Mam u³atwione zadanie, bo wszyscy uwa¿aj¹ mnie za œwira, dla którego licz¹ siê tylko œwiecide³ka.

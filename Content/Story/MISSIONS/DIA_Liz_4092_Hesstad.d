@@ -217,7 +217,7 @@ FUNC VOID DIA_Hess_Course_Info()
 {
 	liz_questions = liz_questions + 1;
 	AI_Output (other, self, "DIA_Hess_Course_15_01"); //Jak chcecie pozbyæ siê wp³ywu kl¹twy?
-	AI_Output (self, other, "DIA_Hess_Course_11_02"); //¯yjemy po to by walczyæ ze s³ugami Beliara.
+	AI_Output (self, other, "DIA_Hess_Course_11_02"); //¯yjemy po to, by walczyæ ze s³ugami Beliara.
 	AI_Output (self, other, "DIA_Hess_Course_11_03"); //Pan Ciemnoœci przyzwa³ Bestiê, aby sta³a siê nasz¹ zag³ad¹. Jednak dziêki Tobie i mocy Pradawnego znów ¿yjemy.
 	AI_Output (self, other, "DIA_Hess_Course_11_04"); //Nadejdzie dzieñ, gdy zgnieciemy ca³y pomiot Beliara!
 	B_LogEntry(CH5_NON_Lizard, "Ci jaszczuroludzie s¹ zaciek³ymi wrogami Beliara.");
@@ -350,7 +350,7 @@ FUNC VOID DIA_Hess_HelpOk_Info()
 
 	Log_CreateTopic(CH5_NON_OrCHunting, LOG_MISSION);
 	Log_SetTopicStatus(CH5_NON_OrCHunting, LOG_RUNNING);
-	B_LogEntry(CH5_NON_OrCHunting, "Hesstad ma œwietny plan - wyr¿n¹æ ca³y obóz orków! No nic, skoro ju¿ da³em s³owo, nie bêdê go cofa³. Na szczêœcie wystarczy 'tylko' wyr¿n¹æ wszystkich dowódców i genera³a co w sumie wychodzi na to samo, bo aby siê do nich dostaæ musimy przebiæ siê przez orkowy obóz. Aha - Hesstad nie mo¿e zgin¹æ, bo wtedy ten ich Pradawny mo¿e urz¹dziæ w Kolonii niez³y bajzel.");
+	B_LogEntry(CH5_NON_OrCHunting, "Hesstad ma œwietny plan - wyr¿n¹æ ca³y obóz orków! No nic, skoro ju¿ da³em s³owo, nie bêdê go cofa³. Na szczêœcie wystarczy 'tylko' wyr¿n¹æ wszystkich dowódców i genera³a co w sumie wychodzi na to samo, bo aby siê do nich dostaæ musimy przebiæ siê przez orkowy obóz. Aha - Hesstad nie mo¿e zgin¹æ, bo wtedy ten ich Pradawny mo¿e urz¹dziæ w kolonii niez³y bajzel.");
 	
 	Party_AddNpc(self);
 	Npc_ExchangeRoutine(self, "GD1");

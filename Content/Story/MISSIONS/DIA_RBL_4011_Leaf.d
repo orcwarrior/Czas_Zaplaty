@@ -719,7 +719,7 @@ FUNC VOID DIA_Leaf_Beer_Info()
 	AI_Output (self, other, "DIA_Leaf_Beer_11_08"); //Najpierw myœla³em, ¿e to ja. Ale póŸniej zobaczy³em dymi¹c¹ dziurê i bij¹cy z niej trupi blask.
 	AI_Output (self, other, "DIA_Leaf_Beer_11_09"); //Ledwo zd¹¿y³em portki podci¹gn¹æ tak stamt¹d wia³em!
 	AI_Output (other, self, "DIA_Leaf_Beer_15_10"); //Gdzie znajdê ten krater?
-	AI_Output (self, other, "DIA_Leaf_Beer_11_11"); //Przed bagnami skrêæ w lewo do lasu. IdŸ tak aby mieæ po prawej ska³y, póŸniej skrêæ w lewo. 
+	AI_Output (self, other, "DIA_Leaf_Beer_11_11"); //Przed bagnami skrêæ w lewo do lasu. IdŸ tak, aby mieæ po prawej ska³y, póŸniej skrêæ w lewo. 
 	AI_Output (self, other, "DIA_Leaf_Beer_11_12"); //Gdzieœ tam jest taka paskudna dziura...
 	AI_Output (self, other, "DIA_Leaf_Beer_11_13"); //Tylko uwa¿aj na wilki i cieniostwory, pe³no tam tego siê wa³êsa.
 	B_LogEntry		(CH1_RBL_ArrowCristal, "Piwo pomog³o. Leaf zdradzi³ mi gdzie szukaæ krateru. Przed bagnami musze skrêciæ w lewo, mam iœæ kawa³ek maj¹c po prawej ska³y po czym skrêciæ w lewo w las. Gdzieœ tam znajdê kryszta³. Muszê uwa¿aæ na wilki i cieniostwory.");

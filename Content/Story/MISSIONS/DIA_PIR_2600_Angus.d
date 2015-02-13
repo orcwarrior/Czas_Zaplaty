@@ -454,7 +454,7 @@ FUNC VOID DIA_Angus_Patrol_Info()
 	AI_Output (self, other,"DIA_Angus_Patrol_11_01"); //A ty wygl¹dasz jakbyœ potrzebowa³ pomocy. Zgad³em?
 	AI_Output (other, self,"DIA_Angus_Patrol_15_02"); //W pobli¿u obozu krêci siê patrol stra¿y. Muszê siê go pozbyæ.
 	AI_Output (self, other,"DIA_Angus_Patrol_11_03"); //Na mnie i ch³opaków mo¿esz liczyæ. Powiedz tylko kiedy i gdzie.
-	AI_Output (self, other,"DIA_Angus_Patrol_11_04"); //Daj znaæ jak bêdziesz gotów.
+	AI_Output (self, other,"DIA_Angus_Patrol_11_04"); //Daj znaæ, jak bêdziesz gotów.
 	B_LogEntry		(CH2_RBL_GuardCamp, "Angus i reszta piratów pomog¹ mi w pozbyciu siê stra¿ników - muszê tylko zdecydowaæ jak to zrobimy.");
 };
 
@@ -532,7 +532,7 @@ FUNC VOID DIA_Angus_Patrol1_Negotiate()
 	AI_Output (other, self, "DIA_Angus_Patrol1_Negotiate_15_11"); //Pogadam z nimi, wy zaczekacie w odwodzie.
 	AI_Output (self, other, "DIA_Angus_Patrol1_Negotiate_11_12"); //Chcesz rozmawiaæ z tymi ³achudrami? Nie poznajê Ciê Rick, zmiêk³eœ!
 	AI_Output (other, self, "DIA_Angus_Patrol1_Negotiate_15_13"); //Nie ma sensu niepotrzebnie nara¿aæ nikogo z Was. Mo¿e uda siê to za³atwiæ inaczej.
-	AI_Output (other, self, "DIA_Angus_Patrol1_Negotiate_15_14"); //Zaczekacie w pobliskiej jaskini, gdyby coœ posz³o nie tak wiesz co robiæ.
+	AI_Output (other, self, "DIA_Angus_Patrol1_Negotiate_15_14"); //Zaczekacie w pobliskiej jaskini, gdyby coœ posz³o nie tak, wiesz co robiæ.
 	AI_Output (self, other, "DIA_Angus_Patrol1_Negotiate_11_15"); //Hmm, mo¿e to i nie g³upi pomys³. Dobra, jesteœmy z tob¹.
 	B_LogEntry(CH2_RBL_GuardCamp, "Wybra³em drogê negocjacji - spróbujê jakoœ nak³oniæ stra¿ników do opuszczenia naszego s¹siedztwa. Angus i piraci bêd¹ czekaæ w jaskini gdyby coœ posz³o nie tak jak powinno.");
 

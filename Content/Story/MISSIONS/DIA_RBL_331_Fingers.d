@@ -462,7 +462,7 @@ FUNC VOID DIA_Fingers_AfterFight_Info()
 	AI_Output (self, other, "DIA_Fingers_AfterFight_11_03"); //Teraz jesteœ zadowolony?! To w³aœnie ten klucz ukrad³em z zamku.
 	AI_Output (other, self, "DIA_Fingers_AfterFight_15_04"); //Klucz Gomeza... Ty naprawdê jesteœ dobry R¹czka.
 	AI_Output (self, other, "DIA_Fingers_AfterFight_11_05"); //Jestem najlepszy!
-	AI_Output (other, self, "DIA_Fingers_AfterFight_15_06"); //Je¿eli pozwolisz zatrzymam ten klucz.
+	AI_Output (other, self, "DIA_Fingers_AfterFight_15_06"); //Je¿eli pozwolisz, zatrzymam ten klucz.
 	AI_Output (self, other, "DIA_Fingers_AfterFight_11_07"); //Ud³aw siê nim! Mam nadziejê, ¿e Gomez przy³apie Ciê na grzebaniu w skrzyniach i upierdoli Ci r¹czki przy samej dupie!
 	AI_Output (self, other, "DIA_Fingers_AfterFight_11_08"); //ZejdŸ mi z oczu... z³odzieju!
 	

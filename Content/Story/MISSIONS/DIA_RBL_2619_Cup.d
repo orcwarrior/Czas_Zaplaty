@@ -294,10 +294,10 @@ FUNC VOID DIA_RBL_2619_Cup_Stew_Info()
 	AI_Output (other, self, "DIA_RBL_2619_Cup_Stew_15_01"); //Masz ochotê coœ zjeœæ?
 	AI_Output (self, other, "DIA_RBL_2619_Cup_Stew_11_02"); //Co tak œmierdzi?
 	AI_Output (other, self, "DIA_RBL_2619_Cup_Stew_15_03"); //Gulasz Snafa.
-	AI_Output (self, other, "DIA_RBL_2619_Cup_Stew_11_04"); //Cholera, chyba sam zacznê gotowaæ. Daj to paskudztwo, jak siê zatka nos to nawet da siê zjeœæ.
+	AI_Output (self, other, "DIA_RBL_2619_Cup_Stew_11_04"); //Cholera, chyba sam zacznê gotowaæ. Daj to paskudztwo, jak siê zatka nos, to nawet da siê zjeœæ.
 	
 	
 	B_GiveInvItems (other, self, ItFo_Stew, 1);
-	B_LogEntry		(CH2_Rbl_Food, "Jakoœ sobie poradzi³em z wepchniêciem gulaszu Kub³owi."); 
+	B_LogEntry		(CH2_Rbl_Food, "Jakoœ sobie poradzi³em z wepchniêciem gulaszu Kuflowi."); 
 
 }; 

@@ -47,7 +47,7 @@ FUNC VOID DIA_Bukhart_Hello_Info()
 {
 	AI_Output (self, other, "DIA_Bukhart_Hello_11_01"); //Kto Ciê tu do ciê¿kiej cholery wpuœci³?!
 	AI_Output (other, self, "DIA_Bukhart_Hello_15_02"); //Znajomy z obozu rebeliantów opowiedzia³ mi o ³owcach trolli, wiêc przyszed³em przekonaæ siê na w³asne oczy, czy te wszystkie opowieœci nie s¹ przesadzone.
-	AI_Output (self, other, "DIA_Bukhart_Hello_11_03"); //£owcy trolli? Co za idiotyczna nazwa. A co do opowieœci to nie znam ¿adnej, która koñczy³a by siê dobrze dla trolla, he, he.
+	AI_Output (self, other, "DIA_Bukhart_Hello_11_03"); //£owcy trolli? Co za idiotyczna nazwa. A co do opowieœci, to nie znam ¿adnej, która koñczy³a by siê dobrze dla trolla, he, he.
 	AI_Output (self, other, "DIA_Bukhart_Hello_11_04"); //Witaj w naszym 'os³awionym' obozie. Tylko nie w³aŸ nikomu w drogê, bo szkoda by by³o takiego œlicznego ch³opczyka poharataæ.
 	AI_Output (other, self, "DIA_Bukhart_Hello_15_05"); //Potrafiê o siebie zadbaæ.
 	AI_Output (self, other, "DIA_Bukhart_Hello_11_06"); //Po¿yjemy, zobaczymy. Bywaj.
