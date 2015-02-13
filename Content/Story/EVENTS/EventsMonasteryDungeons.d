@@ -401,7 +401,7 @@ func void MDCINE_EVT()
 	{
       Wld_SendTrigger("TRUAN_CAM");
       CinematicReset(Cinematic_MD_RodericVsTruan,0);
-      CinematicDialog(Truan,RodericMD,"W koñcu jakiœ g³upiec doszed³ a¿ tutaj. Kiedy wypijê krew tego œmiertelnika bêdê wolny! ","NOSOUND.WAV",5);
+      CinematicDialog(Truan,RodericMD,"W koñcu jakiœ g³upiec doszed³ a¿ tutaj. Kiedy wypijê krew tego œmiertelnika, bêdê wolny! ","NOSOUND.WAV",5);
       CinematicDialog(RodericMD,Truan,"Najpierw bêdziesz musia³ przejœæ przeze mnie zdrajco!","NOSOUND.WAV",3);
       CinematicDialog(Truan,RodericMD,"Pamiêtam ciê... Roderik, to dziêki twojej naiwnoœci zdoby³em miecz ¿ywio³ów.","NOSOUND.WAV",4);
       CinematicDialog(RodericMD,Truan,"Wystarczy ju¿ s³ów - giñ bestio!","NOSOUND.WAV",2);

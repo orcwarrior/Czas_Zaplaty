@@ -113,7 +113,7 @@ FUNC VOID DIA_Sher_First_Info()
 	AI_Output (other, self, "DIA_Sher_First_15_10"); //Skoro tak twierdzisz. Gdzie go znajdê?
 	AI_Output (self, other, "DIA_Sher_First_11_11"); //IdŸ dalej, nie sposób go nie zauwa¿yæ. Krzyczy najg³oœniej z ca³ej ho³oty.
 	AI_Output (other, self, "DIA_Sher_First_15_12"); //Dziêki za radê.
-	AI_Output (self, other, "DIA_Sher_First_11_13"); //Zaczekaj. Gdybyœ potrzebowa³ pomocy to daj mi znaæ.
+	AI_Output (self, other, "DIA_Sher_First_11_13"); //Zaczekaj. Gdybyœ potrzebowa³ pomocy, to daj mi znaæ.
 	AI_Output (other, self, "DIA_Sher_First_15_14"); //Bêdê o tym pamiêta³. Bywaj.
 	
    B_LogEntry		(CH4_GRD_NewMine, "Pierwsz¹ osob¹, któr¹ spotka³em w kopalni by³ nijaki Sher. Mimo podejrzanego wygl¹du wywar³ na mnie dobre wra¿enie. Torlofa znajdê w g³êbi, podobno krzyczy najg³oœniej z ca³ej ho³oty, he, he.");
@@ -154,7 +154,7 @@ FUNC VOID DIA_Sher_Hlp_Info()
 {
 	AI_Output (other, self, "DIA_Sher_Hlp_15_01"); //Potrzebujê Twojej pomocy.
 	AI_Output (self, other, "DIA_Sher_Hlp_11_02"); //Co siê sta³o?
-	AI_Output (other, self, "DIA_Sher_Hlp_15_03"); //Bêdê z tob¹ szczery. Przyby³em tu aby nak³oniæ Torlofa do przy³¹czenia siê...
+	AI_Output (other, self, "DIA_Sher_Hlp_15_03"); //Bêdê z tob¹ szczery. Przyby³em tu, aby nak³oniæ Torlofa do przy³¹czenia siê...
 	AI_Output (self, other, "DIA_Sher_Hlp_11_04"); //Wiem po co tu przyby³eœ, piracie.
 	AI_Output (other, self, "DIA_Sher_Hlp_15_05"); //Przecie¿ nikt z kopalni nie wie o tym kim kiedyœ by³em.
 	AI_Output (self, other, "DIA_Sher_Hlp_11_06"); //Zdradzi³ Ciê chód. Z regu³y zwyczajnych marynarzy nie wtr¹caj¹ do Kolonii wiêc zaryzykowa³em stwierdzenie, ¿e jesteœ korsarzem. Jak widaæ trafne.

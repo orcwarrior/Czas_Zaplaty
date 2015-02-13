@@ -72,7 +72,7 @@ FUNC int DIA_Lares_Again_Condition()
 FUNC VOID DIA_Lares_Again_Info()
 {
 	AI_Output (other, self,"DIA_Lares_Again_15_00"); //Podobno nie ¿yczysz za dobrze stra¿nikom?
-	AI_Output (self, other,"DIA_Lares_Again_11_01"); //Ciszej cz³owieku! Nawet je¿eli to prawda to siê z tym nie manifestujê.
+	AI_Output (self, other,"DIA_Lares_Again_11_01"); //Ciszej cz³owieku! Nawet je¿eli to prawda, to siê z tym nie manifestujê.
 	AI_Output (self, other,"DIA_Lares_Again_11_02"); //Kim jesteœ i czego chcesz?
 	AI_Output (other, self,"DIA_Lares_Again_15_03"); //Przysy³a mnie Cavalorn. Dosz³y nas s³uchy, ¿e w Nowym Obozie szykuj¹ siê... zmiany na lepsze.
 	AI_Output (self, other,"DIA_Lares_Again_11_04"); //Czyli jesteœ wys³annikiem rebeliantów. Czy¿by Cavalorn i tutaj chcia³ wœciubiæ nos?
@@ -81,11 +81,11 @@ FUNC VOID DIA_Lares_Again_Info()
 	AI_Output (self, other,"DIA_Lares_Again_11_07"); //No to nas znalaz³eœ, rozgl¹daj siê do woli.
 	AI_Output (other, self,"DIA_Lares_Again_15_08"); //Powiesz mi coœ wiêcej o tym co szykujecie?
 	AI_Output (self, other,"DIA_Lares_Again_11_09"); //Uwa¿asz mnie za idiotê? Mo¿e i przys³a³ ciê Cavalorn, ale to za ma³o.
-	AI_Output (self, other,"DIA_Lares_Again_11_10"); //Powiem Ci coœ wiêcej je¿eli wyœwiadczysz mi drobn¹ przys³ugê.
+	AI_Output (self, other,"DIA_Lares_Again_11_10"); //Powiem Ci coœ wiêcej, je¿eli wyœwiadczysz mi drobn¹ przys³ugê.
 	AI_Output (other, self,"DIA_Lares_Again_15_11"); //Chyba nie mam wyboru. Co to za 'drobna' przys³uga?
 	AI_Output (self, other,"DIA_Lares_Again_11_12"); //Odk¹d stra¿nicy zrobili tu swoj¹ piaskownicê mam na g³owie zbiory ry¿u i dostawy paczek z ry¿em do gospody na wyspie.
 	AI_Output (self, other,"DIA_Lares_Again_11_13"); //Ry¿ to podstawowe po¿ywienie niewolników, jak nas nazywaj¹ stra¿nicy. W karczmie pêdz¹ z niego ry¿ówkê, wiêc œmia³o mo¿na powiedzieæ, ¿e to Bia³e Z³oto Kolonii.
-	AI_Output (self, other,"DIA_Lares_Again_11_14"); //Wykopa³em wszystkich do zbierania tego cholerstwa bo nie wyrabiamy limitów odk¹d kilku szkodników da³o nogê.
+	AI_Output (self, other,"DIA_Lares_Again_11_14"); //Wykopa³em wszystkich do zbierania tego cholerstwa, bo nie wyrabiamy limitów odk¹d kilku szkodników da³o nogê.
 	AI_Output (other, self,"DIA_Lares_Again_15_15"); //Uciekli?
 	AI_Output (self, other,"DIA_Lares_Again_11_16"); //Cholerne sukinsyny upi³y mnie ry¿ówk¹ i zwinêli siê przed œwitem. Od tamtego czasu mam na g³owie stra¿ników, zwiêkszone limity na zbiory i mniej ludzi do pracy.
 	AI_Output (self, other,"DIA_Lares_Again_11_17"); //Fletcher da³ mi jeszcze dwa dni na to, ¿eby wszystko wróci³o do normy.
@@ -102,7 +102,7 @@ FUNC VOID DIA_Lares_Again_Info()
 	AI_Output (self, other,"DIA_Lares_Again_11_28"); //Wiêc jak bêdzie?
 	
    B_LogEntry		(CH4_RBL_NCRebel, "Lares wtajemniczy mnie w plany buntowników je¿eli wyœwiadczê mu 'drobn¹' przys³ugê.");
-	B_LogEntry		(CH4_NC_RBLBosses, "Lares poprosi³ mnie o przys³ugê. Nie mam wyboru je¿eli chcê zdobyæ jego zaufanie.");
+	B_LogEntry		(CH4_NC_RBLBosses, "Lares poprosi³ mnie o przys³ugê. Nie mam wyboru, je¿eli chcê zdobyæ jego zaufanie.");
 };
 
 var int lares_wait;
@@ -132,7 +132,7 @@ FUNC VOID DIA_Lares_AgainOk_Info()
 {
 	AI_Output (other, self,"DIA_Lares_AgainOk_15_00"); //W porz¹dku, zajmê siê uciekinierami.
 	AI_Output (self, other,"DIA_Lares_AgainOk_11_01"); //Równy z Ciebie ch³op!
-	AI_Output (self, other,"DIA_Lares_AgainOk_11_02"); //Ale masz na to tylko dwa dni. PóŸniej wróci Fletcher i skopie mi dupê je¿eli nie poka¿ê mu, ¿e ukara³em tych sukinsynów.
+	AI_Output (self, other,"DIA_Lares_AgainOk_11_02"); //Ale masz na to tylko dwa dni. PóŸniej wróci Fletcher i skopie mi dupê, je¿eli nie poka¿ê mu, ¿e ukara³em tych sukinsynów.
 	AI_Output (self, other,"DIA_Lares_AgainOk_11_03"); //Owocnych ³owów.
 	
    lares_wait = B_SetDayTolerance()+2;
@@ -206,7 +206,8 @@ FUNC VOID DIA_Lares_AgainOk2_Info()
 	**********************/
 
 		AI_EquipBestMeleeWeapon	(self);
-		AI_ReadyMeleeWeapon		(self);
+		//AI_ReadyMeleeWeapon		(self);
+		AI_DrawWeapon		(self);
 		AI_PlayAni				(self, "T_1HSINSPECT");
       AI_RemoveWeapon(self);
 		AI_UnequipWeapons		(self);
@@ -309,7 +310,7 @@ FUNC VOID DIA_Lares_Questions_Info()
 FUNC VOID DIA_Lares_Questions_What()
 {
 	AI_Output (other, self,"DIA_Lares_Questions_What_15_00"); //Czym siê zajmujesz?
-	AI_Output (self, other,"DIA_Lares_Questions_What_11_01"); //Odk¹d Ry¿owy Ksi¹¿ê zawis³ na sznurze to na mnie spad³ w¹tpliwy zaszczyt dogl¹dania zbiorów.
+	AI_Output (self, other,"DIA_Lares_Questions_What_11_01"); //Odk¹d Ry¿owy Ksi¹¿ê zawis³ na sznurze, to na mnie spad³ w¹tpliwy zaszczyt dogl¹dania zbiorów.
 	AI_Output (self, other,"DIA_Lares_Questions_What_11_02"); //Stra¿nicy postanowili wykorzystaæ moje naturalne... zdolnoœci. Rzeczywiœcie jakoœ sobie radzê, ale to ¿ycie na krawêdzi.
 	AI_Output (self, other,"DIA_Lares_Questions_What_11_03"); //Sam widzia³eœ jak niewiele brakowa³o, ¿eby Fletcher powiesi³ mnie obok Ksiêcia.
 	//Info_ClearChoices (DIA_Lares_Questions);

@@ -306,7 +306,7 @@ FUNC void  DIA_Roderic_Fight_Info()
 	B_FullStop (hero);
 	AI_TurnToNpc (other, urk);
 	AI_GotoNpc(self, urk);
-	AI_Output 	(urk, self, "DIA_Roderic_Fight_11_01"); //W koñcu jakiœ g³upiec doszed³ a¿ tutaj. Kiedy wypijê krew tego œmiertelnika bêdê wolny! 
+	AI_Output 	(urk, self, "DIA_Roderic_Fight_11_01"); //W koñcu jakiœ g³upiec doszed³ a¿ tutaj. Kiedy wypijê krew tego, œmiertelnika bêdê wolny! 
 	AI_Output 	(self, urk,"DIA_Roderic_Fight_11_02"); //Najpierw bêdziesz musia³ przejœæ przeze mnie, zdrajco!
 	AI_Output 	(urk, self, "DIA_Roderic_Fight_11_03"); //Pamiêtam Ciê... Roderik, to dziêki Twojej naiwnoœci zdoby³em Miecz ¯ywio³ów.
 	AI_Output 	(self, urk,"DIA_Roderic_Fight_11_04"); //Wystarczy ju¿ s³ów - giñ bestio!
@@ -352,7 +352,7 @@ FUNC void DIA_RodericMD_Hi_Info()
 	B_GiveXP(250);
 	B_FullStop (hero);
 	AI_GotoNpc(other,self);
-	AI_Output(self, hero,"DIA_RodericMD_Hi_11_01"); //Aby pójœæ dalej musimy otworzyæ te wrota.
+	AI_Output(self, hero,"DIA_RodericMD_Hi_11_01"); //Aby pójœæ dalej, musimy otworzyæ te wrota.
 	AI_Output(self, hero,"DIA_RodericMD_Hi_11_02"); //Po lewej stronie znajdziesz kamienny prze³¹cznik.
 	AI_Output(other,self,"DIA_RodericMD_Hi_15_03"); //Do dzie³a!
 	AI_SetWalkmode(self,NPC_RUN);

@@ -729,7 +729,7 @@ FUNC VOID DIA_Rodney_Sword_Info()
 	AI_Output (self, other,"DIA_Rodney_Sword_11_12"); //Wybacz mi. Ponios³o mnie... Tak bardzo chcê zostaæ magiem... Zaœlepi³ mnie egoizm.
 	AI_Output (other, self,"DIA_Rodney_Sword_15_13"); //W porz¹dku Rodney. Pogadam z Lerenem, powiem, ¿e tylko pomog³em Ci zdobyæ artefakt.
 	AI_Output (other, self,"DIA_Rodney_Sword_15_14"); //Przekonam magów, ¿eby uznali Twoj¹ inicjacjê za dope³nion¹.
-	AI_Output (self, other,"DIA_Rodney_Sword_11_15"); //Bêdê Æi wdziêczny, Rick!
+	AI_Output (self, other,"DIA_Rodney_Sword_11_15"); //Bêdê Ci wdziêczny, Rick!
 	B_LogEntry		(CH3_RBL_RodneyHelp, "Muszê pokazaæ miecz Lerenowi i przekonaæ magów, ¿e Rodney zas³u¿y³ na to aby wst¹piæ w ich szeregi.");
 };
 
@@ -759,7 +759,7 @@ FUNC VOID DIA_Rodney_BeginMag_Info()
 	AI_Output (other, self,"DIA_Rodney_BeginMag_15_01"); //Mam dobre wieœci!
 	AI_Output (self, other,"DIA_Rodney_BeginMag_11_02"); //Mów!
 	AI_Output (other, self,"DIA_Rodney_BeginMag_15_03"); //Leren zaakceptowa³ Twoj¹ inicjacjê...
-	AI_Output (self, other,"DIA_Rodney_BeginMag_11_04"); //Na Adanosa, to najwspanialszy dzieñ w moim ¿yciu! Lepiej czu³em siê tylko wtedy kiedy przeci¹gnêliœmy pod kilem gubernatora Verony.
+	AI_Output (self, other,"DIA_Rodney_BeginMag_11_04"); //Na Adanosa, to najwspanialszy dzieñ w moim ¿yciu! Lepiej czu³em siê tylko wtedy, kiedy przeci¹gnêliœmy pod kilem gubernatora Verony.
 	AI_Output (other, self,"DIA_Rodney_BeginMag_15_05"); //IdŸ do Lerena po kieckê i runê.
 	AI_Output (self, other,"DIA_Rodney_BeginMag_11_06"); //Nie dam mu czekaæ! A to siê Hank zdziwi...
 
@@ -811,6 +811,6 @@ FUNC VOID DIA_Rodney_BecomeMagEnd_Info()
 	AI_Output (other, self,"DIA_Rodney_BecomeMagEnd_15_02"); //Nie szkodzi przyjacielu. Mnie ta przygoda te¿ wiele nauczy³a. To mi wsytarczy za podziêkowania.
 	AI_Output (self, other,"DIA_Rodney_BecomeMagEnd_11_03"); //No i miecz, he, he.
 	AI_Output (other, self,"DIA_Rodney_BecomeMagEnd_15_04"); //Masz racjê. Uwa¿aj na siebie... magu.
-	AI_Output (self, other,"DIA_Rodney_BecomeMagEnd_11_05"); //Zawsze uwa¿a³em, ¿e by³byœ najlepszym kandydatem na nowego kapitana gdyby Ramos wykorkowa³.
+	AI_Output (self, other,"DIA_Rodney_BecomeMagEnd_11_05"); //Zawsze uwa¿a³em, ¿e by³byœ najlepszym kandydatem na nowego kapitana, gdyby Ramos wykorkowa³.
 	AI_Output (other, self,"DIA_Rodney_BecomeMagEnd_15_06"); //Hmm, dziêki Rodney. Bywaj.
 };
