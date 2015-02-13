@@ -80,7 +80,7 @@ func void B_GiveDeathInv ()
       {	
          CreateInvItems(self, ItAt_WolfSkin, 1);
       };
-		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_BLACKWOLF)			{	CreateInvItems(self,ItAt_WolfSkin2,1);	};
+		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_BLACKWOLF)			{	CreateInvItems(self,ItAt_BlackWolfSkin,1);	}; // ItAt_WolfSkin2 to futro psa orkowego
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_SHADOWBEAST)			{	CreateInvItems(self,ItAt_ShadowSkin,1);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_TROLL)				{	CreateInvItems(self,ItAt_TrollSkin,1);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_YOUNGTROLL)			{	CreateInvItems(self,ItAt_YoTroSkin,1);	};

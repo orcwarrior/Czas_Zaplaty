@@ -571,6 +571,18 @@ INSTANCE ItAt_WolfSkin (C_Item)
 	description			= name;
 	TEXT[4]				= NAME_Value;					COUNT[4]	= value;
 };
+
+INSTANCE ItAt_BlackWolfSkin (ItAt_WolfSkin)
+{
+	name 				=	"Futro czarnego wilka";
+	
+	value 				=	62; // nie znam balansu a wiec cene dostosujcie
+	
+	visual 				=	"ItAt_Wolf_01.3DS";
+	
+	description			= name;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= value;
+};
 /******************************************************************************************/
 INSTANCE ItAt_WolfSkin2 (C_Item)
 {
