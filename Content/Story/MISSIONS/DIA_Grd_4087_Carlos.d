@@ -172,7 +172,7 @@ FUNC VOID DIA_Carlos_Bribe_Info()
       AI_PlayAni ( self, "T_SEARCH");
 		AI_TurnToNpc (self, other);
 		
-      AI_Output (self, other, "DIA_Carlos_Bribe_11_03"); //Dobra, w³aŸ. Ale jakby co to siê nie znamy.
+      AI_Output (self, other, "DIA_Carlos_Bribe_11_03"); //Dobra, w³aŸ. Ale jakby co, to siê nie znamy.
 		
       Log_SetTopicStatus(CH3_Grd_Bribe, LOG_SUCCESS);
 		B_LogEntry(CH3_Grd_Bribe, "Przekupi³em Carlosa, stra¿nika przy bramie na Pola Ry¿owe. W koñcu bêdê móg³ siê rozejrzeæ w sytuacji w Nowym Obozie.");
@@ -419,7 +419,7 @@ Niech rzuci okiem na jednego z grd
 		AI_Output (other, carlos, "DIA_Carlos_Trap_15_13"); //Chyba siê zapêdzi³eœ. Oddaj miecz!
 		AI_Output (carlos, other, "DIA_Carlos_Trap_11_14"); //Daæ taki miecz nieznajomemu... Albo jesteœ g³upi, albo naiwny. Móg³bym daæ siê zer¿n¹æ orkowi dla takiego cuda.
 		AI_Output (other, carlos, "DIA_Carlos_Trap_15_15"); //Ty skurw...
-		AI_Output (carlos, other, "DIA_Carlos_Trap_11_16"); //Jakbyœ zapomnia³ jesteœmy w Koloni Karnej. Ciesz siê, ¿e jestem w dobrym nastroju.
+		AI_Output (carlos, other, "DIA_Carlos_Trap_11_16"); //Jakbyœ zapomnia³ jesteœmy w Kolonii Karnej. Ciesz siê, ¿e jestem w dobrym nastroju.
 		AI_Output (carlos, other, "DIA_Carlos_Trap_11_17"); //Zamiast Ciê zabiæ, spe³niê obietnicê - witamy w kopalni, he, he...
 
 		B_LogEntry(CH4_GRD_NewMine, "Ten sukinsyn Carlos zabra³ mój miecz i wtr¹ci³ mnie do kopalni! Jeszcze policzê siê z tym 'mi³oœnikiem' orê¿a.");

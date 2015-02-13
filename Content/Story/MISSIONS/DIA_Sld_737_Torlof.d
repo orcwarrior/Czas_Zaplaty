@@ -75,7 +75,7 @@ FUNC VOID  DIA_Torlof_Here_Info()
 	AI_Output (other, self,"DIA_Torlof_Here_15_00"); //A jak trafi³eœ do kopalni?
 	AI_Output (self, other,"DIA_Torlof_Here_04_01"); //Do koñca walczy³em ze stra¿nikami, wtedy zepchnêli nas do kopalni, to by³ nasz ostatni bastion.
 	AI_Output (self, other,"DIA_Torlof_Here_04_02"); //Przeprowadzili kilka ataków, ale wszystkie odparliœmy. Kopalnia to dobre miejsce do obrony.
-	AI_Output (self, other,"DIA_Torlof_Here_04_03"); //W koñcu zawarliœmy coœ na kszta³t rozejmu. Mogli nas wzi¹æ g³odem wiêc i tak nie mieliœmy wyjœcia.
+	AI_Output (self, other,"DIA_Torlof_Here_04_03"); //W koñcu zawarliœmy coœ na kszta³t rozejmu. Mogli nas wzi¹æ g³odem, wiêc i tak nie mieliœmy wyjœcia.
 	AI_Output (self, other,"DIA_Torlof_Here_04_04"); //Odpowiadam teraz za wszystkich skazañców z kopalni i za te cholerne limity.
 	AI_Output (other, self,"DIA_Torlof_Here_15_05"); //Jakie limity?
 	AI_Output (self, other,"DIA_Torlof_Here_04_06"); //Limity wydobycia rudy. Znowu je podnieœli, teraz to ju¿ sto dwadzieœcia funtów czystej rudy.
@@ -389,6 +389,6 @@ FUNC VOID DIA_Torlof_CanYouTeachMe_Info()
 	AI_Output (other, self, "DIA_Torlof_CanYouTeachMe_15_01"); //Mo¿esz mnie czegoœ nauczyæ?
 	AI_Output (self, other, "DIA_Torlof_CanYouTeachMe_12_02"); //Je¿eli w czymœ ci to pomo¿e, to wiem co nieco o pe³zaczach.
 	
-	Log_CreateTopic(GE_TeacherOR, LOG_NOTE);
-	B_LogEntry(GE_TeacherOR, "Torlof nauczy mnie jak pokroiæ pe³zacze.");
+	Log_CreateTopic(GE_TeacherNC, LOG_NOTE);
+	B_LogEntry(GE_TeacherNC, "Torlof nauczy mnie jak pokroiæ pe³zacze.");
 };

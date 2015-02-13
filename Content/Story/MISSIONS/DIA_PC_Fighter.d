@@ -197,7 +197,7 @@ FUNC VOID DIA_Gorn_RebelTalk_Torlof()
 {
 	AI_Output (other, self,"DIA_Gorn_RebelTalk_Torlof_15_01"); //Kim jest Torlof?
 	AI_Output (self, other,"DIA_Gorn_RebelTalk_Torlof_09_02"); //Torlof by³ kiedyœ kapitanem. Jak go znam to pewnie p³ywa³ pod pirack¹ bander¹.
-	AI_Output (self, other,"DIA_Gorn_RebelTalk_Torlof_09_03"); //Kiedy trafi³ do Koloni przysta³ do najemników.
+	AI_Output (self, other,"DIA_Gorn_RebelTalk_Torlof_09_03"); //Kiedy trafi³ do Kolonii, przysta³ do najemników.
 	AI_Output (self, other,"DIA_Gorn_RebelTalk_Torlof_09_04"); //Podczas ataku na obóz œwietnie radzi³ sobie z pozorowanymi atakami i pu³apkami.
 	AI_Output (self, other,"DIA_Gorn_RebelTalk_Torlof_09_05"); //Po wszystkim stra¿nicy wtr¹cili go do kopalni, bo zbytnio wda³ im siê we znaki.
 	AI_Output (self, other,"DIA_Gorn_RebelTalk_Torlof_09_06"); //Teraz to w³aœnie Torlof stoi na czele rebeliantów w Kopalni.
