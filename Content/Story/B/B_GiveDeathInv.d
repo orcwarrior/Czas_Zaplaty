@@ -9,7 +9,7 @@ func void B_GiveDeathInv ()
 	//-------- Trophy ins Inventory packen --------
 	if (Knows_GetTeeth == TRUE)
 	{
-		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_WOLF)||(Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_MIS_SNAFWOLF)
+		if ((Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_WOLF)||(Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_MIS_SNAFWOLF)) && (self.guild != GIL_PUPIL)
       {	
          CreateInvItems(self,ItAt_WolfTeeth,2);	
       };
