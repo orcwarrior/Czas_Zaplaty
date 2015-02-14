@@ -49,8 +49,6 @@ FUNC VOID B_DEATHXP(VAR INT MULTIPLER)//multipiler? eh, divider -_-
 {
 	////PrintDebugNpc(PD_ZS_FRAME,"B_DeathXP");
 	//PRINTGlobals(PD_ZS_CHECK);
-	IF (SELF.GUILD == GIL_PUPIL) { return; };
-	
 	IF	C_NpcIsHuman(self)
 	&&	NPC_WASINSTATE(SELF,ZS_UNCONSCIOUS)
 	{
