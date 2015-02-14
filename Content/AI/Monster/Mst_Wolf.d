@@ -10,6 +10,7 @@ INSTANCE Wolf(Mst_Default_Wolf)
 	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  16);
 	B_SetMonsterLevel();	
 	Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);	
+	CreateInvItems (self, ItFoMuttonRaw, 4);
 };
 
 /*************************************************************************
@@ -41,6 +42,7 @@ INSTANCE YWolf(Mst_Default_Wolf)
 	protection	[PROT_FIRE]			=	5;
 	protection	[PROT_FLY]			=	2;
 	protection	[PROT_MAGIC]		=	2;
+	CreateInvItems (self, ItFoMuttonRaw, 2);
 };
 
 INSTANCE Snf_MolKiller_Wolf	(Mst_Default_Wolf)
@@ -66,4 +68,5 @@ INSTANCE Snf_MolKiller_Wolf	(Mst_Default_Wolf)
 	B_SetMonsterLevel();	
 	Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);	
 	daily_routine = Rtn_MolKillerWolf_1050010;
+	CreateInvItems (self, ItFoMuttonRaw, 4);
 };

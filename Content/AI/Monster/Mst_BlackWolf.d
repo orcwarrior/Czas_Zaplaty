@@ -29,6 +29,7 @@ instance BlackWolf (Mst_Default_Wolf)
 	Npc_SetToFistMode(self);
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_BLACKWOLF);
 	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);	
+	CreateInvItems (self, ItFoMuttonRaw, 4);
 };
 
 instance BlackWolfBoss (Mst_Default_Wolf)
@@ -54,4 +55,5 @@ instance BlackWolfBoss (Mst_Default_Wolf)
 	Npc_SetToFistMode(self);
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_BLACKWOLFBOSS);
 	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
+	CreateInvItems (self, ItFoMuttonRaw, 4);
 };
