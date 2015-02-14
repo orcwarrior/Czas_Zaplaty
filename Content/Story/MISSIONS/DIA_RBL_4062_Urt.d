@@ -77,7 +77,7 @@ FUNC VOID DIA_Urt_Hello_Info()
 	AI_Output (other, self, "DIA_Urt_Hello_15_05"); //Nie potrzebujê wnikliwej analizy sytuacji, tylko zbroi.
 	AI_Output (self, other, "DIA_Urt_Hello_11_06"); //W koñcu to Twoje ¿ycie. WeŸ tê, œlady krwi ju¿ prawie zasch³y.
 	AI_Output (self, other, "DIA_Urt_Hello_11_07"); //WyobraŸ sobie, ¿e dureñ, który wczeœniej nosi³ ten pancerz schla³ siê i spad³ z palisady. Chyba nawet nikt nie zauwa¿y³ tej straty.
-	AI_Output (other, self, "DIA_Urt_Hello_15_08"); //Dostanê pancerz, czy najpierw zagadasz mnie na œmieræ?
+	AI_Output (other, self, "DIA_Urt_Hello_15_08"); //Dostanê pancerz czy najpierw zagadasz mnie na œmieræ?
 	AI_Output (self, other, "DIA_Urt_Hello_11_09"); //Bierz ³achmany i powodzenia, bo bêdziesz go potrzebowa³.
 	
 	CreateInvItem(self, GRD_ARMOR_L);

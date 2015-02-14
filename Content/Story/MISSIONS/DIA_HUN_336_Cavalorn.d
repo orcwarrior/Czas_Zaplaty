@@ -1168,7 +1168,7 @@ FUNC VOID DIA_Cavalorn_BlackTrollBack_Info()
    
    Log_CreateTopic(CH3_RBL_Choose, LOG_MISSION);
    Log_SetTopicStatus(CH3_RBL_Choose, LOG_RUNNING);
-   B_LogEntry(CH3_RBL_Choose, "Cavalorn powiedzia³ ¿e jestem ju¿ gotów by wybraæ swoj¹ specjalizacje");  // Mark not sure if grammar is correct
+   B_LogEntry(CH3_RBL_Choose, "Cavalorn powiedzia³, ¿e jestem ju¿ gotów, by wybraæ swoj¹ specjalizacjê.");  // Mark not sure if grammar is correct
 };
 
 // ---------------------------mag----------------------------------------
