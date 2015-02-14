@@ -934,7 +934,7 @@ FUNC INT DIA_Abel_Martin_Condition()
 FUNC VOID DIA_Abel_Martin_Info()
 {
 	AI_Output (other, self, "DIA_Abel_Martin_15_01"); //Kiedy ostatnio widzia³eœ Martina?
-	AI_Output (self, other, "DIA_Abel_Martin_07_02"); //Kilka dni temu przechodzi³ przez bramê. Mia³ ³uk wiêc pewnie szed³ na polowanie.
+	AI_Output (self, other, "DIA_Abel_Martin_07_02"); //Kilka dni temu przechodzi³ przez bramê. Mia³ ³uk, wiêc pewnie szed³ na polowanie.
 	AI_Output (other, self, "DIA_Abel_Martin_15_03"); //By³ sam?
 	AI_Output (self, other, "DIA_Abel_Martin_07_04"); //I tak, i nie.
 	AI_Output (other, self, "DIA_Abel_Martin_15_05"); //To znaczy?

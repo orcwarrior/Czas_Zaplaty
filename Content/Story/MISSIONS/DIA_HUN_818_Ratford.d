@@ -918,7 +918,7 @@ FUNC VOID DIA_RATFORD_SearchAgain_Info()
 	AI_Output (other, self, "DIA_RATFORD_SearchAgain_15_10"); //Gdzie ja znajdê w Kolonii Karnej wodê œwiecon¹ i pos¹¿ek Innosa?
 	AI_Output (self, other, " DIA_RATFORD_SearchAgain_07_11"); //Powiem szczerze, ¿e nie mam zielonego pojêcia. Kiedyœ na wyspie przebywali paladyni i magowie, mo¿e znajdziesz pos¹¿ek w jakimœ grobowcu.
 	AI_Output (self, other, " DIA_RATFORD_SearchAgain_07_12"); //Najlepiej pogadaj z Quentinem, zna œwietnie wyspê, mo¿e bêdzie wiedzia³ coœ wiêcej.
-	AI_Output (self, other, " DIA_RATFORD_SearchAgain_07_13"); //Co do wody œwiêconej to kiedyœ Piwosz odgra¿a³ siê, ¿e zrobi³ samogon poœwiêcony samemu Innosowi.
+	AI_Output (self, other, " DIA_RATFORD_SearchAgain_07_13"); //Co do wody œwiêconej, to kiedyœ Piwosz odgra¿a³ siê, ¿e zrobi³ samogon poœwiêcony samemu Innosowi.
 	AI_Output (other, self, "DIA_RATFORD_SearchAgain_15_14"); //Dobra, rozejrzê siê za pos¹¿kiem i samogonem. Ale to ju¿ ostatni raz kiedy latam po Kolonii jak jakiœ ¿ó³todziób.
 
 	/*******************************
@@ -1398,7 +1398,7 @@ FUNC VOID DIA_RATFORD_OldCampSpy_Info()
 	AI_Output (other, self, "DIA_RATFORD_OldCampSpy_15_14"); //To naprawdê buduj¹ce, podnios³eœ mnie na duchu. 
 	AI_Output (other, self, "DIA_RATFORD_OldCampSpy_15_15"); //No dobra, spróbujê. A ten Kelvin sk¹d bêdzie wiedzia³, ¿e jestem jednym z Was?
 	AI_Output (self, other, "DIA_RATFORD_OldCampSpy_07_16"); //O to siê nie bój. Przed atakiem na Star¹ Kopalniê wys³a³em mu wiadomoœæ, wie kogo ma siê spodziewaæ.
-	AI_Output (other, self, "DIA_RATFORD_OldCampSpy_15_17"); //Sprytne, ju¿ wtedy wiedzia³eœ, ¿e siê zgodzê. Cholera mam za miêkkie serce.
+	AI_Output (other, self, "DIA_RATFORD_OldCampSpy_15_17"); //Sprytne, ju¿ wtedy wiedzia³eœ, ¿e siê zgodzê. Cholera, mam za miêkkie serce.
 	AI_Output (self, other, "DIA_RATFORD_OldCampSpy_07_18"); //Ale masz przy tym tward¹ dupê, a to rzadko spotykana kombinacja. Poradzisz sobie Rick, nie znam nikogo innego, kto tak uparcie czepi³ siê ¿ycia.
 	AI_Output (other, self, "DIA_RATFORD_OldCampSpy_15_19"); //Ech, a mog³em zostaæ ogrodnikiem, jak chcia³a mamusia...
 	AI_Output (self, other, "DIA_RATFORD_OldCampSpy_07_20"); //Aha i za³atw sobie wdzianko stra¿nika albo cienia. W pobli¿u Starego Obozu krêci siê nasz cz³owiek, nazywa siê Urt. Mo¿e za³atwi Ci jakieœ ³achy.

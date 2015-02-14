@@ -73,11 +73,11 @@ FUNC VOID DIA_Urt_Hello_Info()
 	AI_Output (other, self, "DIA_Urt_Hello_15_01"); //Ty jesteœ Urt? Ratford powiedzia³, ¿e mogê od Ciebie dostaæ wdzianko stra¿nika.
 	AI_Output (self, other, "DIA_Urt_Hello_11_02"); //A po cholerê Ci ten pancerz?
 	AI_Output (other, self, "DIA_Urt_Hello_15_03"); //Zg³osi³em siê na 'ochotnika', ¿eby pomyszkowaæ w Starym Obozie.
-	AI_Output (self, other, "DIA_Urt_Hello_11_04"); //To mi³o by³o Ciê poznaæ bo ju¿ jesteœ trupem.
-	AI_Output (other, self, "DIA_Urt_Hello_15_05"); //Nie potrzebujê wnikliwej analizy sytuacji tylko zbroi.
+	AI_Output (self, other, "DIA_Urt_Hello_11_04"); //To mi³o by³o Ciê poznaæ, bo ju¿ jesteœ trupem.
+	AI_Output (other, self, "DIA_Urt_Hello_15_05"); //Nie potrzebujê wnikliwej analizy sytuacji, tylko zbroi.
 	AI_Output (self, other, "DIA_Urt_Hello_11_06"); //W koñcu to Twoje ¿ycie. WeŸ tê, œlady krwi ju¿ prawie zasch³y.
 	AI_Output (self, other, "DIA_Urt_Hello_11_07"); //WyobraŸ sobie, ¿e dureñ, który wczeœniej nosi³ ten pancerz schla³ siê i spad³ z palisady. Chyba nawet nikt nie zauwa¿y³ tej straty.
-	AI_Output (other, self, "DIA_Urt_Hello_15_08"); //Dostanê pancerz czy najpierw zagadasz mnie na œmieræ?
+	AI_Output (other, self, "DIA_Urt_Hello_15_08"); //Dostanê pancerz, czy najpierw zagadasz mnie na œmieræ?
 	AI_Output (self, other, "DIA_Urt_Hello_11_09"); //Bierz ³achmany i powodzenia, bo bêdziesz go potrzebowa³.
 	
 	CreateInvItem(self, GRD_ARMOR_L);
@@ -147,7 +147,7 @@ FUNC VOID DIA_Urt_Again_Info()
 	AI_Output (self, other, "DIA_Urt_Again_11_04"); //Wszystkiego dowiesz siê w swoim czasie. Teraz mam dla Ciebie coœ do zrobienia.
 	AI_Output (other, self, "DIA_Urt_Again_15_05"); //Chwileczkê. Ratford wys³a³ mnie tylko po to, ¿ebym spotka³ siê z Kelvinem.
 	AI_Output (self, other, "DIA_Urt_Again_11_06"); //Wiem, ale Kevin przebywa w zamku, a Ty nie dostaniesz siê tak po prostu do twierdzy.
-	AI_Output (other, self, "DIA_Urt_Again_15_07"); //Wiec pomó¿ mi, na pewno wiesz jak to zrobiæ.
+	AI_Output (other, self, "DIA_Urt_Again_15_07"); //Wiêc pomó¿ mi, na pewno wiesz jak to zrobiæ.
 	AI_Output (self, other, "DIA_Urt_Again_11_08"); //Jasne, ale zanim ja pomogê Tobie, Ty musisz pomóc mi.
 	AI_Output (self, other, "DIA_Urt_Again_11_09"); //I zanim zaczniesz siê wykrêcaæ pamiêtaj dla kogo oboje pracujemy.
 	AI_Output (other, self, "DIA_Urt_Again_15_10"); //Mów o co chodzi.
@@ -157,11 +157,11 @@ FUNC VOID DIA_Urt_Again_Info()
 	AI_Output (self, other, "DIA_Urt_Again_11_14"); //Przynieœ mi wszystko co tam znajdziesz, myœlê, ¿e powinno byæ z dziesiêæ paczek.
 	AI_Output (self, other, "DIA_Urt_Again_11_15"); //Wtedy dowiesz siê co dalej.
 	AI_Output (self, other, "DIA_Urt_Again_11_16"); //Wybacz te podchody, ale najpierw muszê byæ pewien, ¿e podo³asz temu co nas czeka.
-	AI_Output (self, other, "DIA_Urt_Again_11_17"); //Kiedy ju¿ zdobêdziesz paczki znajdziesz mnie w pobli¿u tego miejsca.
+	AI_Output (self, other, "DIA_Urt_Again_11_17"); //Kiedy ju¿ zdobêdziesz paczki, znajdziesz mnie w pobli¿u tego miejsca.
 	AI_Output (self, other, "DIA_Urt_Again_11_19"); //Powodzenia.
 	Log_CreateTopic	(CH3_RBL_Weapon, LOG_MISSION);
 	Log_SetTopicStatus	(CH3_RBL_Weapon, LOG_RUNNING);
-	B_LogEntry		(CH3_RBL_Weapon, "Muszê zdobyæ dla Urta paczki z broni¹, któr¹ stra¿nicy magazynuj¹ w obozie. Mo¿e ich byæ oko³o dziesiêciu. Z informacji Urta wynika ze paczki znajduj¹ siê w magazynach przy arenie i targowisku. Kiedy ju¿ zdobêdê wszystkie paczki znajdê go w pobli¿u miejsca gdzie go spotka³em w obozie.");
+	B_LogEntry		(CH3_RBL_Weapon, "Muszê zdobyæ dla Urta paczki z broni¹, któr¹ stra¿nicy magazynuj¹ w obozie. Mo¿e ich byæ oko³o dziesiêciu. Z informacji Urta wynika ze paczki znajduj¹ siê w magazynach przy arenie i targowisku. Kiedy ju¿ zdobêdê wszystkie paczki, znajdê go w pobli¿u miejsca gdzie go spotka³em w obozie.");
 	B_LogEntry		(CH3_RBL_OldCampSpy, "Kelvin jest w zamku do którego nie mam wstêpu. Urt, jego wspólnik w obozie, pomo¿e mi do niego dotrzeæ. Jednak najpierw muszê pomóc Urtowi.");	
 	B_StopProcessInfos	(self);
 	Npc_ExchangeRoutine(self,"OC2");

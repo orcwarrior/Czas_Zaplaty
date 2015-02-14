@@ -461,7 +461,7 @@ FUNC VOID DIA_Leaf_OCSpy_Info()
 		Leaf_finish_last_talk = TRUE;
 		DIA_Leaf_OCSpy.description = "Chcia³em dokoñczyæ poprzedni¹ rozmowê."; 
 		AI_Output (other, self, "DIA_Leaf_OCSpy_15_01"); //Podobno wiesz, jak dostaæ siê do Starego Obozu.
-		AI_Output (self, other, "DIA_Leaf_OCSpy_11_02"); //Nic za darmo jak mawia³a moja mamusia kiedy przychodzili klienci.
+		AI_Output (self, other, "DIA_Leaf_OCSpy_11_02"); //Nic za darmo jak mawia³a moja mamusia, kiedy przychodzili klienci.
 		AI_Output (other, self, "DIA_Leaf_OCSpy_15_03"); //Nie mam czasu na pierdo³y, mów czego chcesz.
 		AI_Output (self, other, "DIA_Leaf_OCSpy_11_04"); //Tego co zawsze - rudy... Okr¹g³y 1000 bêdzie w sam raz.
 	}
@@ -501,7 +501,7 @@ FUNC VOID DIA_Leaf_OCSpy_Fight()
 	AI_Output (self, other, "DIA_Leaf_OCSpy_Fight_11_08"); //Znam kolesia, który stoi na stra¿y przy pó³nocnej bramie obozu. Trochê sie kiedyœ wa³êsaliœmy razem, jeszcze zanim trafi³em do Kolonii.
 	AI_Output (self, other, "DIA_Leaf_OCSpy_Fight_11_09"); //Fakt, ¿e ju¿ za sob¹ specjalnie nie przepadamy, ale znam jego s³abe strony.
 	AI_Output (other, self, "DIA_Leaf_OCSpy_Fight_15_10"); //Nie interesuje mnie Twoje ¿ycie intymne, czekam na konkrety.
-	AI_Output (self, other, "DIA_Leaf_OCSpy_Fight_11_11"); //Bardzo œmieszne. Kiedy jest nawalony, mo¿esz mu wcisn¹æ ka¿de k³amstwo. Wmówisz mu nawet, ¿e jest pó³-orkiem bo jego matka...
+	AI_Output (self, other, "DIA_Leaf_OCSpy_Fight_11_11"); //Bardzo œmieszne. Kiedy jest nawalony, mo¿esz mu wcisn¹æ ka¿de k³amstwo. Wmówisz mu nawet, ¿e jest pó³-orkiem, bo jego matka...
 	AI_Output (other, self, "DIA_Leaf_OCSpy_Fight_15_12"); //Czyli wystarczy go spiæ? Mocny ma ³eb?
 	AI_Output (self, other, "DIA_Leaf_OCSpy_Fight_11_13"); //Za ko³nierz nie wylewa, ale powinieneœ sobie poradziæ. Najlepiej jakbyœ za³atwi³ sobie na tê okazjê jakiœ porz¹dny trunek.
 	AI_Output (other, self, "DIA_Leaf_OCSpy_Fight_15_14"); //Dobra Leaf, dziêki za przys³ugê. Je¿eli prze¿yjê wizytê w Starym Obozie to odp³acê Ci jak nale¿y za tê informacjê.
@@ -802,7 +802,7 @@ FUNC VOID DIA_Leaf_StoneOk_Info()
 {
 	AI_Output (other, self, "DIA_Leaf_StoneOk_15_01"); //Dobra, zaryzykujê. O co chodzi?
 	AI_Output (self, other, "DIA_Leaf_StoneOk_11_02"); //A jednak masz jaja.
-	AI_Output (self, other, "DIA_Leaf_StoneOk_11_03"); //Kupi³em pewn¹ ksiêgê. Ktoœ znalaz³ wolumin w Cytadeli Zmiennokszta³tnych. 
+	AI_Output (self, other, "DIA_Leaf_StoneOk_11_03"); //Kupi³em pewn¹ ksiêgê. Ktoœ znalaz³ wolumin w Klasztorze Zmiennokszta³tnych. 
 	AI_Output (self, other, "DIA_Leaf_StoneOk_11_04"); //Przeczyta³em tam bardzo ciekaw¹ historyjkê o kamieniu filozoficznym i magach, którzy rzekomo odkryli jego tajemnicê. Magowi ci podobno mieli swoj¹ siedzibê na terenie Kolonii.
 	AI_Output (other, self, "DIA_Leaf_StoneOk_15_05"); //A gdzie dok³adnie?
 	AI_Output (self, other, "DIA_Leaf_StoneOk_11_06"); //W Kanionie Trolli.
@@ -810,19 +810,19 @@ FUNC VOID DIA_Leaf_StoneOk_Info()
 	AI_Output (self, other, "DIA_Leaf_StoneOk_11_08"); //Wiesz czym jest kamieñ filozoficzny?
 	AI_Output (other, self, "DIA_Leaf_StoneOk_15_09"); //Obawiam siê, ¿e za chwilê siê dowiem.
 	AI_Output (self, other, "DIA_Leaf_StoneOk_11_10"); //To cudo zapewnia posiadaczowi ¿ycie wieczne i to w dobrobycie!
-	AI_Output (other, self, "DIA_Leaf_StoneOk_15_11"); //Aha. Wiesz co chyba zostawi³em miêso na patelni...
+	AI_Output (other, self, "DIA_Leaf_StoneOk_15_11"); //Aha. Wiesz co, chyba zostawi³em miêso na patelni...
 	AI_Output (self, other, "DIA_Leaf_StoneOk_11_12"); //Tak ³atwo siê nie wywiniesz. Przecie¿ nie z³amiesz danego s³owa?
 	AI_Output (other, self, "DIA_Leaf_StoneOk_15_13"); //Niech to szlag. Dobra, czego dok³adnie mam szukaæ?
 	AI_Output (self, other, "DIA_Leaf_StoneOk_11_14"); //No... kamienia. Wys³a³em ju¿ kilka osób, ale do tej pory nikt nie wróci³.
 	AI_Output (other, self, "DIA_Leaf_StoneOk_15_15"); //To mnie podnios³eœ na duchu. 
 	AI_Output (other, self, "DIA_Leaf_StoneOk_15_16"); //Pójdê do Kanionu Trolli i zobaczê co tam znajdê. A gdzie to jest?
 	AI_Output (self, other, "DIA_Leaf_StoneOk_11_17"); //Pomiêdzy œcie¿k¹ do Placu Wymian, a kopalni¹ Gomeza. Nie da siê tam nie trafiæ. Je¿eli odnajdziesz kamieñ, oboje bêdziemy op³ywaæ w bogactwach!
-	AI_Output (other, self, "DIA_Leaf_StoneOk_15_18"); //¯ycz mi szczêœcia bo czujê, ¿e bêdê go potrzebowa³.
+	AI_Output (other, self, "DIA_Leaf_StoneOk_15_18"); //¯ycz mi szczêœcia, bo czujê, ¿e bêdê go potrzebowa³.
 	AI_Output (self, other, "DIA_Leaf_StoneOk_11_19"); //Tak, powodzenia. Przynieœ mój kamieñ jak najszybciej!
 
 	Log_CreateTopic	(CH1_RBL_Stone, LOG_MISSION);
 	Log_SetTopicStatus	(CH1_RBL_Stone, LOG_RUNNING);
-	B_LogEntry		(CH1_RBL_Stone, "Kamieñ filozoficzny, który zapewnia wieczne i dostatnie ¿ycie. No, có¿ podobno mogê coœ znaleŸæ w Kanionie Trolli. Drogi do kanionu mam szukaæ pomiêdzy œcie¿k¹ prowadz¹c¹ do Placu Wymian a kopalni¹ Gomeza. Cholera, ¿eby tylko piraci nie dowiedzieli siê w jakim idiotyŸmie biorê udzia³...");
+	B_LogEntry		(CH1_RBL_Stone, "Kamieñ filozoficzny, który zapewnia wieczne i dostatnie ¿ycie. No có¿, podobno mogê coœ znaleŸæ w Kanionie Trolli. Drogi do kanionu mam szukaæ pomiêdzy œcie¿k¹ prowadz¹c¹ do Placu Wymian a kopalni¹ Gomeza. Cholera, ¿eby tylko piraci nie dowiedzieli siê w jakim idiotyŸmie biorê udzia³...");
 	
 	Wld_InsertNpc		(RBL_4128_DeathRebel,"SPAWN_BLACKGOBBO_PHYLOSOPHY_STONE_BODY1");	
 	var C_NPC rbl; rbl = Hlp_GetNpc(RBL_4128_DeathRebel);
@@ -870,7 +870,7 @@ FUNC VOID DIA_Leaf_StoneHave_Info()
 	AI_Output (self, other, "DIA_Leaf_StoneHave_11_05"); //Jak siê tego u¿ywa?
 	AI_Output (other, self, "DIA_Leaf_StoneHave_15_06"); //Nie mam pojêcie.
 	AI_Output (self, other, "DIA_Leaf_StoneHave_11_07"); //Hmm. Mo¿e to po³knê i popijê piwem...
-	AI_Output (other, self, "DIA_Leaf_StoneHave_15_08"); //Tak to œwietny pomys³... (co za idiota)
+	AI_Output (other, self, "DIA_Leaf_StoneHave_15_08"); //Tak, to œwietny pomys³... (co za idiota)
 	AI_Output (self, other, "DIA_Leaf_StoneHave_11_09"); //Co tam mruczysz?
 	AI_Output (other, self, "DIA_Leaf_StoneHave_15_10"); //Nic, nic. Smacznego.
 	

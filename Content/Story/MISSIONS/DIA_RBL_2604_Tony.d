@@ -116,7 +116,7 @@ FUNC void  RBL_2604_Tony_CAMPS_Info()
 	AI_Output (self, other,"RBL_2604_Tony_CAMPS_Info_07_09"); //Poza Starym Obozem powsta³ te¿ Nowy Obóz i Obóz Bractwa na bagnach.
 	AI_Output (self, other,"RBL_2604_Tony_CAMPS_Info_07_10"); //W Nowym Obozie do niedawna rz¹dzili Magowie Wody i najemnicy. Ruda, któr¹ siê tam wydobywa nie trafia jednak do królewskich kuŸni. 
 	AI_Output (self, other,"RBL_2604_Tony_CAMPS_Info_07_11"); //Magowie Wody sk³aduj¹ kruszec w ogromnym kopcu. Podobno chc¹ wykorzystaæ rudê do ucieczki z Kolonii.	
-	AI_Output (self, other,"RBL_2604_Tony_CAMPS_Info_07_12"); //Znowu Obóz Bractwa na bagnach to banda œwirów uzale¿nionych od bagiennego ziela. Ci wierz¹ w jakiegoœ Œni¹cego, który ma im zwróciæ wolnoœæ.
+	AI_Output (self, other,"RBL_2604_Tony_CAMPS_Info_07_12"); //Z kolei Obóz Bractwa na bagnach to banda œwirów uzale¿nionych od bagiennego ziela. Ci wierz¹ w jakiegoœ Œni¹cego, który ma im zwróciæ wolnoœæ.
 	AI_Output (self, other,"RBL_2604_Tony_CAMPS_Info_07_13"); //Jak siê pewnie domyœlasz, nie ka¿demu odpowiada³o ¿ycie w tych obozach.
 	AI_Output (self, other,"RBL_2604_Tony_CAMPS_Info_07_14"); //Dlatego w³aœnie powsta³ Obóz Rebeliantów.
 };
@@ -285,7 +285,7 @@ FUNC void  RBL_2604_Tony_OLDCAMP_Chief()
 	{
 		Tony_Chief = TRUE;
 		AI_Output (other, self,"RBL_2604_Tony_OLDCAMP_Chief_Info_15_01"); //Kto jest szefem w Starym Obozie?
-		AI_Output (self, other,"RBL_2604_Tony_OLDCAMP_Chief_Info_07_02"); //W Starym Obozie niepodzielnie rz¹dz¹ Magnaci.
+		AI_Output (self, other,"RBL_2604_Tony_OLDCAMP_Chief_Info_07_02"); //W Starym Obozie niepodzielnie rz¹dz¹ magnaci.
 		AI_Output (self, other,"RBL_2604_Tony_OLDCAMP_Chief_Info_07_03"); //A najwiêkszym skurwysynem wœród nich jest Gomez.
 		AI_Output (self, other,"RBL_2604_Tony_OLDCAMP_Chief_Info_07_04"); //Gomez to szaleniec. Liczy siê dla niego tylko w³adza, któr¹ mo¿e kupiæ za rudê.	
 		AI_Output (self, other,"RBL_2604_Tony_OLDCAMP_Chief_Info_07_05"); //Zrobi wszystko by przej¹æ kontrolê nad wydobyciem rudy w Kolonii.

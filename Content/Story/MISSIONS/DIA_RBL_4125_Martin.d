@@ -186,7 +186,7 @@ FUNC VOID  Info_Martin_Ring_Info()
 	AI_Output (self, other,"Info_Martin_Ring_04_03"); //Mo¿esz go zatrzymaæ.
 	AI_Output (other, self,"Info_Martin_Ring_15_04"); //Co?! Tyle siê nabiega³em, a Ty mi go oddajesz?
 	AI_Output (self, other,"Info_Martin_Ring_04_05"); //Nie mogê ju¿ ¿yæ przesz³oœci¹. Sygnet za bardzo przypomina mi to kim by³em i jak siê tu znalaz³em.
-	AI_Output (self, other,"Info_Martin_Ring_04_06"); //Nie masz pojêcie do jakich przemyœleñ cz³owiek mo¿e dojœæ wpatruj¹c siê w taflê wody...
+	AI_Output (self, other,"Info_Martin_Ring_04_06"); //Nie masz pojêcia do jakich przemyœleñ cz³owiek mo¿e dojœæ wpatruj¹c siê w taflê wody...
 	AI_Output (other, self,"Info_Martin_Ring_15_07"); //W porz¹dku. Wezmê pierœcieñ. Uwa¿aj na siebie, Martin.
 	AI_Output (self, other,"Info_Martin_Ring_04_08"); //Bêdê pamiêta³ co dla mnie zrobi³eœ. Bywaj, piracie.
 

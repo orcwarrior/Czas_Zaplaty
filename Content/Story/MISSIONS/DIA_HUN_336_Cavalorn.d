@@ -1165,6 +1165,10 @@ FUNC VOID DIA_Cavalorn_BlackTrollBack_Info()
    Info_AddChoice (DIA_Cavalorn_BlackTrollBack, "Muszê siê zastanowiæ...", DIA_Cavalorn_BlackTrollBack_Think);
    Info_AddChoice (DIA_Cavalorn_BlackTrollBack, "Chcê zg³êbiaæ tajniki magii.",DIA_Cavalorn_BlackTrollBack_Mag);
    Info_AddChoice (DIA_Cavalorn_BlackTrollBack, "Wybieram drogê ³owcy.", DIA_Cavalorn_BlackTrollBack_Hunter);
+   
+   Log_CreateTopic(CH3_RBL_Choose, LOG_MISSION);
+   Log_SetTopicStatus(CH3_RBL_Choose, LOG_RUNNING);
+   B_LogEntry(CH3_RBL_Choose, "Cavalorn powiedzia³ ¿e jestem ju¿ gotów by wybraæ swoj¹ specjalizacje");  // Mark not sure if grammar is correct
 };
 
 // ---------------------------mag----------------------------------------
@@ -1522,7 +1526,7 @@ FUNC VOID DIA_Cavalorn_Mine_Info()
    AI_Output (other, self, "DIA_Cavalorn_Mine_15_02"); //Co zamierzasz?
    AI_Output (self, other,"DIA_Cavalorn_Mine_12_03"); //Wyr¿niemy wszystkich s³ugusów Gomeza w Starej Kopalni!
    AI_Output (other, self, "DIA_Cavalorn_Mine_15_04"); //Je¿eli spodziewaj¹ siê ataku to ju¿ po nas.
-   AI_Output (self, other,"DIA_Cavalorn_Mine_12_05"); //Musimy zaryzykowaæ. Je¿eli Gomez bêdzie mia³ w rêku dwie kopalnie to i tak przegramy. 
+   AI_Output (self, other,"DIA_Cavalorn_Mine_12_05"); //Musimy zaryzykowaæ. Je¿eli Gomez bêdzie mia³ w rêku dwie kopalnie, to i tak przegramy. 
    AI_Output (self, other,"DIA_Cavalorn_Mine_12_06"); //Nic go tak nie ugodzi, jak utrata ukochanej rudy. A nam da to chwilow¹ przewagê i wystarczaj¹c¹ iloœæ bry³ek by przygotowaæ siê do ostatecznej konfrontacji.
    AI_Output (self, other,"DIA_Cavalorn_Mine_12_07"); //Wystarczy ju¿ gadania, czas nakarmiæ miecze krwi¹ tych skurwieli!
    
@@ -1641,7 +1645,7 @@ FUNC VOID DIA_Cavalorn_MineEnd_Info()
       B_LogEntry(CH3_RBL_Choose, "Zosta³em ³owc¹. Muszê porozmawiaæ z Aidanem i Foxem w sprawie lepszego wyposa¿enia. Jak ju¿ bêdê gotowy, to mam siê zg³osiæ do Ratforda po nowe zadanie.");
    };
    
-   AI_Output (self, other, "DIA_Cavalorn_MineEnd_12_08"); //Jak ju¿ bêdziesz gotów to pogadaj z Ratfordem.
+   AI_Output (self, other, "DIA_Cavalorn_MineEnd_12_08"); //Jak ju¿ bêdziesz gotów, to pogadaj z Ratfordem.
    AI_Output (self, other, "DIA_Cavalorn_MineEnd_12_09"); //Do zobaczenia w obozie.
    B_StopProcessInfos(self);   
 };

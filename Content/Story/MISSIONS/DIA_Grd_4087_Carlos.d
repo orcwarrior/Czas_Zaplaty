@@ -130,7 +130,7 @@ FUNC VOID DIA_Carlos_Again_Info()
 
 	Log_CreateTopic(CH3_Grd_Bribe, LOG_MISSION);
 	Log_SetTopicStatus(CH3_Grd_Bribe, LOG_RUNNING);
-	B_LogEntry(CH3_Grd_Bribe, "Carlos, stra¿nik przy bramie na Pola Ry¿owe, z których dostanê siê do Nowego Obozu, wpuœci mnie pod jednym warunkiem - muszê zasiliæ jego fundusz emerytalny. Chce 500 bry³ek rudy.");
+	B_LogEntry(CH3_Grd_Bribe, "Carlos, stra¿nik przy bramie na pola ry¿owe, z których dostanê siê do Nowego Obozu, wpuœci mnie pod jednym warunkiem - muszê zasiliæ jego fundusz emerytalny. Chce 500 bry³ek rudy.");
 };
 
 // **************************************************
@@ -175,7 +175,7 @@ FUNC VOID DIA_Carlos_Bribe_Info()
       AI_Output (self, other, "DIA_Carlos_Bribe_11_03"); //Dobra, w³aŸ. Ale jakby co, to siê nie znamy.
 		
       Log_SetTopicStatus(CH3_Grd_Bribe, LOG_SUCCESS);
-		B_LogEntry(CH3_Grd_Bribe, "Przekupi³em Carlosa, stra¿nika przy bramie na Pola Ry¿owe. W koñcu bêdê móg³ siê rozejrzeæ w sytuacji w Nowym Obozie.");
+		B_LogEntry(CH3_Grd_Bribe, "Przekupi³em Carlosa, stra¿nika przy bramie na pola ry¿owe. W koñcu bêdê móg³ siê rozejrzeæ w sytuacji w Nowym Obozie.");
 		B_StopProcessInfos(self);
 	}
 	else
