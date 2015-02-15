@@ -572,7 +572,7 @@ INSTANCE ItAt_WolfSkin (C_Item)
 	TEXT[4]				= NAME_Value;					COUNT[4]	= value;
 };
 
-INSTANCE ItAt_BlackWolfSkin (ItAt_WolfSkin)
+INSTANCE ItAt_BlackWolfSkin (C_Item)
 {
 	name 				=	"Futro czarnego wilka";
 	
