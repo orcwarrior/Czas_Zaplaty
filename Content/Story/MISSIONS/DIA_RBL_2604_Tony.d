@@ -59,7 +59,7 @@ FUNC VOID DIA_RBL_2604_Tony_Warn_Info()
 	
 	AI_ReadyMeleeWeapon			(hero);
 	self.flags = 0;
-	AI_Output (other, self,"DIA_RBL_2604_Tony_Warn_15_01"); //Ta ³achmyta nosi czerwon¹ zbrojê, wyprujmy mu flaki!
+	AI_Output (other, self,"DIA_RBL_2604_Tony_Warn_15_01"); //Ten ³achmyta nosi czerwon¹ zbrojê, wyprujmy mu flaki!
 	AI_ReadyMeleeWeapon			(hank);
 	AI_ReadyMeleeWeapon			(rodney);
 	AI_ReadyMeleeWeapon			(angus);	
@@ -114,7 +114,7 @@ FUNC void  RBL_2604_Tony_CAMPS_Info()
 	AI_Output (self, other,"RBL_2604_Tony_CAMPS_Info_07_07"); //Stra¿nicy nie mieli najmniejszych szans. Ludzie ze Starego Obozu wyr¿nêli prawie wszystkich, zostawiaj¹c przy ¿yciu tylko magów ognia, których zreszt¹ zamordowali zaledwie kilka dni temu.
 	AI_Output (self, other,"RBL_2604_Tony_CAMPS_Info_07_08"); //Wtedy te¿ da³em nogê z obozu tych psychopatów.
 	AI_Output (self, other,"RBL_2604_Tony_CAMPS_Info_07_09"); //Poza Starym Obozem powsta³ te¿ Nowy Obóz i Obóz Bractwa na bagnach.
-	AI_Output (self, other,"RBL_2604_Tony_CAMPS_Info_07_10"); //W Nowym Obozie do niedawna rz¹dzili Magowie Wody i najemnicy. Ruda, któr¹ siê tam wydobywa nie trafia jednak do królewskich kuŸni. 
+	AI_Output (self, other,"RBL_2604_Tony_CAMPS_Info_07_10"); //W Nowym Obozie rz¹dz¹ magowie wody i najemnicy. Ruda, któr¹ siê tam wydobywa nie trafia jednak do królewskich kuŸni. 
 	AI_Output (self, other,"RBL_2604_Tony_CAMPS_Info_07_11"); //Magowie Wody sk³aduj¹ kruszec w ogromnym kopcu. Podobno chc¹ wykorzystaæ rudê do ucieczki z Kolonii.	
 	AI_Output (self, other,"RBL_2604_Tony_CAMPS_Info_07_12"); //Z kolei Obóz Bractwa na bagnach to banda œwirów uzale¿nionych od bagiennego ziela. Ci wierz¹ w jakiegoœ Œni¹cego, który ma im zwróciæ wolnoœæ.
 	AI_Output (self, other,"RBL_2604_Tony_CAMPS_Info_07_13"); //Jak siê pewnie domyœlasz, nie ka¿demu odpowiada³o ¿ycie w tych obozach.
@@ -200,7 +200,7 @@ FUNC void  RBL_2604_Tony_OLDCAMP_Info()
 	};
 
 	Info_ClearChoices (RBL_2604_Tony_OLDCAMP );
-	Info_AddChoice		(RBL_2604_Tony_OLDCAMP,"Dziêki za informacje (wróæ)"	,RBL_2604_Tony_OLDCAMP_Exit);		
+	Info_AddChoice		(RBL_2604_Tony_OLDCAMP,"Dziêki za informacje. (wróæ)"	,RBL_2604_Tony_OLDCAMP_Exit);		
 	
 	if (Tony_Members == FALSE)
 	{
@@ -490,7 +490,7 @@ FUNC void  RBL_2604_Tony_OLDCAMP_Back()
 		Info_AddChoice	(RBL_2604_Tony_OLDCAMP,"Kto jest szefem w Starym Obozie?"	,RBL_2604_Tony_OLDCAMP_Chief);	
 	};
    
-	Info_AddChoice	(RBL_2604_Tony_OLDCAMP,"Dziêki za informacje (powrót)"	,RBL_2604_Tony_OLDCAMP_Exit);	
+	Info_AddChoice	(RBL_2604_Tony_OLDCAMP,"Dziêki za informacje. (powrót)"	,RBL_2604_Tony_OLDCAMP_Exit);	
 };
 
 FUNC void  RBL_2604_Tony_OLDCAMP_Exit()
