@@ -2853,6 +2853,8 @@ func void STARTUP_HandlerContainers()
 	Wld_InsertNpc(Riordian_Container, "INVISIBLE9"); //dodane 2012-11-14
 	Wld_InsertNpc(Wolf_Container,	"INVISIBLE9"); //dodane 2012-11-14
 	Wld_InsertNpc(Bartender_Container, "INVISIBLE9");
+	
+	printdebug("INIT/STARTUP: STARTUP_HandlerContainers called!");
 };	
 
 func void STARTUP_NewsNPC()
@@ -3050,8 +3052,7 @@ FUNC VOID STARTUP_ALLWORDLS()
 	INIT_Variables();		
 	STARTUP_NewsNPC();
 	STARTUP_Runes();
-	STARTUP_TriggerScripts();	
-	STARTUP_HandlerContainers();
+	STARTUP_TriggerScripts();
 	printdebug("INIT/STARTUP: STARTUP_ALLWORDLS Called!");
 };	
 
@@ -3129,6 +3130,7 @@ FUNC VOID STARTUP_WORLD ()
 	Startup_Sub_Oldminecamp();
 	
 	STARTUP_ALLWORDLS();
+	STARTUP_HandlerContainers();
 
 	//die folgende Zeile gilt nur, bis die INIT_...-Funktionen von Ulf unterstützt werden.
 	//Ork: Panowie wyzej co wy odpierdalacie, potem mi sie init 2x odpala XD
