@@ -8,7 +8,7 @@ INSTANCE Info_Diego_EXIT(C_INFO)
 	nr			= 999;
 	condition	= Info_Diego_EXIT_Condition;
 	information	= Info_Diego_EXIT_Info;
-	permanent	= 0;
+	permanent	= 1; // kvestia koniec znikala
 	description = DIALOG_ENDE;
 };                       
 
@@ -77,7 +77,7 @@ FUNC VOID Info_Diego_Rebel_Info()
 	AI_Output(other,self,"Info_Diego_Rebel_15_02"); //Najpierw mnie wys³uchasz!
 	AI_Output(self,other,"Info_Diego_Rebel_11_03"); //Mów, skoro musisz.
 	AI_Output(other,self,"Info_Diego_Rebel_15_04"); //W Starym Obozie szykuje siê bunt. Cienie i kopacze maj¹ ju¿ doœæ stra¿ników i dyryguj¹cych wszystkim magnatów.
-	AI_Output(other,self,"Info_Diego_Rebel_15_05"); //Balam kaza³ Ciê pozdrowiæ. Powiedzia³ te¿, ¿e bez ciebie cienie nie rusz¹ do walki.
+	AI_Output(other,self,"Info_Diego_Rebel_15_05"); //Balam kaza³ Ciê pozdrowiæ. Powiedzia³ te¿, ¿e bez Ciebie cienie nie rusz¹ do walki.
 	AI_Output(self,other,"Info_Diego_Rebel_11_06"); //Zwolnij. Balam? Ten uparty kucharz ju¿ dawno powinien zaserwowaæ Gomezowi trutkê na szczury.
 	AI_Output(self,other,"Info_Diego_Rebel_11_07"); //O co chodzi z tym buntem?
 	AI_Output(other,self,"Info_Diego_Rebel_15_08"); //To dla nas jedyna szansa. Musimy zdobyæ poparcie cieni i kopaczy, po czym uderzyæ wspólnie na stra¿ników.
@@ -90,13 +90,13 @@ FUNC VOID Info_Diego_Rebel_Info()
 	AI_Output(self,other,"Info_Diego_Rebel_11_15"); //Pos³uchaj ch³opcze. Mo¿e w moim interesie te¿ le¿y, ¿eby kopn¹æ Gomeza w dupê tak mocno jak tylko siê da.
 	AI_Output(self,other,"Info_Diego_Rebel_11_16"); //Ale nie zamierzam zostaæ cholernym bohaterem, bo oni za krótko ¿yj¹.
 	AI_Output(self,other,"Info_Diego_Rebel_11_17"); //Nie wejdê do Starego Obozu ¿ywy i dobrze o tym wiesz.
-	AI_Output(other,self,"Info_Diego_Rebel_15_18"); //Dobra, znajdê sposób na to by wprowadziæ Ciê do obozu w bezpieczny sposób.
+	AI_Output(other,self,"Info_Diego_Rebel_15_18"); //Dobra, znajdê sposób na to, by wprowadziæ Ciê do obozu w bezpieczny sposób.
 	AI_Output(self,other,"Info_Diego_Rebel_11_19"); //Umowa stoi ch³opcze. Mo¿e jednak pomyli³em siê co do Ciebie...
 	
    B_LogEntry		(CH3_RBL_Shadows, "Diego nie wejdzie do obozu przez ¿adn¹ z bram. Cienie nie stan¹³ przeciwko stra¿nikom bez Diego. Muszê znaleŸæ jakiœ sposób...");
 	Log_CreateTopic	(CH3_RBL_Diego, LOG_MISSION);
 	Log_SetTopicStatus	(CH3_RBL_Diego, LOG_RUNNING);
-	B_LogEntry		(CH3_RBL_Diego, "Diego nie przejdzie przez ¿adn¹ z bram ¿ywy - stra¿nicy za dobrze go znaj¹. Muszê znaleŸæ sposób na to by wprowadziæ by³ego cienia do obozu. Od tego zale¿y powodzenie ataku na Stary Obóz.");
+	B_LogEntry		(CH3_RBL_Diego, "Diego nie przejdzie przez ¿adn¹ z bram ¿ywy - stra¿nicy za dobrze go znaj¹. Muszê znaleŸæ sposób na to, by wprowadziæ by³ego cienia do obozu. Od tego zale¿y powodzenie ataku na Stary Obóz.");
 };
 
 // *************************************************************
@@ -165,9 +165,9 @@ FUNC VOID Info_Diego_Hide_Info()
 {
 	B_GiveXP(500);
 	AI_Output(self,other,"Info_Diego_Hide_11_01"); //Nauczy³em siê dzisiaj, ¿e nie wszyscy piraci to skurwysyny.
-	AI_Output(other,self,"Info_Diego_Hide_15_02"); //Nie zawsze jest siê tym kim chcia³oby siê byæ, przyjacielu.
+	AI_Output(other,self,"Info_Diego_Hide_15_02"); //Nie zawsze jest siê tym, kim chcia³oby siê byæ, przyjacielu.
 	AI_Output(self,other,"Info_Diego_Hide_11_03"); //Zapamiêtam to. Bywaj ch³opcze i uwa¿aj na siebie.
-	AI_Output(self,other,"Info_Diego_Hide_11_04"); //A o Cieni siê nie martw, ju¿ ja im przemówiê do rozs¹dku.
+	AI_Output(self,other,"Info_Diego_Hide_11_04"); //A o cieni siê nie martw, ju¿ ja im przemówiê do rozs¹dku.
 	
    Npc_ExchangeRoutine	(self, "OCW");
    B_StopProcessInfos	(self);

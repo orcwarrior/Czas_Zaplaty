@@ -81,7 +81,7 @@ FUNC void  STT_Balam_Again_Info()
 	AI_Output (other, self,"STT_Balam_Again_Info_15_10"); //Stra¿nicy nied³ugo uderz¹ na nasz obóz, zdajemy sobie sprawê, ¿e nie mielibyœmy szans. Atak na Star¹ Kopalniê przyspieszy decyzjê Gomeza i da nam wiêksz¹ szansê na atak z zaskoczenia.
 	AI_Output (other, self,"STT_Balam_Again_Info_15_11"); //Sami nie pokonamy stra¿ników, jednak maj¹c przy boku cienie zniszczymy magnatów!
 	AI_Output (self, other,"STT_Balam_Again_Info_07_12"); //Hmm, plan nieg³upi, ale powiem szczerze, ¿e cienie mnie nie pos³uchaj¹.
-	AI_Output (self, other,"STT_Balam_Again_Info_07_13"); //Za to co mi powiedzia³eœ Gomez by mnie oz³oci³. Ale bez obaw, bêdê trzyma³ jêzyk za zêbami. To nasza wspólna szansa...
+	AI_Output (self, other,"STT_Balam_Again_Info_07_13"); //Za to co mi powiedzia³eœ, Gomez by mnie oz³oci³. Ale bez obaw, bêdê trzyma³ jêzyk za zêbami. To nasza wspólna szansa...
 	AI_Output (self, other,"STT_Balam_Again_Info_07_14"); //Jest jednak ktoœ komu cienie ufaj¹ bezgranicznie i za kim pójd¹ w ogieñ.
 	AI_Output (other, self,"STT_Balam_Again_Info_15_15"); //Kto to?
 	AI_Output (self, other,"STT_Balam_Again_Info_07_16"); //To Diego. Twardy z niego sukinsyn. Jednak po ataku na magów ognia ju¿ nie pojawi³ siê w obozie.

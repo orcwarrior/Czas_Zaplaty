@@ -101,7 +101,7 @@ instance DIA_Milten_Teleport (C_INFO)
 	information	= DIA_Milten_Teleport_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Znasz sposób na to by dostaæ siê do Starego Obozu?";
+	description 	= "Znasz sposób na to, by dostaæ siê do Starego Obozu?";
 };                     
 
 FUNC INT DIA_Milten_Teleport_Condition()
@@ -114,16 +114,16 @@ FUNC INT DIA_Milten_Teleport_Condition()
 
 func VOID DIA_Milten_Teleport_Info()
 {
-	AI_Output (other, self,"DIA_Milten_Teleport_02_00"); //Znasz sposób na to by dostaæ siê do Starego Obozu?
+	AI_Output (other, self,"DIA_Milten_Teleport_02_00"); //Znasz sposób na to, by dostaæ siê do Starego Obozu?
 	AI_Output (self, other,"DIA_Milten_Teleport_02_01"); //Do Starego Obozu. A próbowa³eœ bram¹?
 	AI_Output (other, self,"DIA_Milten_Teleport_15_02"); //Bardzo zabawne. A znasz jakiœ sposób, który nie skoñczy siê rozsiekaniem albo powieszeniem?
 	AI_Output (self, other,"DIA_Milten_Teleport_02_03"); //To zale¿y kto chcia³by siê dostaæ do obozu.
 	AI_Output (other, self,"DIA_Milten_Teleport_15_04"); //To cieñ, nazywa siê Diego.
 	AI_Output (self, other,"DIA_Milten_Teleport_02_05"); //Diego... Tak, stary lis chce wróciæ do kurnika. Jakoœ mnie to nie dziwi.
 	AI_Output (self, other,"DIA_Milten_Teleport_02_06"); //WeŸ ten zwój. To czar teleportacji, powinien jeszcze dzia³aæ.
-	AI_Output (self, other,"DIA_Milten_Teleport_02_07"); //Tylko powiedz Diego, ¿e nie wiem gdzie dok³adnie go przeniesie. Musi byæ przygotowany na ka¿d¹ ewentualnoœæ.
+	AI_Output (self, other,"DIA_Milten_Teleport_02_07"); //Tylko powiedz Diego, ¿e nie wiem, gdzie dok³adnie go przeniesie. Musi byæ przygotowany na ka¿d¹ ewentualnoœæ.
 	AI_Output (other, self,"DIA_Milten_Teleport_15_08"); //Oby tylko nie trafi³ do sali tronowej.
-	AI_Output (self, other,"DIA_Milten_Teleport_02_09"); //Chcia³bym zobaczyæ minê Gomeza gdyby nagle Diego spad³ mu na g³owê...
+	AI_Output (self, other,"DIA_Milten_Teleport_02_09"); //Chcia³bym zobaczyæ minê Gomeza, gdyby nagle Diego spad³ mu na g³owê...
 	AI_Output (self, other,"DIA_Milten_Teleport_02_10"); //Aha i powiedz Diego, ¿e to prezent od starego przyjaciela.
 	CreateInvItem(self,ItArScrollTeleport1);
 	B_GiveInvItems(self,other,ItArScrollTeleport1,1);

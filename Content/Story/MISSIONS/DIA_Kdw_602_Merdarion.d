@@ -135,10 +135,10 @@ FUNC VOID  DIA_Merdarion_Crow_Info()
 	AI_Output (self, other,"DIA_Merdarion_Crow_08_27"); //Zrobi wszystko by dostaæ siê do Jarkendaru, gdzie z³o wziê³o swój pocz¹tek.
 	AI_Output (other, self,"DIA_Merdarion_Crow_15_28"); //Jak to siê zaczê³o?
 	AI_Output (self, other,"DIA_Merdarion_Crow_08_29"); //Nienawiœæ dwóch braci - Innosa i Beliara.
-	AI_Output (self, other,"DIA_Merdarion_Crow_08_30"); //Tam w³aœnie wykuto gniew Beliara, straszliwe ostrze, które jest tym potê¿niejsze, im silniejszy jest ten, kto nim w³ada.
+	AI_Output (self, other,"DIA_Merdarion_Crow_08_30"); //Tam w³aœnie wykuto szpon Beliara, straszliwe ostrze, które jest tym potê¿niejsze, im silniejszy jest ten, kto nim w³ada.
 	AI_Output (self, other,"DIA_Merdarion_Crow_08_31"); //Tam te¿ stworzono opokê Innosa, tarczê, która mo¿e odbiæ ka¿dy czar do Ÿród³a i daje temu, który j¹ nosi niewra¿liwoœæ na ogieñ.
 	AI_Output (self, other,"DIA_Merdarion_Crow_08_32"); //Dwa potê¿ne artefakty w jednej krainie. Kasty, które rozpêta³y bratobójcz¹ walkê, rzeka ognia i krwi, która poch³onê³a wszystkich œmiertelników...
-	AI_Output (self, other,"DIA_Merdarion_Crow_08_33"); //Jestem pewien, ¿e Kruk chce zdobyæ gniew Beliara.
+	AI_Output (self, other,"DIA_Merdarion_Crow_08_33"); //Jestem pewien, ¿e Kruk chce zdobyæ szpon Beliara.
 	AI_Output (self, other,"DIA_Merdarion_Crow_08_34"); //Magnat s¹dzi³, ¿e znajdzie odpowiedzi w ksiêdze, któr¹ wzi¹³ za wolumin napisany przez staro¿ytnych.
 	AI_Output (self, other,"DIA_Merdarion_Crow_08_35"); //Musia³ gdzieœ przeczytaæ o Jarkendarze.
 	AI_Output (self, other,"DIA_Merdarion_Crow_08_36"); //Dlatego w³aœnie porzuci³em almanach i mam nadziejê, ¿e nikt go ju¿ nie odnajdzie. Niech spoczywa w tej plugawej wie¿y po wsze czasy.
@@ -151,7 +151,7 @@ FUNC VOID  DIA_Merdarion_Crow_Info()
 	AI_Output (other, self,"DIA_Merdarion_Crow_15_43"); //Hmm... To co powiedzia³eœ da³o mi do myœlenia. Bywaj.
 	
    //Mob_CreateItems ("OC_CHEST_RAVEN", ItKe_SunkenTower, 1); //klucz dodany jest ju¿ do skrzyni w zenie
-	B_LogEntry(CH3_NON_Seekers, "Sporo siê dowiedzia³em od Merdariona. Z opowieœci maga wynika, ¿e Kruk zosta³ opêtany przez Beliara i ¿e magnat pragnie dostaæ w swoje ³apska jakiœ gniew Beliara ukryty gdzieœ w Jarkendarze. Nie wiem, co z tego wyniknie... Merdarion ukry³ jakiœ plugawy manuskrypt Beliara w starej wie¿y nekromanty.");
+	B_LogEntry(CH3_NON_Seekers, "Sporo siê dowiedzia³em od Merdariona. Z opowieœci maga wynika, ¿e Kruk zosta³ opêtany przez Beliara i ¿e magnat pragnie dostaæ w swoje ³apska jakiœ szpon Beliara ukryty gdzieœ w Jarkendarze. Nie wiem, co z tego wyniknie... Merdarion ukry³ jakiœ plugawy manuskrypt Beliara w starej wie¿y nekromanty.");
 };
 
 /****************************

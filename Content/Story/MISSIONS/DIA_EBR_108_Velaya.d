@@ -77,12 +77,12 @@ FUNC INT Info_Vela_HelloAgain_Condition()
 
 FUNC VOID Info_Vela_HelloAgain_Info()
 {	
-	AI_Output (self, other,"Info_Vela_HelloAgain_16_01"); //To znowu Ty! Wynoú siÍ, zanim zawa≥am straøe!
+	AI_Output (self, other,"Info_Vela_HelloAgain_16_01"); //To znowu Ty! Wynoú siÍ, zanim zawo≥am straøe!
 	AI_Output (other, self,"Info_Vela_HelloAgain_15_02"); //Zaczekaj, o piÍkna. Wybacz mi poprzednie s≥owa...
 	AI_Output (self, other,"Info_Vela_HelloAgain_16_03"); //PiÍkna? Moøe bym i wybaczy≥a, ale úmierdzisz krecim ≥ajnem!
 	AI_Output (other, self,"Info_Vela_HelloAgain_15_04"); //Gdy ujrza≥em CiÍ po raz pierwszy, twa uroda zmπci≥a mi umys≥, nie by≥em wtedy sobπ.
 	AI_Output (self, other,"Info_Vela_HelloAgain_16_05"); //Hmm. MÛw dalej.
-	AI_Output (other, self,"Info_Vela_HelloAgain_15_06"); //To nie miejsce dla ciebie, b≥Íkitnooka bogini. Ta brudna Kolonia nie pasuje do takiego cudu. Powinnaú zdobywaÊ krÛlewskie dwory!
+	AI_Output (other, self,"Info_Vela_HelloAgain_15_06"); //To nie miejsce dla Ciebie, b≥Íkitnooka bogini. Ta brudna Kolonia nie pasuje do takiego cudu. Powinnaú zdobywaÊ krÛlewskie dwory!
 	AI_Output (self, other,"Info_Vela_HelloAgain_16_07"); //Rzadko ktoú docenia mojπ urodÍ, do tego w taki sposÛb... 
 	AI_Output (self, other,"Info_Vela_HelloAgain_16_08"); //èle CiÍ oceni≥am poprzednim razem. Wybacz, przystojniaku.
 	AI_Output (other, self,"Info_Vela_HelloAgain_15_09"); //Ucieknijmy stπd! Ty, ja i morska bryza! BÍdziemy p≥ynπÊ ku wiecznoúci, na øaglach mi≥oúci i poøπdania! Nic nas nie rozdzieli...

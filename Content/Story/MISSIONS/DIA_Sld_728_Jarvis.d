@@ -173,11 +173,11 @@ FUNC VOID DIA_Jarvis_Help2_Info()
 	B_GiveInvItems (self, other, JarvisMap, 1);
 	
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_17"); //Zaznaczono tam miejsce ukrycia skarbu.
-	AI_Output (other, self,"DIA_Jarvis_Help2_15_18"); //Niech bêdzie. Ale je¿eli mnie oszuka³eœ to znajdê Ciê nawet w ty³ku Beliara.
-	AI_Output (self, other,"DIA_Jarvis_Help2_08_19"); //Bez obaw nie jestem idiot¹. Teraz Twoja kolej. Co Lee chcia³ mi przekazaæ?
+	AI_Output (other, self,"DIA_Jarvis_Help2_15_18"); //Niech bêdzie. Ale je¿eli mnie oszuka³eœ, to znajdê Ciê nawet w ty³ku Beliara.
+	AI_Output (self, other,"DIA_Jarvis_Help2_08_19"); //Bez obaw, nie jestem idiot¹. Teraz Twoja kolej. Co Lee chcia³ mi przekazaæ?
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_20"); //Lee powiedzia³, ¿e potrzebuj¹ jeszcze jednego 'wzorca'. Podobno wiesz o co chodzi.
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_21"); //Hmm... Tak, wiem. Dobra pêdŸ po te skarby i powiedz mi co tam znalaz³eœ.
-	AI_Output (self, other,"DIA_Jarvis_Help2_08_22"); //Aha, gdybyœ odnalaz³ tam kawa³ek ornamentu to znam kogoœ kto hojnie za to zap³aci.
+	AI_Output (self, other,"DIA_Jarvis_Help2_08_22"); //Aha, gdybyœ odnalaz³ tam kawa³ek ornamentu, to znam kogoœ kto hojnie za to zap³aci.
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_23"); //Coœ mi siê wydaje, ¿e od pocz¹tku chodzi³o o ten ornament. Sam sobie szukaj tego kamola.
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_24"); //Zaczekaj! Lee mnie zabije jak powiem Ci coœ wiêcej...
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_25"); //Albo bêdziesz ze mn¹ szczery, albo wracam tam sk¹d przyszed³em.

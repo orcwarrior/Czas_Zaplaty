@@ -86,7 +86,7 @@ FUNC VOID DIA_Pluskwa_First_Info()
 	};
    
 	AI_Output (other, self, "DIA_Pluskwa_First_15_05"); //Jedyne co mnie interesuje to ³uk i strza³y. 
-	AI_Output (self, other, "DIA_Pluskwa_First_11_06"); //Dobra, znaj ³askê pana. Kupuj i nie miel jêzorem z tym wsza¿em bo ci go utnê przy samej dupie!
+	AI_Output (self, other, "DIA_Pluskwa_First_11_06"); //Dobra, znaj ³askê pana. Kupuj i nie miel jêzorem z tym wsza¿em, bo ci go utnê przy samej dupie!
 	
    B_StopProcessInfos(self);
 };

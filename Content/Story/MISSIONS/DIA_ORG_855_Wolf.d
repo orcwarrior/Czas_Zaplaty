@@ -803,6 +803,6 @@ FUNC VOID DIA_Wolf_CanYouTeachMe_Info()
 	AI_Output (other, self, "DIA_Wolf_CanYouTeachMe_15_01"); //Mo¿esz mnie czegoœ nauczyæ?
 	AI_Output (self, other, "DIA_Wolf_CanYouTeachMe_12_02"); //NieŸle radzê sobie z ³ukiem, mogê pokazaæ ci to i owo.
 	
-	Log_CreateTopic(GE_TeacherOR, LOG_NOTE);
-	B_LogEntry(GE_TeacherOR, "Wilk nauczy mnie strzelaæ z ³uku.");
+	Log_CreateTopic(GE_TeacherNC, LOG_NOTE);
+	B_LogEntry(GE_TeacherNC, "Wilk nauczy mnie strzelaæ z ³uku.");
 };

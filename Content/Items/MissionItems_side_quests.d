@@ -96,7 +96,7 @@ func void UseStrange_Letter2 ()
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLines	( nDocID,  0, "Poz...em i.iê Odmi..ca, zwie s..: Orh..gH'A.re...on Kh..th..er"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Niech gniew Beliara spopieli naszych wrogów!"					);
+					Doc_PrintLine	( nDocID,  0, "Niech szpon Beliara spopieli naszych wrogów!"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "            Ur..has, Cza..y Mag");
 					Doc_PrintLine	( nDocID,  0, ""					);

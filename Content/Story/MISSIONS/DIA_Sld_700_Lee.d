@@ -48,7 +48,7 @@ FUNC VOID  DIA_Lee_Hello_Info()
 	AI_Output (self, other,"DIA_Lee_Hello_08_01"); //O czym Ty mÛwisz?
 	AI_Output (other, self,"DIA_Lee_Hello_15_02"); //O twojej ranie, przecieø nie o mordzie tego wielkoluda w sali z klatkami.
 	AI_Output (self, other,"DIA_Lee_Hello_08_03"); //Masz szczÍúcie, øe w bitwie Orik dosta≥ przez ≥eb i stÍpia≥ mu s≥uch.
-	AI_Output (self, other,"DIA_Lee_Hello_08_04"); //Co do rany to magowie uratowali mi ty≥ek, dlatego nadal tu jestem. Zawsze sp≥acam zaciπgniÍte d≥ugi.
+	AI_Output (self, other,"DIA_Lee_Hello_08_04"); //Co do rany, to magowie uratowali mi ty≥ek, dlatego nadal tu jestem. Zawsze sp≥acam zaciπgniÍte d≥ugi.
 };
 
 //*********************************************************
@@ -213,7 +213,7 @@ FUNC VOID  DIA_Lee_Trap_Info()
 	AI_Output (self, other,"DIA_Lee_Trap_08_26"); //åwiÍte s≥owa. 
 	AI_Output (self, other,"DIA_Lee_Trap_08_27"); //Wystarczy juø tych pogawÍdek, wrÛÊ kiedy bÍdziesz gotÛw na wyprawÍ po kolejny kawa≥ek ornamentu.
 	AI_Output (other, self,"DIA_Lee_Trap_15_28"); //Ja?
-	AI_Output (self, other,"DIA_Lee_Trap_08_29"); //A kogo mam wys≥aÊ? Cord i Okyl sπ mi potrzebni tutaj. Sπsiedztwo trzÍsawisk üle wp≥ywa na nasze morale, a i magowie nie cieszπ siÍ z bliskoúci mieszkaÒcÛw bagna...
+	AI_Output (self, other,"DIA_Lee_Trap_08_29"); //A kogo mam wys≥aÊ? Cord i Orik sπ mi potrzebni tutaj. Sπsiedztwo trzÍsawisk üle wp≥ywa na nasze morale, a i magowie nie cieszπ siÍ z bliskoúci mieszkaÒcÛw bagna...
 	AI_Output (self, other,"DIA_Lee_Trap_08_30"); //Jarvis juø raz zawiÛd≥, poza tym nie chcÍ naraøaÊ w≥asnych ludzi...
 	AI_Output (other, self,"DIA_Lee_Trap_15_31"); //Przynajmniej jesteú szczery. Rozumiem, øe moje øycie jest nic nie warte?
 	AI_Output (self, other,"DIA_Lee_Trap_08_32"); //èle mnie zrozumia≥eú. Pokaza≥eú, øe úwietnie sobie radzisz w najtrudniejszych sytuacjach. Tylko ktoú taki poradzi sobie podczas poszukiwaÒ.

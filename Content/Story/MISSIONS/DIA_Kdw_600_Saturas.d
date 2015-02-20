@@ -724,6 +724,6 @@ FUNC VOID DIA_Saturas_CanYouTeachMe_Info()
 	AI_Output (other, self, "DIA_Saturas_CanYouTeachMe_15_01"); //Mo¿esz mnie czegoœ nauczyæ?
 	AI_Output (self, other, "DIA_Saturas_CanYouTeachMe_12_02"); //Posiadam wiedzê o krêgach magii.
 	
-	Log_CreateTopic(GE_TeacherOR, LOG_NOTE);
-	B_LogEntry(GE_TeacherOR, "Saturas nauczy mnie magicznych zaklêæ.");
+	Log_CreateTopic(GE_TeacherOW, LOG_NOTE);
+	B_LogEntry(GE_TeacherOW, "Saturas nauczy mnie magicznych zaklêæ, ale tylko jak zostanê magiem.");
 };
