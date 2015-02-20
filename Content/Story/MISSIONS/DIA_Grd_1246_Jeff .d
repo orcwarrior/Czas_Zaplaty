@@ -16,7 +16,7 @@ INSTANCE DIA_Jeff_Hello (C_INFO)
 	information		= DIA_Jeff_Hello_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "Powitaæ."; 
+	description		= "Witam."; 
 };
 
 FUNC INT DIA_Jeff_Hello_Condition()
@@ -26,7 +26,7 @@ FUNC INT DIA_Jeff_Hello_Condition()
 
 FUNC VOID DIA_Jeff_Hello_Info()
 {
-	AI_Output (other, self, "DIA_Jeff_Hello_15_01"); //Powitaæ.
+	AI_Output (other, self, "DIA_Jeff_Hello_15_01"); //Witam.
 	AI_Output (self, other, "DIA_Jeff_Hello_07_02"); //Czego chcesz?
 	AI_Output (other, self, "DIA_Jeff_Hello_15_03"); //Pogadaæ. Czym siê zajmujesz?
 	AI_Output (self, other, "DIA_Jeff_Hello_07_04"); //Sprzedajê to i tamto, obijam te¿ mordy ciekawskim typkom.

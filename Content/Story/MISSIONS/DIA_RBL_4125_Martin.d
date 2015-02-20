@@ -74,7 +74,7 @@ FUNC VOID  Info_Martin_What_Info()
 {
 	AI_Output (other, self,"Info_Martin_What_15_00"); //Wygl¹dasz jakby prze¿u³ Ciê troll i wysra³.
 	AI_Output (self, other,"Info_Martin_What_04_01"); //I tak siê czujê. Daj mi spokój.
-	AI_Output (other, self,"Info_Martin_What_15_02"); //Czasami lepiej jest siê wykrzyczeæ ni¿ t³amsiæ w sobie ból.
+	AI_Output (other, self,"Info_Martin_What_15_02"); //Czasami lepiej jest siê wykrzyczeæ, ni¿ t³amsiæ w sobie ból.
 	AI_Output (self, other,"Info_Martin_What_04_03"); //Cholera, kaznodzieja mi siê trafi³. A co Ciê to w ogóle obchodzi?
 
 	Info_ClearChoices (Info_Martin_What);

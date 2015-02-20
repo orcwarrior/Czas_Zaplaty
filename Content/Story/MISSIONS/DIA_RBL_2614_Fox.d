@@ -466,7 +466,7 @@ FUNC INT DIA_Fox_Eqquipment_Condition()
 FUNC VOID DIA_Fox_Eqquipment_Info()
 {
 	AI_Output (other, self, "DIA_Fox_Eqquipment_15_01"); //Przyszed³em po wyposa¿enie.
-	AI_Output (self, other, "DIA_Fox_Eqquipment_11_02"); //Ale w Starej Kopalni by³a jatka! To dopiero by³a wyprawa, Gomeza pewnie krew zaleje, he, he.
+	AI_Output (self, other, "DIA_Fox_Eqquipment_11_02"); //Urz¹dziliœcie w Starej Kopalni naprawdê prawdziw¹ jatkê! Gomeza z pewnoœci¹ krew zaleje, hehe.
 	AI_Output (self, other, "DIA_Fox_Eqquipment_11_03"); //Dla Ciebie znajdê jakiœ pancerz, ale nic za darmo...
 	AI_Output (other, self, "DIA_Fox_Eqquipment_15_04"); //Po wyprawie do Starej Kopalni ³atwo puszczaj¹ mi nerwy. Czasami tracê œwiadomoœæ, a po chwili wokó³ mnie walaj¹ siê por¹bane cia³a...
 	AI_Output (self, other, "DIA_Fox_Eqquipment_11_05"); //Eee, wiesz co? Potraktuj ten pancerz jako podarunek. Prezent od starego, dobrego Foxa.

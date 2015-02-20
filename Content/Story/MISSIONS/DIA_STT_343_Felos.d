@@ -48,7 +48,7 @@ FUNC VOID DIA_Felos_Hello_Info()
 	AI_Output (other, self, "DIA_Felos_Hello_15_01"); //Coœ Ci marnie idzie.
 	AI_Output (self, other, "DIA_Felos_Hello_07_02"); //Mam ju¿ doœæ tej cholernej areny. Od ka¿dego dostajê ciêgi.
 	AI_Output (other, self, "DIA_Felos_Hello_15_03"); //To po co walczysz?
-	AI_Output (self, other, "DIA_Felos_Hello_07_04"); //Na arenie t³uk¹ mnie rzadziej ni¿ w obozie, do tego Gomez lubi ogl¹daæ walki wiêc mam ma³e przywileje.
+	AI_Output (self, other, "DIA_Felos_Hello_07_04"); //Na arenie t³uk¹ mnie rzadziej ni¿ w obozie, a do tego Gomez lubi ogl¹daæ walki, wiêc mam ma³e przywileje.
 	AI_Output (other, self, "DIA_Felos_Hello_15_05"); //Hmm, wybra³eœ mniejsze z³o.
 	AI_Output (self, other, "DIA_Felos_Hello_07_06"); //Mniej, wiêcej. 
 };
@@ -132,7 +132,7 @@ FUNC int  DIA_Felos_ArenaOk_Condition()
 func void  DIA_Felos_ArenaOk_Info()
 {
 	AI_Output (other, self,"DIA_Felos_ArenaOk_Info_15_01"); //Da siê za³atwiæ.
-	AI_Output (self, other,"DIA_Felos_ArenaOk_Info_07_02"); //Wystarczy, ¿e dokopiesz jednemu z nich. Dam Ci za to 200 bry³ek bo i tak nie mam co robiæ z rud¹.
+	AI_Output (self, other,"DIA_Felos_ArenaOk_Info_07_02"); //Wystarczy, ¿e dokopiesz jednemu z nich. Dam Ci za to 200 bry³ek, bo i tak nie mam co robiæ z rud¹.
 	Log_CreateTopic	(CH3_Grd_Arena, LOG_MISSION);
 	Log_SetTopicStatus	(CH3_Grd_Arena, LOG_RUNNING);
 	B_LogEntry		(CH3_Grd_Arena, "Felos poprosi³ mnie, ¿ebym z³oi³ Trupismroda b¹dŸ Aresa - gladiatorów z areny w Starym Obozie. To powinno byæ ³atwe.");

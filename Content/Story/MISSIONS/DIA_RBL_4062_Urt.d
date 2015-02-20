@@ -149,7 +149,7 @@ FUNC VOID DIA_Urt_Again_Info()
 	AI_Output (self, other, "DIA_Urt_Again_11_06"); //Wiem, ale Kevin przebywa w zamku, a Ty nie dostaniesz siê tak po prostu do twierdzy.
 	AI_Output (other, self, "DIA_Urt_Again_15_07"); //Wiêc pomó¿ mi, na pewno wiesz jak to zrobiæ.
 	AI_Output (self, other, "DIA_Urt_Again_11_08"); //Jasne, ale zanim ja pomogê Tobie, Ty musisz pomóc mi.
-	AI_Output (self, other, "DIA_Urt_Again_11_09"); //I zanim zaczniesz siê wykrêcaæ pamiêtaj dla kogo oboje pracujemy.
+	AI_Output (self, other, "DIA_Urt_Again_11_09"); //I zanim zaczniesz siê wykrêcaæ, pamiêtaj dla kogo oboje pracujemy.
 	AI_Output (other, self, "DIA_Urt_Again_15_10"); //Mów o co chodzi.
 	AI_Output (self, other, "DIA_Urt_Again_11_11"); //Stra¿nicy magazynuj¹ w obozie zapasy broni. Musimy przej¹æ te paczki.
 	AI_Output (other, self, "DIA_Urt_Again_15_12"); //A jak ja mam niby to zrobiæ?!
@@ -193,7 +193,7 @@ FUNC VOID DIA_Urt_Packages_Info()
 	B_GiveXP(500);
 	AI_Output (other, self, "DIA_Urt_Packages_15_01"); //Mam wszystkie paczki.
 	AI_Output (self, other, "DIA_Urt_Packages_11_02"); //Wiedzia³em, ¿e sobie poradzisz. Strata broni os³abi stra¿ników podwójnie.
-	AI_Output (self, other, "DIA_Urt_Packages_11_03"); //Po pierwsze czêœæ z nich w decyduj¹cym momencie bêdzie musia³a walczyæ pogrzebaczami. A druga sprawa to morale. Kiedy dowiedz¹ siê, ¿e ktoœ zwin¹³ broñ z obozu pod ich nosem poczuj¹ siê mniej pewnie.
+	AI_Output (self, other, "DIA_Urt_Packages_11_03"); //Po pierwsze, czêœæ z nich w decyduj¹cym momencie bêdzie musia³a walczyæ pogrzebaczami. A druga sprawa to morale. Kiedy dowiedz¹ siê, ¿e ktoœ zwin¹³ broñ z obozu pod ich nosem poczuj¹ siê mniej pewnie.
 	AI_Output (self, other, "DIA_Urt_Packages_11_04"); //Naprawdê œwietna robota.
 	B_GiveInvItems (other, self, packageOC, 10);
 	Npc_RemoveInvItems(self,packageOC,10);
@@ -204,7 +204,7 @@ FUNC VOID DIA_Urt_Packages_Info()
 	AI_Output (self, other, "DIA_Urt_Packages_11_07"); //Da³eœ sobie œwietnie radê, ale to jeszcze nie koniec.
 	AI_Output (self, other, "DIA_Urt_Packages_11_08"); //Musimy stworzyæ solidne podwaliny rebelii.
 	AI_Output (other, self, "DIA_Urt_Packages_15_09"); //Nie masz chyba zamiaru agitowaæ stra¿ników do przejœcia na nasz¹ stronê?
-	AI_Output (self, other, "DIA_Urt_Packages_11_10"); //Nie o stra¿nikach mówiê. S¹ tutaj inne gildie, których nie docenia ¿adna ze stron - Cienie i Kopacze.
+	AI_Output (self, other, "DIA_Urt_Packages_11_10"); //Nie o stra¿nikach mówiê. S¹ tutaj inne gildie, których nie docenia ¿adna ze stron - cienie i kopacze.
 	AI_Output (other, self, "DIA_Urt_Packages_15_11"); //Hmm, to mo¿e siê udaæ. Ale jak zamierzasz ich przekonaæ do walki po naszej stronie?
 	AI_Output (self, other, "DIA_Urt_Packages_11_12"); //Cienie po odejœciu Diego i tak s¹ na bakier ze stra¿nikami. W zasadzie wojna wisi na w³osku. Cieniom brak jednak przywódcy, który przekona ich do walki, kogoœ komu ufaj¹.
 	AI_Output (other, self, "DIA_Urt_Packages_15_13"); //A kopacze?
