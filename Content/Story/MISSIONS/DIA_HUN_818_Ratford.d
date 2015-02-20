@@ -1171,7 +1171,7 @@ FUNC INT DIA_RATFORD_ExterminatePatrols_Condition()
 {
 	// rytual after - jak juz tam dojdzie, leren powinien byc na tym miejscu a wiec "juz sie zapytal maga jak sie czuje"// OW_PATH_02
 	// not sure though require testing
-	if (Npc_KnowsInfo (hero, DIA_Cavalorn_Demon)) //&& (Npc_GetDistToWP (self,"OW_PATH_02") < 900 )  
+	if (Npc_KnowsInfo (hero, DIA_Cavalorn_Demon)) && (Npc_GetDistToWP (self,"OW_PATH_02") < 900 )  
 	{
 		return 1;
 	};
