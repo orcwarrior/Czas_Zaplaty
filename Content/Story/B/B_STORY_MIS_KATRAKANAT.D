@@ -88,7 +88,7 @@ func void RITUAL_KATRAKANAT_FUNC()
 			}
 			else if(Ritual_Katrakanat_counter==3)
 			{
-				PrintDialog(1,"Innosie", -1, 10, _STR_FONT_ONSCREEN, 3);
+				PrintDialog(1,"Innosie!", -1, 10, _STR_FONT_ONSCREEN, 3);
 
 				//pfx on statue
 				Wld_PlayEffect("spellFX_Katrakanat_Statue", innos_statue, innos_statue, 2, 0, DAM_FIRE, TRUE); //Projetil = TRUE (trifft alle)
