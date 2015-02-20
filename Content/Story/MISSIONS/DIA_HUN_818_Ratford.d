@@ -965,7 +965,7 @@ FUNC VOID DIA_RATFORD_SearchAgain2_Info()
    B_LogEntry(CH2_RBL_MysteryBook, "Mam ju¿ pos¹¿ek i œwiêcony bimber Innosa. Muszê przeprowadziæ rytua³ na o³tarzu w œwi¹tyni Innosa. ¯eby to zrobiæ, muszê ustawiæ na o³tarzu pos¹¿ek, dooko³a niego po³o¿ê wszystkie czêœci Katrakanat, oblejê o³tarz wod¹ œwiêcon¹ i zmówiê modlitwê ku chwale Innosa. A jak bêdê mia³ szczêœcie, to mo¿e nawet to prze¿yjê....");
 	
 	AI_Output (other, self, "DIA_RATFORD_RytualDo_15_05"); //Cholera, dlaczego któryœ z magów tego nie zrobi?
-	AI_Output (self, other, "DIA_RATFORD_RytualDo_07_06"); //Bo to zbyt... ryzykowane. Nie do koñca wiadomo, jak mo¿e skoñczyæ siê boska interwencja. Mo¿e zostaæ z Ciebie kupka popio³u, albo tylko postradasz zmys³y...
+	AI_Output (self, other, "DIA_RATFORD_RytualDo_07_06"); //Bo to zbyt... ryzykowne. Nie do koñca wiadomo, jak mo¿e skoñczyæ siê boska interwencja. Mo¿e zostaæ z Ciebie kupka popio³u, albo tylko postradasz zmys³y...
 	AI_Output (other, self, "DIA_RATFORD_RytualDo_15_07"); //Rozumiem, mnie mo¿na poœwiêciæ, magowie s¹ zbyt cenni.
 	AI_Output (self, other, "DIA_RATFORD_RytualDo_07_08"); //Nie to chcia³em powiedzieæ.
 	AI_Output (other, self, "DIA_RATFORD_RytualDo_15_09"); //Dobra, miejmy to ju¿ za sob¹.	
@@ -1007,7 +1007,7 @@ FUNC VOID DIA_RATFORD_RytualEnd_Info()
 {
 	B_GiveXP (400);
 	AI_Output (other, self, "DIA_RATFORD_RytualEnd_15_01"); //To znowu ja.
-	AI_Output (self, other, "DIA_RATFORD_RytualEnd_07_02"); //Widzê i to w jednym kawa³ku. Uda³o siê?
+	AI_Output (self, other, "DIA_RATFORD_RytualEnd_07_02"); //Widzê, i to w jednym kawa³ku. Uda³o siê?
 	AI_Output (other, self, "DIA_RATFORD_RytualEnd_15_03"); //Tak, kamienie scali³y siê, mam Katrakanat.
 	AI_Output (self, other, "DIA_RATFORD_RytualEnd_07_04"); //Wiedzia³em, ¿e zdo³asz tego dokonaæ! Daj mi to cholerstwo i wróæ o pó³nocy.
    
@@ -1169,7 +1169,9 @@ INSTANCE DIA_RATFORD_ExterminatePatrols (C_INFO)
 
 FUNC INT DIA_RATFORD_ExterminatePatrols_Condition()
 {
-	if (Npc_KnowsInfo (hero, DIA_Cavalorn_Demon))
+	// rytual after - jak juz tam dojdzie, leren powinien byc na tym miejscu a wiec "juz sie zapytal maga jak sie czuje"// OW_PATH_02
+	// not sure though require testing
+	if (Npc_KnowsInfo (hero, DIA_Cavalorn_Demon)) //&& (Npc_GetDistToWP (self,"OW_PATH_02") < 900 )  
 	{
 		return 1;
 	};
@@ -1339,7 +1341,7 @@ FUNC VOID DIA_RATFORD_RaportDone_Info()
 	B_GiveXP (500);
 	AI_Output (other, self, "DIA_RATFORD_RaportDone_15_01"); //Nowy Obóz upad³!
 	AI_Output (self, other, "DIA_RATFORD_RaportDone_07_02"); //¯e co?!
-	AI_Output (other, self, "DIA_RATFORD_RaportDone_15_03"); //Stra¿nicy zdobyli Nowy Obóz. Zaatakowali od frontu dla odwrócenia uwagi i jednoczeœnie uderzyli z ty³u, chyba znaleŸli w górach ukryte przejœcie.
+	AI_Output (other, self, "DIA_RATFORD_RaportDone_15_03"); //Stra¿nicy zdobyli Nowy Obóz. Zaatakowali od frontu dla odwrócenia uwagi i jednoczeœnie uderzyli z ty³u. Chyba znaleŸli w górach ukryte przejœcie.
 	AI_Output (self, other, "DIA_RATFORD_RaportDone_07_04"); //Na ow³osione jaja Beliara! No to mamy spory problem.
 	AI_Output (other, self, "DIA_RATFORD_RaportDone_15_05"); //A co z moj¹ nagrod¹?
 	AI_Output (self, other, "DIA_RATFORD_RaportDone_07_06"); //WeŸ ten pierœcieñ i powiedz Cavalornowi, co siê sta³o.
