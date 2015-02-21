@@ -1454,7 +1454,7 @@ FUNC VOID DIA_Leren_Ritual_Info()
 	AI_Output (self, other, "DIA_Leren_Ritual_11_01"); //Mamy ju¿ wszystko co potrzebne do przeprowadzenia rytua³u.
 	AI_Output (other, self, "DIA_Leren_Ritual_15_02"); //To œwietnie. Co mam robiæ?
 	AI_Output (self, other, "DIA_Leren_Ritual_11_03"); //Powiadom tych, którzy, prócz mnie, musz¹ uczestniczyæ w rytuale, aby przybyli do kamiennego krêgu na bagnach - tam odprawimy inkantacjê.
-	AI_Output (self, other, "DIA_Leren_Ritual_11_04"); //Ja wyruszê ju¿ teraz. Pospiesz siê, bo nie chcê tkwiæ tam d³u¿ej ni¿ to konieczne.
+	AI_Output (self, other, "DIA_Leren_Ritual_11_04"); //Ja wyruszê ju¿ teraz. Poœpiesz siê, bo nie chcê tkwiæ tam d³u¿ej ni¿ to konieczne.
 	
    AI_PlayAni(other,"T_YES");
 	B_LogEntry(CH4_RBL_Rirual, "Mo¿na ju¿ rozpocz¹æ rytua³ przywrócenie mocy mieczowi runicznemu. Leren bêdzie czeka³ na pozosta³ych magów przy kamiennym krêgu na bagnach. Muszê natychmiast poinformowaæ Xardasa i maga wody.");

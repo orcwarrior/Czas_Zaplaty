@@ -101,7 +101,7 @@ FUNC VOID Info_Vela_HelloAgain_Info()
 	AI_Output (other, self,"Info_Vela_HelloAgain_15_18"); //Nie chcê nic w zamian. Wystarczy twój uœmiech, który rozkwita w mym sercu.
 	AI_Output (self, other,"Info_Vela_HelloAgain_16_19"); //Mimo wszystko zas³u¿y³eœ na jakiœ podarunek...
 	AI_Output (other, self,"Info_Vela_HelloAgain_15_20"); //Masz racjê. Mi³o by by³o mieæ przy sobie coœ, co przypomina³oby twe piêkne oczy.
-	AI_Output (self, other,"Info_Vela_HelloAgain_16_21"); //Ale co by ci tu daæ? Bielizny nie noszê, nie mam ¿adnej bi¿uterii... Zaraz. Przecie¿ ten idiota z ma³¹ kuœk¹ ma jakiœ z³oty sygnet!
+	AI_Output (self, other,"Info_Vela_HelloAgain_16_21"); //Ale co by Ci tu daæ? Bielizny nie noszê, nie mam ¿adnej bi¿uterii... Zaraz. Przecie¿ ten idiota z ma³¹ kuœk¹ ma jakiœ z³oty sygnet!
 	AI_Output (other, self,"Info_Vela_HelloAgain_15_22"); //Mówisz o Gomezie?
 	AI_Output (self, other,"Info_Vela_HelloAgain_16_23"); //A o kim innym? Ten wa¿niak nadrabia braki w anatomii wielkim mieczem na plecach. 
 	AI_Output (self, other,"Info_Vela_HelloAgain_16_24"); //WeŸ ten klucz, pierœcieñ znajdziesz w kufrze.

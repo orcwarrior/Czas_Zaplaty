@@ -505,7 +505,7 @@ FUNC VOID DIA_Fingers_NewSword_Info()
    
 	AI_Output (self, other, "DIA_Fingers_NewSword_11_01"); //A niech to, w³aœnie z³ama³em miecz! Chcia³em go naostrzyæ, a to dziadostwo pêk³o.
 	AI_Output (other, self, "DIA_Fingers_NewSword_15_02"); //Widzê, ¿e Fox dobrze wybra³. To twój nowy miecz.
-	AI_Output (self, other, "DIA_Fingers_NewSword_11_03"); //Cholera nie po to z³ama³em miecz, ¿eby dostaæ nowy!
+	AI_Output (self, other, "DIA_Fingers_NewSword_11_03"); //Cholera, nie po to z³ama³em miecz, ¿eby dostaæ nowy!
 	AI_Output (other, self, "DIA_Fingers_NewSword_15_04"); //Nie rozumiem...
 	AI_Output (self, other, "DIA_Fingers_NewSword_11_05"); //Z³ama³em to zardzewia³e ostrze, ¿eby mieæ dobr¹ wymówkê kiedy przyjd¹ stra¿nicy. Przez Ciebie nie wywinê siê od walki!
 	AI_Output (other, self, "DIA_Fingers_NewSword_15_06"); //Zawsze mo¿esz na mnie liczyæ.

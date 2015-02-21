@@ -531,7 +531,7 @@ FUNC VOID  DIA_BaalTaran_Stuff_Info()
 	AI_Output (self, other,"DIA_BaalTaran_Stuff_05_02"); //Co? Dlaczego akurat Tobie j¹ da³? Poza tym mam jeszcze zapas.
 	AI_Output (other, self,"DIA_BaalTaran_Stuff_15_03"); //Spotka³em go niedaleko Starego Obozu. Kiedyœ trochê mu pomog³em, a widaæ, ¿e wiek robi ju¿ swoje.
 	AI_Output (other, self,"DIA_BaalTaran_Stuff_15_04"); //Powiedzia³, ¿e ma dla Ciebie przesy³kê, wiêc zaoferowa³em pomoc. Ot i ca³a tajemnica.
-	AI_Output (self, other,"DIA_BaalTaran_Stuff_05_05"); //Staruszek pospieszy³ siê z dostaw¹. Ale w sumie co to za ró¿nica.
+	AI_Output (self, other,"DIA_BaalTaran_Stuff_05_05"); //Staruszek poœpieszy³ siê z dostaw¹. Ale w sumie co to za ró¿nica.
 	AI_Output (self, other,"DIA_BaalTaran_Stuff_05_06"); //Daj paczkê. A to za fatygê.
 	B_GiveInvItems (other, self, package_stuff, 1);
 	Npc_RemoveInvItems(self,package_stuff,1);

@@ -94,7 +94,7 @@ FUNC VOID DIA_Fox_Again_Info()
 	B_GiveInvItems (self, other, ItMiNugget, 200);
 	
    AI_Output (self, other, "DIA_Fox_Again_11_18"); //Aha. I nie daj siê oszukaæ. Drax to szczwany lis i na ka¿dym chce zarobiæ.
-	AI_Output (self, other, "DIA_Fox_Again_11_19"); //Pospiesz siê!
+	AI_Output (self, other, "DIA_Fox_Again_11_19"); //Poœpiesz siê!
 	AI_Output (other, self, "DIA_Fox_Again_15_20"); //Grzmia³o?
 	AI_Output (self, other, "DIA_Fox_Again_11_21"); //Nie idioto, to mój brzuch!
 	
@@ -512,10 +512,10 @@ FUNC VOID DIA_Fox_WeaponDev_Info()
 	AI_Output (self, other, "DIA_Fox_WeaponDev_11_06"); //Zosta³o mi jeszcze kilku rebeliantów.
 	AI_Output (self, other, "DIA_Fox_WeaponDev_11_07"); //Quentin, Drax, R¹czka i Cavalorn.
 	AI_Output (self, other, "DIA_Fox_WeaponDev_11_08"); //Najwy¿sza pora, ¿eby wymienili to swoje przerdzewia³e ¿elastwo.
-	AI_Output (self, other, "DIA_Fox_WeaponDev_11_09"); //Oto miecze, pospiesz siê bo czasu mamy coraz mniej.
+	AI_Output (self, other, "DIA_Fox_WeaponDev_11_09"); //Oto miecze, poœpiesz siê bo czasu mamy coraz mniej.
 	CreateInvItems (self,HUN_MW_03,4); 
 	B_GiveInvItems (self, other, HUN_MW_03, 4);
-	B_LogEntry		(CH3_RBL_DelivWeapon, "Dosta³em od Foxa nowe miecza dla Quentina, Draxa, R¹czki i Cavalorna. Nie ma na co czekaæ, stra¿nicy mog¹ uderzyæ w ka¿dej chwili.");
+	B_LogEntry		(CH3_RBL_DelivWeapon, "Dosta³em od Foxa nowe miecze dla Quentina, Draxa, R¹czki i Cavalorna. Nie ma na co czekaæ, stra¿nicy mog¹ uderzyæ w ka¿dej chwili.");
 	B_StopProcessInfos	(self);
 };
 

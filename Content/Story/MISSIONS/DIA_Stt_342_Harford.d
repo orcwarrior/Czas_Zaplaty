@@ -167,7 +167,7 @@ FUNC VOID DIA_Harf_ProposalOk_Armor()
 	AI_Output (other, self, "DIA_Harf_ProposalOk_Armor_15_05"); //Akcje z sygnetem te¿ nie bêdzie ³atwa. Poradzisz sobie.
 	
    B_LogEntry		(CH3_Grd_Thief, "Zgodzi³em siê za³atwiæ sprawê z Cooperem. A wiêc po kolei. W osobistym kufrze Gomeza znajdê królewski sygnet, który muszê umieœciæ w skrzyni Coopera. Klucz do kufra magnata ma Velaya, która ma bzika na punkcie w³asnej urody. Lucjusz mo¿e wykona jej portret - oby to wystarczy³o. Klucz do kufra Coopera znajdê pewnie przy nim samym. Czas braæ siê do pracy.");
-	B_LogEntry		(CH3_Grd_Thief, "Nagrod¹ ma byæ pancerz magantów.");
+	B_LogEntry		(CH3_Grd_Thief, "Nagrod¹ ma byæ pancerz magnatów.");
 	Info_ClearChoices (DIA_Harf_ProposalOk);		
 };
 

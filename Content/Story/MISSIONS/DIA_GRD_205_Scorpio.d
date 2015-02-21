@@ -56,7 +56,7 @@ FUNC VOID DIA_Scorpio_Hello_Info()
 	AI_Output (other, self, "DIA_Scorpio_Hello_15_02"); //Twój kumpel mnie obrazi³.
 	AI_Output (self, other, "DIA_Scorpio_Hello_11_03"); //Cz³owieku on ma pochlastane struny g³osowe. 
 	AI_Output (self, other, "DIA_Scorpio_Hello_11_04"); //Pewnie z przyzwyczajenia chcia³ zapytaæ coœ Ty za jeden, ale nie da³ rady nic wykrztusiæ.
-	AI_Output (other, self, "DIA_Scorpio_Hello_15_05"); //Hmm... W porz¹dku, pospieszy³em siê.
+	AI_Output (other, self, "DIA_Scorpio_Hello_15_05"); //Hmm... W porz¹dku, poœpieszy³em siê.
 	AI_RemoveWeapon (hero);
 	AI_Output (self, other, "DIA_Scorpio_Hello_11_06"); //Tak ju¿ lepiej. Myœla³em, ¿e znam wiêkszoœæ skazañców, ale ciebie nie kojarzê...
 	AI_Output (other, self, "DIA_Scorpio_Hello_15_07"); //Bo jestem na tym zadupiu od niedawna. 

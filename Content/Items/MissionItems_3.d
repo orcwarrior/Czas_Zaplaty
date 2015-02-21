@@ -423,7 +423,7 @@ FUNC VOID Usekevin_diary()
 					Doc_PrintLine	( nDocID,  0, "");					
 					Doc_PrintLine	( nDocID,  0, "Dzieñ 31");					
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Zdoby³em klucze drzwi tunelu prowadzac¹ przez piwniwnice magnatów starym korytarzem a¿ poza obóz na terytorium orków.");					
+					Doc_PrintLines	( nDocID,  0, "Zdoby³em klucz do drzwi prowadz¹cych przez piwnicê magnatów starym korytarzem na terytoria orków, daleko poza obóz.");					
 			///		Doc_PrintLines	( nDocID,  0, "Die Fähigkeiten die göttliche Macht zu kanalisieren wächst in dem Magier. Anfangs keimt sie nur wie ein kleiner Schössling auf dem Feld und man muss ihn pflegen, damit er nicht verkümmert. Doch wenn dieser Schössling erst einmal herangewachsen ist, entfaltet er seine volle Pracht");
 					
 					
@@ -432,7 +432,7 @@ FUNC VOID Usekevin_diary()
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga");								
 					Doc_PrintLine	( nDocID,  1, "Dzieñ 36");			
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Gomez coœ szykuje, musze dowiedzieæ siê co siê swiêci...");
+					Doc_PrintLines	( nDocID,  1, "Gomez coœ szykuje, muszê dowiedzieæ siê co siê œwiêci...");
 					Doc_Show		( nDocID );
 };	
 	

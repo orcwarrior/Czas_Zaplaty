@@ -238,7 +238,7 @@ FUNC VOID Info_Kira_What_Yes()
 FUNC VOID Info_Kira_What_No()
 {
 	AI_Output (other,self,"Info_Kira_What_No_Info_15_01"); //Muszê siê zastanowiæ.
-	AI_Output (self, other,"Info_Kira_What_No_Info_16_02"); //Pospiesz siê, Gomez nie bêdzie czeka³ wiecznie.
+	AI_Output (self, other,"Info_Kira_What_No_Info_16_02"); //Poœpiesz siê, Gomez nie bêdzie czeka³ wiecznie.
 	
    Info_ClearChoices (DIA_Korth_Hello);
 	B_StopProcessInfos	(self);

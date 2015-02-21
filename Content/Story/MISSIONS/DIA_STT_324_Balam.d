@@ -246,7 +246,7 @@ FUNC void STT_Balam_FeedDiego_Info()
 	AI_Output (self, other,"STT_Balam_FeedDiego_Info_07_10"); //NieŸle to wymyœli³eœ. Ale nie mam szynki, o truciŸnie nawet nie wspominaj¹c.
 	AI_Output (other, self,"STT_Balam_FeedDiego_Info_15_11"); //Tym ja siê zajmê. Nied³ugo wrócê z miêsem i trutk¹, wtedy zabierzesz siê za pichcenie.
 	
-   B_LogEntry(CH6_RBL_Diego, "Balam przyrz¹dzi zatrut¹ szynkê. Muszê mu jednak dostarczyæ miêso i truciznê. Z szynk¹ nie powinno byæ problemów, ale trucizna? Hmm, mo¿e mój 'mistrz' mi jak¹œ odst¹pi. Czas nas goni, wiêc muszê siê pospieszyæ!");
+   B_LogEntry(CH6_RBL_Diego, "Balam przyrz¹dzi zatrut¹ szynkê. Muszê mu jednak dostarczyæ miêso i truciznê. Z szynk¹ nie powinno byæ problemów, ale trucizna? Hmm, mo¿e mój 'mistrz' mi jak¹œ odst¹pi. Czas nas goni, wiêc muszê siê poœpieszyæ!");
 };
 
 // *********************************************
@@ -435,7 +435,7 @@ Killing stra¿nika ¿ar³oka
 		CreateInvItems (self,DUNGEONKEY,1);
 		B_GiveInvItems (self, other, DUNGEONKEY, 1);
 		AI_Output (other, self,"STT_Balam_GoBackDiego_Info_15_04"); //Œwietna robota, Balam.
-		AI_Output (self, other,"STT_Balam_GoBackDiego_Info_07_05"); //Zrobi³em to dla Diego. Pospiesz siê.
+		AI_Output (self, other,"STT_Balam_GoBackDiego_Info_07_05"); //Zrobi³em to dla Diego. Poœpiesz siê.
 		B_LogEntry		(CH6_RBL_Diego, "Stra¿nik nie ¿yje, mam klucz do celi Diego. Muszê jak najszybciej go uwolniæ.");
 	}
 	else

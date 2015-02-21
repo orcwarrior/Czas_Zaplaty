@@ -868,7 +868,7 @@ FUNC VOID DIA_Leaf_StoneHave_Info()
    AI_Output (self, other, "DIA_Leaf_StoneHave_11_03"); //Coœ ma³y ten kamieñ...
 	AI_Output (other, self, "DIA_Leaf_StoneHave_15_04"); //To tylko odprysk. Ale dziêki niemu mag, którego zabi³em prze¿y³ kilka wieków.
 	AI_Output (self, other, "DIA_Leaf_StoneHave_11_05"); //Jak siê tego u¿ywa?
-	AI_Output (other, self, "DIA_Leaf_StoneHave_15_06"); //Nie mam pojêcie.
+	AI_Output (other, self, "DIA_Leaf_StoneHave_15_06"); //Nie mam pojêcia.
 	AI_Output (self, other, "DIA_Leaf_StoneHave_11_07"); //Hmm. Mo¿e to po³knê i popijê piwem...
 	AI_Output (other, self, "DIA_Leaf_StoneHave_15_08"); //Tak, to œwietny pomys³... (co za idiota)
 	AI_Output (self, other, "DIA_Leaf_StoneHave_11_09"); //Co tam mruczysz?

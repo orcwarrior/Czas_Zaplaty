@@ -543,7 +543,7 @@ FUNC VOID DIA_Whistler_Spy1_Info()
 	
    AI_Output (self, other, "DIA_Whistler_Spy1_11_05"); //Chcesz ¿eby ktoœ nas us³ysza³?!
 	AI_Output (other, self, "DIA_Whistler_Spy1_15_06"); //Wprost przeciwnie. Szukam pewnej analogii.
-	AI_Output (self, other, "DIA_Whistler_Spy1_11_07"); //Mów o co chodzi, tylko siê pospiesz.
+	AI_Output (self, other, "DIA_Whistler_Spy1_11_07"); //Mów o co chodzi, tylko siê poœpiesz.
 	AI_Output (other, self, "DIA_Whistler_Spy1_15_08"); //Szukam dowodów zdrady w tym obozie, Œwistak. Wiesz coœ o tym?
 	AI_Output (self, other, "DIA_Whistler_Spy1_11_09"); //Nie zadawaj g³upich pytañ. Przecie¿ to oczywiste.
 	AI_Output (self, other, "DIA_Whistler_Spy1_11_10"); //Wiem, ¿e Gomez podrzuci³ nam œmierdz¹ce jajo, ale mam tylko podejrzenia.
@@ -773,7 +773,7 @@ FUNC VOID DIA_Whistler_CristalOk_Info()
 {
 	AI_Output (other, self, "DIA_Whistler_CristalOk_15_01"); //Dobra, poszukam tego kryszta³u.
 	AI_Output (self, other, "DIA_Whistler_CristalOk_11_02"); //To cudownie! Porozmawiaj z Leafem, on wie, gdzie odnaleŸæ kryszta³.
-	AI_Output (self, other, "DIA_Whistler_CristalOk_11_03"); //Proszê, pospiesz siê, chcia³bym, jak najszybciej wypróbowaæ to cudeñko!
+	AI_Output (self, other, "DIA_Whistler_CristalOk_11_03"); //Proszê, poœpiesz siê, chcia³bym, jak najszybciej wypróbowaæ to cudeñko!
 
 	Log_CreateTopic(CH1_RBL_ArrowCristal, LOG_MISSION);
 	Log_SetTopicStatus(CH1_RBL_ArrowCristal, LOG_RUNNING);

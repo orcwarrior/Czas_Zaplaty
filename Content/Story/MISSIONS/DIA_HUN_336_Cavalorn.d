@@ -189,7 +189,7 @@ FUNC VOID DIA_Cavalorn_Recruits_Yes()
    AI_Output (other, self, "DIA_Cavalorn_Recruits_Yes_15_21"); //Brzmi uczciwie.
    AI_Output (self, other, "DIA_Cavalorn_Recruits_Yes_12_22"); //W takim razie umowa stoi.
    AI_Output (self, other, "DIA_Cavalorn_Recruits_Yes_12_23"); //200 bry³ek za 'g³owê'.
-   AI_Output (self, other, "DIA_Cavalorn_Recruits_Yes_12_24"); //Tylko pospiesz siê, Gomez nie bêdzie wiecznie czeka³ z atakiem. 
+   AI_Output (self, other, "DIA_Cavalorn_Recruits_Yes_12_24"); //Tylko poœpiesz siê, Gomez nie bêdzie wiecznie czeka³ z atakiem. 
    
    Log_CreateTopic(CH1_Rbl_NewMembers, LOG_MISSION);
    Log_SetTopicStatus(CH1_Rbl_NewMembers, LOG_RUNNING);
@@ -252,7 +252,7 @@ FUNC VOID DIA_Cavalorn_RecruitsAgain_Yes()
    AI_Output (other, self, "DIA_Cavalorn_RecruitsAgain_Yes_15_04"); //W porz¹dku.
    AI_Output (self, other, "DIA_Cavalorn_RecruitsAgain_Yes_12_05"); //W takim razie umowa stoi.
    AI_Output (self, other, "DIA_Cavalorn_RecruitsAgain_Yes_12_06"); //200 bry³ek za 'g³owê' i pierœcieñ, jak przyprowadzisz co najmniej pi¹tkê rekrutów.
-   AI_Output (self, other, "DIA_Cavalorn_RecruitsAgain_Yes_12_07"); //Tylko pospiesz siê, Gomez nie bêdzie wiecznie czeka³ z atakiem. 
+   AI_Output (self, other, "DIA_Cavalorn_RecruitsAgain_Yes_12_07"); //Tylko poœpiesz siê, Gomez nie bêdzie wiecznie czeka³ z atakiem. 
    
    Log_CreateTopic(CH1_Rbl_NewMembers, LOG_MISSION);
    Log_SetTopicStatus(CH1_Rbl_NewMembers, LOG_RUNNING);

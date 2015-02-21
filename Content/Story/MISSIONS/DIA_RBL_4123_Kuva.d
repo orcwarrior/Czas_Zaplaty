@@ -81,7 +81,7 @@ FUNC VOID Info_Kuva_Hallo_Yes()
 	AI_Output (other, self,"Info_Kuva_Hallo_Yes_15_01"); //Dobra, pomogê Ci.
 	AI_Output (self, other,"Info_Kuva_Hallo_Yes_04_02"); //Nigdy Ci tego nie zapomnê, przyjacielu!
 	AI_Output (other, self,"Info_Kuva_Hallo_Yes_15_03"); //Kto Ciê tu zamkn¹³?
-	AI_Output (self, other,"Info_Kuva_Hallo_Yes_04_04"); //Nie mam pojêcie, ale przyszed³em tu na spotkanie ze Œwistakiem.
+	AI_Output (self, other,"Info_Kuva_Hallo_Yes_04_04"); //Nie mam pojêcia, ale przyszed³em tu na spotkanie ze Œwistakiem.
 	AI_Output (self, other,"Info_Kuva_Hallo_Yes_04_05"); //Nawet nie wiem kiedy oberwa³em przez ³eb. Kiedy odzyska³em przytomnoœæ le¿a³em zamkniêty w klatce. 
 	AI_Output (self, other,"Info_Kuva_Hallo_Yes_04_06"); //Sukinsyn zostawi³ mi trochê ¿arcia i buteleczkê z trucizn¹. Niech go szlag trafi!
 	AI_Output (other, self,"Info_Kuva_Hallo_Yes_15_07"); //Ciesz siê, ¿e nie przyku³ Ciê ³añcuchem do kraty i nie zostawi³ pi³y...

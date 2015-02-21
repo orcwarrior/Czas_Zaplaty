@@ -631,7 +631,7 @@ FUNC VOID DIA_Lee_RBLTasks_Torlof()
 	task_choice = 2;
 	AI_Output (other, self,"DIA_Lee_RBLTasks_Torlof_15_01"); //Pomogê Torlofowi, jestem mu to winien.
 	AI_Output (self, other,"DIA_Lee_RBLTasks_Torlof_08_02"); //Rozumiem. Najemnicy z kopalni broni¹ siê ju¿ resztkami si³.
-	AI_Output (self, other,"DIA_Lee_RBLTasks_Torlof_08_03"); //Je¿eli siê pospieszysz mo¿e siê udaæ. WeŸ ze sob¹ kilku najemników.
+	AI_Output (self, other,"DIA_Lee_RBLTasks_Torlof_08_03"); //Je¿eli siê poœpieszysz mo¿e siê udaæ. WeŸ ze sob¹ kilku najemników.
 	AI_Output (other, self,"DIA_Lee_RBLTasks_Torlof_15_04"); //A pozostali?
 	AI_Output (self, other,"DIA_Lee_RBLTasks_Torlof_08_05"); //Cord zajmie siê Orlim Gniazdem, a Lares skontaktuje siê z Wilkiem. Powodzenia.
 
@@ -644,7 +644,7 @@ Zrób to tak, ¿e kolesie maj¹ ten sam dialog tylko jakaœ zmienna ++ i mo¿e góra 4
 
 **************************/
 
-	B_LogEntry		(CH5_NO_Mine, "Pomogê Torlofowi, jestem mu to winien. Muszê siê pospieszyæ. Lee pozwoli³ mi zabraæ kilku najemników. W tym czasie Cord zajmie siê Orlim Gniazdem a Lares skontaktuje siê z Wilkiem.");
+	B_LogEntry		(CH5_NO_Mine, "Pomogê Torlofowi, jestem mu to winien. Muszê siê poœpieszyæ. Lee pozwoli³ mi zabraæ kilku najemników. W tym czasie Cord zajmie siê Orlim Gniazdem a Lares skontaktuje siê z Wilkiem.");
    Log_SetTopicStatus	(CH5_NO_Wolf, LOG_FAILED);
    Log_SetTopicStatus	(CH5_NO_Guards, LOG_FAILED);
    Info_ClearChoices (DIA_Lee_RBLTasks);

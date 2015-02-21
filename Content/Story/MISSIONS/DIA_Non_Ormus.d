@@ -122,7 +122,7 @@ FUNC VOID Info_Ormus_Again1_Info()
 	AI_Output (other, self,"Info_Ormus_Again1_15_01"); //Mam coœ mocniejszego...
 	AI_Output (self, other,"Info_Ormus_Again1_06_02"); //Toœ mi brat!
 	AI_Output (other, self,"Info_Ormus_Again1_15_03"); //Nie tak szybko. Mam kilka pytañ.
-	AI_Output (self, other,"Info_Ormus_Again1_06_04"); //No dobra. Tylko siê pospiesz bo zasch³o mi w gardle.
+	AI_Output (self, other,"Info_Ormus_Again1_06_04"); //No dobra. Tylko siê poœpiesz bo zasch³o mi w gardle.
 	AI_Output (other, self,"Info_Ormus_Again1_15_05"); //Co wiesz o œmierci niemowy?
 	AI_Output (self, other,"Info_Ormus_Again1_06_06"); //Tyle co ka¿dy. Georg zrobi³ z nim porz¹dek.
 	AI_Output (other, self,"Info_Ormus_Again1_15_07"); //Ale dlaczego rzuci³ siê na Niê?

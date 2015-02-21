@@ -1443,7 +1443,7 @@ FUNC VOID DIA_RATFORD_OldCampSpy1_Info()
 	B_GiveXP(1000);
 	AI_Output (other, self, "DIA_RATFORD_OldCampSpy1_15_01"); //Mam wieœci ze Starego Obozu.
 	AI_Output (self, other, "DIA_RATFORD_OldCampSpy1_07_02"); //Mów.
-	AI_Output (other, self, "DIA_RATFORD_OldCampSpy1_15_03"); //Przekona³em kopaczy do walki po stronie rebelii. Pzyprowadzi³em Diego do Starego Obozu, Cienie te¿ przy³¹cz¹ siê do naszej sprawy.
+	AI_Output (other, self, "DIA_RATFORD_OldCampSpy1_15_03"); //Przekona³em kopaczy do walki po stronie rebelii. Pzyprowadzi³em Diego do Starego Obozu. Cienie te¿ przy³¹cz¹ siê do naszej sprawy.
 	AI_Output (other, self, "DIA_RATFORD_OldCampSpy1_15_04"); //Razem z Urtem zorganizuj¹ ludzi pod nosem Gomeza.
 	AI_Output (other, self, "DIA_RATFORD_OldCampSpy1_15_05"); //Niestety Kelvin nie ¿yje. Znalaz³em te notatki przy jego ciele.
 	AI_Output (self, other, "DIA_RATFORD_OldCampSpy1_07_06"); //Szkoda Kelvina... Gomez zap³aci za œmieræ ka¿dego z moich ludzi po dwakroæ!
@@ -1500,7 +1500,7 @@ FUNC VOID DIA_RATFORD_Contact_Info()
 	AI_Output (other, self, "DIA_RATFORD_Contact_15_02"); //Czyli wszystko w normie. Co siê sta³o?
 	AI_Output (self, other, "DIA_RATFORD_Contact_07_03"); //By³ u mnie Urt, sytuacja siê trochê skomplikowa³a. Musimy wstrzymaæ siê z atakiem na Stary Obóz.
 	AI_Output (other, self, "DIA_RATFORD_Contact_15_04"); //To co zrobimy?
-	AI_Output (self, other, "DIA_RATFORD_Contact_07_05"); //Urt powiedzia³ tylko, ¿e zorganizowanie Cieni i Kopaczy zajmie wiêcej czasu. Czeka³ na wieœci od Balama dotycz¹ce posuniêæ magnatów.
+	AI_Output (self, other, "DIA_RATFORD_Contact_07_05"); //Urt powiedzia³ tylko, ¿e zorganizowanie cieni i kopaczy zajmie wiêcej czasu. Czeka³ na wieœci od Balama dotycz¹ce posuniêæ magnatów.
 	AI_Output (other, self, "DIA_RATFORD_Contact_15_06"); //Ciekawe co to za nowiny.
 	AI_Output (self, other, "DIA_RATFORD_Contact_07_07"); //Dowiesz siê tego jako pierwszy. Urt poprosi³, ¿ebyœ to w³aœnie Ty uda³ siê na spotkanie z jego wys³annikiem. Musia³eœ wywrzeæ na nim spore wra¿enie, bo bardzo na to nalega³.
 	AI_Output (other, self, "DIA_RATFORD_Contact_15_08"); //Czujê siê zaszczycony. No dobra, gdzie i kiedy ma czekaæ na mnie ten wys³annik?
@@ -2065,7 +2065,7 @@ FUNC VOID DIA_RATFORD_DiegoFree2_Info()
 {
 	AI_Output (other, self, "DIA_RATFORD_DiegoFree2_15_01"); //Cavalorn powiedzia³, ¿e nadszed³ Czas Zap³aty.
 	AI_Output (self, other, "DIA_RATFORD_DiegoFree2_07_02"); //D³ugo na to czeka³em.
-	AI_Output (self, other, "DIA_RATFORD_DiegoFree2_07_03"); //Zanim ruszymy do walki, za³atw wszystkie swoje sprawy, bo póŸniej mo¿e nie starczyæ czasu. Tylko siê pospiesz!
+	AI_Output (self, other, "DIA_RATFORD_DiegoFree2_07_03"); //Zanim ruszymy do walki, za³atw wszystkie swoje sprawy, bo póŸniej mo¿e nie starczyæ czasu. Tylko siê poœpiesz!
 	AI_Output (self, other, "DIA_RATFORD_DiegoFree2_07_04"); //Jak bêdziesz gotów, wróæ do mnie.
 	AI_Output (self, other, "DIA_RATFORD_DiegoFree2_07_05"); //Aha. Zaatakujemy po zmierzchu, to da nam wiêksz¹ szansê na zaskoczenie.
 
