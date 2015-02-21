@@ -75,7 +75,7 @@ FUNC VOID DIA_Convoy1_First_Info()
 	if (Hlp_IsItem(myarmor, GRD_ARMOR_L))||(Hlp_IsItem(myarmor, GRD_ARMOR_M))
 	{
 		AI_Output (self, other, "DIA_Convoy1_First_11_01"); //Ej, Ty! Sk¹dœ Ciê znam...
-		AI_Output (other, self, "DIA_Convoy1_First_15_02"); //Mo¿liwe, niedawno Gomez wys³a³ mnie zreszt¹ ludzi do Fletchera. Mia³em wyjœæ wam naprzeciw i sprawdziæ, czy aby nie ze¿arliœcie ca³ego towaru.
+		AI_Output (other, self, "DIA_Convoy1_First_15_02"); //Mo¿liwe, niedawno Gomez wys³a³ mnie z reszt¹ ludzi do Fletchera. Mia³em wyjœæ wam naprzeciw i sprawdziæ, czy aby nie ze¿arliœcie ca³ego towaru.
 		AI_Output (self, other, "DIA_Convoy1_First_11_03"); //Za kogo nas masz!
 		AI_Output (other, self, "DIA_Convoy1_First_15_04"); //Za wiecznie g³odnych sukinsynów, którym nie chce siê dupy ruszyæ na czas.
 		AI_Output (self, other, "DIA_Convoy1_First_11_05"); //Dobra, ju¿ dobra. Zaraz...

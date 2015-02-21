@@ -74,7 +74,10 @@ func void TimeEventsWorldZen()
 			}
 			else if ((Tondral_death == 41) && npc_getdisttowp(tondral, "PSI_TEMPLE_IN_1") < 200)
 			{ 
+				B_FullStop(tondral); // mark 
+				
 				tondral.ATTRIBUTE[ATR_HITPOINTS] = 0;
+				AI_PlayAni(tondral,"T_HURT"); // mark (zmuszenie animacji, moze byc nie potrzebne), w kazdym razie nie wiem ktora to animacja odpowiada za umieranie odrazu
 				Tondral_death = false;
 			};
 		};

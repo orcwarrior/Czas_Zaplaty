@@ -278,7 +278,7 @@ FUNC VOID  DIA_Merdarion_FindAll_Info()
 	{
 		AI_Output (self, other,"DIA_Merdarion_FindAll_08_02"); //W koñcu uwolnimy siê od tej cholernej bariery.
 		AI_Output (self, other,"DIA_Merdarion_FindAll_08_03"); //Ju¿ idê.
-		B_LogEntry(CH3_NON_Ornament, "Merdarion ruszy³ do komnaty.");
+		B_LogEntry(CH3_NON_Ornament, "Merdarion ruszy³ na dziedziniec.");
 		Npc_ExchangeRoutine(self,"RIT");
 	}
 	else

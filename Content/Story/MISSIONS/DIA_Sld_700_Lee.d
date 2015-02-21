@@ -282,7 +282,7 @@ FUNC VOID  DIA_Lee_LasOrn_Info()
 {
 	AI_Output (other, self,"DIA_Lee_LasOrn_15_00"); //Straci³em kolejny ornament!
 	AI_Output (self, other,"DIA_Lee_LasOrn_08_01"); //Co siê sta³o?
-	AI_Output (other, self,"DIA_Lee_LasOrn_15_02"); //Hrabia znowu mnie uprzedzi³. Mam trzy dnia na odnalezienie pozosta³ych czêœci, albo ca³y plan magów szlag trafi.
+	AI_Output (other, self,"DIA_Lee_LasOrn_15_02"); //Hrabia znowu mnie uprzedzi³. Mam trzy dni na odnalezienie pozosta³ych czêœci, albo ca³y plan magów szlag trafi.
 	AI_Output (self, other,"DIA_Lee_LasOrn_08_03"); //Nie mamy wyboru. Musimy im pomóc. Co zamierzasz?
 	AI_Output (other, self,"DIA_Lee_LasOrn_15_04"); //Spróbujê odnaleŸæ te cholerne ornamenty. W koñcu da³em ci s³owo.
 	AI_Output (self, other,"DIA_Lee_LasOrn_08_05"); //Myœla³em, ze robisz to dla rudy i dla zemsty na Hrabim?
@@ -331,7 +331,7 @@ FUNC VOID  DIA_Lee_AfterRitual_Info()
 
 	AI_Output (self, other,"DIA_Lee_AfterRitual_08_01"); //Cholera to by³o niespodziewane!
 	AI_Output (other, self,"DIA_Lee_AfterRitual_15_02"); //Jak to siê sta³o? Kto sta³ na warcie?
-	AI_Output (self, other,"DIA_Lee_AfterRitual_08_03"); //Jarvis. Zdaje siê, ¿e uci¹³ sobie drzemkê. Poder¿nêli mu gard³o i pobiegli do Komnaty Portali.
+	AI_Output (self, other,"DIA_Lee_AfterRitual_08_03"); //Jarvis. Zdaje siê, ¿e uci¹³ sobie drzemkê. Poder¿nêli mu gard³o i pobiegli na dziedziniec.
 	AI_Output (self, other,"DIA_Lee_AfterRitual_08_04"); //Minêli Orika, ale ten pata³ach jest g³uchy jak pieñ!
 	AI_Output (self, other,"DIA_Lee_AfterRitual_08_05"); //Cord akurat wraca³ z wychodka, kiedy wbiegali do œrodka. Krzykn¹³ i rzuciliœmy siê w pogoñ...
 	
@@ -367,17 +367,17 @@ FUNC VOID  DIA_Lee_AfterRitual_Info()
 	{
 		AI_Output (other, self,"DIA_Lee_AfterRitual_15_13"); //Nie s¹dzi³em, ¿e ktokolwiek zdo³a pokonaæ Corda!
 	};
-   
+	// moi ludzie nie przywdzialiby kajdan niewoli /  Jarvis nadal by ¿y³...
 	AI_Output (self, other,"DIA_Lee_AfterRitual_08_14"); //Tak, to by³ krwawy dzionek. Mam ju¿ doœæ tej cholernej Kolonii...
 	AI_Output (other, self,"DIA_Lee_AfterRitual_15_15"); //Saturas powiedzia³, ¿e jesteœcie kwita, d³ug sp³acony.
-	AI_Output (self, other,"DIA_Lee_AfterRitual_08_16"); //Czasami ¿a³ujê, ¿e stawiam honor ponad zdrowy rozs¹dek... Gdyby nie mój upór Jarvis nadal by ¿y³...
+	AI_Output (self, other,"DIA_Lee_AfterRitual_08_16"); //Czasami ¿a³ujê, ¿e stawiam honor ponad zdrowy rozs¹dek... Gdyby nie mój upór, Jarvis nadal by ¿y³...
 	AI_Output (other, self,"DIA_Lee_AfterRitual_15_17"); //Nie zawsze mamy wp³yw na to, co siê wydarzy. 
 	AI_Output (self, other,"DIA_Lee_AfterRitual_08_18"); //Tak wielu przyjació³ ju¿ pochowa³em... 
 	AI_Output (other, self,"DIA_Lee_AfterRitual_15_19"); //Oni umr¹ dopiero wtedy, kiedy zginie pamiêæ o ich czynach.
 	AI_Output (self, other,"DIA_Lee_AfterRitual_08_20"); //Masz racjê! Kiedy tylko wrócê do Myrtany i wyrównam rachunki, kupiê gdzieœ kawa³ek ziemi i zostanê rolnikiem.
 	AI_Output (other, self,"DIA_Lee_AfterRitual_15_21"); //Tak, a ja zostanê rybakiem i bêdziemy co wieczór wspominaæ przy kuflu stare dobre czasy. Mo¿emy te¿ zapisaæ siê do ko³a hafciarek, he, he.
 	AI_Output (self, other,"DIA_Lee_AfterRitual_08_22"); //Masz racjê, te¿ nie mogê sobie tego wyobraziæ. Ech, czasami dobrze by³oby po prostu usi¹œæ z przyjacielem przy anta³ku piwa i ur¿n¹æ siê do nieprzytomnoœci...
-	AI_Output (other, self,"DIA_Lee_AfterRitual_15_23"); //Jak tylko skoñcz¹ siê te brewerie z barier¹ to s³u¿ê pomoc¹.
+	AI_Output (other, self,"DIA_Lee_AfterRitual_15_23"); //Jak tylko skoñcz¹ siê te brewerie z barier¹, to s³u¿ê pomoc¹.
 	AI_Output (self, other,"DIA_Lee_AfterRitual_08_24"); //Trzymam Ciê za s³owo, Rick! Dobra, wracam do ch³opaków.
 
 	Log_SetTopicStatus(CH3_NON_Mercenary, LOG_SUCCESS);
@@ -906,7 +906,7 @@ FUNC VOID  DIA_Lee_Convoys_Info()
 {
 	AI_Output (self, other,"DIA_Lee_Convoys_08_01"); //Aha, jeszcze coœ.
 	AI_Output (other, self,"DIA_Lee_Convoys_15_02"); //Tak?
-	AI_Output (self, other,"DIA_Lee_Convoys_08_03"); //Porozmawiaj z Cordem. Dorwaliœmy jednego ze stra¿ników. Zanim wyzion¹³ ducha zacz¹³ coœ krzyczeæ o konwojach z broni¹.
+	AI_Output (self, other,"DIA_Lee_Convoys_08_03"); //Porozmawiaj z Cordem. Dorwaliœmy jednego ze stra¿ników. Zanim wyzion¹³ ducha, zacz¹³ coœ krzyczeæ o konwojach z broni¹.
 	AI_Output (self, other,"DIA_Lee_Convoys_08_04"); //Cord mia³ siê tym zaj¹æ, ale potrzebuje do pomocy kogoœ z g³ow¹ na karku.
 	AI_Output (other, self,"DIA_Lee_Convoys_15_05"); //Dobra, porozmawiam z Cordem.
 

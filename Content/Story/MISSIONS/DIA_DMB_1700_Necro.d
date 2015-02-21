@@ -122,8 +122,8 @@ FUNC VOID DIA_Necro_Second_Info()
 	AI_Output (self, other, "DIA_Necro_Second_11_02"); //Jak œmia³eœ przejœæ przez lawê?!
 	AI_Output (other, self, "DIA_Necro_First_15_03"); //Tak jakoœ wysz³o.
 	AI_Output (self, other, "DIA_Necro_Second_11_04"); //Ty natrêtna gnido. Œmiesz mi rzucaæ wyzwanie?!
-	AI_Output (other, self, "DIA_Necro_First_15_05"); //Nie... Panie. Chcia³em tylko... b³agaæ o to abyœ zaszczyci³ mnie odpowiedzi¹ na jedno pytanie?
-	AI_Output (self, other, "DIA_Necro_Second_11_06"); //Zaszczyci³? Dobrze, dost¹pisz tego zaszczytu zanim wypcham Ciê i powieszê  nad kominkiem. Pytaj!
+	AI_Output (other, self, "DIA_Necro_First_15_05"); //Nie... Panie. Chcia³em tylko... b³agaæ o to, abyœ zaszczyci³ mnie odpowiedzi¹ na jedno pytanie?
+	AI_Output (self, other, "DIA_Necro_Second_11_06"); //Zaszczyci³? Dobrze, dost¹pisz tego zaszczytu zanim wypcham Ciê i powieszê nad kominkiem. Pytaj!
 
 	Info_ClearChoices (DIA_Necro_Second);
 	Info_AddChoice (DIA_Necro_Second, "Zechcesz zostaæ moim mistrzem?", DIA_Necro_Second_Learn);
@@ -250,14 +250,14 @@ FUNC VOID DIA_Necro_ReadyForTest_Info()
 {
 	AI_Output (other, self, "DIA_Necro_ReadyForTest_15_01"); //Jestem gotów byœ podda³ mnie próbie.
    AI_Output (other, self, "DIA_Necro_ReadyForTest_11_02"); //Co to za próba, Panie?
-	AI_Output (self, other, "DIA_Necro_ReadyForTest_11_03"); //Tylko ktoœ kto potrafi zabiæ swoje w³asne jestestwo mo¿e staæ siê czar¹ Beliara.
+	AI_Output (self, other, "DIA_Necro_ReadyForTest_11_03"); //Tylko ktoœ, kto potrafi zabiæ swoje w³asne jestestwo mo¿e staæ siê czar¹ Beliara.
 	AI_Output (other, self, "DIA_Necro_ReadyForTest_11_04"); //Jestem gotów.
-	AI_Output (self, other, "DIA_Necro_ReadyForTest_11_05"); //Zmierz siê wiêc z samym sob¹, ze swoj¹ si³¹ i s³aboœci¹ aby staæ siê Dzieckiem Ciemnoœci!
+	AI_Output (self, other, "DIA_Necro_ReadyForTest_11_05"); //Zmierz siê wiêc z samym sob¹, ze swoj¹ si³¹ i s³aboœci¹, aby staæ siê Dzieckiem Ciemnoœci!
 	
    Log_CreateTopic(CH4_Nec_Trial, LOG_MISSION);
 	Log_SetTopicStatus(CH4_Nec_Trial, LOG_RUNNING);
 	B_LogEntry(CH4_Nec_Trial, "Nekromanta podda³ mnie Próbie Mroku. Muszê zmierzyæ siê z... samym sob¹.");
-	B_LogEntry(CH4_Nec_BM, "Aby zdobyæ zaufanie nekromanty muszê odbyæ Próbê Mroku.");
+	B_LogEntry(CH4_Nec_BM, "Aby zdobyæ zaufanie nekromanty, muszê odbyæ Próbê Mroku.");
 	B_StopProcessInfos(self);
    
    /*********************
@@ -572,7 +572,7 @@ FUNC VOID DIA_Necro_Thief_Info()
 	AI_TurnToNpc(self, other);
 	AI_GotoNpc(self, other);
 
-	AI_Output (self, other, "DIA_Necro_Thief_11_01"); //Zabi³eœ Bestiê! To ja go przywo³a³em, by³ moim chowañcem!
+	AI_Output (self, other, "DIA_Necro_Thief_11_01"); //Zabi³eœ Bestiê! To ja j¹ przywo³a³em, by³ moim chowañcem!
 	AI_Output (other, self, "DIA_Necro_Thief_15_02"); //Nie wiedzia³em, Mistrzu.
 	AI_Output (self, other, "DIA_Necro_Thief_11_03"); //Œmieræ Bestii prawie rozerwa³a mi duszê, ty pieprzony hipokryto! Do tego ukrad³eœ almanach!
 	AI_Output (self, other, "DIA_Necro_Thief_11_04"); //Beliar wybra³ na swego pomazañca prawdziwego skurwiela. Ale to nie znaczy, ¿e nie os¹dzê Ciê tu i teraz!

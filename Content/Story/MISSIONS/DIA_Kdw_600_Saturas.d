@@ -226,7 +226,7 @@ FUNC VOID Info_Saturas_Find_Info()
 		AI_Output(self, other,"Info_Saturas_Find_14_04"); //Bêdê tam na nich czeka³. Porozmawiaj ze mn¹, kiedy sprowadzisz wszystkich magów.
 		AI_Output(self, other,"Info_Saturas_Find_14_05"); //Nie traæ czasu, ruszaj natychmiast! 
 		
-      B_LogEntry(CH3_NON_Ornament, "Muszê natychmiast zanieœæ ornamenty Cronosowi i powiedzieæ wszystkim magom, aby stawili siê w Komnacie Portali, gdzie Saturas bêdzie ju¿ na nich czeka³. Gdy przyjd¹ wszyscy, muszê porozmawiaæ z Saturasem.");
+      B_LogEntry(CH3_NON_Ornament, "Muszê natychmiast zanieœæ ornamenty Cronosowi i powiedzieæ wszystkim magom, aby stawili siê na dziedziñcu, gdzie Saturas bêdzie ju¿ na nich czeka³. Gdy przyjd¹ wszyscy, muszê porozmawiaæ z Saturasem.");
 		B_StopProcessInfos(self);
 		Npc_ExchangeRoutine(self,"RIT");	
 	}

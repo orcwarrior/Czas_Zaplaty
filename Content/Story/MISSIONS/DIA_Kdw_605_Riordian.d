@@ -94,7 +94,7 @@ FUNC void KDW_605_Riordian_All_Info()
 		CreateInvItems (hero, ItFo_Potion_Mana_03,		1);
 		CreateInvItems (hero, ItFo_Potion_Haste_02,		2);
       
-		AI_Output(other, self,"KDW_605_Riordian_All_Info_15_04"); //Bardzo siê przydadz¹, dziêkujê. Saturas prosi³, abyœ poszed³ do Komnaty Portali.
+		AI_Output(other, self,"KDW_605_Riordian_All_Info_15_04"); //Bardzo siê przydadz¹, dziêkujê. Saturas prosi³, abyœ poszed³ na dziedziniec.
 		AI_Output(self, other,"KDW_605_Riordian_All_Info_14_05"); //Ruszê natychmiast!
 		B_LogEntry(CH3_NON_Ornament, "Riordian prócz podziêki, podarowa³ mi te¿ u¿yteczne mikstury, zanim ruszy³ na wezwanie.");
 		Npc_ExchangeRoutine(self,"RIT");

@@ -385,6 +385,6 @@ FUNC VOID DIA_Xardas_CanYouTeachMe_Info()
 	AI_Output (self, other, "DIA_Xardas_CanYouTeachMe_12_02"); //Posiadam wiedzê o krêgach magii.
    AI_Output (self, other, "DIA_Xardas_CanYouTeachMe_12_03"); //Ale nie uczê nowicjuszy.
 	
-	Log_CreateTopic(GE_TeacherOR, LOG_NOTE);
-	B_LogEntry(GE_TeacherOR, "Xardas nauczy mnie magicznych zaklêæ.");
+	Log_CreateTopic(GE_TeacherOW, LOG_NOTE);
+	B_LogEntry(GE_TeacherOW, "Xardas nauczy mnie magicznych zaklêæ.");
 };

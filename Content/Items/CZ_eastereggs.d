@@ -45,7 +45,7 @@ prototype ItWr_Pewien_zly_mag(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Opowidanie - Pewien z³y mag,";
+	description			= "Opowiadanie - Pewien z³y mag,";
    TEXT[0]				= "co chce zniszczyc kolonie i œwiat";
    TEXT[2]				= "Bestseller";
 	TEXT[3]				= "autorstwa XLukasGX";

@@ -717,8 +717,8 @@ func VOID DIA_Milten_Cristals_Info()
 	AI_Output (other, self,"DIA_Milten_Cristals_15_03"); //Dok³adnie.
 	AI_Output (self, other,"DIA_Milten_Cristals_02_04"); //Rozwi¹zanie jest doœæ proste.
 	AI_Output (self, other,"DIA_Milten_Cristals_02_05"); //Jaszczurka, która opisa³a tê historiê mia³a na myœli kryszta³y niewiadomego pochodzenia, które czasami spadaj¹ na ziemiê w deszczu meteorytów.
-	AI_Output (self, other,"DIA_Milten_Cristals_02_06"); //S¹ to bardzo rzadkie minera³y, ale dla magów s¹ bezcenne gdy¿ potrafi¹ skumulowaæ niewyobra¿alne pok³ady energii.
-	AI_Output (self, other,"DIA_Milten_Cristals_02_07"); //Do tego masz szczêœcie bo to czego szukasz jest na wyci¹gniêcie rêki.
+	AI_Output (self, other,"DIA_Milten_Cristals_02_06"); //S¹ to bardzo rzadkie minera³y, ale dla magów s¹ bezcenne, gdy¿ potrafi¹ skumulowaæ niewyobra¿alne pok³ady energii.
+	AI_Output (self, other,"DIA_Milten_Cristals_02_07"); //Do tego masz szczêœcie, bo to czego szukasz jest na wyci¹gniêcie rêki.
 	AI_Output (other, self,"DIA_Milten_Cristals_15_08"); //Czyli?
 	AI_Output (self, other,"DIA_Milten_Cristals_02_09"); //Niedawno kilku takich kryszta³ów szuka³ mój przyjaciel, w Kolonii nazywaj¹ go Bezimiennym.
 	AI_Output (other, self,"DIA_Milten_Cristals_15_10"); //Znalaz³ je?
@@ -726,7 +726,7 @@ func VOID DIA_Milten_Cristals_Info()
 	AI_Output (self, other,"DIA_Milten_Cristals_02_12"); //Nazywaj¹ siê Kamieniami Ogniskuj¹cymi.
 	AI_Output (self, other,"DIA_Milten_Cristals_02_13"); //Jednak do zaabsorbowania tak ogromnej mocy jak¹ mo¿e w sobie nosiæ Bestia bêdziesz potrzebowa³ czegoœ wiêcej.
 	AI_Output (other, self,"DIA_Milten_Cristals_15_14"); //Mów jaœniej.
-	AI_Output (self, other,"DIA_Milten_Cristals_02_15"); //Wszystkiego dowiesz siê w swoim czasie. Przynieœæ mi Kamienie Ogniskuj¹ce, a wtedy powiem Ci co dalej.
+	AI_Output (self, other,"DIA_Milten_Cristals_02_15"); //Wszystkiego dowiesz siê w swoim czasie. Przynieœ mi Kamienie Ogniskuj¹ce, a wtedy powiem Ci co dalej.
 	AI_Output (other, self,"DIA_Milten_Cristals_15_16"); //Chyba nie mam wyboru.
 	Log_CreateTopic	(CH4_RBL_FocusStones, LOG_MISSION);
 	Log_SetTopicStatus	(CH4_RBL_FocusStones, LOG_RUNNING);
@@ -769,7 +769,7 @@ func VOID DIA_Milten_Stones_Info()
 	AI_Output (self, other,"DIA_Milten_Stones_02_05"); //D³ugo zastanawia³em siê dlaczego Bariera wymknê³a siê nam spod kontroli.
 	AI_Output (self, other,"DIA_Milten_Stones_02_06"); //W koñcu doszed³em do wniosku, ¿e jakaœ tajemnicza si³a musia³a rozsynchronizowaæ kryszta³y podczas rytua³u.
 	AI_Output (self, other,"DIA_Milten_Stones_02_07"); //Teraz mam na to dowód. Kryszta³y rzeczywiœcie emituj¹ energiê na ró¿nych poziomach.
-	AI_Output (self, other,"DIA_Milten_Stones_02_08"); //Je¿eli chcemy ich u¿yæ w rytuale to musz¹ byæ jak jedno. Daj mi chwilê, muszê siê skoncentrowaæ...
+	AI_Output (self, other,"DIA_Milten_Stones_02_08"); //Je¿eli chcemy ich u¿yæ w rytuale, to musz¹ byæ jak jedno. Daj mi chwilê, muszê siê skoncentrowaæ...
 	Ai_Wait (self,2.0);	
 	AI_PlayAni (self,"T_PRACTICEMAGIC4");
 	AI_TurnToNpc 			(self,other);	

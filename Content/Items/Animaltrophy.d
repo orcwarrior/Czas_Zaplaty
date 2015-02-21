@@ -838,7 +838,7 @@ INSTANCE ItAt_WaranTongue (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_FWaranTongue (C_Item)
 {
-	name 				=	"Jêzyk ognia";
+	name 				=	"Jêzyk ognistego jaszczura";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;

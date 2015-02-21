@@ -339,7 +339,7 @@ FUNC VOID DIA_Hess_HelpOk_Info()
 	AI_Output (other, self, "DIA_Hess_HelpOk_15_09"); //Cholera, wiedzia³em, ¿e coœ tu œmierdzi. No dobra, jaki masz plan?
 	AI_Output (self, other, "DIA_Hess_HelpOk_11_10"); //Pójdziemy tam i zabijemy wszystkich orków.
 	AI_Output (other, self, "DIA_Hess_HelpOk_15_11"); //Hmm, widzê, ¿e d³ugo nad tym rozmyœla³eœ...
-	AI_Output (self, other, "DIA_Hess_HelpOk_11_12"); //Jednak naszym g³ównym celem bêd¹ orkowi dowódcy. Je¿eli zabijemy ich wszystkich ³¹cznie z genera³em to wystarczy, aby zasiaæ w ich szeregach chaos.
+	AI_Output (self, other, "DIA_Hess_HelpOk_11_12"); //Jednak naszym g³ównym celem bêd¹ orkowi dowódcy. Je¿eli zabijemy ich wszystkich ³¹cznie z genera³em, to wystarczy, aby zasiaæ w ich szeregach chaos.
 	AI_Output (self, other, "DIA_Hess_HelpOk_11_13"); //Wtedy nie bêd¹ ju¿ groŸni.
 	AI_Output (self, other, "DIA_Hess_HelpOk_11_14"); //Ruszajmy do boju!
 	AI_Output (other, self, "DIA_Hess_HelpOk_15_15"); //A jeœli zginiesz? Co wtedy zrobi Pradawny?

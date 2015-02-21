@@ -216,7 +216,7 @@ FUNC VOID DIA_Cronos_OrnamentAll_Info()
       AI_Output (other, self,"DIA_Cronos_OrnamentAll_15_02"); //Saturas czeka na dziedziñcu.
 		AI_Output (self, other,"DIA_Cronos_OrnamentAll_08_03"); //Ju¿ tam idê...
 		
-      B_LogEntry(CH3_NON_Ornament, "Odda³em Cronosowi ornamenty, powiedzia³em mu te¿, ¿eby stawi³ siê w Komnacie Portali.");
+      B_LogEntry(CH3_NON_Ornament, "Odda³em Cronosowi ornamenty, powiedzia³em mu te¿, ¿eby stawi³ siê na dziedziñcu.");
 		Npc_ExchangeRoutine(self,"RIT");
 	}
 	else

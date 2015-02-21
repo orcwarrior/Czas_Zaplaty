@@ -146,7 +146,7 @@ FUNC int  DIA_Myxir_RitualPrepare_Condition()
 FUNC VOID  DIA_Myxir_RitualPrepare_Info()
 {
 	AI_Output (other, self,"DIA_Myxir_RitualPrepare_15_01"); //Chcia³em porozmawiaæ o pewnym rytuale...
-	AI_Output (self, other,"DIA_Myxir_RitualPrepare_08_02"); //Wiem. Daj znaæ kiedy wszystko bêdzie przygotowane.
+	AI_Output (self, other,"DIA_Myxir_RitualPrepare_08_02"); //Wiem. Daj znaæ, kiedy wszystko bêdzie przygotowane.
 	B_LogEntry(CH4_RBL_Rirual, "Myxir weŸmie udzia³ w rytuale.");
 };
 

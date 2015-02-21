@@ -222,7 +222,7 @@ FUNC int  DIA_Cord_ConvoysHelp_Condition()
 FUNC void  DIA_Cord_ConvoysHelp_Info()
 {
 	AI_Output (other, self,"DIA_Cord_ConvoysHelp_15_01"); //W porz¹dku, wchodzê w to.
-	AI_Output (self, other,"DIA_Cord_ConvoysHelp_14_02"); //W koñcu ktoœ z twardymi jajami. Czasu nie mamy zbyt du¿o wiêc s³uchaj uwa¿nie.
+	AI_Output (self, other,"DIA_Cord_ConvoysHelp_14_02"); //W koñcu ktoœ z twardymi jajami. Czasu nie mamy zbyt du¿o, wiêc s³uchaj uwa¿nie.
 	AI_Output (self, other,"DIA_Cord_ConvoysHelp_14_03"); //Uda³o mi siê dowiedzieæ tylko tyle, ¿e pierwszy konwój transportuje ¿ywnoœæ. Najczêœciej wybieraj¹ uczêszczany szlak ze Starego Obozu do Nowego.
 	AI_Output (self, other,"DIA_Cord_ConvoysHelp_14_04"); //Ten jest te¿ najs³abiej chroniony. Zajmiesz siê tym sam. Wyr¿nij stra¿ników i przejmij ³adunek.
 	AI_Output (other, self,"DIA_Cord_ConvoysHelp_15_05"); //Rozumiem. Zajmê siê tym od razu.
@@ -283,7 +283,7 @@ FUNC void  DIA_Cord_ConvoysPeople_Info()
 	AI_Output (self, other,"DIA_Cord_ConvoysPeople_14_15"); //Stra¿nicy wybrani do tej roboty to wybitne skurywysny, wiêc siê z nimi nie cackaj.
 	AI_Output (self, other,"DIA_Cord_ConvoysPeople_14_16"); //Porozmawiaj z Orikiem, pomo¿e ci w wypruwaniu flaków.
 	cord_wait = B_SetDayTolerance()+2;
-	B_LogEntry		(CH5_NC_Convoys, "Tym razem to transport ludzi. Cord zasugerowa³ abym rozejrza³ siê w pobli¿u Starego Obozu a dok³adnie w okolicy bram. Da³ mi 2 dni na odnalezienie transportu. Mo¿e Orik pomo¿e mi ze stra¿nikami.");
+	B_LogEntry		(CH5_NC_Convoys, "Tym razem to transport ludzi. Cord zasugerowa³ abym rozejrza³ siê w pobli¿u Starego Obozu, a dok³adnie w okolicy bram. Da³ mi 2 dni na odnalezienie transportu. Mo¿e Orik pomo¿e mi ze stra¿nikami.");
 
 	/*****************************************
 
