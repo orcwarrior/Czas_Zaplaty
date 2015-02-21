@@ -3,7 +3,7 @@ instance SLV_850_Wedge (Npc_Default)
 	//-------- primary data --------
 	
 	name =					"Klin";
-	Npctype =				Npctype_Main;
+	Npctype =				NPCTYPE_AMBIENT; // mark - main->ambient
 	guild =					GIL_SLV;      
 	level =					6;
 	

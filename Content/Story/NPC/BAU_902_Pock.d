@@ -3,7 +3,7 @@ instance BAU_902_Pock (Npc_Default)
 	//-------- primary data --------
 	
 	name		=	"Pock";
-	npctype		=	npctype_main;
+	npctype		=	NPCTYPE_AMBIENT; // mark - main->ambient
 	guild 		=	GIL_GRD;    
 	level 		=	12;
 	voice 		=	4;

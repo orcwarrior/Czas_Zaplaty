@@ -186,6 +186,7 @@ instance Truan(GHOST)
 {
 	Mdl_SetVisualBody (self,"hum_body_Naked0",1,3 ,"Hum_Head_Bald",11,0,PAL_ARMOR_A_H);
 	
+	npctype		=	NPCTYPE_AMBIENT; // mark - main->ambient
 	guild 		=	GIL_RBL;      
 	name = "Truan";	
 	attribute[ATR_HITPOINTS_MAX]= 6000;

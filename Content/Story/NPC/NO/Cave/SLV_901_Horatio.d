@@ -3,7 +3,7 @@ instance SLV_901_Horatio (Npc_Default)
 	//-------- primary data --------
 	
 	name 		=	"Horacy";
-	npctype	 	=	npctype_main;
+	npctype	 	=	NPCTYPE_AMBIENT; // mark - main->ambient
 	guild 		=	GIL_SLV;      
 	level 		=	10;
 	voice 		= 	9;

@@ -3,7 +3,7 @@ instance BAU_903_Rufus (Npc_Default)
 	//-------- primary data --------
 	
 	name 		=	"Rufus";
-	npctype		=	npctype_main;
+	npctype		=	NPCTYPE_AMBIENT; // mark - main->ambient
 	guild 		=	GIL_GRD;      
 	level 		=	11;
 	voice 		=	2;

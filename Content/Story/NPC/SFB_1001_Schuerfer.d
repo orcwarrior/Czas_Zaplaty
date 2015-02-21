@@ -3,7 +3,7 @@ instance SFB_1001_Schuerfer (Npc_Default)
 	//-------- primary data --------
 	
 	name =					NAME_Schuerfer;                            
-	npctype =				NPCTYPE_MAIN;                            
+	npctype =				NPCTYPE_AMBIENT; // mark - main->ambient                      
 	guild =					GIL_SFB;      
 	level =					3;
 	voice =					2;

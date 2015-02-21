@@ -3,7 +3,7 @@ instance BAU_912_Jeremiah (Npc_Default)
 	//-------- primary data --------
 	
 	name 		=	"Jeremiasz";
-	npctype		=	NPCTYPE_MAIN;
+	npctype		=	NPCTYPE_AMBIENT; // mark - main->ambient
 	guild 		=	GIL_PUP;      
 	level 		=	7;
 	voice 		=	4;

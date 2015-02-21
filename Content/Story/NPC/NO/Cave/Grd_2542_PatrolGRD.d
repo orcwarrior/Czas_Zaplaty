@@ -4,7 +4,7 @@ instance Grd_2542_PatrolGRD (Npc_Default)
 	//-------- primary data --------
 	
 	name 		=	"Kat";
-	npctype		=	npctype_main;
+	npctype		=	NPCTYPE_AMBIENT; // mark - main->ambient
 	guild 		=	GIL_GRD;
 	level 		=	30;
 	voice 		=	5;
