@@ -174,7 +174,7 @@ FUNC INT DIA_RBL_2605_GARRY_After1_Condition()
 FUNC VOID DIA_RBL_2605_GARRY_After1_Info()
 {
 	AI_Output (other, self, "DIA_RBL_2605_GARRY_After1_15_01"); //Topisz ¿ale w winie?
-	AI_Output (self, other, "DIA_RBL_2605_GARRY_After1_11_02"); //A co Ciê to obchodzi.
+	AI_Output (self, other, "DIA_RBL_2605_GARRY_After1_11_02"); //A co Ciê to obchodzi?
 	AI_Output (self, other, "DIA_RBL_2605_GARRY_After1_11_03"); //Przez Ciebie nie mam teraz co robiæ.
 	AI_Output (self, other, "DIA_RBL_2605_GARRY_After1_11_04"); //Do cholery, nie mam nawet za co chlaæ...
 };
@@ -203,7 +203,7 @@ FUNC VOID DIA_RBL_2605_GARRY_After2_Info()
 	AI_Output (self, other, "DIA_RBL_2605_GARRY_After2_11_02"); //Co takiego?
 	AI_Output (other, self, "DIA_RBL_2605_GARRY_After2_11_03"); //Drwal Vam szuka pomocnika.
 	AI_Output (self, other, "DIA_RBL_2605_GARRY_After2_11_04"); //Hmm. Drwal powiadasz?
-	AI_Output (self, other, "DIA_RBL_2605_GARRY_After2_11_05"); //Œcinanie drzew, obcowania z matk¹ natur¹, heblowanie desek, g³adzenie delikatnej powierzchni drewna...
+	AI_Output (self, other, "DIA_RBL_2605_GARRY_After2_11_05"); //Œcinanie drzew, obcowanie z matk¹ natur¹, heblowanie desek, g³adzenie delikatnej powierzchni drewna...
 	AI_Output (self, other, "DIA_RBL_2605_GARRY_After2_11_06"); //To coœ dok³adnie dla mnie!
 	if (C_BodystateContains(self, BS_SIT) )
 	{

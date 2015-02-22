@@ -86,7 +86,7 @@ FUNC VOID Info_Diego_Rebel_Info()
 	AI_Output(other,self,"Info_Diego_Rebel_15_11"); //Tak jak wszyscy chcê siê st¹d wydostaæ w jednym kawa³ku. A piratem nie zosta³em z wyboru.
 	AI_Output(self,other,"Info_Diego_Rebel_11_12"); //I co ja niby mam zrobiæ?
 	AI_Output(other,self,"Info_Diego_Rebel_15_13"); //Wystarczy, ¿e poka¿esz siê cieniom w obozie.
-	AI_Output(self,other,"Info_Diego_Rebel_11_14"); //Tylko tyle? I oczywiœcie wejdê tam przez g³ówn¹ bramê, a stra¿nicy bêdê mi wiwatowaæ przez ca³¹ drogê.
+	AI_Output(self,other,"Info_Diego_Rebel_11_14"); //Tylko tyle? I oczywiœcie wejdê tam przez g³ówn¹ bramê, a stra¿nicy bêd¹ mi wiwatowaæ przez ca³¹ drogê.
 	AI_Output(self,other,"Info_Diego_Rebel_11_15"); //Pos³uchaj ch³opcze. Mo¿e w moim interesie te¿ le¿y, ¿eby kopn¹æ Gomeza w dupê tak mocno jak tylko siê da.
 	AI_Output(self,other,"Info_Diego_Rebel_11_16"); //Ale nie zamierzam zostaæ cholernym bohaterem, bo oni za krótko ¿yj¹.
 	AI_Output(self,other,"Info_Diego_Rebel_11_17"); //Nie wejdê do Starego Obozu ¿ywy i dobrze o tym wiesz.
@@ -130,7 +130,7 @@ FUNC VOID Info_Diego_Entrence_Info()
 	AI_Output(self,other,"Info_Diego_Entrence_11_03"); //Czyli?
 	AI_Output(other,self,"Info_Diego_Entrence_15_04"); //Mam dla Ciebie prezent od starego przyjaciela - Miltena. Ten zwój magiczny przeniesie Ciê do Starego Obozu.
 	AI_Output(self,other,"Info_Diego_Entrence_11_05"); //Sprytne. Mam nadziejê, ¿e nie wyl¹dujê na stole Gomeza.
-	AI_Output(self,other,"Info_Diego_Entrence_11_06"); //Jak znam Miltena to mogê spodziewaæ siê najgorszego. Ale warto zaryzykowaæ.
+	AI_Output(self,other,"Info_Diego_Entrence_11_06"); //Jak znam Miltena, to mogê spodziewaæ siê najgorszego. Ale warto zaryzykowaæ.
 	AI_Output(self,other,"Info_Diego_Entrence_11_07"); //Szkoda czasu na strzêpienie jêzyka. Do zobaczenia w obozie.
 	Log_SetTopicStatus	(CH3_RBL_Diego, LOG_SUCCESS);
 	B_LogEntry		(CH3_RBL_Diego, "Diego u¿yje teleportu do Starego Obozu.");

@@ -211,7 +211,7 @@ FUNC VOID DIA_Urt_Packages_Info()
 	AI_Output (self, other, "DIA_Urt_Packages_11_14"); //Ci maj¹ doœæ wszystkiego. Ka¿dy nimi pomiata. Wystarczy sprawiæ, ¿eby poczuli siê jak ludzie, a zerw¹ okowy i wbij¹ kilofy w plecy stra¿ników.
 	AI_Output (self, other, "DIA_Urt_Packages_11_15"); //T¹ czêœci¹ zadania mia³ siê zaj¹æ Kelvin. Ja muszê jeszcze ukryæ paczki z broni¹ i za³atwiæ kilka spraw. 
 	AI_Output (self, other, "DIA_Urt_Packages_11_16"); //Zaczniesz od przekonania Kopaczy. Porozmawiaj z ich przywódcami. Jest ich trzech - Grimes, Guy i Grim.
-	AI_Output (self, other, "DIA_Urt_Packages_11_17"); //Je¿eli chcemy utopiæ Gomeza we krwi Kopacze musz¹ stan¹æ po naszej stronie.
+	AI_Output (self, other, "DIA_Urt_Packages_11_17"); //Je¿eli chcemy utopiæ Gomeza we krwi, kopacze musz¹ stan¹æ po naszej stronie.
 	AI_Output (other, self, "DIA_Urt_Packages_15_18"); //Zrobiê co w mojej mocy.	
 	
 	// 	Log_CreateTopic	(CH3_RBL_Shadows, LOG_MISSION);
@@ -219,7 +219,7 @@ FUNC VOID DIA_Urt_Packages_Info()
 	//	B_LogEntry		(CH3_RBL_Shadows, "Muszê przekonaæ Cienie do walki po naszej stronie. Ich obecnym przywódc¹ jest Balam - kucharz Gomeza. Muszê z nim porozmawiaæ.");
 	Log_CreateTopic	(CH3_RBL_Buddler, LOG_MISSION);
 	Log_SetTopicStatus	(CH3_RBL_Buddler, LOG_RUNNING);
-	B_LogEntry		(CH3_RBL_Buddler, "¯eby przekonaæ kopaczy muszê przekonaæ ich przywódców - Grimsa, Guy'a i Grima. Od tego mo¿e zale¿eæ nie tylko los kopaczy, ale tak¿e powodzenie ataku.");
+	B_LogEntry		(CH3_RBL_Buddler, "¯eby przekonaæ kopaczy muszê przekonaæ ich przywódców - Grimesa, Guya i Grima. Od tego mo¿e zale¿eæ nie tylko los kopaczy, ale tak¿e powodzenie ataku.");
 
 	Log_SetTopicStatus	(CH3_RBL_Weapon, LOG_SUCCESS);
 	B_LogEntry		(CH3_RBL_Weapon, "Przynios³em Urtowi wszystkie paczki z broni¹. Teraz czeka mnie kolejne zadanie.");

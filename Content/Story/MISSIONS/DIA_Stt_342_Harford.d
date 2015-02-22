@@ -268,7 +268,7 @@ Cooper idzie do lochów i niech tam zostanie
 	AI_Output (other, self, "DIA_Harf_ProposalEnd_15_03"); //Co z moj¹ nagrod¹?
 	AI_Output (self, other, "DIA_Harf_ProposalEnd_11_04"); //O czym Ty mówisz?
 	AI_Output (other, self, "DIA_Harf_ProposalEnd_15_05"); //Jak to o czym? Udupi³em Coopera, ale nie jestem cholernym kap³anem Adanosa! Da³eœ s³owo!
-	AI_Output (self, other, "DIA_Harf_ProposalEnd_11_06"); //Wybacz, stary. To Kolonia Karna nie pensjonat dla akolitek Innosa.
+	AI_Output (self, other, "DIA_Harf_ProposalEnd_11_06"); //Wybacz, stary. To Kolonia Karna, nie pensjonat dla akolitek Innosa.
 	AI_Output (other, self, "DIA_Harf_ProposalEnd_15_07"); //Niech Ciê szlag trafi, cholerny k³amca!
 	AI_Output (self, other, "DIA_Harf_ProposalEnd_11_08"); //Prêdzej, czy póŸniej szlag trafi ka¿dego z nas. Powodzenia, przyjacielu.
 	

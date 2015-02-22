@@ -91,7 +91,7 @@ FUNC VOID DIA_Grim_Rebel_Info()
 	AI_Output (other, self,"DIA_Grim_Rebel_15_08"); //Ile potrzebujesz?
 	AI_Output (self, other,"DIA_Grim_Rebel_06_09"); //Co najmniej 200... 300 bry³ek powinno wystarczyæ.
 	AI_Output (other, self,"DIA_Grim_Rebel_15_10"); //Coœ mi siê wydaje, ¿e nie tylko stra¿nicy na tym zarobi¹.
-	AI_Output (self, other,"DIA_Grim_Rebel_06_11"); //Wszystko kosztuje rebeliancie. Chcesz mieæ mój g³os i poparcie to p³aæ.
+	AI_Output (self, other,"DIA_Grim_Rebel_06_11"); //Wszystko kosztuje rebeliancie. Chcesz mieæ mój g³os i poparcie, to p³aæ.
 };
 
 // **************************************************

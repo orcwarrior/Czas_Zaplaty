@@ -2,7 +2,7 @@ instance Grd_2513_Kasacz (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"KÄ…sacz";
+	name 		=	"K¹sacz";
 	npctype 	= 	npctype_main;
 	guild 		=	GIL_NONE;
 	level 		=	50;

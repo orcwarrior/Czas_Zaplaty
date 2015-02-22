@@ -89,11 +89,11 @@ FUNC INT DIA_Snaf_Hello_Condition()
 
 FUNC VOID DIA_Snaf_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Snaf_Hello_15_00"); //Jak leci?
-	AI_Output (self, other,"DIA_Snaf_Hello_01_01"); //Nienajgorzej. Cz³owiek, który umie dobrze gotowaæ, ma tutaj wielu przyjació³.
-	AI_Output (self, other,"DIA_Snaf_Hello_01_02");	//Chcesz mo¿e trochê ry¿owej zupy?
-	AI_Output (other, self,"DIA_Snaf_Hello_15_07"); //Pewnie!
-	AI_Output (self, other,"DIA_Snaf_Hello_01_08");	//Móg³byœ coœ dla mnie zrobiæ...
+	AI_Output (other, self,"DIA_Snaf_HelloCZ_15_00"); //Jak leci?
+	AI_Output (self, other,"DIA_Snaf_HelloCZ_01_01"); //Nienajgorzej. Cz³owiek, który umie dobrze gotowaæ, ma tutaj wielu przyjació³.
+	AI_Output (self, other,"DIA_Snaf_HelloCZ_01_02");	//Chcesz mo¿e trochê ry¿owej zupy?
+	AI_Output (other, self,"DIA_Snaf_HelloCZ_15_03"); //Pewnie!
+	AI_Output (self, other,"DIA_Snaf_HelloCZ_01_04");	//Móg³byœ coœ dla mnie zrobiæ...
 	
 	CreateInvItem (self,ItFoRice);
 	B_GiveInvItems(self,other,ItFoRice,1);

@@ -73,9 +73,9 @@ FUNC int DIA_Gilbert_Hallo_Condition()
 
 FUNC VOID  DIA_Gilbert_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Gilbert_Hallo_15_00"); //Co tu robisz?
-	AI_Output (self, other,"DIA_Gilbert_Hallo_04_01"); //Mia³em ju¿ doœæ Starego Obozu. Podpad³em paru ludziom Gomeza. To by³o dawno temu.
-	AI_Output (self, other,"DIA_Gilbert_Hallo_04_02"); //Teraz pewnie nikt ju¿ o mnie nie pamiêta, ale ja siê st¹d nie ruszam. Jak na mój gust - w Starym Obozie wci¹¿ jest za du¿o têpych osi³ków.
+	AI_Output (other, self,"DIA_Gilbert_HalloCZ_15_00"); //Co tu robisz?
+	AI_Output (self, other,"DIA_Gilbert_HalloCZ_04_01"); //Mia³em ju¿ doœæ Starego Obozu. Podpad³em paru ludziom Gomeza. To by³o dawno temu.
+	AI_Output (self, other,"DIA_Gilbert_HalloCZ_04_02"); //Teraz pewnie nikt ju¿ o mnie nie pamiêta, ale ja siê st¹d nie ruszam. Jak na mój gust - w Starym Obozie wci¹¿ jest za du¿o têpych osi³ków.
 
 
 };
@@ -194,7 +194,7 @@ FUNC VOID  DIA_Gilbert_BerrysOk_Info()
 	AI_Output (self, other,"DIA_Gilbert_BerrysOk_04_01"); //Konfitury ju¿ gotowe. Tak jak siê umawialiœmy, 20 s³oików.
 	CreateInvItems (self, konfitury,20); 
 	B_GiveInvItems (self, other, konfitury, 20);
-	AI_Output (self, other,"DIA_Gilbert_BerrysOk_04_02"); //Zanieœ je Draxowi
+	AI_Output (self, other,"DIA_Gilbert_BerrysOk_04_02"); //Zanieœ je Draxowi.
 	AI_Output (other, self,"DIA_Gilbert_BerrysOk_15_03"); //Dziêki. Postaram siê ich nie zjeœæ po drodze.
 	AI_Output (self, other,"DIA_Gilbert_BerrysOk_04_04"); //I pamiêtaj, ¿e zawsze mo¿esz mi sprzedaæ jagody.
 	B_LogEntry		(CH1_Rbl_FindGilbert, "W koñcu mam konfitury dla Draxa - wszystkie 20 weków.");

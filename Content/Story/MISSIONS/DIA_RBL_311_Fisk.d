@@ -55,7 +55,7 @@ FUNC VOID DIA_Fisk_Bartender_Info()
 	AI_Output (other, self, "DIA_Fisk_Bartender_15_01"); //Jesteœ karczmarzem?
 	AI_Output (self, other, "DIA_Fisk_Bartender_12_02"); //Nie, do cholery. Ale ktoœ musi prowadziæ interes.
 	AI_Output (other, self, "DIA_Fisk_Bartender_15_03"); //Czym zajmowa³eœ siê wczeœniej?
-	AI_Output (self, other, "DIA_Fisk_Bartender_12_04"); //By³em kupcem w Starym Obozie i wiod³o mi siê nie najgorzej, dopóki Gomez nie zacz¹³ usuwaæ Cieni.
+	AI_Output (self, other, "DIA_Fisk_Bartender_12_04"); //By³em kupcem w Starym Obozie i wiod³o mi siê nie najgorzej, dopóki Gomez nie zacz¹³ usuwaæ cieni.
 	AI_Output (self, other, "DIA_Fisk_Bartender_12_05"); //Wtedy stwierdzi³em, ¿e nadszed³ w³aœciwy czas na zmianê otoczenia.
 	AI_Output (self, other, "DIA_Fisk_Bartender_12_06"); //Z Cavalornem znam siê od lat. Jak widzisz mam oko na tutejsze menty przesiaduj¹ce w ober¿y.
 	AI_Output (self, other, "DIA_Fisk_Bartender_12_07"); //Ale Ciebie widzê tu po raz pierwszy. Ten pancerz...
@@ -126,7 +126,7 @@ FUNC VOID DIA_Fisk_Fight_Info()
 func void DIA_Fisk_Fight_Yes()
 {
 	AI_Output (other, self,"DIA_Fisk_Fight_Yes_15_00"); //W porz¹dku. Zobaczê co da siê zrobiæ.
-	AI_Output (self, other,"DIA_Fisk_Fight_Yes_12_01"); //Œwietnie. Tylko nie upaprajcie pod³ogi za bardzo krwi¹ bo ciê¿ko j¹ póŸniej doszorowaæ.
+	AI_Output (self, other,"DIA_Fisk_Fight_Yes_12_01"); //Œwietnie. Tylko nie upaprajcie pod³ogi za bardzo krwi¹, bo ciê¿ko j¹ póŸniej doszorowaæ.
 	AI_Output (self, other,"DIA_Fisk_Fight_Yes_12_02"); //I ma byæ bez ofiar. Taka spokojna burda na lepsze kr¹¿enie.
 	Log_CreateTopic(CH1_Rbl_SkipFight, LOG_MISSION);
 	B_LogSetTopicStatus(CH1_Rbl_SkipFight, LOG_RUNNING);

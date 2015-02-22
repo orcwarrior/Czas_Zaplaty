@@ -123,7 +123,7 @@ FUNC void  STT_Balam_Diego_Info()
 	AI_Output (self, other,"STT_Balam_Diego_Info_07_02"); //To œwietnie. Teraz go przyprowadŸ!
 	AI_Output (other, self,"STT_Balam_Diego_Info_15_03"); //To nie takie proste. Najpierw muszê znaleŸæ na to jakiœ sposób. 
 	AI_Output (self, other,"STT_Balam_Diego_Info_07_04"); //W takim razie poœpiesz siê do cholery! Mamy coraz mniej czasu...
-	AI_Output (self, other,"STT_Balam_Diego_Info_07_05"); //Jak tylko coœ wymyœlisz to daj mi znaæ.
+	AI_Output (self, other,"STT_Balam_Diego_Info_07_05"); //Jak tylko coœ wymyœlisz, to daj mi znaæ.
 	//TODO:/CORRECT: Crappy dialog added by orc
 	AI_Output (self, other,"STT_Balam_Diego_Info_07_06"); //Poczekaj! Mam pomys³.
 	AI_Output (self, other,"STT_Balam_Diego_Info_07_07"); //Magowie ognia potrafili teleportowaæ siê poza mury zamku i wróciæ kiedy przysz³a im na to ochota.

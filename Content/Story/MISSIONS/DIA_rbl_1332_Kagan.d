@@ -44,7 +44,7 @@ FUNC INT DIA_BaalKagan_Hello_Condition()
 
 FUNC VOID DIA_BaalKagan_Hello_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_Hello_15_00"); //Jesteœ z obozu Sekty, nieprawda¿?
+	AI_Output			(other, self,"DIA_BaalKagan_Hello1_15_00"); //Jesteœ z obozu Sekty, nieprawda¿?
 	AI_Output			(self, other,"DIA_BaalKagan_Hello1_13_01"); //By³em, ale ju¿ nie nale¿ê do œwirów z bagna.
 	AI_Output			(self, other,"DIA_BaalKagan_Hello1_13_02"); //Jestem Baal Kagan, znaczy bez tego Baal. A Œni¹cy to kawa³ek cuchn¹cego gówna.
 };

@@ -213,8 +213,8 @@ FUNC int DIA_BaalTaran_Greet_Condition()
 
 FUNC VOID  DIA_BaalTaran_Greet_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_Greet_15_00"); //Jestem tu nowy. Kim jesteœ?
-	AI_Output (self, other,"DIA_BaalTaran_Greet_05_01"); //Jestem Baal Taran z Bractwa Œni¹cego.
+	AI_Output (other, self,"DIA_BaalTaran_GreetCZ_15_00"); //Jestem tu nowy. Kim jesteœ?
+	AI_Output (self, other,"DIA_BaalTaran_GreetCZ_05_01"); //Jestem Baal Taran z Bractwa Œni¹cego.
 };
 
 INSTANCE DIA_BaalTaran_CanYouTeachMe (C_INFO)

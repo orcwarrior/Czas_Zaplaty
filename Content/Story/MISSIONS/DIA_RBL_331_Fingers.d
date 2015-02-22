@@ -286,10 +286,10 @@ FUNC INT DIA_Fingers_Lehrer_Condition()
 
 FUNC VOID DIA_Fingers_Lehrer_Info()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_15_00"); //Czego mo¿esz mnie nauczyæ?
-	AI_Output (self, other,"DIA_Fingers_Lehrer_05_02"); //To zale¿y tylko od tego, co chcia³byœ wiedzieæ.
-   AI_Output (other, self,"DIA_Fingers_Lehrer_PICKPOCKET_15_00"); //Chcia³bym zostaæ zrêcznym kieszonkowcem!
-   AI_Output (self, other,"DIA_Fingers_Lehrer_05_03"); //No dobrze, mogê ciê zapoznaæ z tajnikami tej sztuki...
+	AI_Output (other, self,"DIA_Fingers_LehrerCZ_15_00"); //Czego mo¿esz mnie nauczyæ?
+	AI_Output (self, other,"DIA_Fingers_LehrerCZ_05_01"); //To zale¿y tylko od tego, co chcia³byœ wiedzieæ.
+   AI_Output (other, self,"DIA_Fingers_LehrerCZ_15_02"); //Chcia³bym zostaæ zrêcznym kieszonkowcem!
+   AI_Output (self, other,"DIA_Fingers_LehrerCZ_05_03"); //No dobrze, mogê ciê zapoznaæ z tajnikami tej sztuki...
 
    Log_CreateTopic(GE_TeacherOR, LOG_NOTE);
    B_LogEntry(GE_TeacherOR, "R¹czka mo¿e mnie nauczyæ okradania innych.");

@@ -47,7 +47,7 @@ FUNC VOID DIA_Guy_Hello_Info()
    AI_Output (self, other,"DIA_Guy_Hello_03_01"); //Mhm? Nie widzia³em Ciê tutaj. Jesteœ nowy, prawda?
    AI_Output (other, self,"DIA_Guy_Hello1_15_02"); //Przyby³em niedawno. Mo¿esz powiedzieæ mi coœ wiêcej o tym obozie?
    AI_Output (self, other,"DIA_Guy_Hello1_03_03"); //A co tutaj jest do opowiadania? Ca³ym burdelem rz¹dz¹ stra¿nicy i magnaci.
-   AI_Output (self, other,"DIA_Guy_Hello_03_04"); //Jak chcesz ¿yæ to s³uchasz i robisz wszystko czego od Ciebie za¿¹daj¹.
+   AI_Output (self, other,"DIA_Guy_Hello_03_04"); //Jak chcesz ¿yæ, to s³uchasz i robisz wszystko czego od Ciebie za¿¹daj¹.
    AI_Output (other, self,"DIA_Guy_Hello1_15_05"); //I wy siê na to godzicie?
    AI_Output (self, other,"DIA_Guy_Hello_03_06"); //Ciszej! Jeszcze nas ktoœ us³yszy... Muszê ju¿ iœæ.
    B_StopProcessInfos   (self);
