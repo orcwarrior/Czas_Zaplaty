@@ -2,7 +2,7 @@ instance STT_324_Balam (Npc_Default)
 {
 	//-------- primary data --------
 	name 		=		"Balam";
-	npctype 		=	NPCTYPE_AMBIENT; // mark - main->ambient
+	npctype 		=	NPCTYPE_MAIN;
 	guild 		=		GIL_GRD;
 	level 		=		15;
 	

@@ -3,7 +3,7 @@ instance VLK_511_Herek (Npc_Default)
 	//-------- primary data --------
 	
 	name =							"Herek";
-	npctype =						npctype_Main;
+	npctype =						npctype_ambient;
 	guild =							GIL_NONE;      
 	level =							2;
 	
