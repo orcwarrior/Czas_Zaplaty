@@ -31,6 +31,9 @@ FUNC VOID DIA_Jeff_Hello_Info()
 	AI_Output (other, self, "DIA_Jeff_Hello_15_03"); //Pogadaæ. Czym siê zajmujesz?
 	AI_Output (self, other, "DIA_Jeff_Hello_07_04"); //Sprzedajê to i tamto, obijam te¿ mordy ciekawskim typkom.
 	AI_Output (other, self, "DIA_Jeff_Hello_15_05"); //Zrozumia³em aluzjê.
+	
+	Log_CreateTopic(GE_TraderOC, LOG_NOTE);
+	B_LogEntry(GE_TraderOC,	"Jeff handluje ró¿nymi rzeczami.");
 };
 
 //***************************************
