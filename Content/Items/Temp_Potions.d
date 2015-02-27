@@ -744,9 +744,9 @@ INSTANCE ItFo_Potion_Spec_Bash(C_Item)
 	
 	weight			=	TP_TYPE_SPEC;	
 	range			=	1;//bash
-	description			= "Orkowa werwa.";
+	description			= "Orkowa werwa";
 	TEXT[0]				= "Daje szanse na og³uszenie przeciwników";	
-   TEXT[0]				= "w czasie walki wrêcz.";	
+   TEXT[1]				= "w czasie walki wrêcz.";	
 
 	TEXT[4]			= "Czas trwania (sek): ";				COUNT[4]	= 30;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= item.value;

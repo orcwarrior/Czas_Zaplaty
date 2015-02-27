@@ -430,7 +430,7 @@ FUNC VOID DIA_Duke_Hello_Info()
 		AI_TurnToNpc(CH2_Patrol_g5, other);
 		AI_Output (self, other, "DIA_Duke_Hello_11_06"); //Zap³acisz za to krwi¹ durniu.
 		AI_Output (other, self, "DIA_Duke_Hello_15_07"); //Nie s¹dzê!
-		B_LogEntry(CH2_RBL_GuardCamp, "Obrzuca³em stra¿ników obelgami - teraz muszê 'tylko' ich zabiæ.");
+		B_LogEntry(CH2_RBL_GuardCamp, "Obrzuci³em stra¿ników obelgami - teraz muszê 'tylko' ich zabiæ.");
 
 		B_StopProcessInfos(self);
 

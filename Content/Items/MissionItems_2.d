@@ -72,7 +72,7 @@ func void UseDebt_List ()
 				Doc_PrintLine	( nDocID,  0, "Aidan - 400 bry³ek + 200 bry³ek odsetek"					);
 				Doc_PrintLine	( nDocID,  0, ""					);
 				Doc_PrintLine	( nDocID,  0, "Lewy i Prawy to bracia, obozuj¹ na szlaku"					);
-				Doc_PrintLines	( nDocID,  0, "z prze³êczy. Nieopodal Starego Obozu - to œwiry uwa¿aj."					);
+				Doc_PrintLines	( nDocID,  0, "z prze³êczy. Nieopodal Starego Obozu - to œwiry, uwa¿aj."					);
 				Doc_PrintLine	( nDocID,  0, "Leaf i Aidan to cwaniaki z twojego obozu, wiêc"					);
 				Doc_PrintLine	( nDocID,  0, "nie powinieneœ mieæ problemu z odzyskaniem"					);
 				Doc_PrintLine	( nDocID,  0, "rudy."					);
@@ -130,7 +130,7 @@ INSTANCE ItWrPiwoszNote(C_Item)
 	on_state[0]				=	ItWrPiwoszNote_List;
 	description				=	"Notatki Piwosza";
 
-	TEXT[0]					=	"Kto by pomysla³ ¿e";
+	TEXT[0]					=	"Kto by pomyœla³, ¿e";
 	TEXT[1]					=	"Piwosz potrafi pisaæ.";
 };
 func void ItWrPiwoszNote_List ()
@@ -226,11 +226,11 @@ FUNC VOID Use_Katrakanat_book()
 					Doc_SetPage 	( nDocID,  1, "Book_Mage_R.tga",	0		);
 					
 					//1 Strona
-   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
+   					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "(Ksiêga oprawiona jest w... ludzk¹ skórê!)"			);
-					Doc_PrintLine	( nDocID,  0, "(Pod spodem, ktoœ napisa³ coœ nierównym pismem)");
+					Doc_PrintLines	( nDocID,  0, "(Ksiêga oprawiona jest w... ludzk¹ skórê!)"			);
+					Doc_PrintLines	( nDocID,  0, "(Pod spodem, ktoœ napisa³ coœ nierównym pismem)");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "Ten, który zechce wyrzec siê œcie¿ki mroku i pod¹¿y drog¹ œwiat³a, pozna prawdziwe Ÿród³o pradawnej potêgi. Dane mu bêdzie u¿yæ jej, aby skruszyæ ³añcuchy zapomnienia i zg³êbiæ tajemnicê przeklêtego imienia, z pierwszych znaków s³ów spisanych winem ¿ycia...");
@@ -330,7 +330,8 @@ INSTANCE KatarMap(C_Item)
 
 	description				= "Mapa Katrakanat";
 
-	TEXT[0]					= "Mapa wskazuj¹ca miejsca ukrycia czêœci Katrakanat.";
+	TEXT[0]					= "Mapa wskazuj¹ca miejsca ukrycia";
+	TEXT[1]					= "czêœci Katrakanat.";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
 	////COUNT[1]			= ;

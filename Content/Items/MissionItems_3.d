@@ -631,7 +631,7 @@ INSTANCE OrnMap4(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseNefarMap4;
 
-	description				= "Wskazuje miejsce ukrycia ostatniego ornamentu";
+	description				= "Miejsce ukrycia ostatniego ornamentu";
 
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;

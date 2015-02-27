@@ -260,7 +260,7 @@ func void TimeEventsWorldZen()
 			B_GiveXP(100);
 			
 			B_LogSetTopicStatus(CH2_RBL_DrunkmanSecret, LOG_SUCCESS);
-			B_LogEntry(CH2_RBL_DrunkmanSecret, "Znalaz≥em bimbrownie Piwosza! Sprawdümy, co tu ukrywa...");
+			B_LogEntry(CH2_RBL_DrunkmanSecret, "Znalaz≥em bimbrowniÍ Piwosza! Sprawdümy, co tu ukrywa...");
 		};
 
 		if (Black_mag_arrived == 1)

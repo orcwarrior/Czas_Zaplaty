@@ -703,8 +703,8 @@ FUNC VOID DIA_RATFORD_BookKnow_Info()
 	Info_ClearChoices (DIA_RATFORD_BookKnow);
 	Info_AddChoice (DIA_RATFORD_BookKnow, "Nie mam pojêcia.", DIA_RATFORD_BookKnow_No);
 	Info_AddChoice (DIA_RATFORD_BookKnow, "Mo¿e trzeba po³¹czyæ pierwsze litery ka¿dego wersu?", DIA_RATFORD_BookKnow_Know);
-	Info_AddChoice (DIA_RATFORD_BookKnow, "Pewnie trzeba z³o¿yæ wyraz z pierwszych liter pierwszego zdania.", DIA_RATFORD_BookKnow_Maybe);
-	Info_AddChoice (DIA_RATFORD_BookKnow, "Gdyby tak wzi¹æ pierwszy znak z ka¿dego wyrazu w ka¿dym zdaniu...", DIA_RATFORD_BookKnow_Hmm);
+	Info_AddChoice (DIA_RATFORD_BookKnow, "Trzeba z³o¿yæ wyraz z pierwszych liter pierwszego zdania.", DIA_RATFORD_BookKnow_Maybe);
+	Info_AddChoice (DIA_RATFORD_BookKnow, "Wzi¹æ pierwszy znak z ka¿dego wyrazu w ka¿dym zdaniu...", DIA_RATFORD_BookKnow_Hmm);
 };
 
 FUNC VOID DIA_RATFORD_BookKnow_No()

@@ -84,7 +84,7 @@ FUNC VOID DIA_Drunk_Lazur_Info()
 	AI_Output (self, other, "DIA_Drunk_Lazur_11_08"); //Nie ka¿dego i nie wszystko mo¿na kupiæ, piracie.
 	AI_Output (self, other, "DIA_Drunk_Lazur_11_09"); //I nie zbli¿aj siê do mojego kufra... hik!
 	
-   B_LogEntry		(CH2_Rbl_Lazur, "Rozmowa z Opojem nic mi nie da³a. Stary pijak zarzeka³ siê, ¿e w jego skrzyni na pewno nie ma lazurowego trzmiela, wiêc to powinno byæ pierwsze miejsce, które muszê sprawdziæ.");
+   B_LogEntry		(CH2_Rbl_Lazur, "Rozmowa z opojem nic mi nie da³a. Stary pijak zarzeka³ siê, ¿e w jego skrzyni na pewno nie ma lazurowego trzmiela, wiêc to powinno byæ pierwsze miejsce, które muszê sprawdziæ.");
 };
 
 // **************************************************

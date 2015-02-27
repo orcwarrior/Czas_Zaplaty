@@ -245,7 +245,7 @@ FUNC VOID DIA_Leaf_Trol1_Yes()
 	AI_Output (self, other, "DIA_Leaf_Trol1_Yes_11_10"); //He, he, rozumiesz... Ty³em, he, he...
 	AI_Output (other, self, "DIA_Leaf_Trol1_Yes_15_11"); //Tak, bardzo zabawne. Je¿eli to has³o nie oka¿e siê prawdziwe, to wrócê po Ciebie i utnê Ci to i tamto!
 	AI_Output (self, other, "DIA_Leaf_Trol1_Yes_11_12"); //Mam nadziejê, ¿e siê nie zmieni³o... 
-	AI_Output (other, self, "DIA_Leaf_Trol1_Yes_15_13"); //Lepiej dla Ciebie i Twoich cz³onków ¿eby tak by³o!
+	AI_Output (other, self, "DIA_Leaf_Trol1_Yes_15_13"); //Lepiej dla Ciebie i Twoich cz³onków, ¿eby tak by³o!
 	
    B_LogEntry		(CH2_Rbl_BlackTroll, "W koñcu wydusi³em od Leafa jakieœ konkrety. £owcy nie wpuszczaj¹ do obozu nikogo, kto nie zna has³a. Leaf twierdzi, ze has³o brzmi 'Nigdy nie odwracaj siê ty³em do stra¿nika', lepiej dla niego, ¿eby to by³a prawda...");
 	Info_ClearChoices (DIA_Leaf_Trol1);

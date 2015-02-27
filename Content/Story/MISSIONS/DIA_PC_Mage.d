@@ -154,7 +154,7 @@ FUNC INT DIA_Milten_KatrakanatCollected_Condition()
 func VOID DIA_Milten_KatrakanatCollected_Info()
 {
 	AI_Output (self, other,"DIA_Milten_KatrakanatCollected_02_00"); //Jak sobie radzisz ze z³o¿eniem Katrakanatu?
-	AI_Output (other, self,"DIA_Milten_KatrakanatCollected_15_01"); //Mam wszystkie czêœci przy sobie.
+	AI_Output (other, self,"DIA_Milten_KatrakanatCollected_15_01"); //Zdoby³em wszystkie czêœci.
 	AI_Output (self, other,"DIA_Milten_KatrakanatCollected_02_02"); //Niemo¿liwe!
 	AI_Output (self, other,"DIA_Milten_KatrakanatCollected_02_03"); //Nadszed³ czas, by to co rozdarte, znów po³¹czy³o siê w ca³oœæ.
 	AI_Output (other, self,"DIA_Milten_KatrakanatCollected_15_04"); //W takim razie nie przeszkadzam, bywaj.

@@ -307,7 +307,7 @@ FUNC VOID DIA_BaalKagan_StuffHave2_Info()
 	}
 	else
 	{
-		AI_Output			(self, other,"DIA_BaalKagan_StuffHave2_13_02"); //Zabieraj swoj¹ dolê i zejdŸ mi z oczu, krwiopijco!
+		AI_Output			(self, other,"DIA_BaalKagan_StuffHave2_13_04"); //Zabieraj swoj¹ dolê i zejdŸ mi z oczu, krwiopijco!
 		CreateInvItems (self, ItMiNugget, 100);
 		B_GiveInvItems (self, other, ItMiNugget, 100);
 	};

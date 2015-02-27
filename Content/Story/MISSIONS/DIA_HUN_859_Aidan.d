@@ -1130,7 +1130,7 @@ FUNC VOID DIA_Aidan_armor_Info()
 {
    AI_Output (other, self, "DIA_Aidan_armor_15_01"); //Mo¿esz mi wykuæ pewien pancerz ze skóry....
    AI_Output (self, other, "DIA_Aidan_armor_11_02"); //Zaczekaj no, ja tylko wykuwam broñ, nie jestem ¿adnym p³atnerzem.
-   AI_Output (self, other, "DIA_Aidan_armor_11_03"); //Tak, a te wszystkie pancerze rebeliantów pojawi³y siê ni st¹d, ni zow¹d?
+   AI_Output (other, self, "DIA_Aidan_armor_15_03"); //Tak, a te wszystkie pancerze rebeliantów pojawi³y siê ni st¹d, ni zow¹d?
    AI_Output (self, other, "DIA_Aidan_armor_11_04"); //Przestaæ mi zawracaæ dupê, mam pe³ne rêce roboty.
 };
 

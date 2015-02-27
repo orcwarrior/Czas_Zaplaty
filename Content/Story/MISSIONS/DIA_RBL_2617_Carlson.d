@@ -313,7 +313,7 @@ FUNC VOID DIA_RBL_2617_Carlson_armor_Info()
    
    AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_03"); //Ja pierdole, przecie¿ to skóra czarnego trolla! Nie s¹dzi³em, ¿e mo¿esz zabiæ takiego skurczybyka.
    AI_Output (other, self, "DIA_RBL_2617_Carlson_armor_15_04"); //Mo¿emy przejœæ do sedna sprawy?
-   AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_05"); //Ach tak mogê ci wykuæ pancerz, ale przys³uga za przys³ugê.
+   AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_05"); //Ach tak, mogê ci wykuæ pancerz, ale przys³uga za przys³ugê.
    AI_Output (other, self, "DIA_RBL_2617_Carlson_armor_15_06"); //¯e co!? Znowu mam robiæ za jakiegoœ ch³opca na posy³ki?
    AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_07"); //Mam ci zrobiæ ten pancerz czy nie?
    AI_Output (other, self, "DIA_RBL_2617_Carlson_armor_15_08"); //Ech... no dobra, mów, czego chcesz.
@@ -330,7 +330,7 @@ FUNC VOID DIA_RBL_2617_Carlson_armor_Info()
    AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_15"); //Tak wiêc, od razu zabi³em tego peda³a, ale niestety mia³em pecha.
    AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_16"); //Ten pijak Leaf wszystko widzia³, wykorzysta³ to i mnie teraz przeœladuje.
    AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_17"); //¯¹da co 5 dni ode mnie 800 bry³ek rudy, ¿eby nie powiedzia³ wszystkim, ¿e siê rucha³em... z mê¿czyzn¹.
-   AI_Output (other, self, "DIA_RBL_2617_Carlson_armor_15_18"); //¯e co do cholery?! Dlaczego nie wsadzisz mu topór prosto w dupê?
+   AI_Output (other, self, "DIA_RBL_2617_Carlson_armor_15_18"); //¯e co do cholery?! Dlaczego nie wsadzisz mu topora prosto w dupê?
    AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_19"); //Bardzo tego chcê, ale jak ju¿ mówi³em podpad³em Cavalornowi i jak jeszcze raz nabrojê...
    AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_20"); //...to bêdê musia³ masowaæ Aidanowi œmierdz¹ce stopy przez ca³y miesi¹c.
    AI_Output (other, self, "DIA_RBL_2617_Carlson_armor_15_21"); //He, he, a to ci Cavalorn. Byæ mo¿e bêdziesz niez³ym masa¿yst¹.

@@ -1144,9 +1144,9 @@ FUNC VOID DIA_Cavalorn_BlackTrollBack_Info()
    B_GiveXP (2000);
    
    AI_Output (other, self, "DIA_Cavalorn_BlackTrollBack_15_01"); //£owcy trolli stan¹ po naszej stronie!
-   AI_Output (self, other,"DIA_Cavalorn_BlackTrollBack_12_02"); //Œwietna robota, dziêki Tobie zdobyliœmy kolejnych sojuszników.
+   AI_Output (self, other,"DIA_Cavalorn_BlackTrollBack_12_02"); //Œwietna robota! Dziêki Tobie zdobyliœmy kolejnych sojuszników.
    AI_Output (self, other,"DIA_Cavalorn_BlackTrollBack_12_03"); //Gomez ud³awi siê z wœciek³oœci, jak siê o tym dowie.
-   AI_Output (self, other,"DIA_Cavalorn_BlackTrollBack_12_04"); //Dobra robota, myœlê, ¿e jesteœ ju¿ gotów by wybraæ swoj¹ œcie¿kê w obozie.
+   AI_Output (self, other,"DIA_Cavalorn_BlackTrollBack_12_04"); //Dobra robota! Myœlê, ¿e jesteœ ju¿ gotów, by wybraæ swoj¹ œcie¿kê w obozie.
    AI_Output (other, self, "DIA_Cavalorn_BlackTrollBack_15_05"); //Mówisz o specjalizacji?
    AI_Output (self, other,"DIA_Cavalorn_BlackTrollBack_12_06"); //Tak, staramy siê, aby ka¿dy robi³ to, co lubi i w czym jest najlepszy.
    AI_Output (self, other,"DIA_Cavalorn_BlackTrollBack_12_07"); //Musisz sam okreœliæ, co chcia³byœ robiæ.   
