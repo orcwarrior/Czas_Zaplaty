@@ -496,7 +496,7 @@ FUNC VOID DIA_Rodney_Help_Info()
 	AI_Output (self, other,"DIA_Rodney_Help_11_15"); //Pomijaj¹c to, ¿e nie mam pojêcia, gdzie mo¿na znaleŸæ te ruiny to wiesz, ¿e ja nigdy nie nale¿a³em do najodwa¿niejszych.
 	AI_Output (self, other,"DIA_Rodney_Help_11_16"); //Nie mam zamiaru ryzykowaæ ¿ycia nawet za cenê spe³nienia marzeñ.
 	AI_Output (other, self,"DIA_Rodney_Help_15_17"); //Rozumiem. Czyli szukasz idioty, który znajdzie Cytadelê, nie da siê zabiæ orkom i odnajdzie klucz?
-	AI_Output (self, other,"DIA_Rodney_Help_11_18"); //Gdybym szuka³ idioty to nie rozmawia³bym z Tob¹. Masz wyj¹tkowe zdolnoœci, zawsze spadasz na cztery ³apy i wychodzisz ca³o z najgorszych opresji. To rzadka przywara...
+	AI_Output (self, other,"DIA_Rodney_Help_11_18"); //Gdybym szuka³ idioty, to nie rozmawia³bym z Tob¹. Masz wyj¹tkowe zdolnoœci, zawsze spadasz na cztery ³apy i wychodzisz ca³o z najgorszych opresji. To rzadka przywara...
 	AI_Output (self, other,"DIA_Rodney_Help_11_19"); //To jak, pomo¿esz mi?
 
 	Info_ClearChoices (DIA_Rodney_Help);
@@ -516,7 +516,7 @@ FUNC VOID DIA_Rodney_Help_Yes()
 	AI_Output (other, self,"DIA_Rodney_Help_Yes_15_05"); //Pewnie nied³ugo tego po¿a³ujê... 
 	Log_CreateTopic	(CH3_RBL_RodneyHelp, LOG_MISSION);
 	Log_SetTopicStatus	(CH3_RBL_RodneyHelp, LOG_RUNNING);
-	B_LogEntry		(CH3_RBL_RodneyHelp, "Obieca³em pomóc Rodneyowi. Stary pirat od zawsze chcia³ zostaæ magiem, a teraz pojawi³a siê taka mo¿liwoœæ. Jednak zadanie inicjuj¹ce go przerasta i poprosi³ mnie o pomoc. Muszê odnaleŸæ sposób na to aby dostaæ siê do podziemi Klasztoru Zmiennokszta³tnych. Niestety poszukiwania muszê rozpocz¹æ od odnalezienie Orkowej Cytadeli.");
+	B_LogEntry		(CH3_RBL_RodneyHelp, "Obieca³em pomóc Rodneyowi. Stary pirat od zawsze chcia³ zostaæ magiem, a teraz pojawi³a siê taka mo¿liwoœæ. Jednak zadanie inicjuj¹ce go przerasta i poprosi³ mnie o pomoc. Muszê odnaleŸæ sposób na to, aby dostaæ siê do podziemi Klasztoru Zmiennokszta³tnych. Niestety poszukiwania muszê rozpocz¹æ od odnalezienie Orkowej Cytadeli.");
 	B_StopProcessInfos	(self);
 	
 	/***************

@@ -282,10 +282,10 @@ FUNC VOID DIA_FISK_Spy_Info()
 	AI_Output (other, self, "DIA_FISK_Spy_15_03"); //Kim by³eœ w Starym Obozie?
 	AI_Output (self, other, "DIA_FISK_Spy_07_04"); //Nikim wa¿nym. Zwyk³ym kupcem.
 	AI_Output (other, self, "DIA_FISK_Spy_15_05"); //Dobrze znasz Gomeza?
-	AI_Output (self, other, "DIA_FISK_Spy_07_06"); //Tyle ile trzeba by³o by prze¿yæ wœród magnatów. A po co te pytania?
+	AI_Output (self, other, "DIA_FISK_Spy_07_06"); //Tyle ile trzeba by³o, by prze¿yæ wœród magnatów. A po co te pytania?
 	AI_Output (other, self, "DIA_FISK_Spy_15_07"); //Jestem tylko ciekaw czym siê wczeœniej zajmowa³eœ.
 	AI_Output (self, other, "DIA_FISK_Spy_07_08"); //Ciekawoœæ w Kolonii to czêsta przyczyna k³opotów. Zapamiêtaj to.
-	B_LogEntry		(CH2_Rbl_Spy, "Fisk by³ kimœ wa¿nym w Obozie Gomeza. Dobrze zna³ magnatów. Ciekawe czy to tylko przypadek, ¿e znalaz³ siê w Obozie Rebeliantów?");
+	B_LogEntry		(CH2_Rbl_Spy, "Fisk by³ kimœ wa¿nym w obozie Gomeza. Dobrze zna³ magnatów. Ciekawe czy to tylko przypadek, ¿e znalaz³ siê w Obozie Rebeliantów?");
 	
 	if (spy_count == 12)
 	{
@@ -307,7 +307,7 @@ INSTANCE DIA_FISK_Spy1 (C_INFO)
 	information		= DIA_FISK_Spy1_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "Podobno musia³eœ uciekaæ z obozu stra¿ników przez jakiegoœ skazañca."; 
+	description		= "Podobno musia³eœ uciekaæ ze Starego Obozu."; 
 };
 
 FUNC INT DIA_FISK_Spy1_Condition()
@@ -322,11 +322,11 @@ FUNC VOID DIA_FISK_Spy1_Info()
 {
 	tony_spy = tony_spy + 1;
    
-	AI_Output (other, self, "DIA_FISK_Spy1_15_01"); //Podobno musia³eœ uciekaæ z obozu stra¿ników przez jakiegoœ skazañca.
+	AI_Output (other, self, "DIA_FISK_Spy1_15_01"); //Podobno musia³eœ uciekaæ ze Starego Obozu przez jakiegoœ skazañca.
 	AI_Output (self, other, "DIA_FISK_Spy1_07_02"); //To nie by³ zwyczajny skazaniec. 
 	AI_Output (self, other, "DIA_FISK_Spy1_07_03"); //Powiedzmy, ¿e sprzeda³em mu wiêcej ni¿ powinienem.
 	AI_Output (other, self, "DIA_FISK_Spy1_15_04"); //A Gomezowi siê to nie spodoba³o.
-	AI_Output (self, other, "DIA_FISK_Spy1_07_05"); //W rzeczy samej. Nie mia³em wielkiego wyboru. Nie chcia³em podzieliæ losu Magów Ognia czy niektórych spoœród Cieni.
+	AI_Output (self, other, "DIA_FISK_Spy1_07_05"); //W rzeczy samej. Nie mia³em wielkiego wyboru. Nie chcia³em podzieliæ losu magów ognia czy niektórych spoœród cieni.
 	AI_Output (other, self, "DIA_FISK_Spy1_15_06"); //Myœlisz, ¿e Gomez móg³by mieæ w obozie swojego szpiega?
 	AI_Output (self, other, "DIA_FISK_Spy1_07_07"); //Je¿eli myœlisz o mnie, to nawet za górê rudy bym dla niego nie pracowa³.
 	AI_Output (self, other, "DIA_FISK_Spy1_07_08"); //Gomez to szaleniec, który prêdzej czy póŸniej zap³aci za swoje zbrodnie.

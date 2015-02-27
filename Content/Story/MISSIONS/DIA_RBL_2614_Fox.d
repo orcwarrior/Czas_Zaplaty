@@ -219,7 +219,7 @@ FUNC VOID DIA_Fox_Camp_Info()
 	AI_Output (other, self, "DIA_Fox_Camp_15_06"); //Gulasz?
 	AI_Output (self, other, "DIA_Fox_Camp_11_07"); //Tak, potrawka z miêsa kretoszczurów i cholera wie czego jeszcze.
 	AI_Output (self, other, "DIA_Fox_Camp_11_08"); //Mam zapas tego paskudztwa w kufrze, w magazynku. Ale nie dam rady roznieœæ potrawki.
-	AI_Output (other, self, "DIA_Fox_Camp_15_09"); //Dobra, przestañ mêdrkowaæ bo Ci g³owa od tego spuchnie. Pomogê Ci z gulaszem.
+	AI_Output (other, self, "DIA_Fox_Camp_15_09"); //Dobra, przestañ mêdrkowaæ, bo Ci g³owa od tego spuchnie. Pomogê Ci z gulaszem.
 	AI_Output (self, other, "DIA_Fox_Camp_11_10"); //Wiedzia³em, ¿e siê domyœlisz.
 	AI_Output (self, other, "DIA_Fox_Camp_11_11"); //Przetrz¹œnij skrzyniê na zapleczu. Znajdziesz tam wystarczaj¹c¹ iloœæ porcji gulaszu.
 	AI_Output (self, other, "DIA_Fox_Camp_11_12"); //Rozdaj potrawkê ch³opakom w obozie. Jak skoñczysz, wróæ do mnie.
@@ -274,7 +274,7 @@ FUNC VOID DIA_Fox_Stew_Info()
    
 	AI_Output (other, self, "DIA_Fox_Stew_15_06"); //A co z pancerzem?
 	AI_Output (self, other, "DIA_Fox_Stew_11_07"); //Jest Twój. Prawie nowy strój rebelianta. Poprzedni w³aœciciel niezbyt d³ugo siê nim cieszy³.
-	AI_Output (other, self, "DIA_Fox_Stew_15_08"); //A co mu sie sta³o?
+	AI_Output (other, self, "DIA_Fox_Stew_15_08"); //A co mu siê sta³o?
 	AI_Output (self, other, "DIA_Fox_Stew_11_09"); //Ze¿ar³y go wilki.
 	AI_Output (self, other, "DIA_Fox_Stew_11_10"); //Porozmawiaj z Aidanem. Zdaje siê, ¿e te¿ przyda³aby siê mu pomoc.
 
@@ -356,11 +356,11 @@ FUNC VOID DIA_FOX_Spy1_Info()
    
 	AI_Output (other, self, "DIA_FOX_Spy1_15_01"); //Ilu was pozosta³o?
 	AI_Output (self, other, "DIA_FOX_Spy1_11_02"); //Co masz na myœli?
-	AI_Output (other, self, "DIA_FOX_Spy1_15_03"); //By³eœ kurierem Magów. Z tego co wiem, nie mia³eœ wyboru i musia³eœ przystaæ do Obozu Rebeliantów.
+	AI_Output (other, self, "DIA_FOX_Spy1_15_03"); //By³eœ kurierem magów. Z tego co wiem, nie mia³eœ wyboru i musia³eœ przystaæ do Obozu Rebeliantów.
 	AI_Output (self, other, "DIA_FOX_Spy1_11_04"); //Sporo wiesz jak na kogoœ, kto jest tu od niedawna.
 	AI_Output (self, other, "DIA_FOX_Spy1_11_05"); //Rzeczywiœcie by³em kurierem magów. To by³a dobra posada.
 	AI_Output (self, other, "DIA_FOX_Spy1_11_06"); //Jednak kiedy Gomez rozprawi³ siê z magami ognia, wszystko siê spapra³o.
-	AI_Output (self, other, "DIA_FOX_Spy1_11_07"); //W Starym Obozie nie mia³em czego szukaæ, w Nowym te¿ za mn¹ nie przepadano, a o Sekcie wolê nie s³yszeæ.
+	AI_Output (self, other, "DIA_FOX_Spy1_11_07"); //W Starym Obozie nie mia³em czego szukaæ, w Nowym te¿ za mn¹ nie przepadano, a o sekcie wolê nie s³yszeæ.
 	AI_Output (self, other, "DIA_FOX_Spy1_11_08"); //Wtedy znalaz³em obóz Cavalorna. Urz¹dzi³em siê tutaj jak mog³em.
 	AI_Output (other, self, "DIA_FOX_Spy1_15_09"); //W interesie kwatermistrza jest, ¿eby obóz dobrze prosperowa³.
 	AI_Output (self, other, "DIA_FOX_Spy1_11_10"); //Wiem co mam robiæ. Nie chcesz mi chyba zarzuciæ niegospodarnoœci?!
@@ -512,7 +512,7 @@ FUNC VOID DIA_Fox_WeaponDev_Info()
 	AI_Output (self, other, "DIA_Fox_WeaponDev_11_06"); //Zosta³o mi jeszcze kilku rebeliantów.
 	AI_Output (self, other, "DIA_Fox_WeaponDev_11_07"); //Quentin, Drax, R¹czka i Cavalorn.
 	AI_Output (self, other, "DIA_Fox_WeaponDev_11_08"); //Najwy¿sza pora, ¿eby wymienili to swoje przerdzewia³e ¿elastwo.
-	AI_Output (self, other, "DIA_Fox_WeaponDev_11_09"); //Oto miecze, poœpiesz siê bo czasu mamy coraz mniej.
+	AI_Output (self, other, "DIA_Fox_WeaponDev_11_09"); //Oto miecze, poœpiesz siê, bo czasu mamy coraz mniej.
 	CreateInvItems (self,HUN_MW_03,4); 
 	B_GiveInvItems (self, other, HUN_MW_03, 4);
 	B_LogEntry		(CH3_RBL_DelivWeapon, "Dosta³em od Foxa nowe miecze dla Quentina, Draxa, R¹czki i Cavalorna. Nie ma na co czekaæ, stra¿nicy mog¹ uderzyæ w ka¿dej chwili.");

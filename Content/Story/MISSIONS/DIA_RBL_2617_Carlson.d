@@ -49,7 +49,7 @@ FUNC INT DIA_Carlson_Hello_Condition()
 
 FUNC VOID DIA_Carlson_Hello_Info()
 {
-	AI_Output (self, other, "DIA_Carlson_Hello_11_01"); //Cholera nie wygl¹dasz jak ork, chocia¿ mordê te¿ masz zakazan¹.
+	AI_Output (self, other, "DIA_Carlson_Hello_11_01"); //Cholera, nie wygl¹dasz jak ork, chocia¿ mordê te¿ masz zakazan¹.
 	AI_Output (other, self, "DIA_Carlson_Hello_15_02"); //Ty za to cuchniesz jak ork.
 	AI_Output (self, other, "DIA_Carlson_Hello_11_03"); //Gdybyœ spêdzi³ tyle czasu co ja w tych ostêpach, to nawet byœ siê nie obejrza³, a mia³byœ orkow¹ ¿onê!
 	AI_Output (self, other, "DIA_Carlson_Hello_11_04"); //Czego tu szukasz?!

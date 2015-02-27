@@ -378,7 +378,7 @@ FUNC VOID DIA_rbl_1332_baalkagan_Stew_Info()
 	
 	AI_Output (other, self, "DIA_rbl_1332_baalkagan_Stew_15_01"); //Twoja porcja pysznego gulaszu, smacznego.
 	AI_Output (self, other, "DIA_rbl_1332_baalkagan_Stew_11_02"); //S³uchaj no, dawaj swoj¹ porcje, bo inaczej to bêd¹ ostatnie s³owa w twoim ¿yciu.
-	AI_Output (other, self, "DIA_rbl_1332_baalkagan_Stew_15_03"); //Och, Doprawdy?
+	AI_Output (other, self, "DIA_rbl_1332_baalkagan_Stew_15_03"); //Och, doprawdy?
 	AI_Output (self, other, "DIA_rbl_1332_baalkagan_Stew_11_04"); //Nie cholera, ¿artowa³em, dwie porcje to dawka œmiertelna.
 	
 	B_GiveInvItems (other, self, ItFo_Stew, 1);

@@ -65,7 +65,7 @@ FUNC VOID DIA_Gestath_Hello_Info()
 	AI_RemoveWeapon (self);
    
 	AI_Output (other, self, "DIA_Gestath_Hello_15_11"); //Móg³byœ mówiæ jaœniej?
-	AI_Output (self, other, "DIA_Gestath_Hello_11_12"); //Czemu nie, mam teraz sporo wolnego czasu.
+	AI_Output (self, other, "DIA_Gestath_Hello_11_12"); //Czemu nie? Mam teraz sporo wolnego czasu.
 	AI_Output (self, other, "DIA_Gestath_Hello_11_13"); //Trafi³em do Kolonii w poszukiwaniu brata.
 	AI_Output (other, self, "DIA_Gestath_Hello_15_14"); //Brata? Czy ja dobrze zrozumia³em? Da³eœ wtr¹ciæ siê za barierê, ¿eby znaleŸæ brata?!
 	AI_Output (self, other, "DIA_Gestath_Hello_11_15"); //Tak. By³em mu to winien. 
@@ -103,7 +103,7 @@ FUNC VOID DIA_Gestath_Hello_Info()
 	AI_Output (self, other, "DIA_Gestath_Hello_11_47"); //Kiedy trafi³em do Starego Obozu zacz¹³em wypytywaæ o Cavalorna. W miêdzyczasie wykona³em kilka zleceñ dla Gomeza.
 	AI_Output (self, other, "DIA_Gestath_Hello_11_48"); //Cieniostwory, zêbacze, trolle. Trochê z tego co upolowa³em, powinno jeszcze znajdowaæ siê w skrzyniach ukrytych w wie¿y zamkowej.
 	AI_Output (self, other, "DIA_Gestath_Hello_11_49"); //Niestety mia³em pecha. Gomezowi odbi³o i zabi³ magów ognia. 
-	AI_Output (self, other, "DIA_Gestath_Hello_11_50"); //Z³orzeczy³ te¿ na jakiegoœ Bezimiennego sukinsyna.
+	AI_Output (self, other, "DIA_Gestath_Hello_11_50"); //Z³orzeczy³ te¿ na jakiegoœ bezimiennego sukinsyna.
 	AI_Output (self, other, "DIA_Gestath_Hello_11_51"); //A ja po cichu ulotni³em siê ze Starego Obozu.
 	AI_Output (self, other, "DIA_Gestath_Hello_11_52"); //Mia³em w³aœnie na nowo rozpocz¹æ poszukiwania brata, kiedy zjawi³eœ siê Ty.
 	AI_Output (other, self, "DIA_Gestath_Hello_15_53"); //I dobrze siê sta³o. Wiem, gdzie obozuje Cavalorn.

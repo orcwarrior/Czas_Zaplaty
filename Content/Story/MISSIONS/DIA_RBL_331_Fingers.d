@@ -398,7 +398,7 @@ FUNC VOID DIA_FINGERS_Spy1_Info()
 	AI_Output (self, other, "DIA_FINGERS_Spy1_07_06"); //Niech bêdzie, powiem Ci prawdê. Przynajmniej skoñcz¹ siê te idiotyczne plotki na mój temat.
 	AI_Output (self, other, "DIA_FINGERS_Spy1_07_07"); //Rzeczywiœcie nie odszed³em ze Starego Obozu ze strachu przed Gomezem, czy dlatego, ¿e popar³em tego skazañca.
 	AI_Output (self, other, "DIA_FINGERS_Spy1_07_08"); //Powód by³ inny, ale uwa¿a³em, ¿e nikogo to nie powinno obchodziæ.
-	AI_Output (self, other, "DIA_FINGERS_Spy1_07_09"); //Jestem z³odziejem, ukrad³em coœ czego nie powinno wynosiæ siê poza Obóz i wola³em nie ryzykowaæ, ¿e stra¿nicy znajd¹ przy mnie to coœ.
+	AI_Output (self, other, "DIA_FINGERS_Spy1_07_09"); //Jestem z³odziejem, ukrad³em coœ czego nie powinno wynosiæ siê poza obóz i wola³em nie ryzykowaæ, ¿e stra¿nicy znajd¹ przy mnie to coœ.
 	AI_Output (other, self, "DIA_FINGERS_Spy1_15_10"); //Móg³byœ jaœniej?
 	AI_Output (self, other, "DIA_FINGERS_Spy1_07_11"); //Nie móg³bym, a teraz zje¿d¿aj.
 

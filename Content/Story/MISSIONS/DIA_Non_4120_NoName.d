@@ -168,7 +168,7 @@ FUNC void  DIA_NoName_RBL1_Info()
 	AI_Output (self, other,"DIA_NoName_RBL1_Info_15_01"); //Witaj. Móg³byœ mi powiedzieæ coœ o tym obozie?
 	AI_Output (other, self,"DIA_NoName_RBL1_Info_15_02"); //Je¿eli nie musisz, to siê tutaj nie krêæ. To niezbyt bezpieczne miejsce.
 	AI_Output (self, other,"DIA_NoName_RBL1_Info_15_03"); //Potrafiê o siebie zadbaæ.
-	AI_Output (other, self,"DIA_NoName_RBL1_Info_15_04"); //Nie mówiê, ¿e nie. Rebelianci to paskudna banda, a ³¹czy ich tylko jeden cel - wykopaæ Gomeza z Koloni.
+	AI_Output (other, self,"DIA_NoName_RBL1_Info_15_04"); //Nie mówiê, ¿e nie. Rebelianci to paskudna banda, a ³¹czy ich tylko jeden cel - wykopaæ Gomeza z Kolonii.
 	AI_Output (self, other,"DIA_NoName_RBL1_Info_15_05"); //To mamy sporo wspólnego. Rozejrzê siê po obozie, mo¿e znajdê coœ do roboty.
 	AI_Output (other, self,"DIA_NoName_RBL1_Info_15_06"); //Powodzenia.
 

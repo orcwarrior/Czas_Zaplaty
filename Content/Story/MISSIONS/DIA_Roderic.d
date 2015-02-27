@@ -107,7 +107,7 @@ FUNC void  DIA_Roderic_OldNote1_Info()
 	AI_Output 	(other,self,"DIA_Roderic_OldNote1_15_12"); //Wiêc mo¿e tam znajdê coœ co Ciê przekona. 
 	AI_Output 	(self, hero,"DIA_Roderic_OldNote1_11_13"); //Rób co chcesz, a teraz zostaw mnie w spokoju...
 
-	B_LogEntry	(CH3_RBL_RodneyHelp, "No to ³adnie, cholerny duch mi nie wierzy, a do tego muszê znaleŸæ orkow¹ nekropoliê i przeczesaæ kurhany w poszukiwaniu œladów zdrady Turana. Ciekawe co bêdzie póŸniej, Czarna Œwi¹tynia?");
+	B_LogEntry	(CH3_RBL_RodneyHelp, "No to ³adnie, cholerny duch mi nie wierzy, a do tego muszê znaleŸæ orkow¹ nekropoliê i przeczesaæ kurhany w poszukiwaniu œladów zdrady Truana. Ciekawe co bêdzie póŸniej, Czarna Œwi¹tynia?");
 	/********************
 Wsadzamy ducha do nekropoli orków
 ***********************/
@@ -140,7 +140,7 @@ FUNC void  DIA_Roderic_Hi_Info()
 	AI_Output 	(other,self,"DIA_Roderic_Hi_15_02"); //Nie poznajesz mnie? To ja pomagam Ci oczyœciæ imiê i zaznaæ spokoju.
 	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_03"); //Dlaczego mia³bym staæ siê przewodnikiem na tej œcie¿ce?
 	AI_Output 	(other,self,"DIA_Roderic_Hi_15_04"); //Ty naprawdê nic nie pamiêtasz? 
-	AI_Output 	(other,self,"DIA_Roderic_Hi_15_05"); //Spotka³em ducha szamana na cmentarzysku Orków. Trochê rozmawialiœmy, wyzna³ mi prawdê o zdradzie Urksh'Esta, o tym, ¿e Truan Ciê uœpi³, a póŸniej zdradzi³ te¿ orków...
+	AI_Output 	(other,self,"DIA_Roderic_Hi_15_05"); //Spotka³em ducha szamana na cmentarzysku orków. Trochê rozmawialiœmy, wyzna³ mi prawdê o zdradzie Urksh'Esta, o tym, ¿e Truan Ciê uœpi³, a póŸniej zdradzi³ te¿ orków...
 	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_06"); //Argh, pamiêæ wraca. Ja... Nazywam siê Roderik. Przeklête to imiê! Zdrada i krew...
 	AI_Output 	(other,self,"DIA_Roderic_Hi_15_07"); //Opowiesz mi coœ wiêcej? Dlaczego orkowie zaatakowali wasz¹ osadê?
 	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_08"); //Szukali potê¿nego artefaktu, nie wiedzieliœmy, ¿e zak³adamy osadê w miejscu plugawej kaŸni.
@@ -158,31 +158,31 @@ FUNC void  DIA_Roderic_Hi_Info()
 	AI_Output 	(other,self,"DIA_Roderic_Hi_15_20"); //Nie rozumiem...
 	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_21"); //Musia³eœ uczyniæ coœ, co przybli¿a moj¹ duszê do bram odkupienia.
 	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_22"); //Nie trwoñmy czasu, wiem ju¿ dlaczego nadal trwam w tym œwiecie. 
-	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_23"); //Nadszed³ czas abym poprowadzi³ ciê Drog¹ Zag³ady.
+	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_23"); //Nadszed³ czas, abym poprowadzi³ ciê Drog¹ Zag³ady.
 	AI_Output 	(other,self,"DIA_Roderic_Hi_15_24"); //Co to za droga?
 	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_25"); //Przejœcie do katakumb jest naje¿one pu³apkami, nazwaliœmy je Drog¹ Zag³ady. Do tej pory tylko Truan zdo³a³ siê przez nie przedrzeæ.
 	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_26"); //Zabi³ orkowych szamanów, ich krew utorowa³a mu drogê, ale zap³aci³ za to najwy¿sz¹ cenê. Kiedy siêgn¹³ po miecz by³ ju¿ œmiertelnie ranny.
 	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_27"); //Staro¿ytny rytua³ nadal chroni miecz, ale tylko przed nieumar³ymi i ich aspektami. ¯ywy cz³owiek, jak Ty jest niewra¿liwy na dzia³anie magii.
 	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_28"); //Dlatego bêdziesz móg³ wejœæ do podziemi. 
-	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_29"); //Jednak zanim Ciê poprowadzê musisz pomóc mi przed ostateczn¹ walk¹ z Truanem, ten zdrajca zap³aci za ca³e z³o, które wyrz¹dzi³.
+	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_29"); //Jednak zanim Ciê poprowadzê, musisz pomóc mi przed ostateczn¹ walk¹ z Truanem, ten zdrajca zap³aci za ca³e z³o, które wyrz¹dzi³.
 	AI_Output 	(other,self,"DIA_Roderic_Hi_15_30"); //Mów czego potrzebujesz.
 	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_31"); //W tej chwili jestem tylko pieczêci¹, któr¹ pozostawiono aby uwiêziæ z³o.
 	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_32"); //Jednak ja tak¿e pragnê... zemsty.
 	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_33"); //Truan zabra³ mi wszystko - honor, dumê i ¿ycie.
-	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_34"); //Aby odzyskaæ to co straci³em musisz przynieœæ mi mój topór - Ostrze Zmierzchu. Znajdziesz go w podziemiach tej wie¿y.
-	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_35"); //Kiedy znów dotknê ostrza, które s³u¿y³o mi za ¿ycia odzyskam si³ê aby stan¹æ do walki ze zdrajc¹.
+	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_34"); //Aby odzyskaæ to co straci³em, musisz przynieœæ mi mój topór - Ostrze Zmierzchu. Znajdziesz go w podziemiach tej wie¿y.
+	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_35"); //Kiedy znów dotknê ostrza, które s³u¿y³o mi za ¿ycia, odzyskam si³ê, aby stan¹æ do walki ze zdrajc¹.
 	AI_Output 	(other,self,"DIA_Roderic_Hi_15_36"); //Nie k³opocz siê, sam wyœlê tego sukinsyna do Beliara.
 	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_37"); //Nie, œmiertelniku. Teraz pamiêtam ju¿ wszystko. Moja dusza sta³a siê czêœci¹ rytua³u, który nie pozwala Truanowi stan¹æ poœród œmiertelnych. 
-	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_38"); //Kiedy odzyskam topór sp³ynie do niego ca³a moc rytua³u. Nawet Truan nie oprze siê takiej potêdze.
+	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_38"); //Kiedy odzyskam topór, sp³ynie do niego ca³a moc rytua³u. Nawet Truan nie oprze siê takiej potêdze.
 	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_39"); //Jednak nic nie mo¿e przeszkodziæ mi w walce ze z³em. Twoim zadaniem bêdzie strzec mych pleców.
-	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_40"); //Aby zwyciê¿yæ muszê u¿yæ ca³ej swej woli. 
+	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_40"); //Aby zwyciê¿yæ, muszê u¿yæ ca³ej swej woli. 
 	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_41"); //Pomo¿esz mi œmiertelniku?
 	AI_Output 	(other,self,"DIA_Roderic_Hi_15_42"); //A co ja bêdê z tego mia³?
 	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_43"); //Rozumiem, ¿e moja wolnoœæ i uwolnienie œwiata od z³a to zbyt ma³o?
 	AI_Output 	(other,self,"DIA_Roderic_Hi_15_44"); //Wybacz, ale mam pragmatyczn¹ naturê.
 	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_45"); //Otrzymasz Miecz ¯ywio³ów, œmiertelniku. Od ciebie zale¿y co z nim uczynisz.
 	AI_Output 	(self, hero,"DIA_Roderic_Hi_11_46"); //Wiêc co postanowisz?	
-	B_LogEntry		(CH3_RBL_RodneyHelp, "Odby³em d³ug¹ rozmowê z duchem Roderika. Powiedzia³ mi, ¿e aby zniszczyæ Truana muszê odzyskaæ dla ducha jego stary topór - ostrze zmierzchu. Nagrod¹ ma byæ jakiœ przeklêty miecz. Nie wiem czy to dobry pomys³ ¿eby mieszaæ siê w sprawy nieumar³ych, ale ten miecz... Pokusa jest zbyt du¿a.");
+	B_LogEntry		(CH3_RBL_RodneyHelp, "Odby³em d³ug¹ rozmowê z duchem Roderika. Powiedzia³ mi, ¿e aby zniszczyæ Truana muszê odzyskaæ dla ducha jego stary topór - ostrze zmierzchu. Nagrod¹ ma byæ jakiœ przeklêty miecz. Nie wiem czy to dobry pomys³, ¿eby mieszaæ siê w sprawy nieumar³ych, ale ten miecz... Pokusa jest zbyt du¿a.");
 }; 
 
 //---------------------------------------------------------------------

@@ -541,7 +541,7 @@ FUNC VOID DIA_Whistler_Spy1_Info()
    AI_PlayAni (self, "T_SEARCH");
 	AI_TurnToNpc (self, other);
 	
-   AI_Output (self, other, "DIA_Whistler_Spy1_11_05"); //Chcesz ¿eby ktoœ nas us³ysza³?!
+   AI_Output (self, other, "DIA_Whistler_Spy1_11_05"); //Chcesz, ¿eby ktoœ nas us³ysza³?!
 	AI_Output (other, self, "DIA_Whistler_Spy1_15_06"); //Wprost przeciwnie. Szukam pewnej analogii.
 	AI_Output (self, other, "DIA_Whistler_Spy1_11_07"); //Mów o co chodzi, tylko siê poœpiesz.
 	AI_Output (other, self, "DIA_Whistler_Spy1_15_08"); //Szukam dowodów zdrady w tym obozie, Œwistak. Wiesz coœ o tym?

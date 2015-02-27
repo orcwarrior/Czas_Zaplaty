@@ -355,7 +355,7 @@ FUNC VOID DIA_Cavalorn_RecruitsFinish_Info()
       Cavalorn_CarlsonIn = TRUE;
       Cavalorn_ORRecruitCount = Cavalorn_ORRecruitCount + 1;
       AI_Output (self, other,"DIA_Cavalorn_RecruitsFinish_12_16"); //Carlson? Masz na myœli tego kowala?
-      AI_Output (self, other,"DIA_Cavalorn_RecruitsFinish_12_17"); //Wygl¹da na to ¿e to œwietny rzemieœlnik, Aidan bêdzie móg³ trochê odetchn¹æ.
+      AI_Output (self, other,"DIA_Cavalorn_RecruitsFinish_12_17"); //Wygl¹da na to, ¿e to œwietny rzemieœlnik, Aidan bêdzie móg³ trochê odetchn¹æ.
    }
    else if (Cavalorn_CarlsonIn == TRUE)
    {

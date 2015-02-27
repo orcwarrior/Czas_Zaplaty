@@ -462,10 +462,10 @@ FUNC VOID DIA_Mark_Spy_Info()
 	AI_Output (self, other, "DIA_Mark_Spy_11_08"); //Popytaj innych, nie chcê sobie narobiæ wrogów.
 	AI_Output (other, self, "DIA_Mark_Spy_11_09"); //Boisz siê kogoœ?
 	AI_Output (self, other, "DIA_Mark_Spy_11_10"); //Ja?!
-	AI_Output (self, other, "DIA_Mark_Spy_11_11"); //Pewnie, ¿e sie bojê idioto! Sram w gacie na widok w³asnego cienia, nawet golê siê têp¹ brzytw¹.
+	AI_Output (self, other, "DIA_Mark_Spy_11_11"); //Pewnie, ¿e siê bojê, idioto! Sram w gacie na widok w³asnego cienia, nawet golê siê têp¹ brzytw¹.
 	AI_Output (self, other, "DIA_Mark_Spy_11_12"); //Nie zamierzam zgrywaæ bohatera, popytaj innych!
 
-	B_LogEntry		(CH2_Rbl_Spy, "Mark o dziwo nie okaza³ siê zbyt rozmowny. Widaæ, ¿e kogoœ siê boi i nie puœci pary z ust. Muszê spróbowaæ szczêœcie gdzie indziej.");
+	B_LogEntry		(CH2_Rbl_Spy, "Mark o dziwo nie okaza³ siê zbyt rozmowny. Widaæ, ¿e kogoœ siê boi i nie puœci pary z ust. Muszê spróbowaæ szczêœcia gdzie indziej.");
 
 	B_StopProcessInfos	(self);
 };
