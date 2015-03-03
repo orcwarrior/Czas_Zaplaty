@@ -246,6 +246,9 @@ FUNC VOID  DIA_Merdarion_Find_Info()
 		AI_Output (self, other,"DIA_Merdarion_Find_08_04"); //SpóŸni³eœ siê... Ornamenty s¹ teraz tylko bezwartoœciowymi kawa³kami kamienia...
 	};
    
+	B_LogSetTopicStatus(CH3_NON_Seekers, LOG_SUCCESS);
+	B_LogEntry(CH3_NON_Seekers, "Odnalaz³em ornamenty.");
+			
 	B_StopProcessInfos(self);
 };
 
