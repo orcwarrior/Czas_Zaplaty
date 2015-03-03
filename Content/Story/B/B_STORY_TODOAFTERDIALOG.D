@@ -332,10 +332,10 @@ func void B_AfterDialog_Stigma_Death(var c_npc talker)
 	sti.attribute[ATR_HITPOINTS] = sti.attribute[ATR_HITPOINTS_MAX]/10;
 
 	Npc_SetPermAttitude	(sti, ATT_HOSTILE);
-	Npc_SetTarget (self,sti);
+	Npc_SetTarget (talker,sti);
 	Npc_SetTarget (sti,nia);
 	AI_StartState (sti,ZS_ATTACK,1,"");
-	B_StartAfterDialogFight(self,sti,true);
+	B_StartAfterDialogFight(talker,sti,true);
 	B_StartAfterDialogFight(sti,nia,true);
 	
 	B_AfterDialog_Stigma_Death_disabled = true;
