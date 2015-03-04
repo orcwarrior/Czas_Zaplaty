@@ -4,7 +4,7 @@ instance EBR_105_Raven (Npc_Default)
 	
 	name 		= 	"Kruk";
 	npctype 	= 	npctype_main;
-   guild 		=	GIL_GRD;      
+   guild 		=	GIL_NONE;      
 	level 		=	50;
 	voice 		=	10;
 	id 			=	105;
