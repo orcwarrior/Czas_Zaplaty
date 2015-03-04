@@ -2,7 +2,7 @@
 
 func void TimeEventsCave()
 {
-	if (WORLD_CURRENT == WORLD_CATACOMBS)
+	if ((WORLD_CURRENT == WORLD_CATACOMBS) || (WORLD_CURRENT == WORLD_NECROLOCATION))
 	{
 		if (Rick_death && InfoManager_HasFinished())
 		{
