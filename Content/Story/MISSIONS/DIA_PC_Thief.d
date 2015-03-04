@@ -469,6 +469,6 @@ FUNC VOID DIA_Diego_CanYouTeachMe_Info()
 	AI_Output (self, other, "DIA_Diego_CanYouTeachMe_12_02"); //Mogê pokazaæ ci æwiczenia zwiêkszaj¹ce zrêcznoœæ.
 	AI_Output (self, other, "DIA_Diego_CanYouTeachMe_12_03"); //NieŸle te¿ radzê sobie z ³ukiem.	
 	
-	Log_CreateTopic(GE_TeacherOR, LOG_NOTE);
-	B_LogEntry(GE_TeacherOR, "Diego poka¿e mi jak lepiej szyæ z ³uku i jak zwiêkszyæ zrêcznoœæ.");
+	Log_CreateTopic(GE_TeacherOW, LOG_NOTE);
+	B_LogEntry(GE_TeacherOW, "Diego poka¿e mi jak lepiej szyæ z ³uku i jak zwiêkszyæ zrêcznoœæ.");
 };
