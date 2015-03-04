@@ -122,6 +122,35 @@ FUNC VOID DIA_Leren_CanYouTeachMe_Info()
    B_LogEntry(GE_TeacherOR, "Leren mo¿e mi pomóc zwiêkszyæ manê i j¹ zregenerowaæ. Jak zostanê magiem, to nauczy mnie te¿ magicznych sztuczek.");
 };
 
+// **************************************************
+INSTANCE DIA_Leren_CanYouTrade (C_INFO)
+{
+	npc				=  mag_1604_Leren;
+	nr				= 4;
+	condition		= DIA_Leren_CanYouTrade_Condition;
+	information		= DIA_Leren_CanYouTrade_Info;
+	permanent		= 0;
+	important		= 0;
+	description		= "A handlujesz czymœ?"; 
+};
+
+FUNC INT DIA_Leren_CanYouTrade_Condition()
+{
+	if (Npc_KnowsInfo(hero, DIA_Leren_Mag))
+	{
+		return 1;
+	};
+};
+
+FUNC VOID DIA_Leren_CanYouTrade_Info()
+{
+   AI_Output (other, self, "DIA_Leren_CanYouTrade_15_01"); //A handlujesz czymœ?
+   AI_Output (self, other, "DIA_Leren_CanYouTrade_15_02"); //Czymœ! Nie byle czymœ, tylko przedmiotami o wielkiej mocy jak mikstury czy zwoje. 
+   
+   Log_CreateTopic(GE_TraderOR, LOG_NOTE);
+   B_LogEntry(GE_TraderOR, "U Lerena mogê zaopatrzyæ siê w magiczne rzeczy takie jak mikstury czy zwoje.");
+};
+
 INSTANCE DIA_Leren_Mag1 (C_INFO)
 {
 	npc				= mag_1604_Leren;
