@@ -53,8 +53,8 @@ FUNC void KDW_605_Riordian_GREET_Info()
 	AI_Output(other, self,"KDW_605_Riordian_GREET_Info_15_01"); //Witaj, magu!
 	AI_Output(self, other,"KDW_605_Riordian_GREET_Info_14_02"); //Jestem Riordian, alchemik. Zgadujê, ¿e szukasz magicznego napoju?
 	
-   Log_CreateTopic(GE_TraderNC,LOG_NOTE);
-	B_LogEntry (GE_TraderNC,"Riordian, jeden z magów wody, sprzedaje magiczne wywary. Znajdê go w laboratorium alchemicznym, na górnym poziomie.");
+   Log_CreateTopic(GE_TraderOW,LOG_NOTE);
+	B_LogEntry (GE_TraderOW,"Riordian, jeden z magów wody, sprzedaje magiczne wywary.");
 };
 
 /*------------------------------------------------------------------------
