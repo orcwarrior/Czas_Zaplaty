@@ -734,7 +734,10 @@ instance Dia_Leren_Trade   (C_INFO)
  
 func int Dia_Leren_Trade_condition () 
 { 
-   return TRUE; 
+   if (Npc_KnowsInfo(hero, DIA_Leren_CanYouTrade))
+	{
+		return 1;
+	}; 
 }; 
  
 func void Dia_Leren_Trade_info () 

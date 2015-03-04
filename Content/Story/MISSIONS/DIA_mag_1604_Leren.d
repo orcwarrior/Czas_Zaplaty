@@ -136,10 +136,7 @@ INSTANCE DIA_Leren_CanYouTrade (C_INFO)
 
 FUNC INT DIA_Leren_CanYouTrade_Condition()
 {
-	if (Npc_KnowsInfo(hero, DIA_Leren_Mag))
-	{
-		return 1;
-	};
+	return 1;
 };
 
 FUNC VOID DIA_Leren_CanYouTrade_Info()
