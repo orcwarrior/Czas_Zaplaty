@@ -4,7 +4,7 @@ instance Grd_4130_PaulPatrol (Npc_Default)
 	
 	name 		=	NAME_Gardist;
 	npctype		=	NPCTYPE_GUARD;
-	guild 		=	GIL_GRD;
+	guild 		=	GIL_DMB;
 	level 		=	10;
 	voice 		=	11;
 	id 			=	4130;

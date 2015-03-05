@@ -4,7 +4,7 @@ instance GRD_4069_Paul (Npc_Default)
 	
 	name 		=	"Paul";
 	npctype		=	NPCTYPE_GUARD;
-	guild 		=	GIL_GRD;
+	guild 		=	GIL_DMB;
 	level 		=	15;
 	voice 		=	11;
 	id 			=	4069;
