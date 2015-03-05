@@ -171,7 +171,7 @@ instance DIA_Torlof_HlpEnd (C_INFO)
 	information	= DIA_Torlof_HlpEnd_Info;
 	important		= 0;
 	permanent		= 0;
-	description = "Co do twoich kopaczy...";
+	description = "Co do Twoich kopaczy...";
 };                       
 
 FUNC int DIA_Torlof_HlpEnd_Condition()
@@ -186,8 +186,8 @@ FUNC VOID  DIA_Torlof_HlpEnd_Info()
 {
 	var C_NPC jurg; jurg = Hlp_GetNpc(Grd_4090_Jurgen);
    
-	AI_Output (other, self,"DIA_Torlof_HlpEnd_15_01"); //Co do twoich kopaczy...
-	AI_Output (self, other,"DIA_Torlof_HlpEnd_04_02"); //Jak ci posz³o?
+	AI_Output (other, self,"DIA_Torlof_HlpEnd_15_01"); //Co do Twoich kopaczy...
+	AI_Output (self, other,"DIA_Torlof_HlpEnd_04_02"); //Jak Ci posz³o?
 	
    if (miners_work == 3)
 	{
@@ -202,7 +202,7 @@ FUNC VOID  DIA_Torlof_HlpEnd_Info()
    
 	AI_Output (self, other,"DIA_Torlof_HlpEnd_04_07"); //Dobra robota, mo¿e jeszcze zd¹¿ymy...
 	AI_TurnToNpc(self, jurg);
-	AI_Output (self, other,"DIA_Torlof_HlpEnd_04_08"); //Cholera tylko nie to!
+	AI_Output (self, other,"DIA_Torlof_HlpEnd_04_08"); //Cholera, tylko nie to!
 	AI_Output (other, self,"DIA_Torlof_HlpEnd_15_09"); //Co siê dzieje?
 	AI_TurnToNpc(self, other);
 	AI_Output (self, other,"DIA_Torlof_HlpEnd_04_10"); //Ju¿ za póŸno. Jurgen idzie odebraæ urobek.

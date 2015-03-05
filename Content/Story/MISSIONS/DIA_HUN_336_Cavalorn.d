@@ -1776,7 +1776,7 @@ INSTANCE DIA_Cavalorn_NewSword (C_INFO)
    information      = DIA_Cavalorn_NewSword_Info;
    permanent      = 0;
    important      = 0;
-   description      = "Mam dla ciebie nowe ostrze."; 
+   description      = "Mam dla Ciebie nowe ostrze."; 
 };
 
 FUNC INT DIA_Cavalorn_NewSword_Condition()
@@ -1789,7 +1789,7 @@ FUNC INT DIA_Cavalorn_NewSword_Condition()
 
 FUNC VOID DIA_Cavalorn_NewSword_Info()
 {
-   AI_Output (other, self, "DIA_Cavalorn_NewSword_15_01"); //Mam dla ciebie nowe ostrze.
+   AI_Output (other, self, "DIA_Cavalorn_NewSword_15_01"); //Mam dla Ciebie nowe ostrze.
    AI_Output (self, other,"DIA_Cavalorn_NewSword_12_02"); //Fox Ciê nas³a³?
    AI_PlayAni(other,"T_YES");
    AI_Output (self, other,"DIA_Cavalorn_NewSword_12_03"); //Nie potrzebujê œwiec¹cego ¿elastwa. Mam stary, sprawdzony miecz.
@@ -1868,7 +1868,7 @@ FUNC VOID DIA_Cavalorn_KiraAfter_Info()
    if (kira_help == 1)
    {
       B_GiveXP(500);
-      AI_Output (other, self, "DIA_Cavalorn_KiraAfter_15_03"); //Tak, ³owcy troli uderz¹ na ty³y stra¿ników. 
+      AI_Output (other, self, "DIA_Cavalorn_KiraAfter_15_03"); //Tak, ³owcy trolli uderz¹ na ty³y stra¿ników. 
       AI_Output (self, other,"DIA_Cavalorn_KiraAfter_12_04"); //Œwietna robota!
       AI_Output (self, other,"DIA_Cavalorn_KiraAfter_12_05"); //Zrobiliœmy ju¿ prawie wszystko, aby przygotowaæ siê do odparcia ataku.
 

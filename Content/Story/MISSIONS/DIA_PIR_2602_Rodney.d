@@ -625,8 +625,8 @@ FUNC VOID DIA_Rodney_Ghost_Info()
 	AI_Output (self, other,"DIA_Rodney_Ghost_11_02"); //I co tam znalaz³eœ?
 	AI_Output (other, self,"DIA_Rodney_Ghost_15_03"); //Martwego orka, który sporo gada³.
 	AI_Output (other, self,"DIA_Rodney_Ghost_15_04"); //Dowiedzia³em siê tylko tego, ¿e kiedyœ jakiœ cz³owiek zdoby³ zaufanie orków, a potem ich zdradzi³.
-	AI_Output (other, self,"DIA_Rodney_Ghost_15_05"); //Zdaje siê, ¿e jego jedynym celem by³o posi¹œæ tajemnice jakie skrywaj¹ podziemia klasztoru.
-	AI_Output (other, self,"DIA_Rodney_Ghost_15_06"); //Niestety dopi¹³ swego, Wiêcej siê nie dowiedzia³em.
+	AI_Output (other, self,"DIA_Rodney_Ghost_15_05"); //Zdaje siê, ¿e jego jedynym celem by³o posi¹œæ tajemnice, jakie skrywaj¹ podziemia klasztoru.
+	AI_Output (other, self,"DIA_Rodney_Ghost_15_06"); //Niestety dopi¹³ swego. Wiêcej siê nie dowiedzia³em.
 	AI_Output (self, other,"DIA_Rodney_Ghost_11_07"); //Hmm, zagmatwane to wszystko. To na co czekasz? Szukaj dalej!
 	AI_Output (other, self,"DIA_Rodney_Ghost_15_08"); //Chyba trochê Ciê ponios³o!
 	AI_Output (self, other,"DIA_Rodney_Ghost_11_09"); //Wybacz. Proszê, dowiedz siê czegoœ wiêcej.
@@ -730,7 +730,7 @@ FUNC VOID DIA_Rodney_Sword_Info()
 	AI_Output (other, self,"DIA_Rodney_Sword_15_13"); //W porz¹dku Rodney. Pogadam z Lerenem, powiem, ¿e tylko pomog³em Ci zdobyæ artefakt.
 	AI_Output (other, self,"DIA_Rodney_Sword_15_14"); //Przekonam magów, ¿eby uznali Twoj¹ inicjacjê za dope³nion¹.
 	AI_Output (self, other,"DIA_Rodney_Sword_11_15"); //Bêdê Ci wdziêczny, Rick!
-	B_LogEntry		(CH3_RBL_RodneyHelp, "Muszê pokazaæ miecz Lerenowi i przekonaæ magów, ¿e Rodney zas³u¿y³ na to aby wst¹piæ w ich szeregi.");
+	B_LogEntry		(CH3_RBL_RodneyHelp, "Muszê pokazaæ miecz Lerenowi i przekonaæ magów, ¿e Rodney zas³u¿y³ na to, aby wst¹piæ w ich szeregi.");
 };
 
 INSTANCE DIA_Rodney_BeginMag (C_INFO)
@@ -808,7 +808,7 @@ FUNC VOID DIA_Rodney_BecomeMagEnd_Info()
 	AI_GotoNpc(self, other);
 	
 	AI_Output (self, other,"DIA_Rodney_BecomeMagEnd_11_01"); //Wybacz Rick. Zapomnia³em Ci podziêkowaæ... 
-	AI_Output (other, self,"DIA_Rodney_BecomeMagEnd_15_02"); //Nie szkodzi przyjacielu. Mnie ta przygoda te¿ wiele nauczy³a. To mi wsytarczy za podziêkowania.
+	AI_Output (other, self,"DIA_Rodney_BecomeMagEnd_15_02"); //Nie szkodzi przyjacielu. Mnie ta przygoda te¿ wiele nauczy³a. To mi wystarczy za podziêkowania.
 	AI_Output (self, other,"DIA_Rodney_BecomeMagEnd_11_03"); //No i miecz, he, he.
 	AI_Output (other, self,"DIA_Rodney_BecomeMagEnd_15_04"); //Masz racjê. Uwa¿aj na siebie... magu.
 	AI_Output (self, other,"DIA_Rodney_BecomeMagEnd_11_05"); //Zawsze uwa¿a³em, ¿e by³byœ najlepszym kandydatem na nowego kapitana, gdyby Ramos wykorkowa³.

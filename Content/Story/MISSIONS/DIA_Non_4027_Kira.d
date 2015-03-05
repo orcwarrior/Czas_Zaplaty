@@ -694,7 +694,7 @@ FUNC INT Info_Kira_Help_Condition()
 FUNC VOID Info_Kira_Help_Info()
 {	
 	AI_Output (other, self,"Info_Kira_Help_15_00"); //Potrzebujemy waszej pomocy!
-	AI_Output (self, other,"Info_Kira_Help_16_01"); //Co siê sta³o? Zaatakowa³o was stado œcierwojadów, he, he.
+	AI_Output (self, other,"Info_Kira_Help_16_01"); //Co siê sta³o? Zaatakowa³o Was stado œcierwojadów, he, he.
 	AI_Output (other, self,"Info_Kira_Help_15_02"); //Blisko, stra¿nicy chc¹ nas wykopaæ z Kolonii. Cavalorn prosi o pomoc.
 	AI_Output (self, other,"Info_Kira_Help_16_03"); //Szybciej ni¿ myœla³am... No dobra, jak mamy pomóc?
 	AI_Output (other, self,"Info_Kira_Help_15_04"); //Uderzycie na ty³y stra¿ników, kiedy ci zaatakuj¹ obóz. 

@@ -30,7 +30,7 @@ INSTANCE DIA_hun_1422_gorhanis_Stew (C_INFO)
 	information		= DIA_hun_1422_gorhanis_Stew_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "Mam dla ciebie gulasz od Snafa."; 
+	description		= "Mam dla Ciebie gulasz od Snafa."; 
 };
 
 FUNC INT DIA_hun_1422_gorhanis_Stew_Condition()
@@ -44,7 +44,7 @@ FUNC INT DIA_hun_1422_gorhanis_Stew_Condition()
 FUNC VOID DIA_hun_1422_gorhanis_Stew_Info()
 {
 	fox_stew = fox_stew + 1;
-	AI_Output (other, self, "DIA_hun_1422_gorhanis_Stew_15_01"); //Mam dla ciebie gulasz od Snafa.
+	AI_Output (other, self, "DIA_hun_1422_gorhanis_Stew_15_01"); //Mam dla Ciebie gulasz od Snafa.
 	AI_Output (self, other, "DIA_hun_1422_gorhanis_Stew_11_02"); //Niebo w gêbie.
 	AI_Output (other, self, "DIA_hun_1422_gorhanis_Stew_15_03"); //Eee...
 	AI_Output (self, other, "DIA_hun_1422_gorhanis_Stew_11_04"); //Dziêki, a teraz nie przeszkadzaj mi w degustacji.

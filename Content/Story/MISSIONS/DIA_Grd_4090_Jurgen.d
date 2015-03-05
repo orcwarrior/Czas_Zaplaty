@@ -115,7 +115,7 @@ FUNC VOID DIA_Jurgen_Second_Info()
 	};
 	AI_TurnToNpc(self, tor);
 
-	AI_Output (self, other, "DIA_Jurgen_Second_11_00"); //Czy¿by? Wiesz jakie s¹ zasady. Przykro mi Torlof, ale któryœ z kopaczy musi zap³aciæ krwi¹ za Twoj¹ nieudolnoœæ.
+	AI_Output (self, other, "DIA_Jurgen_Second_11_00"); //Czy¿by? Wiesz, jakie s¹ zasady. Przykro mi Torlof, ale któryœ z kopaczy musi zap³aciæ krwi¹ za Twoj¹ nieudolnoœæ.
 	AI_TurnToNpc(self, other);
    
 	AI_TurnToNpc(self, hero);	

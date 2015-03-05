@@ -165,7 +165,7 @@ func void DIA_Gorn_RebelTalk_Info()
 	AI_Output (other, self,"DIA_Gorn_RebelTalk_15_04"); //Nie wiem czy mogê Ci zaufaæ...
 	AI_Output (self, other,"DIA_Gorn_RebelTalk_09_05"); //Ch³opcze, tutaj nikt nikomu nie ufa! Ale mo¿esz byæ pewien, ¿e nie gram w zespole weso³ych muzykantów Gomeza.
 	AI_Output (self, other,"DIA_Gorn_RebelTalk_09_06"); //Przed ca³ym tym zamieszaniem by³em najemnikiem. Sporo nabruŸdzi³em stra¿nikom.
-	AI_Output (self, other,"DIA_Gorn_RebelTalk_09_07"); //Po ataku o dziwo Gomez zarz¹dzi³, ¿eby nie wy¿ynaæ nikogo, ale co najwy¿ej wtr¹caæ do kopalni albo zaganiaæ do pracy na polach ry¿owych.
+	AI_Output (self, other,"DIA_Gorn_RebelTalk_09_07"); //Po ataku, o dziwo, Gomez zarz¹dzi³, ¿eby nie wy¿ynaæ nikogo, ale co najwy¿ej wtr¹caæ do kopalni albo zaganiaæ do pracy na polach ry¿owych.
 	AI_Output (self, other,"DIA_Gorn_RebelTalk_09_08"); //Sporo najemników przesz³o na stronê stra¿ników.
 	AI_Output (other, self,"DIA_Gorn_RebelTalk_15_09"); //Dlaczego?
 	AI_Output (self, other,"DIA_Gorn_RebelTalk_09_10"); //Dla rudy, ch³opcze. To jedyny powód. Ale myœlê, ¿e powrót Lee sporo by zmieni³.
@@ -200,7 +200,7 @@ FUNC VOID DIA_Gorn_RebelTalk_Torlof()
 	AI_Output (self, other,"DIA_Gorn_RebelTalk_Torlof_09_03"); //Kiedy trafi³ do Kolonii, przysta³ do najemników.
 	AI_Output (self, other,"DIA_Gorn_RebelTalk_Torlof_09_04"); //Podczas ataku na obóz œwietnie radzi³ sobie z pozorowanymi atakami i pu³apkami.
 	AI_Output (self, other,"DIA_Gorn_RebelTalk_Torlof_09_05"); //Po wszystkim stra¿nicy wtr¹cili go do kopalni, bo zbytnio wda³ im siê we znaki.
-	AI_Output (self, other,"DIA_Gorn_RebelTalk_Torlof_09_06"); //Teraz to w³aœnie Torlof stoi na czele rebeliantów w Kopalni.
+	AI_Output (self, other,"DIA_Gorn_RebelTalk_Torlof_09_06"); //Teraz to w³aœnie Torlof stoi na czele rebeliantów w kopalni.
 	AI_Output (self, other,"DIA_Gorn_RebelTalk_Torlof_09_07"); //Niestety na jego g³owie jest tak¿e limit dziennego wydobycia rudy.
 	AI_Output (other, self,"DIA_Gorn_RebelTalk_Torlof_15_08"); //Co to znaczy?
 	AI_Output (self, other,"DIA_Gorn_RebelTalk_Torlof_09_09"); //Ano to, ¿e jak kopacze nie wykonaj¹ normy to stra¿nicy zabijaj¹ losowo wybranego pechowca.

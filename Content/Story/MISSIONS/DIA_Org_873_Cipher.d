@@ -59,7 +59,7 @@ instance  Org_873_Cipher_Hello2 (C_INFO)
 	condition	=  Org_873_Cipher_Hello2_Condition;
 	information	=  Org_873_Cipher_Hello2_Info;
 	permanent	=  0;
-	description = "Mam dla ciebie propozycjê.";
+	description = "Mam dla Ciebie propozycjê.";
 };                       
 
 FUNC int  Org_873_Cipher_Hello2_Condition()
@@ -74,7 +74,7 @@ FUNC VOID  Org_873_Cipher_Hello2_Info()
 {
 	miners_work = miners_work + 1;
    
-	AI_Output (other, self,"DIA_Cipher_Hello2_15_00"); //Mam dla ciebie propozycjê.
+	AI_Output (other, self,"DIA_Cipher_Hello2_15_00"); //Mam dla Ciebie propozycjê.
 	AI_Output (self, other,"DIA_Cipher_Hello2_12_01"); //Ty? W¹tpiê, ale i tak nie mam nic lepszego do roboty. Mów.
 	AI_Output (other, self,"DIA_Cipher_Hello2_15_02"); //Chcê, ¿ebyœ zacz¹³ kopaæ jak pozostali.
 	AI_Output (self, other,"DIA_Cipher_Hello2_12_03"); //To z braku ziela mam halucynacje. ZejdŸ mi z oczu...

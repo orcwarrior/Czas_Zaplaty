@@ -64,7 +64,7 @@ FUNC void  DIA_Cord_Hello_Info()
 		{
 			cord_warn = cord_warn + 1;//1
 			AI_DrawWeapon (self);
-			AI_Output (self, other,"DIA_Cord_Hello_14_12"); //A Ty nadal szukasz guza!
+			AI_Output (self, other,"DIA_Cord_Hello_14_12"); //A Ty chyba szukasz guza!
 			AI_Output (other, self,"DIA_Cord_Hello_15_13"); //Chodzê tam, gdzie mi siê podoba.
 			AI_Output (self, other,"DIA_Cord_Hello_14_14"); //To œwietnie. Myœlê, ¿e tam Ci siê bardziej spodoba...
 			AI_RemoveWeapon(self);

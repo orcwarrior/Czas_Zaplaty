@@ -966,7 +966,7 @@ INSTANCE DIA_GRD_205_SCORPIO_Stew (C_INFO)
 	information		= DIA_GRD_205_SCORPIO_Stew_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "Mam dla ciebie gulasz Snafa."; 
+	description		= "Mam dla Ciebie gulasz Snafa."; 
 };
 
 FUNC INT DIA_GRD_205_SCORPIO_Stew_Condition()
@@ -981,7 +981,7 @@ FUNC VOID DIA_GRD_205_SCORPIO_Stew_Info()
 {
 	fox_stew = fox_stew + 1;
    
-	AI_Output (other, self, "DIA_GRD_205_SCORPIO_Stew_15_01"); //Mam dla ciebie gulasz Snafa.
+	AI_Output (other, self, "DIA_GRD_205_SCORPIO_Stew_15_01"); //Mam dla Ciebie gulasz Snafa.
 	AI_Output (self, other, "DIA_GRD_205_SCORPIO_Stew_11_02"); //Gulasz Snafa? Na sam¹ myœl dostajê rozwolnienia. Daj to paskudztwo.
 	AI_Output (other, self, "DIA_GRD_205_SCORPIO_Stew_15_03"); //Tylko poczekaj z jedzeniem, a¿ odejdê.
 	

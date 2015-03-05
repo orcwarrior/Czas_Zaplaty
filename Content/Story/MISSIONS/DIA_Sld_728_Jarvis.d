@@ -97,7 +97,7 @@ FUNC VOID DIA_Jarvis_Help_Info()
 	AI_Output (self, other,"DIA_Jarvis_Help_08_03"); //Zadanie jest proste.
 	AI_Output (self, other,"DIA_Jarvis_Help_08_04"); //Musisz odnaleŸæ Corda. Powiesz mu tylko, ¿e znalaz³em zgubê i czekam na resztê.
 	AI_Output (self, other,"DIA_Jarvis_Help_08_05"); //Zapamiêtasz?
-	AI_Output (self, other,"DIA_Jarvis_Help_08_06"); //Czy ja wygl¹dam na idiotê?
+	AI_Output (other, self,"DIA_Jarvis_Help_08_06"); //Czy ja wygl¹dam na idiotê?
 	AI_Output (self, other,"DIA_Jarvis_Help_08_07"); //Ekhm, no có¿...
 	
    AI_DrawWeapon (hero);

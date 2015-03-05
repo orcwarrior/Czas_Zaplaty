@@ -116,7 +116,7 @@ FUNC VOID DIA_Sher_First_Info()
 	AI_Output (self, other, "DIA_Sher_First_11_13"); //Zaczekaj. Gdybyœ potrzebowa³ pomocy, to daj mi znaæ.
 	AI_Output (other, self, "DIA_Sher_First_15_14"); //Bêdê o tym pamiêta³. Bywaj.
 	
-   B_LogEntry		(CH4_GRD_NewMine, "Pierwsz¹ osob¹, któr¹ spotka³em w kopalni by³ nijaki Sher. Mimo podejrzanego wygl¹du wywar³ na mnie dobre wra¿enie. Torlofa znajdê w g³êbi, podobno krzyczy najg³oœniej z ca³ej ho³oty, he, he.");
+   B_LogEntry		(CH4_GRD_NewMine, "Pierwsz¹ osob¹, któr¹ spotka³em w kopalni by³ niejaki Sher. Mimo podejrzanego wygl¹du wywar³ na mnie dobre wra¿enie. Torlofa znajdê w g³êbi, podobno krzyczy najg³oœniej z ca³ej ho³oty, he, he.");
 	B_StopProcessInfos	(self);
 
 	/***************
@@ -156,8 +156,8 @@ FUNC VOID DIA_Sher_Hlp_Info()
 	AI_Output (self, other, "DIA_Sher_Hlp_11_02"); //Co siê sta³o?
 	AI_Output (other, self, "DIA_Sher_Hlp_15_03"); //Bêdê z tob¹ szczery. Przyby³em tu, aby nak³oniæ Torlofa do przy³¹czenia siê...
 	AI_Output (self, other, "DIA_Sher_Hlp_11_04"); //Wiem po co tu przyby³eœ, piracie.
-	AI_Output (other, self, "DIA_Sher_Hlp_15_05"); //Przecie¿ nikt z kopalni nie wie o tym kim kiedyœ by³em.
-	AI_Output (self, other, "DIA_Sher_Hlp_11_06"); //Zdradzi³ Ciê chód. Z regu³y zwyczajnych marynarzy nie wtr¹caj¹ do Kolonii wiêc zaryzykowa³em stwierdzenie, ¿e jesteœ korsarzem. Jak widaæ trafne.
+	AI_Output (other, self, "DIA_Sher_Hlp_15_05"); //Przecie¿ nikt z kopalni nie wie o tym, kim kiedyœ by³em.
+	AI_Output (self, other, "DIA_Sher_Hlp_11_06"); //Zdradzi³ Ciê chód. Z regu³y zwyczajnych marynarzy nie wtr¹caj¹ do Kolonii, wiêc zaryzykowa³em stwierdzenie, ¿e jesteœ korsarzem. Jak widaæ trafne.
 	AI_Output (other, self, "DIA_Sher_Hlp_15_07"); //Powiedzmy, ¿e Ci wierzê. Powiedz mi co taki cwaniak jak Ty robi w Kolonii, do tego wal¹c kilofem w bry³ê rudy?
 	AI_Output (self, other, "DIA_Sher_Hlp_11_08"); //To samo co i Ty, poszukujê odpowiedzi. Wiêcej wiedzieæ nie musisz.
 	AI_Output (other, self, "DIA_Sher_Hlp_15_09"); //Wspomnia³eœ coœ o pomocy.
@@ -200,11 +200,11 @@ FUNC VOID DIA_Sher_Hlp_Info()
 	Ai_Wait (self,1);
 	
    AI_Output (self, other, "DIA_Sher_Hlp_11_32"); //Powiedzmy, ¿e dostrzegam w Tobie coœ wiêcej ni¿ tylko zimne wyrachowanie wilka morskiego.
-	AI_Output (self, other, "DIA_Sher_Hlp_11_33"); //¯ycie up³ywa w strugach gówna, przyjacielu. Czasami warto coœ zrobiæ ¿eby komuœ mniej... œmierdzia³o.
+	AI_Output (self, other, "DIA_Sher_Hlp_11_33"); //¯ycie up³ywa w strugach gówna, przyjacielu. Czasami warto coœ zrobiæ, ¿eby komuœ mniej... œmierdzia³o.
 	AI_Output (other, self, "DIA_Sher_Hlp_15_34"); //Zapamiêtam to. Bywaj.
 	AI_Output (self, other, "DIA_Sher_Hlp_11_35"); //Powodzenia, piracie.
 	
-   B_LogEntry		(CH4_GRD_NewMine, "Rozmowa z Sherem sporo mi pomog³a. Butcha wystarczy obiæ, Cipher zrobi wszystko za dobre zielsko a Homer ma bzika na punkcie tamy, któr¹ zaprojektowa³. Zobaczymy na ile zdadz¹ siê rady tego przem¹drza³ego kopacza.");
+   B_LogEntry		(CH4_GRD_NewMine, "Rozmowa z Sherem sporo mi pomog³a. Butcha wystarczy obiæ, Cipher zrobi wszystko za dobre zielsko, a Homer ma bzika na punkcie tamy, któr¹ zaprojektowa³. Zobaczymy na ile zdadz¹ siê rady tego przem¹drza³ego kopacza.");
 };
 
 // **************************************************
@@ -276,9 +276,9 @@ FUNC VOID DIA_Sher_End_Info()
 	AI_Output (self, hero, "DIA_Sher_End_11_03"); //To mój wybór ch³opcze.
 	AI_Output (self, hero, "DIA_Sher_End_11_04"); //Poza tym to równie dobre miejsce na zakoñczenie wêdrówki, jak ka¿de inne.
 	AI_Output (self, hero, "DIA_Sher_End_11_05"); //Zapamiêtaj przyjacielu, ¿e to nie cel podró¿y kszta³tuje ludzk¹ duszê, ale droga, która do niego zmierza. 
-	AI_Output (self, hero, "DIA_Sher_End_11_06"); //To nasze wybory staj¹ siê œwiadectwem tego co po nas zostanie.
+	AI_Output (self, hero, "DIA_Sher_End_11_06"); //To nasze wybory staj¹ siê œwiadectwem tego, co po nas zostanie.
 	AI_Output (other, self, "DIA_Sher_End_15_07"); //Dlaczego to robisz?
-	AI_Output (self, hero, "DIA_Sher_End_11_08"); //Powiedzmy, ¿e mam przeczucie, ¿e dziêki tobie sporo siê tu zmieni na lepsze.
+	AI_Output (self, hero, "DIA_Sher_End_11_08"); //Powiedzmy, ¿e mam przeczucie, ¿e dziêki Tobie sporo siê tu zmieni na lepsze.
 	
    AI_TurnToNpc(self, jur);
 	AI_TurnToNpc(jur, hero);
