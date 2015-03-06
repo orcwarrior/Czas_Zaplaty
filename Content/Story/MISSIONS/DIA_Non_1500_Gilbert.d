@@ -107,7 +107,7 @@ FUNC VOID  DIA_Gilbert_Ask_Info()
 	AI_Output (other, self,"DIA_Gilbert_Ask_15_02"); //W rzeczy samej. Drax straci³ ca³y zapas konfitur, a popyt nadal roœnie.
 	AI_Output (self, other,"DIA_Gilbert_Ask_04_03"); //Mia³em dostarczyæ kolejn¹ partiê kilka dni temu, ale chyba zwichn¹³em nogê schodz¹c z grani.
 	AI_Output (other, self,"DIA_Gilbert_Ask_15_04"); //To niedobrze.
-	AI_Output (self, other,"DIA_Gilbert_Ask_04_05"); //Mi to mówisz? Ledwo dowlok³em siê z powrotem do kryjówki. Wolê nie myœleæ co wœciek³e psy Gomeza by ze mn¹ zrobi³y, gdyby mnie dorwali.
+	AI_Output (self, other,"DIA_Gilbert_Ask_04_05"); //Mi to mówisz? Ledwo dowlok³em siê z powrotem do kryjówki. Wolê nie myœleæ, co wœciek³e psy Gomeza by ze mn¹ zrobi³y, gdyby mnie dorwali.
 	AI_Output (other, self,"DIA_Gilbert_Ask_15_06"); //A¿ tak zalaz³eœ im za skórê?
 	AI_Output (self, other,"DIA_Gilbert_Ask_04_07"); //Od jakiegoœ czasu pomagam rebeliantom. Raz podczas wymiany z Draxem zaskoczy³o nas kilku stra¿ników.
 	AI_Output (self, other,"DIA_Gilbert_Ask_04_08"); //Dwóch za³atwiliœmy, ale jeden da³ nogê. Do tego ten gnojek zna³ mnie ju¿ wczeœniej. W Starym Obozie jestem spalony.

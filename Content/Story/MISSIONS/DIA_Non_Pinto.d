@@ -124,15 +124,15 @@ FUNC VOID Info_Pinto_Warn_Info()
 	B_FullStop (hero);
 	AI_TurnToNpc (other, self);
    
-	AI_Output (self, other,"Info_Pinto_Warn_06_01"); //Podobno ktoœ wsadza nos tam gdzie nie powinien.
+	AI_Output (self, other,"Info_Pinto_Warn_06_01"); //Podobno ktoœ wsadza nos tam, gdzie nie powinien.
 	AI_Output (self, other,"Info_Pinto_Warn_06_02"); //Podobno to bardzo niezdrowe zajêcie.
 	AI_Output (other, self,"Info_Pinto_Warn_15_03"); //Podobno lepsza najgorsza prawda, ni¿ najwspanialsze k³amstwo.
 	AI_Output (self, other,"Info_Pinto_Warn_06_04"); //Wiesz, doroœli czasem musz¹ mówiæ to co powinni, a nie to co chc¹.
 	AI_Output (other, self,"Info_Pinto_Warn_15_05"); //Mówisz za siebie, czy za Krisa?
 	AI_Output (self, other,"Info_Pinto_Warn_06_06"); //A co to za ró¿nica?
 	AI_Output (other, self,"Info_Pinto_Warn_15_07"); //Myœlê, ¿e Hrabia kiedyœ wróci i bardziej doceni przykr¹ prawdê ni¿ s³odki fa³sz.
-	AI_Output (self, other,"Info_Pinto_Warn_06_08"); //Gówno mnie obchodzi to co myœlisz. Prawda jest taka, ¿e podpad³eœ Krisowi, a on Ci nie odpuœci.
-	AI_Output (other, self,"Info_Pinto_Warn_15_09"); //I przys³a³ ciebie bo oblecia³ go strach?
+	AI_Output (self, other,"Info_Pinto_Warn_06_08"); //Gówno mnie obchodzi to, co myœlisz. Prawda jest taka, ¿e podpad³eœ Krisowi, a on Ci nie odpuœci.
+	AI_Output (other, self,"Info_Pinto_Warn_15_09"); //I przys³a³ Ciebie, bo oblecia³ go strach?
 	AI_Output (self, other,"Info_Pinto_Warn_06_10"); //Po prostu nie lubi siê brudziæ fekaliami. A mi tam zjedno komu nakopiê do ty³ka.
 	AI_DrawWeapon (self);
 	AI_Output (other, self,"Info_Pinto_Warn_15_11"); //Uwa¿aj, nosi³ wilk razy kilka...
@@ -179,7 +179,7 @@ FUNC VOID Info_Pinto_Warn1_Info()
 	AI_Output (self, other,"Info_Pinto_Warn1_06_01"); //To by³o ostrze¿enie, ch³opcze.
 	AI_Output (self, other,"Info_Pinto_Warn1_06_02"); //Nastêpnym razem nie bêdê tak delikatny.
 	AI_Output (other, self,"Info_Pinto_Warn1_15_03"); //Zaczekaj!
-	AI_Output (self, other,"Info_Pinto_Warn1_06_04"); //Masz ochotê na powtórkê? Wiesz ja tak mogê d³ugo...
+	AI_Output (self, other,"Info_Pinto_Warn1_06_04"); //Masz ochotê na powtórkê? Wiesz, ja tak mogê d³ugo...
 	AI_Output (other, self,"Info_Pinto_Warn1_15_05"); //Mam dla Ciebie propozycjê.
 	AI_Output (self, other,"Info_Pinto_Warn1_06_06"); //No proszê, bezczelny z Ciebie gnojek. Ale takich w³aœnie lubiê. Mów.
 	AI_Output (other, self,"Info_Pinto_Warn1_15_07"); //Udowodniê, ¿e to Nia morduje ludzi w GnieŸdzie.
@@ -190,7 +190,7 @@ FUNC VOID Info_Pinto_Warn1_Info()
 	AI_Output (other, self,"Info_Pinto_Warn1_15_12"); //Ale nie bêdê sam. Ty i kilku innych ukryjecie siê w cieniu.
 	AI_Output (self, other,"Info_Pinto_Warn1_06_13"); //Szykuje siê niez³e przedstawienie. Zabiorê trochê ¿arcia i piwo.
 	AI_Output (other, self,"Info_Pinto_Warn1_15_14"); //Zgadzasz siê?
-	AI_Output (self, other,"Info_Pinto_Warn1_06_15"); //Czemu nie. Mam ju¿ doœæ tej wrednej suki. Je¿eli zaœwiadcz¹ te¿ inni to Kris nie bêdzie mia³ wyboru.
+	AI_Output (self, other,"Info_Pinto_Warn1_06_15"); //Czemu nie. Mam ju¿ doœæ tej wrednej suki. Je¿eli zaœwiadcz¹ te¿ inni, to Kris nie bêdzie mia³ wyboru.
 	AI_Output (other, self,"Info_Pinto_Warn1_15_16"); //Œwietnie. Porozmawiam z pozosta³ymi. 
 	AI_Output (self, other,"Info_Pinto_Warn1_06_17"); //Najpierw porozmawiaj z Ni¹. Nic z tego nie wyjdzie jak dziwka nie poleci na twoje k³amstewka.
 	AI_Output (other, self,"Info_Pinto_Warn1_15_18"); //W porz¹dku. 

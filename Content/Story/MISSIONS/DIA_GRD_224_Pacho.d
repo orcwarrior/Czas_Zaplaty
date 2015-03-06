@@ -165,7 +165,7 @@ INSTANCE DIA_Pacho_Map (C_INFO)
 	information		= DIA_Pacho_Map_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "Mam do ciebie pytanie."; 
+	description		= "Mam do Ciebie pytanie."; 
 };
 
 FUNC INT DIA_Pacho_Map_Condition()
@@ -178,7 +178,7 @@ FUNC INT DIA_Pacho_Map_Condition()
 
 FUNC VOID DIA_Pacho_Map_Info()
 {
-	AI_Output (other, self, "DIA_Pacho_Map_15_01"); //Mam do ciebie pytanie.
+	AI_Output (other, self, "DIA_Pacho_Map_15_01"); //Mam do Ciebie pytanie.
 	AI_Output (self, other, "DIA_Pacho_Map_11_02"); //Pytaj przyjacielu.
 	AI_Output (other, self, "DIA_Pacho_Map_15_03"); //Skorpion potrzebowa³ mapê Kolonii. Uda³o mi siê jedn¹ dla niego zdobyæ. Nie chcia³ jednak powiedzieæ nic wiêcej.
 	AI_Output (self, other, "DIA_Pacho_Map_11_04"); //Ka¿dy ma swoje tajemnice...

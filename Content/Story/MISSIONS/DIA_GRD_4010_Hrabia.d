@@ -645,7 +645,7 @@ FUNC VOID DIA_Hrabia_TheRock_Why_Ok()
 	AI_Output (self, other, "DIA_Hrabia_TheRock_Why_Ok_11_04"); //Po pierwsze Kruk jest pewien, ¿e nadal jestem zamkniêty w GnieŸdzie.
 	AI_Output (self, other, "DIA_Hrabia_TheRock_Why_Ok_11_05"); //Po drugie ma teraz inne sprawy na g³owie. ¯eby siê st¹d ulotniæ, musi zmusiæ jakiegoœ maga do przeprowadzenia rytua³u.
 	AI_Output (self, other, "DIA_Hrabia_TheRock_Why_Ok_11_06"); //Ten kamieñ teleportuj¹cy to tak¿e Ÿród³o mocy. Z tego co wiem, Kruk ma ju¿ formu³ê. Brakuje mu tylko narzêdzia, czyli maga.
-	AI_Output (other, self, "DIA_Hrabia_TheRock_Why_Ok_15_07"); //Hmm, chyba wiem do czego zmierzasz. To ja mam robiæ za magika, który mu pomo¿e.
+	AI_Output (other, self, "DIA_Hrabia_TheRock_Why_Ok_15_07"); //Hmm, chyba wiem, do czego zmierzasz. To ja mam robiæ za magika, który mu pomo¿e.
 	AI_Output (self, other, "DIA_Hrabia_TheRock_Why_Ok_11_08"); //Dok³adnie! Przybêdzie tu tylko z Tob¹. Zaczniesz inkantacjê, odwrócisz jego uwagê, a wtedy ja skoñczê to, co zacz¹³em dawno temu. 
 	AI_Output (other, self, "DIA_Hrabia_TheRock_Why_Ok_15_09"); //Kruk nie jest idiot¹. Na dziedziñcu le¿y posiekany demon, a zdaje siê, ¿e ten jego by³ ¿ywy.
 	AI_Output (self, other, "DIA_Hrabia_TheRock_Why_Ok_11_10"); //Na to te¿ jest sposób. Przywo³a siê innego demona.

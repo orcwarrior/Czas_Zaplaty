@@ -182,7 +182,7 @@ FUNC INT Info_Ormus_Meet_Condition()
 FUNC VOID Info_Ormus_Meet_Info()
 {	
 	AI_Output (other, self,"Info_Ormus_Meet_15_01"); //Znowu Ciê suszy?
-	AI_Output (self, other,"Info_Ormus_Meet_06_02"); //Jak zawsze. Zaczyna kiedy otwieram oczy. A co masz jak¹œ niepotrzebn¹ butelczynê?
+	AI_Output (self, other,"Info_Ormus_Meet_06_02"); //Jak zawsze. Zaczyna, kiedy otwieram oczy. A co, masz jak¹œ niepotrzebn¹ butelczynê?
 	AI_Output (other, self,"Info_Ormus_Meet_15_03"); //Mo¿e i mam, ale nic za darmo.
 	AI_Output (self, other,"Info_Ormus_Meet_06_04"); //Kogo mam zabiæ?
 	AI_Output (other, self,"Info_Ormus_Meet_15_05"); //To Nia morduje. Chcê udowodniæ Krisowi, ¿e trzeba z tym skoñczyæ raz na zawsze.

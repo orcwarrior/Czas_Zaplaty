@@ -88,7 +88,7 @@ FUNC VOID Info_SmithX_Again_Info()
 	AI_Output (self, other,"Info_SmithX_Again_06_02"); //Tak, czasem pomaga³ mi w kuŸni. A co Tobie do tego?
 	AI_Output (other, self,"Info_SmithX_Again_15_03"); //Szkoda go. Georg nie musia³ go zabijaæ...
 	AI_Output (self, other,"Info_SmithX_Again_06_04"); //Wtedy Znamiê zabi³by Niê. W¹tpiê, ¿e Hrabia by³by szczêœliwy z tego powodu.
-	AI_Output (self, other,"Info_SmithX_Again_06_05"); //Wolê nie myœleæ co wtedy by nas czeka³o...
+	AI_Output (self, other,"Info_SmithX_Again_06_05"); //Wolê nie myœleæ, co wtedy by nas czeka³o...
 
 	B_LogEntry		(CH4_Non_Eagle, "Kowal uwa¿a, ¿e œmieræ niemowy to mniejsze z³o. Gdyby coœ sta³o siê Nii, Hrabia rozpêta³by w GnieŸdzie prawdziwe piek³o.");
 };
@@ -120,7 +120,7 @@ FUNC INT Info_SmithX_Again1_Condition()
 FUNC VOID Info_SmithX_Again1_Info()
 {	
 	AI_Output (other, self,"Info_SmithX_Again1_15_01"); //Chcia³em o coœ zapytaæ...
-	AI_Output (self, other,"Info_SmithX_Again1_06_02"); //Nie musisz koñczyæ. Wiem do czego zmierzasz.
+	AI_Output (self, other,"Info_SmithX_Again1_06_02"); //Nie musisz koñczyæ. Wiem, do czego zmierzasz.
 	AI_Output (self, other,"Info_SmithX_Again1_06_03"); //Dosz³y mnie s³uchy, ¿e namawiasz ch³opaków na nocne harce. Ale beze mnie.
 	AI_Output (self, other,"Info_SmithX_Again1_06_04"); //Nie mam zamiaru wchodziæ w drogê Krisowi.
 	B_LogEntry		(CH4_Non_Eagle, "Kowal nie bêdzie w tym uczestniczy³.");

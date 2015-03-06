@@ -270,7 +270,7 @@ FUNC VOID Info_Nia_Def1_Info()
    AI_Output (other, self,"Info_Nia_Def1_15_09"); //Wybacz, ja...
    AI_Output (self, other,"Info_Nia_Def1_16_10"); //Wróæ jutro, wtedy dotrzymam s³owa. A teraz zostaw mnie sam¹.
    AI_Output (other, self,"Info_Nia_Def1_15_11"); //Oczywiœcie, bywaj.
-   B_LogEntry      (CH4_Non_Eagle, "To miejsce jest co najmniej dziwne. W³aœnie by³em œwiadkiem jak niemowa rzuci³ siê na kobietê i chcia³ j¹ zabiæ. Mo¿e i nie by³oby w tym nic dziwnego, gdyby nie wyraz jego twarzy. On siê ba³, wygl¹da³ tak jakby spojrza³ w oblicze œmierci.");
+   B_LogEntry      (CH4_Non_Eagle, "To miejsce jest co najmniej dziwne. W³aœnie by³em œwiadkiem jak niemowa rzuci³ siê na kobietê i chcia³ j¹ zabiæ. Mo¿e i nie by³oby w tym nic dziwnego, gdyby nie wyraz jego twarzy. On siê ba³, wygl¹da³, tak jakby spojrza³ w oblicze œmierci.");
    B_LogEntry      (CH4_Non_Eagle, "Nia pomo¿e mi jutro, w miêdzyczasie mogê rozejrzeæ siê po twierdzy.");
 
    /****************************
@@ -310,7 +310,7 @@ FUNC VOID Info_Nia_Meet_Info()
    AI_Output (self, other,"Info_Nia_Meet_16_04"); //Naprawdê? Odnios³am zupe³nie inne wra¿enie...
    AI_Output (other, self,"Info_Nia_Meet_15_05"); //Wybacz, pomyli³em siê. Nigdy w ¿yciu nie widzia³em tak piêknej kobiety, twa uroda przyæmi³a mi umys³.
    AI_Output (self, other,"Info_Nia_Meet_16_06"); //Jesteœ bardzo mi³y. Potrafisz piêknie mówiæ, prawie jak Hrabia.
-   AI_Output (other, self,"Info_Nia_Meet_15_07"); //Odk¹d ciê ujrza³em, nie mogê myœleæ o niczym innym. Jesteœ jak letnia mgie³ka wœród traw i kwiatów.
+   AI_Output (other, self,"Info_Nia_Meet_15_07"); //Odk¹d Ciê ujrza³em, nie mogê myœleæ o niczym innym. Jesteœ jak letnia mgie³ka wœród traw i kwiatów.
    AI_Output (self, other,"Info_Nia_Meet_16_08"); //Jeszcze nikt... Nie przerywaj!
    AI_Output (other, self,"Info_Nia_Meet_15_09"); //Móg³bym spijaæ nektar s³odyczy spomiêdzy Twych ud, móg³bym...
    AI_Output (self, other,"Info_Nia_Meet_16_10"); //Wystarczy ju¿ tego be³kotu. Bêdê czeka³a po zmierzchu, mam nadziejê, ¿e mnie znajdziesz.

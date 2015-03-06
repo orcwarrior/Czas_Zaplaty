@@ -87,9 +87,9 @@ FUNC VOID Info_Seven_Again_Info()
 {	
 
 	AI_Output (other, self,"Info_Seven_Again_15_00"); //Szkoda tego niemowy.
-	AI_Output (self, other,"Info_Seven_Again_06_01"); //Szkoda jest wtedy jak ork wpadnie do studni - ani wody do picia, ani œcierwa do zabicia.
+	AI_Output (self, other,"Info_Seven_Again_06_01"); //Szkoda jest wtedy, jak ork wpadnie do studni - ani wody do picia, ani œcierwa do zabicia.
 	AI_Output (other, self,"Info_Seven_Again_15_02"); //Kiedy z nim rozmawia³em wygl¹da³ jakby coœ go œmiertelnie przerazi³o.
-	AI_Output (self, other,"Info_Seven_Again_06_03"); //Hmm, jak tak patrzê na twoj¹ buŸkê to nawet wiem co.
+	AI_Output (self, other,"Info_Seven_Again_06_03"); //Hmm, jak tak patrzê na twoj¹ buŸkê, to nawet wiem co.
 	AI_Output (other, self,"Info_Seven_Again_15_04"); //Nie na mnie patrzy³, tylko na Niê.
 	AI_Output (self, other,"Info_Seven_Again_06_05"); //Aaa. No có¿, tutaj powinniœmy zakoñczyæ rozmowê.
 	AI_Output (other, self,"Info_Seven_Again_15_06"); //Ty te¿ siê czegoœ boisz?
@@ -238,7 +238,7 @@ FUNC VOID  Info_Seven_Myst_Kill()
 	Seven_Myst=2;			
 	AI_Output (other, self," Info_Seven_Myst_Kill_15_00"); //G³owa do góry!
 	AI_Output (self, other," Info_Seven_Myst_Kill_06_01"); //He, he. Masz poczucie humoru, to lubiê.
-	AI_Output (self, other," Info_Seven_Myst_Kill_06_02"); //Daj znaæ jak bêdziesz gotów na nastêpn¹ zagadkê.
+	AI_Output (self, other," Info_Seven_Myst_Kill_06_02"); //Daj znaæ, jak bêdziesz gotów na nastêpn¹ zagadkê.
 	B_LogEntry		(CH4_Non_Eagle, "Drug¹ zagadkê mam z g³owy, czas na kolejn¹.");
 		Info_ClearChoices (Info_Seven_Myst);
 };
@@ -434,9 +434,9 @@ FUNC VOID  Info_Seven_MystLast_Ok()
 {
 	Seven_Myst=4;
 	AI_Output (other, self," Info_Seven_MystLast_Ok_15_00"); //Druga i czwarta.
-	AI_Output (self, other," Info_Seven_MystLast_Ok_06_01"); //NieŸle. Nie sadzi³em, ¿e odgadniesz prawid³owo.
+	AI_Output (self, other," Info_Seven_MystLast_Ok_06_01"); //NieŸle. Nie s¹dzi³em, ¿e odgadniesz prawid³owo.
 	AI_Output (self, other," Info_Seven_MystLast_Ok_06_02"); //Jestem pod wra¿eniem.
-	AI_Output (self, other," Info_Seven_MystLast_Ok_06_03"); //Wróæ to pogadamy o pewnej zdzirze. Ale najpierw porozmawiaj z innymi.
+	AI_Output (self, other," Info_Seven_MystLast_Ok_06_03"); //Wróæ, to pogadamy o pewnej zdzirze. Ale najpierw porozmawiaj z innymi.
 	AI_Output (self, other," Info_Seven_MystLast_Ok_06_04"); //To co Ci powiem pogr¹¿y zabójcê.
 	B_LogEntry		(CH4_Non_Eagle, "Odgad³em ostatni¹ zagadkê! Teraz to ja bêdê zadawa³ pytania, ale najpierw muszê wypytaæ innych o podejrzenia w sprawie zabójstwa.");
 		Info_ClearChoices (Info_Seven_MystLast);
@@ -480,7 +480,7 @@ FUNC VOID Info_Seven_MystEnd_Info()
 
 	investigation = investigation + 1;
 	AI_Output (other, self,"Info_Seven_MystEnd_15_00"); //No to zamieniam siê w s³uch.
-	AI_Output (self, other,"Info_Seven_MystEnd_06_01"); //Zas³u¿y³eœ na to by us³yszeæ prawdê o mrocznej stronie pewnej niewy¿ytej dziwki.
+	AI_Output (self, other,"Info_Seven_MystEnd_06_01"); //Zas³u¿y³eœ na to, by us³yszeæ prawdê o mrocznej stronie pewnej niewy¿ytej dziwki.
 	AI_Output (self, other,"Info_Seven_MystEnd_06_02"); //Jestem pewien, ¿e to Nia zabija. Widzia³em jak uje¿d¿a³a tego ostatniego pechowca.
 	AI_Output (self, other,"Info_Seven_MystEnd_06_03"); //Na koniec zadŸga³a go no¿em. Kiedy dogorywa³ ona nadal na nim siedzia³a.
 	AI_Output (self, other,"Info_Seven_MystEnd_06_04"); //Jest gorsza ni¿ harpie.
@@ -503,7 +503,7 @@ FUNC VOID Info_Seven_MystEnd_Info()
 	AI_Output (self, other,"Info_Seven_MystEnd_06_21"); //To ju¿ Twoja dzia³ka. To bezlitosna bestia, ale z ka¿d¹ ofiar¹ spó³kowa³a.
 	AI_Output (self, other,"Info_Seven_MystEnd_06_22"); //Mo¿e spróbuj siê z ni¹ umówiæ, najlepiej po zmroku.
 	AI_Output (self, other,"Info_Seven_MystEnd_06_23"); //Pogadaj te¿ z Krisem, albo Pinto. Ktoœ z nich musi byæ œwiadkiem.
-	AI_Output (other, self,"Info_Seven_MystEnd_15_24"); //A je¿eli oni poczekaj¹ a¿ dziewczyna mnie zaszlachtuje? Albo rzuc¹ siê na mnie kiedy to ja j¹ zabijê?
+	AI_Output (other, self,"Info_Seven_MystEnd_15_24"); //A je¿eli oni poczekaj¹, a¿ dziewczyna mnie zaszlachtuje? Albo rzuc¹ siê na mnie, kiedy to ja j¹ zabijê?
 	AI_Output (other, self,"Info_Seven_MystEnd_15_25"); //Tak czy inaczej, w¹tpiê, ¿e stan¹ po mojej stronie.
 	AI_Output (self, other,"Info_Seven_MystEnd_06_26"); //Racja. Za³atw sobie wiêcej œwiadków, co najmniej kilku, którzy te¿ to zobacz¹.
 	AI_Output (self, other,"Info_Seven_MystEnd_06_27"); //Wtedy Kris i Pinto powinni umyæ rêce.
@@ -700,7 +700,7 @@ FUNC INT DIA_Seven_CanYouTeachMe_Condition()
 FUNC VOID DIA_Seven_CanYouTeachMe_Info()
 {
 	AI_Output (other, self, "DIA_Seven_CanYouTeachMe_15_01"); //Mo¿esz mnie czegoœ nauczyæ?
-	AI_Output (self, other, "DIA_Seven_CanYouTeachMe_12_02"); //Poka¿ê ci co mo¿na zrobiæ z kusz¹.
+	AI_Output (self, other, "DIA_Seven_CanYouTeachMe_12_02"); //Poka¿ê Ci, co mo¿na zrobiæ z kusz¹.
 	
 	
 	Log_CreateTopic(GE_TeacherOR, LOG_NOTE);

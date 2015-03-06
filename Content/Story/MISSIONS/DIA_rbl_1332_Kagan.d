@@ -160,7 +160,7 @@ FUNC VOID DIA_BaalKagan_OrderHelp_Info()
 	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp1_13_15"); //Taran robi mi konkurencjê.
 	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp1_15_16"); //Mówisz o handlu zielem?
 	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp1_13_17"); //Tak, do cholery. Przecie¿ nie o krêceniu ty³kiem!
-	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp1_15_18"); //Chyba wiem do czego zmierzasz. Moja odpowiedŸ brzmi - NIE. Nie wyprujê mu flaków tylko dlatego, ¿e sprzedaje ziele.
+	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp1_15_18"); //Chyba wiem, do czego zmierzasz. Moja odpowiedŸ brzmi - NIE. Nie wyprujê mu flaków tylko dlatego, ¿e sprzedaje ziele.
 	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp1_13_19"); //Spokojnie, wysnu³eœ zbyt pochopne wnioski. A kto mówi o zabijaniu?
 	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp1_13_20"); //Wystarczy, ¿e Taran zrazi do siebie klientów. Ja ju¿ zajmê siê reszt¹.
 	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp1_15_21"); //Co mia³bym zrobiæ?

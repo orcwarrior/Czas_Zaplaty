@@ -95,7 +95,7 @@ FUNC VOID DIA_Harf_Proposal_Info()
 	AI_Output (self, other, "DIA_Harf_Proposal_11_07"); //Cienie musz¹ mu p³aciæ za to, ¿e nie napuszcza na nich stra¿ników.
 	AI_Output (self, other, "DIA_Harf_Proposal_11_08"); //Nowi p³ac¹ wejœciówkê.
 	AI_Output (self, other, "DIA_Harf_Proposal_11_09"); //Czas to ukróciæ.
-	AI_Output (other, self, "DIA_Harf_Proposal_15_10"); //Chyba wiem do czego zmierzasz.
+	AI_Output (other, self, "DIA_Harf_Proposal_15_10"); //Chyba wiem, do czego zmierzasz.
 	AI_Output (self, other, "DIA_Harf_Proposal_11_11"); //Jaka jest twoja decyzja?
 };
 

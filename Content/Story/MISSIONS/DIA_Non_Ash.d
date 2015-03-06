@@ -83,7 +83,7 @@ FUNC VOID Info_Ash_Again_Info()
 	investigation = investigation + 1;
 	AI_Output (other, self,"Info_Ash_Again_15_01"); //Wiesz kto to Znamiê?
 	AI_Output (self, other,"Info_Ash_Again_06_02"); //To ten idiota, którego zabi³ Georg. A co Ci do tego?
-	AI_Output (other, self,"Info_Ash_Again_15_03"); //Nie wydaje ci siê dziwne, ¿e niemowa rzuci³ siê na Niê nie zwa¿aj¹c na Georga?
+	AI_Output (other, self,"Info_Ash_Again_15_03"); //Nie wydaje Ci siê dziwne, ¿e niemowa rzuci³ siê na Niê nie zwa¿aj¹c na Georga?
 	AI_Output (self, other,"Info_Ash_Again_06_04"); //Mia³ nie po kolei w g³owie, co w tym dziwnego? 
 	AI_Output (self, other,"Info_Ash_Again_06_05"); //Jedni siê wieszaj¹, inni skacz¹ z murów na g³owê, a jeszcze inni rzucaj¹ siê na zabijaków jak Georg.
 	AI_Output (self, other,"Info_Ash_Again_06_06"); //Chcia³ umrzeæ i tyle.
@@ -97,7 +97,7 @@ FUNC VOID Info_Ash_Again_Info()
 	AI_Output (self, other,"Info_Ash_Again_06_14"); //Znamiê za bardzo nim mieli³. Zbyt g³oœno mówi³, ¿e Nia to dziwka, która daje dupy ka¿demu kto ma w³adzê.
 	AI_Output (self, other,"Info_Ash_Again_06_15"); //Ale to nie moja sprawa i dobrze Ci radzê, ¿ebyœ za du¿o nie niucha³.
 	AI_PlayAni(other,"T_YES");
-	B_LogEntry		(CH4_Non_Eagle, "Œmieræ niemowy da³a mi trochê do myœlenia. Kucharz Ash powiedzia³ coœ ciekawego. Znamiê straci³ jêzyk bo za g³oœno krytykowa³ Niê i to z kim sypia. Kris to bezwzglêdny cz³owiek, a przede wszystkim zaufany Hrabiego, muszê na niego uwa¿aæ.");
+	B_LogEntry		(CH4_Non_Eagle, "Œmieræ niemowy da³a mi trochê do myœlenia. Kucharz Ash powiedzia³ coœ ciekawego. Znamiê straci³ jêzyk, bo za g³oœno krytykowa³ Niê i to z kim sypia. Kris to bezwzglêdny cz³owiek, a przede wszystkim zaufany Hrabiego, muszê na niego uwa¿aæ.");
 };
 
 
@@ -112,7 +112,7 @@ INSTANCE Info_Ash_Again1 (C_INFO)
 	information		= Info_Ash_Again1_Info;
 	important		= 0;
 	permanent		= 0;
-	description 		= "Mam do ciebie proœbê.";
+	description 		= "Mam do Ciebie proœbê.";
 };                       
 
 FUNC INT Info_Ash_Again1_Condition()

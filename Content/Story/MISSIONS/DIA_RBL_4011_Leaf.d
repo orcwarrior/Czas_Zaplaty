@@ -936,7 +936,7 @@ instance Info_Leaf_Choice (C_INFO)
 	information	= Info_Leaf_Choice_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Mam do ciebie sprawê.";
+	description = "Mam do Ciebie sprawê.";
 };
 
 FUNC int  Info_Leaf_Choice_Condition()
@@ -949,7 +949,7 @@ FUNC int  Info_Leaf_Choice_Condition()
 
 FUNC void  Info_Leaf_Choice_Info()
 {
-	AI_Output 		(hero, self,"Info_Leaf_Choice_15_01"); //Mam do ciebie sprawê.
+	AI_Output 		(hero, self,"Info_Leaf_Choice_15_01"); //Mam do Ciebie sprawê.
 	AI_Output 		(self, hero,"Info_Leaf_Choice_14_02"); //Czego znowu chcesz?
    AI_Output 		(hero, self,"Info_Leaf_Choice_15_03"); //Podobno zyskujesz rudê od Carlsona i od razu mówiê, ¿e masz z tym natychmiast skoñczyæ!
    AI_Output 		(self, hero,"Info_Leaf_Choice_14_04"); //Bo co mi zrobisz?

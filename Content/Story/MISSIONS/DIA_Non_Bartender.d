@@ -52,7 +52,7 @@ FUNC VOID Info_Bartender_Stigma_Info()
 	AI_Output (other, self,"Info_Bartender_Stigma_15_01"); //Dobrze zna³eœ Znamiê?
 	AI_Output (self, other,"Info_Bartender_Stigma_06_02"); //Przychodzi³ czasem utopiæ smutki.
 	AI_Output (other, self,"Info_Bartender_Stigma_15_03"); //Przed, czy po tym jak straci³ jêzyk?
-	AI_Output (self, other,"Info_Bartender_Stigma_06_04"); //Przed i po. Zdecydowanie czêœciej pi³ jak móg³ mieliæ ozorem.
+	AI_Output (self, other,"Info_Bartender_Stigma_06_04"); //Przed i po. Zdecydowanie czêœciej pi³, jak móg³ mieliæ ozorem.
 	AI_Output (other, self,"Info_Bartender_Stigma_15_05"); //Mówi³ coœ ciekawego?
 	AI_Output (self, other,"Info_Bartender_Stigma_06_06"); //Mo¿e i mówi³. A co Ci do tego?
 	AI_Output (other, self,"Info_Bartender_Stigma_15_07"); //Ile?
@@ -99,14 +99,14 @@ FUNC VOID Info_Bartender_Stigma1_Info()
 	AI_Output (self, other,"Info_Bartender_Stigma1_06_05"); //Dobra, ju¿ dobra. Powiem co wiem, a Ty dasz mi spokój.
 	AI_Output (self, other,"Info_Bartender_Stigma1_06_06"); //I jakby co to ode mnie tego nie s³ysza³eœ.
 	AI_PlayAni (other,"T_YES");
-	AI_Output (self, other,"Info_Bartender_Stigma1_06_07"); //Kiedyœ Znamiê wypi³ wiêcej ni¿ powinien i zacz¹³ be³kotaæ.
+	AI_Output (self, other,"Info_Bartender_Stigma1_06_07"); //Kiedyœ Znamiê wypi³ wiêcej, ni¿ powinien i zacz¹³ be³kotaæ.
 	AI_Output (self, other,"Info_Bartender_Stigma1_06_08"); //Na szczêœcie nikt tego nie s³ysza³, prócz mnie.
 	AI_Output (self, other,"Info_Bartender_Stigma1_06_09"); //Znamiê mówi³, ¿e Nia to wredna suka. ¯e pod t¹ niewinn¹ mink¹ kryje siê prawdziwy potwór.
 	AI_Output (self, other,"Info_Bartender_Stigma1_06_10"); //Powiedzia³, ¿e nawet Gomez siê jej przerazi³ i odda³ dziwkê Krukowi.
 	AI_Output (self, other,"Info_Bartender_Stigma1_06_11"); //Mówi siê, ¿e w nocy dorwa³a kumpla Arto w ³ó¿ku i od tamtej chwili osobisty przydupas Gomeza nosi przydomek Blizna.
 	AI_Output (self, other,"Info_Bartender_Stigma1_06_12"); //Kruk nie mia³ na ni¹ czasu. Ale wpad³a w oko Hrabiemu.
 	AI_Output (self, other,"Info_Bartender_Stigma1_06_13"); //Ale jego teraz nie ma, a dziewczyna siê nudzi.
-	AI_Output (self, other,"Info_Bartender_Stigma1_06_14"); //Mo¿e to tylko dziwny zbieg okolicznoœci, ale ludzie zaczêli gin¹æ kiedy Hrabia opuœci³ Gniazdo.
+	AI_Output (self, other,"Info_Bartender_Stigma1_06_14"); //Mo¿e to tylko dziwny zbieg okolicznoœci, ale ludzie zaczêli gin¹æ, kiedy Hrabia opuœci³ Gniazdo.
 	AI_Output (other, self,"Info_Bartender_Stigma1_15_15"); //Sugerujesz, ¿e to Nia zabija? To niedorzeczne...
 	AI_Output (self, other,"Info_Bartender_Stigma1_06_16"); //Nic nie sugerujê. Zrobisz co uwa¿asz z t¹ wiedz¹.
 	AI_Output (other, self,"Info_Bartender_Stigma1_15_17"); //Drogo mnie kosztowa³a. Ciekawe ile z tego to prawda?
