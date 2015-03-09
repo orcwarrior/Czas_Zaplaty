@@ -24,7 +24,8 @@ FUNC VOID B_AssignAmbientInfos_NPC(var c_NPC slf)
 
 FUNC VOID B_AssignAmbientInfos(var c_NPC amb_self)
 {
-   if ((amb_self.npctype==NPCTYPE_AMBIENT) || (amb_self.npctype==npctype_mine_ambient)
+   if ((amb_self.npctype==NPCTYPE_AMBIENT) || (amb_self.npctype==npctype_mine_ambient) 
+	|| (amb_self.npctype==NPCTYPE_ROGUE)
    || (Hlp_StrCmp(amb_self.name, NAME_Gardist)) || (Hlp_StrCmp(amb_self.name, NAME_Schlaeger)) 
    || (Hlp_StrCmp(amb_self.name, NAME_Soeldner)))
 	{	
