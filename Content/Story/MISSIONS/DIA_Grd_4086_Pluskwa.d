@@ -75,7 +75,7 @@ FUNC VOID DIA_Pluskwa_First_Info()
    
 	AI_Output (self, other, "DIA_Pluskwa_First_11_01"); //Nasz Wilczek ma nowego przyjaciela? Czego tu szukasz przyb³êdo?
 	AI_Output (other, self, "DIA_Pluskwa_First_15_02"); //Chcia³em kupiæ ³uk.
-	AI_Output (self, other, "DIA_Pluskwa_First_11_03"); //Nie znam ciê...
+	AI_Output (self, other, "DIA_Pluskwa_First_11_03"); //Nie znam Ciê...
 	
    var C_ITEM myarmor;
 	myarmor = Npc_GetEquippedArmor(hero);
@@ -130,8 +130,8 @@ FUNC VOID DIA_Pluskwa_Again_Info()
 	AI_TurnToNpc(self, other);
 	AI_GotoNpc(self, other);
 	AI_Output (self, other, "DIA_Pluskwa_Again_11_01"); //Wystarczy ju¿ tego kupowania. ZejdŸ mi z oczu.
-	AI_Output (other, self, "DIA_Pluskwa_Again_15_02"); //Coœ ty taki nerwowy?
-	AI_Output (self, other, "DIA_Pluskwa_Again_11_03"); //Nie twoja sprawa. Spierdalaj!
+	AI_Output (other, self, "DIA_Pluskwa_Again_15_02"); //Coœ Ty taki nerwowy?
+	AI_Output (self, other, "DIA_Pluskwa_Again_11_03"); //Nie Twoja sprawa. Spierdalaj!
 
 	Info_ClearChoices (DIA_Pluskwa_Again);
 	Info_AddChoice (DIA_Pluskwa_Again, "Powinieneœ coœ wypiæ.", DIA_Pluskwa_Again_Drink);

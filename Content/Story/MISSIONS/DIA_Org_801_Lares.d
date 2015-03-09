@@ -80,7 +80,7 @@ FUNC VOID DIA_Lares_Again_Info()
 	AI_Output (self, other,"DIA_Lares_Again_11_06"); //Ta, a ¿ona przyjaciela jest tak¿e nasz¹ przyjació³k¹, he, he. 
 	AI_Output (self, other,"DIA_Lares_Again_11_07"); //No to nas znalaz³eœ, rozgl¹daj siê do woli.
 	AI_Output (other, self,"DIA_Lares_Again_15_08"); //Powiesz mi coœ wiêcej o tym co szykujecie?
-	AI_Output (self, other,"DIA_Lares_Again_11_09"); //Uwa¿asz mnie za idiotê? Mo¿e i przys³a³ ciê Cavalorn, ale to za ma³o.
+	AI_Output (self, other,"DIA_Lares_Again_11_09"); //Uwa¿asz mnie za idiotê? Mo¿e i przys³a³ Ciê Cavalorn, ale to za ma³o.
 	AI_Output (self, other,"DIA_Lares_Again_11_10"); //Powiem Ci coœ wiêcej, je¿eli wyœwiadczysz mi drobn¹ przys³ugê.
 	AI_Output (other, self,"DIA_Lares_Again_15_11"); //Chyba nie mam wyboru. Co to za 'drobna' przys³uga?
 	AI_Output (self, other,"DIA_Lares_Again_11_12"); //Odk¹d stra¿nicy zrobili tu swoj¹ piaskownicê mam na g³owie zbiory ry¿u i dostawy paczek z ry¿em do gospody na wyspie.
@@ -90,7 +90,7 @@ FUNC VOID DIA_Lares_Again_Info()
 	AI_Output (self, other,"DIA_Lares_Again_11_16"); //Cholerne sukinsyny upi³y mnie ry¿ówk¹ i zwinêli siê przed œwitem. Od tamtego czasu mam na g³owie stra¿ników, zwiêkszone limity na zbiory i mniej ludzi do pracy.
 	AI_Output (self, other,"DIA_Lares_Again_11_17"); //Fletcher da³ mi jeszcze dwa dni na to, ¿eby wszystko wróci³o do normy.
 	AI_Output (self, other,"DIA_Lares_Again_11_18"); //Z limitami jakoœ sobie poradzê, ch³opaki dwoj¹ siê i troj¹.
-	AI_Output (self, other,"DIA_Lares_Again_11_19"); //Ale ci uciekinierzy... To dla mnie sprawa honoru.
+	AI_Output (self, other,"DIA_Lares_Again_11_19"); //Ale Ci uciekinierzy... To dla mnie sprawa honoru.
 	AI_Output (other, self,"DIA_Lares_Again_15_20"); //To ta przys³uga? Mam ich odnaleŸæ i przyprowadziæ?
 	AI_Output (self, other,"DIA_Lares_Again_11_21"); //Niezupe³nie. Masz ich odnaleŸæ i wyr¿n¹æ do nogi! Te sukinsyny wiedzia³y czym skoñczy siê ich ucieczka.
 	AI_Output (self, other,"DIA_Lares_Again_11_22"); //Takich jak oni trzeba têpiæ jak szczury. 
@@ -162,7 +162,7 @@ INSTANCE DIA_Lares_AgainOk2 (C_INFO)
 	information		= DIA_Lares_AgainOk2_Info;
 	permanent		= 0;
 	important		= 0;
-	description 	= "Mam dla ciebie prezent.";
+	description 	= "Mam dla Ciebie prezent.";
 };                       
 
 FUNC int DIA_Lares_AgainOk2_Condition()
@@ -175,7 +175,7 @@ FUNC int DIA_Lares_AgainOk2_Condition()
 
 FUNC VOID DIA_Lares_AgainOk2_Info()
 {
-	AI_Output (other, self,"DIA_Lares_AgainOk2_15_00"); //Mam dla ciebie prezent.
+	AI_Output (other, self,"DIA_Lares_AgainOk2_15_00"); //Mam dla Ciebie prezent.
 
 	if (lares_wait >= (Wld_GetDay()))
 	{
@@ -216,7 +216,7 @@ FUNC VOID DIA_Lares_AgainOk2_Info()
 
 		Log_SetTopicStatus	(CH4_NC_HeadHunter, LOG_SUCCESS);
 		B_LogEntry		(CH4_NC_HeadHunter, "Lares dosta³ swoje g³owy i topór. Mam ju¿ doœæ zabawy w rzeŸnika.");
-		B_LogEntry		(CH4_NC_RBLBosses, "Lares jest bardzo wdziêczny. Ciekawe czy powie mi coœ ciekawego?");
+		B_LogEntry		(CH4_NC_RBLBosses, "Lares jest bardzo wdziêczny. Ciekawe, czy powie mi coœ ciekawego?");
 	}
 	else
 	{
@@ -356,7 +356,7 @@ FUNC VOID DIA_Lares_Questions_Situation()
 	AI_Output (other, self,"DIA_Lares_Questions_Situation_15_09"); //Rozumiem. Mo¿e bêdê móg³ coœ na to zaradziæ.
 	AI_Output (self, other,"DIA_Lares_Questions_Situation_11_10"); //Tylko b¹dŸ ostro¿ny i nie wymawiaj za szybko mojego imienia.
 	AI_Output (other, self,"DIA_Lares_Questions_Situation_15_11"); //Bez obaw, to tak¿e gra o moje ¿ycie.
-	B_LogEntry		(CH4_NC_RBLBosses, "Przywódcy ognisk rebelii s¹ rozproszeni i nie majê ze sob¹ bezpoœredniego kontaktu. Mo¿e zdo³am porozmawiaæ z ka¿dym z nich i wp³ynê na to aby po³¹czyli swoje wysi³ki w walce o wolnoœæ.");
+	B_LogEntry		(CH4_NC_RBLBosses, "Przywódcy ognisk rebelii s¹ rozproszeni i nie majê ze sob¹ bezpoœredniego kontaktu. Mo¿e zdo³am porozmawiaæ z ka¿dym z nich i wp³ynê na to, aby po³¹czyli swoje wysi³ki w walce o wolnoœæ.");
 	//Info_ClearChoices (DIA_Lares_Questions);
 };
 

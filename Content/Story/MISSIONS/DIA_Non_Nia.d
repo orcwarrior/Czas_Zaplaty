@@ -361,7 +361,7 @@ FUNC VOID Info_Nia_Meet1_Info()
    AI_GotoNpc(other,self);
    AI_Output (self, other,"Info_Nia_Meet1_16_01"); //W koñcu przyszed³eœ!
    AI_Output (other, self,"Info_Nia_Meet1_15_02"); //W blasku gwiazd wygl¹dasz jak zjawa, która...
-   AI_Output (self, other,"Info_Nia_Meet1_16_03"); //Nie przyszliœmy tu rozmawiaæ. Wiesz czego chcê!
+   AI_Output (self, other,"Info_Nia_Meet1_16_03"); //Nie przyszliœmy tu rozmawiaæ. Wiesz, czego chcê!
 
    AI_Output (self, other,"Info_Nia_Meet1_16_04"); //Widzia³am kogoœ w cieniu! 
    AI_Output (other, self,"Info_Nia_Meet1_15_05"); //Wydawa³o Ci siê, nie przestawaj...

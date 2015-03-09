@@ -238,18 +238,18 @@ FUNC VOID DIA_Wolf_RBL_Info()
 {
 	AI_Output(other, self,"DIA_Wolf_RBL_15_00"); //Gorn napomkn¹³, ¿e dobrze siê ustawi³eœ po ataku.
 	AI_Output(self, other,"DIA_Wolf_RBL_09_01"); //A Tobie co do tego?
-	AI_Output(other, self,"DIA_Wolf_RBL_15_02"); //Powiedzmy, ¿e kogoœ interesuje to co dzieje siê w waszym obozie.
+	AI_Output(other, self,"DIA_Wolf_RBL_15_02"); //Powiedzmy, ¿e kogoœ interesuje to, co dzieje siê w Waszym obozie.
 	AI_Output(self, other,"DIA_Wolf_RBL_09_03"); //Hmm... Na pierwszy rzut oka œmierdzisz stra¿nikiem, ale wyczuwam te¿ subtelny sw¹d rebelianta.
 	AI_Output(self, other,"DIA_Wolf_RBL_09_04"); //Cavalorn Ciê tu przys³a³?
 	AI_Output(other, self,"DIA_Wolf_RBL_15_05"); //Widzê, ¿e celnie strzelasz nie tylko z ³uku.
 	AI_Output(self, other,"DIA_Wolf_RBL_09_06"); //Masz jak¹œ propozycjê?
-	AI_Output(other, self,"DIA_Wolf_RBL_15_07"); //Tak. Przejêcie Nowego Obozu przez Gomeza nie tylko na was rzuci³o blady cieñ strachu.
+	AI_Output(other, self,"DIA_Wolf_RBL_15_07"); //Tak. Przejêcie Nowego Obozu przez Gomeza nie tylko na Was rzuci³o blady cieñ strachu.
 	AI_Output(other, self,"DIA_Wolf_RBL_15_08"); //W odwecie zaatakowaliœmy Star¹ Kopalniê.
 	AI_Output(self, other,"DIA_Wolf_RBL_09_09"); //NieŸle. Co Gomez zrobi³?
 	AI_Output(other, self,"DIA_Wolf_RBL_15_10"); //Stra¿nicy zaatakowali nasz obóz, ale odes³aliœmy ich z pozdrowieniami dla Gomeza. Przynajmniej tych, którzy prze¿yli.
 	AI_Output(self, other,"DIA_Wolf_RBL_09_11"); //Porz¹dna jatka! Sporo mnie ominê³o. Mamy tu marny przep³yw informacji.
 	AI_Output(self, other,"DIA_Wolf_RBL_09_12"); //Rzeczywiœcie, mamy zbie¿ne cele. Jak Cavalorn chce to za³atwiæ?
-	AI_Output(other, self,"DIA_Wolf_RBL_15_13"); //Najpierw mam siê rozejrzeæ w sytuacji i je¿eli zajdzie taka potrzeba, mam wam pomóc.
+	AI_Output(other, self,"DIA_Wolf_RBL_15_13"); //Najpierw mam siê rozejrzeæ w sytuacji i je¿eli zajdzie taka potrzeba, mam Wam pomóc.
 	AI_Output(other, self,"DIA_Wolf_RBL_15_14"); //PóŸniej nadejdzie pora na wykopanie st¹d stra¿ników.
 	AI_Output(self, other,"DIA_Wolf_RBL_09_15"); //W porz¹dku. Co chcesz wiedzieæ?
 
@@ -320,7 +320,7 @@ FUNC VOID DIA_Wolf_Reward_Info()
 {
 	B_GiveXP(500);
 	AI_Output(other, self,"DIA_Wolf_Reward_15_00"); //Pozby³em siê Pluskwy.
-	AI_Output(self, other,"DIA_Wolf_Reward_09_01"); //Nie masz pojêcia jaki Ci jestem wdziêczny.
+	AI_Output(self, other,"DIA_Wolf_Reward_09_01"); //Nie masz pojêcia, jaki Ci jestem wdziêczny.
 	AI_Output(self, other,"DIA_Wolf_Reward_09_02"); //Mam dla Ciebie propozycjê.
 	AI_Output(other, self,"DIA_Wolf_Reward_15_03"); //Ca³y zamieniam siê w s³uch.
 	AI_Output(self, other,"DIA_Wolf_Reward_09_04"); //Przynieœ mi 15 p³ytek pe³zaczy, a zrobiê Ci porz¹dny pancerz.
@@ -399,7 +399,7 @@ INSTANCE DIA_Wolf_Questions2 (C_INFO)
 	information		= DIA_Wolf_Questions2_Info;
 	important		= 0;
 	permanent		= 0;
-	description = "Mam dla ciebie ciekaw¹ wiadomoœæ.";
+	description = "Mam dla Ciebie ciekaw¹ wiadomoœæ.";
 };                       
 
 FUNC INT DIA_Wolf_Questions2_Condition()
@@ -414,10 +414,10 @@ FUNC VOID DIA_Wolf_Questions2_Info()
 {
 	wolf_cooperate = TRUE;
 
-	AI_Output(other, self,"DIA_Wolf_Questions2_15_00"); //Mam dla ciebie ciekaw¹ wiadomoœæ.
+	AI_Output(other, self,"DIA_Wolf_Questions2_15_00"); //Mam dla Ciebie ciekaw¹ wiadomoœæ.
 	AI_Output(self, other,"DIA_Wolf_Questions2_09_01"); //Mów.
 	AI_Output(other, self,"DIA_Wolf_Questions2_15_02"); //Lares te¿ ma ju¿ doœæ stra¿ników. Mam Ci przekazaæ, ¿e on i jego ludzie tylko czekaj¹ na sygna³.
-	AI_Output(self, other,"DIA_Wolf_Questions2_09_03"); //No proszê, jednak coœ siê dzieje. Jestem z wami, ale pod jednym warunkiem.
+	AI_Output(self, other,"DIA_Wolf_Questions2_09_03"); //No proszê, jednak coœ siê dzieje. Jestem z Wami, ale pod jednym warunkiem.
 	AI_Output(other, self,"DIA_Wolf_Questions2_15_04"); //Chyba domyœlam siê do czego zmierzasz...
 	AI_Output(self, other,"DIA_Wolf_Questions2_09_05"); //Do walki musi nas poprowadziæ Lee!
 	AI_Output(other, self,"DIA_Wolf_Questions2_15_06"); //Zajmê siê tym. Najwa¿niejsze, ¿e jesteœ z nami.
@@ -801,7 +801,7 @@ FUNC INT DIA_Wolf_CanYouTeachMe_Condition()
 FUNC VOID DIA_Wolf_CanYouTeachMe_Info()
 {
 	AI_Output (other, self, "DIA_Wolf_CanYouTeachMe_15_01"); //Mo¿esz mnie czegoœ nauczyæ?
-	AI_Output (self, other, "DIA_Wolf_CanYouTeachMe_12_02"); //NieŸle radzê sobie z ³ukiem, mogê pokazaæ ci to i owo.
+	AI_Output (self, other, "DIA_Wolf_CanYouTeachMe_12_02"); //NieŸle radzê sobie z ³ukiem, mogê pokazaæ Ci to i owo.
 	
 	Log_CreateTopic(GE_TeacherNC, LOG_NOTE);
 	B_LogEntry(GE_TeacherNC, "Wilk nauczy mnie strzelaæ z ³uku.");

@@ -553,7 +553,7 @@ FUNC VOID Info_Seven_MystEnd1_Info()
 	AI_Output (self, other,"Info_Seven_MystEnd1_06_01"); //Pewnie, nie móg³bym przegapiæ okazji, ¿eby zobaczyæ minê tej dziwki.
 	AI_Output (self, other,"Info_Seven_MystEnd1_06_02"); //Zaczajê siê w cieniu i powiem Krisowi jak by³o naprawdê.
 	AI_Output (other, self,"Info_Seven_MystEnd1_15_03"); //Dziêki Siódemka. Jesteœ prawdziwym przyjacielem.
-	AI_Output (self, other,"Info_Seven_MystEnd1_06_04"); //Nie ma sprawy, bestyjka dostanie to na co zas³u¿y³a.
+	AI_Output (self, other,"Info_Seven_MystEnd1_06_04"); //Nie ma sprawy, bestyjka dostanie to, na co zas³u¿y³a.
 	B_LogEntry		(CH4_Non_Eagle, "Siódemka mi pomo¿e.");
 	
 	Npc_ExchangeRoutine	(self,"WAIT");	
@@ -588,7 +588,7 @@ FUNC VOID Info_Seven_Watch_Info()
 
 	B_FullStop (hero);
 	AI_TurnToNpc (self, pinto);
-	AI_Output (self, other,"Info_Seven_Watch_06_01"); //Dziwka mia³a nó¿. Odrzuci³a brzeszczot gdy tylko zobaczy³a mnie w cieniu.
+	AI_Output (self, other,"Info_Seven_Watch_06_01"); //Dziwka mia³a nó¿. Odrzuci³a brzeszczot, gdy tylko zobaczy³a mnie w cieniu.
 	AI_Output (self, other,"Info_Seven_Watch_06_02"); //Nie mog³em pozwoliæ, ¿eby usz³o jej to znowu p³azem.
 	AI_Output (self, other,"Info_Seven_Watch_06_03"); //Za du¿o ta twierdza widzia³a ju¿ œmierci...
 	AI_PlayAni(other,"T_YES");
@@ -635,8 +635,8 @@ FUNC VOID Info_Seven_Watch1_Info()
 	AI_TurnToNpc (self, other);
 	AI_GotoNpc(self, hero);
 	AI_Output (self, other,"Info_Seven_Watch1_06_02"); //Kurtyna opad³a. Trochê szkoda, ¿e Pinto tak ³atwo da³ siê nabraæ.
-	AI_Output (other, self,"Info_Seven_Watch1_15_03"); //O czym ty mówisz?
-	AI_Output (self, other,"Info_Seven_Watch1_06_04"); //Widzisz, Rick. Zabi³em Niê bo widzia³a twarz prawdziwego mordercy.
+	AI_Output (other, self,"Info_Seven_Watch1_15_03"); //O czym Ty mówisz?
+	AI_Output (self, other,"Info_Seven_Watch1_06_04"); //Widzisz, Rick. Zabi³em Niê, bo widzia³a twarz prawdziwego mordercy.
 	AI_Output (other, self,"Info_Seven_Watch1_15_05"); //To niemo¿liwe. Przecie¿ sam mówi³eœ, ¿e...
 	AI_Output (other, self,"Info_Seven_Watch1_15_06"); //To TY!
 	AI_Output (self, other,"Info_Seven_Watch1_06_07"); //W rzeczy samej drogi ch³opcze. To ja.
@@ -646,24 +646,24 @@ FUNC VOID Info_Seven_Watch1_Info()
 	AI_Output (self, other,"Info_Seven_Watch1_06_10"); //Schowaj miecz. Nie chcia³bym zrobiæ Ci krzywdy.
 	AI_RemoveWeapon (hero);
 	AI_Output (self, other,"Info_Seven_Watch1_06_11"); //Tak lepiej. A teraz pos³uchaj.
-	AI_Output (self, other,"Info_Seven_Watch1_06_12"); //Nia rzeczywiœcie by³a potworem, choæ nie takim jakim j¹ przedstawi³em.
+	AI_Output (self, other,"Info_Seven_Watch1_06_12"); //Nia rzeczywiœcie by³a potworem, choæ nie takim, jakim j¹ przedstawi³em.
 	AI_Output (self, other,"Info_Seven_Watch1_06_13"); //Wykorzystywa³a mê¿czyzn, bawi³a siê nimi i porzuca³a, jak parê onucy.
 	AI_Output (self, other,"Info_Seven_Watch1_06_14"); //Kiedyœ pad³o i na mnie.
 	AI_Output (self, other,"Info_Seven_Watch1_06_15"); //Mo¿e wyjdê na idiotê, ale straci³em dla lafiryndy g³owê. Nic na to nie poradzê, kochliwy jestem i tyle.
-	AI_Output (self, other,"Info_Seven_Watch1_06_16"); //To by³o zaraz po tym jak Hrabia j¹ tu przywióz³. Spotkaliœmy siê potajemnie kilka razy.
-	AI_Output (self, other,"Info_Seven_Watch1_06_17"); //PóŸniej przesta³a przychodziæ. Nakry³em ladacznicê jak zabawia³a siê ze stra¿nikiem.
+	AI_Output (self, other,"Info_Seven_Watch1_06_16"); //To by³o zaraz po tym, jak Hrabia j¹ tu przywióz³. Spotkaliœmy siê potajemnie kilka razy.
+	AI_Output (self, other,"Info_Seven_Watch1_06_17"); //PóŸniej przesta³a przychodziæ. Nakry³em ladacznicê, jak zabawia³a siê ze stra¿nikiem.
 	AI_Output (self, other,"Info_Seven_Watch1_06_18"); //PóŸniej byli inni, wielu innych...
 	AI_Output (self, other,"Info_Seven_Watch1_06_19"); //Nie mog³em pozwoliæ, ¿eby jakaœ dziwka drwi³a z moich uczuæ!
 	AI_Output (self, other,"Info_Seven_Watch1_06_20"); //Zacz¹³em zabijaæ. Wysy³a³em do Beliara ka¿dego g³upca, który z ni¹ obcowa³.
 	AI_Output (self, other,"Info_Seven_Watch1_06_21"); //Czasem inni widzieli jak Nia z kimœ sobie u¿ywa³a, póŸniej ten ktoœ gryz³ ziemiê.
-	AI_Output (self, other,"Info_Seven_Watch1_06_22"); //Nawet taki idiota jak Ormus zorientowa³ siê kto stoi za morderstwami. Podejrzeñ by³o coraz wiêcej. Dlatego w³aœnie Znamiê siê na ni¹ rzuci³.
-	AI_Output (self, other,"Info_Seven_Watch1_06_23"); //Dobrze to rozegra³em, a niewy¿yta dziwka dosta³a to na co zas³u¿y³a.
+	AI_Output (self, other,"Info_Seven_Watch1_06_22"); //Nawet taki idiota jak Ormus zorientowa³ siê, kto stoi za morderstwami. Podejrzeñ by³o coraz wiêcej. Dlatego w³aœnie Znamiê siê na ni¹ rzuci³.
+	AI_Output (self, other,"Info_Seven_Watch1_06_23"); //Dobrze to rozegra³em, a niewy¿yta dziwka dosta³a to, na co zas³u¿y³a.
 	AI_Output (other, self,"Info_Seven_Watch1_15_24"); //Po co mi to mówisz?
 	AI_Output (self, other,"Info_Seven_Watch1_06_25"); //Bo polubi³em Ciê, ch³opcze. Jesteœmy bardziej podobni ni¿ chcia³byœ przyznaæ.
 	AI_Output (other, self,"Info_Seven_Watch1_15_26"); //Nie jestem taki jak Ty!
 	AI_Output (self, other,"Info_Seven_Watch1_06_27"); //Jeszcze nie. A mo¿e ju¿ nie? Kto wie...
 	AI_Output (other, self,"Info_Seven_Watch1_15_28"); //Powinienem zaci¹gn¹æ Ciê do Krisa!
-	AI_Output (self, other,"Info_Seven_Watch1_06_29"); //I jak myœlisz komu by da³ wiarê? Tobie, czy Pinto i reszcie. Do tego ten nó¿...
+	AI_Output (self, other,"Info_Seven_Watch1_06_29"); //I jak myœlisz, komu by da³ wiarê? Tobie, czy Pinto i reszcie? Do tego ten nó¿...
 	AI_Output (self, other,"Info_Seven_Watch1_06_30"); //Zwin¹³em orê¿ dzisiaj, w koñcu epilog musi byæ dramatyczny.
 	AI_Output (other, self,"Info_Seven_Watch1_15_31"); //Jesteœ chory!
 	AI_Output (self, other,"Info_Seven_Watch1_06_32"); //Nie, Rick. Jestem tylko cz³owiekiem, nawet takie bydle jak ja ma uczucia.
