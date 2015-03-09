@@ -47,7 +47,7 @@ INSTANCE DIA_Necromanus_First (C_INFO)
 FUNC INT DIA_Necromanus_First_Condition()
 {
 	var C_NPC cor; cor = Hlp_GetNpc(KDF_4115_Corristo);
-	if (Npc_GetDistToNpc(self,hero) < 1000)&&(Npc_IsDead(cor))&&((necro_appear == 1)||(Npc_KnowsInfo (hero,DIA_Coristo_DickDead)))
+	if (Npc_GetDistToNpc(self,hero) < 1000)&&(Npc_IsDead(cor))&&((necro_appear == 1)||(necro_appear == 3))
 	{
 		return 1;
 	};
