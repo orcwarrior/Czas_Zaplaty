@@ -376,7 +376,7 @@ FUNC VOID Info_Seven_MystLast_Info()
 
 	AI_Output (other, self,"Info_Seven_MystLast_15_00"); //Jestem gotów na prawdziwe wyzwanie.
 	AI_Output (self, other,"Info_Seven_MystLast_06_01"); //W rzeczy samej. Ale tym razem bêdzie ju¿ na powa¿nie.
-	AI_Output (self, other,"Info_Seven_MystLast_06_02"); //S³uchaj uwa¿nie bo to nie bêdzie proste.
+	AI_Output (self, other,"Info_Seven_MystLast_06_02"); //S³uchaj uwa¿nie, bo to nie bêdzie proste.
 	AI_Output (self, other,"Info_Seven_MystLast_06_03"); //Jak dziwnie by to nie zabrzmia³o przedstawiê ci kilka hipotez na... hipotezy.
 	AI_Output (self, other,"Info_Seven_MystLast_06_04"); //Jesteœ gotów?
 	AI_Output (other, self,"Info_Seven_MystLast_15_05"); //Dawaj.
@@ -482,7 +482,7 @@ FUNC VOID Info_Seven_MystEnd_Info()
 	AI_Output (other, self,"Info_Seven_MystEnd_15_00"); //No to zamieniam siê w s³uch.
 	AI_Output (self, other,"Info_Seven_MystEnd_06_01"); //Zas³u¿y³eœ na to, by us³yszeæ prawdê o mrocznej stronie pewnej niewy¿ytej dziwki.
 	AI_Output (self, other,"Info_Seven_MystEnd_06_02"); //Jestem pewien, ¿e to Nia zabija. Widzia³em jak uje¿d¿a³a tego ostatniego pechowca.
-	AI_Output (self, other,"Info_Seven_MystEnd_06_03"); //Na koniec zadŸga³a go no¿em. Kiedy dogorywa³ ona nadal na nim siedzia³a.
+	AI_Output (self, other,"Info_Seven_MystEnd_06_03"); //Na koniec zadŸga³a go no¿em. Kiedy dogorywa³, ona nadal na nim siedzia³a.
 	AI_Output (self, other,"Info_Seven_MystEnd_06_04"); //Jest gorsza ni¿ harpie.
 	AI_Output (other, self,"Info_Seven_MystEnd_15_05"); //Dlaczego nikomu tego nie powiedzia³eœ?
 	AI_Output (self, other,"Info_Seven_MystEnd_06_06"); //Bo to i tak nic nie da.

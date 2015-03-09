@@ -71,7 +71,7 @@ FUNC int Info_Saturas_Ornament_Condition()
 FUNC VOID Info_Saturas_Ornament_Info()
 {
 	AI_Output(other, self, "Info_Saturas_Ornament_15_00"); //Przysy³a mnie Lee.
-	AI_Output(self, other,"Info_Saturas_Ornament_14_01"); //Kolejny najemnik. Za ka¿dym razem przysy³a kogoœ innego. Coœ marnie wam idzie...
+	AI_Output(self, other,"Info_Saturas_Ornament_14_01"); //Kolejny najemnik. Za ka¿dym razem przysy³a kogoœ innego. Coœ marnie Wam idzie...
 	AI_Output(other, self, "Info_Saturas_Ornament_15_02"); //Zabija nas to, czego szukamy, magu.
 	AI_TurnToNpc 	(self, other);
 	Ai_Wait (self,1.0);

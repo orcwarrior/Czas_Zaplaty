@@ -674,7 +674,7 @@ func VOID DIA_Wolf_Sudden_Info()
 	AI_Output(hero,self,"DIA_Wolf_Sudden_15_03"); //Cieszê siê, ¿e masz stalowe nerwy. Poza tym dwa oczodo³y w zupe³noœci mi wystarcz¹.
 	AI_Output(self,hero,"DIA_Wolf_Sudden_09_04"); //Niesamowite, przedar³eœ siê tutaj noc¹. Niez³a robota.
 	AI_Output(hero,self,"DIA_Wolf_Sudden_15_05"); //Mia³em wa¿ny powód. Lee wróci³.
-	AI_Output(self,hero,"DIA_Wolf_Sudden_09_06"); //W koñcu! Czyli nadszed³ czas ¿eby wyjœæ zza barykady.
+	AI_Output(self,hero,"DIA_Wolf_Sudden_09_06"); //W koñcu! Czyli nadszed³ czas, ¿eby wyjœæ zza barykady.
 	AI_Output(hero,self,"DIA_Wolf_Sudden_15_07"); //Spokojnie. Musimy uderzyæ jednoczeœnie ze wszystkich stron, wtedy zgnieciemy stra¿ników zanim zorientuj¹ siê co siê sta³o.
 	AI_Output(hero,self,"DIA_Wolf_Sudden_15_08"); //Kiedy wszystko bêdzie gotowe nas³uchuj krzyku harpii, to bêdzie znak do ataku.
 	AI_Output(self,hero,"DIA_Wolf_Sudden_09_09"); //Przeka¿ê to moim ludziom.

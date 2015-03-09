@@ -144,7 +144,7 @@ func void UseConvoy_List ()
 					if (convoy_list_read == FALSE)
 					{
 					convoy_list_read = TRUE;
-					B_LogEntry		(CH5_NC_Convoys, "Przy ciele dowódcy konwoju kopaczy znalaz³em instrukcjê od magnata Bartholo. Stra¿nicy mieli jak najszybciej wróciæ do Starego Obozu bo magnatom brakuje ludzi do eskortowania transportu broni. Móg³bym zaryzykowaæ do³¹czenie do eskorty, przynajmniej wiedzia³bym którêdy pod¹¿¹. Muszê porozmawiaæ o tym z Cordem.");
+					B_LogEntry		(CH5_NC_Convoys, "Przy ciele dowódcy konwoju kopaczy znalaz³em instrukcjê od magnata Bartholo. Stra¿nicy mieli jak najszybciej wróciæ do Starego Obozu, bo magnatom brakuje ludzi do eskortowania transportu broni. Móg³bym zaryzykowaæ do³¹czenie do eskorty, przynajmniej wiedzia³bym którêdy pod¹¿¹. Muszê porozmawiaæ o tym z Cordem.");
 
 					};
 

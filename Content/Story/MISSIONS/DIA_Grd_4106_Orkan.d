@@ -126,7 +126,7 @@ FUNC VOID DIA_Orkan_Escort_Info()
 	{
 		orkan_go = TRUE;
 		AI_Output (self, other, "DIA_Orkan_Escort_11_02"); //Uda³o Ci siê kogoœ zwerbowaæ?
-		AI_Output (other, self, "DIA_Orkan_Escort_15_03"); //Kirgo i asghan rusz¹ razem z konwojem.
+		AI_Output (other, self, "DIA_Orkan_Escort_15_03"); //Kirgo i Asghan rusz¹ razem z konwojem.
 		AI_Output (self, other, "DIA_Orkan_Escort_11_04"); //Naprawdê siê zgodzili? Co za idioci. Ale brakuje jeszcze jednego szaleñca.
 		AI_Output (other, self, "DIA_Orkan_Escort_15_05"); //Ostatnim ochotnikiem bêdê ja.
 		AI_Output (self, other, "DIA_Orkan_Escort_11_06"); //Jesteœ pewien?
@@ -355,7 +355,7 @@ FUNC VOID DIA_Orkan_EscortTrapTalk_Join()
 	AI_Output (self, other, "DIA_Orkan_EscortTrapTalk_Join_11_04"); //Hmm...
 	AI_Output (other, self, "DIA_Orkan_EscortTrapTalk_Join_15_05"); //Do tego w Nowym Obozie mo¿esz wypiæ wiêcej ry¿ówki ni¿ udŸwigniesz.
 	AI_Output (self, other, "DIA_Orkan_EscortTrapTalk_Join_11_06"); //Tym mnie przekona³eœ!
-	AI_Output (self, other, "DIA_Orkan_EscortTrapTalk_Join_11_07"); //Ma racjê, na ow³osione jaja Beliara! Co za ró¿nica komu i dla kogo kopie siê dupska co nie ch³opaki?
+	AI_Output (self, other, "DIA_Orkan_EscortTrapTalk_Join_11_07"); //Ma racjê, na ow³osione jaja Beliara! Co za ró¿nica komu i dla kogo kopie siê dupska, co nie ch³opaki?
 	
    AI_TurnToNpc(self, kirgo);
 	AI_PlayAni(kirgo,"T_YES");

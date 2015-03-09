@@ -115,7 +115,7 @@ FUNC VOID DIA_Jarvis_Help_Info()
 	
    Log_CreateTopic	(CH3_NON_Mercenary, LOG_MISSION);
 	Log_SetTopicStatus	(CH3_NON_Mercenary, LOG_RUNNING);
-	B_LogEntry		(CH3_NON_Mercenary, "Spotka³em najemnika imieniem Jarvis. Prosi³ mnie abym odnalaz³ innego najemnika imieniem Cord i przekaza³ mu te s³owa, ¿e 'Znalaz³ zgubê i czeka na resztê'. Trochê dziwna ta sytuacja, ale co mi szkodzi, tym bardziej, ¿e zap³at¹ ma byæ ruda. Cord móg³ zaszyæ siê w jakiejœ cytadeli niedaleko obozu sekciarzy na bagnach.");
+	B_LogEntry		(CH3_NON_Mercenary, "Spotka³em najemnika imieniem Jarvis. Prosi³ mnie, abym odnalaz³ innego najemnika imieniem Cord i przekaza³ mu te s³owa, ¿e 'Znalaz³ zgubê i czeka na resztê'. Trochê dziwna ta sytuacja, ale co mi szkodzi, tym bardziej, ¿e zap³at¹ ma byæ ruda. Cord móg³ zaszyæ siê w jakiejœ cytadeli niedaleko obozu sekciarzy na bagnach.");
 	B_StopProcessInfos	(self);	
 
 	/************************
@@ -152,14 +152,14 @@ FUNC VOID DIA_Jarvis_Help2_Info()
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_02"); //Cholera to Ty! Chyba znowu pojawi³eœ siê we w³aœciwym czasie.
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_03"); //Najpierw pogadamy o rudzie, któr¹ mi jesteœ winien.
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_04"); //A sk¹d mam wiedzieæ, ¿e dostarczy³eœ wiadomoœæ Cordowi?
-	AI_Output (other, self,"DIA_Jarvis_Help2_15_05"); //St¹d, ¿e Lee kaza³ mi coœ przekazaæ. Dowiesz siê co to za wiadomoœæ kiedy dostanê... 1000 bry³ek.
+	AI_Output (other, self,"DIA_Jarvis_Help2_15_05"); //St¹d, ¿e Lee kaza³ mi coœ przekazaæ. Dowiesz siê co to za wiadomoœæ, kiedy dostanê... 1000 bry³ek.
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_06"); //Nie mam tyle! 
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_07"); //No to masz problem, na razie...
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_08"); //Zaczekaj! Nie mam rudy, ale mam coœ równie cennego.
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_09"); //Mów.
-	AI_Output (self, other,"DIA_Jarvis_Help2_08_10"); //Wiem gdzie mo¿esz znaleŸæ kosztownoœci, które s¹ zaledwie wierzcho³kiem góry bogactw.
+	AI_Output (self, other,"DIA_Jarvis_Help2_08_10"); //Wiem, gdzie mo¿esz znaleŸæ kosztownoœci, które s¹ zaledwie wierzcho³kiem góry bogactw.
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_11"); //Nie jestem idiot¹, nie nabierzesz mnie na te bajki ze skarbami.
-	AI_Output (self, other,"DIA_Jarvis_Help2_08_12"); //Mówiê prawdê! Zreszt¹ poczekam tu na Ciebie. 
+	AI_Output (self, other,"DIA_Jarvis_Help2_08_12"); //Mówiê prawdê! Zreszt¹, poczekam tu na Ciebie. 
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_13"); //A dlaczego mia³bym Ci zaufaæ? Teraz te¿ siê przed czymœ ukrywasz.
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_14"); //Sk¹d taki pomys³... Ja tylko wola³em nie rzucaæ siê w oczy. Kolonia sta³a siê ostatnio bardzo niebezpiecznym miejscem.
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_15"); //Powiedzmy, ¿e ci wierzê. To gdzie mam szukaæ tych 'skarbów'?
@@ -176,18 +176,18 @@ FUNC VOID DIA_Jarvis_Help2_Info()
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_18"); //Niech bêdzie. Ale je¿eli mnie oszuka³eœ, to znajdê Ciê nawet w ty³ku Beliara.
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_19"); //Bez obaw, nie jestem idiot¹. Teraz Twoja kolej. Co Lee chcia³ mi przekazaæ?
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_20"); //Lee powiedzia³, ¿e potrzebuj¹ jeszcze jednego 'wzorca'. Podobno wiesz o co chodzi.
-	AI_Output (self, other,"DIA_Jarvis_Help2_08_21"); //Hmm... Tak, wiem. Dobra pêdŸ po te skarby i powiedz mi co tam znalaz³eœ.
-	AI_Output (self, other,"DIA_Jarvis_Help2_08_22"); //Aha, gdybyœ odnalaz³ tam kawa³ek ornamentu, to znam kogoœ kto hojnie za to zap³aci.
+	AI_Output (self, other,"DIA_Jarvis_Help2_08_21"); //Hmm... Tak, wiem. Dobra, pêdŸ po te skarby i powiedz mi, co tam znalaz³eœ.
+	AI_Output (self, other,"DIA_Jarvis_Help2_08_22"); //Aha, gdybyœ odnalaz³ tam kawa³ek ornamentu, to znam kogoœ, kto hojnie za to zap³aci.
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_23"); //Coœ mi siê wydaje, ¿e od pocz¹tku chodzi³o o ten ornament. Sam sobie szukaj tego kamola.
-	AI_Output (self, other,"DIA_Jarvis_Help2_08_24"); //Zaczekaj! Lee mnie zabije jak powiem Ci coœ wiêcej...
+	AI_Output (self, other,"DIA_Jarvis_Help2_08_24"); //Zaczekaj! Lee mnie zabije, jak powiem Ci coœ wiêcej...
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_25"); //Albo bêdziesz ze mn¹ szczery, albo wracam tam sk¹d przyszed³em.
-	AI_Output (self, other,"DIA_Jarvis_Help2_08_26"); //Dobra. Powiem Ci tyle ile sam wiem.
-	AI_Output (self, other,"DIA_Jarvis_Help2_08_27"); //Od kilku dni szukamy dla Magów Wody fragmentów ornamentu. Jeden kawa³ek zagin¹³ niedawno razem z najemnikiem, który mia³ go przy sobie.
+	AI_Output (self, other,"DIA_Jarvis_Help2_08_26"); //Dobra. Powiem Ci tyle, ile sam wiem.
+	AI_Output (self, other,"DIA_Jarvis_Help2_08_27"); //Od kilku dni szukamy dla magów wody fragmentów ornamentu. Jeden kawa³ek zagin¹³ niedawno razem z najemnikiem, który mia³ go przy sobie.
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_28"); //Wczoraj znalaz³em tego pechowca. By³ paskudnie poharatany i oczywiœcie martwy. Ornamentu przy nim nie by³o.
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_29"); //To by³a ta zguba, o której mia³em powiedzieæ Cordowi?
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_30"); //Ta sama.
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_31"); //Mów dalej.
-	AI_Output (self, other,"DIA_Jarvis_Help2_08_32"); //Nied³ugo po tym kiedy odszed³eœ ruszy³em po kolejn¹ czêœæ. Mapa od magów wskazuje miejsca ukrycia niektórych czêœci ornamentu.
+	AI_Output (self, other,"DIA_Jarvis_Help2_08_32"); //Nied³ugo po tym kiedy odszed³eœ, ruszy³em po kolejn¹ czêœæ. Mapa od magów wskazuje miejsca ukrycia niektórych czêœci ornamentu.
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_33"); //Magowie przygotowali kilka map, ka¿da wskazuje miejsce ukrycia innego fragmentu.
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_34"); //Po co ta ostro¿noœæ?
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_35"); //Magowie obawiaj¹ siê, ¿e ktoœ móg³by ukraœæ mapê i odnaleŸæ ornamenty. Dlatego orygina³ ma przy sobie Saturas.
@@ -198,20 +198,20 @@ FUNC VOID DIA_Jarvis_Help2_Info()
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_40"); //Nie tylko magowie szukaj¹ ornamentów. Zaatakowali mnie stra¿nicy, w ka¿dym razie nosili zbroje stra¿ników Gomeza.
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_41"); //Ledwie uszed³em z ¿yciem. Pozna³em tylko jednego z nich - nazywaj¹ go Hrabi¹. Zdaje siê, ¿e to on przewodzi³ poszukiwaniom.
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_42"); //Ciekawa historyjka. Dlaczego nie powiedzia³eœ o tym Lee i magom?
-	AI_Output (self, other,"DIA_Jarvis_Help2_08_43"); //Ukry³em siê i chcia³em przeczekaæ a¿ zrobi siê bezpieczniej, a wtedy pojawi³eœ siê Ty.
-	AI_Output (other, self,"DIA_Jarvis_Help2_15_44"); //Czyli chcia³eœ mnie wys³aæ do miejsca gdzie pewnie czeka³by na mnie ten Hrabia?
+	AI_Output (self, other,"DIA_Jarvis_Help2_08_43"); //Ukry³em siê i chcia³em przeczekaæ, a¿ zrobi siê bezpieczniej, a wtedy pojawi³eœ siê Ty.
+	AI_Output (other, self,"DIA_Jarvis_Help2_15_44"); //Czyli chcia³eœ mnie wys³aæ do miejsca, gdzie pewnie czeka³by na mnie ten Hrabia?
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_45"); //Ekhm... No wiesz, gdybyœ wróci³ to by oznacza³o, ¿e ju¿ ich tam nie ma, albo ¿e jesteœ wiêkszym sukinsynem ni¿ oni.
-	AI_Output (self, other,"DIA_Jarvis_Help2_08_46"); //Wiem jak to wygl¹da, ale wola³em nie ryzykowaæ...
+	AI_Output (self, other,"DIA_Jarvis_Help2_08_46"); //Wiem, jak to wygl¹da, ale wola³em nie ryzykowaæ...
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_47"); //Pos³uchaj! Nadal istnieje szansa na odnalezienie ukrytego fragmentu ornamentu. Mapa wskazuje na jaskiniê, ale za cholerê nie znalaz³em tam wzorca...
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_48"); //Mo¿e oni te¿ jej nie odnaleŸli...
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_49"); //Rozbrajasz mnie. Najpierw mnie wykorzystujesz, póŸniej nie chcesz mi zap³aciæ, k³amiesz, a w koñcu wysy³asz mnie na pewn¹ œmieræ. Masz tupet!
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_50"); //Sam nie wiem dlaczego jeszcze Ciê nie zabi³em.
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_51"); //Postaw siê na moim miejscu. Pewnie post¹pi³byœ podobnie. Nie mia³em wyboru... Magom zale¿y na czasie, a Lee ma wzglêdem nich d³ug do sp³acenia.
-	AI_Output (self, other,"DIA_Jarvis_Help2_08_52"); //To dlatego im pomagamy. Im szybciej znajdziemy ornamenty tym szybciej zajmiemy siê w³asnymi sprawami.
+	AI_Output (self, other,"DIA_Jarvis_Help2_08_52"); //To dlatego im pomagamy. Im szybciej znajdziemy ornamenty, tym szybciej zajmiemy siê w³asnymi sprawami.
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_53"); //Za³ó¿my, ¿e coœ znajdê, co wtedy?
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_54"); //Przynieœ to do mnie. W tym czasie dowiem siê czegoœ wiêcej o stra¿nikach, którzy te¿ szukaj¹ ornamentów.
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_55"); //Dobra, zobaczymy co z tego wyniknie.
-	B_LogEntry		(CH3_NON_Mercenary, "Odnalaz³em Jarvisa. D³ugo gawêdziliœmy i sporo siê dowiedzia³em. Najemnicy pomagaj¹ Magom Wody w odnalezieniu jakiœ ornamentów. Miejsce ukrycia ka¿dego kawa³ka wskazuje jedna mapa. Ale nie tylko magowie szukaj¹ ornametnów. Hrabia tak¿e macza w tym palce i zdoby³ ju¿ jeden kawa³ek kamienia. Dosta³em od Jarvisa mapê z zaznaczonym miejscem ukrycia kolejnej czêœci ornamentu. Muszê uwa¿aæ bo mogê tam spotkaæ stra¿ników a nawet samego Hrabiego.");
+	B_LogEntry		(CH3_NON_Mercenary, "Odnalaz³em Jarvisa. D³ugo gawêdziliœmy i sporo siê dowiedzia³em. Najemnicy pomagaj¹ magom wody w odnalezieniu jakiœ ornamentów. Miejsce ukrycia ka¿dego kawa³ka wskazuje jedna mapa. Ale nie tylko magowie szukaj¹ ornametnów. Hrabia tak¿e macza w tym palce i zdoby³ ju¿ jeden kawa³ek kamienia. Dosta³em od Jarvisa mapê z zaznaczonym miejscem ukrycia kolejnej czêœci ornamentu. Muszê uwa¿aæ, bo mogê tam spotkaæ stra¿ników, a nawet samego Hrabiego.");
 
 	Log_CreateTopic	(CH3_NON_Ornament, LOG_MISSION);
 	Log_SetTopicStatus	(CH3_NON_Ornament, LOG_RUNNING);
@@ -244,7 +244,7 @@ FUNC INT DIA_Jarvis_Help21_Condition()
 FUNC VOID DIA_Jarvis_Help21_Info()
 {	
 	AI_Output (self, other,"DIA_Jarvis_Help21_08_00"); //Czujê, ¿e masz fragment!
-	AI_Output (other, self,"DIA_Jarvis_Help21_15_01"); //Nie by³o ³atwo, to ciê bêdzie kosztowaæ kolejny 1000 bry³ek...
+	AI_Output (other, self,"DIA_Jarvis_Help21_15_01"); //Nie by³o ³atwo, to Ciê bêdzie kosztowaæ kolejne 1000 bry³ek...
 	AI_Output (self, other,"DIA_Jarvis_Help21_08_02"); //S³ysza³eœ ten ha³as przed jaskini¹? Czujê, ¿e nadchodz¹ k³opoty!
 
 	B_StopProcessInfos	(self);	
@@ -295,7 +295,7 @@ FUNC VOID DIA_Jarvis_AfterTrap_Info()
    AI_Output (self, other,"DIA_Jarvis_AfterTrap_08_00"); //Jednak zd¹¿y³em!
    AI_GotoNpc(self, other);
 	AI_Output (other, self,"DIA_Jarvis_AfterTrap_15_01"); //Uciek³ skurwiel!
-	AI_Output (self, other,"DIA_Jarvis_AfterTrap_08_02"); //Jeszcze go dopadniemy. Musimy powiedzieæ Lee co siê tutaj sta³o.
+	AI_Output (self, other,"DIA_Jarvis_AfterTrap_08_02"); //Jeszcze go dopadniemy. Musimy powiedzieæ Lee, co siê tutaj sta³o.
 	AI_Output (other, self,"DIA_Jarvis_AfterTrap_15_03"); //Ten Hrabia to cwany typ. Wydaje siê, ¿e doskonale wie co robi i ca³y czas jest o krok przed nami.
 	AI_Output (self, other,"DIA_Jarvis_AfterTrap_08_04"); //Tak, ten cz³owiek mnie przera¿a. Nawet Lee siê go obawia.
 	AI_Output (self, other,"DIA_Jarvis_AfterTrap_08_05"); //Idziemy?

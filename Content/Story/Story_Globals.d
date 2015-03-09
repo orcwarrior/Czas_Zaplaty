@@ -476,25 +476,25 @@ CONST STRING TEXT_LERN_GETWOOL	="Pozyskiwanie we³ny (koszt: 1 punkt umiejêtnoœci
 CONST STRING TEXT_LERN_GETHEART="Usuwanie serc (koszt: 3 punkty umiejêtnoœci, 150 bry³ek rudy)";
 const int ANIMALTROPHY_ORECOST_PER_LP = 50;
 
-const string name_learning_strength = "Nauka: si³a";
-const string name_learning_dexterity = "Nauka: zrêcznoœæ";
-const string name_learning_sneak = "Nauka: skradanie siê (10 PN)";
+const string name_learning_strength = "Nauka: si³a.";
+const string name_learning_dexterity = "Nauka: zrêcznoœæ.";
+const string name_learning_sneak = "Nauka: skradanie siê (10 PN).";
 const string name_learning_bow = "Naucz mnie pos³ugiwaæ siê ³ukiem.";
 const string name_learning_smith = "Nauka kowalstwa.";
-const string name_learning_picklock = "Nauka: otwieranie zamków";
-const string name_learning_pickpocket = "Nauka: kradzie¿";
+const string name_learning_picklock = "Nauka: otwieranie zamków.";
+const string name_learning_pickpocket = "Nauka: kradzie¿.";
 const string name_learning_combat_1h = "Naucz mnie walczyæ broni¹ jednorêczn¹.";
 const string name_learning_combat_2h = "Naucz mnie walczyæ broni¹ dwurêczn¹.";
 const string name_learning_regeneration_HP = "Naucz mnie regeneracji ¿ycia.";
 const string name_learning_regeneration_mana = "Naucz mnie regeneracji many.";
-const string name_learning_mana = "Nauka: mana";
+const string name_learning_mana = "Nauka: mana.";
 const string name_learning_quick_learning = "Szybka nauka.";
 const string name_learning_alchemy = "Nauka alchemii.";
-const string name_learning_magic = "Nauka: magia";
+const string name_learning_magic = "Nauka: magia.";
 const string name_learning_animaltrophy = "Nauka: oprawianie zwierzyny.";
 const string name_learning_crossbow = "Naucz mnie pos³ugiwaæ siê kusz¹.";
 const string name_learning_evasion = "Naucz mnie unikania ciosów.";
-const string name_learning_runesword = "Naucz mnie pos³ugiwaæ siê mieczem runicznym (30 PN)";
+const string name_learning_runesword = "Naucz mnie pos³ugiwaæ siê mieczem runicznym (30 PN).";
 var int PupilBugfix2;
 
 

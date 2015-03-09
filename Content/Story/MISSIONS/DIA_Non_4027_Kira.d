@@ -919,7 +919,7 @@ FUNC VOID Info_Kira_Bring_Cutter_Info()
 	
    AI_TurnToNpc (self, cut);
 	
-   AI_Output (other, self,"Info_Kira_Bring_Cutter_15_02"); //To Siekacz. Je¿eli o to Ci chodzi to nie sprawdza³em czy rzeczywiœcie taki z niego ogier...
+   AI_Output (other, self,"Info_Kira_Bring_Cutter_15_02"); //To Siekacz. Je¿eli o to Ci chodzi, to nie sprawdza³em czy rzeczywiœcie taki z niego ogier...
 	
    AI_TurnToNpc (self, other);
 	

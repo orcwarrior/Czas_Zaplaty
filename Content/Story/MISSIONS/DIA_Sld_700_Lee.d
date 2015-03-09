@@ -46,7 +46,7 @@ FUNC VOID  DIA_Lee_Hello_Info()
 {
 	AI_Output (other, self,"DIA_Lee_Hello_15_00"); //Paskudnie to wygl¹da.
 	AI_Output (self, other,"DIA_Lee_Hello_08_01"); //O czym Ty mówisz?
-	AI_Output (other, self,"DIA_Lee_Hello_15_02"); //O twojej ranie, przecie¿ nie o mordzie tego wielkoluda w sali z klatkami.
+	AI_Output (other, self,"DIA_Lee_Hello_15_02"); //O Twojej ranie, przecie¿ nie o mordzie tego wielkoluda w sali z klatkami.
 	AI_Output (self, other,"DIA_Lee_Hello_08_03"); //Masz szczêœcie, ¿e w bitwie Orik dosta³ przez ³eb i stêpia³ mu s³uch.
 	AI_Output (self, other,"DIA_Lee_Hello_08_04"); //Co do rany, to magowie uratowali mi ty³ek, dlatego nadal tu jestem. Zawsze sp³acam zaci¹gniête d³ugi.
 };
@@ -109,7 +109,7 @@ FUNC VOID  DIA_Lee_Cord_Info()
    AI_Output (other, self,"DIA_Lee_Cord_15_02"); //Pewnie. A dlaczego pytasz?
    AI_Output (self, other,"DIA_Lee_Cord_08_03"); //Muszê coœ mu przekazaæ, a brakuje mi ludzi. Co Ty na to?
    AI_Output (other, self,"DIA_Lee_Cord_15_04"); //Pod jednym warunkiem. Zap³acisz mi za poprzedni¹ wiadomoœæ od Jarvisa.
-   AI_Output (other, self,"DIA_Lee_Cord_15_05"); //Mia³em otrzymaæ tyle rudy ile udŸwignê, a Cord zwyczajnie mnie sp³awi³.
+   AI_Output (other, self,"DIA_Lee_Cord_15_05"); //Mia³em otrzymaæ tyle rudy, ile udŸwignê, a Cord zwyczajnie mnie sp³awi³.
    AI_Output (self, other,"DIA_Lee_Cord_08_06"); //Zrobimy tak. Dam Ci teraz 1000 bry³ek. Je¿eli zrobisz to o co Ciê poproszê, otrzymasz drugie tyle i widoki na wiêcej.
    AI_Output (self, other,"DIA_Lee_Cord_08_07"); //Co Ty na to?
 
@@ -130,7 +130,7 @@ FUNC VOID DIA_Lee_Cord_Yes()
 	AI_Output (self, other,"DIA_Lee_Cord_Yes_08_03"); //Powiedz Jarvisowi, ¿e potrzebujemy jeszcze jednego 'wzorca'. Bêdzie wiedzia³ o co chodzi.
 	AI_Output (other, self,"DIA_Lee_Cord_Yes_15_04"); //Co to za wzorzec?
 	AI_Output (self, other,"DIA_Lee_Cord_Yes_08_05"); //Gdybym to zdradzi³, musia³bym Ciê zabiæ.
-	AI_Output (self, other,"DIA_Lee_Cord_Yes_08_06"); //Ruszaj i pamiêtaj, ¿e im mniej wiesz, tym lepiej dla ciebie.
+	AI_Output (self, other,"DIA_Lee_Cord_Yes_08_06"); //Ruszaj i pamiêtaj, ¿e im mniej wiesz, tym lepiej dla Ciebie.
 	
    B_LogEntry(CH3_NON_Mercenary, "Dziwna sprawa z tymi najemnikami. Coœ kombinuj¹, ale na razie nic z nich nie wyci¹gn¹³em. Mam znowu odnaleŸæ Jarvisa i przekazaæ mu, ¿e najemnicy potrzebuj¹ jeszcze jednego wzorca. ");
 	B_StopProcessInfos(self);
@@ -233,7 +233,7 @@ instance  DIA_Lee_Agree(C_INFO)
 	information	=  DIA_Lee_Agree_Info;
 	important		= 0;
 	permanent		= 0;
-	description = "Dobra, jestem z wami.";
+	description = "Dobra, jestem z Wami.";
 };                       
 
 FUNC int  DIA_Lee_Agree_Condition()
@@ -246,11 +246,11 @@ FUNC int  DIA_Lee_Agree_Condition()
 
 FUNC VOID  DIA_Lee_Agree_Info()
 {
-	AI_Output (other, self,"DIA_Lee_Agree_15_00"); //Dobra, jestem z wami.
+	AI_Output (other, self,"DIA_Lee_Agree_15_00"); //Dobra, jestem z Wami.
 	AI_Output (self, other,"DIA_Lee_Agree_08_01"); //Wiedzia³em, ¿e siê zgodzisz. A tak miêdzy nami robisz to dla rudy?
 	AI_Output (other, self,"DIA_Lee_Agree_15_02"); //Nie tylko. Mam z Hrabi¹ na pieñku.
 	AI_Output (self, other,"DIA_Lee_Agree_08_03"); //Rozumiem. Tylko nie pozwól, by emocje wziê³y górê nad zdrowym rozs¹dkiem. Nie chcê wys³aæ Corda po Twoje zw³oki.
-	AI_Output (other, self,"DIA_Lee_Agree_15_04"); //Bez obaw, Lee. Mój gniew jest zimny jak lód. Hrabia dostanie to na co zas³u¿y³.
+	AI_Output (other, self,"DIA_Lee_Agree_15_04"); //Bez obaw, Lee. Mój gniew jest zimny jak lód. Hrabia dostanie to, na co zas³u¿y³.
 	AI_Output (self, other,"DIA_Lee_Agree_08_05"); //W porz¹dku. IdŸ do Saturasa, powiedz, ¿e ja Ciê przysy³am. Dostaniesz mapê z lokalizacj¹ kolejnego ornamentu.
 	AI_Output (self, other,"DIA_Lee_Agree_08_06"); //I uwa¿aj na siebie.
 	AI_Output (other, self,"DIA_Lee_Agree_15_07"); //Jak zawsze. Bywaj.
@@ -430,7 +430,7 @@ FUNC VOID  DIA_Lee_RBL_Info()
 	if (wolf_cooperate == TRUE)
 	{
 		wolf_cooperate = false;
-		AI_Output (other, self,"DIA_Lee_RBL_15_04"); //Wilk jest gotów by na twój znak rozpêtaæ piek³o w Kotle.
+		AI_Output (other, self,"DIA_Lee_RBL_15_04"); //Wilk jest gotów, by na Twój znak rozpêtaæ piek³o w Kotle.
 		lee_agree = lee_agree + 1;
 		B_LogEntry (CH4_NC_RBLBosses, "Przekaza³em Lee pozdrowienia od Wilka.");
 	};
@@ -1230,7 +1230,7 @@ FUNC VOID DIA_Lee_CanYouTeachMe1_Info()
 	AI_Output (other, self, "DIA_Lee_CanYouTeachMe1_15_01"); //Widzia³eœ kiedyœ miecz runiczny?
 	AI_Output (self, other, "DIA_Lee_CanYouTeachMe1_12_02"); //Nie, ale s³ysza³em, ¿e to potê¿na broñ.
 	AI_Output (other, self, "DIA_Lee_CanYouTeachMe1_15_03"); //Wiesz jak ni¹ w³adaæ?
-	AI_Output (self, other, "DIA_Lee_CanYouTeachMe1_12_04"); //Na twoje szczêœæie, tak.
+	AI_Output (self, other, "DIA_Lee_CanYouTeachMe1_12_04"); //Na Twoje szczêœæie, tak.
 	AI_Output (self, other, "DIA_Lee_CanYouTeachMe1_12_05"); //S³uchaj uwa¿nie, bo nie bêdê powtarza³...	
 	
 	Log_CreateTopic(GE_TeacherOR, LOG_NOTE);

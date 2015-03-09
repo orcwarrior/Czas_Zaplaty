@@ -152,7 +152,7 @@ FUNC VOID Info_Kris_Hello2_Info()
 	AI_TurnToNpc (self, other);
 	AI_Output (self, other,"Info_Kris_Hello2_07_01"); //Aha. I jeszcze jedno.
 	AI_Output (self, other,"Info_Kris_Hello2_07_02"); //Trzymaj r¹czki przy sobie.
-	AI_Output (self, other,"Info_Kris_Hello2_07_03"); //Nia to kobieta szefa. Tkniesz j¹ to Georg skrêci Ci kark.
+	AI_Output (self, other,"Info_Kris_Hello2_07_03"); //Nia to kobieta szefa. Tkniesz j¹, to Georg skrêci Ci kark.
 	AI_Output (self, other,"Info_Kris_Hello2_07_04"); //A teraz spadaj mi z oczu.
 	B_LogEntry		(CH4_Non_Eagle, "Nia to kobieta szefa, pewnie Kris mia³ na myœli Hrabiego. A Georg to chyba jej ochroniarz. Cholera, po co ja tu przylaz³em?");
 	B_StopProcessInfos	(self);

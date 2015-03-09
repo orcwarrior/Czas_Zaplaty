@@ -1965,7 +1965,7 @@ FUNC VOID DIA_RATFORD_Urt_Info()
    
 	if (!Npc_KnowsInfo (hero, DIA_RATFORD_OtherHelpFinished))
 	{
-		AI_Output (self, other, "DIA_RATFORD_Urt_07_02"); //Za³atw sprawê z Kir¹ to pogadamy.
+		AI_Output (self, other, "DIA_RATFORD_Urt_07_02"); //Za³atw sprawê z Kir¹, to pogadamy.
 	}
 	else
 	{

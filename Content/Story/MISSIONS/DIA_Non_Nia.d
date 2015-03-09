@@ -110,7 +110,7 @@ FUNC VOID Info_Nia_Again_Info()
    AI_Output (other, self,"Info_Nia_Again_15_08"); //Hmm. Na pewno ma jakiœ powód.
    AI_Output (self, other,"Info_Nia_Again_16_09"); //Nie rozumiem.
    AI_Output (other, self,"Info_Nia_Again_15_10"); //Mieliœmy kiedyœ na statku podobny przypadek. Ginêli marynarze. 
-   AI_Output (other, self,"Info_Nia_Again_15_11"); //Jak siê okaza³o to kucharz wyrzuca³ za burtê tych, którzy drwili z jego potraw.
+   AI_Output (other, self,"Info_Nia_Again_15_11"); //Jak siê okaza³o, to kucharz wyrzuca³ za burtê tych, którzy drwili z jego potraw.
    AI_Output (other, self,"Info_Nia_Again_15_12"); //Przeci¹gnêliœmy sukinsyna pod kilem.
    AI_Output (other, self,"Info_Nia_Again_15_13"); //Niestety, nastêpca gotowa³ tak paskudnie, ¿e w³asnorêcznie wyrzuci³em go za burtê. Ca³e szczêœcie, ¿e akurat zawinêliœmy do portu.
    AI_Output (self, other,"Info_Nia_Again_16_14"); //Ciekawa historia. Jesteœ marynarzem?
@@ -136,7 +136,7 @@ FUNC VOID Info_Nia_Again_Info()
 
    Log_CreateTopic   (CH4_Non_NiaHelp, LOG_MISSION);
    Log_SetTopicStatus   (CH4_Non_NiaHelp, LOG_RUNNING);
-   B_LogEntry      (CH4_Non_NiaHelp, "Pozna³em Niê, kobietê Herszta. Pomo¿e mi wydostaæ siê z Gniazda. Nie podoba mi siê to co siê tutaj dzieje. Jakiœ psychopata zabija innych. Muszê znaleŸæ kolesia o imieniu Znamiê i przynieœæ felczerce czyste szmaty na opatrunki.");
+   B_LogEntry      (CH4_Non_NiaHelp, "Pozna³em Niê, kobietê Herszta. Pomo¿e mi wydostaæ siê z Gniazda. Nie podoba mi siê to, co siê tutaj dzieje. Jakiœ psychopata zabija innych. Muszê znaleŸæ kolesia o imieniu Znamiê i przynieœæ felczerce czyste szmaty na opatrunki.");
    Npc_ExchangeRoutine   (self,"start");
    Npc_ExchangeRoutine   (geo,"start");
 };
