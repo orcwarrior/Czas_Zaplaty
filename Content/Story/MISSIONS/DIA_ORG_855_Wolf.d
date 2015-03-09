@@ -326,7 +326,9 @@ FUNC VOID DIA_Wolf_Reward_Info()
 	AI_Output(self, other,"DIA_Wolf_Reward_09_04"); //Przynieœ mi 15 p³ytek pe³zaczy, a zrobiê Ci porz¹dny pancerz.
 	AI_Output(other, self,"DIA_Wolf_Reward_15_05"); //Dziêki, Wilk. Pomyœlê o tym.
 
-	B_LogEntry(CH4_NC_RBLBosses, "Wilk z wdziêcznoœci zrobi dla mnie pancerz z p³ytek pe³zaczy. Tylko najpierw muszê siê dowiedzieæ jak pozyskiwaæ p³ytki i przynieœæ mu co najmniej 15 sztuk.");
+	Log_CreateTopic(CH4_MCPlateArmor, LOG_MISSION);
+	Log_SetTopicStatus(CH4_MCPlateArmor, LOG_RUNNING);
+	B_LogEntry(CH4_MCPlateArmor, "Wilk z wdziêcznoœci zrobi dla mnie pancerz z p³ytek pe³zaczy. Tylko najpierw muszê siê dowiedzieæ jak pozyskiwaæ p³ytki i przynieœæ mu co najmniej 15 sztuk.");
 };
 
 //****************************************
@@ -503,7 +505,7 @@ INSTANCE Info_Wolf_SKIN (C_INFO)
 
 FUNC INT Info_Wolf_SKIN_Condition()
 {
-	if	Npc_KnowsInfo(hero, DIA_Wolf_Questions)
+	if	(Npc_KnowsInfo(hero, DIA_Wolf_Reward) && (!Knows_GetMCPlates))
 	{
 		return TRUE;
 	};
@@ -544,7 +546,8 @@ INSTANCE Info_Wolf_MCPLATESFEW (C_INFO)
 
 FUNC INT Info_Wolf_MCPLATESFEW_Condition()
 {
-	if	(Knows_GetMCPlates)
+	if	(Knows_GetMCPlates) && (!Npc_KnowsInfo(hero, Info_Wolf_MCPLATESENOUGH))
+	&& (Npc_KnowsInfo(hero, DIA_Wolf_Reward))
 	&&	(Npc_HasItems(hero, ItAt_CrawlerPlate) > 0)
 	&&	(Npc_HasItems(hero, ItAt_CrawlerPlate) < 15)
 	{
@@ -576,6 +579,7 @@ INSTANCE Info_Wolf_MCPLATESENOUGH (C_INFO)
 FUNC INT Info_Wolf_MCPLATESENOUGH_Condition()
 {
 	if	(Knows_GetMCPlates)
+	&& (Npc_KnowsInfo(hero, DIA_Wolf_Reward))
 	&&	(Npc_HasItems(hero, ItAt_CrawlerPlate) >= 15)
 	{
 		return TRUE;
@@ -597,7 +601,7 @@ func VOID Info_Wolf_MCPLATESENOUGH_Info()
 	B_LogEntry			(CH4_MCPlateArmor,	"Da³em Wilkowi 15 tych p³ytek z pancerzy. Teraz potrzebuje trochê czasu, ¿eby sporz¹dziæ z nich dla mnie now¹ zbrojê.");
 	B_GiveXP			(500);
 	
-	B_GiveInvItems	(hero, self, ItAt_CrawlerPlate,	15);
+	Give_and_remove(ItAt_CrawlerPlate, 15);
 	B_StopProcessInfos	(self);
 };
 
