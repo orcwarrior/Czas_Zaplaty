@@ -1,28 +1,4 @@
 // **************************************
-//					EXIT 
-// **************************************
-
-instance DIA_Cienius_Exit (C_INFO)
-{
-	npc			= Stt_4200_Schatten;
-	nr			= 999;
-	condition	= DIA_Cienius_Exit_Condition;
-	information	= DIA_Cienius_Exit_Info;
-	permanent	= 1;
-	description = DIALOG_ENDE;
-};                       
-
-FUNC int DIA_Cienius_Exit_Condition()
-{
-	return 1;
-};
-
-FUNC VOID DIA_Cienius_Exit_Info()
-{
-	B_StopProcessInfos	(self);
-};
-
-// **************************************
 //		Nicht mit Raven geredet
 // **************************************
 
@@ -56,7 +32,7 @@ FUNC VOID DIA_Cienius_Fault_Info()
 	AI_Output (other, self,"DIA_Cienius_Fault_15_06"); //Tym siê nie martw to ju¿ mój problem. Zrobiê wszystko, ¿eby to Diego poprowadzi³ was do boju.
 	AI_Output (self, other,"DIA_Cienius_Fault_11_07"); //Rozumiem. Zrobimy co w naszej mocy.
 
-	B_LogEntry		(CH6_RBL_Coordinate, "Cienie uderz¹ na stra¿ników gdy nadejdzie w³aœciwy czas.");
+	B_LogEntry		(CH6_RBL_Coordinate, "Cienie uderz¹ na stra¿ników, gdy nadejdzie w³aœciwy czas.");
 	B_StopProcessInfos	(self);
 
 };

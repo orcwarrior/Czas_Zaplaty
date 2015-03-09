@@ -1,28 +1,4 @@
 // **************************************
-//					EXIT 
-// **************************************
-
-instance DIA_Kopaczus_Exit (C_INFO)
-{
-	npc			= VLK_4201_Buddler;
-	nr			= 999;
-	condition	= DIA_Kopaczus_Exit_Condition;
-	information	= DIA_Kopaczus_Exit_Info;
-	permanent	= 1;
-	description = DIALOG_ENDE;
-};                       
-
-FUNC int DIA_Kopaczus_Exit_Condition()
-{
-	return 1;
-};
-
-FUNC VOID DIA_Kopaczus_Exit_Info()
-{
-	B_StopProcessInfos	(self);
-};
-
-// **************************************
 //		Nicht mit Raven geredet
 // **************************************
 
