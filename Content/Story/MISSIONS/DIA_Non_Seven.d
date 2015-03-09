@@ -702,8 +702,6 @@ FUNC VOID DIA_Seven_CanYouTeachMe_Info()
 	AI_Output (other, self, "DIA_Seven_CanYouTeachMe_15_01"); //Mo¿esz mnie czegoœ nauczyæ?
 	AI_Output (self, other, "DIA_Seven_CanYouTeachMe_12_02"); //Poka¿ê Ci, co mo¿na zrobiæ z kusz¹.
 	
-	
-	Log_CreateTopic(GE_TeacherOR, LOG_NOTE);
-	B_LogEntry(GE_TeacherOR, "Siódemka poprawi moje umiejetnoœci strzelania z kuszy.");
-	
+	Log_CreateTopic(GE_TeacherNC, LOG_NOTE);
+	B_LogEntry(GE_TeacherNC, "Siódemka poprawi moje umiejêtnoœci strzelania z kuszy.");
 };

@@ -751,8 +751,8 @@ FUNC VOID DIA_Cord_CanYouTeachMe_Info()
 	AI_Output (self, other, "DIA_Cord_CanYouTeachMe_12_02"); //Fechtunek to moje ¿ycie, a broñ jednorêczna to moja kochanka.
 	AI_Output (self, other, "DIA_Cord_CanYouTeachMe_12_03"); //Poka¿ê ci jak zostaæ mistrzem miecza.	
 	
-	Log_CreateTopic(GE_TeacherOR, LOG_NOTE);
-	B_LogEntry(GE_TeacherOR, "Cord nauczy mnie po mistrzowsku w³adaæ broni¹ jednorêczn¹.");
+	Log_CreateTopic(GE_TeacherNC, LOG_NOTE);
+	B_LogEntry(GE_TeacherNC, "Cord nauczy mnie po mistrzowsku w³adaæ broni¹ jednorêczn¹.");
 };
 
 INSTANCE DIA_Cord_CanYouTeachMe1 (C_INFO)
@@ -781,8 +781,8 @@ FUNC VOID DIA_Cord_CanYouTeachMe1_Info()
 	AI_Output (self, other, "DIA_Cord_CanYouTeachMe1_12_04"); //Musisz te¿ poznaæ tajniki walki broni¹ dwurêczn¹.
 	AI_Output (self, other, "DIA_Cord_CanYouTeachMe1_12_05"); //Wróæ do mnie, jak zg³êbisz tê wiedzê.	
 	
-	Log_CreateTopic(GE_TeacherOR, LOG_NOTE);
-	B_LogEntry(GE_TeacherOR, "Cord mo¿e mnie nauczyæ walki dwoma ostrzami. Muszê wczeœniej zostaæ mistrzem w³adania mieczem jednorêcznym i poznaæ podstawy walki broni¹ dwurêczn¹.");
+	Log_CreateTopic(GE_TeacherNC, LOG_NOTE);
+	B_LogEntry(GE_TeacherNC, "Cord mo¿e mnie nauczyæ walki dwoma ostrzami. Muszê wczeœniej zostaæ mistrzem w³adania mieczem jednorêcznym i poznaæ podstawy walki broni¹ dwurêczn¹.");
 };
 
 INSTANCE DIA_Cord_CanYouTeachMe11 (C_INFO)
@@ -809,6 +809,6 @@ FUNC VOID DIA_Cord_CanYouTeachMe11_Info()
 	AI_Output (other, self, "DIA_Cord_CanYouTeachMe11_15_01"); //Nauczysz mnie walczyæ dwoma ostrzami?
 	AI_Output (self, other, "DIA_Cord_CanYouTeachMe11_12_02"); //Pewnie, oto tajniki w³adania t¹ broni¹.
 
-	Log_CreateTopic(GE_TeacherOR, LOG_NOTE);
-	B_LogEntry(GE_TeacherOR, "Cord nauczy mnie w³adaæ dwoma ostrzami.");
+	Log_CreateTopic(GE_TeacherNC, LOG_NOTE);
+	B_LogEntry(GE_TeacherNC, "Cord nauczy mnie w³adaæ dwoma ostrzami.");
 };
