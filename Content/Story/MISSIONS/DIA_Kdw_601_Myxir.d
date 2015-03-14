@@ -43,8 +43,8 @@ FUNC VOID  DIA_Myxir_Greet_Info()
 {
 	AI_Output (other, self,"DIA_Myxir_Greet_15_00"); //Kim jesteœ?
 	AI_Output (self, other,"DIA_Myxir_Greet1_08_01"); //Zw¹ mnie Myxir.
-	AI_Output (other, self,"DIA_Myxir_Greet_15_02"); //Jesteœ Magiem Wody?
-	AI_Output (self, other,"DIA_Myxir_Greet1_08_03"); //A Ty jesteœ skazañcem?
+	AI_Output (other, self,"DIA_Myxir_Greet_15_02"); //Jesteœ magiem wody?
+	AI_Output (self, other,"DIA_Myxir_Greet1_08_03"); //A ty jesteœ skazañcem?
 	AI_Output (other, self,"DIA_Myxir_Greet_15_04"); //Jak na to wpad³eœ?
 	AI_Output (self, other,"DIA_Myxir_Greet1_08_05"); //Nie znoszê b³aznów...
 	B_StopProcessInfos(self);

@@ -112,16 +112,16 @@ FUNC void  Info_Xardas_SATURAS_Info()
 	AI_Output(hero, self,"Info_Xardas_SATURAS1_15_02"); //Znalaz³em pewne ostrze, ale aby przywróciæ mu pierwotn¹ moc, nale¿y odbyæ rytua³, który musz¹ przeprowadziæ kap³ani trzech bóstw.
 	AI_Output(self, hero,"Info_Xardas_SATURAS1_14_03"); //I ³askawie pomyœla³eœ o mnie?
 	AI_Output(hero, self,"Info_Xardas_SATURAS1_15_04"); //No có¿... Nie znam innego czciciela Beliara, który nie chcia³by od razu urwaæ mi g³owy.
-	AI_Output(self, hero,"Info_Xardas_SATURAS1_14_05"); //Sk¹d przypuszczeniê, ¿e s³u¿ê Beliarowi?
+	AI_Output(self, hero,"Info_Xardas_SATURAS1_14_05"); //Sk¹d przypuszczenie, ¿e s³u¿ê Beliarowi?
 	AI_Output(hero, self,"Info_Xardas_SATURAS1_15_06"); //Przecie¿ jesteœ nekromant¹.
-	AI_Output(self, hero,"Info_Xardas_SATURAS1_14_07"); //Powiedz mi przyb³êdo, co Ty wiesz o Beliarze? Jak myœlisz co to za bóg?
+	AI_Output(self, hero,"Info_Xardas_SATURAS1_14_07"); //Powiedz mi przyb³êdo, co TY wiesz o Beliarze? Jak myœlisz co to za bóg?
 	AI_Output(hero, self,"Info_Xardas_SATURAS1_15_08"); //Na pewno wredny.
 	AI_Output(self, hero,"Info_Xardas_SATURAS1_14_09"); //Có¿ za wnikliwa analiza.
 	AI_Output(self, hero,"Info_Xardas_SATURAS1_14_10"); //Beliar to potê¿ny sukinsyn, dla którego ¿ycie jego czcicieli nie znaczy wiêcej ni¿ grobowe próchno.
 	AI_Output(self, hero,"Info_Xardas_SATURAS1_14_11"); //Wykorzystuje wyznawców do osi¹gniêcia w³asnych celów. Wszyscy jesteœmy jego narzêdziami.
 	AI_Output(self, hero,"Info_Xardas_SATURAS1_14_12"); //A ja bardzo nie lubiê ulegaæ... manipulacji.
 	AI_Output(hero, self,"Info_Xardas_SATURAS1_15_13"); //Komu wiêc s³u¿ysz? 
-	AI_Output(self, hero,"Info_Xardas_SATURAS1_14_14"); //Samemu sobie. Oczywiœcie moje zamiary jak i zamiary Beliara czêsto s¹ zbie¿ne, dlatego jeszcze ¿yjê.
+	AI_Output(self, hero,"Info_Xardas_SATURAS1_14_14"); //Samemu sobie. Oczywiœcie moje zamiary, jak i zamiary Beliara czêsto s¹ zbie¿ne, dlatego jeszcze ¿yjê.
 	AI_Output(hero, self,"Info_Xardas_SATURAS1_15_15"); //Interesuje mnie tylko to, czy zechcesz mi pomóc.
 	AI_Output(self, hero,"Info_Xardas_SATURAS1_14_16"); //Byæ mo¿e. Ale nic za darmo.
 	AI_Output(hero, self,"Info_Xardas_SATURAS1_15_17"); //Co proponujesz?

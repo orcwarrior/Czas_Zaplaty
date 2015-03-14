@@ -288,7 +288,7 @@ FUNC void  RBL_2604_Tony_OLDCAMP_Chief()
 		AI_Output (self, other,"RBL_2604_Tony_OLDCAMP_Chief_Info_07_02"); //W Starym Obozie niepodzielnie rz¹dz¹ magnaci.
 		AI_Output (self, other,"RBL_2604_Tony_OLDCAMP_Chief_Info_07_03"); //A najwiêkszym skurwysynem wœród nich jest Gomez.
 		AI_Output (self, other,"RBL_2604_Tony_OLDCAMP_Chief_Info_07_04"); //Gomez to szaleniec. Liczy siê dla niego tylko w³adza, któr¹ mo¿e kupiæ za rudê.	
-		AI_Output (self, other,"RBL_2604_Tony_OLDCAMP_Chief_Info_07_05"); //Zrobi wszystko by przej¹æ kontrolê nad wydobyciem rudy w Kolonii.
+		AI_Output (self, other,"RBL_2604_Tony_OLDCAMP_Chief_Info_07_05"); //Zrobi wszystko, by przej¹æ kontrolê nad wydobyciem rudy w Kolonii.
 		B_LogEntry		(CH1_Pir_OldCamp, "Przywódc¹ magnatów w Starym Obozie jest Gomez. Tony twierdzi, ¿e Gomez nie cofnie siê przed niczym by zdobyæ kontrolê nad kopalniami rudy w Kolonii.");
 	}
 	else

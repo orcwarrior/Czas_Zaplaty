@@ -684,8 +684,9 @@ INSTANCE ItKe_Mis_SO_Warehouse2 (C_Item)
 	material 			=	MAT_METAL;
 
 	description			= name;
-	TEXT[1]				= "Klucz do magazynu na targowisku,";	
-	TEXT[1]				= "magazynier by³ tak g³upi ¿e sam mi go sprzeda³!";	
+	TEXT[0]				= "Klucz do magazynu na targowisku,";	
+	TEXT[1]				= "magazynier by³ tak g³upi,";	
+	TEXT[2]				= "¿e sam mi go sprzeda³!";	
 	TEXT[4]				= NAME_Value;					COUNT[4]	= 1;
 };	
 INSTANCE ItKe_Mis_SO_Warehouse2U (C_Item)

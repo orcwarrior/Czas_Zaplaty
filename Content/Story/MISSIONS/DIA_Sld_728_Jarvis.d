@@ -343,7 +343,7 @@ FUNC VOID DIA_Jarvis_AfterTrap1_Yes()
 	AI_Output (self, other,"DIA_Jarvis_AfterTrap1_Yes_08_02"); //Trzymaj siê blisko, to bêdzie d³uga droga.
 
 	B_LogEntry		(CH3_NON_Mercenary, "Za³atwi³em K¹sacza, ale Hrabia uciek³. Czas porozmawiaæ z Lee.");
-	B_LogEntry		(CH3_NON_Ornament, "Czas porozmawiaæ z Magami Wody i dowiedzieæ siê czegoœ wiêcej o tych ornamentach.");
+	B_LogEntry		(CH3_NON_Ornament, "Czas porozmawiaæ z magami wody i dowiedzieæ siê czegoœ wiêcej o tych ornamentach.");
 	B_StopProcessInfos	(self);
 };
 
@@ -357,7 +357,7 @@ FUNC VOID DIA_Jarvis_AfterTrap1_Alone()
 	AI_Output (self, other,"DIA_Jarvis_AfterTrap_Alone1_08_02"); //Jak chcesz. Zobaczymy siê na miejscu.
 
 	B_LogEntry		(CH3_NON_Mercenary, "Za³atwi³em K¹sacza, ale Hrabia uciek³. Czas porozmawiaæ z Lee.");
-	B_LogEntry		(CH3_NON_Ornament, "Czas porozmawiaæ z Magami Wody i dowiedzieæ siê czegoœ wiêcej o tych ornamentach.");
+	B_LogEntry		(CH3_NON_Ornament, "Czas porozmawiaæ z magami wody i dowiedzieæ siê czegoœ wiêcej o tych ornamentach.");
 	B_StopProcessInfos	(self);
 };
 

@@ -329,7 +329,7 @@ FUNC VOID  DIA_Lee_AfterRitual_Info()
 	var C_NPC orik; orik = Hlp_GetNpc(Sld_701_Orik);
 	var C_NPC cord; cord = Hlp_GetNpc(SLD_709_Cord);
 
-	AI_Output (self, other,"DIA_Lee_AfterRitual_08_01"); //Cholera to by³o niespodziewane!
+	AI_Output (self, other,"DIA_Lee_AfterRitual_08_01"); //Cholera, to by³o niespodziewane!
 	AI_Output (other, self,"DIA_Lee_AfterRitual_15_02"); //Jak to siê sta³o? Kto sta³ na warcie?
 	AI_Output (self, other,"DIA_Lee_AfterRitual_08_03"); //Jarvis. Zdaje siê, ¿e uci¹³ sobie drzemkê. Poder¿nêli mu gard³o i pobiegli na dziedziniec.
 	AI_Output (self, other,"DIA_Lee_AfterRitual_08_04"); //Minêli Orika, ale ten pata³ach jest g³uchy jak pieñ!

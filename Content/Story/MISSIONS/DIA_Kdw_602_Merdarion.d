@@ -132,7 +132,7 @@ FUNC VOID  DIA_Merdarion_Crow_Info()
 	AI_Output (self, other,"DIA_Merdarion_Crow_08_24"); //Ten manuskrypt poœwiêcono Beliarowi. Ledwo prze¿y³em kontakt z ksiêg¹.
 	AI_Output (self, other,"DIA_Merdarion_Crow_08_25"); //St¹d w³aœnie pojawi³a siê skaza u Kruka.
 	AI_Output (self, other,"DIA_Merdarion_Crow_08_26"); //Jestem pewien, ¿e Beliar opêta³ go, magnat nie jest ju¿ sob¹.
-	AI_Output (self, other,"DIA_Merdarion_Crow_08_27"); //Zrobi wszystko by dostaæ siê do Jarkendaru, gdzie z³o wziê³o swój pocz¹tek.
+	AI_Output (self, other,"DIA_Merdarion_Crow_08_27"); //Zrobi wszystko, by dostaæ siê do Jarkendaru, gdzie z³o wziê³o swój pocz¹tek.
 	AI_Output (other, self,"DIA_Merdarion_Crow_15_28"); //Jak to siê zaczê³o?
 	AI_Output (self, other,"DIA_Merdarion_Crow_08_29"); //Nienawiœæ dwóch braci - Innosa i Beliara.
 	AI_Output (self, other,"DIA_Merdarion_Crow_08_30"); //Tam w³aœnie wykuto szpon Beliara, straszliwe ostrze, które jest tym potê¿niejsze, im silniejszy jest ten, kto nim w³ada.
