@@ -644,7 +644,7 @@ Zrób to tak, ¿e kolesie maj¹ ten sam dialog tylko jakaœ zmienna ++ i mo¿e góra 4
 
 **************************/
 
-	B_LogEntry		(CH5_NO_Mine, "Pomogê Torlofowi, jestem mu to winien. Muszê siê poœpieszyæ. Lee pozwoli³ mi zabraæ kilku najemników. W tym czasie Cord zajmie siê Orlim Gniazdem a Lares skontaktuje siê z Wilkiem.");
+	B_LogEntry		(CH5_NO_Mine, "Pomogê Torlofowi, jestem mu to winien. Muszê siê poœpieszyæ. Lee pozwoli³ mi zabraæ kilku najemników. W tym czasie Cord zajmie siê Orlim Gniazdem, a Lares skontaktuje siê z Wilkiem.");
    Log_SetTopicStatus	(CH5_NO_Wolf, LOG_FAILED);
    Log_SetTopicStatus	(CH5_NO_Guards, LOG_FAILED);
    Info_ClearChoices (DIA_Lee_RBLTasks);
@@ -714,7 +714,7 @@ FUNC VOID  DIA_Lee_RBLWolf_Info()
 	}
 	else if(Npc_KnowsInfo(hero,DIA_Torlof_Save))
 	{
-		AI_Output (other, self,"DIA_Lee_RBLWolf_15_05"); //Torlof nie mo¿e siê ju¿ doczekaæ kiedy ostatecznie za³atwimy stra¿ników.
+		AI_Output (other, self,"DIA_Lee_RBLWolf_15_05"); //Torlof nie mo¿e siê ju¿ doczekaæ, kiedy ostatecznie za³atwimy stra¿ników.
 		AI_Output (self, other,"DIA_Lee_RBLWolf_08_06"); //I dobrze, to ju¿ nied³ugo.
 		AI_Output (other, self,"DIA_Lee_RBLWolf_15_07"); //Kaza³ ciê pozdrowiæ. Na razie zabezpieczy kopalniê i bêdzie czeka³ na rozkaz.
 		Log_SetTopicStatus	(CH5_NO_Mine, LOG_SUCCESS);
@@ -770,8 +770,8 @@ FUNC VOID  DIA_Lee_RBLOk_Info()
 	AI_Output (other, self,"DIA_Lee_RBLOk_15_01"); //Zrobiê to.
 	AI_Output (self, other,"DIA_Lee_RBLOk_08_02"); //Œwietnie, musisz tam wyruszyæ niezw³ocznie.
 	AI_Output (self, other,"DIA_Lee_RBLOk_08_03"); //Przejœcia szukaj w pobli¿u kopalni, w ka¿dym razie tam uderzyli najpierw.
-	AI_Output (self, other,"DIA_Lee_RBLOk_08_04"); //Aha i musisz pójœæ sam. Nie mogê oddaæ ci ¿adnego najemnika, dopóki nie odnajdziesz przejœcia.
-	AI_Output (self, other,"DIA_Lee_RBLOk_08_05"); //Niech ci nie przyjdzie do g³owy zgrywaæ bohatera. Jak tylko znajdziesz przejœcie i posterunek wróæ, wyœlê tam ludzi, którzy zajm¹ siê reszt¹.
+	AI_Output (self, other,"DIA_Lee_RBLOk_08_04"); //Aha, i musisz pójœæ sam. Nie mogê oddaæ ci ¿adnego najemnika, dopóki nie odnajdziesz przejœcia.
+	AI_Output (self, other,"DIA_Lee_RBLOk_08_05"); //Niech ci nie przyjdzie do g³owy zgrywaæ bohatera. Jak tylko znajdziesz przejœcie i posterunek, wróæ, wyœlê tam ludzi, którzy zajm¹ siê reszt¹.
 	AI_Output (other, self,"DIA_Lee_RBLOk_15_06"); //Zobaczê, co da siê zrobiæ. 
 
 	Log_CreateTopic		(CH5_NC_Passage,	LOG_MISSION);
@@ -854,7 +854,7 @@ hide_clear ();
 	AI_Output (self, other,"DIA_Lee_RBLFound_08_13"); //Szkoda jednak traciæ dobrych ludzi. Grani ³atwo siê broni, kilku ludzi z ³ukami i kuszami bez problemów powstrzyma spory oddzia³. Znajdziesz tam Gorna i jego oddzia³, od niego dowiesz siê wiêcej.
 	AI_Output (other, self,"DIA_Lee_RBLFound_15_14"); //Rozumiem, ¿e wolisz wys³aæ i ewentualnie straciæ tylko jednego szaleñca?
 	AI_Output (self, other,"DIA_Lee_RBLFound_08_15"); //Nie mam wyboru. Ale negocjacje nie wchodz¹ w rachubê.
-	AI_Output (self, other,"DIA_Lee_RBLFound_08_16"); //Potrzebujemy g³owy Fletchera, tylko najpierw musisz wydusiæ z niego wszystko, co wie o Orlim GnieŸdzie i tym co siê tam wydarzy³o.
+	AI_Output (self, other,"DIA_Lee_RBLFound_08_16"); //Potrzebujemy g³owy Fletchera, tylko najpierw musisz wydusiæ z niego wszystko, co wie o Orlim GnieŸdzie i tym, co siê tam wydarzy³o.
 	AI_Output (other, self,"DIA_Lee_RBLFound_15_17"); //A jak mam siê tam dostaæ? Nie wdrapiê siê nawet na grañ, bo podziurawi¹ mnie be³tami.
 	AI_Output (self, other,"DIA_Lee_RBLFound_08_18"); //Spróbuj pójœæ w nocy, kto wie, mo¿e uda Ci siê przemkn¹æ w pobli¿u stra¿ników.
 	AI_Output (other, self,"DIA_Lee_RBLFound_15_19"); //Œwietna rada... No dobra, spróbujê.
@@ -1116,7 +1116,7 @@ FUNC int  DIA_Lee_AllCompleated_Condition()
 
 FUNC VOID  DIA_Lee_AllCompleated_Info()
 {
-	AI_Output (self, other,"DIA_Lee_AllCompleated_08_01"); //Zrobi³eœ dla nas wiêcej ni¿ œmia³em oczekiwaæ. Zaskakujesz mnie, piracie.
+	AI_Output (self, other,"DIA_Lee_AllCompleated_08_01"); //Zrobi³eœ dla nas wiêcej, ni¿ œmia³em oczekiwaæ. Zaskakujesz mnie, piracie.
 	AI_Output (other, self,"DIA_Lee_AllCompleated_15_02"); //Sam siê zaskakujê. Nigdy bym nie przypuszcza³, ¿e znajdê tu... przyjació³.
 	AI_Output (self, other,"DIA_Lee_AllCompleated_08_03"); //Nic nie dzieje siê bez powodu, Rick. Obyœmy do¿yli lepszych czasów.
 	AI_Output (other, self,"DIA_Lee_AllCompleated_15_04"); //Nie mam zamiaru opowiadaæ swoich przygód wnukom, wystarczy, ¿e sam mam koszmary.

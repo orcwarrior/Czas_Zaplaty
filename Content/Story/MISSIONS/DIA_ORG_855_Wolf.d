@@ -630,7 +630,7 @@ FUNC INT Info_Wolf_ARMORFINISHED_Condition()
 func VOID Info_Wolf_ARMORFINISHED_Info()
 {
 	AI_Output(self,hero,"Info_Wolf_ARMORFINISHED1_09_02"); //Dobrze, ¿e jesteœ. W³aœnie skoñczy³em pracê nad pancerzem.
-	AI_Output(hero,self,"Info_Wolf_ARMORFINISHED1_15_03"); //Nareszcie sam siê przekonam ile warta jest taka zbroja.
+	AI_Output(hero,self,"Info_Wolf_ARMORFINISHED1_15_03"); //Nareszcie sam siê przekonam, ile warta jest taka zbroja.
 	AI_Output(self,hero,"Info_Wolf_ARMORFINISHED_09_04"); //Dok³adnie, oto i ona! Jest twardsza ni¿ jakikolwiek pancerz jaki widzia³em na oczy!
 	AI_Output(hero,self,"Info_Wolf_ARMORFINISHED_15_05"); //Dziêki, jestem twoim d³u¿nikiem.
 	AI_Output(self,hero,"Info_Wolf_ARMORFINISHED_09_06"); //Nie ma o czym mówiæ. Na pewno na tym nie stracê. Co to, to nie!

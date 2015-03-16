@@ -120,7 +120,7 @@ FUNC VOID  DIA_Torlof_RBL_Info()
 	AI_Output (self, other,"DIA_Torlof_RBL_04_09"); //Cholera, gdyby tu by³ Lee nie by³oby ¿adnego problemu.
 	AI_Output (self, other,"DIA_Torlof_RBL_04_10"); //Musisz go odnaleŸæ i powiedzieæ co siê kroi.
 	lee_back = lee_back + 1;
-	AI_Output (other, self,"DIA_Torlof_RBL_15_11"); //W porz¹dku. Dam Ci znaæ kiedy wszystko bêdzie gotowe.
+	AI_Output (other, self,"DIA_Torlof_RBL_15_11"); //W porz¹dku. Dam Ci znaæ, kiedy wszystko bêdzie gotowe.
 	B_LogEntry		(CH4_NC_RBLBosses, "Torlof ruszy do boju, kiedy Lee stanie na czele rebelii w Nowym Obozie.");
 };
 
@@ -357,7 +357,7 @@ FUNC VOID  DIA_Torlof_Save_Info()
 	AI_Output (other, self,"DIA_Torlof_Save_15_04"); //Trzymam Ciê za s³owo. A poza tym - Lee wróci³.
 	AI_Output (self, other,"DIA_Torlof_Save_04_05"); //I to w³aœnie chcia³em us³yszeæ! No to na co jeszcze czekamy?
 	AI_Output (other, self,"DIA_Torlof_Save_15_06"); //Na razie zabezpiecz kopalniê. Lee podeœle tu najemników, obejmiesz nad nimi dowództwo.
-	AI_Output (other, self,"DIA_Torlof_Save_15_07"); //Czekaj na sygna³ do ataku. Wtedy bêdziesz móg³ dokopaæ ka¿demu napotkanemu stra¿nikowi o ile ja Ciê nie uprzedzê.
+	AI_Output (other, self,"DIA_Torlof_Save_15_07"); //Czekaj na sygna³ do ataku. Wtedy bêdziesz móg³ dokopaæ ka¿demu napotkanemu stra¿nikowi, o ile ja Ciê nie uprzedzê.
 	AI_Output (self, other,"DIA_Torlof_Save_04_08"); //O to siê nie obawiaj. W porz¹dku, ogarnê ten burdel.
 	AI_Output (self, other,"DIA_Torlof_Save_04_09"); //Pozdrów ode mne Lee. Powiedz mu, ¿e stary Trolof nie w¹tpi³ nawet przez chwilê w jego powrót.
 	AI_Output (other, self,"DIA_Torlof_Save_15_10"); //Bywaj, brachu.

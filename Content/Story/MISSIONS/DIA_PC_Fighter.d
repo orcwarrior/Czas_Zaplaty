@@ -338,7 +338,7 @@ func void DIA_Gorn_TheRock_Info()
 	AI_Output (self, other,"DIA_Gorn_TheRock_09_01"); //Uwa¿aj brachu, stra¿nicy zaszyli siê na grani i za cholerê nie mo¿emy ich stamt¹d wykurzyæ.
 	AI_Output (other, self,"DIA_Gorn_TheRock_15_02"); //Wiem o wszystkim, rozmawia³em z Lee. Co tu siê sta³o?
 	AI_TurnToNpc(self, flet);
-	AI_Output (self, other,"DIA_Gorn_TheRock_09_03"); //Zaatakowaliœmy. Jak widzisz to by³ raczej g³upi pomys³. Fletcher i jego ho³ota mog¹ tam siedzieæ jak d³ugo zechc¹. Wczoraj jeden ze stra¿ników, prawie nasika³ mi na g³owê!
+	AI_Output (self, other,"DIA_Gorn_TheRock_09_03"); //Zaatakowaliœmy. Jak widzisz, to by³ raczej g³upi pomys³. Fletcher i jego ho³ota mog¹ tam siedzieæ jak d³ugo zechc¹. Wczoraj jeden ze stra¿ników prawie nasika³ mi na g³owê!
 	AI_Output (other, self,"DIA_Gorn_TheRock_15_04"); //Lee poleci³ mi dowiedzieæ siê od Fletchera wszystkiego co dotyczy Orlego Gniazda.
 	AI_TurnToNpc(self, other);
 	AI_Output (self, other,"DIA_Gorn_TheRock_09_05"); //Tfu. Ten kasztel jest przeklêty, mówiê Ci. Kiedy rozpoczê³o siê zamieszanie w Orlim GnieŸdzie ze sto³pu dochodzi³y nieludzkie krzyki, a¿ mnie ciarki przesz³y.

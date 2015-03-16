@@ -353,7 +353,7 @@ FUNC VOID DIA_Orkan_EscortTrapTalk_Join()
 	AI_Output (self, other, "DIA_Orkan_EscortTrapTalk_Join_11_02"); //Chyba zg³upia³eœ. Ca³e ¿ycie kopa³em ich w dupê, a teraz mia³bym do nich przystaæ?
 	AI_Output (other, self, "DIA_Orkan_EscortTrapTalk_Join_15_03"); //A masz lepszy pomys³? Zreszt¹ co to za ró¿nica z kim trzymasz? Wszyscy jesteœmy skazañcami do cholery!
 	AI_Output (self, other, "DIA_Orkan_EscortTrapTalk_Join_11_04"); //Hmm...
-	AI_Output (other, self, "DIA_Orkan_EscortTrapTalk_Join_15_05"); //Do tego w Nowym Obozie mo¿esz wypiæ wiêcej ry¿ówki ni¿ udŸwigniesz.
+	AI_Output (other, self, "DIA_Orkan_EscortTrapTalk_Join_15_05"); //Do tego w Nowym Obozie mo¿esz wypiæ wiêcej ry¿ówki, ni¿ udŸwigniesz.
 	AI_Output (self, other, "DIA_Orkan_EscortTrapTalk_Join_11_06"); //Tym mnie przekona³eœ!
 	AI_Output (self, other, "DIA_Orkan_EscortTrapTalk_Join_11_07"); //Ma racjê, na ow³osione jaja Beliara! Co za ró¿nica komu i dla kogo kopie siê dupska, co nie ch³opaki?
 	

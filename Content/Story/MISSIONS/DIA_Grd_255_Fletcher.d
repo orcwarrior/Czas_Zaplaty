@@ -193,16 +193,16 @@ Ork niech Fletcher siedzi pod drzewem i kona xD
 	AI_Output (self, other,"DIA_Fletcher_TheRock_06_01"); //No proszê, kolejny idiota chcia³ zostaæ bohaterem... (kaszel)
 	AI_Output (other, self,"DIA_Fletcher_TheRock_15_02"); //Co tu siê sta³o?!
 	AI_Output (self, other,"DIA_Fletcher_TheRock_06_03"); //Mieliœmy goœcia... Wyr¿n¹³ wszystkich moich ludzi w nocy...
-	AI_Output (self, other,"DIA_Fletcher_TheRock_06_04"); //Mi rozpru³ brzuch... Nie masz pojêcia jakie to uczucie le¿eæ we w³asnych flakach i wdychaæ smród gówna... (kaszel)
+	AI_Output (self, other,"DIA_Fletcher_TheRock_06_04"); //Mi rozpru³ brzuch... Nie masz pojêcia, jakie to uczucie le¿eæ we w³asnych flakach i wdychaæ smród gówna... (kaszel)
 	AI_Output (other, self,"DIA_Fletcher_TheRock_15_05"); //Kto to by³?
 	AI_Output (self, other,"DIA_Fletcher_TheRock_06_06"); //Pupilek Kruka... Chêdo¿ony demon. To ten skurwiel wyr¿n¹³ ludzi Hrabiego w Orlim GnieŸdzie. Kiedy zobaczy³em Kruka na blankach wiedzia³em, ¿e ze mn¹ ju¿ koniec.
 	AI_Output (other, self,"DIA_Fletcher_TheRock_15_07"); //Boisz siê jednego cz³owieka?
-	AI_Output (self, other,"DIA_Fletcher_TheRock_06_08"); //Kruk to nie cz³owiek... Ktoœ kto brata siê z Beliarem nie jest cz³owiekiem!
+	AI_Output (self, other,"DIA_Fletcher_TheRock_06_08"); //Kruk to nie cz³owiek... Ktoœ, kto brata siê z Beliarem, nie jest cz³owiekiem!
 	AI_Output (other, self,"DIA_Fletcher_TheRock_15_09"); //Muszê dostaæ siê do Orlego Gniazda.
 	AI_Output (self, other,"DIA_Fletcher_TheRock_06_10"); //No to masz pecha. Nikt nie wejdzie do sto³pu i nikt z niego nie wyjdzie.
 	AI_Output (other, self,"DIA_Fletcher_TheRock_15_11"); //A jak Kruk siê tam dosta³?
 	AI_Output (self, other,"DIA_Fletcher_TheRock_06_12"); //A sk¹d ja mam to wiedzieæ? Pewnie ma swoje sposoby.
-	AI_Output (other, self,"DIA_Fletcher_TheRock_15_13"); //Mów, albo skoñczê to co zacz¹³ ten demon!
+	AI_Output (other, self,"DIA_Fletcher_TheRock_15_13"); //Mów, albo skoñczê to, co zacz¹³ ten demon!
 	AI_Output (self, other,"DIA_Fletcher_TheRock_06_14"); //Cz³owieku, ja ju¿ jestem martwy, rozmawiasz z trupem... (kaszel)
 	AI_Output (other, self,"DIA_Fletcher_TheRock_15_15"); //Do cholery, muszê dorwaæ Hrabiego!
 	AI_Output (self, other,"DIA_Fletcher_TheRock_06_16"); //Nie wiem dlaczego Kruk wys³a³ swoje bestie przeciwko ludziom Hrabiego, ale w¹tpiê, ¿eby ten jeszcze ¿y³. SpóŸni³eœ siê...
@@ -253,5 +253,5 @@ func void  DIA_Fletcher_TheRock1_Info()
    B_StopProcessInfos(hero);
 	Npc_ChangeAttribute(self, ATR_HITPOINTS, -self.attribute[ATR_HITPOINTS_MAX]);
 	AI_RemoveWeapon (other);
-	B_LogEntry(CH5_NC_TheRock, "Znalaz³em Fletchera, wszyscy jego ludzie le¿¹ martwi. Podobno za³atwi³ ich demon nas³any przez Kruka. Fletcher twierdzi, ¿e Kruk nas³a³ demony na ludzi Hrabiego, to w³aœnie jego stra¿nicy widzieli na blankach Orlego Gniazda. Dobi³em konaj¹cego stra¿nika, chocia¿ na to nie zas³u¿y³. Przy ciele Fletchera znajdê klucz do kufra Hrabiego, którego mam poszukaæ w opuszczonej siedzibie Magów Wody w Nowym Obozie. Mo¿e w kufrze znajdê coœ, co pomo¿e mi dostaæ siê do kasztelu.");
+	B_LogEntry(CH5_NC_TheRock, "Znalaz³em Fletchera, wszyscy jego ludzie le¿¹ martwi. Podobno za³atwi³ ich demon nas³any przez Kruka. Fletcher twierdzi, ¿e Kruk nas³a³ demony na ludzi Hrabiego, to w³aœnie jego stra¿nicy widzieli na blankach Orlego Gniazda. Dobi³em konaj¹cego stra¿nika, chocia¿ na to nie zas³u¿y³. Przy ciele Fletchera znajdê klucz do kufra Hrabiego, którego mam poszukaæ w opuszczonej siedzibie magów wody w Nowym Obozie. Mo¿e w kufrze znajdê coœ, co pomo¿e mi dostaæ siê do kasztelu.");
 };

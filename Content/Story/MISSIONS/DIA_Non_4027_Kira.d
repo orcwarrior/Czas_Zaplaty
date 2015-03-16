@@ -875,7 +875,7 @@ FUNC VOID Info_Kira_OCHAfter_Info()
 	AI_Output (other, self,"Info_Kira_OCHAfter_15_11"); //Tak?
 	AI_Output (self, other,"Info_Kira_OCHAfter_16_12"); //Siekacz musi dostaæ siê w moja ³apska i to ¿ywy!
 	AI_Output (other, self,"Info_Kira_OCHAfter_15_13"); //Dlaczego akurat on?
-	AI_Output (self, other,"Info_Kira_OCHAfter_16_14"); //Z wiarygodnego Ÿród³a wiem, ¿e to prawdziwy mê¿czyzna. Za to co ma miêdzy nogami niejedna kobieta odda³aby cnotê w³asnej córki!
+	AI_Output (self, other,"Info_Kira_OCHAfter_16_14"); //Z wiarygodnego Ÿród³a wiem, ¿e to prawdziwy mê¿czyzna. Za to, co ma miêdzy nogami, niejedna kobieta odda³aby cnotê w³asnej córki!
 	AI_Output (other, self,"Info_Kira_OCHAfter_15_15"); //...cholerna nimfomanka...
 	AI_Output (self, other,"Info_Kira_OCHAfter_16_16"); //Co mówi³eœ?
 	AI_Output (other, self,"Info_Kira_OCHAfter_15_17"); //Nic, nic. Przyprowadzê Ci Siekacza na po¿arcie. 

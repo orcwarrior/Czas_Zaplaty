@@ -541,7 +541,7 @@ FUNC VOID DIA_Hrabia_TheRock_Info()
 	AI_Output (other, self, "DIA_Hrabia_TheRock_15_10"); //Tak, wiem. Ty i Kruk to niszczycielski tandem.
 	AI_Output (self, other, "DIA_Hrabia_TheRock_11_11"); //Masz racjê, od zawsze tak by³o. 
 	AI_Output (self, other, "DIA_Hrabia_TheRock_11_12"); //Jednak kiedyœ mieliœmy inne cele. Chcieliœmy lepszego ¿ycia, szacunku i w³adzy.
-	AI_Output (self, other, "DIA_Hrabia_TheRock_11_13"); //Uda³oby siê, gdyby nie zach³annoœæ Kruka. Na szczêœcie tylko on trafi³ do Kolonii.
+	AI_Output (self, other, "DIA_Hrabia_TheRock_11_13"); //Uda³oby siê, gdyby nie zach³annoœæ Kruka. Na szczêœcie, tylko on trafi³ do Kolonii.
 	AI_Output (other, self, "DIA_Hrabia_TheRock_15_14"); //A ty?
 	AI_Output (self, other, "DIA_Hrabia_TheRock_11_15"); //Dalej prowadzi³em interesy gildii Cienia.
 	AI_Output (other, self, "DIA_Hrabia_TheRock_15_16"); //Co to za gildia?
@@ -587,7 +587,7 @@ FUNC VOID DIA_Hrabia_TheRock_Info()
 	AI_Output (self, other, "DIA_Hrabia_TheRock_11_56"); //Orle Gniazdo nie przypadkiem wzniesiono w miejscu, gdzie powsta³a wyrwa w barierze. To kolejny dar od demona.
 	AI_Output (other, self, "DIA_Hrabia_TheRock_15_57"); //Czyli Kruk odnalaz³ sposób na sforsowanie bariery?
 	AI_Output (self, other, "DIA_Hrabia_TheRock_11_58"); //Tak, a ja spróbowa³em mu w tym przeszkodziæ.
-	AI_Output (self, other, "DIA_Hrabia_TheRock_11_59"); //Dowiedzia³em siê ju¿ wszystkiego, na czym zale¿a³o gildii. Niestety trochê mnie ponios³o.
+	AI_Output (self, other, "DIA_Hrabia_TheRock_11_59"); //Dowiedzia³em siê ju¿ wszystkiego, na czym zale¿a³o gildii. Niestety, trochê mnie ponios³o.
 	AI_Output (self, other, "DIA_Hrabia_TheRock_11_60"); //Chcia³em dokopaæ Krukowi w momencie jego chwa³y. Nie doceni³em go. 
 	AI_Output (self, other, "DIA_Hrabia_TheRock_11_61"); //Nie wiem, kiedy mnie przejrza³. Byæ mo¿e, od pocz¹tku wiedzia³, dlaczego siê tutaj znalaz³em.
 	AI_Output (self, other, "DIA_Hrabia_TheRock_11_62"); //Dziwiê siê tylko, ¿e tyle mi powiedzia³.
@@ -663,7 +663,7 @@ Niech Hrabia gdzieœ siê jakby schowa na placu. Po tym jak Dick i Kruk zabij¹ dem
 
 	Npc_ExchangeRoutine(self,"hide_castle");
 
-	B_LogEntry(CH1_Rbl_Hrabia, "Ten Hrabia jest do mnie bardziej podobny ni¿ sam chcia³bym przyznaæ. Wspólnie zajmiemy siê Krukiem. Hrabia przygotuje teren w Orlim GnieŸdzie, ja muszê zwabiæ tu Kruka pod pretekstem, ¿e pomogê mu w inkantacji. Chyba znowu wybra³em gorsz¹ czêœæ zadania...");
+	B_LogEntry(CH1_Rbl_Hrabia, "Ten Hrabia jest do mnie bardziej podobny, ni¿ sam chcia³bym przyznaæ. Wspólnie zajmiemy siê Krukiem. Hrabia przygotuje teren w Orlim GnieŸdzie, ja muszê zwabiæ tu Kruka pod pretekstem, ¿e pomogê mu w inkantacji. Chyba znowu wybra³em gorsz¹ czêœæ zadania...");
 
 	B_LogEntry (CH5_NC_TheRock, "Wszed³em do Orlego Gniazda. W œrodku, prócz Hrabiego, nie ma ¿ywej duszy. Krata jest zablokowana wiêc nikt z zewn¹trz siê tutaj nie dostanie. To powinno uspokoiæ Lee.");
 	Info_ClearChoices (DIA_Hrabia_TheRock);
