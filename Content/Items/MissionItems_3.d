@@ -367,7 +367,7 @@ INSTANCE ITKE_GOMEZ_01_2 (C_Item)
 
 INSTANCE ITKECOOPERKEY (C_Item)
 {
-	name 				=	"Klucz Coopera.";
+	name 				=	"Klucz Coopera";
 
 	mainflag 			=	ITEM_KAT_NONE|ITEM_MISSION;
 	flags 				=	0;

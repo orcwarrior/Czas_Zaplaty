@@ -199,15 +199,15 @@ FUNC void  STT_Balam_Spy_Info()
 	AI_DrawWeapon (hero);
 	AI_Output (self, other,"STT_Balam_Spy_Info_07_07"); //Schowaj ¿elazo, to nie ja idioto! Jaki mia³bym w tym interes?
 	AI_Output (other, self,"STT_Balam_Spy_Info_15_08"); //Tylko Ty i Urt wiedzieliœcie o powrocie Diego. W sumie to by³ Twój pomys³. Masz sta³y kontakt z magnatami. Mam mówiæ dalej?
-	AI_Output (self, other,"STT_Balam_Spy_Info_07_09"); //Wiem jak to wygl¹da, ale czasami pod latarni¹ jest najciemniej. Nie ufam Urtowi, ta jego 'szlachetna' walka to tylko pozory. Wiem co mówiê.
+	AI_Output (self, other,"STT_Balam_Spy_Info_07_09"); //Wiem, jak to wygl¹da, ale czasami pod latarni¹ jest najciemniej. Nie ufam Urtowi, ta jego 'szlachetna' walka to tylko pozory. Wiem, co mówiê.
 	AI_RemoveWeapon (hero);
 	AI_Output (other, self,"STT_Balam_Spy_Info_15_10"); //Sk¹d te podejrzenia?
-	AI_Output (self, other,"STT_Balam_Spy_Info_07_11"); //Znam kogoœ kto zna³ Urta przed tym jak trafi³ do Kolonii. Kiedyœ pogadaliœmy sobie od serca, by³em wtedy jeszcze szkodnikiem w Nowym Obozie.
+	AI_Output (self, other,"STT_Balam_Spy_Info_07_11"); //Znam kogoœ, kto zna³ Urta przed tym jak trafi³ do Kolonii. Kiedyœ pogadaliœmy sobie od serca, by³em wtedy jeszcze szkodnikiem w Nowym Obozie.
 	AI_Output (other, self,"STT_Balam_Spy_Info_15_12"); //Szkodnikiem? To jak trafi³eœ tutaj?
 	AI_Output (self, other,"STT_Balam_Spy_Info_07_13"); //Mia³em ju¿ doœæ s³uchania Laresa. A w zamku akurat zwolni³ siê etat kucharza. Zawsze lubi³em pichciæ, wiêc zaryzykowa³em i nie ¿a³ujê.
 	AI_Output (other, self,"STT_Balam_Spy_Info_15_14"); //Sprawdzê Twoj¹ wersjê. Kim jest ten znajomy?
 	AI_Output (self, other,"STT_Balam_Spy_Info_07_15"); //To Cipher. Znajdziesz go w Nowym Obozie. Nie wiem co teraz robi, ale wiem co rozwi¹¿e mu jêzyk. Ziele.
-	AI_Output (self, other,"STT_Balam_Spy_Info_07_16"); //WeŸ ze sob¹ coœ do palenia to siê dogadacie.
+	AI_Output (self, other,"STT_Balam_Spy_Info_07_16"); //WeŸ ze sob¹ coœ do palenia, to siê dogadacie.
 	AI_Output (other, self,"STT_Balam_Spy_Info_15_17"); //Lepiej dla Ciebie, ¿ebyœ mówi³ prawdê.
 	B_LogEntry		(CH6_RBL_Spy, "Sytuacja przybra³a ciekawy obrót. Balam twierdzi, ¿e zdrajc¹ mo¿e byæ Urt, w co nie chce mi siê wierzyæ po tym, ile wczeœniej razem zdzia³aliœmy w Starym Obozie. Nauczy³em siê jednak, ¿e w Kolonii nikomu nie mo¿na zaufaæ. Muszê porozmawiaæ z Cipherem o Urcie. Aha i przyda siê ziele dla Ciphera, ¿eby mu rozwi¹zaæ jêzyk.");
 };

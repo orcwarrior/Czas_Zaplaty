@@ -21,8 +21,8 @@ INSTANCE ItFo_Potion_Poison(C_Item)
 	on_state[0]		=	UseBlackWidow;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Czarna wdowa to niezwykle skuteczna trucizna";
-
+	description			= "Czarna wdowa";
+	Text[1] = "Niezwykle skuteczna trucizna.";
 };
 
 	FUNC VOID UseBlackWidow()
@@ -41,7 +41,7 @@ Klucz do celi Diego, tylko nim mo¿na otworzyæ drzwi!
 
 INSTANCE DUNGEONKEY (C_Item)
 {
-	name 				=	"Klucz do celi Diego.";
+	name 				=	"Klucz do celi Diego";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;

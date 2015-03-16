@@ -790,7 +790,7 @@ instance  Info_Nekroman_Poison (C_INFO)
 	information	=	Info_Nekroman_Poison_Info;
 	permanent	=	0;
 	important	=	0;	
-	description		= "Przyby³em by wype³niæ wolê Beliara."; 
+	description		= "Przyby³em, by wype³niæ wolê Beliara."; 
 };                       
 
 FUNC int  Info_Nekroman_Poison_Condition()
@@ -803,7 +803,7 @@ FUNC int  Info_Nekroman_Poison_Condition()
 
 FUNC VOID  Info_Nekroman_Poison_Info()
 {
-	AI_Output (other, self, "Info_Nekroman_Poison_15_01"); //Przyby³em by wype³niæ wolê Beliara.
+	AI_Output (other, self, "Info_Nekroman_Poison_15_01"); //Przyby³em, by wype³niæ wolê Beliara.
 	AI_Output (self, other,"Info_Nekroman_Poison_14_02"); //Jak¹ wolê?
 	AI_Output (other, self, "Info_Nekroman_Poison_15_03"); //Nasz Pan wyznaczy³ mi zadanie niezwyk³ej wagi. Muszê otruæ pewnego wyznawcê Innosa.
 	AI_Output (other, self, "Info_Nekroman_Poison_15_04"); //Przyby³em do Ciebie Mistrzu, po truciznê. 

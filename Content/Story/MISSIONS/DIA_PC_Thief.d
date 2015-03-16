@@ -199,14 +199,14 @@ FUNC VOID Info_Diego_Prison_Info()
 	B_FullStop (other);
 	AI_GotoNpc(self, other);
 	AI_Output(self,other,"Info_Diego_Prison_11_01"); //Nie s¹dzi³em, ¿e jeszcze zobaczê przyjazn¹ twarz. Co Ty tu robisz?
-	AI_Output(other,self,"Info_Diego_Prison_15_02"); //Jak to co? Robiê za jednoosobowy oddzia³, który ma za zadanie wydostaæ z celi jakiegoœ  starego pryka.
+	AI_Output(other,self,"Info_Diego_Prison_15_02"); //Jak to co? Robiê za jednoosobowy oddzia³, który ma za zadanie wydostaæ z celi jakiegoœ starego pryka.
 	AI_Output(self,other,"Info_Diego_Prison_11_03"); //Mam u Ciebie d³ug, przyjacielu.
 	AI_Output(other,self,"Info_Diego_Prison_15_04"); //O sp³acie pomyœlimy jak uda siê nam st¹d wydostaæ. Ale najpierw powiedz jak tu trafi³eœ.
 	AI_Output(self,other,"Info_Diego_Prison_11_05"); //Odkry³em, ¿e Urt to parszywy zdrajca.
 	AI_Output(other,self,"Info_Diego_Prison_15_06"); //No to nie jesteœ sam. Masz jakieœ dowody?
 	AI_Output(self,other,"Info_Diego_Prison_11_07"); //Ja jestem ¿ywym dowodem!
-	AI_Output(self,other,"Info_Diego_Prison_11_08"); //Ten sukinsyn zorientowa³ siê, ¿e go przejrza³em, kiedy potajemnie spotka³em siê z dowódcami Cieni. Chcia³em razem z nimi pozbyæ siê Urta, ale by³ ode mnie szybszy.
-	AI_Output(self,other,"Info_Diego_Prison_11_10"); //Urt przyszed³ ze stra¿nikami, którzy roznieœli pozosta³ych Cieni. Ja dosta³em po mordzie i odroczony wyrok.
+	AI_Output(self,other,"Info_Diego_Prison_11_08"); //Ten sukinsyn zorientowa³ siê, ¿e go przejrza³em, kiedy potajemnie spotka³em siê z dowódcami cieni. Chcia³em razem z nimi pozbyæ siê Urta, ale by³ ode mnie szybszy.
+	AI_Output(self,other,"Info_Diego_Prison_11_10"); //Urt przyszed³ ze stra¿nikami, którzy roznieœli pozosta³ych cieni. Ja dosta³em po mordzie i odroczony wyrok.
 	AI_Output(other,self,"Info_Diego_Prison_15_11"); //To widzê, ¿e zd¹¿y³em w ostatniej chwili.
 	AI_Output(self,other,"Info_Diego_Prison_11_12"); //Chcia³em wys³aæ wiadomoœæ do przyjaciela, który by mnie st¹d wydosta³, ale stra¿nik by³ kompletnym idiot¹.
 	AI_Output(other,self,"Info_Diego_Prison_15_13"); //Co to za przyjaciel?
@@ -215,7 +215,7 @@ FUNC VOID Info_Diego_Prison_Info()
 	AI_Output(other,self,"Info_Diego_Prison_15_16"); //A Urt?
 	AI_Output(self,other,"Info_Diego_Prison_11_17"); //Teraz jest poza naszym zasiêgiem. Jestem pewien, ¿e jeszcze go spotkamy i zd¹¿ymy mu odp³aciæ.
 	AI_Output(self,other,"Info_Diego_Prison_11_18"); //Powiedz Balamowi, ¿e uciek³em i wrócê z rebeliantami podczas ataku.
-	AI_Output(self,other,"Info_Diego_Prison_11_19"); //Niech przygotuje Cieni i Kopaczy. 
+	AI_Output(self,other,"Info_Diego_Prison_11_19"); //Niech przygotuje cieni i kopaczy. 
 	
    if (Npc_KnowsInfo(hero,DIA_Cienius_Fault))&&(Npc_KnowsInfo(hero,DIA_Kopaczus_Fault))
 	{
@@ -228,13 +228,13 @@ czyli jak chest_conf == 2 to stra¿nicy x2 tam gdzie maj¹ zaatakowaæ Cienie i Kop
 
 **************************/
 		Log_SetTopicStatus	(CH6_RBL_Coordinate, LOG_FAILED);
-		B_LogEntry		(CH6_RBL_Coordinate, "Spotkanie z wys³annikami kast to podpucha Urta. Przeze mnie zginie wielu Cieni i Kopaczy. Niech to szlag trafi!");
+		B_LogEntry		(CH6_RBL_Coordinate, "Spotkanie z wys³annikami kast to podpucha Urta. Przeze mnie zginie wielu cieni i kopaczy. Niech to szlag trafi!");
 
-		AI_Output(other,self,"Info_Diego_Prison_15_20"); //Ju¿ o to zadba³em. Spotka³em siê z wys³annikami Cieni i Kopaczy.
+		AI_Output(other,self,"Info_Diego_Prison_15_20"); //Ju¿ o to zadba³em. Spotka³em siê z wys³annikami cieni i kopaczy.
 		AI_Output(self,other,"Info_Diego_Prison_11_21"); //Kto powiedzia³ Ci o spotkaniu?!
 		AI_Output(other,self,"Info_Diego_Prison_15_22"); //Urt... O cholera!
 		AI_Output(self,other,"Info_Diego_Prison_11_23"); //To musia³y byæ jego wtyki.
-		AI_Output(self,other,"Info_Diego_Prison_11_24"); //Czyli stra¿nicy teraz dok³adnie wiedz¹ gdzie uderz¹ Cienie i Kopacze. Niech to szlag...
+		AI_Output(self,other,"Info_Diego_Prison_11_24"); //Czyli stra¿nicy teraz dok³adnie wiedz¹, gdzie uderz¹ cienie i kopacze. Niech to szlag...
 		AI_Output(other,self,"Info_Diego_Prison_15_25"); //Dostaniemy siê do œrodka tunelem i mo¿e zdo³amy ich ostrzec.
 		AI_Output(self,other,"Info_Diego_Prison_11_26"); //W¹tpiê. Na to nic ju¿ nie poradzimy. Miejmy tylko nadziejê, ¿e rebelianci i najemnicy zd¹¿¹ ich wesprzeæ.
 	}
@@ -268,7 +268,7 @@ Diego niech czeka tam gdzie czeka³ w CH4.
 
 	B_LogEntry		(CH6_RBL_Spy, "Diego potwierdzi³, ¿e to Urt zdradzi³. Muszê powiedzieæ o tym Balamowi i Ratfordowi.");
 
-	B_LogEntry		(CH6_RBL_Recognise, "Uwolni³em Diego. Przywódca Cieni zaczeka na atak w pobli¿u palisady a gdy nadejdzie odpowiednia pora poprowadzi Cieni i Kopaczy do walki.");
+	B_LogEntry		(CH6_RBL_Recognise, "Uwolni³em Diego. Przywódca cieni zaczeka na atak w pobli¿u palisady, a gdy nadejdzie odpowiednia pora, poprowadzi cieni i kopaczy do walki.");
 	/****************************
 Ork chcê jeszcze Urta wykorzystaæ. Teraz niech zniknie. Stanie na drodze Dicka jak ten bêdzie œciga³ Gomeza.
 Na razie niech czeka w jakimœ niedostêpnym miejscu.

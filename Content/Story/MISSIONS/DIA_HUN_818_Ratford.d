@@ -1928,7 +1928,7 @@ FUNC VOID DIA_RATFORD_OtherHelpFinished_Info()
 {
 	AI_Output (other, self, "DIA_RATFORD_OtherHelpFinished_15_01"); //Wróci³em.
 	AI_Output (self, other, "DIA_RATFORD_OtherHelpFinished_07_02"); //Zauwa¿y³em. Co z Kir¹?
-	AI_Output (other, self, "DIA_RATFORD_OtherHelpFinished_15_03"); //Dosta³a to czego chcia³a i weŸmie udzia³ w ataku.
+	AI_Output (other, self, "DIA_RATFORD_OtherHelpFinished_15_03"); //Dosta³a to, czego chcia³a i weŸmie udzia³ w ataku.
 	AI_Output (self, other, "DIA_RATFORD_OtherHelpFinished_07_04"); //Œwietna robota!
 	AI_Output (self, other, "DIA_RATFORD_OtherHelpFinished_07_05"); //Wyœlê do niej ³¹cznika. Na razie nie bêdziesz tu potrzebny. 
 	AI_Output (self, other, "DIA_RATFORD_OtherHelpFinished_07_06"); //Muszê dopi¹æ przygotowania do ataku. Bywaj.

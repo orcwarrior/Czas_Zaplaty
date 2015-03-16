@@ -522,12 +522,12 @@ FUNC VOID DIA_Urt_DiegoJail_Info()
 	AI_Output (other, self, "DIA_Urt_DiegoJail_15_07"); //Cavalorn czeka na wiadomoœci od Was. Co siê dzieje?
 	AI_Output (self, other, "DIA_Urt_DiegoJail_11_08"); //Dorwali Diego.
 	AI_Output (other, self, "DIA_Urt_DiegoJail_15_09"); //Jak to siê sta³o?
-	AI_Output (self, other, "DIA_Urt_DiegoJail_11_10"); //Stra¿nicy przydybali go podczas spotkania z dowódcami Cieni i Kopaczy. Dorwali ich wszystkich.
-	AI_Output (self, other, "DIA_Urt_DiegoJail_11_11"); //Cieni i Kopaczy stracili od razu, ¿eby zastraszyæ pozosta³ych.
+	AI_Output (self, other, "DIA_Urt_DiegoJail_11_10"); //Stra¿nicy przydybali go podczas spotkania z dowódcami cieni i kopaczy. Dorwali ich wszystkich.
+	AI_Output (self, other, "DIA_Urt_DiegoJail_11_11"); //Cieni i kopaczy stracili od razu, ¿eby zastraszyæ pozosta³ych.
 	AI_Output (self, other, "DIA_Urt_DiegoJail_11_12"); //Diego zostawili na deser.
 	AI_Output (other, self, "DIA_Urt_DiegoJail_15_13"); //Gdzie go przetrzymuj¹?
 	AI_Output (self, other, "DIA_Urt_DiegoJail_11_14"); //W zamkowych lochach. Jest dobrze strze¿ony, a ja jestem spalony. Szukaj¹ mnie od kilku dni. Na szczêœcie nikomu nie przysz³o na myœl, ¿eby tu zajrzeæ.
-	AI_Output (other, self, "DIA_Urt_DiegoJail_15_15"); //Sk¹d stra¿nicy dowiedzieli siê o spotkaniu Diego z Cieniami i Kopaczami?
+	AI_Output (other, self, "DIA_Urt_DiegoJail_15_15"); //Sk¹d stra¿nicy dowiedzieli siê o spotkaniu Diego z cieniami i kopaczami?
 	AI_Output (self, other, "DIA_Urt_DiegoJail_11_16"); //To musia³ byæ ktoœ z nas, ktoœ kto wiedzia³ o powrocie Diego i planowanej rebelii.
 	AI_Output (self, other, "DIA_Urt_DiegoJail_11_17"); //Z kim prócz mnie rozmawia³eœ o Diego?
 	AI_Output (other, self, "DIA_Urt_DiegoJail_15_18"); //Z nikim... Hmm, chocia¿... 
@@ -549,21 +549,21 @@ FUNC VOID DIA_Urt_DiegoJail_Info()
 	AI_Output (other, self, "DIA_Urt_DiegoJail_15_26"); //Mamy wspólne cele i tylko dlatego pomagam Wam, a nie Gomezowi. Czy to jasne?
 	AI_Output (self, other, "DIA_Urt_DiegoJail_11_27"); //Zrozumia³em. Myœlisz, ¿e ja jestem urodzonym anarchist¹? Jak powiedzia³eœ, mamy ten sam cel i w tej chwili tylko to siê liczy.
 	AI_Output (other, self, "DIA_Urt_DiegoJail_15_28"); //Dobra, dowiem siê komu trzeba uci¹æ jêzor. O co chodzi z tymi obowi¹zkami?
-	AI_Output (self, other, "DIA_Urt_DiegoJail_11_29"); //Musisz przygotowaæ cieni i kopaczy do ataku. Rozejrzyj siê po obozie i wybierz miejsca gdzie i w jaki sposób powinni uderzyæ.
+	AI_Output (self, other, "DIA_Urt_DiegoJail_11_29"); //Musisz przygotowaæ cieni i kopaczy do ataku. Rozejrzyj siê po obozie i wybierz miejsca, gdzie i w jaki sposób powinni uderzyæ.
 	AI_Output (other, self, "DIA_Urt_DiegoJail_15_30"); //Tylko tyle?
 	AI_Output (self, other, "DIA_Urt_DiegoJail_11_31"); //To nie takie proste. Od twoich decyzji bêdzie zale¿a³a skutecznoœæ ataku, a tak¿e to jakie straty ponios¹ rebelianci.
 	AI_Output (other, self, "DIA_Urt_DiegoJail_15_32"); //Dlaczego sam im tego wczeœniej nie powiedzia³eœ?
 	AI_Output (self, other, "DIA_Urt_DiegoJail_11_33"); //Jakbyœ nie zauwa¿y³ siedzê tu zamkniêty od kilku dni. Nie mam pojêcia jak wygl¹da aktualna sytuacja.
 	AI_Output (self, other, "DIA_Urt_DiegoJail_11_34"); //Ty mo¿esz swobodnie rozejrzeæ siê po obozie, to wystarczy w zupe³noœci do realnej oceny sytuacji.
 	AI_Output (other, self, "DIA_Urt_DiegoJail_15_35"); //Dlaczego ka¿dy chce siê wys³ugiwaæ takim biednym piratem jak ja?
-	AI_Output (other, self, "DIA_Urt_DiegoJail_15_36"); //Dobra rozejrzê siê w po obozie.
+	AI_Output (other, self, "DIA_Urt_DiegoJail_15_36"); //Dobra, rozejrzê siê w po obozie.
 	AI_Output (other, self, "DIA_Urt_DiegoJail_15_37"); //Jak mam porozumieæ siê z cieniami i kopaczami?
-	AI_Output (self, other, "DIA_Urt_DiegoJail_11_38"); //Spotkasz siê z ich kontaktami o ile jeszcze ¿yj¹.
+	AI_Output (self, other, "DIA_Urt_DiegoJail_11_38"); //Spotkasz siê z ich kontaktami, o ile jeszcze ¿yj¹.
 	AI_Output (self, other, "DIA_Urt_DiegoJail_11_39"); //W pobli¿u szafotu bêdzie czeka³ wys³annik cieni.
 	AI_Output (self, other, "DIA_Urt_DiegoJail_11_40"); //Cz³owiek kopaczy bêdzie siê krêci³ przy bocznej bramie.
 	AI_Output (other, self, "DIA_Urt_DiegoJail_15_41"); //W porz¹dku.
 	AI_Output (self, other, "DIA_Urt_DiegoJail_11_42"); //Mamy ma³o czasu. Jak najszybciej rozejrzyj siê w sytuacji i odnajdŸ Diego.
-	AI_Output (other, self, "DIA_Urt_DiegoJail_15_43"); //Wrócê jak dowiem siê czegoœ wiêcej.
+	AI_Output (other, self, "DIA_Urt_DiegoJail_15_43"); //Wrócê, jak dowiem siê czegoœ wiêcej.
 
 	/*******************
 Ork to jest zmienna od skrzyni, teraz Dick mo¿e monologowaæ ze skrzyni¹
