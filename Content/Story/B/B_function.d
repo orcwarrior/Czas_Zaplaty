@@ -54,6 +54,7 @@ func void B_teleport_Raven()
    B_DrawSpell		(hero,	SPL_TELEPORT1,	SPL_SENDCAST_TELEPORT);
    AI_PlayAni		(hero, "T_MAGRUN_2_HEASHOOT");
    AI_Teleport(raven, "NC_EN_MAINPATH_05");
+	B_ExchangeRoutine(raven, "EN");
    AI_Teleport(hero, "NC_EN_MAINPATH_05_01");
 };
 

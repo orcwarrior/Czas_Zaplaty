@@ -297,7 +297,6 @@ Ork zmieñ mu te¿ w tym momencie pancerz na ten kruka z G2 NK
 ****************************/
 
 	B_LogEntry(CH1_Rbl_Hrabia, "No to czeka mnie ostra jazda...");
-   Npc_ExchangeRoutine(self,"EN");
    Raven_teleport_to_EN = true;
    Wld_InsertNpc(RavenDemonLord, "NC_EN_MAINPATH_03");
 };
