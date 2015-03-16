@@ -798,7 +798,7 @@ INSTANCE DIA_Cord_CanYouTeachMe11 (C_INFO)
 
 FUNC INT DIA_Cord_CanYouTeachMe11_Condition()
 {
-	if (Npc_KnowsInfo (hero,DIA_Cord_CanYouTeachMe1)) && (Npc_GetTalentValue(other, NPC_TALENT_1H)==60) && (Npc_GetTalentValue(other, NPC_TALENT_2H)==60)
+	if (Npc_KnowsInfo (hero,DIA_Cord_CanYouTeachMe1)) && (Npc_GetTalentValue(other, NPC_TALENT_1H)>=60) && (Npc_GetTalentValue(other, NPC_TALENT_2H)>=60)
 	{
 		return 1;
 	};
