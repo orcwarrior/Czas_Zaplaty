@@ -1585,11 +1585,13 @@ FUNC VOID DIA_Leren_RitualEnd_Info()
    if (satur_ritual)
    {
       var C_NPC sat; sat = Hlp_GetNpc(KDW_600_Saturas);
+		AI_Teleport(sat, "LOCATION_19_03_ROOM6_BARRELCHAMBER2");
       Npc_ExchangeRoutine	(sat, "START");
    }
    else
    {
       var C_NPC myx; myx = Hlp_GetNpc(KDW_601_Myxir);
+		AI_Teleport(myx, "LOCATION_19_03_SECOND_HARPYE1");
       Npc_ExchangeRoutine	(myx, "START");
    };
    
