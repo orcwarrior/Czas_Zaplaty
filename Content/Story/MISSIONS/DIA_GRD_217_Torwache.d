@@ -73,7 +73,7 @@ FUNC VOID DIA_Grd_215_First_Info()
 	
 	myarmor = Npc_GetEquippedArmor(hero);
    
-	if (Hlp_IsItem(myarmor, GRD_ARMOR_L))
+	if (Hlp_IsItem(myarmor, GRD_ARMOR_L))||(Hlp_IsItem(myarmor, GRD_ARMOR_M))
 	{
 
 		AI_Output (self, other,"DIA_Grd_215_First_06_00"); //Kim Ty do cholery jesteœ? Pierwszy raz widzê tak¹ zakazan¹ mordê!
@@ -233,7 +233,7 @@ FUNC VOID DIA_Grd_215_Again_Info()
 	var C_ITEM myarmor;
 	myarmor = Npc_GetEquippedArmor(hero);
    
-	if (Hlp_IsItem(myarmor, GRD_ARMOR_L))
+	if (Hlp_IsItem(myarmor, GRD_ARMOR_L))||(Hlp_IsItem(myarmor, GRD_ARMOR_M))
 	{
 		AI_Output (self, other,"DIA_Grd_215_Again_06_00"); //To znowu Ty. D³ugo Ciê nie by³o. Gdzie siê szwêda³eœ?
 		AI_Output (other, self,"DIA_Grd_215_Again_15_01"); //Tu i tam. Dzieje siê coœ ciekawego?
@@ -298,7 +298,7 @@ Ork zmiana rutyny Diego, niech siedzi w lochach zamkniêty
 	var C_ITEM myarmor;
 	myarmor = Npc_GetEquippedArmor(hero);
    
-	if (Hlp_IsItem(myarmor, GRD_ARMOR_L))
+	if (Hlp_IsItem(myarmor, GRD_ARMOR_L))||(Hlp_IsItem(myarmor, GRD_ARMOR_M))
 	{
 		AI_Output (self, other,"DIA_Grd_215_Surprice_06_00"); //Cholera Ty ¿yjesz?!
 		AI_Output (other, self,"DIA_Grd_215_Surprice_15_01"); //Tak jakoœ wysz³o. Wybacz je¿eli Ciê rozczarowa³em...
