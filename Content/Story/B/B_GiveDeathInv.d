@@ -18,6 +18,7 @@ func void B_GiveDeathInv ()
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_SHADOWBEAST)			{	CreateInvItems(self,ItAt_ShadTeeth,			4);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_BLOODHOUND)			{	CreateInvItems(self,ItAt_BloodHoTeeth,		4);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_RAZOR)				{	CreateInvItems(self,ItAt_RazorTeeth,		4);	};
+		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_RAZORNK)				{	CreateInvItems(self,ItAt_RazorTeeth,		4);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_WARAN)				{	CreateInvItems(self,ItAt_WaranTeeth,		4);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_FIREWARAN)			{	CreateInvItems(self,ItAt_FireWaranTeeth,	4);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_LURKER)				{	CreateInvItems(self,ItAt_LurkerTeeth,		2);	};
@@ -58,6 +59,7 @@ func void B_GiveDeathInv ()
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_FIREWARAN)			{	CreateInvItems(self,ItAt_FireWaranClaws,	4);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_SNAPPER)   			{	CreateInvItems(self,ItAt_SnapperClaws,		2);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_RAZOR)				{	CreateInvItems(self,ItAt_RazorClaws,		2);	};
+		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_RAZORNK)				{	CreateInvItems(self,ItAt_RazorClaws,		2);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_ORCBITER)    			{	CreateInvItems(self,ItAt_BiterClaws,		2);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_LURKER)				{	CreateInvItems(self,ItAt_LurkerClaws,		2);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_WOLF)||(Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_MIS_SNAFWOLF)
@@ -111,6 +113,7 @@ func void B_GiveDeathInv ()
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_SWAMPSHARK)			{	CreateInvItems(self,ItAt_SwampsharkSkin,	1); };
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_SNAPPER)   			{	CreateInvItems(self,ItAt_SnapperSkin,		1);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_RAZOR)				{	CreateInvItems(self,ItAt_RazorSkin,			1);	};
+		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_RAZORNK)				{	CreateInvItems(self,ItAt_RazorSkin,			1);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_WARAN)				{	CreateInvItems(self,ItAt_WaranSkin,			1);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_FIREWARAN)			{	CreateInvItems(self,ItAt_FireWSkin,			1);	};
 		if (Npc_GetAivar(self,AIV_MM_REAL_ID)==ID_ALIGATOR)				{	CreateInvItems(self,ItAt_AligatSkin,		1);	};
