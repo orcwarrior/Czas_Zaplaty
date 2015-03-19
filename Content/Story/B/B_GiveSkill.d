@@ -29,9 +29,8 @@ func void G_CanNotLern( var int nAttribute, var int nValue )
 	strMessage = _STR_CANNOTUSE_PRE_PLAYER;
 	
 	strMessage = ConcatStrings( strMessage, strDifference 			);
-	strMessage = ConcatStrings( strMessage, " " 					);
+	strMessage = ConcatStrings( strMessage, " punktów " 					);
 	strMessage = ConcatStrings( strMessage, strAttribute 			);
-	strMessage = ConcatStrings( strMessage, " " 					);	
 	strMessage = ConcatStrings( strMessage, _STR_CANNOTUSE_POINTS	);
 	strMessage = ConcatStrings( strMessage, _STR_CANNOTLERNSKILL_POST 	);
 
