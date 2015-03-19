@@ -63,6 +63,13 @@ FUNC VOID Rtn_start_729 ()
 	TA_Smith_Sharp	(19,00,20,00,"HC_NO_SHARP");
 	TA_SitAround	(20,00,00,00,"KTOS_GO");
 };
+
+FUNC VOID Rtn_NC1_729 ()
+{
+	TA_StandAround(08,00,21,00,"NC_TAVERN_BAR");
+   TA_StandAround(21,00,08,00,"NC_TAVERN_BAR");
+};
+
 FUNC VOID Rtn_banned_729 ()
 {
 	TA_Stand(06,35,22,35,"OW_WOODRUIN_WOLF_SPAWN");

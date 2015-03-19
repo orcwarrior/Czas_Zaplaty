@@ -193,15 +193,15 @@ func VOID Info_Kharim_Hi_Info()
 	{
 		AI_Output (other, self,"Info_Kharim_Hi_15_01"); //No proszê, znajome œcierwo.
 		AI_Output (self, other,"Info_Kharim_Hi_09_02"); //Proszê, nie bij mnie!
-		Npc_ExchangeRoutine(self,"NC1");
 	}
 	else
 	{
       AI_Output (self, other,"Info_Kharim_Hi_09_03"); //Coœ ty za jeden?
       AI_Output (other, self,"Info_Kharim_Hi_15_04"); //Mamy wspólnego znajomego, Corda.
       AI_Output (self, other,"Info_Kharim_Hi_09_05"); //W porz¹dku, mów co z tym konwojem.
-      Npc_ExchangeRoutine(self,"START");
 	};
+	
+	Npc_ExchangeRoutine(self,"NC1");
    
 	if (Npc_KnowsInfo (hero, DIA_Orkan_Again))&&(!Npc_KnowsInfo (hero, DIA_Orkan_EscortGo))&&(orkan_wait >= Wld_GetDay())
 	{
