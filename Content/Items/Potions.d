@@ -438,8 +438,8 @@ INSTANCE ItFo_Potion_Master_01(C_Item)
 
 FUNC VOID UseMasterPotion()
 {
-   B_ChangeAttribute	(self,	ATR_STRENGTH,	StrDex_Macht);
-   B_ChangeAttribute	(self,	ATR_DEXTERITY,	StrDex_Macht);
+	B_RaiseAttribute(ATR_STRENGTH, StrDex_Macht);
+	B_RaiseAttribute(ATR_DEXTERITY, StrDex_Macht);
 };
 
 /******************************************************************************************/
@@ -465,8 +465,8 @@ INSTANCE ItFo_Potion_Master_02(C_Item)
 
 FUNC VOID UseMaster2Potion()
 {
-   B_ChangeAttribute	(self,	ATR_STRENGTH,	StrDex_Herrschaft);
-   B_ChangeAttribute	(self,	ATR_DEXTERITY,	StrDex_Herrschaft);
+	B_RaiseAttribute(ATR_STRENGTH, StrDex_Herrschaft);
+	B_RaiseAttribute(ATR_DEXTERITY, StrDex_Herrschaft);
 };
 /******************************************************************************************/		
 // Hitpoints
