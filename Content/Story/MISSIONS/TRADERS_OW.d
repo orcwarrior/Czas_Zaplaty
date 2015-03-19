@@ -275,6 +275,7 @@ instance Bartender_Container(Npc_Default)
 	CreateInvItems(self,ItFoCheese,2);
 	CreateInvItems(self,ItFoSoup,5);
 	CreateInvItems(self,ItFoWine,10);
+	CreateInvItems(self,ItFoBooze,10);
 	CreateInvItems(self,ItFo_Gin,10);
 	CreateInvItems(self,ItFo_Addon_Rum,3);
 	CreateInvItems(self,ItFo_Stew,4);

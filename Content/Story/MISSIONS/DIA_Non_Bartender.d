@@ -22,6 +22,9 @@ FUNC VOID Info_Bartender_Hello_Info()
 {	
 	AI_Output (other, self,"Info_Bartender_Hello_15_00"); //Czym siê zajmujesz?
 	AI_Output (self, other,"Info_Bartender_Hello_06_01"); //Sprzedajê najlepsz¹ ry¿ówkê w tej zapad³ej dziurze.
+	
+	Log_CreateTopic (GE_TraderNC,LOG_NOTE);
+	B_LogEntry(GE_TraderNC,"Szynkarz sprzedaje podobno najlepsz¹ ry¿ówkê. SprawdŸmy.");
 };
 
 // ************************************************************
