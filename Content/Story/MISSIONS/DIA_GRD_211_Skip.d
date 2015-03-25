@@ -1,28 +1,4 @@
 // **************************************
-//					EXIT 
-// **************************************
-
-instance  DIA_Skip_Exit (C_INFO)
-{
-	npc			=  GRD_211_Skip;
-	nr			=  999;
-	condition	=  DIA_Skip_Exit_Condition;
-	information	=  DIA_Skip_Exit_Info;
-	permanent	=  1;
-	description = DIALOG_ENDE;
-};                       
-
-FUNC int  DIA_Skip_Exit_Condition()
-{
-	return 1;
-};
-
-FUNC VOID  DIA_Skip_Exit_Info()
-{
-	B_StopProcessInfos(self);
-};
-
-// **************************************
 //				First
 // **************************************
 
@@ -72,34 +48,6 @@ func void DIA_Skip_First_BACK()
 	Info_ClearChoices(DIA_Skip_First);
 	B_StopProcessInfos(self);
 };
-
-/*------------------------------------------------------------------------
-							Waffenhandel								
-------------------------------------------------------------------------*/
-
-instance GRD_211_Skip_TRADE (C_INFO)
-{
-	npc				= GRD_211_Skip;
-	condition		= GRD_211_Skip_TRADE_Condition;
-	information		= GRD_211_Skip_TRADE_Info;
-	permanent		= 1;
-	description		= "Przyda³oby mi siê kilka drobiazgów."; 
-	trade 			= 1;
-};
-
-FUNC int GRD_211_Skip_TRADE_Condition()
-{
-	if (Npc_KnowsInfo(hero,DIA_Skip_First))
-	{
-		return TRUE;
-	};
-};
-
-FUNC void  GRD_211_Skip_TRADE_Info()
-{
-	AI_Output (other, self,"GRD_211_Skip_TRADE_Info_15_01"); //Przyda³oby mi siê kilka drobiazgów.
-	AI_Output (self, other,"GRD_211_Skip_TRADE_Info_12_02"); //Mam co nieco na sprzeda¿, sam zobacz.
-};  
 
 // **************************************
 

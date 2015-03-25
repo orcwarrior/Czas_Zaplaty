@@ -4,7 +4,7 @@
 //
 //-Jeff
 //-Bartholo
-//-?
+//-Skip
 //
 
 // ************************************************************
@@ -253,4 +253,104 @@ func void  Info_EBR_Bartholo_TRADE_Info()
 	
 	Trade_EraseValue();	//BUGFIX has to be in every trade dialog
 	Trade_FOOD_Mul	 	= mulf(Trade_ALL_Mul,1050253722);//0.30
+};
+
+// ************************************************************
+// 			  		SKIP
+// ************************************************************
+// Broñ
+// ************************************************************
+
+// ************************************************************
+// 			  		 VARIABLE
+// ************************************************************
+var int Skip_TradeInvGiven;
+// ************************************************************
+// 			  		CONTAINER
+// ************************************************************
+instance Skip_Container(Npc_Default)
+{
+	name	=	"Magazynek Skipa";
+	//trader start inventory
+	CreateInvItems	(self, ItKeLockpick,30);
+	CreateInvItem	(self, ItMw_1H_Sword_Long_01);
+	CreateInvItem	(self, ItMw_1H_Sword_Long_02);
+	CreateInvItem	(self, ItMw_1H_Sword_Long_03);
+	CreateInvItem	(self, ItMw_1H_Sword_Long_04);
+	CreateInvItem	(self, ItMw_1H_Sword_Long_04);
+	
+	CreateInvItems (self,ItAmArrow,400);
+	CreateInvItems (self,ItAmBolt,400);
+	
+	CreateInvItems (self,ItMiNugget,600); 
+	
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
+};
+//-----------------------------------------------------------------
+// EXIT Skip
+//-----------------------------------------------------------------
+INSTANCE DIA_GRD_211_Skip_Exit (C_INFO)
+{
+	npc			= GRD_211_Skip;
+	nr			= 999;
+	condition	= DIA_GRD_211_Skip_Exit_Condition;
+	information	= DIA_GRD_211_Skip_Exit_Info;
+	permanent	= 1;
+	description = DIALOG_ENDE;
+};                       
+
+FUNC INT DIA_GRD_211_Skip_Exit_Condition()
+{
+	return 1;
+};
+
+FUNC VOID DIA_GRD_211_Skip_Exit_Info()
+{
+	Skip_TradeInvGiven=FALSE;
+	var c_npc container; container = HLP_GetNpc(Skip_Container);
+	B_ClearTraderInv(self,container);
+	B_StopProcessInfos	(self);
+};
+
+//-----------------------------------------------------------------
+// Skip TRADE
+//-----------------------------------------------------------------
+instance Info_GRD_Skip_TRADE(C_INFO)
+{
+	npc				= GRD_211_Skip;
+	condition		= Info_GRD_Skip_TRADE_Condition;
+	information		= Info_GRD_Skip_TRADE_Info;
+	//important		= 1;
+	permanent		= 1;
+	trade 			= 1;
+	nr				= 990;
+	description		= "(handel)";
+};
+
+FUNC int  Info_GRD_Skip_TRADE_Condition()
+{
+	if (Npc_KnowsInfo(hero, Info_Bartholo_Hallo))
+	{
+      return 1;
+	};
+};
+func void  Info_GRD_Skip_TRADE_Info()
+{
+	AI_Output (other, self,"DIA_GRD_Skip_TRADE_Info_15_01"); //Przyda³oby mi siê kilka drobiazgów.
+	AI_Output (self, other,"DIA_GRD_Skip_TRADE_Info_07_02"); //Mam co nieco na sprzeda¿, sam zobacz.
+	
+   if(!Skip_TradeInvGiven)
+	{
+      var c_npc container; container = HLP_GetNpc(Skip_Container);
+      B_ClearTraderInv(container,self);		
+	};
+   
+	Skip_TradeInvGiven=TRUE;
+	
+	Trade_EraseValue();	//BUGFIX has to be in every trade dialog
+	Trade_WEAPON_Mul	= mulf(Trade_ALL_Mul,1041865113);//0.15*
 };
