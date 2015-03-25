@@ -3,6 +3,7 @@
 // ************************************************************
 //
 //-Jeff
+//-Bartholo
 //-?
 //
 
@@ -140,4 +141,116 @@ func void  Info_GRD_Jeff_TRADE_Info()
 	
 	Trade_EraseValue();	//BUGFIX has to be in every trade dialog
 	Trade_WEAPON_Mul	= mulf(Trade_ALL_Mul,1041865113);//0.15*
+};
+
+// ************************************************************
+// 			  		BARTHOLO
+// ************************************************************
+// Zio³o, jedzenie
+// ************************************************************
+
+// ************************************************************
+// 			  		 VARIABLE
+// ************************************************************
+var int Bartholo_TradeInvGiven;
+// ************************************************************
+// 			  		CONTAINER
+// ************************************************************
+instance Bartholo_Container(Npc_Default)
+{
+	name	=	"Magazynek Bartholo";
+	//trader start inventory
+	CreateInvItems(self,ItMINugget,700);
+	CreateInvItems(self,ItFo_Fish,12);
+	CreateInvItems(self,ItFo_BeerMug,5);
+	CreateInvItems(self,ItFo_Milk,7);
+
+	CreateInvItems(self,ItFo_wineberrys_01,6);
+	CreateInvItems(self,ItFoLoaf,2);
+	CreateInvItems(self,ItFoMutton,12);
+	CreateInvItems(self,ItFoCheese,5);
+	CreateInvItems(self,ItFoSoup,2);
+	CreateInvItems(self,ItFo_Gin,1);
+	CreateInvItems(self,ItFo_Stew,2);
+	CreateInvItems(self, ItKeLockpick,5);
+	CreateInvItems(self,ItMiJoint_1,10);
+	CreateInvItems(self,ItMiJoint_2,10);
+	CreateInvItems(self,ItMiJoint_2,10);
+
+	CreateInvItems(self, ItFo_Potion_Health_01,1);
+	CreateInvItems(self, ItFo_Potion_Health_02,1);
+	
+	CreateInvItems(self, ItFo_Potion_Dex_2_temp,1);
+	CreateInvItems(self, ItFo_Potion_Str_3_temp,1);
+	CreateInvItems(self, ItFo_Potion_Str_Dex_1_temp,1);	
+	
+	//-------- visuals --------
+	// 						animations
+	Mdl_SetVisual		(self,"HUMANS.MDS");
+	//						Body-Mesh			Body-Tex	Skin-Color	Head-MMS    		Head-Tex	Teeth-Tex 	Armor-Tex
+	Mdl_SetVisualBody (self,"hum_body_Naked0",4,1,"Hum_Head_Pony",9,0,-1);
+};
+//-----------------------------------------------------------------
+// EXIT Jeff
+//-----------------------------------------------------------------
+INSTANCE DIA_EBR_106_Bartholo_Exit (C_INFO)
+{
+	npc			= EBR_106_Bartholo;
+	nr			= 999;
+	condition	= DIA_EBR_106_Bartholo_Exit_Condition;
+	information	= DIA_EBR_106_Bartholo_Exit_Info;
+	permanent	= 1;
+	description = DIALOG_ENDE;
+};                       
+
+FUNC INT DIA_EBR_106_Bartholo_Exit_Condition()
+{
+	return 1;
+};
+
+FUNC VOID DIA_EBR_106_Bartholo_Exit_Info()
+{
+	Bartholo_TradeInvGiven=FALSE;
+	var c_npc container; container = HLP_GetNpc(Bartholo_Container);
+	B_ClearTraderInv(self,container);
+	B_StopProcessInfos	(self);
+};
+
+//-----------------------------------------------------------------
+// Jeff TRADE
+//-----------------------------------------------------------------
+instance Info_EBR_Bartholo_TRADE(C_INFO)
+{
+	npc				= EBR_106_Bartholo;
+	condition		= Info_EBR_Bartholo_TRADE_Condition;
+	information		= Info_EBR_Bartholo_TRADE_Info;
+	//important		= 1;
+	permanent		= 1;
+	trade 			= 1;
+	nr				= 990;
+	description		= "(handel)";
+};
+
+FUNC int  Info_EBR_Bartholo_TRADE_Condition()
+{
+	if (Npc_KnowsInfo(hero, Info_Bartholo_Hallo))
+	{
+      return 1;
+	};
+};
+func void  Info_EBR_Bartholo_TRADE_Info()
+{
+	AI_Output (other, self,"DIA_EBR_Bartholo_TRADE_Info_15_01"); //Chcê dobiæ z tob¹ targu.
+	AI_Output (self, other,"DIA_EBR_Bartholo_TRADE_Info_07_02"); //Mam sporo ciekawych rzeczy - jeœli masz wystarczaj¹co du¿o rudy.
+	
+   if(!Bartholo_TradeInvGiven)
+	{
+      var c_npc container; container = HLP_GetNpc(Bartholo_Container);
+      B_ClearTraderInv(container,self);		
+	};
+   
+	Bartholo_TradeInvGiven=TRUE;
+	
+	Trade_EraseValue();	//BUGFIX has to be in every trade dialog
+	Trade_FOOD_Mul	 	= mulf(Trade_ALL_Mul,1050253722);//0.30
 };
