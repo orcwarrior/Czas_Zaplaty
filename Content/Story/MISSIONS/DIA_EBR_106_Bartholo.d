@@ -24,4 +24,7 @@ FUNC VOID Info_Bartholo_HAllo_Info()
 	AI_Output (self, other,"Info_Bartholo_HAllo_12_02"); //Dostarczam im wszystkiego - od ziela, przez ¿ywnoœæ, a¿ po kobiety.
 	AI_Output (self, other,"Info_Bartholo_HAllo_12_03"); //Oprócz tego pilnujê tych imbecyli z kuchni.
 	AI_Output (self, other,"Info_Bartholo_HAllo_12_04"); //Te b³azny powinny byæ mi wdziêczne. Gomez nie toleruje partactwa, nawet w kuchni. Poprzednimi kucharzami nakarmi³ topielce.
+	
+	Log_CreateTopic(GE_TraderOC, LOG_NOTE);
+	B_LogEntry(GE_TraderOC,	"Bartholo handluje zielem, ¿ywnoœci¹.");
 };
