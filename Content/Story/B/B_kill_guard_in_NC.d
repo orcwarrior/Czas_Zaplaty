@@ -233,4 +233,16 @@ func void B_kill_guard_in_NC()
    {
       B_KillNpc(GRD_20300_Gardist);
    };
+	
+	var C_NPC bern; bern = Hlp_GetNpc(Grd_4089_Bern);
+	if (!Npc_isDead(bern))
+   {
+      B_KillNpc(Grd_4089_Bern);
+   };
+	
+	var C_NPC pluskwa; pluskwa = Hlp_GetNpc(Grd_4086_Pluskwa);
+	if (!Npc_isDead(pluskwa))
+   {
+      B_KillNpc(Grd_4086_Pluskwa);
+   };
 };

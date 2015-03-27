@@ -432,6 +432,8 @@ NC_PATH_PEASANT3
 	Npc_ExchangeRoutine	(n78, "NC1");	
 
 //Stt_335_Santino  
+	var C_NPC santino; santino = Hlp_GetNpc(STT_335_Santino);
+	Npc_ExchangeRoutine(santino, "NC1");	
 //Kocio³ grds:
 //NC_P03_TO_P01_02  Grd_2530_PatrolGRD  nc1 
 
