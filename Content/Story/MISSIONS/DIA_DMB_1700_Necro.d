@@ -271,7 +271,7 @@ FUNC VOID DIA_Necro_ReadyForTest_Info()
 		Niech siê zmienna dick_trial ustawi na TRUE jak mu siê uda bo to bêdzie warunek do kolejnego dialogu
 		***********************/
 	Wld_PlayEffect("spellFX_INCOVATION_RED", self, self, 1, 0, DAM_MAGIC, FALSE);
-	Wld_InsertNpc (PC_Hero_AlterEgo, "ESCAPE_MIDDLE2");
+	Wld_InsertNpc (PC_Hero_AlterEgo, "NECRO_CENTER");
 };
 
 /*********************
@@ -291,7 +291,7 @@ INSTANCE DIA_Necro_Trial(C_INFO)
 
 FUNC INT DIA_Necro_Trial_Condition()
 {
-	if (Npc_GetDistToNpc(self,hero) < 1000)&&(Npc_KnowsInfo (hero, DIA_Necro_Second)) && (Npc_IsDead(PC_Hero_AlterEgo))
+	if (Npc_GetDistToNpc(self,hero) < 1000)&&(Npc_KnowsInfo (hero, DIA_Necro_ReadyForTest)) && (Npc_IsDead(PC_Hero_AlterEgo))
 	{
 		return 1;
 	};

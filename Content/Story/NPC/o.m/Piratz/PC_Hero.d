@@ -1012,6 +1012,6 @@ INSTANCE PC_Hero_AlterEgo(NPC_DEFAULT)
 
 FUNC VOID Rtn_start_1702 ()
 {
-	TA_Stand(06,00,08,00,"ESCAPE_MIDDLE2");	
-	TA_Stand(08,00,06,00,"ESCAPE_MIDDLE2");	
+	Ta_FollowPC (0,00,12,00,hero.wp); 
+   Ta_FollowPC (12,00,0,00,hero.wp); 
 };
