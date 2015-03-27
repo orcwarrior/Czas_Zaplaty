@@ -639,8 +639,6 @@ func void B_SpecialDmg_RuneSword(var C_Npc slf,var C_Npc attacker)
 				Critical_LastHitID=HeroDamage_DamageID;
 				RuneSwd_User = Hlp_GetInstanceID(attacker);
 				
-				print("Critical!");
-				
 				/*AoE*/						if (RuneSWD_exp==RuneID_Firestorm)	{RuneSwdSendAssesMagic=FALSE; 	attacker.flags			= Npc_FLAG_IMMORTAL; Wld_PlayEffect(RuneSWD_slot, attacker, slf, 1, RuneSWD_voice, RuneSWD_Npctype, 0);	attacker.flags			= 0;} 
 				
 				/*ZSDmgOnAssesMagic*/		else if (RuneSWD_exp==RuneID_Thunderball)	{B_SpellHurtNpc (slf,attacker,RuneSWD_voice,RuneSWD_Npctype); Wld_PlayEffect(RuneSWD_slot, attacker, slf, 0, 1, RuneSWD_Npctype, 1);} 

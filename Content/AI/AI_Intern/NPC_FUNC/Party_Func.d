@@ -118,7 +118,7 @@ func void party_check_rec(var int i)
 		if(Npc_GetAivar(v,AIV_PARTYMEMBER))
 		{
 			//umm, sth like "Last_HeroComand" etc.
-			PrintScreen (concatstrings(concatstrings(inttostring(i), ". "),v.name), 23, 10+(i*3), _STR_FONT_ONSCREEN,1);	
+			//PrintScreen (concatstrings(concatstrings(inttostring(i), ". "),v.name), 23, 10+(i*3), _STR_FONT_ONSCREEN,1);	
 			
 			if(PARTY_COMMAND)
 			{
