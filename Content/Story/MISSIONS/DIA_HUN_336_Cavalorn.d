@@ -1632,7 +1632,7 @@ FUNC VOID DIA_Cavalorn_MineEnd_Info()
       AI_Output (self, other,"DIA_Cavalorn_MineEnd_12_03"); //Racja. Dowiod³eœ, ¿eœ wart by staæ siê magiem.
       
       AI_Output (self, other, "DIA_Cavalorn_MineEnd_12_04"); //Porozmawiaj z Miltenem on da Ci runê i kostur. Od Lerena otrzymasz szatê maga.
-      AI_Output (self, other, "DIA_Cavalorn_MineEnd_12_05"); //Jak ju¿ bêdziesz gotów, to pogadaj z Ratfordem.   
+      //AI_Output (self, other, "DIA_Cavalorn_MineEnd_12_05"); //Jak ju¿ bêdziesz gotów, to pogadaj z Ratfordem.   
       B_LogEntry(CH3_RBL_Choose, "Bêdê pod¹¿a³ œcie¿k¹ magii. Muszê porozmawiaæ z Miltenem i Lerenem w sprawie lepszego wyposa¿enia i nauki. Jak ju¿ bêdê gotowy, to mam siê zg³osiæ do Ratforda po nowe zadanie.");   
    }
    else
@@ -1648,6 +1648,12 @@ FUNC VOID DIA_Cavalorn_MineEnd_Info()
    AI_Output (self, other, "DIA_Cavalorn_MineEnd_12_08"); //Jak ju¿ bêdziesz gotów, to pogadaj z Ratfordem.
    AI_Output (self, other, "DIA_Cavalorn_MineEnd_12_09"); //Do zobaczenia w obozie.
    B_StopProcessInfos(self);   
+		
+	Wld_InsertNpc(HUN_4001_Rebel, "OMC_ENT");	
+	Wld_InsertNpc(HUN_4002_Rebel, "OMC_ENT");	
+	Wld_InsertNpc(HUN_4003_Rebel, "OMC_FIRE2");	
+	Wld_InsertNpc(HUN_4004_Rebel, "OMC_FIRE1");	
+	Wld_InsertNpc(HUN_4005_Rebel, "OW_OM_ENTRANCE02");
 };
 
 INSTANCE DIA_Cavalorn_Meeting (C_INFO)

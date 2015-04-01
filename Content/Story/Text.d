@@ -333,6 +333,7 @@ CONST STRING NAME_Raeuber		= "Bandzior";
 CONST STRING NAME_Tuersteher	= "Wykidaj³o";
 
 CONST STRING NAME_Slave			= "Niewolnik";
+CONST STRING NAME_Rebel			= "Rebeliant";
 
 const string NAME_MadNovice		=	"Opêtany nowicjusz";
 const string NAME_MadTemplar	=	"Fanatyczny stra¿nik";
