@@ -166,10 +166,11 @@ FUNC VOID DIA_Orkan_EscortGo_Info()
 	AI_Output (self, other, "DIA_Orkan_EscortGo_11_01"); //To na co czekamy? 
 	AI_Output (other, self, "DIA_Orkan_EscortGo_15_02"); //Na to a¿ wytrzeŸwiejesz.
 	AI_Output (self, other, "DIA_Orkan_EscortGo_11_03"); //Nie b¹dŸ œmieszny, po pijaku przynajmniej trzeŸwo myœlê.
-	AI_Output (self, other, "DIA_Orkan_EscortGo_11_04"); //Idziemy po resztê zbieraniny.
+	AI_Output (self, other, "DIA_Orkan_EscortGo_11_04"); //Spotkamy siê za po³udniow¹ bram¹.
 	B_StopProcessInfos(self);
    
    Npc_ExchangeRoutine(self, "Wait");
+	B_LogEntry(CH5_NC_Convoys, "Spotkam siê z Orkanem i reszt¹ za po³udniow¹ bram¹.");
 };
 
 // **************************************************
@@ -256,8 +257,8 @@ FUNC VOID DIA_Orkan_EscortTrap_Info()
 
 	AI_DrawWeapon (kirgo);
 	AI_DrawWeapon (asghan);
-	AI_GotoNpc(cord, self);
 	Npc_ExchangeRoutine(cord, "TRAPTALK");
+	AI_GotoNpc(cord, hero);
 	Npc_ExchangeRoutine(kirgo, "WaitInTrap");
 	Npc_ExchangeRoutine(asghan, "WaitInTrap");
 	AI_TurnToNpc(cord, hero);
