@@ -569,7 +569,7 @@ INSTANCE DIA_Aligator_GoOut (C_INFO)
 
 FUNC INT DIA_Aligator_GoOut_Condition()
 {
-	if (Npc_KnowsInfo (hero, DIA_Aligator_Go))&&((Npc_GetDistToWP (self,"MOVEMENT_TALL_PATH_BANDITOS2") < 550 )||(Npc_GetDistToWP (self,"PATH_OC_NC_11") < 550 )||(Npc_GetDistToWP (self,"HC_WARRIOR16") < 550 ))
+	if (Npc_KnowsInfo (hero, DIA_Aligator_Go))&&((Npc_GetDistToWP (self,"SPAWN_TALL_PATH_BANDITOS2") < 550 )|| (Npc_GetDistToWP (self,"MOVEMENT_TALL_PATH_BANDITOS2") < 550 )||(Npc_GetDistToWP (self,"PATH_OC_NC_11") < 550 )||(Npc_GetDistToWP (self,"HC_WARRIOR16") < 550 ))
 	{
 		return 1;
 	};
