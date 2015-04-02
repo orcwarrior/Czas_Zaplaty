@@ -566,9 +566,9 @@ FUNC VOID DIA_AIDAN_SteelOk_Info()
 	{
 		DIA_AIDAN_SteelOk1_Info();//OnlySteel		
 	}
-	else if(steel_be4==steel_count)&&(aid_hammer==FALSE)//orc: added
+	else if(steel_be4==steel_count)&&(aid_hammer==FALSE)&&(!aid_steel)//orc: added
 	{
-		AI_Output (self, other, "DIA_AIDAN_SteelOk_11_12"); //Nastêpnym razem przynieœ chocia¿ jeden prêt.
+		AI_Output (self, other, "DIA_AIDAN_SteelOk_11_12_2"); //Nastêpnym razem przynieœ chocia¿ jeden prêt.
 	};
 };
 
