@@ -198,6 +198,7 @@ FUNC VOID DIA_Nikolas_DebtFinish_Info()
 	
    Log_SetTopicStatus	(CH2_TRL_Debt, LOG_SUCCESS);
 	B_LogEntry		(CH2_TRL_Debt, "Nikolas odzyska³ rudê, a ja zdoby³em jego poparcie.");
+	B_LogEntry(CH2_TRL_Quest, "Zdoby³em poparcie Nikolasa.");
 };
 
 

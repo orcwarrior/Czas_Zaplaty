@@ -261,6 +261,7 @@ FUNC VOID DIA_Bukhart_Trol2_Info()
 		
       Log_SetTopicStatus	(CH2_TRL_TrolFure, LOG_SUCCESS);
 		B_LogEntry		(CH2_TRL_TrolFure, "Za poparcie Bukharta musia³em s³ono zap³aciæ, bo a¿ 2000 bry³ek - mog³em jednak trzymaæ jêzyk za zêbami, kiedy rozmawia³em ze Snowem.");
+		B_LogEntry(CH2_TRL_Quest, "Zdoby³em popracie Bukharta za 2000 bry³ek...");
 	}
 	else if (bukhart_price == 2)&&(NPC_HasItems(other,ItMiNugget)>=1000)
 	{
@@ -277,6 +278,7 @@ FUNC VOID DIA_Bukhart_Trol2_Info()
 		AI_Output (self, other, "DIA_Bukhart_Trol2_11_07"); //Bez obaw, dodam kilka pikantnych szczegó³ów - nie zdziw siê, jak Kira od razu siê na Ciebie rzuci, he, he.
 		Log_SetTopicStatus	(CH2_TRL_TrolFure, LOG_SUCCESS);
 		B_LogEntry		(CH2_TRL_TrolFure, "Poparcie Bukharta kosztowa³o mnie 1000 bry³ek i to tylko dziêki temu, ¿e nie zdradzi³em Snowowi jego sekretu.");
+		B_LogEntry(CH2_TRL_Quest, "Bukhart szepnie Kirze o mnie kilka s³ów poparcia.");
 	}
 	else if (bukhart_price == 3)&&(NPC_HasItems(other,ItMiNugget)>=1500)
 	{
@@ -295,6 +297,7 @@ FUNC VOID DIA_Bukhart_Trol2_Info()
 		
       Log_SetTopicStatus	(CH2_TRL_TrolFure, LOG_SUCCESS);
 		B_LogEntry		(CH2_TRL_TrolFure,"No có¿ 1500 bry³ek za wylinia³¹ skórê i poparcie u Kiry - Bukhart nieŸle siê ceni.");
+		B_LogEntry(CH2_TRL_Quest, "Bukhart szepnie Kirze o mnie kilka s³ów poparcia.");
 	}
 	else
 	{

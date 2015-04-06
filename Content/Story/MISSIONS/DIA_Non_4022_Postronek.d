@@ -221,6 +221,7 @@ func void DIA_Post_Wette_Yes()
 		Post_WetteGewonnen = TRUE;
 		Log_SetTopicStatus	(CH2_TRL_Mary, LOG_SUCCESS);
 		B_LogEntry		(CH2_TRL_Mary, "Sprosta³em Mary, Postronek chc¹c nie chc¹c, musi mnie poprzeæ. Dodatkowo wygra³em 200 bry³ek.");
+		B_LogEntry(CH2_TRL_Quest, "Postronek mnie poprze.");
 	}
 	else
 	{
