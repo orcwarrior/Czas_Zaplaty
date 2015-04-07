@@ -23,6 +23,30 @@ FUNC VOID  Org_2500_Kasztan_Exit_Info()
 	B_StopProcessInfos(self);
 };
 
+instance Org_2500_Kasztan_Hello (C_INFO)
+{
+	npc			= Org_2500_Kasztan;
+	nr			= 1;
+	condition	= Org_2500_Kasztan_Hello_Condition;
+	information	= Org_2500_Kasztan_Hello_Info;
+	permanent	= 0;
+	important 	= 1;
+};
+
+FUNC int Org_2500_Kasztan_Hello_Condition()
+{  
+   return 1;
+};
+
+FUNC VOID Org_2500_Kasztan_Hello_Info()
+{
+	AI_SetWalkmode	(other, NPC_WALK);
+	AI_GotoNpc		(other, self);
+
+	AI_Output (self, other,"Org_2500_Kasztan_Hello_11_00"); //Hej, ty! Mo¿e chcia³byœ zmieniæ swój wygl¹d? Jestem stylist¹ i za niewielk¹ op³at¹ móg³bym zmieniæ twój wygl¹d.
+	AI_Output (other, self,"Org_2500_Kasztan_Hello_11_01"); //Tak? Sam nie wiem...
+};
+
 instance  Org_2500_Kasztan_Stylize (C_INFO)
 {
 	npc			=  Org_2500_Kasztan;
@@ -36,7 +60,10 @@ instance  Org_2500_Kasztan_Stylize (C_INFO)
 
 FUNC int  Org_2500_Kasztan_Stylize_Condition()
 {
-	return 1;
+	if (Npc_KnowsInfo(hero,Org_2500_Kasztan_Hello))
+	{
+		return 1;
+	};
 };
 
 FUNC VOID  Org_2500_Kasztan_Stylize_Info()

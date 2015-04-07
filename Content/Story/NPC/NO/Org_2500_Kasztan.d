@@ -4,7 +4,7 @@ instance ORG_2500_Kasztan (Npc_Default)
 	
 	name =					"Kasztan";
 	Npctype =				Npctype_Main;
-	guild =					GIL_GRD;      
+	guild =					GIL_NONE;      
 	level =					15;
 	id =					2500;
    flags = NPC_FLAG_IMMORTAL;

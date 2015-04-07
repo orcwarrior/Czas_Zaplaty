@@ -98,7 +98,7 @@ FUNC VOID DIA_HUN_336_CAVALORN_Hello_Info()
    rebel_camp_trust = 0;
    //    
    Npc_ExchangeRoutine   (self,"start");
-   //Wld_InsertNpc(Org_2500_Kasztan, "OC1");
+   Wld_InsertNpc(Org_2500_Kasztan, "OC1");
 };
 
 var int q_n;

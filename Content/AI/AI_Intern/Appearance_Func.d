@@ -176,7 +176,7 @@ func VOID PC_Stylist_End_Info()
 	var int id; id=hlp_getinstanceid(Appr_preStylizationArmor);
 	AI_EquipArmor				(hero,id);		
 	Appr_RecoverHeroAppearance();	
-	AI_StopProcessInfos (self);
+	B_StopProcessInfos (self);
 	Npc_SetAivar(self,AIV_INVINCIBLE,FALSE);
 	MOBSIDIALOG = NONE;	
 	Appr_changesPriceAll=0;
