@@ -160,6 +160,8 @@ FUNC VOID Sprint_Update()
 		{ 
 			printdebug("Sprint: Disabled");
 			Sprint__TurnOff(swimbar);
+			Stamina_BarVisible=0; 		
+			oCStatusBar_SetAlpha(swimbar,0);
 		}
 		else if(!Ani_BodyStateContains(hero,BS_FALL)) // poprawka Splash
 		{ 	// Enable Sprint:
