@@ -99,11 +99,11 @@ FUNC VOID  Info_Nefarius_OrnamentMap_Info()
 	var C_NPC grd5; grd5 = Hlp_GetNpc(GRD_2518_Guard);
 	
 	Npc_ExchangeRoutine(weg,"START"); //PATH_CASTLE_TO_WATERFALL
-	Npc_ExchangeRoutine(grd1,"OR3"); //PATH_CASTLE_TO_WATERFALL
-	Npc_ExchangeRoutine(grd2,"OR3"); //OW_PATH_108
-	Npc_ExchangeRoutine(grd3,"OR3"); //CASTLE_7
-	Npc_ExchangeRoutine(grd4,"OR3"); //CASTLE_8
-	Npc_ExchangeRoutine(grd5,"OR3"); //CASTLE_9
+	B_ExchangeRoutine(grd1,"OR3"); //PATH_CASTLE_TO_WATERFALL
+	B_ExchangeRoutine(grd2,"OR3"); //OW_PATH_108
+	B_ExchangeRoutine(grd3,"OR3"); //CASTLE_7
+	B_ExchangeRoutine(grd4,"OR3"); //CASTLE_8
+	B_ExchangeRoutine(grd5,"OR3"); //CASTLE_9
 	
 	//NEWPATH_4 - PRZED JASKINI¥
 	//NEWPATH_6 - WP DLA ORNAMENTU

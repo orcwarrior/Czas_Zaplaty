@@ -195,8 +195,8 @@ FUNC VOID DIA_Carlson_Go_Info()
 	B_StopProcessInfos	(self);
 	//*****
 	Wld_InsertNpc		(MIS_CarlsonOrcElite, "OW_PATH_012");
-	Wld_InsertNpc		(OrcScoutGYD, "OW_PATH_012");
-	Wld_InsertNpc		(OrcScoutGYD, "OW_PATH_012");
+	Wld_InsertNpc		(Orc2, "OW_PATH_012");
+	Wld_InsertNpc		(Orc3, "OW_PATH_012");
 	orc_appear=true;
 	B_ExchangeRoutine	(PIR_2600_Angus,"RICKHELP");		
 	B_ExchangeRoutine	(PIR_2601_Hank,"RICKHELP");	
