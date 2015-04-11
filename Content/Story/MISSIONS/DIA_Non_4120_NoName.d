@@ -206,7 +206,8 @@ FUNC void  DIA_NoName_RBL2_Info()
 	AI_Output (other, self,"DIA_NoName_RBL2_Info_15_06"); //Zap³acê Ci... 200 bry³ek. Wiêc jak bêdzie?
 	AI_Output (self, other,"DIA_NoName_RBL2_Info_15_07"); //Daj mi chwilê na zastanowienie.
 	
-   B_LogEntry		(CH1_Rbl_NoName, "Zapyta³em Bezimiennego, czy nie chcia³by przejœæ siê ze mn¹ na cmentarzysko orków. Powiedzia³, ¿e musi siê chwilê zastanowiæ.");
+   B_LogEntry(CH1_Rbl_NoName, "Zapyta³em Bezimiennego, czy nie chcia³by przejœæ siê ze mn¹ na cmentarzysko orków. Powiedzia³, ¿e musi siê chwilê zastanowiæ.");
+	B_LogEntry(CH3_RBL_RodneyHelp, "Bezimienny powiedzia³, ¿e nie mam czego szukaæ na cmentarzysku orków. Doda³ tak¿e, ¿e zastanowi siê nad moj¹ ofert¹. Oby tylko siê zgodzi³, bo nie chce mi siê tam iœæ samemu.");
 	B_StopProcessInfos	(self);
 };
 

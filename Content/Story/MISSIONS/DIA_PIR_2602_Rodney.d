@@ -630,7 +630,7 @@ FUNC VOID DIA_Rodney_Ghost_Info()
 	AI_Output (self, other,"DIA_Rodney_Ghost_11_07"); //Hmm, zagmatwane to wszystko. To na co czekasz? Szukaj dalej!
 	AI_Output (other, self,"DIA_Rodney_Ghost_15_08"); //Chyba trochê Ciê ponios³o!
 	AI_Output (self, other,"DIA_Rodney_Ghost_11_09"); //Wybacz. Proszê, dowiedz siê czegoœ wiêcej.
-	B_LogEntry		(CH3_RBL_RodneyHelp, "Powiedzia³em o wszystkim Rodneyowi. Teraz muszê czekaæ na to co powiedz¹ magowie. Mam siê spotkaæ z Rodneyem jutro.");
+	B_LogEntry		(CH3_RBL_RodneyHelp, "Powiedzia³em o wszystkim Rodneyowi. Niestety to jeszcze nie koniec i muszê siê dowiedzieæ czegoœ wiêcej.");
 	Hero_GotoGYD = 3;//end of mission
 };
 
