@@ -69,7 +69,7 @@ INSTANCE Shadowbeast	(Mst_Default_Shadowbeast)
 	Set_Shadowbeast_Visuals();
 	Npc_SetToFistMode(self);
 	CreateInvItems (self,ItFoMuttonRaw,4);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  8);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  20);	
 	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  75);
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_SHADOWBEAST);
 	B_SetMonsterLevel();		

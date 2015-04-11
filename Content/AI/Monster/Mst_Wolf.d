@@ -6,7 +6,7 @@ INSTANCE Wolf(Mst_Default_Wolf)
 {
 	Set_Wolf_Visuals();
 	Npc_SetToFistMode(self);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  8);	
 	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  16);
 	B_SetMonsterLevel();	
 	Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);	
@@ -21,7 +21,7 @@ INSTANCE YWolf(Mst_Default_Wolf)
 {
 	Set_Wolf_Visuals();
 	Npc_SetToFistMode(self);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  9);	
 	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  16);
 	B_SetMonsterLevel();	
 	Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);	
@@ -51,7 +51,7 @@ INSTANCE Snf_MolKiller_Wolf	(Mst_Default_Wolf)
 	Npc_SetAivar(self,AIV_MM_REAL_ID,ID_MIS_SNAFWOLF);
 	Set_Wolf_Visuals();
 	Npc_SetToFistMode(self);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);	
 	level=6;
 	attribute	[ATR_STRENGTH]		=	30;
 	attribute	[ATR_DEXTERITY]		=	20;

@@ -73,7 +73,7 @@ INSTANCE GreenGobboClub	(Mst_Default_GreenGobbo)
 
 	CreateInvItems (self, ItAt_GobKosc, 1);
 	B_CreateGobboInv();
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);	
 	B_SetMonsterLevel();	
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_GOBBOCLUB);
 	
@@ -93,7 +93,7 @@ INSTANCE GreenGobboSword (Mst_Default_GreenGobbo)
 	attribute[ATR_STRENGTH] = 40; // da technisch im Faustkampf
 	CreateInvItems (self, ItAt_GobKosc, 1);
 	B_CreateGobboInv();
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  8);	
 	B_SetMonsterLevel();	
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_GOBBOSWORD);
 	

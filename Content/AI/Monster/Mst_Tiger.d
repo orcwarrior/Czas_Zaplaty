@@ -77,7 +77,7 @@ INSTANCE Tiger	(Mst_Default_Tiger)
 	Set_Tiger_Visuals();
 	Npc_SetToFistMode(self);
 	CreateInvItems (self,ItFoMuttonRaw,4);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  15);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  75);
  Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_TIGER);
 	B_SetMonsterLevel();	
@@ -104,7 +104,7 @@ INSTANCE WhiteTiger	(Mst_Default_Tiger)
 	Set_WTiger_Visuals();
 	Npc_SetToFistMode(self);
 	CreateInvItems (self,ItFoMuttonRaw,4);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  20);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  75);
 	B_SetMonsterLevel();	
 	Mdl_SetModelScale(self, 0.8, 0.7, 0.8);	

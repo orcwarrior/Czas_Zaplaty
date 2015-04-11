@@ -71,7 +71,7 @@ INSTANCE OrcBiter (Mst_Default_OrcBiter)
 	Set_OrcBiter_Visuals();
 	Npc_SetToFistMode(self);
 	CreateInvItems (self, ItFoMuttonRaw, 2);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  9);	
 	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  20);
 	B_SetMonsterLevel();	
 	

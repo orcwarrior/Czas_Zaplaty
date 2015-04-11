@@ -153,8 +153,8 @@ INSTANCE OTDemon (Mst_Default_Demon)
 //--------------------------------------------------------
 	Set_Demon_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  7);	
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  100);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  20);	
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  100);
 	B_SetMonsterLevel();	
 };
 

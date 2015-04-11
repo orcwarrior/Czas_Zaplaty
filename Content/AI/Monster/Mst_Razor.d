@@ -75,7 +75,7 @@ INSTANCE Razor (Mst_Default_Razor)
 {
 	Set_Razor_Visuals();
 	Npc_SetToFistMode(self);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  15);	
 	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  45);
 	B_SetMonsterLevel();	
 	Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_RAZOR);
@@ -102,7 +102,7 @@ INSTANCE RazorNK (Mst_Default_Razor)
 	protection	[PROT_FIRE]			=	90;
 	protection	[PROT_FLY]			=	10;
 	protection	[PROT_MAGIC]		=	15;
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  15);	
 	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  40);
 	B_SetMonsterLevel();	
 	Npc_SetAivar(self,AIV_MM_REAL_ID,			 	ID_RAZORNK);

@@ -68,7 +68,7 @@ INSTANCE Bloodhound	(Mst_Default_Bloodhound)
 {
 	Set_Bloodhound_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  16);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  40);
 	B_SetMonsterLevel();	
 };

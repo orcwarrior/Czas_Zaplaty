@@ -80,7 +80,7 @@ INSTANCE Scavenger	(Mst_Default_Scavenger)
 		CreateInvItems (self, ItFoScavengerEgg, 1+Hlp_Random(2));	
 	};
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_SCAVENGER);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  2);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
 	B_SetMonsterLevel();	
 	
 };
@@ -113,7 +113,7 @@ INSTANCE YScavenger	(Mst_Default_Scavenger)
 
 	CreateInvItems (self, ItFoMuttonRaw, 1);
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_SCAVENGER);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);	
 	B_SetMonsterLevel();	
 };
 

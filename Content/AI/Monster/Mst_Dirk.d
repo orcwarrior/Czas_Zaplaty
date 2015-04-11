@@ -68,7 +68,7 @@ INSTANCE Dirk (Mst_Default_Dirk)
 {
 	Set_Dirk_Visuals();
 	Npc_SetToFistMode(self);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  9);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  25);	
 	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  60);
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_DIRK);
 	B_SetMonsterLevel();	

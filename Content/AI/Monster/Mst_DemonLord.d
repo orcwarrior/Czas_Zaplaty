@@ -179,7 +179,7 @@ INSTANCE MonsterOfSwamp (Mst_Default_DemonLord)
    
 	Set_DemonLord_Visuals();
 	Npc_SetToFistMode(self);
-   Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  21);
+   Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
    Npc_SetAivar(self,AIV_MM_MAXLEVEL,  160);
 	B_SetMonsterLevel();	
    CreateInvItem(self, beast_heart);
@@ -197,7 +197,7 @@ INSTANCE RavenDemonLord (Mst_Default_DemonLord)
    
 	Set_DemonLord_Visuals();
 	Npc_SetToFistMode(self);
-   Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  21);
+   Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
    Npc_SetAivar(self,AIV_MM_MAXLEVEL,  160);
 	B_SetMonsterLevel();	
 };
@@ -225,7 +225,7 @@ INSTANCE NecromancerDemon (Mst_Default_DemonLord)
    
 	Set_DemonLord_Visuals();
 	Npc_SetToFistMode(self);
-   Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  21);
+   Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  999);
    Npc_SetAivar(self,AIV_MM_MAXLEVEL,  160);
 	B_SetMonsterLevel();	
 };

@@ -105,7 +105,7 @@ INSTANCE OrcWarrior1	(Mst_Default_OrcWarrior)
 
 	//-------- inventory --------
 	EquipItem (self, ItMw2hOrcaxe01);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  17);	
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCWARRIOR1);
 	B_SetMonsterLevel();	
  Npc_SetAivar(self,AIV_SPECIALCOMBATDAMAGEREACTION,  TRUE);	
@@ -143,7 +143,7 @@ INSTANCE OrcWarrior2	(Mst_Default_OrcWarrior)
 
 	//-------- inventory --------
 	EquipItem (self, ItMw2hOrcaxe02);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  17);	
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCWARRIOR2);
  Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);		
 	
@@ -182,7 +182,7 @@ INSTANCE OrcWarrior3	(Mst_Default_OrcWarrior)
 
 	//-------- inventory --------
 	EquipItem (self, ItMw2hOrcaxe03);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  18);
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCWARRIOR3);	
 	B_SetMonsterLevel();	
 };
@@ -217,7 +217,7 @@ INSTANCE OrcWarrior4	(Mst_Default_OrcWarrior)
 	protection	[PROT_MAGIC]		=	20;
 //----------------------------------------------------------	
 	EquipItem 	(self, ItMw2hOrcaxe04);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  7);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  20);	
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCWARRIOR4);
 	B_SetMonsterLevel();	
 };
@@ -248,7 +248,7 @@ INSTANCE OrcElite1	(Mst_Default_OrcWarrior)
 
 	//-------- inventory --------
 	EquipItem 	(self, ItMw2hOrcSword02);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  8);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  25);	
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCELITE);
 	B_SetMonsterLevel();	
 };
@@ -280,7 +280,7 @@ INSTANCE OrcElite2	(Mst_Default_OrcWarrior)
 
 	//-------- inventory --------
 	EquipItem 	(self, ItMw2hOrcAxe03_2);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  13);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  30);	
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCGENERAL);
 	B_SetMonsterLevel();	
 };

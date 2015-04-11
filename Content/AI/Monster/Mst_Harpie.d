@@ -68,7 +68,7 @@ INSTANCE Harpie	(Mst_Default_Harpie)
 	Set_Harpie_Visuals();
 	Npc_SetToFistMode(self);
 	B_SetMonsterLevel();	
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  9);		
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  12);		
 };
 /*************************************************************************
 **	Mis    														**

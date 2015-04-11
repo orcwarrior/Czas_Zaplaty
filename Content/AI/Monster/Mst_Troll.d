@@ -69,7 +69,7 @@ INSTANCE Troll	(Mst_Default_Troll)
 	Set_Troll_Visuals();
 	Npc_SetToFistMode(self);
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_TROLL);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  9);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  100);	
 	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  350);
 	B_SetMonsterLevel();	
 };
@@ -131,7 +131,7 @@ INSTANCE YoungTroll	(Mst_Default_Troll)
 	start_aistate				= ZS_MM_AllScheduler;
 
  Npc_SetAivar(self,AIV_MM_RestStart, 	 OnlyRoutine);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  7);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  50);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  180);
 	B_SetMonsterLevel();	
 };

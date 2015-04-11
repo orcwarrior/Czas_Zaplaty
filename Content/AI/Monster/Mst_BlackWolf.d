@@ -28,7 +28,7 @@ instance BlackWolf (Mst_Default_Wolf)
 	Mdl_SetModelScale(self, 1.1, 1.1, 1.1);
 	Npc_SetToFistMode(self);
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_BLACKWOLF);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  10);	
 	CreateInvItems (self, ItFoMuttonRaw, 4);
 };
 

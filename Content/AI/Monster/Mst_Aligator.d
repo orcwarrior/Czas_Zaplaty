@@ -70,7 +70,7 @@ INSTANCE Aligator	(Mst_Default_Aligator)
 {
 	Set_Alligator_Visuals();
 	Npc_SetToFistMode(self);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);		
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  12);		
 	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  25);
 	B_SetMonsterLevel();
 
@@ -97,7 +97,7 @@ INSTANCE Young_Aligator	(Mst_Default_Aligator)
 	Set_Alligator_Visuals();
 	Npc_SetToFistMode(self);
 	Mdl_SetModelScale(self, 0.6, 0.7, 0.6);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  2);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  20);
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_YOUNGALIGATOR);
 	B_SetMonsterLevel();

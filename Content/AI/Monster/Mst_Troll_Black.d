@@ -52,7 +52,7 @@ instance Black_Troll(Mst_Default_Troll_Black)
 	B_SetVisuals_Troll_Black ();
 	Npc_SetToFistMode (self);
  Npc_SetAivar(self,AIV_MM_RestStart, 	 OnlyRoutine);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  12);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  150);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  600);
  Npc_SetAivar(self,AIV_MM_REAL_ID,  ID_BLACKTROLL);
 
@@ -79,7 +79,7 @@ instance King_Troll(Mst_Default_Troll_Black)
 	protection	[PROT_MAGIC]		=	9999;
 	B_SetVisuals_King_Troll ();
 	Npc_SetToFistMode (self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  16);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  250);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  750);
 	B_SetMonsterLevel();		
 };

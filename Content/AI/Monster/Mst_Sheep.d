@@ -90,7 +90,7 @@ INSTANCE Sheep	(Mst_Default_Sheep)
 	Npc_SetToFistMode(self);
 	start_aistate				= ZS_MM_AllScheduler;
 	Npc_SetAivar(self,AIV_MM_RoamStart,		 OnlyRoutine);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
 	CreateInvItems (self, ItFoMuttonRaw, 1);	
 };
 

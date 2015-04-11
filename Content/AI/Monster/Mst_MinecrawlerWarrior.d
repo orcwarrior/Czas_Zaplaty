@@ -69,7 +69,7 @@ INSTANCE MinecrawlerWarrior	(Mst_Default_MinecrawlerWarrior)
 {
 	Set_MinecrawlerWarrior_Visuals();
 	Npc_SetToFistMode(self);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  11);	
 	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  40);
 	B_SetMonsterLevel();	
 };

@@ -527,8 +527,7 @@ INSTANCE ArtifactGuardian (Mst_Default_SkeletonWarrior)
 	start_aistate	=	ZS_MM_GotoHeroAndTalk;
 	Npc_SetAivar(self, AIV_MM_TALKEDAFTERATTACK, 0);
 	Npc_SetAivar(self, AIV_MM_DAYTORESPAWN, 999);
-	CreateInvItems (self, ItAt_Kosc, 1);		
-	Npc_SetAivar(self, AIV_MM_DAYTORESPAWN, 999);	
+	CreateInvItems (self, ItAt_Kosc, 1);	
 	B_SetMonsterLevel();
 };
 

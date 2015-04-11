@@ -72,7 +72,7 @@ INSTANCE Molerat	(Mst_Default_Molerat)
 	
 	CreateInvItems (self, ItFoMuttonRaw, 2);
 	B_SetMonsterLevel();	
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  2);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);
 };
 
 
@@ -113,7 +113,7 @@ INSTANCE YMolerat	(Mst_Default_Molerat)
 
 	CreateInvItems (self, ItFoMuttonRaw, 1);
 	B_SetMonsterLevel();	
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4); // It will respawn as molerat
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6); // It will respawn as molerat
 };
 
 

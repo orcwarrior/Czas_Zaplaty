@@ -71,7 +71,7 @@ INSTANCE FireWaran	(Mst_Default_FireWaran)
 {
 	Set_FireWaran_Visuals();
 	Npc_SetToFistMode(self);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  8);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  13);
 	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  85);
 	B_SetMonsterLevel();
 };

@@ -74,7 +74,7 @@ INSTANCE OrcShaman (Mst_Default_OrcShaman)
 	CreateInvItem			(self,	ItArRuneThunderBall);
 	EquipItem				(self,	ItRwOrcstaff);		// für Magiemodus
 	CreateInvItems 				(self, ItAt_OrcSha_Plume, 2);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  9);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  16);	
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_ORCSHAMAN);
 	B_SetMonsterLevel();
 };

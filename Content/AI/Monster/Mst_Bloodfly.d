@@ -70,7 +70,7 @@ INSTANCE Bloodfly	(Mst_Default_Bloodfly)
 	Set_Bloodfly_Visuals();
 	Npc_SetToFistMode(self);
 	
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  2);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);	
 	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  12);
 	B_SetMonsterLevel();
 };
@@ -88,7 +88,7 @@ INSTANCE HelpBrothers_Bloodfly (Mst_Default_Bloodfly)
 	CreateInvItems (self, ItAt_Bloodfly_01, 2);	// 2 Flügel
 		
 	name							=	"Agresywny krwiopijca";
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  2);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  12);
 	B_SetMonsterLevel();
 };

@@ -69,7 +69,7 @@ INSTANCE Lurker	(Mst_Default_Lurker)
 {
 	Set_Lurker_Visuals();
 	Npc_SetToFistMode(self);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  9);
 	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  28);
 	B_SetMonsterLevel();	
 };

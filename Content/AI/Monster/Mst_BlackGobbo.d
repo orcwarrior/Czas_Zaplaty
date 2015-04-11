@@ -71,7 +71,7 @@ INSTANCE BlackGobboMace	(Mst_Default_BlackGobbo)
 	CreateInvItems (self, ItAt_GobKosc, 1);
 	B_CreateGobboInv();
 	B_SetMonsterLevel();	
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  7);	
 };
 /*************************************************************************
 **	Black Gobbo Warrior   														**
@@ -98,6 +98,6 @@ INSTANCE BlackGobboWarrior	(Mst_Default_BlackGobbo)
 	CreateInvItems (self, ItAt_GobKosc, 1);	
 	B_CreateGobboInv();
 	B_SetMonsterLevel();	
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  11);	
 	
 };

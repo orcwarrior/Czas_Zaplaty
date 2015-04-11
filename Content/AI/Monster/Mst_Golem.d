@@ -270,8 +270,8 @@ INSTANCE IceGolem	(Mst_Default_Golem)
 
 	//-------- ai --------
 	fight_tactic					=	FAI_HUMAN_MAGE;		// damit der Golem eine "Icecube"-Attack einsetzen kann
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  6);
- Npc_SetAivar(self,AIV_MM_MAXLEVEL,  165);
+
+	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  165);
 	//B_SetMonsterLevel();	
 };
 
@@ -446,7 +446,7 @@ INSTANCE SwampGolem	(Mst_Default_Golem)
 	attribute	[ATR_HITPOINTS]		=	350;
 
 	protection	[PROT_EDGE]		=	100;
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  10);
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN, 999);
 	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  85);
 	Npc_SetAivar(self,AIV_MM_REAL_ID,  999);
 	//B_SetMonsterLevel();	

@@ -68,7 +68,7 @@ INSTANCE Snapper	(Mst_Default_Snapper)
 {
 	Set_Snapper_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  4);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  12);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  40);
 	Npc_SetAivar(self,AIV_MM_REAL_ID, 	ID_SNAPPER);
 	B_SetMonsterLevel();

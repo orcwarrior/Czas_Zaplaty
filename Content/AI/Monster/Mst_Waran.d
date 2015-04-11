@@ -70,7 +70,7 @@ INSTANCE Waran	(Mst_Default_Waran)
 {
 	Set_Waran_Visuals();
 	Npc_SetToFistMode(self);
- Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  3);	
+ Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  7);	
  Npc_SetAivar(self,AIV_MM_MAXLEVEL,  15);
 	B_SetMonsterLevel();	
 	Npc_SetAivar(self,AIV_MM_REAL_ID,	ID_WARAN);	

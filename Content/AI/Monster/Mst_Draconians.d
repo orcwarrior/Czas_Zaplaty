@@ -84,7 +84,7 @@ INSTANCE DraconianScout	(Mst_Default_Draconian)
 	Set_Draconian1_Visuals();
 
    Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIANSCOUT);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  8);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  25);	
 	B_SetMonsterLevel();	
 	EquipItem (self, ItMw_Draco_01);
 };
@@ -134,7 +134,7 @@ INSTANCE DraconianSoldier	(Mst_Default_Draconian)
 
 	//-------- inventory --------
 	EquipItem (self, ItMw_Draco_02);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  10);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  30);	
 	Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);
     Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIANSOLDIER);		
 	
@@ -211,9 +211,9 @@ INSTANCE DraconianOfficer	(Mst_Default_Draconian)
 
 	//-------- inventory --------
 	EquipItem (self, ItMw_Draco_03);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  13);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  30);	
 	Npc_SetAivar(self,AIV_MM_SPECREACTTODAMAGE,  TRUE);		
-    Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIANOFFICER);
+   Npc_SetAivar(self, AIV_MM_REAL_ID, ID_DRACONIANOFFICER);
 	
 	B_SetMonsterLevel();	
 };

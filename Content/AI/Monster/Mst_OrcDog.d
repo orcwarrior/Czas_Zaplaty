@@ -69,7 +69,7 @@ INSTANCE OrcDog	(Mst_Default_OrcDog)
 {
 	Set_OrcDog_Visuals();
 	Npc_SetToFistMode(self);
-	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  5);	
+	Npc_SetAivar(self,AIV_MM_DAYTORESPAWN,  14);	
 	Npc_SetAivar(self,AIV_MM_MAXLEVEL,  20);
 	B_SetMonsterLevel();	
 
