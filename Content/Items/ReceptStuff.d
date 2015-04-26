@@ -1398,7 +1398,7 @@ FUNC VOID EVT_RECIPEREAD ()
 					Doc_SetMargins	( nDocID, 0, 21, 314, 10, 20, 1   	); 		
 				if(L14_Red) 		{ Doc_SetFont 	( nDocID, -1, "FONT_10_BOOK_RED.tga"); } else { Doc_SetFont 	( nDocID, -1, "FONT_10_BOOK.tga"); };													
 					Doc_PrintLines	( nDocID,  0, L14		);
-					Doc_SetMargins	( nDocID, -1, 205, 458, 10, 20, 1   	); 			
+					Doc_SetMargins	( nDocID, -1, 175, 458, 10, 20, 1   	); 			
 					Doc_SetFont 	( nDocID, -1, "FONT_10_BOOK.tga"	   			);								
 					Doc_PrintLine	( nDocID,  0, "Przewidywany czas tworzenia to"		);
 					Doc_PrintLine	( nDocID,  0, L15		);
