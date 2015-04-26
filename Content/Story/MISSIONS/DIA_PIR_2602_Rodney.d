@@ -172,6 +172,7 @@ FUNC VOID DIA_PIR_2602_Rodney_What_Info()
 	B_StopProcessInfos	(self);
 };
 
+var int packages_success;
 INSTANCE DIA_PIR_2602_Rodney_Packages(C_INFO)
 {
 	npc				= PIR_2602_Rodney;
@@ -185,7 +186,7 @@ INSTANCE DIA_PIR_2602_Rodney_Packages(C_INFO)
 
 FUNC INT DIA_PIR_2602_Rodney_Packages_Condition()
 {
-	if (Npc_KnowsInfo(hero,DIA_PIR_2602_Rodney_What))&&((NPC_HasItems(other,package1)>0)||(NPC_HasItems(other,package2)>0))
+	if (Npc_KnowsInfo(hero,DIA_PIR_2602_Rodney_What))&&((NPC_HasItems(other,package1)>0)||(NPC_HasItems(other,package2)>0)) && (!packages_success)
 	{
 		return 1;
 	};
@@ -222,6 +223,7 @@ FUNC VOID DIA_PIR_2602_Rodney_Packages_Info()
 	//Merged second dialog:
 	if (weapon_package>=3)
 	{
+		packages_success = true;
 		expsum += 100;
 		AI_Output (self, other,"DIA_PIR_2602_Rodney_Packages_08_03"); //Znalaz³eœ sporo paczek z broni¹, przydadz¹ siê na czarn¹ godzinê.
 		AI_Output (self, other,"DIA_PIR_2602_Rodney_Packages_08_04"); //Jak powiedzia³em, w nagrodê mo¿esz wybraæ receptê na orê¿. Co potrzebujesz?
