@@ -547,42 +547,49 @@ FUNC VOID R_CreateProduct(var C_ITEM recept)
 	var string prodname;
 	prodname = Get_Product_Name();
    
-	if(CreationMethod == R_BS)
-	{//IF BS create only ne product
-		succesed_creations=R_CreatesSucess(recept.product_amount,recept);
-		
-      if(succesed_creations)
-		{
-			msg = ConcatStrings("Uda³o ci siê wytworzyæ ",prodname);		
-			msg = ConcatStrings(msg,".");	
-			PutMsg(msg,"font_default.tga",RGBAToZColor(155,255,155,255),2*8,"");	
-			CreateInvItems(hero,recept.product,1);			
+	if (max_itemamount != 0)
+	{
+		if(CreationMethod == R_BS)
+		{//IF BS create only ne product
+			succesed_creations=R_CreatesSucess(recept.product_amount,recept);
+			
+			if(succesed_creations)
+			{
+				msg = ConcatStrings("Uda³o ci siê wytworzyæ ",prodname);		
+				msg = ConcatStrings(msg,".");	
+				PutMsg(msg,"font_default.tga",RGBAToZColor(155,255,155,255),2*8,"");	
+				CreateInvItems(hero,recept.product,1);			
+			}
+			else
+			{
+				msg = "Nie uda³o ci siê wytworzyæ przedmiotu.";
+				PutMsg(msg,"font_default.tga",RGBAToZColor(255,155,155,255),2*8,"");	
+			};
+			
+			max_itemamount = 0;
 		}
 		else
-		{
-			msg = "Nie uda³o ci siê wytworzyæ przedmiotu.";
-			PutMsg(msg,"font_default.tga",RGBAToZColor(255,155,155,255),2*8,"");	
-		};
-	}
-	else
-	{//ELSE create all at once
-		succesed_creations=R_CreatesSucess(recept.product_amount*itemtocreate,recept);
-      
-		if(succesed_creations)
-		{
-			msg = ConcatStrings("Uda³o ci siê wytworzyæ ",IntToString(succesed_creations));
-			msg = ConcatStrings(msg,"/");		
-			msg = ConcatStrings(msg,IntToString(itemtocreate));		
-			msg = ConcatStrings(msg," ");			
-			msg = ConcatStrings(msg,prodname);		
-			msg = ConcatStrings(msg,".");	
-			PutMsg(msg,"font_default.tga",RGBAToZColor(255,205,155,255),2*8,"");	
-			CreateInvItems(hero,recept.product,succesed_creations);			
-		}
-		else
-		{
-			msg = "Nie uda³o ci siê wytworzyæ ¿adnego przedmiotu.";
-			PutMsg(msg,"font_default.tga",RGBAToZColor(255,155,155,255),2*8,"");	
+		{//ELSE create all at once
+			succesed_creations=R_CreatesSucess(recept.product_amount*itemtocreate,recept);
+			
+			if(succesed_creations)
+			{
+				msg = ConcatStrings("Uda³o ci siê wytworzyæ ",IntToString(succesed_creations));
+				msg = ConcatStrings(msg,"/");		
+				msg = ConcatStrings(msg,IntToString(itemtocreate));		
+				msg = ConcatStrings(msg," ");			
+				msg = ConcatStrings(msg,prodname);		
+				msg = ConcatStrings(msg,".");	
+				PutMsg(msg,"font_default.tga",RGBAToZColor(255,205,155,255),2*8,"");	
+				CreateInvItems(hero,recept.product,succesed_creations);		
+			}
+			else
+			{
+				msg = "Nie uda³o ci siê wytworzyæ ¿adnego przedmiotu.";
+				PutMsg(msg,"font_default.tga",RGBAToZColor(255,155,155,255),2*8,"");	
+			};
+			
+			max_itemamount = 0;
 		};
 	};
 };

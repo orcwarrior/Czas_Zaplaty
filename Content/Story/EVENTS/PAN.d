@@ -11,7 +11,7 @@ func void PAN_S1 ()
 	if ( (Hlp_GetInstanceID(self)==Hlp_GetInstanceID(her))||(Hlp_GetInstanceID(self)==Hlp_GetInstanceID(rock)) ) 
 	{	
 		Npc_SetAivar(self,AIV_INVINCIBLE,TRUE);	
-		if(CreationMethod == R_MOB_PAN)
+		if(CreationMethod == R_MOB_PAN && max_itemamount != 0)
 		{
 			Npc_SetAivar(self,AIV_INVINCIBLE,TRUE);			
 			a	=	IntToFloat(R_CreateColdown*itemtocreate);			

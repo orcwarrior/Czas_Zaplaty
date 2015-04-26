@@ -11,7 +11,7 @@ func void LAB_S1 ()
 	if ( (Hlp_GetInstanceID(self)==Hlp_GetInstanceID(her))||(Hlp_GetInstanceID(self)==Hlp_GetInstanceID(rock)) ) 
 	{	
 		Npc_SetAivar(self,AIV_INVINCIBLE,TRUE);	
-		if(CreationMethod == R_LAB_PSI)
+		if(CreationMethod == R_LAB_PSI && max_itemamount != 0)
 		{
 			TRIG_FIRST_SEND	=	TRUE;
 			Npc_SetAivar(self,AIV_INVINCIBLE,TRUE);			

@@ -2,7 +2,7 @@ func void BS_SHARP_S1 ()
 {
 	if (Npc_IsPlayer(self)) 
 	{	
-		if(CreationMethod == R_BS)
+		if(CreationMethod == R_BS && max_itemamount != 0)
 		{
 			var float a;
 			Npc_SetAivar(self,AIV_INVINCIBLE,TRUE);				
@@ -21,7 +21,7 @@ func void BS_ANVIL_S1 ()
 	if (Npc_IsPlayer(self))
 	{
 	Npc_SetAivar(self,AIV_INVINCIBLE,TRUE);		
-		if(CreationMethod == R_BS_ANVIL)
+		if(CreationMethod == R_BS_ANVIL && max_itemamount != 0)
 		{		
 			TRIG_FIRST_SEND	=	TRUE;				
 			Wld_SendTrigger("TIMETRIGGER4");
@@ -56,7 +56,7 @@ func void BS_FIRE_S1 ()
 	if (Npc_IsPlayer(self)) 
 	{	
 			Npc_SetAivar(self,AIV_INVINCIBLE,TRUE);				
-		if(CreationMethod == R_BS_FIRE)
+		if(CreationMethod == R_BS_FIRE && max_itemamount != 0)
 		{
 			TRIG_FIRST_SEND	=	TRUE;
 			Npc_SetAivar(self,AIV_INVINCIBLE,TRUE);				
