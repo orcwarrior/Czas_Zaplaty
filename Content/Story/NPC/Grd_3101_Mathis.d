@@ -10,7 +10,7 @@ instance Grd_3101_Mathis (Npc_Default)
 	id 			=	3101;
 		
 	//-------- abilities --------
-	attribute[ATR_STRENGTH] 	= 60;
+	attribute[ATR_STRENGTH] 	= 85;
 	attribute[ATR_DEXTERITY] 	= 50;
 	attribute[ATR_MANA_MAX] 	= 0;
 	attribute[ATR_MANA] 		= 0;
