@@ -617,7 +617,16 @@ FUNC void R_IsSmallestAmount(var int amount,var int itm,var int pos) //zmienione
    
 	R_GetItem(recept_inuse);	
    
-	if(pos == 1)
+	if(pos == 0)
+	{
+      if(item.needitm_amount[1])
+      {
+         n_amount = Math_Round(Npc_HasItems(hero,item.needitm[1])/item.needitm_amount[1]);	
+      };
+
+      n_itm = item.needitm[1];						
+	}
+	else if(pos == 1)
 	{
       if(item.needitm_amount[2])
       {
