@@ -121,7 +121,7 @@ FUNC VOID DIA_Ratford_CanYouTeachMe_Info()
    AI_Output (other, self,"Org_819_Drax_HuntHere_15_02"); //Móg³byœ nauczyæ mnie polowaæ?
    AI_Output (self, other,"Org_819_Drax_HuntHere_06_03"); //Parê sztuczek móg³bym ci pokazaæ, ale to bêdzie kosztowaæ.
    AI_Output (self, other,"Org_819_Drax_Creatures_06_02"); //Wprawny ³owca potrafi zdobyæ k³y, pazury i skórê zwierzyny. Nie jest to ³atwe, ale doœæ op³acalne.
-	AI_Output (self, other,"Org_819_Drax_Creatures_06_03"); //W ka¿dym razie ka¿dy kupiec chêtnie odkupi od ciebie trofea.
+	AI_Output (self, other,"Org_819_Drax_Creatures_06_03"); //W ka¿dym razie ka¿dy kupiec chêtnie odkupi od Ciebie trofea.
    
    Log_CreateTopic(GE_TeacherOR, LOG_NOTE);
    B_LogEntry(GE_TeacherOR, "Ratford mo¿e mnie nauczyæ polowaæ: œci¹gania futer, zdobywania k³ów i pazurów.");
@@ -1686,7 +1686,7 @@ FUNC VOID DIA_RATFORD_MEETING1_No()
 	AI_Output (self, other, "DIA_RATFORD_MEETING1_No_07_03"); //Rozumiem. Jakoœ sobie poradzê.
 	AI_Output (self, other, "DIA_RATFORD_MEETING1_No_07_04"); //Mam tylko jedn¹ proœbê...
 	AI_Output (other, self, "DIA_RATFORD_MEETING1_No_15_05"); //No dobra, mów.
-	AI_Output (self, other, "DIA_RATFORD_MEETING1_No_07_06"); //Rodney ma jakiœ problem. Pogadaj z nim, w koñcu to twój kumpel.
+	AI_Output (self, other, "DIA_RATFORD_MEETING1_No_07_06"); //Rodney ma jakiœ problem. Pogadaj z nim, w koñcu to Twój kumpel.
 	AI_Output (other, self, "DIA_RATFORD_MEETING1_No_15_07"); //Zobaczê, co da siê zrobiæ.
 	AI_Output (self, other, "DIA_RATFORD_MEETING1_No_07_08"); //W porz¹dku. Czeka nas pracowity dzionek...
 
@@ -1856,7 +1856,7 @@ FUNC VOID DIA_RATFORD_WhatNext_Info()
 	AI_Output (self, other, "DIA_RATFORD_WhatNext_07_01"); //Posprz¹taliœmy po stra¿nikach. Na razie jakoœ sobie poradzê bez Ciebie. 
 	AI_Output (other, self, "DIA_RATFORD_WhatNext_15_02"); //No proszê, w koñcu dosta³em wolne. Cholera, i co ja teraz zrobiê?
 	AI_Output (self, other, "DIA_RATFORD_WhatNext_07_03"); //Coœ wymyœlisz. Powodzenia na szlaku, Rick.
-   AI_Output (self, other, "DIA_RATFORD_WhatNext_07_04"); //A jak naprawdê ci siê nudzi, to idŸ do Cavalorna. Ma dla ciebie kolejne zadanie.
+   AI_Output (self, other, "DIA_RATFORD_WhatNext_07_04"); //A jak naprawdê ci siê nudzi, to idŸ do Cavalorna. Ma dla Ciebie kolejne zadanie.
 	AI_Output (other, self, "DIA_RATFORD_WhatNext_15_05"); //Czyli jednak nie mam wolnego... Daj wytchn¹æ ch³opakom w obozie, zas³u¿yli na to.
 	AI_Output (self, other, "DIA_RATFORD_WhatNext_07_06"); //Przemyœlê to. Bywaj.
 	B_StopProcessInfos(self);

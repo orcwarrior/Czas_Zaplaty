@@ -251,7 +251,7 @@ FUNC VOID DIA_Duke_Negotaite_Trol_Camper_1()
 
 	AI_Output (other, self, "DIA_Duke_Negotaite_Trol_Camper_1_15_01"); //By³em kurierem magów ognia.
 	AI_Output (self, other, "DIA_Duke_Negotaite_Trol_Camper_1_11_02"); //Rozumiem. Po tym jak Gomez pozby³ siê magów, nie mia³eœ po co wracaæ.
-	AI_Output (self, other, "DIA_Duke_Negotaite_Trol_Camper_1_11_03"); //Bêdê z tob¹ szczery, te¿ nie uwa¿am, ¿eby zabicie magów by³o dobrym rozwi¹zaniem.
+	AI_Output (self, other, "DIA_Duke_Negotaite_Trol_Camper_1_11_03"); //Bêdê z Tob¹ szczery, te¿ nie uwa¿am, ¿eby zabicie magów by³o dobrym rozwi¹zaniem.
 	AI_Output (self, other, "DIA_Duke_Negotaite_Trol_Camper_1_11_04"); //W porz¹dku, przekona³eœ mnie.
    
 	AI_TurnToNpc(self, CH2_Patrol_g2);

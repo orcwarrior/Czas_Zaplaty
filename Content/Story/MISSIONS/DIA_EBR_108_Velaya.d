@@ -89,8 +89,8 @@ FUNC VOID Info_Vela_HelloAgain_Info()
 	AI_Output (self, other,"Info_Vela_HelloAgain_16_10"); //S³odki jesteœ, ale Gomez by mi za to cycki urwa³.
 	AI_Output (other, self,"Info_Vela_HelloAgain_15_11"); //Gomez nie bêdzie ¿y³ wiecznie. Ogieñ, który wznieci³aœ w mym sercu i lêdŸwiach trawi mnie od œrodka!
 	AI_Output (other, self,"Info_Vela_HelloAgain_15_12"); //Daj mi choæ nik³y znak, ¿e czujesz podobnie!
-	AI_Output (self, other,"Info_Vela_HelloAgain_16_13"); //Przecie¿ nie roz³o¿ê dla ciebie nóg w zamku Gomeza!
-	AI_Output (other, self,"Info_Vela_HelloAgain_15_14"); //Mam coœ dla ciebie...
+	AI_Output (self, other,"Info_Vela_HelloAgain_16_13"); //Przecie¿ nie roz³o¿ê dla Ciebie nóg w zamku Gomeza!
+	AI_Output (other, self,"Info_Vela_HelloAgain_15_14"); //Mam coœ dla Ciebie...
 	
    B_GiveInvItems (other, self, akt, 1);
 	B_UseFakeScroll(self);
@@ -98,7 +98,7 @@ FUNC VOID Info_Vela_HelloAgain_Info()
    AI_Output (self, other,"Info_Vela_HelloAgain_16_15"); //Zaskoczy³eœ mnie... Nie wiem, co powiedzieæ...
 	AI_Output (other, self,"Info_Vela_HelloAgain_15_16"); //Tak sobie Ciebie wyobra¿a³em. Oczywiœcie, rzeczywistoœæ przyæmiewa ka¿dy rysunek.
 	AI_Output (self, other,"Info_Vela_HelloAgain_16_17"); //Jesteœ s³odziutki. Muszê Ci to jakoœ wynagrodziæ...
-	AI_Output (other, self,"Info_Vela_HelloAgain_15_18"); //Nie chcê nic w zamian. Wystarczy twój uœmiech, który rozkwita w mym sercu.
+	AI_Output (other, self,"Info_Vela_HelloAgain_15_18"); //Nie chcê nic w zamian. Wystarczy Twój uœmiech, który rozkwita w mym sercu.
 	AI_Output (self, other,"Info_Vela_HelloAgain_16_19"); //Mimo wszystko zas³u¿y³eœ na jakiœ podarunek...
 	AI_Output (other, self,"Info_Vela_HelloAgain_15_20"); //Masz racjê. Mi³o by by³o mieæ przy sobie coœ, co przypomina³oby twe piêkne oczy.
 	AI_Output (self, other,"Info_Vela_HelloAgain_16_21"); //Ale co by Ci tu daæ? Bielizny nie noszê, nie mam ¿adnej bi¿uterii... Zaraz. Przecie¿ ten idiota z ma³¹ kuœk¹ ma jakiœ z³oty sygnet!

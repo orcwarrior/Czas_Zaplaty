@@ -533,7 +533,7 @@ FUNC VOID DIA_Angus_Patrol1_Negotiate()
 	AI_Output (self, other, "DIA_Angus_Patrol1_Negotiate_11_12"); //Chcesz rozmawiaæ z tymi ³achudrami? Nie poznajê Ciê Rick, zmiêk³eœ!
 	AI_Output (other, self, "DIA_Angus_Patrol1_Negotiate_15_13"); //Nie ma sensu niepotrzebnie nara¿aæ nikogo z Was. Mo¿e uda siê to za³atwiæ inaczej.
 	AI_Output (other, self, "DIA_Angus_Patrol1_Negotiate_15_14"); //Zaczekacie w pobliskiej jaskini, gdyby coœ posz³o nie tak, wiesz co robiæ.
-	AI_Output (self, other, "DIA_Angus_Patrol1_Negotiate_11_15"); //Hmm, mo¿e to i nie g³upi pomys³. Dobra, jesteœmy z tob¹.
+	AI_Output (self, other, "DIA_Angus_Patrol1_Negotiate_11_15"); //Hmm, mo¿e to i nie g³upi pomys³. Dobra, jesteœmy z Tob¹.
 	B_LogEntry(CH2_RBL_GuardCamp, "Wybra³em drogê negocjacji - spróbujê jakoœ nak³oniæ stra¿ników do opuszczenia naszego s¹siedztwa. Angus i piraci bêd¹ czekaæ w jaskini gdyby coœ posz³o nie tak jak powinno.");
 
 	B_StopProcessInfos(self); 

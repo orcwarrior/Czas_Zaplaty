@@ -501,7 +501,7 @@ func void UseRavenLetter ()
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Kruk, twój senny koszmar."					);
+					Doc_PrintLine	( nDocID,  0, "Kruk, Twój senny koszmar."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus

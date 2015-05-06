@@ -89,7 +89,7 @@ instance Info_Kharim_WhatGor (C_INFO)
 	information		= Info_Kharim_WhatGor_Info;
 	permanent		= 0;
 	important		= 0;
-	description 	= "Hanis wspomina³, ¿e siê z tob¹ posprzecza³.";
+	description 	= "Hanis wspomina³, ¿e siê z Tob¹ posprzecza³.";
 };                       
 
 FUNC INT Info_Kharim_WhatGor_Condition()
@@ -102,7 +102,7 @@ FUNC INT Info_Kharim_WhatGor_Condition()
 
 func VOID Info_Kharim_WhatGor_Info()
 {
-	AI_Output (other, self,"Info_Kharim_WhatGor_15_00"); //Hanis wspomina³, ¿e siê z tob¹ posprzecza³.
+	AI_Output (other, self,"Info_Kharim_WhatGor_15_00"); //Hanis wspomina³, ¿e siê z Tob¹ posprzecza³.
 	AI_Output (self, other,"Info_Kharim_WhatGor_09_01"); //Ten pó³g³ówek dosta³ to, na co zas³u¿y³! Œmiecie, jak on, musz¹ znaæ swoje miejsce w stadzie.
 	AI_Output (other, self,"Info_Kharim_WhatGor_15_02"); //To ty mu da³eœ przez ³eb?
 	AI_Output (self, other,"Info_Kharim_WhatGor_09_03"); //Pewnie, ¿e ja!
@@ -210,7 +210,7 @@ func VOID Info_Kharim_Hi_Info()
 		AI_Output (self, other,"Info_Kharim_Hi_09_07"); //Cholera jeszcze niedawno obija³em mordy w Starym Obozie, a teraz robiê za pos³añca. Dobra, Cord o wszystkim siê dowie.
 		
 		/*********************
-      Ork zadanie dla ciebie. Zorganizuj zasadzkê. Trasê przemarszu zrób mo¿e tak, ¿eby oni poszli t¹ drog¹ przez orkowe tereny, ko³o tego krêgu pod którym by³ kamieñ ogniskuj¹cy a na koñcu zejd¹ t¹ œcie¿k¹ w skale.
+      Ork zadanie dla Ciebie. Zorganizuj zasadzkê. Trasê przemarszu zrób mo¿e tak, ¿eby oni poszli t¹ drog¹ przez orkowe tereny, ko³o tego krêgu pod którym by³ kamieñ ogniskuj¹cy a na koñcu zejd¹ t¹ œcie¿k¹ w skale.
       Zasadzkê zorganizuj w³aœnie tam gdzie by³ kamieñ ogniskuj¹cy pilnowany przez nieumar³ego magnata to najlepsze miejsce.
       Niech tam czeka z 8 najemników z Cordem na czele. Dialog chcê tak zrobiæ, ¿e najpierw zagada Cord, Dick bêdzie móg³ przekonaæ stra¿ników, ¿e walka jest beznadziejna i mog¹ do³¹czyæ do najmusów, trafiæ do kopalni albo zgin¹æ.
       Wiêc niech najemnicy maj¹ gld nieutraln¹ ze stra¿nikami na razie.

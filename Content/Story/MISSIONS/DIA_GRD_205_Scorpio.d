@@ -58,7 +58,7 @@ FUNC VOID DIA_Scorpio_Hello_Info()
 	AI_Output (self, other, "DIA_Scorpio_Hello_11_04"); //Pewnie z przyzwyczajenia chcia³ zapytaæ coœ Ty za jeden, ale nie da³ rady nic wykrztusiæ.
 	AI_Output (other, self, "DIA_Scorpio_Hello_15_05"); //Hmm... W porz¹dku, poœpieszy³em siê.
 	AI_RemoveWeapon (hero);
-	AI_Output (self, other, "DIA_Scorpio_Hello_11_06"); //Tak ju¿ lepiej. Myœla³em, ¿e znam wiêkszoœæ skazañców, ale ciebie nie kojarzê...
+	AI_Output (self, other, "DIA_Scorpio_Hello_11_06"); //Tak ju¿ lepiej. Myœla³em, ¿e znam wiêkszoœæ skazañców, ale Ciebie nie kojarzê...
 	AI_Output (other, self, "DIA_Scorpio_Hello_15_07"); //Bo jestem na tym zadupiu od niedawna. 
 	AI_Output (other, self, "DIA_Scorpio_Hello_15_08"); //Sk¹d siê tu wzi¹³eœ?
 	AI_Output (self, other, "DIA_Scorpio_Hello_11_09"); //A co Ciê to obchodzi? 
@@ -855,7 +855,7 @@ FUNC VOID DIA_Scorpio_Traitor_Yes()
 
 FUNC VOID DIA_Scorpio_Traitor_No()
 {
-	AI_Output (other, self, "DIA_Scorpio_Traitor_No_15_01"); //To nic wa¿nego... Po prostu wydaje mi siê, ¿e twój przyjaciel jeszcze nie odzyska³ pe³ni si³.
+	AI_Output (other, self, "DIA_Scorpio_Traitor_No_15_01"); //To nic wa¿nego... Po prostu wydaje mi siê, ¿e Twój przyjaciel jeszcze nie odzyska³ pe³ni si³.
 	AI_Output (self, other, "DIA_Scorpio_Traitor_No_11_02"); //Rany na Pacho goj¹ siê jak na psie. Szybko do siebie dojdzie.
 	AI_Output (self, other, "DIA_Scorpio_Traitor_No_11_03"); //Na pewno tylko to chcia³eœ mi powiedzieæ?
 	AI_Output (other, self, "DIA_Scorpio_Traitor_No_15_04"); //Tak. Bywaj...

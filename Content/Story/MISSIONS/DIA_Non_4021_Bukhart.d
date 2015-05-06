@@ -210,7 +210,7 @@ FUNC VOID DIA_Bukhart_Trol_Info()
 	};
    
 	AI_Output (other, self, "DIA_Bukhart_Trol_15_19"); //Ale z Ciebie zdzierca - muszê siê nad tym zastanowiæ.
-	AI_Output (self, other, "DIA_Bukhart_Trol_11_20"); //Przemyœl to i pamiêtaj, ¿e szepnê za tob¹ Kirze s³odkie s³ówko do uszka tylko wtedy, jak kupisz skórê.
+	AI_Output (self, other, "DIA_Bukhart_Trol_11_20"); //Przemyœl to i pamiêtaj, ¿e szepnê za Tob¹ Kirze s³odkie s³ówko do uszka tylko wtedy, jak kupisz skórê.
 	AI_Output (self, other, "DIA_Bukhart_Trol_11_21"); //A teraz wracaj ju¿ do tych swoich spraw.
 
 	Log_CreateTopic	(CH2_TRL_TrolFure, LOG_MISSION);
@@ -251,7 +251,7 @@ FUNC VOID DIA_Bukhart_Trol2_Info()
 		B_GiveXP (200);
 		B_GiveInvItems (other, self, ItMiNugget, 2000);
       
-		AI_Output (self, other, "DIA_Bukhart_Trol2_11_02"); //Interesy z tob¹ to prawdziwa przyjemnoœæ.
+		AI_Output (self, other, "DIA_Bukhart_Trol2_11_02"); //Interesy z Tob¹ to prawdziwa przyjemnoœæ.
 		AI_Output (other, self, "DIA_Bukhart_Trol2_15_03"); //W tym wypadku jednostronna. Daj tê wylinia³¹ skórê i pamiêtaj, co przyrzek³eœ.
 		
       CreateInvItems (self, ItAt_TrollSkin,1); 	

@@ -123,7 +123,7 @@ Teraz ma staæ ze 20 m za bram¹ do NO przez któr¹ przepuszcza Kil
 	{
 		if (Npc_KnowsInfo (hero, DIA_Kil_First))
 		{
-			AI_Output (self, other, "DIA_Kil_Gate_11_01"); //To znowu Ty? Ale z ciebie uparte bydlê!
+			AI_Output (self, other, "DIA_Kil_Gate_11_01"); //To znowu Ty? Ale z Ciebie uparte bydlê!
 		};
       
 		AI_Output (self, other, "DIA_Kil_Gate_11_02"); //Czego chcesz?

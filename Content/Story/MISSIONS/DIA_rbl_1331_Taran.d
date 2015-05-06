@@ -96,7 +96,7 @@ FUNC VOID DIA_rbl_1331_baaltaran_Aloes_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_rbl_1331_baaltaran_Aloes_11_08"); //Nie bêdê z ciebie zdziera³.
+		AI_Output (self, other, "DIA_rbl_1331_baaltaran_Aloes_11_08"); //Nie bêdê z Ciebie zdziera³.
 		AI_Output (self, other, "DIA_rbl_1331_baaltaran_Aloes_11_09"); //100 bry³ek za³atwi sprawê.
 		B_LogEntry		(CH1_Rbl_Plant, "Taran zgodzi³ siê uwarzyæ miksturê z aloesu za 100 bry³ek rudy."); 
 	};
@@ -565,7 +565,7 @@ FUNC int  DIA_BaalTaran_Stuff1_Condition()
 
 FUNC VOID  DIA_BaalTaran_Stuff1_Info()
 {
-	AI_Output (self, other,"DIA_BaalTaran_Stuff1_05_01"); //To Ty! To przez ciebie straci³em klientów!
+	AI_Output (self, other,"DIA_BaalTaran_Stuff1_05_01"); //To Ty! To przez Ciebie straci³em klientów!
 	AI_Output (other, self,"DIA_BaalTaran_Stuff1_15_02"); //Nie wiem o czym mówisz...
 	AI_Output (self, other,"DIA_BaalTaran_Stuff1_05_03"); //Skurwiel! Ale nawet Ty nie uciekniesz przed kl¹tw¹ w³asnego przeznaczenia!
 	AI_Output (self, other,"DIA_BaalTaran_Stuff1_05_04"); //Wspomnisz moje s³owa w chwili œmierci, piracie.

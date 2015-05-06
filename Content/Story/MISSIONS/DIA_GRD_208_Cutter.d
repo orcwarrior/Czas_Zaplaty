@@ -175,7 +175,7 @@ FUNC VOID DIA_Cutter_Woman_Info()
 	AI_Output (other, self,"DIA_Cutter_Woman_15_07"); //Nie mówi³em o sobie! Nie jestem a¿ tak wyposzczony, ¿eby... Chyba siê porzygam.
 	AI_RemoveWeapon (self);
 	AI_Output (self, other,"DIA_Cutter_Woman_06_08"); //Ca³e szczêœcie. Ale mówi³eœ coœ o pomocy. Masz jak¹œ babkê na boku?
-	AI_Output (other, self,"DIA_Cutter_Woman_15_09"); //Mniej wiêcej. Znam kogoœ, kto jest tob¹ ¿ywo zainteresowany.
+	AI_Output (other, self,"DIA_Cutter_Woman_15_09"); //Mniej wiêcej. Znam kogoœ, kto jest Tob¹ ¿ywo zainteresowany.
 	AI_Output (self, other,"DIA_Cutter_Woman_06_10"); //Kto to?
 	AI_Output (other, self,"DIA_Cutter_Woman_15_11"); //To Kira, szefowa ³owców trolli.
 	AI_Output (self, other,"DIA_Cutter_Woman_06_12"); //S³ysza³em, ¿e to niewy¿yte babsko. Hmm, brzmi ciekawie...

@@ -553,7 +553,7 @@ FUNC VOID DIA_Whistler_Spy1_Info()
 	AI_Output (self, other, "DIA_Whistler_Spy1_11_14"); //Aidan doœæ czêsto znika wieczorami. Nikt nie wie, gdzie chadza i po co. 
 	AI_Output (self, other, "DIA_Whistler_Spy1_11_15"); //Co do R¹czki, to jego t³umaczenie, ¿e podpad³ Gomezowi, bo popar³ jakiegoœ skazañca trochê mi œmierdzi.
 	AI_Output (self, other, "DIA_Whistler_Spy1_11_16"); //Znowu Tony jest tu najkrócej i najmniej go znam. Do tego nied³ugo po tym jak go przygarnêliœmy, pojawi³y siê przecieki.
-	AI_Output (other, self, "DIA_Whistler_Spy1_15_17"); //Rozumiem. Dobry z ciebie obserwator.
+	AI_Output (other, self, "DIA_Whistler_Spy1_15_17"); //Rozumiem. Dobry z Ciebie obserwator.
 	AI_Output (self, other, "DIA_Whistler_Spy1_11_18"); //Mam u³atwione zadanie, bo wszyscy uwa¿aj¹ mnie za œwira, dla którego licz¹ siê tylko œwiecide³ka.
 	AI_Output (self, other, "DIA_Whistler_Spy1_11_19"); //Pozory potrafi¹ zmyliæ ka¿dego, piracie.
 	AI_Output (other, self, "DIA_Whistler_Spy1_15_20"); //Zapamiêtam i przemyœlê to, co powiedzia³eœ.
@@ -950,7 +950,7 @@ FUNC VOID DIA_Whistler_Revange_Info()
 	AI_Output (self, other, "DIA_Whistler_Revange_11_12"); //Podmienisz konfitury w skrzyni Draxa, na te przygotowane przeze mnie.
 	AI_Output (other, self, "DIA_Whistler_Revange_15_13"); //Z czego je zrobi³eœ? 
 	AI_Output (self, other, "DIA_Whistler_Revange_11_14"); //A ró¿ne takie wnêtrznoœci i odchody. Kiedy Drax sprzeda weki, to klienci go zlinczuj¹, he, he.
-	AI_Output (other, self, "DIA_Whistler_Revange_15_15"); //Kawa³ z ciebie sukinsyna.
+	AI_Output (other, self, "DIA_Whistler_Revange_15_15"); //Kawa³ z Ciebie sukinsyna.
 	AI_Output (self, other, "DIA_Whistler_Revange_11_16"); //W koñcu Kolonia to nie miejsce dla miêczaków. Wiêc jak bêdzie?
 };
 

@@ -149,7 +149,7 @@ INSTANCE DIA_Nikolas_DebtFinish(C_INFO)
 	information		= DIA_Nikolas_DebtFinish_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "Mam twój d³ug."; 
+	description		= "Mam Twój d³ug."; 
 };
 
 FUNC INT DIA_Nikolas_DebtFinish_Condition()
@@ -169,7 +169,7 @@ FUNC VOID DIA_Nikolas_DebtFinish_Info()
 	TH_trust = TH_trust + 1;
 	B_GiveXP (250);
    
-	AI_Output (other, self, "DIA_Nikolas_DebtFinish_15_01"); //Mam twój d³ug.
+	AI_Output (other, self, "DIA_Nikolas_DebtFinish_15_01"); //Mam Twój d³ug.
 	AI_Output (self, other, "DIA_Nikolas_DebtFinish_11_02"); //Naprawdê? SprawdŸmy.
 	
    B_GiveInvItems (other, self, ItMiNugget, 1230);

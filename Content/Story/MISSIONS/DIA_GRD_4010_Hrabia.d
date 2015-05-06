@@ -608,7 +608,7 @@ FUNC VOID DIA_Hrabia_TheRock_Info()
 FUNC VOID DIA_Hrabia_TheRock_Kill()
 {
 	AI_Output (other, self, "DIA_Hrabia_TheRock_Kill_15_01"); //Mam ju¿ doœæ twoich gierek - giñ!
-	AI_Output (self, other, "DIA_Hrabia_TheRock_Kill_11_02"); //To twój wybór, ale uszanujê go. Niech wygra lepszy.
+	AI_Output (self, other, "DIA_Hrabia_TheRock_Kill_11_02"); //To Twój wybór, ale uszanujê go. Niech wygra lepszy.
 	Log_SetTopicStatus(CH1_Rbl_Hrabia, LOG_SUCCESS);
 	B_LogEntry(CH1_Rbl_Hrabia, "Mam ju¿ doœæ gierek Hrabiego. Czas siê go pozbyæ na zawsze!");
 

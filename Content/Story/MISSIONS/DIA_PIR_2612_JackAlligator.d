@@ -784,7 +784,7 @@ func void DIA_Jack_TreasureBlackDog_Info()
    AI_Output (other, self, "DIA_Jack_TreasureBlackDog_15_06"); //Co ty pieprzysz?
    AI_Output (self, other, "DIA_Jack_TreasureBlackDog_12_07"); //Stary Jack pieprzy tylko dziewki, he, he.
    AI_Output (self, other, "DIA_Jack_TreasureBlackDog_12_08"); //Ale wracaj¹c do rzeczy. Skarb Czarnego Psa nie znajduje siê w Górniczej Dolinie. Jest ukryty na wyspie, ale w innej czêœci.
-   AI_Output (other, self, "DIA_Jack_TreasureBlackDog_15_09"); //Czyli zrobi³eœ ze mnie tylko ch³opca na posy³ki? Jak myœlisz, co powinienem teraz z tob¹ zrobiæ?
+   AI_Output (other, self, "DIA_Jack_TreasureBlackDog_15_09"); //Czyli zrobi³eœ ze mnie tylko ch³opca na posy³ki? Jak myœlisz, co powinienem teraz z Tob¹ zrobiæ?
    AI_Output (self, other, "DIA_Jack_TreasureBlackDog_12_10"); //Uspokój siê! Jak tylko barierê szlag trafi, to osobiœcie ciê znajdê i wsadzê ci t¹ mapê w dupê! Masz na to s³owo... pirata.
    AI_Output (other, self, "DIA_Jack_TreasureBlackDog_15_11"); //Mam nadziejê. Póki co nie zabijê ciê.
 };

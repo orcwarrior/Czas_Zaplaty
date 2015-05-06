@@ -43,7 +43,7 @@ FUNC VOID Org_2500_Kasztan_Hello_Info()
 	AI_SetWalkmode	(other, NPC_WALK);
 	AI_GotoNpc		(other, self);
 
-	AI_Output (self, other,"Org_2500_Kasztan_Hello_11_00"); //Hej, ty! Mo¿e chcia³byœ zmieniæ swój wygl¹d? Jestem stylist¹ i za niewielk¹ op³at¹ móg³bym zmieniæ twój wygl¹d.
+	AI_Output (self, other,"Org_2500_Kasztan_Hello_11_00"); //Hej, ty! Mo¿e chcia³byœ zmieniæ swój wygl¹d? Jestem stylist¹ i za niewielk¹ op³at¹ móg³bym zmieniæ Twój wygl¹d.
 	AI_Output (other, self,"Org_2500_Kasztan_Hello_11_01"); //Tak? Sam nie wiem...
 };
 

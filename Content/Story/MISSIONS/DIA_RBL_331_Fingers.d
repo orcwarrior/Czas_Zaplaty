@@ -303,7 +303,7 @@ INSTANCE DIA_Fingers_Stew (C_INFO)
 	information		= DIA_Fingers_Stew_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "Mam dla ciebie potrawkê.";
+	description		= "Mam dla Ciebie potrawkê.";
 };
 
 FUNC INT DIA_Fingers_Stew_Condition()
@@ -318,7 +318,7 @@ FUNC VOID DIA_Fingers_Stew_Info()
 {
 	fox_stew = fox_stew + 1;
 	
-   AI_Output (other, self, "DIA_Fingers_Stew_15_01"); //Mam dla ciebie potrawkê.
+   AI_Output (other, self, "DIA_Fingers_Stew_15_01"); //Mam dla Ciebie potrawkê.
 	AI_Output (self, other, "DIA_Fingers_Stew_11_02"); //Daj to paskudztwo. Mo¿e tym razem w³osy mi nie powypadaj¹ od tej breji...
 	
    B_GiveInvItems (other, self, ItFo_Stew, 1);
@@ -362,7 +362,7 @@ FUNC VOID DIA_FINGERS_Spy_Info()
 	if (spy_count == 12)
 	{
 		spy_count = spy_count + 1;
-		AI_Output (self, other, "DIA_Spy_11_20"); //IdŸ porozmawiaæ z Cavalornem, zdaje siê, ¿e coœ od ciebie chcia³.
+		AI_Output (self, other, "DIA_Spy_11_20"); //IdŸ porozmawiaæ z Cavalornem, zdaje siê, ¿e coœ od Ciebie chcia³.
 		B_LogEntry		(CH2_Rbl_Spy, "Powinienem porozmawiaæ z Cavalornem, podobno mnie szuka³.");
 	};
 
@@ -504,7 +504,7 @@ FUNC VOID DIA_Fingers_NewSword_Info()
 	B_GiveXP(100);
    
 	AI_Output (self, other, "DIA_Fingers_NewSword_11_01"); //A niech to, w³aœnie z³ama³em miecz! Chcia³em go naostrzyæ, a to dziadostwo pêk³o.
-	AI_Output (other, self, "DIA_Fingers_NewSword_15_02"); //Widzê, ¿e Fox dobrze wybra³. To twój nowy miecz.
+	AI_Output (other, self, "DIA_Fingers_NewSword_15_02"); //Widzê, ¿e Fox dobrze wybra³. To Twój nowy miecz.
 	AI_Output (self, other, "DIA_Fingers_NewSword_11_03"); //Cholera, nie po to z³ama³em miecz, ¿eby dostaæ nowy!
 	AI_Output (other, self, "DIA_Fingers_NewSword_15_04"); //Nie rozumiem...
 	AI_Output (self, other, "DIA_Fingers_NewSword_11_05"); //Z³ama³em to zardzewia³e ostrze, ¿eby mieæ dobr¹ wymówkê kiedy przyjd¹ stra¿nicy. Przez Ciebie nie wywinê siê od walki!

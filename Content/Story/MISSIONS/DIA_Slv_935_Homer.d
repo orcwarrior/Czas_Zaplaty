@@ -211,7 +211,7 @@ INSTANCE DIA_Homer_Pickaxe (C_INFO)
 	information	= DIA_Homer_Pickaxe_Info;
 	permanent		= 0;
 	important		= 0;
-	description 	= "Mam dla ciebie kilof.";
+	description 	= "Mam dla Ciebie kilof.";
 };                       
 
 FUNC INT DIA_Homer_Pickaxe_Condition()
@@ -225,7 +225,7 @@ FUNC INT DIA_Homer_Pickaxe_Condition()
 FUNC VOID DIA_Homer_Pickaxe_Info()
 {	
 	miners_work = miners_work + 1;
-	AI_Output (other, self,"DIA_Homer_Pickaxe_15_01"); //Mam dla ciebie kilof.
+	AI_Output (other, self,"DIA_Homer_Pickaxe_15_01"); //Mam dla Ciebie kilof.
 	B_GiveInvItems (other, self, ItMwPickaxe, 1);
 	AI_Output (self, other,"DIA_Homer_Pickaxe_02_02"); //To wspaniale, ruszam do pracy.
 	AI_Output (self, other,"DIA_Homer_Pickaxe_02_03"); //Kiedy to wszystko siê skoñczy, zaprojektujê ogromny wiatrak... O i mur widoczny z Ksiê¿yca!

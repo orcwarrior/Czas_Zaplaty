@@ -80,7 +80,7 @@ FUNC void  DIA_Orik_Go_Info()
 	AI_Output (self, other,"DIA_Orik_Go_14_04"); //Kogo zap³odniæ?
 	AI_Output (other, self,"DIA_Orik_Go_15_05"); //Zabiæ! Stra¿ników!
 	AI_Output (self, other,"DIA_Orik_Go_14_06"); //Aha, nie mog³eœ tak od razu?
-	AI_Output (self, other,"DIA_Orik_Go_14_07"); //Bêdê tu¿ za tob¹...
+	AI_Output (self, other,"DIA_Orik_Go_14_07"); //Bêdê tu¿ za Tob¹...
 	B_LogEntry		(CH5_NC_Convoys, "Orik mi pomo¿e. Mam tylko nadziejê, ¿e zauwa¿y stra¿ników na czas...");
 	Party_AddNpc(self);
 	Npc_ExchangeRoutine(self,"FOLLOW");

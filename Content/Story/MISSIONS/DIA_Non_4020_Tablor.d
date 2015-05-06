@@ -111,7 +111,7 @@ FUNC VOID DIA_Tablor_Talk_Info()
 	AI_Output (other, self,"DIA_Tablor_Talk_15_06"); //Wiem, ¿e pewnie bêdê tego ¿a³owa³, ale co masz na myœli?
 	AI_Output (self, other, "DIA_Tablor_Talk_11_07"); //Pokonaj bestiê, a uznam, ¿e jesteœ prawdziwym wojownikiem.
 	AI_Output (other, self,"DIA_Tablor_Talk_15_08"); //Jak¹ bestiê?
-	AI_Output (self, other, "DIA_Tablor_Talk_11_09"); //Wybór nale¿y do ciebie, pamiêtaj jednak, ¿e im wiêksza chwa³a tym wiêksza nagroda.
+	AI_Output (self, other, "DIA_Tablor_Talk_11_09"); //Wybór nale¿y do Ciebie, pamiêtaj jednak, ¿e im wiêksza chwa³a tym wiêksza nagroda.
 
 	Info_ClearChoices (DIA_Tablor_Talk);
 	Info_AddChoice (DIA_Tablor_Talk, "Przyniosê Ci skórê... trolla!", DIA_Tablor_Talk_Trol);

@@ -85,7 +85,7 @@ FUNC VOID DIA_Gestath_Hello_Info()
 	AI_Output (self, other, "DIA_Gestath_Hello_11_29"); //Król uwielbia na nie polowaæ, co trzeba przyznaæ, jest doœæ niebezpiecznym zajêciem.
 	AI_Output (self, other, "DIA_Gestath_Hello_11_30"); //Mieliœmy pecha, bo kiedy po³o¿yliœmy dwie harpie, napatoczy³ siê królewski ³owczy. 
 	AI_Output (self, other, "DIA_Gestath_Hello_11_31"); //Ja zdo³a³em skoczyæ z grani, ale Cavalorn zosta³. Jestem pewien, ¿e te¿ móg³by daæ nogê, ale ten idiota chcia³ daæ mi szansê na ucieczkê.
-	AI_Output (other, self, "DIA_Gestath_Hello_15_32"); //Cavalorn? To twój brat?
+	AI_Output (other, self, "DIA_Gestath_Hello_15_32"); //Cavalorn? To Twój brat?
 	AI_Output (self, other, "DIA_Gestath_Hello_11_33"); //Tak. Mo¿e go znasz?
 	AI_Output (other, self, "DIA_Gestath_Hello_15_34"); //Kto wie. Mów dalej, to zaczyna siê robiæ coraz ciekawsze.
 	AI_Output (self, other, "DIA_Gestath_Hello_11_35"); //Brat nie wyda³ mnie. Wzi¹³ ca³¹ winê na siebie. 

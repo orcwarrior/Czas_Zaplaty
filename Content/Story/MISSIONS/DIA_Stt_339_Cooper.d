@@ -73,7 +73,7 @@ FUNC VOID DIA_Cooper_Hello_Info()
 	AI_Output (other, self, "DIA_Cooper_Hello_15_18"); //Tak.
 	AI_Output (self, other, "DIA_Cooper_Hello_12_19"); //Do tego korzystasz z takich przywilejów jak przebywanie w moim towarzystwie. A to kosztuje. Teraz rozumiesz?
 	AI_Output (other, self, "DIA_Cooper_Hello_15_20"); //Tak.
-	AI_Output (self, other, "DIA_Cooper_Hello_12_21"); //Bystrzacha z ciebie, nie ma co. Lubiê Ciê, dam Ci dwa dni na uiszczenie zap³aty.
+	AI_Output (self, other, "DIA_Cooper_Hello_12_21"); //Bystrzacha z Ciebie, nie ma co. Lubiê Ciê, dam Ci dwa dni na uiszczenie zap³aty.
 	AI_Output (other, self, "DIA_Cooper_Hello_15_22"); //Ile?
 	AI_Output (self, other, "DIA_Cooper_Hello_12_23"); //Wystarczy tysi¹c bry³ek rudy, nie bêdê zdziera³ z marynarza.
 	AI_Output (other, self, "DIA_Cooper_Hello_15_24"); //Niech ciê szlag... Tysi¹c bry³ek to za du¿o!

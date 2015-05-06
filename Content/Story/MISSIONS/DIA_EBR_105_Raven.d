@@ -415,7 +415,7 @@ FUNC VOID DIA_Raven_CastleCount_Info()
 	B_FullStop (hero);
 	AI_TurnToNpc(self, hrabia);
 
-	AI_Output (self, other,"DIA_Raven_CastleCount_10_01"); //¯ywotne z ciebie bydlê. Ale z tym nie wygrasz.
+	AI_Output (self, other,"DIA_Raven_CastleCount_10_01"); //¯ywotne z Ciebie bydlê. Ale z tym nie wygrasz.
 	AI_Output (self, other,"DIA_Raven_CastleCount_10_02"); //Wzywam Ciê BELIARZE. Uka¿ temu g³upcowi SW¥ potêgê!
 	
    B_StopProcessInfos(self);

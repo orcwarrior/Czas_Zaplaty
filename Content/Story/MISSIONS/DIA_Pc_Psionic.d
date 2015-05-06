@@ -405,7 +405,7 @@ FUNC VOID  DIA_Lester_Fight_Info()
 	AI_GotoNpc(other, self);
 	AI_Output (self, other,"DIA_Lester_Fight_05_01"); //Trucizna chyba ju¿ zaczyna dzia³aæ.
 	AI_Output (other, self, "DIA_Lester_Fight_15_02"); //Nie bêdê siê tu wiêcej chowa³, czas nakopaæ temu stworowi do nieumar³ego dupska!
-	AI_Output (self, other,"DIA_Lester_Fight_05_03"); //Ekhm... Bêdê tu¿ za tob¹.
+	AI_Output (self, other,"DIA_Lester_Fight_05_03"); //Ekhm... Bêdê tu¿ za Tob¹.
 	B_LogEntry		(CH4_RBL_Beast, "Trucizna ju¿ dzia³a, ale musimy sami zabiæ Bestiê. Nie mogê zapomnieæ o wyciêciu serca!");
 	
    self.flags = NPC_FLAG_IMMORTAL;
@@ -452,7 +452,7 @@ FUNC VOID  DIA_Lester_FightEnd_Info()
 	AI_Output (other, self, "DIA_Lester_FightEnd_15_02"); //Nie by³o ³atwo, ale poœwiêcenie Tondrala nie posz³o na marne.
 	AI_Output (self, other,"DIA_Lester_FightEnd_05_03"); //To prawda. 
 	AI_Output (self, other,"DIA_Lester_FightEnd_05_04"); //Na razie nasze drogi musz¹ siê rozejœæ. Mam sporo do przemyœlenia.
-	AI_Output (self, other,"DIA_Lester_FightEnd_05_05"); //Muszê dowiedzieæ siê co knuje Cor Kalom. Ale to ju¿ nie twój problem, Rick.
+	AI_Output (self, other,"DIA_Lester_FightEnd_05_05"); //Muszê dowiedzieæ siê co knuje Cor Kalom. Ale to ju¿ nie Twój problem, Rick.
 	AI_Output (other, self, "DIA_Lester_FightEnd_15_06"); //Bywaj Lester i powodzenia w tym co zamierzasz.
 
 	/****************

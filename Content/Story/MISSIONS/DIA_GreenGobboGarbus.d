@@ -89,7 +89,7 @@ FUNC VOID DIA_Garbus_HelloAgain_Info()
 	B_FullStop (hero);
 	AI_GotoNpc(other,self);
 	AI_Output (self, other, "DIA_Garbus_HelloAgain_11_00"); //Dokona³o siê. Naprawi³eœ wyrz¹dzone z³o.
-	AI_Output (other, self, "DIA_Garbus_HelloAgain_15_01"); //Tak z ciekawoœci pytam. Dlaczego twój Pan zainteresowa³ siê jak¹œ tam kradzie¿¹?
+	AI_Output (other, self, "DIA_Garbus_HelloAgain_15_01"); //Tak z ciekawoœci pytam. Dlaczego Twój Pan zainteresowa³ siê jak¹œ tam kradzie¿¹?
 	AI_Output (other, self, "DIA_Garbus_HelloAgain_15_02"); //W kolonii codziennie dochodzi do du¿o gorszych zbrodni. 
 	AI_Output (self, other, "DIA_Garbus_HelloAgain_11_03"); //Gdybyœ nie odzyska³ sakiewki, Kufel kupi³by za ni¹ zanieczyszczony bimber. Wielu ludzi straci³oby przez to ¿ycie.
 	AI_Output (other, self, "DIA_Garbus_HelloAgain_15_04"); //W¹tpiê, ¿eby bandzie z obozu zaszkodzi³y nawet siki Beliara, a tym bardziej zanieczyszczony alkohol.

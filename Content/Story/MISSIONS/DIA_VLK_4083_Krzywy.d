@@ -75,7 +75,7 @@ FUNC INT DIA_Krzywy_First1_Condition()
 
 FUNC VOID DIA_Krzywy_First1_Info()
 {
-	AI_Output (self, other, "DIA_Krzywy_First1_11_01"); //Jak tak na ciebie spojrzeæ to wygl¹dasz doœæ... smakowicie.
+	AI_Output (self, other, "DIA_Krzywy_First1_11_01"); //Jak tak na Ciebie spojrzeæ to wygl¹dasz doœæ... smakowicie.
 	AI_Output (self, other, "DIA_Krzywy_First1_11_02"); //Od dawna nie mia³em ludzkiego miêsa w ustach.	
 	AI_Output (other, self, "DIA_Krzywy_First1_15_03"); //Je¿eli o mnie chodzi, to lepiej ¿eby tak pozosta³o!
 };

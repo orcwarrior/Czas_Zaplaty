@@ -195,7 +195,7 @@ FUNC void  STT_Balam_Spy_Info()
 	AI_Output (self, other,"STT_Balam_Spy_Info_07_03"); //Dorwali Diego. Cienie straci³y pewnoœæ siebie i poszli w rozsypkê. W¹tpiê, ¿e chocia¿ co drugi chwyci za miecz, kiedy uderzymy na stra¿ników. 
 	AI_Output (self, other,"STT_Balam_Spy_Info_07_04"); //Nie wiem jak kopacze. Jakiœ skurwiel musia³ wypaplaæ stra¿nikom, ¿e Diego wróci³.
 	AI_Output (self, other,"STT_Balam_Spy_Info_07_05"); //Musimy znaleŸæ i uciszyæ tê gnidê jak najszybciej!
-	AI_Output (other, self,"STT_Balam_Spy_Info_15_06"); //Tu siê z tob¹ zgadzam.
+	AI_Output (other, self,"STT_Balam_Spy_Info_15_06"); //Tu siê z Tob¹ zgadzam.
 	AI_DrawWeapon (hero);
 	AI_Output (self, other,"STT_Balam_Spy_Info_07_07"); //Schowaj ¿elazo, to nie ja idioto! Jaki mia³bym w tym interes?
 	AI_Output (other, self,"STT_Balam_Spy_Info_15_08"); //Tylko Ty i Urt wiedzieliœcie o powrocie Diego. W sumie to by³ Twój pomys³. Masz sta³y kontakt z magnatami. Mam mówiæ dalej?

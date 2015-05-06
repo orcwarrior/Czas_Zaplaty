@@ -304,7 +304,7 @@ FUNC VOID DIA_Korth_DickEnd_Info()
 		B_GiveInvItems (other, self, ItFoWine,10);
 		B_GiveInvItems (other, self, ItFoBooze,10);
 		
-      AI_Output (other, self,"DIA_Korth_DickEnd_15_03"); //Zawsze dotrzymujê s³owa. Mogê na ciebie liczyæ?
+      AI_Output (other, self,"DIA_Korth_DickEnd_15_03"); //Zawsze dotrzymujê s³owa. Mogê na Ciebie liczyæ?
 		AI_Output (self, other,"DIA_Korth_DickEnd_11_04"); //Pewnie, nie powiem na Ciebie z³ego s³owa, nawet jak Kira weŸmie mnie na te swoje tortury, he, he.
 		AI_Output (self, other,"DIA_Korth_DickEnd_11_05"); //Masz moje poparcie. A teraz pozwolisz, ¿e wypijê za Twoje zdrowie...
 		

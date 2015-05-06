@@ -271,7 +271,7 @@ FUNC VOID DIA_RBL_2608_BeerDrinker_Stew_Info()
    
 	AI_Output (other, self, "DIA_RBL_2608_BeerDrinker_Stew_15_01"); //Mam gulasz.
 	AI_Output (self, other, "DIA_RBL_2608_BeerDrinker_Stew_11_02"); //Hik... I co z tego?
-	AI_Output (other, self, "DIA_RBL_2608_BeerDrinker_Stew_15_03"); //To porcja dla ciebie.
+	AI_Output (other, self, "DIA_RBL_2608_BeerDrinker_Stew_15_03"); //To porcja dla Ciebie.
 	AI_Output (self, other, "DIA_RBL_2608_BeerDrinker_Stew_11_04"); //Nie jestem a¿ tak pijany, ¿eby to zjeœæ... Hik.
 	AI_Output (other, self, "DIA_RBL_2608_BeerDrinker_Stew_15_05"); //Bierz, albo wepchnê Ci to w gard³o!
 	

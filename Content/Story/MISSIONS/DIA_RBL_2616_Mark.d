@@ -515,7 +515,7 @@ INSTANCE DIA_Mark_Stew (C_INFO)
 	information		= DIA_Mark_Stew_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "Mam dla ciebie porcjê przepysznego gulaszu od Snafa."; 
+	description		= "Mam dla Ciebie porcjê przepysznego gulaszu od Snafa."; 
 };
 
 FUNC INT DIA_Mark_Stew_Condition()
@@ -530,7 +530,7 @@ FUNC VOID DIA_Mark_Stew_Info()
 {
 	fox_stew = fox_stew + 1;
    
-	AI_Output (other, self, "DIA_Mark_Stew_15_01"); //Mam dla ciebie porcjê przepysznego gulaszu od Snafa.
+	AI_Output (other, self, "DIA_Mark_Stew_15_01"); //Mam dla Ciebie porcjê przepysznego gulaszu od Snafa.
 	AI_Output (self, other, "DIA_Mark_Stew_11_02"); //Zabierz to œwiñstwo ode mnie. Od potrawek Snafa mam koszmary.
    AI_Output (other, self, "DIA_Mark_Stew_15_03"); //WeŸmiesz ten gulasz, czy mam ci go pchn¹æ do gard³a?
    AI_Output (self, other, "DIA_Mark_Stew_11_04"); //Daj mi ten gulasz, jakoœ to prze¿yjê.

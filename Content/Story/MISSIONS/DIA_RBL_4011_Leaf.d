@@ -955,7 +955,7 @@ FUNC void  Info_Leaf_Choice_Info()
    AI_Output 		(self, hero,"Info_Leaf_Choice_14_04"); //Bo co mi zrobisz?
 
 	Info_ClearChoices (Info_Leaf_Choice);
-	Info_AddChoice (Info_Leaf_Choice, "Po prostu walnê w twój pusty ³eb.", Info_Leaf_Choice_Yes);
+	Info_AddChoice (Info_Leaf_Choice, "Po prostu walnê w Twój pusty ³eb.", Info_Leaf_Choice_Yes);
 	Info_AddChoice (Info_Leaf_Choice, "A dobre piwko?", Info_Leaf_Choice_No);
 };
 
@@ -963,7 +963,7 @@ FUNC void  Info_Leaf_Choice_Info()
 
 FUNC VOID Info_Leaf_Choice_Yes()
 {
-	AI_Output 		(hero, self,"Info_Leaf_Choice_Yes_15_01"); //Po prostu walnê w twój pusty ³eb.
+	AI_Output 		(hero, self,"Info_Leaf_Choice_Yes_15_01"); //Po prostu walnê w Twój pusty ³eb.
 	AI_Output 		(self, hero,"Info_Leaf_Choice_Yes_14_02"); //Chcesz siê biæ? Proszê bardzo.
    
    B_LogEntry		(CH2_RBL_armor, "No có¿, muszê znowu mu pokazaæ, gdzie jego miejsce.");

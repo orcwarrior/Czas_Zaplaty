@@ -552,7 +552,7 @@ FUNC VOID DIA_Cavalorn_RebelCampTrust_Info()
    }
    else if (Cavalorn_whistler_know == TRUE)&&(whistler_trust == 2)
    {
-      AI_Output (self, other,"DIA_Cavalorn_RebelCampTrust_12_09"); //Powiedzmy, ¿e Œwistak te¿ siê za tob¹ wstawi³...
+      AI_Output (self, other,"DIA_Cavalorn_RebelCampTrust_12_09"); //Powiedzmy, ¿e Œwistak te¿ siê za Tob¹ wstawi³...
       rbl_count_trust = rbl_count_trust + 5;   
    };   
 
@@ -787,7 +787,7 @@ FUNC VOID DIA_Cavalorn_RebelCampTrust_Info()
       {
          AI_Output (self, other,"DIA_Cavalorn_RebelCampTrust_12_43"); //Przekona³eœ do siebie wiêkszoœæ z rebeliantów.
          //TODO: Sher, ewentualnie to popraw
-         AI_Output (self, other,"DIA_Cavalorn_RebelCampTrust_12_54"); //Je¿eli dasz radê zdobyæ zaufanie wszystkich, to bêdê mia³ dla ciebie coœ specjalnego.
+         AI_Output (self, other,"DIA_Cavalorn_RebelCampTrust_12_54"); //Je¿eli dasz radê zdobyæ zaufanie wszystkich, to bêdê mia³ dla Ciebie coœ specjalnego.
          AI_Output (self, other,"DIA_Cavalorn_RebelCampTrust_12_55"); //Ale zrobisz jak uwa¿asz.
          
          Info_ClearChoices (DIA_Cavalorn_RebelCampTrust);
@@ -1240,7 +1240,7 @@ FUNC INT DIA_Cavalorn_Decision_Condition()
 func void DIA_Cavalorn_Decision_Info()
 {
    AI_Output (other, self, "DIA_Cavalorn_Decision_15_01"); //Podj¹³em ju¿ decyzjê.
-   AI_Output (self, other, "DIA_Cavalorn_Decision_12_02"); //Tak? Jaki jest wiêc twój wybór?
+   AI_Output (self, other, "DIA_Cavalorn_Decision_12_02"); //Tak? Jaki jest wiêc Twój wybór?
    
    Info_ClearChoices (DIA_Cavalorn_Decision);
    Info_AddChoice (DIA_Cavalorn_Decision, "Muszê siê zastanowiæ...", DIA_Cavalorn_BlackTrollBack_Think);
@@ -1589,7 +1589,7 @@ INSTANCE DIA_Cavalorn_MineEnd (C_INFO)
 
 FUNC INT DIA_Cavalorn_MineEnd_Condition()
 {
-   if (Npc_KnowsInfo (hero, DIA_Cavalorn_Mine))&&(OldCampGrds>=19)&&(Npc_GetDistToWP(hero,"OW_OM_ENTRANCE02") < 400) //jakaœ zmienna okreslaj¹ca zabitych strazników i ciebie w kopalni
+   if (Npc_KnowsInfo (hero, DIA_Cavalorn_Mine))&&(OldCampGrds>=19)&&(Npc_GetDistToWP(hero,"OW_OM_ENTRANCE02") < 400) //jakaœ zmienna okreslaj¹ca zabitych strazników i Ciebie w kopalni
    {
       return 1;
    };
@@ -2183,7 +2183,7 @@ FUNC VOID DIA_Cavalorn_SpyEnd_Info()
    };
    
    AI_Output (self, other,"DIA_Cavalorn_SpyEnd_12_04"); //Krew mnie zala³a, kiedy siê dowiedzia³em, co ci idioci zrobili.
-   AI_Output (other, self, "DIA_Cavalorn_SpyEnd_15_05"); //Quentin i Aidan s¹ w porz¹dku. Wstawili siê za mn¹, chcieli poczekaæ na ciebie.
+   AI_Output (other, self, "DIA_Cavalorn_SpyEnd_15_05"); //Quentin i Aidan s¹ w porz¹dku. Wstawili siê za mn¹, chcieli poczekaæ na Ciebie.
    AI_Output (self, other,"DIA_Cavalorn_SpyEnd_12_06"); //Wiem. Abel jest przewra¿liwiony i wszêdzie widzi wrogów. Œwistak to chor¹giewka na wietrze, pójdzie za g³osem wiêkszoœci.
    AI_Output (self, other,"DIA_Cavalorn_SpyEnd_12_07"); //R¹czka to idiota, który a¿ siê prosi o jakiœ wypadek z belk¹, która spadnie mu na g³owê. 
    AI_Output (self, other,"DIA_Cavalorn_SpyEnd_12_08"); //Ale po Foxie siê tego nie spodziewa³em...
@@ -2198,7 +2198,7 @@ FUNC VOID DIA_Cavalorn_SpyEnd_Info()
    Create_and_give(ItMiNugget, 200);
    
    AI_Output (self, other, "DIA_Cavalorn_SpyEnd_12_16"); //Przyjmij tê rudê, jako zadoœæuczynienie za zes³anie do G³êbi oraz jako zap³atê za pomoc w szukaniu szpiega.
-   AI_Output (self, other,"DIA_Cavalorn_SpyEnd_12_19"); //Naprawdê siê cieszê, ¿e widzê ciê wœród ¿ywych, Rick. Odpocznij trochê, bo wkrótce pewnie bêdê mia³ dla ciebie robotê.
+   AI_Output (self, other,"DIA_Cavalorn_SpyEnd_12_19"); //Naprawdê siê cieszê, ¿e widzê ciê wœród ¿ywych, Rick. Odpocznij trochê, bo wkrótce pewnie bêdê mia³ dla Ciebie robotê.
    
    B_LogEntry(CH1_Rbl_Hrabia, "Cavalorn da³ mi jasno do zrozumienia, ¿e œmieræ Hrabiego bardzo by go ucieszy³a. Muszê siê nad tym solidnie zastanowiæ.");
 };
@@ -2411,7 +2411,7 @@ FUNC INT DIA_Cavalorn_Tunel1_Condition()
 FUNC VOID DIA_Cavalorn_Tunel1_Info()
 {
    B_FullStop (hero);
-   AI_Output (self, other,"DIA_Cavalorn_Tunel1_12_00"); //IdŸ pierwszy, bêdziemy tu¿ za tob¹!
+   AI_Output (self, other,"DIA_Cavalorn_Tunel1_12_00"); //IdŸ pierwszy, bêdziemy tu¿ za Tob¹!
    
    B_StopProcessInfos(self);
    

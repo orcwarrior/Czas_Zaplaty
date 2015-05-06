@@ -1016,7 +1016,7 @@ Ork daj tam 2 najemników, znaczy zmieñ rutyny jakimœ 2 ambientom
 ******************/
 
 	AI_Output (self, other,"DIA_Lee_TheRockCompleated_08_12"); //Zrobi³eœ wiêcej ni¿ od Ciebie oczekiwa³em.
-	AI_Output (other, self,"DIA_Lee_TheRockCompleated_15_13"); //Jak to wszystko siê skoñczy, usi¹dziemy i schlejemy siê w sztok. Oczywiœcie na twój rachunek.
+	AI_Output (other, self,"DIA_Lee_TheRockCompleated_15_13"); //Jak to wszystko siê skoñczy, usi¹dziemy i schlejemy siê w sztok. Oczywiœcie na Twój rachunek.
 	AI_Output (self, other,"DIA_Lee_TheRockCompleated_08_14"); //Masz to jak w myrtañskim banku.
 	AI_Output (self, other,"DIA_Lee_TheRockCompleated_08_15"); //Aha, mam jeszcze jedn¹ proœbê. Powiedz Saturasowi, ¿e Nowy Obóz znowu jest bezpieczny. Je¿eli magowie chc¹, mog¹ wróciæ na stare œmieci.
 	AI_Output (other, self,"DIA_Lee_TheRockCompleated_15_16"); //W porz¹dku, bywaj.

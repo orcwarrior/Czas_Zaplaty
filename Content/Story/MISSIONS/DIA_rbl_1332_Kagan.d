@@ -192,7 +192,7 @@ FUNC VOID DIA_BaalKagan_OrderHelp_Info()
 	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp1_15_41"); //Nie o tym myœla³em. Dasz mi udzia³ w zyskach.
 	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp1_13_42"); //Chyba za mocno uderzy³eœ siê w g³owê!
 	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp1_15_43"); //Udzia³ w zyskach albo Taran o wszystkim siê dowie. Ciekawe co wtedy powiedz¹ rebelianci, którzy kupuj¹ ziele? Myœlê, ¿e raczej Twoja popularnoœæ od tego nie wzroœnie.
-	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp1_13_44"); //Ale z ciebie skurwiel! Niech bêdzie. Dostaniesz udzia³ w utargu. Powiedzmy... 10 procent.
+	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp1_13_44"); //Ale z Ciebie skurwiel! Niech bêdzie. Dostaniesz udzia³ w utargu. Powiedzmy... 10 procent.
 	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp1_15_45"); //Mam lepszy pomys³. Odpalisz mi 20 procent co 10 dni. 
 	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp1_13_46"); //Ty...
 	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp1_15_47"); //Uwa¿aj na s³owa, je¿eli lubisz swój jêzyk.

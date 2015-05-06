@@ -154,7 +154,7 @@ FUNC void  DIA_Cord_Question_Info()
 	B_GiveXP(250);
 	AI_Output (other, self,"DIA_Cord_Question_15_01"); //Ty jesteœ Cord?
 	AI_Output (self, other,"DIA_Cord_Question_14_02"); //Tak, a co Ci do tego?
-	AI_Output (other, self,"DIA_Cord_Question_15_03"); //Mam dla ciebie wiadomoœæ od Jarvisa. Kaza³ przekazaæ, ¿e 'znalaz³ zgubê i czeka na resztê'.
+	AI_Output (other, self,"DIA_Cord_Question_15_03"); //Mam dla Ciebie wiadomoœæ od Jarvisa. Kaza³ przekazaæ, ¿e 'znalaz³ zgubê i czeka na resztê'.
 	AI_Output (self, other,"DIA_Cord_Question_14_04"); //Hmm, rozumiem. Mo¿esz wracaæ...
 	AI_Output (other, self,"DIA_Cord_Question_15_05"); //Chwila. Jarvis powiedzia³, ¿e dostanê tyle rudy ile udŸwignê.
 	AI_Output (self, other,"DIA_Cord_Question_14_06"); //To idŸ do niego. A teraz zejdŸ mi z drogi, ch³opcze.
@@ -579,7 +579,7 @@ Dodaj tej najemników którzy przyszli z Cordem
 	AI_Output (self, other, "DIA_Cord_ConvoyConvoyTrapEnd_14_01"); //Czemu nie? Znam Ciê Orkan, wiem na co ciê staæ. Przyda siê nam ktoœ taki.
 	AI_Output (self, other, "DIA_Cord_ConvoyConvoyTrapEnd_14_02"); //Witaj wœród ludzi Lee, stra¿niku.
 	AI_TurnToNpc(self, other);
-	AI_Output (self, other, "DIA_Cord_ConvoyConvoyTrapEnd_14_03"); //A co do ciebie, piracie...
+	AI_Output (self, other, "DIA_Cord_ConvoyConvoyTrapEnd_14_03"); //A co do Ciebie, piracie...
 	AI_Output (other, self, "DIA_Cord_ConvoyConvoyTrapEnd_15_04"); //Zdaje siê, ¿e solidnie zapracowa³em na nagrodê.
 	AI_Output (self, other, "DIA_Cord_ConvoyConvoyTrapEnd_14_05"); //Niech mnie szlag, je¿eli tak nie jest!
 	cord_price = cord_price + 1;
@@ -591,7 +591,7 @@ Ork nagroda rudy zale¿y od cord_price sam ustal co na jakim poziomie byæ powinno
 
 ************************/
 
-	AI_Output (self, other, "DIA_Cord_ConvoyConvoyTrapEnd_14_07"); //Powiem Lee, co z ciebie za zió³ko.
+	AI_Output (self, other, "DIA_Cord_ConvoyConvoyTrapEnd_14_07"); //Powiem Lee, co z Ciebie za zió³ko.
 	AI_Output (other, self, "DIA_Cord_ConvoyConvoyTrapEnd_15_08"); //Tylko nie mów tego zbyt g³oœno, s³awa mnie zabija.
 	AI_Output (self, other, "DIA_Cord_ConvoyConvoyTrapEnd_14_09"); //Nie ma sprawy. Do zobaczenia w obozie.
 	AI_TurnToNpc(self, ork);

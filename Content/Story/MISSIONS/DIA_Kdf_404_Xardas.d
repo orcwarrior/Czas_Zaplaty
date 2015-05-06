@@ -353,7 +353,7 @@ func void  Info_Xardas_LOADSWORD09_Info()
 	}
 	else 
 	{
-		AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_07"); 	//Jeszcze nie. Jesteœ zdolny, ale brak ci niezbêdnego doœwiadczenia. Niech Saturas popracuje nad tob¹ przez jakiœ czas. Wtedy zobaczymy.
+		AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_07"); 	//Jeszcze nie. Jesteœ zdolny, ale brak ci niezbêdnego doœwiadczenia. Niech Saturas popracuje nad Tob¹ przez jakiœ czas. Wtedy zobaczymy.
 		
 		B_StopProcessInfos	( self );
 	};

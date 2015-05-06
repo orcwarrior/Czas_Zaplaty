@@ -215,7 +215,7 @@ FUNC VOID DIA_Snaf_AfterGo_Info()
 	AI_TurnToNpc(self, Snf_Molerat1);
 	AI_Output (self, other,"DIA_Snaf_AfterGo_01_02"); //Macie siê s³uchaæ i nie ¿reæ piekielników!
 	AI_TurnToNpc(self, other);
-	AI_Output (self, other,"DIA_Snaf_AfterGo_01_03"); //W porz¹dku, pójd¹ za tob¹. Tylko siê nimi dobrze opiekuj.
+	AI_Output (self, other,"DIA_Snaf_AfterGo_01_03"); //W porz¹dku, pójd¹ za Tob¹. Tylko siê nimi dobrze opiekuj.
 	AI_Output (self, other,"DIA_Snaf_AfterGo_01_04"); //Aha. Jak znajdziesz moj¹ warzechê, to dorzucê coœ ekstra.
 	snaf_help = TRUE;
 	snaf_help_no=false;
@@ -445,7 +445,7 @@ FUNC VOID DIA_Snaf_Spy1_Info()
 	if (tony_spy == 12)
 	{
 		tony_spy = tony_spy + 1;
-		AI_Output (self, other, "DIA_Spy1_11_20"); //Cavalorn o ciebie pyta³, nie daj mu czekaæ.
+		AI_Output (self, other, "DIA_Spy1_11_20"); //Cavalorn o Ciebie pyta³, nie daj mu czekaæ.
 		B_LogEntry		(CH2_Rbl_Spy, "Cavalorn o mnie pyta³, powinienem siê z nim zobaczyæ.");
 	};
 
@@ -557,7 +557,7 @@ FUNC VOID DIA_Snaf_Molerats_Info()
 	AI_Output (self, other, "DIA_Snaf_Molerats_07_06"); //Wiem, ¿e lubisz dobrze zjeœæ. A ja potrzebujê miêsa i w¹troby tych spasionych bydlaków.
 	AI_Output (other, self, "DIA_Snaf_Molerats_15_07"); //To idŸ do zagrody i je zaszlachtuj.
 	AI_Output (self, other, "DIA_Snaf_Molerats_07_08"); //Ekhm... W tym w³aœnie problem. One zrobi³y siê bardzo du¿e i wredne.
-	AI_Output (other, self, "DIA_Snaf_Molerats_15_09"); //Dobra, dobra. Mam je dla ciebie zabiæ, tak?
+	AI_Output (other, self, "DIA_Snaf_Molerats_15_09"); //Dobra, dobra. Mam je dla Ciebie zabiæ, tak?
 	AI_Output (self, other, "DIA_Snaf_Molerats_07_10"); //Dok³adnie! W podziêce nauczê Ciê jak przyrz¹dzaæ pyszn¹ potrawkê z kretoszczurów.
 	AI_Output (self, other, "DIA_Snaf_Molerats_07_11"); //Zgadzasz siê?
 };

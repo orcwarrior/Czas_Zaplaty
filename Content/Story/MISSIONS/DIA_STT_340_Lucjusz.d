@@ -27,7 +27,7 @@ FUNC VOID DIA_Luc_Hello_Info()
 	AI_TurnToNpc(other, self);
 	AI_Output (self, other, "DIA_Luc_Hello_12_01"); //Co to za przystojniak?!
 	AI_GotoNpc(self, other);
-	AI_Output (self, other, "DIA_Luc_Hello_12_02"); //Ale z ciebie ciacho!
+	AI_Output (self, other, "DIA_Luc_Hello_12_02"); //Ale z Ciebie ciacho!
 	AI_Output (other, self, "DIA_Luc_Hello_15_03"); //O czym Ty mówisz?
 	AI_Output (self, other, "DIA_Luc_Hello_12_04"); //Nie udawaj, ¿e nie wiesz. Z takim ty³eczkiem zajdziesz daleko...
 	AI_Output (other, self, "DIA_Luc_Hello_15_05"); //Ekhm... Chyba muszê coœ za³atwiæ. 
@@ -100,7 +100,7 @@ FUNC VOID DIA_Luc_Draw_Info()
 {
 	AI_Output (self, other, "DIA_Luc_Draw_12_01"); //Gdzie siê podziewa³eœ, cukiereczku?
 	AI_Output (other, self, "DIA_Luc_Draw_15_02"); //To tu, to tam. Skoñczy³eœ rysunek?
-	AI_Output (self, other, "DIA_Luc_Draw_12_03"); //Przed chwileczk¹. Oto twój kobiecy akt.
+	AI_Output (self, other, "DIA_Luc_Draw_12_03"); //Przed chwileczk¹. Oto Twój kobiecy akt.
 
 	CreateInvItems (self,akt,1);
 	B_GiveInvItems (self, other, akt, 1);

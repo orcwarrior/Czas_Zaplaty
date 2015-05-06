@@ -81,10 +81,10 @@ FUNC VOID Info_Saturas_Ornament_Info()
 	AI_Output(other, self, "Info_Saturas_Ornament_15_06"); //Powiedzmy, ¿e Lee bardzo przekonuj¹co prosi³ o pomoc.
 	AI_Output(self, other,"Info_Saturas_Ornament_14_07"); //Skoñczmy tê rozmowê. IdŸ do Nefariusa, przygotowa³ mapê z zaznaczon¹ lokalizacj¹ kolejnego ornamentu.
 	AI_Output(self, other,"Info_Saturas_Ornament_14_08"); //Raporty z poszukiwañ sk³adaj Cronosowi. Je¿eli potrzebujesz jakiegoœ ekwipunku, to on tak¿e Ci w tym pomo¿e.
-	AI_Output(self, other,"Info_Saturas_Ornament_14_09"); //A teraz zejdŸ mi z oczu, bo tracê przez ciebie cenny czas.
+	AI_Output(self, other,"Info_Saturas_Ornament_14_09"); //A teraz zejdŸ mi z oczu, bo tracê przez Ciebie cenny czas.
 	AI_Output(other, self, "Info_Saturas_Ornament_15_10"); //Jeszcze jedno.
 	AI_Output(self, other,"Info_Saturas_Ornament_14_11"); //Mów!
-	AI_Output(other, self, "Info_Saturas_Ornament_15_12"); //Kawa³ z ciebie bezdusznego sukinsyna!
+	AI_Output(other, self, "Info_Saturas_Ornament_15_12"); //Kawa³ z Ciebie bezdusznego sukinsyna!
 	AI_Output(self, other,"Info_Saturas_Ornament_14_13"); //To co robiê, robiê tylko i wy³¹cznie dla zachowania równowagi. Œmieræ kilku œmiertelników to znikoma cena za to, czemu mo¿e zdo³amy zapobiec w przysz³oœci.
 	AI_Output(self, other,"Info_Saturas_Ornament_14_14"); //A teraz precz z moich oczu! Nastêpnym razem zamieniê Ciê w bry³ê lodu!
 	B_LogEntry(CH3_NON_Ornament, "Rozmowa z Saturasem nie by³a zbyt przyjemna. Od Nefariusa otrzymam kolejn¹ mapê. Raport z poszukiwañ mam sk³adaæ Cronosowi, tak¿e od niego bêdê móg³ coœ kupiæ. Widaæ, ¿e Saturas jest gotów zap³aciæ ka¿d¹ cenê za odnalezienie ornamentów.");

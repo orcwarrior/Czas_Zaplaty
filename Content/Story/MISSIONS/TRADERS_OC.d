@@ -240,7 +240,7 @@ FUNC int  Info_EBR_Bartholo_TRADE_Condition()
 };
 func void  Info_EBR_Bartholo_TRADE_Info()
 {
-	AI_Output (other, self,"DIA_EBR_Bartholo_TRADE_Info_15_01"); //Chcê dobiæ z tob¹ targu.
+	AI_Output (other, self,"DIA_EBR_Bartholo_TRADE_Info_15_01"); //Chcê dobiæ z Tob¹ targu.
 	AI_Output (self, other,"DIA_EBR_Bartholo_TRADE_Info_07_02"); //Mam sporo ciekawych rzeczy - jeœli masz wystarczaj¹co du¿o rudy.
 	
    if(!Bartholo_TradeInvGiven)

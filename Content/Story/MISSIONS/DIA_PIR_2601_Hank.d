@@ -356,7 +356,7 @@ INSTANCE DIA_PIR_2601_Hank_Stew (C_INFO)
 	information		= DIA_PIR_2601_Hank_Stew_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "Mam dla ciebie gulasz."; 
+	description		= "Mam dla Ciebie gulasz."; 
 };
 
 FUNC INT DIA_PIR_2601_Hank_Stew_Condition()
@@ -371,7 +371,7 @@ FUNC VOID DIA_PIR_2601_Hank_Stew_Info()
 {
 	fox_stew += 1;
    
-	AI_Output (other, self, "DIA_PIR_2601_Hank_Stew_15_01"); //Mam dla ciebie gulasz.
+	AI_Output (other, self, "DIA_PIR_2601_Hank_Stew_15_01"); //Mam dla Ciebie gulasz.
 	AI_Output (self, other, "DIA_PIR_2601_Hank_Stew_11_02"); //Dobra, daj mi go. Przynajmniej zaspokojê swój g³ód.
 	
    B_GiveInvItems (other, self, ItFo_Stew, 1);

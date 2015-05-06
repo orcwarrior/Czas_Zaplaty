@@ -154,7 +154,7 @@ FUNC VOID DIA_Sher_Hlp_Info()
 {
 	AI_Output (other, self, "DIA_Sher_Hlp_15_01"); //Potrzebujê Twojej pomocy.
 	AI_Output (self, other, "DIA_Sher_Hlp_11_02"); //Co siê sta³o?
-	AI_Output (other, self, "DIA_Sher_Hlp_15_03"); //Bêdê z tob¹ szczery. Przyby³em tu, aby nak³oniæ Torlofa do przy³¹czenia siê...
+	AI_Output (other, self, "DIA_Sher_Hlp_15_03"); //Bêdê z Tob¹ szczery. Przyby³em tu, aby nak³oniæ Torlofa do przy³¹czenia siê...
 	AI_Output (self, other, "DIA_Sher_Hlp_11_04"); //Wiem po co tu przyby³eœ, piracie.
 	AI_Output (other, self, "DIA_Sher_Hlp_15_05"); //Przecie¿ nikt z kopalni nie wie o tym, kim kiedyœ by³em.
 	AI_Output (self, other, "DIA_Sher_Hlp_11_06"); //Zdradzi³ Ciê chód. Z regu³y zwyczajnych marynarzy nie wtr¹caj¹ do Kolonii, wiêc zaryzykowa³em stwierdzenie, ¿e jesteœ korsarzem. Jak widaæ trafne.

@@ -649,7 +649,7 @@ FUNC VOID RBL_2604_Tony_Guard_Yes()
 	// (Tony wczesniej rozpoczyna³ nam misje z warta bez wzgledu na pore dnia
 	// obecnie zaczyna sie w poprawionym kolejnym dialogu z uwzglednieniem daty (rutyna tonego takze zmieniona))
 	AI_Output (self, other,"RBL_2604_Tony_Guard_Yes_Info_07_04"); //Moja warta rozpocznie siê w nocy.
-	AI_Output (self, other,"RBL_2604_Tony_Guard_Yes_Info_07_05"); //Bêdê na ciebie czeka³.
+	AI_Output (self, other,"RBL_2604_Tony_Guard_Yes_Info_07_05"); //Bêdê na Ciebie czeka³.
 	Log_CreateTopic	(CH1_Rbl_TonyGuard, LOG_MISSION);
 	B_LogSetTopicStatus	(CH1_Rbl_TonyGuard, LOG_RUNNING);
 	B_LogEntry		(CH1_Rbl_TonyGuard, "¯eby zostaæ jednym z rebeliantów zgodzi³em siê stan¹æ za Toniego na warcie w nocy. Muszê dotrwaæ do rana, inaczej Tony mo¿e mieæ nieprzyjemnoœci, a ja nie zdobêdê jego poparcia.");

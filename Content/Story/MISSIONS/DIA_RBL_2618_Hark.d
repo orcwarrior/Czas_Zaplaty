@@ -282,7 +282,7 @@ FUNC VOID DIA_Hark_fight_in_tavern_Info()
 		B_GiveXP (200);
 		
       AI_Output (self, other, "DIA_Hark_fight_in_tavern_11_06"); //Cholera! Pokona³eœ mnie!
-		AI_Output (self, other, "DIA_Hark_fight_in_tavern_15_07"); //Mo¿e coœ z ciebie bêdzie. Zobaczymy...
+		AI_Output (self, other, "DIA_Hark_fight_in_tavern_15_07"); //Mo¿e coœ z Ciebie bêdzie. Zobaczymy...
 		
       B_LogEntry(CH1_Rbl_Hark, "Pokona³em Harka.");
       B_LogSetTopicStatus(CH1_Rbl_Hark, LOG_SUCCESS);

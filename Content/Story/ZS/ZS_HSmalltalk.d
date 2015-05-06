@@ -105,7 +105,7 @@ func void ZS_HSmalltalk_Loop()
     	}
     	else if (talktime < 50)
     	{
-    		AI_Output (self,NULL,"ZS_HSmalTalk_Text10");//S³ysza³eœ nasi zabili Pi¹tke sta¿ników jednak niektórzy maj¹ talent! A co u ciebie?
+    		AI_Output (self,NULL,"ZS_HSmalTalk_Text10");//S³ysza³eœ? Nasi zabili pi¹tkê sta¿ników, jednak niektórzy maj¹ talent! A co u ciebie?
     	}
     	else if (talktime < 55)
     	{

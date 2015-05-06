@@ -62,7 +62,7 @@ instance Info_Nabil_Kuva (C_INFO)
 	information	=	Info_Nabil_Kuva_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "To twój wywar?"; 
+	description		= "To Twój wywar?"; 
 };                       
 
 FUNC int  Info_Nabil_Kuva_Condition()
@@ -81,7 +81,7 @@ FUNC VOID  Info_Nabil_Kuva_Info()
 	var C_NPC kuv; kuv = Hlp_GetNpc(RBL_4123_Kuva);
 	Npc_ChangeAttribute	(kuv, ATR_HITPOINTS, -kuv.attribute[ATR_HITPOINTS_MAX]);
 
-	AI_Output (other, self,"Info_Nabil_Kuva_15_00"); //To twój wywar?
+	AI_Output (other, self,"Info_Nabil_Kuva_15_00"); //To Twój wywar?
 	AI_Output (self, other,"Info_Nabil_Kuva_04_01"); //Mo¿e i mój. 
 	AI_Output (other, self,"Info_Nabil_Kuva_15_03"); //Dlaczego zamkn¹³eœ Kuvê?
 	AI_Output (self, other,"Info_Nabil_Kuva_04_04"); //A dlaczego ogieñ parzy?

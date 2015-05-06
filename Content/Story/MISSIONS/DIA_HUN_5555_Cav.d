@@ -80,7 +80,7 @@ FUNC VOID DIA_Cav_Dungeon_Info()
    AI_Output (self, other, "DIA_Cav_Dungeon_12_01"); //Twoi kompani zostali na górze, os³aniaj¹ nasze plecy.
    AI_Output (hero, self, "DIA_Cav_Dungeon_15_02"); //Randka we dwoje?
    AI_Output (self, other, "DIA_Cav_Dungeon_12_03"); //Mniej wiêcej. Widzia³em jak Gomez zszed³ na dó³. Co ty na to, ¿eby dopaœæ tego szczura?
-   AI_Output (hero, self, "DIA_Cav_Dungeon_15_04"); //Tylko ten skurwiel stoi miêdzy mn¹ a ucieczk¹ z tego szamba. Bêdê tu¿ za tob¹.   
+   AI_Output (hero, self, "DIA_Cav_Dungeon_15_04"); //Tylko ten skurwiel stoi miêdzy mn¹ a ucieczk¹ z tego szamba. Bêdê tu¿ za Tob¹.   
    AI_Output (self, other, "DIA_Cav_Dungeon_12_05"); //Tylko ostro¿nie, nie podoba mi siê to miejsce. Miej oczy szeroko otwarte.
    
    B_LogEntry(CH6_RBL_PayDay, "Podziemia cuchn¹ truposzami, musimy zachowaæ ostro¿noœæ, ¿eby nie zostaæ tu na zawsze.");

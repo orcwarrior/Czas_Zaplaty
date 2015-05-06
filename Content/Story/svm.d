@@ -291,7 +291,7 @@ instance SVM_1 (C_SVM)	//Malocher (Volk, Schürfer)	Nörgler, Alkoholiker, schimpf
 	IWillTeachYouRespectForForeignProperty	=	"SVM_1_IWillTeachYouRespectForForeignProperty"	;//Ostrzega³em ciê, ¿ebyœ trzyma³ ³apy z dala od moich rzeczy!
 	DirtyThief					=	"SVM_1_DirtyThief"					;//Zap³acisz mi za to, z³odzieju!
 	YouAttackedMyCharge			=	"SVM_1_YouAttackedMyCharge"			;//Nikt nie bêdzie podskakiwa³ moim kumplom!
-	YouKilledOneOfUs			=	"SVM_1_YouKilledOneOfUs"			;//Powali³eœ jednego z naszych. Teraz ja ROZWALÊ ciebie!
+	YouKilledOneOfUs			=	"SVM_1_YouKilledOneOfUs"			;//Powali³eœ jednego z naszych. Teraz ja ROZWALÊ Ciebie!
 	Dead						=	"SVM_1_Dead"						;//Aaaaaarg!
 	Aargh_1						=	"SVM_1_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_1_Aargh_2"						;//Aargh
@@ -342,7 +342,7 @@ instance SVM_1 (C_SVM)	//Malocher (Volk, Schürfer)	Nörgler, Alkoholiker, schimpf
 	HeyYou						=	"SVM_1_HeyYou"						;//Hej, ty!
 	NotNow						=	"SVM_1_NotNow"						;//Nie teraz!
 	WhatDoYouWant				=	"SVM_1_WhatDoYouWant"				;//Czego chcesz?
-	ISaidWhatDoYouWant			=	"SVM_1_ISaidWhatDoYouWant"			;//Co mogê dla ciebie zrobiæ?
+	ISaidWhatDoYouWant			=	"SVM_1_ISaidWhatDoYouWant"			;//Co mogê dla Ciebie zrobiæ?
 	MakeWay						=	"SVM_1_MakeWay"						;//Przepuœæ mnie!
 	OutOfMyWay					=	"SVM_1_OutOfMyWay"					;//ZejdŸ mi z drogi, cz³owieku!
 	YouDeafOrWhat				=	"SVM_1_YouDeafOrWhat"				;//G³uchy jesteœ? RUSZ SIÊ!!!
@@ -356,7 +356,7 @@ instance SVM_1 (C_SVM)	//Malocher (Volk, Schürfer)	Nörgler, Alkoholiker, schimpf
 	TheyKilledMyFriend			=	"SVM_1_TheyKilledMyFriend"			;//Za³atwili jednego z naszych. Jak dorwê tego, co to zrobi³...
 	YouDisturbedMySlumber		=	"SVM_1_YouDisturbedMySlumber"		;//Cholera, czemu mnie budzisz?
 	SuckerGotSome				=	"SVM_1_SuckerGotSome"				;//Dosta³eœ baty? Nale¿a³o ci siê!
-	SuckerDefeatedEBr			=	"SVM_1_SuckerDefeatedEBr"			;//Pobi³eœ Magnata! Jest na ciebie wœciek³y!
+	SuckerDefeatedEBr			=	"SVM_1_SuckerDefeatedEBr"			;//Pobi³eœ Magnata! Jest na Ciebie wœciek³y!
 	SuckerDefeatedGur			=	"SVM_1_SuckerDefeatedGur"			;//Powali³eœ Guru. Zdajesz siê przyci¹gaæ k³opoty jak magnes!
 	SuckerDefeatedMage			=	"SVM_1_SuckerDefeatedMage"			;//Pokona³eœ maga. To nie by³ najlepszy pomys³...
 	SuckerDefeatedNov_Guard		= 	"SVM_1_SuckerDefeatedNov_Guard"		;//Nie mo¿esz tak po prostu biæ Nowicjuszy!
@@ -425,7 +425,7 @@ instance SVM_2 (C_SVM)				// Misstrauisch
 	YouStillNotHaveEnough		=	"SVM_2_YouStillNotHaveEnough"		;//Wci¹¿ nie masz doœæ?
 	YouAskedForIt				=	"SVM_2_YouAskedForIt"				;//Có¿, skoro tego chcesz!
 	NowWaitIntruder				= 	"SVM_2_NowWaitIntruder"				;//Wiesz, ¿e nie masz tu czego szukaæ!
-	IWillTeachYouRespectForForeignProperty	=	"SVM_2_IWillTeachYouRespectForForeignProperty"	;//Trzymaj ³apy z dala o rzeczy, które nie nale¿¹ do ciebie!
+	IWillTeachYouRespectForForeignProperty	=	"SVM_2_IWillTeachYouRespectForForeignProperty"	;//Trzymaj ³apy z dala o rzeczy, które nie nale¿¹ do Ciebie!
 	DirtyThief					=	"SVM_2_DirtyThief"					;//Okrad³eœ mnie! Nie darujê ci tego!
 	YouAttackedMyCharge			=	"SVM_2_YouAttackedMyCharge"			;//Nikt nie bêdzie podskakiwa³ moim ch³opcom!
 	YouKilledOneOfUs			=	"SVM_2_YouKilledOneOfUs"			;//Zabi³eœ jednego z nas! Zap³acisz za to!
@@ -479,7 +479,7 @@ instance SVM_2 (C_SVM)				// Misstrauisch
 	HeyYou						=	"SVM_2_HeyYou"						;//Hej, ty!
 	NotNow						=	"SVM_2_NotNow"						;//Nie teraz!
 	WhatDoYouWant				=	"SVM_2_WhatDoYouWant"				;//Czego chcesz?
-	ISaidWhatDoYouWant			=	"SVM_2_ISaidWhatDoYouWant"			;//Co mogê dla ciebie zrobiæ?
+	ISaidWhatDoYouWant			=	"SVM_2_ISaidWhatDoYouWant"			;//Co mogê dla Ciebie zrobiæ?
 	MakeWay						=	"SVM_2_MakeWay"						;//Przepuœæ mnie!
 	OutOfMyWay					=	"SVM_2_OutOfMyWay"					;//ZejdŸ mi z drogi!
 	YouDeafOrWhat				=	"SVM_2_YouDeafOrWhat"				;//Z³aŸ mi z drogi, albo oberwiesz w ucho!
@@ -587,7 +587,7 @@ instance SVM_3 (C_SVM)				 // Depressiv (Resigniert. Menschliches Gemüse."Ich sc
 	WhatsThisSupposedToBe		=	"SVM_3_WhatsThisSupposedToBe"		;//Przestañ siê tak skradaæ!
 	WhyAreYouInHere				=	"SVM_3_WhyYouAreInHere"				;//Spadaj z mojej chaty, albo wezwê stra¿!
 	WhatDidYouInThere			=	"SVM_3_WhatDidYouInThere"			;//Co ty wyprawiasz? Jak ciê dorwê bêdziesz martwy!
-	WiseMove					=	"SVM_3_WiseMove"					;//A! Czyli jednak wiesz, co dla ciebie dobre!
+	WiseMove					=	"SVM_3_WiseMove"					;//A! Czyli jednak wiesz, co dla Ciebie dobre!
 	Alarm						=	"SVM_3_Alarm"						;//Stra¿! Tutaj!
 	IntruderAlert				= 	"SVM_3_IntruderAlert"				;//ALARM!!
 	BehindYou					=	"SVM_3_BehindYou"					;//Uwaga!
@@ -615,7 +615,7 @@ instance SVM_3 (C_SVM)				 // Depressiv (Resigniert. Menschliches Gemüse."Ich sc
 	HeyYou						=	"SVM_3_HeyYou"						;//Hej, ty!
 	NotNow						=	"SVM_3_NotNow"						;//Nie teraz!
 	WhatDoYouWant				=	"SVM_3_WhatDoYouWant"				;//Czego sobie ¿yczysz?
-	ISaidWhatDoYouWant			=	"SVM_3_ISaidWhatDoYouWant"			;//Co mogê dla ciebie zrobiæ?
+	ISaidWhatDoYouWant			=	"SVM_3_ISaidWhatDoYouWant"			;//Co mogê dla Ciebie zrobiæ?
 	MakeWay						=	"SVM_3_MakeWay"						;//ZejdŸ mi z drogi!
 	OutOfMyWay					=	"SVM_3_OutOfMyWay"					;//Z³aŸ mi z drogi, cz³owieku!
 	YouDeafOrWhat				=	"SVM_3_YouDeafOrWhat"				;//Ile razy mam ci powtarzaæ? ZejdŸ mi z drogi!
@@ -631,7 +631,7 @@ instance SVM_3 (C_SVM)				 // Depressiv (Resigniert. Menschliches Gemüse."Ich sc
 	SuckerGotSome				=	"SVM_3_SuckerGotSome"				;//Nale¿a³o ci siê porz¹dne lanie!
 	SuckerDefeatedEBr			=	"SVM_3_SuckerDefeatedEBr"			;//Pokona³eœ Magnata! Szukasz k³opotów, co?
 	SuckerDefeatedGur			=	"SVM_3_SuckerDefeatedGur"			;//Pokona³eœ jednego z Guru. Nigdy ci tego nie zapomn¹!
-	SuckerDefeatedMage			=	"SVM_3_SuckerDefeatedMage"			;//Zwyciêstwo nad magiem œci¹gnie na ciebie nie lada k³opoty!
+	SuckerDefeatedMage			=	"SVM_3_SuckerDefeatedMage"			;//Zwyciêstwo nad magiem œci¹gnie na Ciebie nie lada k³opoty!
 	SuckerDefeatedNov_Guard		= 	"SVM_3_SuckerDefeatedNov_Guard"		;//Nastêpnym razem lepiej zostaw Nowicjuszy w spokoju.
 	SuckerDefeatedVlk_Guard		= 	"SVM_3_SuckerDefeatedVlk_Guard"		;//Rusz tylko któregoœ z Kopaczy, a nie dadz¹ ci spokoju do koñca ¿ycia!
 	YouDefeatedMyComrade		=	"SVM_3_YouDefeatedMyComrade"		;//Pobi³eœ mojego kumpla...
@@ -650,7 +650,7 @@ instance SVM_3 (C_SVM)				 // Depressiv (Resigniert. Menschliches Gemüse."Ich sc
 	YouKilledNCfolk				=	"SVM_3_YouKilledNCfolk"				;//Nowy Obóz poniós³ niepowetowan¹ stratê, i wygl¹da na to, ¿e macza³eœ w tym palce!
 	YouKilledPSIfolk			=	"SVM_3_YouKilledPSIfolk"			;//Bractwo utraci³o jednego z wiernych, i to ty masz go na sumieniu!
 	GetThingsRight				=	"SVM_3_GetThingsRight"				;//Nie ³atwo bêdzie to teraz odkrêciæ!
-	YouDefeatedMeWell			=	"SVM_3_YouDefeatedMeWell"			;//To by³a uczciwa walka! Nie mam do ciebie ¿alu, ¿e mnie powali³eœ!
+	YouDefeatedMeWell			=	"SVM_3_YouDefeatedMeWell"			;//To by³a uczciwa walka! Nie mam do Ciebie ¿alu, ¿e mnie powali³eœ!
 	Smalltalk01					=	"SVM_3_Smalltalk01"					;// ... jeœli myœlisz, ¿e ...
 	Smalltalk02					=	"SVM_3_Smalltalk02"					;// ... mo¿e ...
 	Smalltalk03					=	"SVM_3_Smalltalk03"					;// ... to nie by³o zbyt m¹dre ...
@@ -820,7 +820,7 @@ instance SVM_5 (C_SVM)				//Lebenskünstler, offen, Fröhlich. humorvoller Verarsc
 	WeaponDown					=	"SVM_5_WeaponDown"					;//Co chcesz zrobiæ z t¹ broni¹, cz³owieku?!
 	ISaidWeaponDown				=	"SVM_5_ISaidWeaponDown"				;//No ju¿, schowaj tê broñ!
 	WatchYourAim				=	"SVM_5_WatchYourAim"				;//Przestañ we mnie celowaæ, ba³wanie!
-	WatchYourAimAngry			=	"SVM_5_WatchYourAimAngry"			;//Jak natychmiast nie przestaniesz, zrobiê z ciebie kotlety!
+	WatchYourAimAngry			=	"SVM_5_WatchYourAimAngry"			;//Jak natychmiast nie przestaniesz, zrobiê z Ciebie kotlety!
 	WhatAreYouDoing				=	"SVM_5_WhatAreYouDoing"				;//Hej, œlepy jesteœ, czy co?
 	LetsForgetOurLittleFight	=	"SVM_5_LetsForgetOurLittleFight"	;//Mo¿e zapomnijmy o naszej ma³ej sprzeczce, dobra?
 	Strange						=	"SVM_5_Strange"						;//Ale by³ tutaj chwilê temu?! Dziwne! 
@@ -833,7 +833,7 @@ instance SVM_5 (C_SVM)				//Lebenskünstler, offen, Fröhlich. humorvoller Verarsc
 	IWillTeachYouRespectForForeignProperty	=	"SVM_5_IWillTeachYouRespectForForeignProperty"	;//Ostrzega³em ciê! Jak bêdziesz grzeba³ w moich rzeczach, dostaniesz po ³apach!
 	DirtyThief					=	"SVM_5_DirtyThief"					;//Ty z³odzieju! Ja ci poka¿ê!
 	YouAttackedMyCharge			=	"SVM_5_YouAttackedMyCharge"			;//Zadzieranie z moimi ch³opakami nie wyjdzie ci na dobre!
-	YouKilledOneOfUs			=	"SVM_5_YouKilledOneOfUs"			;//Zabi³eœ jednego z moich ludzi. Teraz ja zabijê ciebie!
+	YouKilledOneOfUs			=	"SVM_5_YouKilledOneOfUs"			;//Zabi³eœ jednego z moich ludzi. Teraz ja zabijê Ciebie!
 	Dead						=	"SVM_5_Dead"					;//Aaarg!
 //	Aargh_1						=	"SVM_5_Aargh_1"						;//Aargh
 //	Aargh_2						=	"SVM_5_Aargh_2"						;//Aargh
@@ -958,7 +958,7 @@ instance SVM_6 (C_SVM)				//Raufbold	(Will saufen und raufen	(Matrose) Alkoholik
 	WhatAreYouDoing				=	"SVM_6_WhatAreYouDoing"				;//Hej! Uwa¿aj!
 	LetsForgetOurLittleFight	=	"SVM_6_LetsForgetOurLittleFight"	;//Hej, stary! Zapomnijmy o tej sprzeczce, dobra?
 	Strange						=	"SVM_6_Strange"						;//Wy³aŸ! Poka¿ siê!
-	DieMonster					=	"SVM_6_DieMonster"					;//Zrobiê z ciebie kotlety, ty wieprzu!
+	DieMonster					=	"SVM_6_DieMonster"					;//Zrobiê z Ciebie kotlety, ty wieprzu!
 	DieMortalEnemy				=	"SVM_6_DieMortalEnemy"				;//Ju¿ po tobie!
 	NowWait						=	"SVM_6_NowWait"						;//Teraz dostaniesz baty...
 	YouStillNotHaveEnough		=	"SVM_6_YouStillNotHaveEnough"		;//Widzê, ¿e chcesz koniecznie dostaæ w ³eb!
@@ -967,7 +967,7 @@ instance SVM_6 (C_SVM)				//Raufbold	(Will saufen und raufen	(Matrose) Alkoholik
 	IWillTeachYouRespectForForeignProperty	=	"SVM_6_IWillTeachYouRespectForForeignProperty"	;//Ostrzega³em ciê! Jak bêdziesz grzeba³ w moich rzeczach, dostaniesz po ³apach!
 	DirtyThief					=	"SVM_6_DirtyThief"					;//Ty z³odzieju! Ja ci poka¿ê!
 	YouAttackedMyCharge			=	"SVM_6_YouAttackedMyCharge"			;//Nikt nie bêdzie podskakiwa³ moim ch³opcom!
-	YouKilledOneOfUs			=	"SVM_6_YouKilledOneOfUs"			;//Zabi³eœ jednego z moich ludzi. Teraz ja zabijê ciebie!
+	YouKilledOneOfUs			=	"SVM_6_YouKilledOneOfUs"			;//Zabi³eœ jednego z moich ludzi. Teraz ja zabijê Ciebie!
 	Dead						=	"SVM_6_Dead"						;//Aaarg!
 	Aargh_1						=	"SVM_6_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_6_Aargh_2"						;//Aargh
@@ -1031,7 +1031,7 @@ instance SVM_6 (C_SVM)				//Raufbold	(Will saufen und raufen	(Matrose) Alkoholik
 	TheyKilledMyFriend			=	"SVM_6_TheyKilledMyFriend"			;//Dorwali jednego z naszych. Jak siê dowiem, kto to zrobi³...
 	YouDisturbedMySlumber		=	"SVM_6_YouDisturbedMySlumber"		;//Do diab³a! Czemu mnie obudzi³eœ?!
 	SuckerGotSome				=	"SVM_6_SuckerGotSome"				;//Dosta³eœ têgie baty? Nale¿a³o ci siê!
-	SuckerDefeatedEBr			=	"SVM_6_SuckerDefeatedEBr"			;//Pobi³eœ Magnata. Jest na ciebie wœciek³y.
+	SuckerDefeatedEBr			=	"SVM_6_SuckerDefeatedEBr"			;//Pobi³eœ Magnata. Jest na Ciebie wœciek³y.
 	SuckerDefeatedGur			=	"SVM_6_SuckerDefeatedGur"			;//Pokona³eœ Guru! Chyba przyci¹gasz k³opoty jak jakiœ magnes!
 	SuckerDefeatedMage			=	"SVM_6_SuckerDefeatedMage"			;//Pokonaæ maga... chyba jesteœ niespe³na rozumu!
 	SuckerDefeatedNov_Guard		= 	"SVM_6_SuckerDefeatedNov_Guard"		;//Nie mo¿esz tak po prostu atakowaæ Nowicjuszy!
@@ -1151,7 +1151,7 @@ instance SVM_7 (C_SVM)				//Freak, Aggressiv. Spielt mit seiner Macht. Sadist. O
 	HeyYou						=	"SVM_7_HeyYou"						;//Hej, ty
 	NotNow						=	"SVM_7_NotNow"						;//Nie teraz!
 	WhatDoYouWant				=	"SVM_7_WhatDoYouWant"				;//Czego ode mnie chcesz?
-	ISaidWhatDoYouWant			=	"SVM_7_ISaidWhatDoYouWant"			;//Co mogê dla ciebie zrobiæ?
+	ISaidWhatDoYouWant			=	"SVM_7_ISaidWhatDoYouWant"			;//Co mogê dla Ciebie zrobiæ?
 	MakeWay						=	"SVM_7_MakeWay"						;//Przepuœæ mnie.
 	OutOfMyWay					=	"SVM_7_OutOfMyWay"					;//ZejdŸ mi z drogi!
 	YouDeafOrWhat				=	"SVM_7_YouDeafOrWhat"				;//Szukasz k³opotów? Wynoœ siê st¹d!
@@ -1165,7 +1165,7 @@ instance SVM_7 (C_SVM)				//Freak, Aggressiv. Spielt mit seiner Macht. Sadist. O
 	TheyKilledMyFriend			=	"SVM_7_TheyKilledMyFriend"			;//Poleg³ jeden z naszych! Musimy go pomœciæ.
 	YouDisturbedMySlumber		=	"SVM_7_YouDisturbedMySlumber"		;//Dlaczego mnie obudzi³eœ?
 	SuckerGotSome				=	"SVM_7_SuckerGotSome"				;//Nale¿a³o ci siê porz¹dne lanie!
-	SuckerDefeatedEBr			=	"SVM_7_SuckerDefeatedEBr"			;//Pobi³eœ Magnata. Jest na ciebie wœciek³y.
+	SuckerDefeatedEBr			=	"SVM_7_SuckerDefeatedEBr"			;//Pobi³eœ Magnata. Jest na Ciebie wœciek³y.
 	SuckerDefeatedGur			=	"SVM_7_SuckerDefeatedGur"			;//Pokona³eœ Guru! Przyci¹gasz k³opoty jak jakiœ magnes!
 	SuckerDefeatedMage			=	"SVM_7_SuckerDefeatedMage"			;//Pokona³eœ maga! To nie by³ najlepszy sposób!
 	SuckerDefeatedNov_Guard		= 	"SVM_7_SuckerDefeatedNov_Guard"		;//A wiêc to ty nie dajesz spokoju Nowicjuszom!
@@ -1233,7 +1233,7 @@ instance SVM_8 (C_SVM)				// Elite-Garde. Ultra-cool. Pflichtbewusst, ernst, nüc
 	YouAskedForIt				=	"SVM_8_YouAskedForIt"				;//Kto nie chce s³uchaæ, musi poczuæ!
 	NowWaitIntruder				= 	"SVM_8_NowWaitIntruder"				;//Œmiesz siê tu pokazywaæ? Czekaj ty...
 	IWillTeachYouRespectForForeignProperty	=	"SVM_8_IWillTeachYouRespectForForeignProperty"	;//Chyba ktoœ musi ci wreszcie daæ po ³apach.
-	DirtyThief					=	"SVM_8_DirtyThief"					;//Lepiej by by³o dla ciebie, gdybyœ tego nie ukrad³!
+	DirtyThief					=	"SVM_8_DirtyThief"					;//Lepiej by by³o dla Ciebie, gdybyœ tego nie ukrad³!
 	YouAttackedMyCharge			=	"SVM_8_YouAttackedMyCharge"			;//Nikt nie bêdzie podskakiwa³ moim ch³opcom!
 	YouKilledOneOfUs			=	"SVM_8_YouKilledOneOfUs"			;//Zabi³eœ jednego z naszych! To by³ twój ostatni b³¹d!
 	Dead						=	"SVM_8_Dead"						;//Aaarg!
@@ -1253,7 +1253,7 @@ instance SVM_8 (C_SVM)				// Elite-Garde. Ultra-cool. Pflichtbewusst, ernst, nüc
 	HandsOff					=	"SVM_8_HandsOff"					;//£apy precz!
 	GetOutOfHere				=	"SVM_8_GetOutOfHere"				;//Precz st¹d!
 	YouViolatedForbiddenTerritory=	"SVM_8_YouViolatedForbiddenTerritory";//Jak siê tu dosta³eœ?
-	YouWannaFoolMe				=	"SVM_8_YouWannaFoolMe"				;//Ma³y spryciarz z ciebie, co?
+	YouWannaFoolMe				=	"SVM_8_YouWannaFoolMe"				;//Ma³y spryciarz z Ciebie, co?
 	WhatsThisSupposedToBe		=	"SVM_8_WhatsThisSupposedToBe"		;//Hej, ty! Czemu siê tak skradasz?
 	WhyAreYouInHere				=	"SVM_8_WhyYouAreInHere"				;//Zmykaj st¹d, albo wezwê stra¿e!
 	WhatDidYouInThere			=	"SVM_8_WhatDidYouInThere"			;//Czego tu szuka³eœ?
@@ -1285,7 +1285,7 @@ instance SVM_8 (C_SVM)				// Elite-Garde. Ultra-cool. Pflichtbewusst, ernst, nüc
 	HeyYou						=	"SVM_8_HeyYou"						;//Hej, ty!
 	NotNow						=	"SVM_8_NotNow"						;//Nie teraz!
 	WhatDoYouWant				=	"SVM_8_WhatDoYouWant"				;//Czego chcesz?
-	ISaidWhatDoYouWant			=	"SVM_8_ISaidWhatDoYouWant"			;//Co mogê dla ciebie zrobiæ?
+	ISaidWhatDoYouWant			=	"SVM_8_ISaidWhatDoYouWant"			;//Co mogê dla Ciebie zrobiæ?
 	MakeWay						=	"SVM_8_MakeWay"						;//Mogê przejœæ?
 	OutOfMyWay					=	"SVM_8_OutOfMyWay"					;//ZejdŸ mi z drogi!
 	YouDeafOrWhat				=	"SVM_8_YouDeafOrWhat"				;//Mam ci to wbiæ do tej zakutej pa³y? Rusz siê!
@@ -1369,7 +1369,7 @@ instance SVM_9 (C_SVM)				// brummig		   gemütlicher Hüne, Besonnen, Brummiger B
 	IWillTeachYouRespectForForeignProperty	=	"SVM_9_IWillTeachYouRespectForForeignProperty"	;//Ostrzega³em ciê! Jak bêdziesz grzeba³ w moich rzeczach, dostaniesz po ³apach!
 	DirtyThief					=	"SVM_9_DirtyThief"					;//Ty z³odzieju! Ja ci poka¿ê!
 	YouAttackedMyCharge			=	"SVM_9_YouAttackedMyCharge"			;//Nikt nie bêdzie podskakiwa³ moim ch³opcom!
-	YouKilledOneOfUs			=	"SVM_9_YouKilledOneOfUs"			;//Zabi³eœ jednego z moich ludzi. Teraz ja zabijê ciebie!
+	YouKilledOneOfUs			=	"SVM_9_YouKilledOneOfUs"			;//Zabi³eœ jednego z moich ludzi. Teraz ja zabijê Ciebie!
 	Dead						=	"SVM_9_Dead"						;//Aaarg!
 	Aargh_1						=	"SVM_9_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_9_Aargh_2"						;//Aargh
@@ -1504,7 +1504,7 @@ instance SVM_10	(C_SVM)				// Schlau, verschlagen,	heimlich, Zwielichtig, zynisc
 	IWillTeachYouRespectForForeignProperty	=	"SVM_10_IWillTeachYouRespectForForeignProperty"	;//Ostrzega³em ciê! Jak bêdziesz grzeba³ w moich rzeczach, dostaniesz po ³apach!
 	DirtyThief					=	"SVM_10_DirtyThief"						;//Ty z³odzieju! Zat³ukê ciê!
 	YouAttackedMyCharge			=	"SVM_10_YouAttackedMyCharge"			;//Nikt nie bêdzie podskakiwa³ moim kumplom!
-	YouKilledOneOfUs			=	"SVM_10_YouKilledOneOfUs"				;//Zabi³eœ jednego z moich ludzi. Teraz ja zabijê ciebie!
+	YouKilledOneOfUs			=	"SVM_10_YouKilledOneOfUs"				;//Zabi³eœ jednego z moich ludzi. Teraz ja zabijê Ciebie!
 	Dead						=	"SVM_10_Dead"							;//Aaarg!
 	Aargh_1						=	"SVM_10_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_10_Aargh_2"						;//Aargh
@@ -1633,7 +1633,7 @@ instance SVM_11	(C_SVM)				//Profi				Ruhig, abgezockt, Vernünftig aberknallhart
 	Strange						=	"SVM_11_Strange"						;//Uch! Szlag by to! Gdzie on siê podzia³?!
 	DieMonster					=	"SVM_11_DieMonster"						;//Jak nie przestan¹ wchodziæ mi w drogê, grozi im rych³a zag³ada!
 	DieMortalEnemy				=	"SVM_11_DieMortalEnemy"					;//Nie rób sobie wrogów, jeœli nie jesteœ w stanie stawiæ im czo³a. Giñ!
-	NowWait						=	"SVM_11_NowWait"						;//By³oby dla ciebie lepiej, gdybyœ tego nie zrobi³!
+	NowWait						=	"SVM_11_NowWait"						;//By³oby dla Ciebie lepiej, gdybyœ tego nie zrobi³!
 	YouStillNotHaveEnough		=	"SVM_11_YouStillNotHaveEnough"			;//Czy ja ci ju¿ kiedyœ nie przy³o¿y³em? No có¿, bêdzie powtórka...
 	YouAskedForIt				=	"SVM_11_YouAskedForIt"					;//Kto nie chce s³uchaæ, musi poczuæ!
 	NowWaitIntruder				= 	"SVM_11_NowWaitIntruder"				;//No, przyb³êdo! Teraz dostaniesz nauczkê!
@@ -1646,7 +1646,7 @@ instance SVM_11	(C_SVM)				//Profi				Ruhig, abgezockt, Vernünftig aberknallhart
 	Aargh_2						=	"SVM_11_Aargh_2"						;//Aargh
 	Aargh_3						=	"SVM_11_Aargh_3"						;//Aargh
 	Berzerk						=	"SVM_11_Berzerk"						;//UUAAARRGGGHHH!!!
-	YoullBeSorryForThis			=	"SVM_11_YoullBeSorryForThis"			;//By³oby dla ciebie lepiej, gdybyœ tego nie zrobi³!
+	YoullBeSorryForThis			=	"SVM_11_YoullBeSorryForThis"			;//By³oby dla Ciebie lepiej, gdybyœ tego nie zrobi³!
 	YesYes						=	"SVM_11_YesYes"							;//Dobra, dobra! Wygra³eœ!
 	ShitWhatAMonster			=	"SVM_11_ShitWhatAMonster"				;//To ju¿ za wiele!
 	Help						=	"SVM_11_Help"							;//Odwrót!
@@ -1690,7 +1690,7 @@ instance SVM_11	(C_SVM)				//Profi				Ruhig, abgezockt, Vernünftig aberknallhart
 	HeyYou						=	"SVM_11_HeyYou"							;//Hej, ty!
 	NotNow						=	"SVM_11_NotNow"							;//Nie teraz!
 	WhatDoYouWant				=	"SVM_11_WhatDoYouWant"					;//Czego chcesz?
-	ISaidWhatDoYouWant			=	"SVM_11_ISaidWhatDoYouWant"				;//Co mogê dla ciebie zrobiæ?
+	ISaidWhatDoYouWant			=	"SVM_11_ISaidWhatDoYouWant"				;//Co mogê dla Ciebie zrobiæ?
 	MakeWay						=	"SVM_11_MakeWay"						;//Mo¿esz mnie przepuœciæ?
 	OutOfMyWay					=	"SVM_11_OutOfMyWay"						;//Odsuñ siê!
 	YouDeafOrWhat				=	"SVM_11_YouDeafOrWhat"					;//Mam ci to wbiæ do tej zakutej pa³y? Rusz siê!
@@ -1774,7 +1774,7 @@ instance SVM_12	(C_SVM)		//Bazaar-Händler		Nach außen freundlich,jovial,Innen hi
 	IWillTeachYouRespectForForeignProperty	=	"SVM_12_IWillTeachYouRespectForForeignProperty"	;//Ostrzega³em ciê! Jak bêdziesz grzeba³ w moich rzeczach, dostaniesz po ³apach!
 	DirtyThief					=	"SVM_12_DirtyThief"						;//Ty przeklêty z³odzieju! Ja ci poka¿ê...
 	YouAttackedMyCharge			=	"SVM_12_YouAttackedMyCharge"			;//Nikt nie bêdzie podskakiwa³ moim kolegom.
-	YouKilledOneOfUs			=	"SVM_12_YouKilledOneOfUs"				;//Zabi³eœ jednego z moich ludzi. Teraz ja zabijê ciebie!
+	YouKilledOneOfUs			=	"SVM_12_YouKilledOneOfUs"				;//Zabi³eœ jednego z moich ludzi. Teraz ja zabijê Ciebie!
 	Dead						=	"SVM_12_Dead"							;//Aaarg!
 	Aargh_1						=	"SVM_12_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_12_Aargh_2"						;//Aargh
@@ -1980,7 +1980,7 @@ instance SVM_13	(C_SVM)					// Fanatiker	Agressiv, übereifrig, Ähnlich wie Stimm
 	HeyYou						=	"SVM_13_HeyYou"							;//Hej, ty!
 	NotNow						=	"SVM_13_NotNow"							;//Nie teraz!
 	WhatDoYouWant				=	"SVM_13_WhatDoYouWant"					;//Czego chcesz?
-	ISaidWhatDoYouWant			=	"SVM_13_ISaidWhatDoYouWant"				;//Co mogê dla ciebie zrobiæ?
+	ISaidWhatDoYouWant			=	"SVM_13_ISaidWhatDoYouWant"				;//Co mogê dla Ciebie zrobiæ?
 	MakeWay						=	"SVM_13_MakeWay"						;//Przepuœæ mnie.
 	OutOfMyWay					=	"SVM_13_OutOfMyWay"						;//ZejdŸ mi z drogi!
 	YouDeafOrWhat				=	"SVM_13_YouDeafOrWhat"					;//Szukasz guza? Wynoœ siê st¹d!
@@ -1994,7 +1994,7 @@ instance SVM_13	(C_SVM)					// Fanatiker	Agressiv, übereifrig, Ähnlich wie Stimm
 	TheyKilledMyFriend			=	"SVM_13_TheyKilledMyFriend"				;//Zgin¹³ jeden z naszych! Musimy go pomœciæ!
 	YouDisturbedMySlumber		=	"SVM_13_YouDisturbedMySlumber"			;//Dlaczego mnie obudzi³eœ?
 	SuckerGotSome				=	"SVM_13_SuckerGotSome"					;//Nale¿a³o ci siê porz¹dne lanie!
-	SuckerDefeatedEBr			=	"SVM_13_SuckerDefeatedEBr"				;//Powali³eœ jednego z Magnatów! Jest na ciebie naprawdê wœciek³y!
+	SuckerDefeatedEBr			=	"SVM_13_SuckerDefeatedEBr"				;//Powali³eœ jednego z Magnatów! Jest na Ciebie naprawdê wœciek³y!
 	SuckerDefeatedGur			=	"SVM_13_SuckerDefeatedGur"				;//Pokona³eœ Guru. Zdajesz siê przyci¹gaæ k³opoty jak magnes!
 	SuckerDefeatedMage			=	"SVM_13_SuckerDefeatedMage"				;//Pokonaæ maga... To nie by³ najlepszy pomys³!
 	SuckerDefeatedNov_Guard		= 	"SVM_13_SuckerDefeatedNov_Guard"		;//A wiêc to ty atakujesz Nowicjuszy!
@@ -2116,7 +2116,7 @@ instance SVM_14	(C_SVM)				// Xardas(DMB),Corristo,Erzähler	alt	arrogant, gebild
 	NoLearnYoureBetter			=	"SVM_14_NoLearnYoureBetter"				;//Jesteœ ju¿ lepszy!
 	HeyYou						=	"SVM_14_HeyYou"							;//Hej, ty!
 	NotNow						=	"SVM_14_NotNow"							;//Nie teraz!
-	WhatDoYouWant				=	"SVM_14_WhatDoYouWant"					;//Co mogê dla ciebie zrobiæ?
+	WhatDoYouWant				=	"SVM_14_WhatDoYouWant"					;//Co mogê dla Ciebie zrobiæ?
 	ISaidWhatDoYouWant			=	"SVM_14_ISaidWhatDoYouWant"				;//Mogê ci jakoœ pomóc?
 	MakeWay						=	"SVM_14_MakeWay"						;//Odsuñ siê!
 	OutOfMyWay					=	"SVM_14_OutOfMyWay"						;//Pozwól mi przejœæ.
@@ -2144,7 +2144,7 @@ instance SVM_14	(C_SVM)				// Xardas(DMB),Corristo,Erzähler	alt	arrogant, gebild
 	YouStoleFromEBr				=	"SVM_14_YouStoleFromEBr"				;//Stary! Okrad³eœ Magnatów? Ale siê wœciekn¹!
 	YouStoleFromGur				=	"SVM_14_YouStoleFromGur"				;//Po¿yczy³eœ sobie kilka rzeczy nale¿¹cych do Guru, tak?
 	StoleFromMage				=	"SVM_14_StoleFromMage"					;//Po¿yczy³eœ sobie kilka rzeczy nale¿¹cych do magów, prawda?
-	YouKilledMyFriend			=	"SVM_14_YouKilledMyFriend"				;//Zabi³eœ jednego z naszych! Jeszcze jeden taki wybryk, a przyjdzie kolej na ciebie!
+	YouKilledMyFriend			=	"SVM_14_YouKilledMyFriend"				;//Zabi³eœ jednego z naszych! Jeszcze jeden taki wybryk, a przyjdzie kolej na Ciebie!
 	YouKilledEBr				=	"SVM_14_YouKilledEBr"					;//Zabi³eœ Magnata! Stary, odbi³o ci?!
 	YouKilledGur				=	"SVM_14_YouKilledGur"					;//Zabi³eœ Guru! Nie mogê w to uwierzyæ!
 	YouKilledMage				=	"SVM_14_YouKilledMage"					;//Zabi³eœ maga! Jak zamierzasz siê z tego wyt³umaczyæ?!

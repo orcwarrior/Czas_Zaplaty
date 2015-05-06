@@ -152,7 +152,7 @@ FUNC VOID DIA_Necro_Second_Swd()
 	AI_Output (other, self, "DIA_Necro_Second_Swd_15_05"); //Wiem o tym...
 	AI_Output (self, other, "DIA_Necro_Second_Swd_11_06"); //I odda³eœ mi orê¿ z w³asnej woli? Albo jesteœ idiot¹ albo najbardziej naiwnym skazañcem w ca³ej Kolonii.
 	AI_Output (self, other, "DIA_Necro_Second_Swd_11_07"); //Gdy tchnê moc w pradawn¹ stal bêdê w³ada³ nieujarzmion¹ potêg¹ ¿ywio³ów!
-	AI_Output (self, other, "DIA_Necro_Second_Swd_11_08"); //Ale ciebie ju¿ wtedy nie bêdzie wœród ¿ywych.
+	AI_Output (self, other, "DIA_Necro_Second_Swd_11_08"); //Ale Ciebie ju¿ wtedy nie bêdzie wœród ¿ywych.
 	AI_Output (self, other, "DIA_Necro_Second_Swd_11_09"); //Spróbuj znowu przejœæ przez p³omienie...
 
 	B_StopProcessInfos(self);

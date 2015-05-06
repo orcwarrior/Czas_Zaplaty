@@ -94,15 +94,15 @@ func void ZS_SitCampfireSmalltalkHC_1_loop()
     	}
     	else if (talktime < 70)
     	{
-    		AI_Output (self,NULL,"ZS_SmallTalkSitHC_Text14");//pewnie i tak nie mam nic do roboty.
+    		AI_Output (self,NULL,"ZS_SmallTalkSitHC_Text14");//Pewnie i tak nie mam nic do roboty.
     	}
     	else if (talktime < 75)
     	{
-    		AI_Output (self,NULL,"ZS_SmallTalkSitHC_Text15");//A ty co myœlisz o obozach który ed³ug ciebie jest najlepszy?
+    		AI_Output (self,NULL,"ZS_SmallTalkSitHC_Text15");//A ty co myœlisz o obozach? Który wed³ug ciebie jest najlepszy?
     	}
     	else if (talktime < 80)
     	{
-    		AI_Output (self,NULL,"ZS_SmallTalkSitHC_Text16");//Stary obóz to groŸny przeciwnik ale nigdy nie wst¹pi³ bym do niego.
+    		AI_Output (self,NULL,"ZS_SmallTalkSitHC_Text16");//Stary obóz to groŸny przeciwnik, ale nigdy nie wst¹pi³ bym do niego.
     	}
     	else if (talktime < 85)
     	{

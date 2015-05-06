@@ -746,7 +746,7 @@ FUNC VOID DIA_AIDAN_Debt_Info()
 	AI_Output (self, other, "DIA_AIDAN_Debt_11_04"); //£adnie sobie policzy³, cholerny lichwiarz. A jaki Ty masz w tym interes?
 	AI_Output (other, self, "DIA_AIDAN_Debt_15_05"); //To nie tylko mój interes, ale ca³ego obozu. Cavalorn poleci³ mi znaleŸæ sojuszników wœród ³owców trolli.
 	AI_Output (self, other, "DIA_AIDAN_Debt_11_06"); //Rozumiem. To trochê komplikuje sprawy...
-	AI_Output (self, other, "DIA_AIDAN_Debt_11_07"); //Bêdê z tob¹ szczery - nie mam tej rudy.
+	AI_Output (self, other, "DIA_AIDAN_Debt_11_07"); //Bêdê z Tob¹ szczery - nie mam tej rudy.
 	AI_Output (self, other, "DIA_AIDAN_Debt_11_08"); //Po¿yczy³em na procent tylko po to, ¿eby zdobyæ pewn¹ receptê.
 	AI_Output (self, other, "DIA_AIDAN_Debt_11_09"); //By³em pewien, ¿e dziêki recepturze wykujê orê¿, który szybko sprzedam w du¿ych iloœciach.
 	AI_Output (other, self, "DIA_AIDAN_Debt_15_10"); //Czyli nie znalaz³eœ recepty?

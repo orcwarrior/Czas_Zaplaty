@@ -225,13 +225,13 @@ FUNC VOID DIA_BaalTondral_End_Info()
 	AI_GotoNpc(lest,self);
    
 	AI_Output (self, other,"DIA_BaalTondral_End_13_00"); //Czujê wyziewy œmierci. Bestia czeka na nas w œrodku.
-	AI_Output (other, self, "DIA_BaalTondral_End_15_01"); //Bêdziemy tu¿ za tob¹.
+	AI_Output (other, self, "DIA_BaalTondral_End_15_01"); //Bêdziemy tu¿ za Tob¹.
 	AI_Output (self, other,"DIA_BaalTondral_End_13_02"); //Czas wype³niæ przeznaczenie... Argh!
 
 	B_StopProcessInfos(self);
    Tondral_death = true;
 	/***************
-   Ork teraz zadanie dla ciebie.
+   Ork teraz zadanie dla Ciebie.
    Ball pêdzie w stronê œwi¹tyni, ale na drodze nagle pojawi siê jakiœ super z¹biak i go œlicznie poszatkuje xD
 
    ****************************/
