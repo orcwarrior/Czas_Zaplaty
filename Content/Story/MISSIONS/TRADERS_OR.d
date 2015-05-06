@@ -57,8 +57,8 @@ instance Drax_Container(Npc_Default)
 	
 	CreateInvItems(self,ItMa_ironore,3);
 	CreateInvItems(self,ItMa_carbon,3);
-	CreateInvItems(self,ItMa_Iron,2);
-	CreateInvItems(self,ItMa_Steel,3);
+	CreateInvItems(self,ItMa_Iron,7);
+	CreateInvItems(self,ItMa_Steel,9);
 	CreateInvItems(self,ItMa_GoodSteel,2);	
 	
 	CreateInvItems(self,ItFo_wineberrys_01,3);
@@ -815,8 +815,8 @@ instance FOX_Container(Npc_Default)
 	CreateInvItems(self,ItMa_ironore,10);
 	CreateInvItems(self,ItMa_carbon,7);
 	CreateInvItems(self,ItMiSwordRaw,6);
-	CreateInvItems(self,ItMa_Iron,6);
-	CreateInvItems(self,ItMa_Steel,5);
+	CreateInvItems(self,ItMa_Iron,9);
+	CreateInvItems(self,ItMa_Steel,12);
 	CreateInvItems(self,ItMa_GoodSteel,1);
 	CreateInvItems(self,ItMa_Goodlumber,1);
 	CreateInvItems(self,ItMa_lumber,3);

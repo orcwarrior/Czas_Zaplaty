@@ -56,6 +56,9 @@ instance Jeff_Container(Npc_Default)
 	CreateInvItems(self,ItFo_Gin,1);
 	CreateInvItems(self,ItFo_Stew,2);
 	CreateInvItems(self, ItKeLockpick,5);
+	
+	CreateInvItems(self, ItMa_Iron,5);
+	CreateInvItems(self, ItMa_Steel,10);
 
 	CreateInvItem(self,ItMwPickaxe);	
 	CreateInvItem(self,ItMw_1H_Sword_Short_02);	
