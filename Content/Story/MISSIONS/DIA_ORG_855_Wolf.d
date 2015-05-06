@@ -481,7 +481,7 @@ FUNC VOID DIA_Wolf_Questions3_Info()
 	AI_Output(other, self,"DIA_Wolf_Questions3_15_26"); //Nie rozumiem.
 	AI_Output(self, other,"DIA_Wolf_Questions3_09_27"); //Myœlê, ¿e dobrze wiesz o czym mówiê. Do zobaczenia, przyjacielu.
 	B_LogEntry(CH1_Rbl_Hrabia, "Stra¿nikom w Nowym Obozie naprawdê przewodzi Hrabia. Wilk twierdzi te¿, ¿e Hrabia pracuje dla Kruka. Mimo to najemnik uwa¿a, ¿e Hrabia nie trafi³ do Kolonii przez przypadek. Podobno wypytywa³ go o Xardasa i jakiegoœ Bezimiennego. Ta historia zaczyna siê robiæ coraz ciekawsza.");
-	B_LogEntry(CH1_Rbl_NoName, "Wilk powiedzia³ mi, ¿e Hrabia wypytywa³ o Xardasa i Bezimiennego. Najemnik uwa¿a, ¿e to w³aœnie ci dwaj mog¹ byæ powodem przybycia Hrabiego do Kolonii.");
+	B_LogEntry(CH1_Rbl_NoName, "Wilk powiedzia³ mi, ¿e Hrabia wypytywa³ o Xardasa i Bezimiennego. Najemnik uwa¿a, ¿e to w³aœnie Ci dwaj mog¹ byæ powodem przybycia Hrabiego do Kolonii.");
 };
 
 /*********************
@@ -740,7 +740,7 @@ func VOID DIA_Wolf_Trunk_Info()
 	Info_ClearChoices (DIA_Wolf_Trunk);
 	Info_AddChoice (DIA_Wolf_Trunk, "Po prostu chcê pomóc.", DIA_Wolf_Trunk_Help);
 	Info_AddChoice (DIA_Wolf_Trunk, "Szukam pewnej skrzyni.", DIA_Wolf_Trunk_True);
-	Info_AddChoice (DIA_Wolf_Trunk, "A co ci do tego?", DIA_Wolf_Trunk_What);
+	Info_AddChoice (DIA_Wolf_Trunk, "A co Ci do tego?", DIA_Wolf_Trunk_What);
 };
 
 // ------------------------------------------------------------------
@@ -757,7 +757,7 @@ FUNC VOID DIA_Wolf_Trunk_Help()
 
 FUNC VOID DIA_Wolf_Trunk_What()
 {
-	AI_Output(hero,self,"DIA_Wolf_Trunk_What_15_01"); //A co ci do tego?
+	AI_Output(hero,self,"DIA_Wolf_Trunk_What_15_01"); //A co Ci do tego?
 	AI_Output(self,hero,"DIA_Wolf_Trunk_What_09_02"); //Niby nic, ale jak nie powiesz prawdy, to Ciê nie przepuszczê.
 };
 

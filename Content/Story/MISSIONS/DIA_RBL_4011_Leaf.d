@@ -526,7 +526,7 @@ FUNC VOID DIA_Leaf_OCSpy_Money()
 	AI_Output (self, other, "DIA_Leaf_OCSpy_Money_11_11"); //Bardzo œmieszne. Kiedy jest nawalony, mo¿esz mu wcisn¹æ ka¿de k³amstwo. Wmówisz mu nawet, ¿e jest pó³-orkiem bo jego matka...
 	AI_Output (other, self, "DIA_Leaf_OCSpy_Money_15_12"); //Czyli wystarczy go spiæ? Mocn¹ ma g³owê?
 	AI_Output (self, other, "DIA_Leaf_OCSpy_Money_11_13"); //Za ko³nierz nie wylewa, ale powinieneœ sobie poradziæ. Najlepiej jakbyœ za³atwi³ sobie na tê okazjê jakiœ porz¹dny trunek.
-	AI_Output (other, self, "DIA_Leaf_OCSpy_Money_15_14"); //Dobra Leaf, dziêki za przys³ugê. Je¿eli mnie oszuka³eœ, to wrócê i wyprujê ci flaki.
+	AI_Output (other, self, "DIA_Leaf_OCSpy_Money_15_14"); //Dobra Leaf, dziêki za przys³ugê. Je¿eli mnie oszuka³eœ, to wrócê i wyprujê Ci flaki.
 	AI_Output (self, other, "DIA_Leaf_OCSpy_Money_11_15"); //Zapewniam, ¿e nie bêdzie takiej potrzeby. Powodzenia piracie.
 	
    B_LogEntry		(CH3_RBL_OldCampSpy, "Za rudê Leaf powiedzia³, ¿e stra¿nik przed pó³nocna bram¹ po pijaku mo¿e daæ siê oszukaæ. Mo¿e Piwosz bêdzie mia³ coœ na tê okazjê?");
@@ -803,7 +803,7 @@ FUNC VOID DIA_Leaf_StoneOk_Info()
 	AI_Output (other, self, "DIA_Leaf_StoneOk_15_01"); //Dobra, zaryzykujê. O co chodzi?
 	AI_Output (self, other, "DIA_Leaf_StoneOk_11_02"); //A jednak masz jaja.
 	AI_Output (self, other, "DIA_Leaf_StoneOk_11_03"); //Kupi³em pewn¹ ksiêgê. Ktoœ znalaz³ wolumin w Klasztorze Zmiennokszta³tnych. 
-	AI_Output (self, other, "DIA_Leaf_StoneOk_11_04"); //Przeczyta³em tam bardzo ciekaw¹ historyjkê o kamieniu filozoficznym i magach, którzy rzekomo odkryli jego tajemnicê. Magowi ci podobno mieli swoj¹ siedzibê na terenie Kolonii.
+	AI_Output (self, other, "DIA_Leaf_StoneOk_11_04"); //Przeczyta³em tam bardzo ciekaw¹ historyjkê o kamieniu filozoficznym i magach, którzy rzekomo odkryli jego tajemnicê. Magowi Ci podobno mieli swoj¹ siedzibê na terenie Kolonii.
 	AI_Output (other, self, "DIA_Leaf_StoneOk_15_05"); //A gdzie dok³adnie?
 	AI_Output (self, other, "DIA_Leaf_StoneOk_11_06"); //W Kanionie Trolli.
 	AI_Output (other, self, "DIA_Leaf_StoneOk_15_07"); //Chyba przesadzi³eœ... I ja mam tam pójœæ dobrowolnie?!

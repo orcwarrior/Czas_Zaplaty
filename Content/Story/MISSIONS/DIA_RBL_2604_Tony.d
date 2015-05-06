@@ -230,7 +230,7 @@ FUNC void  RBL_2604_Tony_OLDCAMP_Members()
 	else
 	{
 		AI_Output (other, self,"RBL_2604_Tony_OLDCAMP_Members_Info_15_03"); //Kim s¹ ludzie ze Starego Obozu?
-		AI_Output (self, other,"RBL_2604_Tony_OLDCAMP_Members_Info_07_04"); //Przecie¿ ju¿ ci o tym mówi³em.
+		AI_Output (self, other,"RBL_2604_Tony_OLDCAMP_Members_Info_07_04"); //Przecie¿ ju¿ Ci o tym mówi³em.
 		Info_ClearChoices (RBL_2604_Tony_OLDCAMP );
 		if (Tony_OreBaron == FALSE)
 		{
@@ -974,7 +974,7 @@ FUNC VOID DIA_Tony_Secrets_Info()
 {
 	AI_GotoNPC(hero, self);	
 	AI_TurnToNpc (self, other);
-	AI_Output (self, other, "DIA_Tony_Secrets_11_11"); //A teraz mów o co ci chodzi.
+	AI_Output (self, other, "DIA_Tony_Secrets_11_11"); //A teraz mów o co Ci chodzi.
 
 	Info_ClearChoices (DIA_Tony_Secrets);
 	Info_AddChoice (DIA_Tony_Secrets, "Zap³aæ za milczenie.", DIA_Tony_Secrets_Pay);

@@ -91,7 +91,7 @@ FUNC VOID DIA_Snow_What_Info()
 	AI_Output (other, self, "DIA_Snow_What_15_10"); //Co masz na myœli?
 	AI_Output (self, other, "DIA_Snow_What_11_11"); //Kira to wredna suka. Niech Ciê nie zwiod¹ pozory urody i rzeczowoœci.
 	AI_Output (self, other, "DIA_Snow_What_11_12"); //Jak myœlisz, dlaczego baba mówi kilku facetom i orkowi co maj¹ robiæ?
-	AI_Output (other, self, "DIA_Snow_What_15_13"); //Mo¿e ci faceci nie maj¹ jaj...
+	AI_Output (other, self, "DIA_Snow_What_15_13"); //Mo¿e Ci faceci nie maj¹ jaj...
 	AI_Output (self, other, "DIA_Snow_What_11_14"); //Bardzo œmieszne, ale lepiej tego nie powtarzaj przy innych.
 	AI_Output (self, other, "DIA_Snow_What_11_15"); //Wróæmy jednak do Twojej propozycji. O Kirze mo¿emy pogadaæ póŸniej.
 	AI_Output (other, self, "DIA_Snow_What_15_16"); //Pomogê Ci rozwi¹zaæ problem ze z³odziejem.

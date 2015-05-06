@@ -91,7 +91,7 @@ FUNC VOID DIA_Hess_Born_Info()
 	AI_Output (self, other, "DIA_Hess_Born_11_05"); //Dlatego przez ca³e ¿ycie staraliœmy siê udowodniæ, ¿e Pradawny siê myli³.
 	AI_Output (self, other, "DIA_Hess_Born_11_06"); //Wszystko co uczyniliœmy, zrobiliœmy ku jego chwale.
 	AI_Output (self, other, "DIA_Hess_Born_11_07"); //Mo¿e jeszcze kiedyœ spojrzy na nas ³askawszym okiem...
-	B_LogEntry(CH5_NON_Lizard, "Ojcem jaszczuroludzi jest Pradawny, Pierwszy Spoœród Smoków. Mimo, i¿ porzuci³ jaszczuroludzi ci nadal oddaj¹ mu bosk¹ czeœæ.");
+	B_LogEntry(CH5_NON_Lizard, "Ojcem jaszczuroludzi jest Pradawny, Pierwszy Spoœród Smoków. Mimo, i¿ porzuci³ jaszczuroludzi Ci nadal oddaj¹ mu bosk¹ czeœæ.");
 };
 
 // **************************************************

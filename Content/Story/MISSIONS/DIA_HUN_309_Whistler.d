@@ -92,7 +92,7 @@ FUNC VOID DIA_HUN_309_Whistler_Ask_Info()
 	AI_Output (self, other, "DIA_HUN_309_Whistler_Ask_11_17"); //Ale nie wszystkie. Jestem jak to mówi¹ magowie - estet¹. Lubiê dobr¹ robotê po³¹czon¹ ze sztuk¹.
 	AI_Output (self, other, "DIA_HUN_309_Whistler_Ask_11_18"); //Zdoby³em receptê na wspania³y miecz - pawie pióro. Nie mam jednak sk³adników potrzebnych do wykucia broni.
 	AI_Output (self, other, "DIA_HUN_309_Whistler_Ask_11_19"); //Przez te cholerne obowi¹zki i niebezpieczeñstwo ataku ze strony Gomeza jestem tu udupiony.
-	AI_Output (other, self, "DIA_HUN_309_Whistler_Ask_15_20"); //Niech zgadnê. Szukasz frajera, który przyniesie ci potrzebne sk³adniki.
+	AI_Output (other, self, "DIA_HUN_309_Whistler_Ask_15_20"); //Niech zgadnê. Szukasz frajera, który przyniesie Ci potrzebne sk³adniki.
 	AI_Output (self, other, "DIA_HUN_309_Whistler_Ask_11_21"); //Domyœlny jesteœ. To jak bêdzie?
 	AI_Output (other, self, "DIA_HUN_309_Whistler_Ask_15_22"); //Raczej nie mam wyboru. Co to za sk³adniki?
 	AI_Output (self, other, "DIA_HUN_309_Whistler_Ask_11_23"); //Tu masz listê i 200 bry³ek rudy na wydatki.
@@ -138,7 +138,7 @@ FUNC VOID DIA_HUN_309_Whistler_List_Info()
 	AI_TurnAway(other, self);
 	B_UseFakeScroll(other);
    AI_WhirlAround(other, self);
-	AI_Output (other, self, "DIA_HUN_309_Whistler_List_15_03"); //Nie mam problemów z odczytaniem listy, tylko zastanawiam siê po co ci ser i wódka do wykucia miecza?
+	AI_Output (other, self, "DIA_HUN_309_Whistler_List_15_03"); //Nie mam problemów z odczytaniem listy, tylko zastanawiam siê po co Ci ser i wódka do wykucia miecza?
 	AI_Output (self, other, "DIA_HUN_309_Whistler_List_11_04"); //A co Ciê to obchodzi?
 	AI_Output (other, self, "DIA_HUN_309_Whistler_List_15_05"); //Obchodzi, skoro mam biegaæ za tym po ca³ej Kolonii.
 	AI_Output (self, other, "DIA_HUN_309_Whistler_List_11_06"); //To pos³uchaj. Ty chcesz do³¹czyæ do rebeliantów.
@@ -804,7 +804,7 @@ FUNC INT DIA_Whistler_Leaf_Condition()
 FUNC VOID DIA_Whistler_Leaf_Info()
 {
 	AI_Output (other, self, "DIA_Whistler_Leaf_15_01"); //Leaf nic mi nie powiedzia³!
-	AI_Output (self, other, "DIA_Whistler_Leaf_11_02"); //Zdradzê Ci pewien sekret. Do Kolonii trafiaj¹ raczej ci Ÿli, wredni i brzydcy...
+	AI_Output (self, other, "DIA_Whistler_Leaf_11_02"); //Zdradzê Ci pewien sekret. Do Kolonii trafiaj¹ raczej Ci Ÿli, wredni i brzydcy...
 	AI_Output (self, other, "DIA_Whistler_Leaf_11_03"); //Powiedzia³em tylko, ¿e Leaf wie coœ o krysztale. Nie powiedzia³em, ¿e coœ Ci zdradzi!
 	AI_Output (other, self, "DIA_Whistler_Leaf_15_04"); //Niech to szlag, straci³em 50 bry³ek!
 	AI_Output (self, other, "DIA_Whistler_Leaf_11_05"); //£adnie Ciê podpuœci³.

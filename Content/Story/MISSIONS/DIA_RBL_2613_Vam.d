@@ -110,7 +110,7 @@ FUNC VOID RBL_2613_Vam_Ok_Info()
 	AI_Output (other, self, "RBL_2613_Vam_Ok_15_05"); //Bez przesady. Wystarczy, ¿e wie, którym koñcem siekiery trzeba uderzaæ w pieñ drzewa.	
 	AI_Output (other, self, "RBL_2613_Vam_Ok_15_06"); //Jak widzisz dotrzyma³em s³owa. Teraz Twoja kolej.
 	AI_Output (self, other, "RBL_2613_Vam_Ok_11_07"); //Nie obawiaj siê przyjacielu, s³owo nie dym. Szepnê Cavalornowi za Tob¹ to i tamto.
-   AI_Output (self, other, "RBL_2613_Vam_Ok_11_08"); //W nagrodê mogê pomóc ci zwiêkszyæ krzepê i nauczyæ otwierania zamków.
+   AI_Output (self, other, "RBL_2613_Vam_Ok_11_08"); //W nagrodê mogê pomóc Ci zwiêkszyæ krzepê i nauczyæ otwierania zamków.
 	AI_Output (self, other, "RBL_2613_Vam_Ok_11_09"); //Aha, jak chcesz mogê te¿ zaopatrzyæ Ciê w ró¿nego rodzaju drewno. Przyda Ci siê na trzonki do toporów, do wyrobu ³uków, b¹dŸ strza³ i brzechw.
 	AI_Output (other, self, "RBL_2613_Vam_Ok_15_10"); //Dobrze wiedzieæ. Bywaj.
 	

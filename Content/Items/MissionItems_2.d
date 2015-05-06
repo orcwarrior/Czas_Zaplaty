@@ -657,7 +657,7 @@ func void Usemagpass ()
 					Doc_PrintLines	( nDocID,  0, "powtarzaj stare zaklêcia ludzkoœci bajki i legendy,"					);
 					Doc_PrintLines	( nDocID,  0, "bo tak zdobêdziesz dobro, którego nie zdobêdziesz,"					);
 					Doc_PrintLines	( nDocID,  0, "powtarzaj wielkie s³owa, powtarzaj je z uporem,"					);
-					Doc_PrintLines	( nDocID,  0, "jak ci co szli przez pustyniê i ginêli w piasku,"					);
+					Doc_PrintLines	( nDocID,  0, "jak Ci co szli przez pustyniê i ginêli w piasku,"					);
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "a nagrodz¹ ciê za to tym, co maj¹ pod rêk¹"					);
 					Doc_PrintLines	( nDocID,  0, "ch³ost¹ œmiechu, zabójstwem na œmietniku,"					);

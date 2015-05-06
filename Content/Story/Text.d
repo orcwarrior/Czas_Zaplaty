@@ -437,7 +437,7 @@ const string _STR_ATTRIBUTE_MAGIC_CIRCLE	= "krêgów"								;
 const string _STR_ATTRIBUTE_MAGIC_CIRCLE_SINGLE	= "krêgu"								;
 
 // Bildschirmausgabe, falls der Spieler eine Waffe anlegen will, für die ihm Attributspunkte fehlen
-const string _STR_CANNOTUSE_PRE_PLAYER		= "Brakuje ci "										;
+const string _STR_CANNOTUSE_PRE_PLAYER		= "Brakuje Ci "										;
 const string _STR_CANNOTUSE_POINTS			= ""											;
 const string _STR_CANNOTUSE_LEVELS		    = "poziom"											;
 const string _STR_CANNOTUSE_POST			= ", by u¿yæ tego przedmiotu."				;

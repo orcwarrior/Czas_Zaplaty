@@ -157,7 +157,7 @@ func VOID Info_Kharim_WhatGor1_Info()
 	AI_Output (other, self,"Info_Kharim_WhatGor1_15_13"); //Mistrz przechwa³ek, z którego wszyscy szydz¹.
 	AI_Output (self, other,"Info_Kharim_WhatGor1_09_14"); //To niemo¿liwe...
 	AI_Output (other, self,"Info_Kharim_WhatGor1_15_15"); //A jednak. Jesteœ poœmiewiskiem i tchórzem, który podstêpem pokona³ prawdziwego wojownika.
-	AI_Output (other, self,"Info_Kharim_WhatGor1_15_16"); //A teraz zejdŸ mi z oczu gnido, bo wyprujê ci flaki!
+	AI_Output (other, self,"Info_Kharim_WhatGor1_15_16"); //A teraz zejdŸ mi z oczu gnido, bo wyprujê Ci flaki!
 	
 	B_LogEntry(CH2_RBL_Mem, "Kharim wraca do Nowego Obozu.");
 	Npc_ExchangeRoutine(self,"NC1");

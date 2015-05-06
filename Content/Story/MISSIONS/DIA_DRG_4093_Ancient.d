@@ -222,7 +222,7 @@ FUNC VOID DIA_Ancient_Dead_Kill()
 	AI_Output (self, other, "DIA_Ancient_Dead_Kill_11_03"); //UNU¯AM TWÓJ ŒWIAT W OGNIU, A TWOJ¥ DUSZÊ ROZERWÊ NA STRZÊPY...
 
 	/*********************
-ork daj jakiœ fajny pfx, niech jaszczuroludzie i orkowie sp³on¹ tak samo dick. jakby ci siê chcia³o i jak siê da to mo¿na zrobiæ szybki najazd na SO i NO, które te¿ ton¹ w ogniu
+ork daj jakiœ fajny pfx, niech jaszczuroludzie i orkowie sp³on¹ tak samo dick. jakby Ci siê chcia³o i jak siê da to mo¿na zrobiæ szybki najazd na SO i NO, które te¿ ton¹ w ogniu
 ***********************/
 
 

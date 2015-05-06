@@ -284,7 +284,7 @@ FUNC VOID  DIA_Lee_LasOrn_Info()
 	AI_Output (self, other,"DIA_Lee_LasOrn_08_01"); //Co siê sta³o?
 	AI_Output (other, self,"DIA_Lee_LasOrn_15_02"); //Hrabia znowu mnie uprzedzi³. Mam trzy dni na odnalezienie pozosta³ych czêœci, albo ca³y plan magów szlag trafi.
 	AI_Output (self, other,"DIA_Lee_LasOrn_08_03"); //Nie mamy wyboru. Musimy im pomóc. Co zamierzasz?
-	AI_Output (other, self,"DIA_Lee_LasOrn_15_04"); //Spróbujê odnaleŸæ te cholerne ornamenty. W koñcu da³em ci s³owo.
+	AI_Output (other, self,"DIA_Lee_LasOrn_15_04"); //Spróbujê odnaleŸæ te cholerne ornamenty. W koñcu da³em Ci s³owo.
 	AI_Output (self, other,"DIA_Lee_LasOrn_08_05"); //Myœla³em, ze robisz to dla rudy i dla zemsty na Hrabim?
 	AI_Output (other, self,"DIA_Lee_LasOrn_15_06"); //Przypominasz mi siebie samego, Lee. Sporo nas ³¹czy, ¿aden z nas nie chcia³ zostaæ tym, kim jest teraz.
 	AI_Output (self, other,"DIA_Lee_LasOrn_08_07"); //Masz racjê przyjacielu. Szkoda, ¿e nie poznaliœmy siê w lepszych czasach.
@@ -770,8 +770,8 @@ FUNC VOID  DIA_Lee_RBLOk_Info()
 	AI_Output (other, self,"DIA_Lee_RBLOk_15_01"); //Zrobiê to.
 	AI_Output (self, other,"DIA_Lee_RBLOk_08_02"); //Œwietnie, musisz tam wyruszyæ niezw³ocznie.
 	AI_Output (self, other,"DIA_Lee_RBLOk_08_03"); //Przejœcia szukaj w pobli¿u kopalni, w ka¿dym razie tam uderzyli najpierw.
-	AI_Output (self, other,"DIA_Lee_RBLOk_08_04"); //Aha, i musisz pójœæ sam. Nie mogê oddaæ ci ¿adnego najemnika, dopóki nie odnajdziesz przejœcia.
-	AI_Output (self, other,"DIA_Lee_RBLOk_08_05"); //Niech ci nie przyjdzie do g³owy zgrywaæ bohatera. Jak tylko znajdziesz przejœcie i posterunek, wróæ, wyœlê tam ludzi, którzy zajm¹ siê reszt¹.
+	AI_Output (self, other,"DIA_Lee_RBLOk_08_04"); //Aha, i musisz pójœæ sam. Nie mogê oddaæ Ci ¿adnego najemnika, dopóki nie odnajdziesz przejœcia.
+	AI_Output (self, other,"DIA_Lee_RBLOk_08_05"); //Niech Ci nie przyjdzie do g³owy zgrywaæ bohatera. Jak tylko znajdziesz przejœcie i posterunek, wróæ, wyœlê tam ludzi, którzy zajm¹ siê reszt¹.
 	AI_Output (other, self,"DIA_Lee_RBLOk_15_06"); //Zobaczê, co da siê zrobiæ. 
 
 	Log_CreateTopic		(CH5_NC_Passage,	LOG_MISSION);
@@ -945,7 +945,7 @@ FUNC VOID  DIA_Lee_TheRock_Info()
 	AI_Output (other, self,"DIA_Lee_TheRock_15_03"); //(Rick streszcza Lee to co us³ysza³ od Fletchera)
 	AI_Output (self, other,"DIA_Lee_TheRock_08_04"); //Cholera, nie dobrze. Myœla³em, ze Hrabia i Kruk stoj¹ po tej samej stronie barykady.
 	AI_Output (self, other,"DIA_Lee_TheRock_08_05"); //Kruk to najbardziej niebezpieczny z magnatów. Wbrew pozorom to jego trzeba siê baæ, nie Gomeza.
-	AI_Output (self, other,"DIA_Lee_TheRock_08_06"); //Musisz dalej w to brn¹æ. W miêdzyczasie znalaz³em w skrzyni runê. Byæ mo¿e ci siê przyda.
+	AI_Output (self, other,"DIA_Lee_TheRock_08_06"); //Musisz dalej w to brn¹æ. W miêdzyczasie znalaz³em w skrzyni runê. Byæ mo¿e Ci siê przyda.
    
    Create_and_give(TheRockTP, 1);
    
@@ -1162,7 +1162,7 @@ FUNC VOID  DIA_Lee_Urt_Info()
 {
 	AI_Output (other, self,"DIA_Lee_Urt_15_01"); //Znasz stra¿nika o imieniu Urt?
 	AI_Output (self, other,"DIA_Lee_Urt_08_02"); //Nigdy o nim nie s³ysza³em.
-	AI_Output (other, self,"DIA_Lee_Urt_15_03"); //A imiê... Urthos coœ ci mówi?
+	AI_Output (other, self,"DIA_Lee_Urt_15_03"); //A imiê... Urthos coœ Ci mówi?
 	AI_Output (self, other,"DIA_Lee_Urt_08_04"); //Hmm... By³ kiedyœ ktoœ w królewskiej gwardii o takim imieniu.
 	AI_Output (self, other,"DIA_Lee_Urt_08_05"); //Z tego co pamiêtam zdaje siê, ¿e by³ zamieszany w kradzie¿ klejnotów koronnych.
 	AI_Output (self, other,"DIA_Lee_Urt_08_06"); //Król rozkaza³ straciæ wszystkich, którzy brali udzia³ w tym procederze. Tylko Urthos zdo³a³ zbiec, to podobno on by³ przywódc¹ szajki.

@@ -70,7 +70,7 @@ FUNC VOID DIA_PIR_2600_Angus_Hello_Info()
 	AI_Output (self, other,"DIA_PIR_2600_Angus_Hello_07_13"); //Spróbowaliœmy negocjacji, ale rzucili siê na nas szybciej, ni¿ Hank zd¹¿y³ opró¿niæ butelkê rumu.
 	AI_Output (self, other,"DIA_PIR_2600_Angus_Hello_07_14"); //Trzeba przyznaæ, ¿e odwagi im nie brakowa³o, choæ gorzej z rozumem. Nakarmiliœmy nimi ryby, ¿eby œcierwa nie psu³y powietrza na pla¿y.
 	AI_Output (self, other,"DIA_PIR_2600_Angus_Hello_07_15"); //Teraz nadszed³ czas na bardziej przemyœlane posuniêcie. Zaczniemy od spacerku po okolicy.
-	AI_Output (self, other,"DIA_PIR_2600_Angus_Hello_07_16"); //Poczekamy do zmierzchu, lepiej nie rzucaæ siê nikomu w oczy, bo coœ strasznie nerwowi ci skazañcy.
+	AI_Output (self, other,"DIA_PIR_2600_Angus_Hello_07_16"); //Poczekamy do zmierzchu, lepiej nie rzucaæ siê nikomu w oczy, bo coœ strasznie nerwowi Ci skazañcy.
 	AI_Output (other, self,"DIA_PIR_2600_Angus_Hello_15_17"); //Jak dot¹d brzmi rozs¹dnie.
 	AI_Output (self, other,"DIA_PIR_2600_Angus_Hello_07_18"); //Znasz mnie, rozs¹dek to moje drugie imiê, tym bardziej, ¿e ten las ma w sobie coœ z bestii.
 	AI_Output (self, other,"DIA_PIR_2600_Angus_Hello_07_19"); //Przy zejœciu na pla¿ê widzia³em zwiadowcê w czerwonej zbroi. Na razie lepiej go omijaæ, przynajmniej w pojedynkê. 

@@ -126,8 +126,8 @@ FUNC INT DIA_Cavalorn_CanYouTeachMe_Condition()
 FUNC VOID DIA_Cavalorn_CanYouTeachMe_Info()
 {
    AI_Output (other, self, "DIA_Cavalorn_CanYouTeachMe_15_01"); //Mo¿esz mnie czegoœ nauczyæ?
-   AI_Output (self, other, "DIA_Cavalorn_CanYouTeachMe_12_02"); //Mogê pokazaæ ci jak podejœæ niezauwa¿onym do nieprzyjaciela i wygarn¹æ mu z ³uku.
-   AI_Output (self, other, "DIA_Cavalorn_CanYouTeachMe_12_03"); //Poka¿ê ci te¿ kilka æwiczeñ, dziêki którym bêdziesz zrêczniejszy.
+   AI_Output (self, other, "DIA_Cavalorn_CanYouTeachMe_12_02"); //Mogê pokazaæ Ci jak podejœæ niezauwa¿onym do nieprzyjaciela i wygarn¹æ mu z ³uku.
+   AI_Output (self, other, "DIA_Cavalorn_CanYouTeachMe_12_03"); //Poka¿ê Ci te¿ kilka æwiczeñ, dziêki którym bêdziesz zrêczniejszy.
    Log_CreateTopic(GE_TeacherOR, LOG_NOTE);
    
    B_LogEntry(GE_TeacherOR, "Cavalorn poka¿e mi jak siê skradaæ, szyæ z ³uku i co zrobiæ ¿eby byæ zrêczniejszym.");
@@ -171,7 +171,7 @@ FUNC VOID DIA_Cavalorn_Recruits_Info()
    AI_Output (self, other,"DIA_Cavalorn_Recruits_12_16"); //Je¿eli uda Ci siê sprowadziæ, powiedzmy, piêciu nowych, to znacznie przyczynisz siê naszej sprawie.
    AI_Output (other, self, "DIA_Cavalorn_Recruits_15_17"); //Ale nic za darmo. Przys³uga za przys³ugê.
    AI_Output (self, other,"DIA_Cavalorn_Recruits_12_18"); //Rozumiem. Niestety nie œpiê na rudzie jak Gomez albo magowie wody.
-   AI_Output (self, other,"DIA_Cavalorn_Recruits_12_19"); //Zap³acê ci 200 bry³ek za ka¿dego rekruta.
+   AI_Output (self, other,"DIA_Cavalorn_Recruits_12_19"); //Zap³acê Ci 200 bry³ek za ka¿dego rekruta.
    AI_Output (self, other,"DIA_Cavalorn_Recruits_12_20"); //Co Ty na to?
 
    Info_ClearChoices (DIA_Cavalorn_Recruits);
@@ -1012,7 +1012,7 @@ FUNC VOID DIA_Cavalorn_BlackTroll_Info()
    AI_Output (self, other,"DIA_Cavalorn_BlackTroll_12_18"); //Wiêc jak bêdzie? Porozmawiasz z ³owcami w moim imieniu?
    
    Log_CreateTopic(CH2_Rbl_TrollHunters, LOG_NOTE);
-   B_LogEntry(CH2_Rbl_TrollHunters, "Cavalorn opowiedzia³ mi o obozie ³owców trolli. Pozosta³e obozy staraj¹ siê od nich stroniæ, co oznacza, ¿e ci ³owcy to banda niez³ych sukinsynów.");
+   B_LogEntry(CH2_Rbl_TrollHunters, "Cavalorn opowiedzia³ mi o obozie ³owców trolli. Pozosta³e obozy staraj¹ siê od nich stroniæ, co oznacza, ¿e Ci ³owcy to banda niez³ych sukinsynów.");
 
    Info_ClearChoices(DIA_Cavalorn_BlackTroll);
    Info_AddChoice    (DIA_Cavalorn_BlackTroll, "To trudna decyzja..." ,DIA_Cavalorn_BlackTroll_No);   
@@ -1735,7 +1735,7 @@ FUNC INT DIA_Cavalorn_Meeting3_Condition()
 FUNC VOID DIA_Cavalorn_Meeting3_Info()
 {   
    AI_TurnToNpc(self, other);
-   AI_Output (self, other,"DIA_Cavalorn_Meeting_12_06"); //Ty wyruszysz do ³owców troli. Niech bêd¹ gotowi. Powiesz Kirze, ¿e zaatakuj¹ ty³y stra¿ników, kiedy ci rzuc¹ siê na palisadê.
+   AI_Output (self, other,"DIA_Cavalorn_Meeting_12_06"); //Ty wyruszysz do ³owców troli. Niech bêd¹ gotowi. Powiesz Kirze, ¿e zaatakuj¹ ty³y stra¿ników, kiedy Ci rzuc¹ siê na palisadê.
    AI_Output (other, self, "DIA_Cavalorn_Meeting_15_07"); //Postaram siê j¹ przekonaæ do naszej sprawy.
    AI_Output (self, other,"DIA_Cavalorn_Meeting_12_08"); //Skoro ka¿dy zna swoje obowi¹zki, to ruszcie dupska! Czeka nas sporo pracy.
    
@@ -2182,7 +2182,7 @@ FUNC VOID DIA_Cavalorn_SpyEnd_Info()
       AI_Output (other, self, "DIA_Cavalorn_SpyEnd_15_03"); //Czasami i w s³owach szaleñca mo¿na odnaleŸæ ziarno prawdy...
    };
    
-   AI_Output (self, other,"DIA_Cavalorn_SpyEnd_12_04"); //Krew mnie zala³a, kiedy siê dowiedzia³em, co ci idioci zrobili.
+   AI_Output (self, other,"DIA_Cavalorn_SpyEnd_12_04"); //Krew mnie zala³a, kiedy siê dowiedzia³em, co Ci idioci zrobili.
    AI_Output (other, self, "DIA_Cavalorn_SpyEnd_15_05"); //Quentin i Aidan s¹ w porz¹dku. Wstawili siê za mn¹, chcieli poczekaæ na Ciebie.
    AI_Output (self, other,"DIA_Cavalorn_SpyEnd_12_06"); //Wiem. Abel jest przewra¿liwiony i wszêdzie widzi wrogów. Œwistak to chor¹giewka na wietrze, pójdzie za g³osem wiêkszoœci.
    AI_Output (self, other,"DIA_Cavalorn_SpyEnd_12_07"); //R¹czka to idiota, który a¿ siê prosi o jakiœ wypadek z belk¹, która spadnie mu na g³owê. 
@@ -2280,7 +2280,7 @@ FUNC VOID DIA_Cavalorn_NCFinish_Info()
    AI_Output (other, self, "DIA_Cavalorn_NCFinish_15_07"); //Nareszcie. Od czego zaczniemy?
    AI_Output (self, other,"DIA_Cavalorn_NCFinish_12_08"); //Musisz znowu rozejrzeæ siê w Starym Obozie. Kilka dni temu urwa³ siê kontakt z Urtem i Diego.
    AI_Output (self, other,"DIA_Cavalorn_NCFinish_12_09"); //Obawiam siê najgorszego.
-   AI_Output (other, self, "DIA_Cavalorn_NCFinish_15_10"); //Lepiej ¿ebyœ siê myli³. Urt œwietnie zorganizowa³ dywersjê, a Diego mia³ wp³yn¹æ na kopaczy i cienie. Je¿eli ci dwaj wypadli z gry, to atak na Stary Obóz bardziej nas wykrwawi.
+   AI_Output (other, self, "DIA_Cavalorn_NCFinish_15_10"); //Lepiej ¿ebyœ siê myli³. Urt œwietnie zorganizowa³ dywersjê, a Diego mia³ wp³yn¹æ na kopaczy i cienie. Je¿eli Ci dwaj wypadli z gry, to atak na Stary Obóz bardziej nas wykrwawi.
    AI_Output (self, other,"DIA_Cavalorn_NCFinish_12_11"); //Wiem o tym, dlatego cieszê siê na Twój widok. Musisz odnaleŸæ Urta i Diego.
    AI_Output (self, other,"DIA_Cavalorn_NCFinish_12_12"); //Nie rozpoczniemy ataku, zanim nie dowiem siê, co siê tam wyprawia. Zbyt wielu dobrych ludzi mog³oby zgin¹æ...
    AI_Output (other, self, "DIA_Cavalorn_NCFinish_15_13"); //Dobra, zrobiê to. Ale pod jednym warunkiem.

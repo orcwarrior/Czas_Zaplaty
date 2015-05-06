@@ -304,7 +304,7 @@ FUNC VOID DIA_Urt_Diego_Info()
 	AI_Output (other, self, "DIA_Urt_Diego_15_01"); //Rozmawia³em z Diego.
 	AI_Output (self, other, "DIA_Urt_Diego_11_02"); //NieŸle. Czyli cieni mamy ju¿ z g³owy?
 	AI_Output (other, self, "DIA_Urt_Diego_15_03"); //Niezupe³nie. Muszê jeszcze znaleŸæ sposób na to, ¿eby sprowadziæ go do obozu.
-	AI_Output (self, other, "DIA_Urt_Diego_11_04"); //To na co czekasz? A¿ Gomez wyœle ci zaproszenie?
+	AI_Output (self, other, "DIA_Urt_Diego_11_04"); //To na co czekasz? A¿ Gomez wyœle Ci zaproszenie?
 	AI_Output (other, self, "DIA_Urt_Diego_15_05"); //Bardzo œmieszne. Idê odwaliæ za Ciebie czarn¹ robotê.
 };
 

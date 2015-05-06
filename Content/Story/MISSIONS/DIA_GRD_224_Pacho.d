@@ -228,7 +228,7 @@ FUNC VOID DIA_Pacho_Map_Info()
 	AI_Output (self, other, "DIA_Pacho_Map_11_45"); //Ty... wzbudzasz zaufanie. A przede wszystkim pomog³eœ, kiedy tego najbardziej potrzebowa³em.
 	AI_Output (self, other, "DIA_Pacho_Map_11_46"); //Dlaczego nie mielibyœmy na tym skorzystaæ obaj?
 	AI_Output (self, other, "DIA_Pacho_Map_11_47"); //Podzielimy siê równo po po³owie, do tego mo¿esz wzi¹æ b³yskotkê Gomeza.
-	AI_Output (other, self, "DIA_Pacho_Map_15_48"); //Jestem piratem. Sk¹d pewnoœæ, ¿e nie poder¿nê ci gard³a, kiedy ju¿ bêdziemy na miejscu?
+	AI_Output (other, self, "DIA_Pacho_Map_15_48"); //Jestem piratem. Sk¹d pewnoœæ, ¿e nie poder¿nê Ci gard³a, kiedy ju¿ bêdziemy na miejscu?
 	AI_Output (self, other, "DIA_Pacho_Map_11_49"); //Znam siê na ludziach. Co Ty na to?
 
 	Info_ClearChoices (DIA_Pacho_Map);
@@ -669,7 +669,7 @@ Daj im gdzieœ wp 6 powinno wystarczyæ a¿ nadto
 
 /********************
 Zrobi³em tak, ¿e ten gwizdek przywo³uje Bia³ego K³a, który od tej pory zostanie ju¿ z Dickiem for ever ;)
-Je¿eli to ci odpowiada to zrób mu ze 2 komendy chocia¿: ChodŸ, Zostañ.
+Je¿eli to Ci odpowiada to zrób mu ze 2 komendy chocia¿: ChodŸ, Zostañ.
 
 Jak wolisz to zrób tak aby gwizdek przywo³ywa³ tylko okoliczne wilki, które bêd¹ walczyæ po stronie dicka przez jakiœ czas
 

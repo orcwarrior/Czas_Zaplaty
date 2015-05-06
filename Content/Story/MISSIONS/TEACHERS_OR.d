@@ -492,7 +492,7 @@ func void RBL_331_Fingers_Pickpocket1()
    B_GiveSkill	(hero, NPC_TALENT_PICKPOCKET, 1, LPCOST_TALENT_PICKPOCKET_1,100);
    
 	AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_01"); //Chcia³byœ odci¹¿yæ parê osób z ich dobytku, co? No dobra.
-	AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_02"); //Poka¿ê ci na czym powinieneœ siê skoncentrowaæ, ale szanse, ¿e zostaniesz z³apany bêd¹ nadal znaczne.
+	AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_02"); //Poka¿ê Ci na czym powinieneœ siê skoncentrowaæ, ale szanse, ¿e zostaniesz z³apany bêd¹ nadal znaczne.
 	AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_03"); //Podejmuj ryzyko wy³¹cznie, jeœli w pobli¿u ofiary nie ma osób trzecich.
 	AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_04"); //Tylko prawdziwy mistrz potrafi ukraœæ coœ pozostaj¹c ca³kowicie niezauwa¿onym!
       

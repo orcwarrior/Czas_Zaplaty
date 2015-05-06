@@ -151,7 +151,7 @@ FUNC VOID DIA_HUN_20254_Grd_Hello3_Info()
    
 	AI_Output (self, other,"DIA_HUN_20254_Grd_Hello3_06_01"); //Jak ty stamt¹d uciek³eœ?
 	AI_Output (other, self,"DIA_HUN_20254_Grd_Hello3_15_02"); //Powiedzmy, ¿e mia³em farta.
-	AI_Output (self, other,"DIA_HUN_20254_Grd_Hello3_06_03"); //Nie wierzê w szczêœcie, ale niech ci bêdzie.
+	AI_Output (self, other,"DIA_HUN_20254_Grd_Hello3_06_03"); //Nie wierzê w szczêœcie, ale niech Ci bêdzie.
 	AI_Output (self, other,"DIA_HUN_20254_Grd_Hello3_06_04"); //Bywaj.
 	
    B_StopProcessInfos(self);

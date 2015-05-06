@@ -96,7 +96,7 @@ FUNC VOID Info_StrangeDemon_Halo_Info()
 	AI_Output		(hero, self,"Info_StrangeDemon_Halo_15_05"); //Co mnie to obchodzi?	
 	AI_Output		(self, hero,"Info_StrangeDemon_Halo_17_06"); //Aleœ ty uparty!
 	AI_Output		(self, hero,"Info_StrangeDemon_Halo_17_07"); //Ujmê to tak. Znam sekrety, które uczyni¹ z Ciebie obrzydliwie bogatego cz³owieka.
-	AI_Output		(hero, self,"Info_StrangeDemon_Halo_15_08"); //A ja w zamian mam ci oddaæ duszê czy nadstawiæ ty³ka?
+	AI_Output		(hero, self,"Info_StrangeDemon_Halo_15_08"); //A ja w zamian mam Ci oddaæ duszê czy nadstawiæ ty³ka?
 	AI_Output		(self, hero,"Info_StrangeDemon_Halo_17_09"); //Wystarczy, ¿e mnie wys³uchasz. PóŸniej sam zdecydujesz co zrobisz.	
 	AI_Output		(hero, self,"Info_StrangeDemon_Halo_15_10"); //Niech bêdzie, mów.
 	

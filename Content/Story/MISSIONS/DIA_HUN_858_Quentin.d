@@ -128,14 +128,14 @@ FUNC VOID DIA_Quentin_CanYouTeachMe_Info()
    
    if (quentin_fight == TRUE) && (Npc_GetAivar(self,AIV_WASDEFEATEDBYSC) == TRUE)
    {
-      AI_Output (self, other, "DIA_Quentin_CanYouTeachMe_15_02"); //Pokona³eœ w walce, ale jestem w stanie pokazaæ ci kilka nowych sztuczek.
+      AI_Output (self, other, "DIA_Quentin_CanYouTeachMe_15_02"); //Pokona³eœ w walce, ale jestem w stanie pokazaæ Ci kilka nowych sztuczek.
    }
    else
    {
       AI_Output (self, other, "DIA_Quentin_CanYouTeachMe_15_03"); //Machasz mieczem jak cepem, musisz jeszcze sporo siê nauczyæ.
    };
    
-   AI_Output (self, other, "DIA_Quentin_CanYouTeachMe_15_04"); //Poka¿ê ci podstawy walki broni¹ jednorêczn¹.
+   AI_Output (self, other, "DIA_Quentin_CanYouTeachMe_15_04"); //Poka¿ê Ci podstawy walki broni¹ jednorêczn¹.
    AI_Output (self, other, "DIA_Quentin_CanYouTeachMe_15_05"); //Znam te¿ kilka æwiczeñ na poprawienie zrêcznoœci.
    AI_Output (self, other, "DIA_Quentin_CanYouTeachMe_15_06"); //Wiem te¿ jak szybko zregenerowaæ si³y. 
    

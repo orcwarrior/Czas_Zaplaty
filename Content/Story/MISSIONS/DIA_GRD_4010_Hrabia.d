@@ -530,11 +530,11 @@ FUNC VOID DIA_Hrabia_TheRock_Info()
 	AI_GotoNpc(other, self);
 	AI_TurnToNpc(self, other);
 	AI_Output (self, other, "DIA_Hrabia_TheRock_11_01"); //Nawet tutaj mnie znalaz³eœ, godna podziwu determinacja.
-	AI_Output (other, self, "DIA_Hrabia_TheRock_15_02"); //Ja zawsze sp³acam d³ugi. Dam ci jednak wybór.
+	AI_Output (other, self, "DIA_Hrabia_TheRock_15_02"); //Ja zawsze sp³acam d³ugi. Dam Ci jednak wybór.
 	AI_Output (self, other, "DIA_Hrabia_TheRock_11_03"); //Wybór? Wydaje Ci siê, ¿e ktokolwiek z nas ma jakiœ wybór?
 	AI_Output (other, self, "DIA_Hrabia_TheRock_15_04"); //Robiê tylko to, co zechcê, sam kujê w³asny los.
 	AI_Output (self, other, "DIA_Hrabia_TheRock_11_05"); //Tak Ci siê tylko wydaje. Ktoœ przêdzie sieæ, w któr¹ wpadamy. Ka¿dy z nas pod¹¿a tak¹ drgaj¹c¹ nitk¹, a na koñcu czyha bestia, dla której jesteœmy tylko kolejn¹ przek¹sk¹.
-	AI_Output (other, self, "DIA_Hrabia_TheRock_15_06"); //Akurat teraz zebra³o ci siê na rozwa¿ania egzystencjonalne.
+	AI_Output (other, self, "DIA_Hrabia_TheRock_15_06"); //Akurat teraz zebra³o Ci siê na rozwa¿ania egzystencjonalne.
 	AI_Output (self, other, "DIA_Hrabia_TheRock_11_07"); //Proszê tylko, ¿ebyœ wys³ucha³ pewnej opowieœci. PóŸniej zrobisz, co uwa¿asz za stosowne.
 	AI_Output (other, self, "DIA_Hrabia_TheRock_15_08"); //Niech bêdzie, mów.
 	AI_Output (self, other, "DIA_Hrabia_TheRock_11_09"); //Nie trafi³em do Kolonii przez przypadek. Przyby³em tu w okreœlonym celu.
@@ -553,7 +553,7 @@ FUNC VOID DIA_Hrabia_TheRock_Info()
 	AI_Output (self, other, "DIA_Hrabia_TheRock_11_22"); //Kruk musi zgin¹æ, a ja mia³em wykonaæ wyrok.
 	AI_Output (other, self, "DIA_Hrabia_TheRock_15_23"); //I dlatego siê z nim ponownie zbrata³eœ, rozwi¹zywa³eœ jego problemy i zabija³eœ jego wrogów?
 	AI_Output (self, other, "DIA_Hrabia_TheRock_11_24"); //To czêœæ planu. Musia³em zdobyæ pe³ne zaufanie Kruka, ¿eby dowiedzieæ siê wszystkiego, co wie i co zamierza.
-	AI_Output (other, self, "DIA_Hrabia_TheRock_15_25"); //Powiedzmy, ¿e ci wierzê. Co dalej?
+	AI_Output (other, self, "DIA_Hrabia_TheRock_15_25"); //Powiedzmy, ¿e Ci wierzê. Co dalej?
 	AI_Output (self, other, "DIA_Hrabia_TheRock_11_26"); //Kruk zajmowa³ w gildii wysokie stanowisko. Niestety za póŸno wysz³o na jaw, ¿e jego obsesj¹ sta³y siê ukryte œwi¹tynie Beliara.
 	AI_Output (self, other, "DIA_Hrabia_TheRock_11_27"); //Kruk znikn¹³ na kilka miesiêcy. Kiedy wróci³ nie by³ ju¿ tym samym cz³owiekiem. To znaczy nadal by³ wrednym skurwielem, ale w jego oczach... 
 	AI_Output (self, other, "DIA_Hrabia_TheRock_11_28"); //Myœleliœmy, ¿e to zal¹¿ek szaleñstwa. Jednak teraz jestem pewien, ¿e to wp³yw Beliara.

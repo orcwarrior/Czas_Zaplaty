@@ -578,7 +578,7 @@ FUNC VOID DIA_Fox_Armor_Info()
 	AI_Output (self, other, "DIA_Fox_Armor_11_02"); //Tak...
 	AI_Output (other, self, "DIA_Fox_Armor_15_03"); //To daj mi go.
 	AI_Output (self, other, "DIA_Fox_Armor_11_04"); //Hola, hola. Nie tak szybko! Bêdziesz musia³ za niego zap³aciæ!
-	AI_Output (other, self, "DIA_Fox_Armor_15_05"); //Mo¿e przyniosê ci kilka konfitur i za³atwimy t¹ sprawê?
+	AI_Output (other, self, "DIA_Fox_Armor_15_05"); //Mo¿e przyniosê Ci kilka konfitur i za³atwimy t¹ sprawê?
    AI_Output (self, other, "DIA_Fox_Armor_11_06"); //KONFITURY!!! NIE, nie namówisz mnie! Nie mogê tak rozdawaæ pancerzy.
    AI_Output (self, other, "DIA_Fox_Armor_11_07"); //Musisz zap³aciæ. Ale warte s¹ swojej ceny. Obejrzyj je sobie.
 	AI_Output (other, self, "DIA_Fox_Armor_15_08"); //Zobaczmy...

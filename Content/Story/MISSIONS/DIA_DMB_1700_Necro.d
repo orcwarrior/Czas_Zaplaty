@@ -765,7 +765,7 @@ FUNC VOID  Info_Nekroman_RitualEnd_Info()
 	AI_Output (self, other,"Info_Nekroman_RitualEnd_14_01"); //Czujê Zew Krwi. Za chwilê...
 	AI_Output (other, self, "Info_Nekroman_RitualEnd_15_02"); //Wstrzymaj swój gniew Mistrzu! Ukaza³ mi siê sam Beliar!
 	AI_Output (self, other,"Info_Nekroman_RitualEnd_14_03"); //Hê? Teraz?
-	AI_Output (other, self, "Info_Nekroman_RitualEnd_15_04"); //Tak i nakaza³, ¿e ci magowie musz¹ ¿yæ!
+	AI_Output (other, self, "Info_Nekroman_RitualEnd_15_04"); //Tak i nakaza³, ¿e Ci magowie musz¹ ¿yæ!
 	AI_Output (self, other,"Info_Nekroman_RitualEnd_14_05"); //To jakaœ bzdura!
 	AI_Output (other, self, "Info_Nekroman_RitualEnd_15_06"); //W¹tpisz w moje s³owa i wolê naszego Pana?
 	AI_Output (self, other,"Info_Nekroman_RitualEnd_14_07"); //Niech to wszystko szlag trafi! Znowu nikogo nie zabijê!

@@ -259,7 +259,7 @@ FUNC VOID DIA_PIR_2602_Rodney_Packages_bow()
 {
 	AI_Output (other, self,"DIA_PIR_2602_Rodney_Packages_bow_15_01"); //Przyda³aby mi siê recepta na ³uk.
 	AI_Output (self, other,"DIA_PIR_2602_Rodney_Packages_bow_08_02"); //Proszê bardzo. Dziêki tej recepcie stworzysz ³uk, który przebije niejeden pancerz.
-	AI_Output (self, other,"DIA_PIR_2602_Rodney_Packages_bow_08_03"); //Niech ci dobrze s³u¿y.
+	AI_Output (self, other,"DIA_PIR_2602_Rodney_Packages_bow_08_03"); //Niech Ci dobrze s³u¿y.
 	CreateInvItems (self,Recept_ItRw_Bow_Long_02,1);
 	B_GiveInvItems (self, other, Recept_ItRw_Bow_Long_02, 1);
 	Log_SetTopicStatus	(CH1_Pir_RodneyHelp, LOG_SUCCESS);
@@ -273,7 +273,7 @@ FUNC VOID DIA_PIR_2602_Rodney_Packages_crossbow()
 {
 	AI_Output (other, self,"DIA_PIR_2602_Rodney_Packages_crossbow_15_01"); //Recepta na kuszê to najlepszy wybór.
 	AI_Output (self, other,"DIA_PIR_2602_Rodney_Packages_crossbow_08_02"); //W rzeczy samej. Kusza, któr¹ mo¿esz stworzyæ przebija ciê¿k¹ zbrojê ze stu kroków.
-	AI_Output (self, other,"DIA_PIR_2602_Rodney_Packages_crossbow_08_03"); //Niech ci dobrze s³u¿y.
+	AI_Output (self, other,"DIA_PIR_2602_Rodney_Packages_crossbow_08_03"); //Niech Ci dobrze s³u¿y.
 	CreateInvItems (self,Recept_ItRw_Crossbow_01,1);
 	B_GiveInvItems (self, other, Recept_ItRw_Crossbow_01, 1);
 	Log_SetTopicStatus	(CH1_Pir_RodneyHelp, LOG_SUCCESS);
@@ -289,7 +289,7 @@ INSTANCE DIA_Rodney_KillAligator (C_INFO)
 	information		= DIA_Rodney_KillAligator_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "Jak ci siê podoba obóz?"; 
+	description		= "Jak Ci siê podoba obóz?"; 
 };
 
 FUNC INT DIA_Rodney_KillAligator_Condition()
@@ -303,7 +303,7 @@ FUNC INT DIA_Rodney_KillAligator_Condition()
 FUNC VOID DIA_Rodney_KillAligator_Info()
 {
 	B_GiveXP(100);
-	AI_Output (other, self, "DIA_Rodney_KillAligator_15_01"); //Jak ci siê podoba obóz?
+	AI_Output (other, self, "DIA_Rodney_KillAligator_15_01"); //Jak Ci siê podoba obóz?
 	AI_Output (self, other, "DIA_Rodney_KillAligator_11_02"); //Ujdzie. Zawsze to lepszy port ni¿ ¿aden.
 	AI_Output (other, self, "DIA_Rodney_KillAligator_15_03"); //Mam problem z pewnym aligatorem...
 	AI_Output (self, other, "DIA_Rodney_KillAligator_11_04"); //ProwadŸ, rozwi¹zywanie problemów to moja specjalnoœæ!

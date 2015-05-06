@@ -332,7 +332,7 @@ FUNC VOID DIA_FISK_Spy1_Info()
 	AI_Output (self, other, "DIA_FISK_Spy1_07_08"); //Gomez to szaleniec, który prêdzej czy póŸniej zap³aci za swoje zbrodnie.
 	AI_Output (self, other, "DIA_FISK_Spy1_07_09"); //Nie sypn¹³bym Cavalorna i ch³opaków - nie gryzie siê rêki, która Ciê karmi, piracie.
 	AI_Output (other, self, "DIA_FISK_Spy1_15_10"); //To mo¿e ktoœ inny?
-	AI_Output (self, other, "DIA_FISK_Spy1_07_11"); //Nie wiem... Chocia¿ coœ ci powiem. Tony by³ kumplem Szakala, a to jeden z najbardziej zaufanych ludzi Gomeza.
+	AI_Output (self, other, "DIA_FISK_Spy1_07_11"); //Nie wiem... Chocia¿ coœ Ci powiem. Tony by³ kumplem Szakala, a to jeden z najbardziej zaufanych ludzi Gomeza.
 	AI_Output (self, other, "DIA_FISK_Spy1_07_12"); //Z tego co wiem nikt ze stra¿ników nie œciga³ Toniego kiedy to niby ucieka³ z obozu Gomeza.
 	AI_Output (self, other, "DIA_FISK_Spy1_07_13"); //Ale to tylko moje spostrze¿enia. Mogê siê myliæ, dlatego trzymam jêzyk za zêbami. Nie oskar¿am nikogo, je¿eli nie mam dowodów.
 	AI_Output (other, self, "DIA_FISK_Spy1_15_14"); //To rzadka zaleta. Przemyœlê to, co powiedzia³eœ...

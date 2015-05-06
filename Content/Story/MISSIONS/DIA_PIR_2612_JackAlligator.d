@@ -82,7 +82,7 @@ FUNC VOID DIA_JACKALLIGATOR_CanYouTeachMe_Info()
 {
    AI_Output (other, self, "DIA_JACKALLIGATOR_CanYouTeachMe_15_01"); //Mo¿esz mnie czegoœ nauczyæ?
    AI_Output (self, other, "DIA_JACKALLIGATOR_CanYouTeachMe_15_02"); //Ty nêdzny szczurze l¹dowy, jak œmiesz o to pytaæ?!
-   AI_Output (self, other, "DIA_JACKALLIGATOR_CanYouTeachMe_15_03"); //W sumie mogê ci pokazaæ jak unikaæ ciosów. Na pewno przyda siê to takiemu tchórzowi jak ty.
+   AI_Output (self, other, "DIA_JACKALLIGATOR_CanYouTeachMe_15_03"); //W sumie mogê Ci pokazaæ jak unikaæ ciosów. Na pewno przyda siê to takiemu tchórzowi jak ty.
    AI_Output (self, other, "DIA_JACKALLIGATOR_CanYouTeachMe_15_04"); //Mogê te¿ nauczyæ ciê oprawiaæ zwierzynê.
       
    Log_CreateTopic(GE_TeacherOW, LOG_NOTE);
@@ -780,12 +780,12 @@ func void DIA_Jack_TreasureBlackDog_Info()
    
    AI_RemoveWeapon(other);
    
-   AI_Output (self, other, "DIA_Jack_TreasureBlackDog_12_05"); //No wiêc tak. Móg³bym ci daæ mapê, ale... na razie jest bezwartoœciowa.
+   AI_Output (self, other, "DIA_Jack_TreasureBlackDog_12_05"); //No wiêc tak. Móg³bym Ci daæ mapê, ale... na razie jest bezwartoœciowa.
    AI_Output (other, self, "DIA_Jack_TreasureBlackDog_15_06"); //Co ty pieprzysz?
    AI_Output (self, other, "DIA_Jack_TreasureBlackDog_12_07"); //Stary Jack pieprzy tylko dziewki, he, he.
    AI_Output (self, other, "DIA_Jack_TreasureBlackDog_12_08"); //Ale wracaj¹c do rzeczy. Skarb Czarnego Psa nie znajduje siê w Górniczej Dolinie. Jest ukryty na wyspie, ale w innej czêœci.
    AI_Output (other, self, "DIA_Jack_TreasureBlackDog_15_09"); //Czyli zrobi³eœ ze mnie tylko ch³opca na posy³ki? Jak myœlisz, co powinienem teraz z Tob¹ zrobiæ?
-   AI_Output (self, other, "DIA_Jack_TreasureBlackDog_12_10"); //Uspokój siê! Jak tylko barierê szlag trafi, to osobiœcie ciê znajdê i wsadzê ci t¹ mapê w dupê! Masz na to s³owo... pirata.
+   AI_Output (self, other, "DIA_Jack_TreasureBlackDog_12_10"); //Uspokój siê! Jak tylko barierê szlag trafi, to osobiœcie ciê znajdê i wsadzê Ci t¹ mapê w dupê! Masz na to s³owo... pirata.
    AI_Output (other, self, "DIA_Jack_TreasureBlackDog_15_11"); //Mam nadziejê. Póki co nie zabijê ciê.
 };
 // **************************************************

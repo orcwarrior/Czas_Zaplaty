@@ -77,7 +77,7 @@ FUNC VOID  DIA_Skip_Warehouse_Info()
 	AI_Output (self, other,"DIA_Skip_Warehouse_12_03"); //A co mo¿na trzymaæ w magazynie zamkniêtym na klucz?
 	AI_Output (other, self,"DIA_Skip_Warehouse_15_04"); //Kobitki?
 	AI_Output (self, other,"DIA_Skip_Warehouse_12_05"); //He, he. Dobre.
-	AI_Output (self, other,"DIA_Skip_Warehouse_12_06"); //W sumie by³eœ blisko. Coœ ci zdradzê...
+	AI_Output (self, other,"DIA_Skip_Warehouse_12_06"); //W sumie by³eœ blisko. Coœ Ci zdradzê...
 	AI_StandUp (self);
 	AI_PlayAni (self, "T_SEARCH");
 	AI_TurnToNpc (self, other);
@@ -121,7 +121,7 @@ instance  DIA_Skip_Swords (C_INFO)
 	condition	=  DIA_Skip_Swords_Condition;
 	information	=  DIA_Skip_Swords_Info;
 	permanent	=  0;
-	description = "Chyba coœ ci wypad³o.";
+	description = "Chyba coœ Ci wypad³o.";
 };                       
 
 FUNC int  DIA_Skip_Swords_Condition()
@@ -134,7 +134,7 @@ FUNC int  DIA_Skip_Swords_Condition()
 
 FUNC VOID  DIA_Skip_Swords_Info()
 {
-	AI_Output (other, self,"DIA_Skip_Swords_15_00"); //Chyba coœ ci wypad³o.
+	AI_Output (other, self,"DIA_Skip_Swords_15_00"); //Chyba coœ Ci wypad³o.
 	AI_Output (self, other,"DIA_Skip_Swords_12_01"); //O czym mówisz?
 	AI_Output (other, self,"DIA_Skip_Swords_15_02"); //Poznajesz ten klucz?
 	AI_TurnToNpc 	(self,other);

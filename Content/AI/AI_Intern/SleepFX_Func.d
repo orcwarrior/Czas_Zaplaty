@@ -330,7 +330,7 @@ func void SleepFX_PerFrameHandle()
 			}	
 			else if(FadeScreenState==0)//done
 			{
-				PutMsg("Sen dobrze ci zrobi³.","font_default.tga",RGBAToZColor(255,255,255,255),2*8,"");
+				PutMsg("Sen dobrze Ci zrobi³.","font_default.tga",RGBAToZColor(255,255,255,255),2*8,"");
 				//PrintScreen	(, -1,-1,"font_old_20_white.tga",3);
 				hero.attribute[ATR_HITPOINTS] = hero.attribute[ATR_HITPOINTS_MAX];
 				hero.attribute[ATR_MANA] = hero.attribute[ATR_MANA_MAX];	

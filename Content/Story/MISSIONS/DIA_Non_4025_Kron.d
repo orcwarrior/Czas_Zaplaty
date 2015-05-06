@@ -118,7 +118,7 @@ FUNC VOID DIA_Kron_Fight_Info()
 {
 	AI_Output (other, self, "DIA_Kron_Fight_15_01"); //Dobry ork to martwy ork!
 	AI_Output (self, other, "DIA_Kron_Fight_11_02"); //Morra chcieæ rozgniewaæ Moja? Moja nie walczyæ z Morra, Ma³a Morra zakazaæ zabijaæ inna Morra.
-	AI_Output (other, self, "DIA_Kron_Fight_15_03"); //S³uchasz tego co mówi ci ktoœ, kto sika na siedz¹co?
+	AI_Output (other, self, "DIA_Kron_Fight_15_03"); //S³uchasz tego co mówi Ci ktoœ, kto sika na siedz¹co?
 	AI_Output (self, other, "DIA_Kron_Fight_11_04"); //Moja sp³acaæ d³ug ¿ycia, Moja pos³uchaæ Ma³a Morra. Moja nie zabijaæ inna Morra, nawet jak mieæ ochota.
 	AI_Output (self, other, "DIA_Kron_Fight_11_05"); //Morra odejœæ, zostawiæ Moja w spokój.
 	

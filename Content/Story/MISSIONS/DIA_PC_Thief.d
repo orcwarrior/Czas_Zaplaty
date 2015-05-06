@@ -222,7 +222,7 @@ FUNC VOID Info_Diego_Prison_Info()
 
 		/**************************
 
-Ork jak ci siê chce i o ile jest to w zasiêgu to mo¿naby wzi¹æ to pod uwagê i cienie i kopacze rzeczywiœcie bêd¹ mieæ pecha bo straznicy w miejscach gdzie ude¿¹ bêd¹ przygotowani.
+Ork jak Ci siê chce i o ile jest to w zasiêgu to mo¿naby wzi¹æ to pod uwagê i cienie i kopacze rzeczywiœcie bêd¹ mieæ pecha bo straznicy w miejscach gdzie ude¿¹ bêd¹ przygotowani.
 Mo¿na wtedy od razu uœmierciæ 1/3 atakuj¹cych a reszta i tak zginie.
 czyli jak chest_conf == 2 to stra¿nicy x2 tam gdzie maj¹ zaatakowaæ Cienie i Kopacze
 
@@ -466,7 +466,7 @@ FUNC INT DIA_Diego_CanYouTeachMe_Condition()
 FUNC VOID DIA_Diego_CanYouTeachMe_Info()
 {
 	AI_Output (other, self, "DIA_Diego_CanYouTeachMe_15_01"); //Mo¿esz mnie czegoœ nauczyæ?
-	AI_Output (self, other, "DIA_Diego_CanYouTeachMe_12_02"); //Mogê pokazaæ ci æwiczenia zwiêkszaj¹ce zrêcznoœæ.
+	AI_Output (self, other, "DIA_Diego_CanYouTeachMe_12_02"); //Mogê pokazaæ Ci æwiczenia zwiêkszaj¹ce zrêcznoœæ.
 	AI_Output (self, other, "DIA_Diego_CanYouTeachMe_12_03"); //NieŸle te¿ radzê sobie z ³ukiem.	
 	
 	Log_CreateTopic(GE_TeacherOW, LOG_NOTE);

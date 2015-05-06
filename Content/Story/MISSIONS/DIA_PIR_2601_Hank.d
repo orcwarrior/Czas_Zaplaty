@@ -112,7 +112,7 @@ FUNC VOID DIA_PIR_2601_Hank_WhereAreWe_Info()
 	AI_Output (self, other,"DIA_PIR_2601_Hank_WhereAreWe_09_12"); //Nie inaczej, brachu.
 	AI_Output (other, self,"DIA_PIR_2601_Hank_WhereAreWe_15_13"); //A ruszyliœcie ju¿ t³uste zadki, ¿eby pospacerowaæ po okolicy?
 	AI_Output (self, other,"DIA_PIR_2601_Hank_WhereAreWe_09_14"); //To samo powiedzia³ Angus. Musimy zbadaæ wyspê i mo¿e wyniuchamy jak st¹d prysn¹æ zanim narazimy siê niew³aœciwej osobie.
-	AI_Output (self, other,"DIA_PIR_2601_Hank_WhereAreWe_09_15"); //Mam tylko nadziejê, ¿e reszta skazañców nie jest taka nerwowa jak ci idioci w czerwonych zbrojach.
+	AI_Output (self, other,"DIA_PIR_2601_Hank_WhereAreWe_09_15"); //Mam tylko nadziejê, ¿e reszta skazañców nie jest taka nerwowa jak Ci idioci w czerwonych zbrojach.
 	AI_Output (other, self,"DIA_PIR_2601_Hank_WhereAreWe_15_16"); //Ktoœ was zaatakowa³?	
 	AI_Output (self, other,"DIA_PIR_2601_Hank_WhereAreWe_09_17"); //Mo¿na tak powiedzieæ. W ka¿dym razie próbowali. Nie posz³o im za dobrze, ale lepiej, ¿eby ich kumple nas nie znaleŸli.
 	AI_Output (other, self,"DIA_PIR_2601_Hank_WhereAreWe_15_18"); //Spotkaliœcie innych skazañców?			

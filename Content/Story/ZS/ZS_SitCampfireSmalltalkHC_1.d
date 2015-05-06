@@ -50,7 +50,7 @@ func void ZS_SitCampfireSmalltalkHC_1_loop()
     	}
     	else if (talktime <  15)
     	{
-    		AI_Output (self,NULL,"ZS_SmallTalkSitHC_Text03");//I jak ci idzie polowanie.
+    		AI_Output (self,NULL,"ZS_SmallTalkSitHC_Text03");//I jak Ci idzie polowanie.
     	}
     	else if (talktime < 20)
     	{

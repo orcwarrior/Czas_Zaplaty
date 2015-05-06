@@ -174,7 +174,7 @@ FUNC VOID DIA_Grd_215_First_Patrol_Duke_Into()
 FUNC VOID DIA_Grd_215_First_Patrol_Duke_Drink()
 {
 	B_GiveXP(750);
-	AI_Output (other, self,"DIA_Grd_215_First_Patrol_Duke_Drink_15_20"); //Mam coœ co odœwie¿y ci pamiêæ.
+	AI_Output (other, self,"DIA_Grd_215_First_Patrol_Duke_Drink_15_20"); //Mam coœ co odœwie¿y Ci pamiêæ.
 	AI_Output (self, other,"DIA_Grd_215_First_Patrol_Duke_Drink_06_21"); //Co takiego?
 	AI_Output (other, self,"DIA_Grd_215_First_Patrol_Duke_Drink_15_22"); //Pierwszorzêdny spiryt!
 	AI_RemoveWeapon (self);	

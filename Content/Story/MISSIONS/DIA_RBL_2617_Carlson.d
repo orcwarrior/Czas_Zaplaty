@@ -156,7 +156,7 @@ FUNC INT DIA_Carlson_CanYouTeachMe_Condition()
 FUNC VOID DIA_Carlson_CanYouTeachMe_Info()
 {
    AI_Output (other, self, "DIA_Carlson_CanYouTeachMe_15_01"); //Mo¿esz mnie czegoœ nauczyæ?
-   AI_Output (self, other, "DIA_Carlson_CanYouTeachMe_15_02"); //Tak, mogê ciê nauczyæ wykuwaæ miecze. Pewnie ci siê to przyda w ¿yciu...
+   AI_Output (self, other, "DIA_Carlson_CanYouTeachMe_15_02"); //Tak, mogê ciê nauczyæ wykuwaæ miecze. Pewnie Ci siê to przyda w ¿yciu...
       
    Log_CreateTopic(GE_TeacherOW, LOG_NOTE);
    B_LogEntry(GE_TeacherOW, "Carlson mo¿e mnie nauczyæ kowalstwa.");
@@ -313,9 +313,9 @@ FUNC VOID DIA_RBL_2617_Carlson_armor_Info()
    
    AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_03"); //Ja pierdole, przecie¿ to skóra czarnego trolla! Nie s¹dzi³em, ¿e mo¿esz zabiæ takiego skurczybyka.
    AI_Output (other, self, "DIA_RBL_2617_Carlson_armor_15_04"); //Mo¿emy przejœæ do sedna sprawy?
-   AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_05"); //Ach tak, mogê ci wykuæ pancerz, ale przys³uga za przys³ugê.
+   AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_05"); //Ach tak, mogê Ci wykuæ pancerz, ale przys³uga za przys³ugê.
    AI_Output (other, self, "DIA_RBL_2617_Carlson_armor_15_06"); //¯e co!? Znowu mam robiæ za jakiegoœ ch³opca na posy³ki?
-   AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_07"); //Mam ci zrobiæ ten pancerz czy nie?
+   AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_07"); //Mam Ci zrobiæ ten pancerz czy nie?
    AI_Output (other, self, "DIA_RBL_2617_Carlson_armor_15_08"); //Ech... no dobra, mów, czego chcesz.
    
    AI_PlayAni ( self, "T_SEARCH");
@@ -333,7 +333,7 @@ FUNC VOID DIA_RBL_2617_Carlson_armor_Info()
    AI_Output (other, self, "DIA_RBL_2617_Carlson_armor_15_18"); //¯e co do cholery?! Dlaczego nie wsadzisz mu topora prosto w dupê?
    AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_19"); //Bardzo tego chcê, ale jak ju¿ mówi³em podpad³em Cavalornowi i jak jeszcze raz nabrojê...
    AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_20"); //...to bêdê musia³ masowaæ Aidanowi œmierdz¹ce stopy przez ca³y miesi¹c.
-   AI_Output (other, self, "DIA_RBL_2617_Carlson_armor_15_21"); //He, he, a to ci Cavalorn. Byæ mo¿e bêdziesz niez³ym masa¿yst¹.
+   AI_Output (other, self, "DIA_RBL_2617_Carlson_armor_15_21"); //He, he, a to Ci Cavalorn. Byæ mo¿e bêdziesz niez³ym masa¿yst¹.
    AI_Output (self, other, "DIA_RBL_2617_Carlson_armor_11_22"); //Przestañ ¿artowaæ i za³atw to jak najszybciej, tym lepiej bêdzie dla mnie, a teraz zostaw mnie samego.
         
    Log_CreateTopic	(CH2_RBL_armor, LOG_MISSION);
@@ -366,7 +366,7 @@ FUNC INT DIA_RBL_2617_Carlson_Leaf_agree_Condition()
 FUNC VOID DIA_RBL_2617_Carlson_Leaf_agree_Info()
 {
 	AI_Output (other, self, "DIA_RBL_2617_Carlson_Leaf_agree_15_01"); //I po sprawie, co z tym pancerzem?
-	AI_Output (self, other, "DIA_RBL_2617_Carlson_Leaf_agree_11_02"); //Wielkie dziêki, naprawdê nie wiesz, jak bardzo jestem ci wdziêczny. A co do pancerza przyjdŸ za kilka dni, wtedy bêdzie gotowy.
+	AI_Output (self, other, "DIA_RBL_2617_Carlson_Leaf_agree_11_02"); //Wielkie dziêki, naprawdê nie wiesz, jak bardzo jestem Ci wdziêczny. A co do pancerza przyjdŸ za kilka dni, wtedy bêdzie gotowy.
    
    Carlson_armor = B_SetDayTolerance()+3;
 	
@@ -395,7 +395,7 @@ FUNC INT DIA_RBL_2617_Carlson_troll_armor_ready_Condition()
 
 FUNC VOID DIA_RBL_2617_Carlson_troll_armor_ready_Info()
 {
-	AI_Output (self, other, "DIA_RBL_2617_Carlson_troll_armor_ready_11_01"); //Pancerz gotowy. I jak ci siê podoba?
+	AI_Output (self, other, "DIA_RBL_2617_Carlson_troll_armor_ready_11_01"); //Pancerz gotowy. I jak Ci siê podoba?
 	AI_Output (other, self, "DIA_RBL_2617_Carlson_troll_armor_ready_15_02"); //Nawet niez³y ten pancerz. Dziêki, kowalu.
    AI_Output (self, other, "DIA_RBL_2617_Carlson_troll_armor_ready_11_03"); //Nie ma sprawy, Carlson zawsze do us³ug.
    AI_Output (self, other, "DIA_RBL_2617_Carlson_troll_armor_ready_11_04"); //A teraz za³ó¿ nowe ³achy i pofruwaj sobie w nich po kolonii, he, he.

@@ -555,14 +555,14 @@ FUNC VOID R_CreateProduct(var C_ITEM recept)
 			
 			if(succesed_creations)
 			{
-				msg = ConcatStrings("Uda³o ci siê wytworzyæ ",prodname);		
+				msg = ConcatStrings("Uda³o Ci siê wytworzyæ ",prodname);		
 				msg = ConcatStrings(msg,".");	
 				PutMsg(msg,"font_default.tga",RGBAToZColor(155,255,155,255),2*8,"");	
 				CreateInvItems(hero,recept.product,1);			
 			}
 			else
 			{
-				msg = "Nie uda³o ci siê wytworzyæ przedmiotu.";
+				msg = "Nie uda³o Ci siê wytworzyæ przedmiotu.";
 				PutMsg(msg,"font_default.tga",RGBAToZColor(255,155,155,255),2*8,"");	
 			};
 			
@@ -574,7 +574,7 @@ FUNC VOID R_CreateProduct(var C_ITEM recept)
 			
 			if(succesed_creations)
 			{
-				msg = ConcatStrings("Uda³o ci siê wytworzyæ ",IntToString(succesed_creations));
+				msg = ConcatStrings("Uda³o Ci siê wytworzyæ ",IntToString(succesed_creations));
 				msg = ConcatStrings(msg,"/");		
 				msg = ConcatStrings(msg,IntToString(itemtocreate));		
 				msg = ConcatStrings(msg," ");			
@@ -585,7 +585,7 @@ FUNC VOID R_CreateProduct(var C_ITEM recept)
 			}
 			else
 			{
-				msg = "Nie uda³o ci siê wytworzyæ ¿adnego przedmiotu.";
+				msg = "Nie uda³o Ci siê wytworzyæ ¿adnego przedmiotu.";
 				PutMsg(msg,"font_default.tga",RGBAToZColor(255,155,155,255),2*8,"");	
 			};
 			

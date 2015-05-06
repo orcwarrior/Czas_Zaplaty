@@ -207,7 +207,7 @@ FUNC VOID DIA_Hark_Again1_Info()
 	AI_Output (other, self, "DIA_Hark_Again1_15_05"); //Ca³a przyjemnoœæ po mojej stronie.
 	
    B_LogSetTopicStatus(CH1_Rbl_Hark, LOG_SUCCESS);
-	B_LogEntry(CH1_Rbl_Hark, "Sprawa z Harkiem i Kuflem za³atwiona. Trzeba przyznaæ, ¿e rozrywkowi ci rebelianci.");
+	B_LogEntry(CH1_Rbl_Hark, "Sprawa z Harkiem i Kuflem za³atwiona. Trzeba przyznaæ, ¿e rozrywkowi Ci rebelianci.");
 	
 	Npc_ExchangeRoutine(self,"start");//normal routine outside tavern, too
 	Npc_ExchangeRoutine(cup,"start");//normal routine outside tavern, too
@@ -241,7 +241,7 @@ FUNC VOID DIA_Hark_Again2_Info()
 	AI_Output (self, other, "DIA_Hark_Again2_11_03"); //No nic, zamiast Kufla mogê st³uc Ciebie. Mi tam zjedno komu spuszczê ³omot.
 	
    B_LogSetTopicStatus(CH1_Rbl_Hark, LOG_FAILED);
-	B_LogEntry(CH1_Rbl_Hark, "Nie uda³o mi siê sprowokowaæ Kufla i Hark siê na mnie rzuci³. Dziwni ci rebelianci...");
+	B_LogEntry(CH1_Rbl_Hark, "Nie uda³o mi siê sprowokowaæ Kufla i Hark siê na mnie rzuci³. Dziwni Ci rebelianci...");
 	B_StopProcessInfos	(self); 
 	B_StartAfterDialogFight(self,other,false);
 	Npc_ExchangeRoutine	(self,"start");//normal routine outside tavern, too

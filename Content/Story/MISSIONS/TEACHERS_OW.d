@@ -1686,7 +1686,7 @@ func void Buster_Training_Acrobat_Info()
    if (Hack_B_GiveSkill(hero, HACK_NPC_TALENT_ACROBAT, 1, LPCOST_TALENT_ACROBAT,100))
    {
       AI_Output (self, other,"DIA_ORG_833_Buster3_02_02"); //Po kilku lekcjach nauczysz siê skakaæ na wiêksze odleg³oœci.
-      AI_Output (self, other,"DIA_ORG_833_Buster3_02_03"); //Poka¿ê ci w jaki sposób mo¿na z³agodziæ efekt upadku z du¿ej wysokoœci. Tylko nie myœl sobie, ¿e bêdziesz móg³ skakaæ bóg wie sk¹d!
-      AI_Output (self, other,"DIA_ORG_833_Buster3_02_04"); //Akrobatyka przyda ci siê równie¿ w trakcie walki. Poka¿ê ci jak bardzo szybko zmniejszyæ lub zwiêkszyæ odleg³oœæ dziel¹c¹ ciê od przeciwnika. Powodzenia!
+      AI_Output (self, other,"DIA_ORG_833_Buster3_02_03"); //Poka¿ê Ci w jaki sposób mo¿na z³agodziæ efekt upadku z du¿ej wysokoœci. Tylko nie myœl sobie, ¿e bêdziesz móg³ skakaæ bóg wie sk¹d!
+      AI_Output (self, other,"DIA_ORG_833_Buster3_02_04"); //Akrobatyka przyda Ci siê równie¿ w trakcie walki. Poka¿ê Ci jak bardzo szybko zmniejszyæ lub zwiêkszyæ odleg³oœæ dziel¹c¹ ciê od przeciwnika. Powodzenia!
    };
 };	

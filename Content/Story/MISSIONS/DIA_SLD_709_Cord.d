@@ -281,7 +281,7 @@ FUNC void  DIA_Cord_ConvoysPeople_Info()
 	AI_Output (self, other,"DIA_Cord_ConvoysPeople_14_13"); //Za³atw sprawê z konwojami do koñca, a nie po¿a³ujesz.
 	AI_Output (other, self,"DIA_Cord_ConvoysPeople_15_14"); //To siê dopiero oka¿e, przyjacielu.
 	AI_Output (self, other,"DIA_Cord_ConvoysPeople_14_15"); //Stra¿nicy wybrani do tej roboty to wybitne skurywysny, wiêc siê z nimi nie cackaj.
-	AI_Output (self, other,"DIA_Cord_ConvoysPeople_14_16"); //Porozmawiaj z Orikiem, pomo¿e ci w wypruwaniu flaków.
+	AI_Output (self, other,"DIA_Cord_ConvoysPeople_14_16"); //Porozmawiaj z Orikiem, pomo¿e Ci w wypruwaniu flaków.
 	cord_wait = B_SetDayTolerance()+2;
 	B_LogEntry		(CH5_NC_Convoys, "Tym razem to transport ludzi. Cord zasugerowa³ abym rozejrza³ siê w pobli¿u Starego Obozu, a dok³adnie w okolicy bram. Da³ mi 2 dni na odnalezienie transportu. Mo¿e Orik pomo¿e mi ze stra¿nikami.");
 
@@ -749,7 +749,7 @@ FUNC VOID DIA_Cord_CanYouTeachMe_Info()
 {
 	AI_Output (other, self, "DIA_Cord_CanYouTeachMe_15_01"); //Mo¿esz mnie czegoœ nauczyæ?
 	AI_Output (self, other, "DIA_Cord_CanYouTeachMe_12_02"); //Fechtunek to moje ¿ycie, a broñ jednorêczna to moja kochanka.
-	AI_Output (self, other, "DIA_Cord_CanYouTeachMe_12_03"); //Poka¿ê ci jak zostaæ mistrzem miecza.	
+	AI_Output (self, other, "DIA_Cord_CanYouTeachMe_12_03"); //Poka¿ê Ci jak zostaæ mistrzem miecza.	
 	
 	Log_CreateTopic(GE_TeacherNC, LOG_NOTE);
 	B_LogEntry(GE_TeacherNC, "Cord nauczy mnie po mistrzowsku w³adaæ broni¹ jednorêczn¹.");

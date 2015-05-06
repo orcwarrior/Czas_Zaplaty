@@ -380,7 +380,7 @@ FUNC VOID DIA_Duke_Hello_Info()
 			B_StopProcessInfos(self);
 
 			/*****************************
-	Stra¿nicy s¹ odwróceni ty³em do piratów, ci podchodz¹ i 
+	Stra¿nicy s¹ odwróceni ty³em do piratów, Ci podchodz¹ i 
 	zajmuj¹ dogodne stanowiska do ataku za nimi - mo¿e ma³¹ kamerkê by tu zrobiæ?
 	******************************/
 		} 

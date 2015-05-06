@@ -119,7 +119,7 @@ FUNC INT DIA_Ratford_CanYouTeachMe_Condition()
 FUNC VOID DIA_Ratford_CanYouTeachMe_Info()
 {
    AI_Output (other, self,"Org_819_Drax_HuntHere_15_02"); //Móg³byœ nauczyæ mnie polowaæ?
-   AI_Output (self, other,"Org_819_Drax_HuntHere_06_03"); //Parê sztuczek móg³bym ci pokazaæ, ale to bêdzie kosztowaæ.
+   AI_Output (self, other,"Org_819_Drax_HuntHere_06_03"); //Parê sztuczek móg³bym Ci pokazaæ, ale to bêdzie kosztowaæ.
    AI_Output (self, other,"Org_819_Drax_Creatures_06_02"); //Wprawny ³owca potrafi zdobyæ k³y, pazury i skórê zwierzyny. Nie jest to ³atwe, ale doœæ op³acalne.
 	AI_Output (self, other,"Org_819_Drax_Creatures_06_03"); //W ka¿dym razie ka¿dy kupiec chêtnie odkupi od Ciebie trofea.
    
@@ -338,7 +338,7 @@ FUNC VOID DIA_RATFORD_Spy1_Info()
 	AI_Output (self, other, "DIA_RATFORD_Spy1_07_08"); //Zaczekaj. O co chodzi? Szukasz czegoœ?
 	AI_Output (other, self, "DIA_RATFORD_Spy1_15_09"); //Raczej kogoœ, kto brata siê ze Starym Obozem.
 	AI_Output (self, other, "DIA_RATFORD_Spy1_07_10"); //Hmm, te¿ mia³em takie podejrzenia, stra¿nicy za du¿o o nas wiedz¹.
-	AI_Output (self, other, "DIA_RATFORD_Spy1_07_11"); //Dam ci dobr¹ radê - nie szukaj tego co oczywiste, tylko tego co stwarza pozory prawdy.
+	AI_Output (self, other, "DIA_RATFORD_Spy1_07_11"); //Dam Ci dobr¹ radê - nie szukaj tego co oczywiste, tylko tego co stwarza pozory prawdy.
 	AI_Output (other, self, "DIA_RATFORD_Spy1_15_12"); //Chyba nie zrozumia³em...
 	AI_Output (self, other, "DIA_RATFORD_Spy1_07_13"); //Zrozumiesz w swoim czasie.
 	B_LogEntry(CH2_Rbl_Spy, "Ratford izoluje siê od ludzi, bo nie chce ponownie prze¿yæ straty przyjaciela. Powiedzia³ mi, abym nie wierzy³ pozorom. Chyba chcia³ mi powiedzieæ, ¿ebym nie ufa³ k³amcom. Jak na razie tylko Tony nie by³ ze mn¹ do koñca szczery. R¹czka te¿ coœ krêci. ");
@@ -1257,7 +1257,7 @@ FUNC VOID DIA_RATFORD_Patrols_Info()
 	{
 		B_GiveXP (1500);
 		ratford_patrols_success = true;
-		AI_Output (self, other, "DIA_RATFORD_Patrols_07_02"); //Œwietna robota, ci stra¿nicy ju¿ nam nie zaszkodz¹.
+		AI_Output (self, other, "DIA_RATFORD_Patrols_07_02"); //Œwietna robota, Ci stra¿nicy ju¿ nam nie zaszkodz¹.
 		AI_Output (self, other, "DIA_RATFORD_Patrols_07_03"); //Daj mi miecze i mo¿esz trochê odetchn¹æ. Zajmij siê w³asnymi sprawami.
 		AI_Output (self, other, "DIA_RATFORD_Patrols_07_04"); //Wróæ do mnie, jak bêdziesz gotów na kolejne harce.
 		
@@ -1856,7 +1856,7 @@ FUNC VOID DIA_RATFORD_WhatNext_Info()
 	AI_Output (self, other, "DIA_RATFORD_WhatNext_07_01"); //Posprz¹taliœmy po stra¿nikach. Na razie jakoœ sobie poradzê bez Ciebie. 
 	AI_Output (other, self, "DIA_RATFORD_WhatNext_15_02"); //No proszê, w koñcu dosta³em wolne. Cholera, i co ja teraz zrobiê?
 	AI_Output (self, other, "DIA_RATFORD_WhatNext_07_03"); //Coœ wymyœlisz. Powodzenia na szlaku, Rick.
-   AI_Output (self, other, "DIA_RATFORD_WhatNext_07_04"); //A jak naprawdê ci siê nudzi, to idŸ do Cavalorna. Ma dla Ciebie kolejne zadanie.
+   AI_Output (self, other, "DIA_RATFORD_WhatNext_07_04"); //A jak naprawdê Ci siê nudzi, to idŸ do Cavalorna. Ma dla Ciebie kolejne zadanie.
 	AI_Output (other, self, "DIA_RATFORD_WhatNext_15_05"); //Czyli jednak nie mam wolnego... Daj wytchn¹æ ch³opakom w obozie, zas³u¿yli na to.
 	AI_Output (self, other, "DIA_RATFORD_WhatNext_07_06"); //Przemyœlê to. Bywaj.
 	B_StopProcessInfos(self);

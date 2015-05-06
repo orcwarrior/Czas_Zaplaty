@@ -107,7 +107,7 @@ func void  DIA_Butch_After_Info()
 	
    if (Npc_GetAivar(self,AIV_HASDEFEATEDSC) == TRUE) //dick przegra³
 	{
-      AI_Output (self, other,"DIA_Butch_After_13_01"); //I po co ci to by³o, z³amasie?
+      AI_Output (self, other,"DIA_Butch_After_13_01"); //I po co Ci to by³o, z³amasie?
       AI_Output (other, self,"DIA_Butch_After_15_02"); //Zaczekaj...
       AI_Output (self, other,"DIA_Butch_After_13_03"); //Spierdalaj!
       

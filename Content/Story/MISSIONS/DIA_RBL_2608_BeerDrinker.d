@@ -344,7 +344,7 @@ FUNC INT DIA_Drunk_Lazur2_Condition()
 
 FUNC VOID DIA_Drunk_Lazur2_Info()
 {
-	AI_Output (self, other, "DIA_Drunk_Lazur2_11_01"); //Kto ci pozwoli³ grzebaæ w mojej skrzyni?
+	AI_Output (self, other, "DIA_Drunk_Lazur2_11_01"); //Kto Ci pozwoli³ grzebaæ w mojej skrzyni?
         
    AI_DrawWeapon (self);
    

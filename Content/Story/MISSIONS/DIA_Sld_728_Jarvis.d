@@ -162,7 +162,7 @@ FUNC VOID DIA_Jarvis_Help2_Info()
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_12"); //Mówiê prawdê! Zreszt¹, poczekam tu na Ciebie. 
 	AI_Output (other, self,"DIA_Jarvis_Help2_15_13"); //A dlaczego mia³bym Ci zaufaæ? Teraz te¿ siê przed czymœ ukrywasz.
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_14"); //Sk¹d taki pomys³... Ja tylko wola³em nie rzucaæ siê w oczy. Kolonia sta³a siê ostatnio bardzo niebezpiecznym miejscem.
-	AI_Output (other, self,"DIA_Jarvis_Help2_15_15"); //Powiedzmy, ¿e ci wierzê. To gdzie mam szukaæ tych 'skarbów'?
+	AI_Output (other, self,"DIA_Jarvis_Help2_15_15"); //Powiedzmy, ¿e Ci wierzê. To gdzie mam szukaæ tych 'skarbów'?
 	AI_Output (self, other,"DIA_Jarvis_Help2_08_16"); //WeŸ tê mapê. Jest zniszczona, ale to œwiadczy o jej autentycznoœci.
 	
 	/************************

@@ -334,7 +334,7 @@ func void  Info_Xardas_LOADSWORD09_Info()
 			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_02"); //Wprowadzê ciê w Szósty Kr¹g Magii.
 			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_03"); //Pamiêtaj, ¿e to przywilej zarezerwowany wy³¹cznie dla najbieglejszych magów. Mog¹ do niego przyst¹piæ ci, których ca³e ¿ycie jest znakiem.
 			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_04"); //Twoim znakiem jest zjednoczenie elementów.
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_05"); //Szósty Kr¹g pozwala ci wykorzystywaæ magiê dowolnej runy.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_05"); //Szósty Kr¹g pozwala Ci wykorzystywaæ magiê dowolnej runy.
 			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_06"); //I nie zapomnij: twoim zadaniem jest s³u¿yæ potêdze magii, a nie j¹ wykorzystywaæ.
 			
 			CreateInvItem 		(hero, DMB_ARMOR_M);		// SN: kann nicht mit B_GiveInvItem() übergeben werden, da Xardas sonst nackt dasteht!
@@ -353,7 +353,7 @@ func void  Info_Xardas_LOADSWORD09_Info()
 	}
 	else 
 	{
-		AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_07"); 	//Jeszcze nie. Jesteœ zdolny, ale brak ci niezbêdnego doœwiadczenia. Niech Saturas popracuje nad Tob¹ przez jakiœ czas. Wtedy zobaczymy.
+		AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_07"); 	//Jeszcze nie. Jesteœ zdolny, ale brak Ci niezbêdnego doœwiadczenia. Niech Saturas popracuje nad Tob¹ przez jakiœ czas. Wtedy zobaczymy.
 		
 		B_StopProcessInfos	( self );
 	};

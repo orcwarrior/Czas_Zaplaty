@@ -93,7 +93,7 @@ func void ZS_HSmalltalk_Loop()
     	}
     	else if (talktime < 35)
     	{
-    		AI_Output (self,NULL,"ZS_HSmalTalk_Text07");//Ja ci musze przyznaæ ¿e z naszego obozu robi siê prawdziwy DU¯Y obóz.
+    		AI_Output (self,NULL,"ZS_HSmalTalk_Text07");//Ja Ci musze przyznaæ ¿e z naszego obozu robi siê prawdziwy DU¯Y obóz.
     	}
     	else if (talktime < 40)
     	{
@@ -101,7 +101,7 @@ func void ZS_HSmalltalk_Loop()
     	}
     	else if (talktime < 45)
     	{
-    		AI_Output (self,NULL,"ZS_HSmalTalk_Text09");//Mówie ci szkoda gadaæ.
+    		AI_Output (self,NULL,"ZS_HSmalTalk_Text09");//Mówie Ci szkoda gadaæ.
     	}
     	else if (talktime < 50)
     	{
@@ -117,7 +117,7 @@ func void ZS_HSmalltalk_Loop()
     	}
     	else if (talktime < 65)
     	{
-    		AI_Output (self,NULL,"ZS_HSmalTalk_Text13");//Ostatno jakiœ koleœ strasznie ubolewa³ nad wyposa¿eniem ale musze ci przyznaæ ze mój miecz...
+    		AI_Output (self,NULL,"ZS_HSmalTalk_Text13");//Ostatno jakiœ koleœ strasznie ubolewa³ nad wyposa¿eniem ale musze Ci przyznaæ ze mój miecz...
     	}
     	else if (talktime < 70)
     	{

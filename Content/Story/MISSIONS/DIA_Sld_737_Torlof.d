@@ -293,7 +293,7 @@ Wsadzamy Bezia do kopalnii. W³¹czy mu siê gadka po tej torlofa
 	B_StopProcessInfos	(self);
 
 	/************************
-	Ork niech ci dwaj siê na siebie rzuc¹. Reszta kopaczy nie zaatakuje tych 2 stra¿ników a Dick ma uciekaæ z kopalni - przyda³aby siê kamerka prosta tutaj
+	Ork niech Ci dwaj siê na siebie rzuc¹. Reszta kopaczy nie zaatakuje tych 2 stra¿ników a Dick ma uciekaæ z kopalni - przyda³aby siê kamerka prosta tutaj
 	***********************/
 
 	B_StartAfterDialogFight(self,jur,false);
@@ -387,7 +387,7 @@ FUNC INT DIA_Torlof_CanYouTeachMe_Condition()
 FUNC VOID DIA_Torlof_CanYouTeachMe_Info()
 {
 	AI_Output (other, self, "DIA_Torlof_CanYouTeachMe_15_01"); //Mo¿esz mnie czegoœ nauczyæ?
-	AI_Output (self, other, "DIA_Torlof_CanYouTeachMe_12_02"); //Je¿eli w czymœ ci to pomo¿e, to wiem co nieco o pe³zaczach.
+	AI_Output (self, other, "DIA_Torlof_CanYouTeachMe_12_02"); //Je¿eli w czymœ Ci to pomo¿e, to wiem co nieco o pe³zaczach.
 	
 	Log_CreateTopic(GE_TeacherNC, LOG_NOTE);
 	B_LogEntry(GE_TeacherNC, "Torlof nauczy mnie jak pokroiæ pe³zacze.");

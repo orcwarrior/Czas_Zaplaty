@@ -138,7 +138,7 @@ FUNC INT Info_Vela_Key_Condition()
 
 FUNC VOID Info_Vela_Key_Info()
 {	
-	AI_Output (self, other,"Info_Vela_Key_16_01"); //Jak ci siê podoba to œwiecide³ko?
+	AI_Output (self, other,"Info_Vela_Key_16_01"); //Jak Ci siê podoba to œwiecide³ko?
 	AI_Output (other, self,"Info_Vela_Key_15_02"); //Sygnet jest wspania³y! Bêdzie mi zawsze przypomina³ twoje piêkne oczy...
 	AI_Output (self, other,"Info_Vela_Key_16_03"); //Chyba s³yszê czyjeœ kroki! Oddaj klucz i uciekaj!
 	

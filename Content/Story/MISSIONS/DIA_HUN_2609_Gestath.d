@@ -108,7 +108,7 @@ FUNC VOID DIA_Gestath_Hello_Info()
 	AI_Output (self, other, "DIA_Gestath_Hello_11_52"); //Mia³em w³aœnie na nowo rozpocz¹æ poszukiwania brata, kiedy zjawi³eœ siê Ty.
 	AI_Output (other, self, "DIA_Gestath_Hello_15_53"); //I dobrze siê sta³o. Wiem, gdzie obozuje Cavalorn.
 	AI_Output (self, other, "DIA_Gestath_Hello_11_54"); //Co?! Mów! Gdzie jest mój brat?!
-	AI_Output (other, self, "DIA_Gestath_Hello_15_55"); //Przewodzi obozowi rebeliantów. Mówi ci to coœ?
+	AI_Output (other, self, "DIA_Gestath_Hello_15_55"); //Przewodzi obozowi rebeliantów. Mówi Ci to coœ?
 	AI_Output (self, other, "DIA_Gestath_Hello_11_56"); //Tak. Gomez coœ przeb¹kiwa³ o tych rebeliantach. Ale zdaje siê, ¿e nie traktowa³ ich powa¿nie.
 	AI_Output (other, self, "DIA_Gestath_Hello_15_57"); //W³aœnie teraz obóz rebeliantów przygotowuje siê do odparcia ataku stra¿ników.
 	AI_Output (self, other, "DIA_Gestath_Hello_11_58"); //W takim razie nie mo¿e mnie tam zabrakn¹æ! ProwadŸ.

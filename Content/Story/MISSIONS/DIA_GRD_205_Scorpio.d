@@ -408,7 +408,7 @@ FUNC VOID DIA_Scorpio_CanYouTeachMe_Info()
       Scorpio_teacher = true;
       
       AI_Output (other, self, "DIA_Scorpio_CanYouTeachMe_15_01"); //Mo¿esz mnie czegoœ nauczyæ?
-      AI_Output (self, other, "DIA_Scorpio_CanYouTeachMe_15_02"); //Móg³bym ci pokazaæ, jak sprawnie pos³ugiwaæ siê kusz¹.
+      AI_Output (self, other, "DIA_Scorpio_CanYouTeachMe_15_02"); //Móg³bym Ci pokazaæ, jak sprawnie pos³ugiwaæ siê kusz¹.
       AI_Output (self, other, "DIA_Scorpio_CanYouTeachMe_15_03"); //Daj znaæ, jak bêdziesz chcia³ potrenowaæ.
       
       Log_CreateTopic(GE_TeacherOW, LOG_NOTE);
@@ -754,7 +754,7 @@ FUNC VOID DIA_Scorpio_Map_Info()
 		CreateInvItems (self,ItMiNugget,100);
 		B_GiveInvItems (self, other, ItMiNugget, 100);
       
-		AI_Output (other, self, "DIA_Scorpio_Map_15_04"); //Po co ci ta mapa?
+		AI_Output (other, self, "DIA_Scorpio_Map_15_04"); //Po co Ci ta mapa?
       
 		B_GiveInvItems (other, self, ItWrWorldmap, 1);
       
@@ -775,7 +775,7 @@ FUNC VOID DIA_Scorpio_Map_Info()
       
 		AI_Output (other, self, "DIA_Scorpio_Map_15_11"); //A reszta rudy?
 		AI_Output (self, other, "DIA_Scorpio_Map_11_12"); //Trzaby³o siê nie spóŸniæ!
-		AI_Output (other, self, "DIA_Scorpio_Map_15_09"); //Co siê tak wœciekasz. Po co ci ta mapa?
+		AI_Output (other, self, "DIA_Scorpio_Map_15_09"); //Co siê tak wœciekasz. Po co Ci ta mapa?
 		AI_Output (self, other, "DIA_Scorpio_Map_11_10"); //A co ciê to obchodzi?! Bywaj.
       
 		Log_SetTopicStatus(CH1_Rbl_Map, LOG_SUCCESS);

@@ -86,7 +86,7 @@ FUNC VOID DIA_Pluskwa_First_Info()
 	};
    
 	AI_Output (other, self, "DIA_Pluskwa_First_15_05"); //Jedyne co mnie interesuje to ³uk i strza³y. 
-	AI_Output (self, other, "DIA_Pluskwa_First_11_06"); //Dobra, znaj ³askê pana. Kupuj i nie miel jêzorem z tym wsza¿em, bo ci go utnê przy samej dupie!
+	AI_Output (self, other, "DIA_Pluskwa_First_11_06"); //Dobra, znaj ³askê pana. Kupuj i nie miel jêzorem z tym wsza¿em, bo Ci go utnê przy samej dupie!
 	
    B_StopProcessInfos(self);
 };
@@ -135,7 +135,7 @@ FUNC VOID DIA_Pluskwa_Again_Info()
 
 	Info_ClearChoices (DIA_Pluskwa_Again);
 	Info_AddChoice (DIA_Pluskwa_Again, "Powinieneœ coœ wypiæ.", DIA_Pluskwa_Again_Drink);
-	Info_AddChoice (DIA_Pluskwa_Again, "Zdaje siê, ¿e porz¹dny wpierdol dobrze ci zrobi!", DIA_Pluskwa_Again_Kill);
+	Info_AddChoice (DIA_Pluskwa_Again, "Zdaje siê, ¿e porz¹dny wpierdol dobrze Ci zrobi!", DIA_Pluskwa_Again_Kill);
 	Info_AddChoice (DIA_Pluskwa_Again, "Uwa¿aj na to, co mówisz.", DIA_Pluskwa_Again_Fear);
 };
 
@@ -145,11 +145,11 @@ FUNC VOID DIA_Pluskwa_Again_Kill()
 {
 	if (plusk_angry == FALSE)
 	{
-		AI_Output (other, self, "DIA_Pluskwa_Again_Kill_15_00"); //Zdaje siê, ¿e porz¹dny wpierdol dobrze ci zrobi!
+		AI_Output (other, self, "DIA_Pluskwa_Again_Kill_15_00"); //Zdaje siê, ¿e porz¹dny wpierdol dobrze Ci zrobi!
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Pluskwa_Again_Kill_15_01"); //Wyprujê ci flaki!
+		AI_Output (other, self, "DIA_Pluskwa_Again_Kill_15_01"); //Wyprujê Ci flaki!
 	};
    
 	AI_Output (self, other, "DIA_Pluskwa_Again_Kill_11_02"); //O proszê, trafi³ siê jakiœ idiota.
@@ -180,7 +180,7 @@ FUNC VOID DIA_Pluskwa_Again_Fear()
 		Info_AddChoice (DIA_Pluskwa_Again, "Znam kogoœ, kto nie bêdzie tak cierpliwy.", DIA_Pluskwa_Again_Fear_Know);
 	};
    
-	Info_AddChoice (DIA_Pluskwa_Again, "Wyprujê ci flaki!", DIA_Pluskwa_Again_Kill);
+	Info_AddChoice (DIA_Pluskwa_Again, "Wyprujê Ci flaki!", DIA_Pluskwa_Again_Kill);
 };
 
 // -------------------------------------------------------------------
@@ -202,7 +202,7 @@ FUNC VOID DIA_Pluskwa_Again_Fear_Know()
 		Info_AddChoice (DIA_Pluskwa_Again, "Powiem o wszystkim Fletcherowi!", DIA_Pluskwa_Again_Fear_Know_Flet);
 	};
    
-	Info_AddChoice (DIA_Pluskwa_Again, "Wyprujê ci flaki!", DIA_Pluskwa_Again_Kill);
+	Info_AddChoice (DIA_Pluskwa_Again, "Wyprujê Ci flaki!", DIA_Pluskwa_Again_Kill);
 };
 
 // -------------------------------------------------------------------
@@ -219,7 +219,7 @@ FUNC VOID DIA_Pluskwa_Again_Fear_Know_Hrabia()
 	AI_Output (self, other, "DIA_Pluskwa_Again_Fear_Know_Hrabia_11_06"); //Co proponujesz?
 	AI_Output (other, self, "DIA_Pluskwa_Again_Fear_Know_Hrabia_15_07"); //Dasz spokój Wilkowi, a ja zapomnê o twojej nadgorliwoœci.
 	AI_Output (self, other, "DIA_Pluskwa_Again_Fear_Know_Hrabia_11_08"); //To nie takie proste...
-	AI_Output (other, self, "DIA_Pluskwa_Again_Fear_Know_Hrabia_15_09"); //Kto kaza³ ci pilnowaæ Wilka?
+	AI_Output (other, self, "DIA_Pluskwa_Again_Fear_Know_Hrabia_15_09"); //Kto kaza³ Ci pilnowaæ Wilka?
 	AI_Output (self, other, "DIA_Pluskwa_Again_Fear_Know_Hrabia_11_10"); //Fletcher.
 	AI_Output (other, self, "DIA_Pluskwa_Again_Fear_Know_Hrabia_15_11"); //A kim on jest?
 	AI_Output (self, other, "DIA_Pluskwa_Again_Fear_Know_Hrabia_11_12"); //Racja. Dobra, coœ wymyœlê. Tylko napomknij o mnie Hrabiemu!
@@ -265,7 +265,7 @@ FUNC VOID DIA_Pluskwa_Again_Drink()
 		Info_AddChoice (DIA_Pluskwa_Again, "Mam coœ specjalnego!", DIA_Pluskwa_Again_Drink_Grog);
 	};
 
-	Info_AddChoice (DIA_Pluskwa_Again, "Wyprujê ci flaki!", DIA_Pluskwa_Again_Kill);
+	Info_AddChoice (DIA_Pluskwa_Again, "Wyprujê Ci flaki!", DIA_Pluskwa_Again_Kill);
 };
 
 // -------------------------------------------------------------------

@@ -377,7 +377,7 @@ FUNC VOID Info_Seven_MystLast_Info()
 	AI_Output (other, self,"Info_Seven_MystLast_15_00"); //Jestem gotów na prawdziwe wyzwanie.
 	AI_Output (self, other,"Info_Seven_MystLast_06_01"); //W rzeczy samej. Ale tym razem bêdzie ju¿ na powa¿nie.
 	AI_Output (self, other,"Info_Seven_MystLast_06_02"); //S³uchaj uwa¿nie, bo to nie bêdzie proste.
-	AI_Output (self, other,"Info_Seven_MystLast_06_03"); //Jak dziwnie by to nie zabrzmia³o przedstawiê ci kilka hipotez na... hipotezy.
+	AI_Output (self, other,"Info_Seven_MystLast_06_03"); //Jak dziwnie by to nie zabrzmia³o przedstawiê Ci kilka hipotez na... hipotezy.
 	AI_Output (self, other,"Info_Seven_MystLast_06_04"); //Jesteœ gotów?
 	AI_Output (other, self,"Info_Seven_MystLast_15_05"); //Dawaj.
 	AI_Output (self, other,"Info_Seven_MystLast_06_06"); //Hipoteza pierwsza. Hipoteza druga jest fa³szywa, a hipoteza trzecia jest prawdziwa.

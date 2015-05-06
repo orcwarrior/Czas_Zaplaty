@@ -116,7 +116,7 @@ FUNC VOID DIA_Leren_CanYouTeachMe_Info()
 {
    AI_Output (other, self, "DIA_Leren_CanYouTeachMe_15_01"); //Mo¿esz mnie czegoœ nauczyæ?
    AI_Output (self, other, "DIA_Leren_CanYouTeachMe_15_02"); //Mogê nauczyæ ciê, jak zwiêkszyæ duchow¹ si³ê i jak regenerowaæ manê. 
-   AI_Output (self, other, "DIA_Leren_CanYouTeachMe_15_03"); //Kiedy zostaniesz magiem, przeka¿ê ci wiedzê dotycz¹c¹ piêciu krêgów.
+   AI_Output (self, other, "DIA_Leren_CanYouTeachMe_15_03"); //Kiedy zostaniesz magiem, przeka¿ê Ci wiedzê dotycz¹c¹ piêciu krêgów.
    
    Log_CreateTopic(GE_TeacherOR, LOG_NOTE);
    B_LogEntry(GE_TeacherOR, "Leren mo¿e mi pomóc zwiêkszyæ manê i j¹ zregenerowaæ. Jak zostanê magiem, to nauczy mnie te¿ magicznych sztuczek.");

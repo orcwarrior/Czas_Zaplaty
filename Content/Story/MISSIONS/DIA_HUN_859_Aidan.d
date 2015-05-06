@@ -997,7 +997,7 @@ FUNC VOID DIA_AIDAN_SWD_Help_Info()
 	AI_Output (other, self, "DIA_AIDAN_SWD_Help_15_01"); //Mam Ci pomóc z mieczami.
 	AI_Output (self, other, "DIA_AIDAN_SWD_Help_11_02"); //Prosi³em Ratforda o pomoc, ale nie s¹dzi³em, ¿e przyœle Ciebie.
 	AI_Output (other, self, "DIA_AIDAN_SWD_Help_15_03"); //Ka¿dy ma chwilê s³aboœci. No dobra, mów, co mam robiæ.
-	AI_Output (self, other, "DIA_AIDAN_SWD_Help_11_04"); //Dam ci wybór. Wykujesz 10 mieczy, albo przyniesiesz 10 sztabek ¿elaza i 5 sztabek stali.
+	AI_Output (self, other, "DIA_AIDAN_SWD_Help_11_04"); //Dam Ci wybór. Wykujesz 10 mieczy, albo przyniesiesz 10 sztabek ¿elaza i 5 sztabek stali.
 	AI_Output (self, other, "DIA_AIDAN_SWD_Help_11_05"); //Co wybierasz?
 
 	Info_ClearChoices (DIA_AIDAN_SWD_Help);
@@ -1171,6 +1171,6 @@ FUNC VOID DIA_HUN_859_AIDAN_Repair_Axe_Info()
 	AI_GotoNPC(self, other);
 	AI_TurnToNPC(self, other);
 	
-	AI_Output (self, other, "DIA_HUN_859_AIDAN_Repair_Axe_15_03"); //Proszê, niech ci dobrze s³u¿y. 
+	AI_Output (self, other, "DIA_HUN_859_AIDAN_Repair_Axe_15_03"); //Proszê, niech Ci dobrze s³u¿y. 
 	AI_Output (other, self, "DIA_HUN_859_AIDAN_Repair_Axe_15_04"); //Dziêki.
 };

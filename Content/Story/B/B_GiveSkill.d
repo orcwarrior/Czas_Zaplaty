@@ -678,7 +678,7 @@ func int Hack_B_GiveSkill(var C_NPC typ, var int TAL, var int NEW_Wert, var int 
 						
 						if(Npc_GetTalentValue(typ, NPC_TALENT_2H)<=60)
 						{	
-							msg = "Brakuje ci ";		
+							msg = "Brakuje Ci ";		
 							msg = concatstrings(msg,IntToString(60-Npc_GetTalentValue(typ, NPC_TALENT_2H)));	
 							msg = concatstrings(msg,"% walki broni¹ dwurêczna, by nauczyæ siê tej umiejêtnoœci.");	
 							PutMsg(msg,"font_default.tga",RGBAToZColor(255,100,100,255),_TIME_MESSAGE_GIVEN,"");
@@ -686,7 +686,7 @@ func int Hack_B_GiveSkill(var C_NPC typ, var int TAL, var int NEW_Wert, var int 
 						};
 						if(Npc_GetTalentValue(typ, NPC_TALENT_1H)<=60)
 						{
-							msg = "Brakuje ci ";		
+							msg = "Brakuje Ci ";		
 							msg = concatstrings(msg,IntToString(60-Npc_GetTalentValue(typ, NPC_TALENT_1H)));	
 							msg = concatstrings(msg,"% walki broni¹ jednorêczn¹, by nauczyæ siê tej umiejêtnoœci.");							
 							PutMsg(msg,"font_default.tga",RGBAToZColor(255,100,100,255),_TIME_MESSAGE_GIVEN,"");

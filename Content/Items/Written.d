@@ -1048,7 +1048,7 @@ INSTANCE Schlacht_um_Varant2(C_Item)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					); 					
-					Doc_PrintLines	( nDocID,  0, "Wojna by³a skoñczona. Varant straci³o swe morskie porty, tak potrzebne dla zaopatrywania armii. Król Rhobar nie traci³ wiêcej czasu na polu bitwy, lecz zostawi³ swych genera³ów, by ci rozprawili siê z niedobitkami nieprzyjaciela. Varantczycy posiadali ju¿ tylko jedno ognisko oporu, zgromadzone wokó³ Lukkora, najpotê¿niejszego genera³a ca³ego narodu, który umiejêtnie zamieni³ pora¿kê w zwyciêstwo.");
+					Doc_PrintLines	( nDocID,  0, "Wojna by³a skoñczona. Varant straci³o swe morskie porty, tak potrzebne dla zaopatrywania armii. Król Rhobar nie traci³ wiêcej czasu na polu bitwy, lecz zostawi³ swych genera³ów, by Ci rozprawili siê z niedobitkami nieprzyjaciela. Varantczycy posiadali ju¿ tylko jedno ognisko oporu, zgromadzone wokó³ Lukkora, najpotê¿niejszego genera³a ca³ego narodu, który umiejêtnie zamieni³ pora¿kê w zwyciêstwo.");
 					
 					//2.Seite
 
@@ -1659,7 +1659,7 @@ FUNC VOID UseTagebuchOT()
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1); //  0 -> margins are in pixels
 					Doc_PrintLine		( nDocID,  1, "Dzieñ 67");
 					Doc_SetFont 		( nDocID, -1, "font_10_book.tga");
-					Doc_PrintLines	( nDocID,  1, "Podobno ci orkowi kap³ani nie maj¹ serc. Jeœli to prawda, jakim cudem nadal siê poruszaj¹?");
+					Doc_PrintLines	( nDocID,  1, "Podobno Ci orkowi kap³ani nie maj¹ serc. Jeœli to prawda, jakim cudem nadal siê poruszaj¹?");
 					Doc_PrintLines	( nDocID,  1, "Widzia³em miecz, którego tak bardzo siê boj¹. Gdyby uda³o mi siê go zdobyæ, ju¿ ja bym im pokaza³...");
 					Doc_PrintLine		( nDocID,  1, "");
 					Doc_SetFont 		( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 

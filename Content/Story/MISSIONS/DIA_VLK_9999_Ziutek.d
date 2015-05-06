@@ -96,7 +96,7 @@ func void DIA_VLK_9999_Ziutek_Potion_Info ()
 	AI_Output			(self, other, "DIA_VLK_9999_Ziutek_Potion_07_01"); //Jasne. Nie zaszkodzi.
 
 	Info_ClearChoices	(DIA_VLK_9999_Ziutek_Potion);
-	Info_AddChoice	(DIA_VLK_9999_Ziutek_Potion, "Dam ci póŸniej.", DIA_VLK_9999_Ziutek_Potion_spaeter );
+	Info_AddChoice	(DIA_VLK_9999_Ziutek_Potion, "Dam Ci póŸniej.", DIA_VLK_9999_Ziutek_Potion_spaeter );
 	Info_AddChoice	(DIA_VLK_9999_Ziutek_Potion, "(najmniejsza mikstura lecznicza)", DIA_VLK_9999_Ziutek_Potion_heiltrankLow );
 	Info_AddChoice	(DIA_VLK_9999_Ziutek_Potion, "(najlepsza mikstura lecznicza)", DIA_VLK_9999_Ziutek_Potion_heiltrank );
 

@@ -17,7 +17,7 @@ FUNC int DIA_ORG_833_Buster_Condition()
 
 func void DIA_ORG_833_Buster_Info()
 {
-	AI_Output (self, other,"DIA_ORG_833_Buster_02_01"); //Wiesz co, poruszasz siê tak jakoœ sztywno. Móg³bym ci pomóc.
+	AI_Output (self, other,"DIA_ORG_833_Buster_02_01"); //Wiesz co, poruszasz siê tak jakoœ sztywno. Móg³bym Ci pomóc.
 };
 
 // ************************ EXIT **************************
@@ -61,7 +61,7 @@ FUNC INT DIA_ORG_833_Buster3_Condition()
 
 func VOID DIA_ORG_833_Buster3_Info()
 {
-	AI_Output (self, other,"DIA_ORG_833_Buster3_02_01"); //Mogê ci pokazaæ, jak nale¿y balansowaæ cia³em. Nauczê ciê AKROBATYKI.
+	AI_Output (self, other,"DIA_ORG_833_Buster3_02_01"); //Mogê Ci pokazaæ, jak nale¿y balansowaæ cia³em. Nauczê ciê AKROBATYKI.
 
 	B_LogEntry(GE_TeacherOW, "Buster mo¿e mnie nauczyæ akrobatyki.");
 };
