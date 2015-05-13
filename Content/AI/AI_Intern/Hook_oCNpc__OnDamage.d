@@ -1,56 +1,33 @@
 var int Hook_oCNPC_OnDamage_slfAdr;
 const int MAX_RANGE_INT = 1073741823; //2^30 - 1
-// NOTE: Hooki dziaÅ‚ajÄ… poprawnie tylko w wypadku obraÅ¼eÅ„
-// zadanych w zwarciu oraz od obraÅ¼eÅ„ zadanych z broni dystansowych.
+// NOTE: Hooki dzia³aj¹ poprawnie tylko w wypadku obra¿eñ
+// zadanych w zwarciu oraz od obra¿eñ zadanych z broni dystansowych.
 func void OCNPC_ONDAMAGE_Begin()
 {
 	Hook_oCNPC_OnDamage_slfAdr = getECX();
 	//CheckAdress(getESP(),180,1,false);
 };
 
-func void OCNPC_ONDAMAGE_POSTEVENTCALL()
+func void OCNPC_ONDAMAGE_POSTEVENTCALL() 
 {
-	var int oCNpc_slf_Adr_in_oCDamageDescriptor;
-	var int oCNpc_oth_Adr_in_oCDamageDescriptor;
-	oCNpc_slf_Adr_in_oCDamageDescriptor = Hook_oCNPC_OnDamage_slfAdr;
-	printDebug_s_i(">#DamageReact: pre read other addr, ECX: ",getECX());
-	printDebug_s_i(">#DamageReact: ... this (org ECX) adr: ",Hook_oCNPC_OnDamage_slfAdr);
-	if (getECX() == Hook_oCNPC_OnDamage_slfAdr)
+	// EAX - contains damage
+	//oCNpc_slf_Adr_in_oCDamageDescriptor == defender
+	//oCNpc_oth_Adr_in_oCDamageDescriptor == attacker
+    
+	var int attacker; attacker = MEM_ReadInt (MEM_ReadInt (ESP + 548) + 4); // other
+	var int defender; defender = ECX; // self
+    
+   if (defender == attacker)
 	{
-		printdebug("getECX() == Hook_oCNPC_OnDamage_slfAdr >> break function");
 		return;
-	};
-	if(ECX > Hook_oCNPC_OnDamage_slfAdr*2 || ECX < oCNpc_vtbl)
-	{
-		//printDebug(">#DamageReact: We gon' check addr!");
-		//CheckAdress(ECX,100,1,false);	
-		//CheckAdress(ECX,100,1,true);
-		return;
-	};
+   };
 
-	oCNpc_oth_Adr_in_oCDamageDescriptor = MEM_ReadInt(getECX() + 76);//0x48
-	printDebug_s_i(">#DamageReact: ... oCNpc_oth_Adr_in_oCDamageDescriptor: ", oCNpc_oth_Adr_in_oCDamageDescriptor);
-	
-	if (oCNpc_oth_Adr_in_oCDamageDescriptor > MAX_RANGE_INT)
+   if (Hlp_Is_oCNpc (attacker)
+   && Hlp_Is_oCNpc (defender))
 	{
-		printdebug(">#DamageReact: Out of range int!");
-		return;
-	};
-	//_slf = MEM_CpyInst(slf);
-	//_oth = MEM_CpyInst(oth);
-	//Ork: PERCe kompletnie wyÅ‚Ä…czam i opieram siÄ™ wyÅ‚acznie na tym hook'u
-	if ((Hook_oCNPC_OnDamage_slfAdr > oCNpc_vtbl) && (oCNpc_oth_Adr_in_oCDamageDescriptor  > oCNpc_vtbl))
-	{
-		printDebug_s_i_s_i(">#DamageReact: oth adr: ",oCNpc_oth_Adr_in_oCDamageDescriptor,", valid:",Hlp_Is_oCNpc(oCNpc_oth_Adr_in_oCDamageDescriptor));
-		printDebug_s_i_s_i(">#DamageReact: slf adr: ",oCNpc_slf_Adr_in_oCDamageDescriptor,", valid:",Hlp_Is_oCNpc(oCNpc_slf_Adr_in_oCDamageDescriptor));
-		if (Hlp_Is_oCNpc(Hook_oCNPC_OnDamage_slfAdr)
-	    && Hlp_Is_oCNpc(oCNpc_oth_Adr_in_oCDamageDescriptor))		
-		{
-			var C_NPC _slf; 	
-			var C_NPC _oth; 
-			MEM_AssignInst (_slf, oCNpc_slf_Adr_in_oCDamageDescriptor);
-			MEM_AssignInst (_oth, oCNpc_oth_Adr_in_oCDamageDescriptor);
-			B_SpecialCombatDamageReaction(_slf,_oth);
-		};
+      var C_Npc att; att = _^ (attacker);
+      var C_Npc def; def = _^ (defender);
+      // self to deffender, a other to attacker
+      B_SpecialCombatDamageReaction (def, att);
 	};
 };
