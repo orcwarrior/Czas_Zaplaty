@@ -3,7 +3,7 @@ INSTANCE PC_Mage(NPC_DEFAULT)
 	//-------- primary data --------
 	name 			= "Milten";
 	Npctype			= NPCTYPE_FRIEND;
-	guild			= GIL_PUP;
+	guild			= GIL_MAG;
 	level			= 30;			// real 15,aber 999 damit er nicht flieht!
 	voice			= 2;
 	id				= 2;
@@ -54,7 +54,7 @@ FUNC VOID Rtn_prestart_2 ()
 };
 FUNC VOID Rtn_Start_2 ()
 {	
-	TA_Sleep		(00,00,08,00,"OCC_CHAPEL_LEFT_ROOM");  
+	TA_Sleep		(00,00,08,00,"SLEEP");  
 	TA_ReadBook		(07,30,20,30,"PATHMAGE");
    TA_Smalltalk	(20,30,00,00,"HC_BRIDGE");//Rodney    	
 };
