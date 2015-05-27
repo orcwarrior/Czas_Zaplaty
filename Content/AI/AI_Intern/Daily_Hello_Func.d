@@ -27,7 +27,7 @@ FUNC VOID B_DailyHello__SayResponse(var int npcID,var string msg)
 	{
 		oth = Hlp_GetNpc(npcID);
 	};
-	print_s_i_s_i("Hero resp Say...see: ",Npc_CanSeeNpc(hero,oth),", dawn: ",C_NpcIsDown(hero));
+	//print_s_i_s_i("Hero resp Say...see: ",Npc_CanSeeNpc(hero,oth),", dawn: ",C_NpcIsDown(hero));
 	if(!C_NpcIsDown(hero))
 	{
 		// Fix: #85 (Przywitanie przerywa dialog)
@@ -55,21 +55,21 @@ FUNC VOID B_DailyHello_AddResponseToQueue(var int msgListener/*not using*/,var s
 	// { msgListener = Npc_GetTarget(hero); };
 	if(DailyHello_sayDelay1 == 0)
 	{		
-		Print("Hero resp at:1");
+		//Print("Hero resp at:1");
 		DailyHello_othID1 	= msgListener;
 		DailyHello_sayMsg1	= WHAT;
 		DailyHello_sayDelay1= DELAY;
 	}
 	else if(DailyHello_sayDelay2 == 0)
 	{
-		Print("Hero resp at:2");
+		//Print("Hero resp at:2");
 		DailyHello_othID2 	= msgListener;
 		DailyHello_sayMsg2	= WHAT;
 		DailyHello_sayDelay2= DELAY;
 	}
 	else if(DailyHello_sayDelay3 == 0)
 	{
-		Print("Hero resp at:3");
+		//Print("Hero resp at:3");
 		DailyHello_othID3 	= msgListener;
 		DailyHello_sayMsg3	= WHAT;
 		DailyHello_sayDelay3= DELAY;
