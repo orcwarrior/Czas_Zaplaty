@@ -225,6 +225,8 @@ FUNC VOID DIA_Necro_GreetInNecroloc_Info()
 	AI_Output (self, other, "DIA_Necro_GreetInNecroloc_11_01"); //Na Beliara! Jednak odwa¿y³eœ siê do mnie teleportowaæ!
 	AI_Output (other, self, "DIA_Necro_GreetInNecroloc_15_02"); //Bo chcê wszystko robiæ ku chwalê Beliara, mój panie!
 	AI_Output (self, other, "DIA_Necro_GreetInNecroloc_11_03"); //Dobrze, bardzo dobrze. Daj znaæ, gdy tylko bêdziesz gotowy, aby rozpocz¹æ próbê!
+	
+	BOSSFIGHT_CURRENT = BOSSFIGHT_NONE;
 };
 
 INSTANCE DIA_Necro_ReadyForTest(C_INFO)
