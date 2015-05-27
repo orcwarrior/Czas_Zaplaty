@@ -36,7 +36,7 @@ INSTANCE PC_Hero(NPC_DEFAULT)
 	Mdl_SetVisualBody (self,"HUM_BODY_NAKED0",0,1,"Hum_Head_Fighter",340,1,PIR_ARMOR_Rick);
 	
 	//Npc_PercDisable(self,PERC_ASSESSDAMAGE);
-	Npc_PercEnable (self,PERC_ASSESSDAMAGE ,B_HeroReactToDamage ); 
+	//Npc_PercEnable (self,PERC_ASSESSDAMAGE ,B_HeroReactToDamage ); 
 	//-------- talents --------
 //	Npc_SetTalentSkill		( self,HACK_NPC_TALENT_SNEAK,1);	
 //	Npc_SetTalentSkill		(self,NPC_TALENT_1H,2);
