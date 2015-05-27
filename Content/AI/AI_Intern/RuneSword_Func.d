@@ -1231,7 +1231,7 @@ func void RuneSwd2hUse()
 	RUNE_SWD_EQUIPED = 2;
 };
 
-FUNC VOID EVT_TRIGGER3 ()
+FUNC VOID turnOnRuneSwordEffects()
 {//SWORD VFX EFFECT
 	var C_ITEM weap; var int ready;
 	if(Npc_HasEquippedMeleeWeapon(hero))

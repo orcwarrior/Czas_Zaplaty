@@ -636,6 +636,9 @@ FUNC VOID EVT_TRIGGER7 ()
 	
 	printdebug("TRIGGER7>>PupilBugFix");      
 	PupilBugFix();   
+	
+	printdebug("TRIGGER7>>turnOnRuneSwordEffects"); 
+	turnOnRuneSwordEffects();
 
 	Trigger7Phase = 1;//Rest part of this func will be done called by PerFrameTrigger
 
