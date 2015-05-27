@@ -1055,7 +1055,7 @@ FUNC INT DIA_Whistler_RevangeAfter_Condition()
 FUNC VOID DIA_Whistler_RevangeAfter_Info()
 {
 	B_FullStop (hero);
-	AI_Output (self, other, "DIA_Whistler_RevangeAfter_11_01"); //Hey, Ty!
+	AI_Output (self, other, "DIA_Whistler_RevangeAfter_11_01"); //Hej, Ty!
 	AI_TurnToNpc (other, self);
 	AI_Output (other, self, "DIA_Whistler_RevangeAfter_15_02"); //Ja?
 	AI_Output (self, other, "DIA_Whistler_RevangeAfter_11_03"); //Tak. Podejdü do mnie.

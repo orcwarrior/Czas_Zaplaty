@@ -60,7 +60,7 @@ FUNC int  Info_Kuva_Hallo_Condition()
 FUNC VOID  Info_Kuva_Hallo_Info()
 {
 	B_FullStop (hero);
-	AI_Output (self, other,"Info_Kuva_Hallo_04_01"); //Hey, Ty! Stój!
+	AI_Output (self, other,"Info_Kuva_Hallo_04_01"); //Hej, Ty! Stój!
 	AI_TurnToNpc(other, self);
 	AI_Output (other, self,"Info_Kuva_Hallo_15_02"); //Co to za ptaszek w klatce?
 	AI_Output (self, other,"Info_Kuva_Hallo_04_03"); //Bardzo œmieszne.
