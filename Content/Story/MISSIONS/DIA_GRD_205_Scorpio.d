@@ -798,7 +798,7 @@ INSTANCE DIA_Scorpio_Traitor (C_INFO)
 
 FUNC INT DIA_Scorpio_Traitor_Condition()
 {
-	if (pacho_ore)&&(!Npc_KnowsInfo (hero, DIA_Pacho_JourneyEnd))
+	if (pacho_ore)&&(!Npc_KnowsInfo (hero, DIA_Pacho_JourneyEnd))&&(!Mis_PachoSplit)
 	{
 		return 1;
 	};
