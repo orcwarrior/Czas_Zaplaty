@@ -218,7 +218,7 @@ func void KeyEvent_LameHP()
 		msg = ConcatStrings("P¯: ",inttostring(hero.attribute[ATR_HITPOINTS]));
 		msg = ConcatStrings(msg,"/");
 		msg = ConcatStrings(msg,inttostring(hero.attribute[ATR_HITPOINTS_MAX]));
-		PutMsg(msg,"font_default.tga",RGBAToZColor(255,100,100,255),4,"");		
+		PutMsg(msg,"font_default.tga",RGBAToZColor(255,100,100,255),1,"");		
 	};	
 
 };
