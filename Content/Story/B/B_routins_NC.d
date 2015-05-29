@@ -39,6 +39,7 @@ func void B_NC_LeeBack()
 	AI_EquipBestMeleeWeapon(n4);
 	CreateInvItem(n4, ORG_ARMOR_H);
 	AI_EquipArmor(n4, ORG_ARMOR_H);
+	AI_EquipBestArmor(n4);
 
 //NC_PATH86_MOVEMENT - SLD_703_Soeldner  nc1
 
@@ -638,8 +639,11 @@ dodac wp dla Fletchera na skale
 	Npc_ExchangeRoutine(mordrag, "NCFree");
 	EquipItem(mordrag, ItMw_1H_Mace_02);
 	EquipItem(mordrag, ItRw_Bow_Long_01);
+	AI_EquipBestMeleeWeapon(mordrag);
+	AI_EquipBestRangedWeapon(mordrag);
 	CreateInvItem(mordrag, ORG_ARMOR_L);
 	AI_EquipArmor(mordrag, ORG_ARMOR_L);
+	AI_EquipBestArmor(mordrag);
    
    Wld_InsertNpc(DemonLord, "NC_EN_1");
    Wld_InsertNpc(DemonLord, "NC_EN_1");
