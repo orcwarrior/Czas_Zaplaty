@@ -331,6 +331,7 @@ STORY\EVENTS\TimeEventsFreemine.d
 STORY\EVENTS\TimeEventsLabyrinth.d
 STORY\EVENTS\TimeEventsOrcGraveyard.d
 STORY\EVENTS\TimeEventsDream.d
+STORY\EVENTS\TimeEventsNecroloc.d
 STORY\EVENTS\*.D
 _Intern\PerFrameCallback_Trigger.D
 AI\AI_Intern\NPC_FUNC\NpcFunc_Trigger.d 

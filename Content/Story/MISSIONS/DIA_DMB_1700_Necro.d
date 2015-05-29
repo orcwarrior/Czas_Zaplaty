@@ -273,7 +273,8 @@ FUNC VOID DIA_Necro_ReadyForTest_Info()
 		Niech siê zmienna dick_trial ustawi na TRUE jak mu siê uda bo to bêdzie warunek do kolejnego dialogu
 		***********************/
 	Wld_PlayEffect("spellFX_INCOVATION_RED", self, self, 1, 0, DAM_MAGIC, FALSE);
-	Wld_InsertNpc (PC_Hero_AlterEgo, "NECRO_CENTER");
+	Wld_InsertNpc(PC_Hero_AlterEgo, "NL_OUTTER_CIRCLE_10");
+	inserted_alter_ego = true;
 };
 
 /*********************

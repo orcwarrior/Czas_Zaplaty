@@ -976,7 +976,7 @@ INSTANCE PC_Hero_AlterEgo(NPC_DEFAULT)
 	//-------- primary data --------		
 	name 			= "Rick";
 	Npctype			= NPCTYPE_ambient;
-	guild			= GIL_PIR;
+	guild			= GIL_NONE;
 	level			= 0;
 	voice			= 5;
 	id				= 1702;
@@ -1011,6 +1011,12 @@ INSTANCE PC_Hero_AlterEgo(NPC_DEFAULT)
 };
 
 FUNC VOID Rtn_start_1702 ()
+{
+	Ta_Stand (0,00,12,00, "NL_OUTTER_CIRCLE_10"); 
+   Ta_Stand (12,00,0,00, "NL_OUTTER_CIRCLE_10"); 
+};
+
+FUNC VOID Rtn_Follow_1702 ()
 {
 	Ta_FollowPC (0,00,12,00,hero.wp); 
    Ta_FollowPC (12,00,0,00,hero.wp); 

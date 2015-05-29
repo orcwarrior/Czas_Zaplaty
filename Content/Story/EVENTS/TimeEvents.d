@@ -393,6 +393,7 @@ FUNC VOID B_Trigger_CheckMissions()
 	TimeEventsLabyrinth();
 	TimeEventsOrcGraveyard();
 	TimeEventsDream();
+	TimeEventsNecroloc();
 };
 
 var int mob;
