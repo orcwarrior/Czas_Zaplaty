@@ -348,17 +348,17 @@ FUNC void  RBL_2604_Tony_OLDCAMP_Guards()
 		AI_Output (other, self,"RBL_2604_Tony_Guards_Info_15_00"); //Kim s¹ stra¿nicy?
 		AI_Output (self, other,"RBL_2604_Tony_Guards_Info_15_01"); //Stra¿nicy pilnuj¹ Starego Obozu i kopalni nale¿¹cej do magnatów.
 		AI_Output (self, other,"RBL_2604_Tony_Guards_Info_07_02"); //Dowodzi nimi Thorus. To prawdziwy twardziel. Ciê¿ko go zabiæ... On zasze wraca! 
-		AI_Output (self, other,"RBL_2604_Tony_Guards_Info_07_03"); //Chyba jako jedyny stra¿nik nie pochwala³ eliminacji podejrzanych Cieni.
+		AI_Output (self, other,"RBL_2604_Tony_Guards_Info_07_03"); //Chyba jako jedyny stra¿nik nie pochwala³ eliminacji podejrzanych cieni.
 		AI_Output (self, other,"RBL_2604_Tony_Guards_Info_07_04"); //Thorus jest jednak lojalny. Wype³ni ka¿de polecenie Gomeza, nawet je¿eli nie bêdzie siê z nim zgadza³.
 		AI_Output (self, other,"RBL_2604_Tony_Guards_Info_07_05"); //Stra¿nicy to najwiêksza si³a Starego Obozu.
-		AI_Output (self, other,"RBL_2604_Tony_Guards_Info_07_06"); //S¹ wœród nich te¿ prawdziwe menty, rz¹dni krwi sadyœci i socjopaci. Jak nie przymierzaj¹c Bloodwyn.
+		AI_Output (self, other,"RBL_2604_Tony_Guards_Info_07_06"); //S¹ wœród nich te¿ prawdziwe mêty, rz¹dni krwi sadyœci i socjopaci. Jak nie przymierzaj¹c Bloodwyn.
 		AI_Output (other, self,"RBL_2604_Tony_Guards_Info_15_09"); //Kim jest Bloodwyn?
 		AI_Output (self, other,"RBL_2604_Tony_Guards_Info_07_10"); //Bloodwyn gdyby móg³ wlaz³by Gomezowi do ty³ka bez ³oju z kretoszczura.
 		AI_Output (self, other,"RBL_2604_Tony_Guards_Info_07_11"); //Zrobi dla niego wszystko.	
 		AI_Output (self, other,"RBL_2604_Tony_Guards_Info_07_12"); //Do tego ci¹gle pastwi siê nad kopaczami i czerpie z tego perwersyjn¹ przyjemnoœæ.	
 		AI_Output (self, other,"RBL_2604_Tony_Guards_Info_07_13"); //Kolejny sadysta to Szakal.
-		AI_Output (self, other,"RBL_2604_Tony_Guards_Info_07_14"); //Chocia¿ ten woli szukaæ wyzwañ wœród Cieni lub nawet innych Stra¿ników.	
-		AI_Output (self, other,"RBL_2604_Tony_Guards_Info_07_15"); //W ka¿dym razie stra¿nicy ze Starego Obozu to najgorsze menty w ca³ej kolonii.	
+		AI_Output (self, other,"RBL_2604_Tony_Guards_Info_07_14"); //Chocia¿ ten woli szukaæ wyzwañ wœród cieni lub nawet innych stra¿ników.	
+		AI_Output (self, other,"RBL_2604_Tony_Guards_Info_07_15"); //W ka¿dym razie stra¿nicy ze Starego Obozu to najgorsze mêty w ca³ej kolonii.	
 		B_LogEntry		(CH1_Pir_OldCamp, "Stra¿nicy ze Starego Obozu to najwiêksze sukinsyny w kolonii. Na szczególn¹ uwagê zas³uguj¹ Bloodwyn i Szakal.");
 	}
 	else

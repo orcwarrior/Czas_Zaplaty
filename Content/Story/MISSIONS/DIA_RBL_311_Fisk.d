@@ -57,7 +57,7 @@ FUNC VOID DIA_Fisk_Bartender_Info()
 	AI_Output (other, self, "DIA_Fisk_Bartender_15_03"); //Czym zajmowa³eœ siê wczeœniej?
 	AI_Output (self, other, "DIA_Fisk_Bartender_12_04"); //By³em kupcem w Starym Obozie i wiod³o mi siê nie najgorzej, dopóki Gomez nie zacz¹³ usuwaæ cieni.
 	AI_Output (self, other, "DIA_Fisk_Bartender_12_05"); //Wtedy stwierdzi³em, ¿e nadszed³ w³aœciwy czas na zmianê otoczenia.
-	AI_Output (self, other, "DIA_Fisk_Bartender_12_06"); //Z Cavalornem znam siê od lat. Jak widzisz mam oko na tutejsze menty przesiaduj¹ce w ober¿y.
+	AI_Output (self, other, "DIA_Fisk_Bartender_12_06"); //Z Cavalornem znam siê od lat. Jak widzisz mam oko na tutejsze mêty przesiaduj¹ce w ober¿y.
 	AI_Output (self, other, "DIA_Fisk_Bartender_12_07"); //Ale Ciebie widzê tu po raz pierwszy. Ten pancerz...
 	AI_Output (self, other, "DIA_Fisk_Bartender_12_08"); //Nie jesteœ skazañcem?
 	AI_Output (other, self, "DIA_Fisk_Bartender_15_09"); //Jestem... By³em... 'marynarzem'.

@@ -104,7 +104,7 @@ FUNC VOID DIA_PIR_2601_Hank_WhereAreWe_Info()
 	AI_Output (self, other,"DIA_PIR_2601_Hank_WhereAreWe_09_04"); //Mniej wiêcej. Chocia¿ raczej wiêcej ni¿ mniej.
 	AI_Output (self, other,"DIA_PIR_2601_Hank_WhereAreWe_09_05"); //Khorinis to du¿a wyspa, ze œlicznym portowym miastem, z bogatymi kupcami gotowymi oddaæ nam swoje z³oto i córki.
 	AI_Output (other, self,"DIA_PIR_2601_Hank_WhereAreWe_15_06"); //To gdzie tkwi haczyk?
-	AI_Output (self, other,"DIA_PIR_2601_Hank_WhereAreWe_09_07"); //Khorinis to te¿ kopalnie, gdzie l¹duj¹ najwiêksze menty z ca³ej Myrtany.
+	AI_Output (self, other,"DIA_PIR_2601_Hank_WhereAreWe_09_07"); //Khorinis to te¿ kopalnie, gdzie l¹duj¹ najwiêksze mêty z ca³ej Myrtany.
 	AI_Output (other, self,"DIA_PIR_2601_Hank_WhereAreWe_15_08"); //No tak, Kolonia Karna.
 	AI_Output (self, other,"DIA_PIR_2601_Hank_WhereAreWe_09_09"); //W rzeczy samej, a my trafiliœmy w sam œrodek tego ³ajna. Do tego otacza nas jakaœ magiczna bariera.
 	AI_Output (self, other,"DIA_PIR_2601_Hank_WhereAreWe_09_10"); //Buk³ak próbowa³ j¹ sforsowaæ. Uczepi³ siê takielunku i zanim go powstrzymaliœmy zamieni³ siê w œliczn¹ skwarkê.

@@ -857,7 +857,7 @@ FUNC VOID DIA_Pacho_HuntingEnd2_Info()
 	AI_TurnToNpc (self, other);
 	AI_GotoNpc(self, other);
 
-	AI_Output(self, other, "DIA_Pacho_HuntingEnd2_11_00"); //Dobrze, ¿e siê postawi³eœ. Tacy jak Hark to najgorsze menty, ¿eruj¹ce na s³abszych.
+	AI_Output(self, other, "DIA_Pacho_HuntingEnd2_11_00"); //Dobrze, ¿e siê postawi³eœ. Tacy jak Hark to najgorsze mêty, ¿eruj¹ce na s³abszych.
 	AI_Output(other, self, "DIA_Pacho_HuntingEnd2_15_01"); //Te¿ tak uwa¿am. Bywaj.
 	Log_SetTopicStatus(CH2_RBL_WhiteTeeth, LOG_SUCCESS);
 	B_LogEntry(CH2_RBL_WhiteTeeth, "Ju¿ po wszystkim. Czas wypróbowaæ kie³!");
