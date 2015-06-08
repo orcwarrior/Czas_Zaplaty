@@ -1,6 +1,7 @@
 //Events in Necroloc
+var int AlterEgoHasFakeRuneSwd;
 
-func void ChangeAttributeAppearanceAlterEgo()
+func void ChangeAttributeAlterEgo()
 {
 	var c_npc alter_ego;
 	alter_ego = hlp_getNpc(PC_Hero_AlterEgo);
@@ -12,11 +13,24 @@ func void ChangeAttributeAppearanceAlterEgo()
 	alter_ego.attribute[ATR_HITPOINTS] = alter_ego.attribute[ATR_HITPOINTS_MAX];    
 	alter_ego.attribute[ATR_STRENGTH] = hero.attribute[ATR_STRENGTH]; 
 	alter_ego.attribute[ATR_DEXTERITY] = hero.attribute[ATR_DEXTERITY];
-	
+};
+
+func void ChangeArmorAndWeaponAlterEgo()
+{
+	var c_npc alter_ego;
+	alter_ego = hlp_getNpc(PC_Hero_AlterEgo);
 	var c_item melee_weapon; melee_weapon = Npc_GetEquippedMeleeWeapon(hero);
 	var c_item armor; armor = Npc_GetEquippedArmor(hero);
 	
-	CreateInvItem(alter_ego, Hlp_GetinstanceID(melee_weapon));
+	if (melee_weapon.makingmob == 1010)
+	{
+		CreateInvItem(alter_ego, ItMw_2H_RuneSWD_Fake);
+		AlterEgoHasFakeRuneSwd = true;
+	}
+	else
+	{
+		CreateInvItem(alter_ego, Hlp_GetinstanceID(melee_weapon));
+	};
 	CreateInvItem(alter_ego, Hlp_GetinstanceID(armor));
 
 	AI_EquipBestMeleeWeapon(alter_ego);
@@ -29,10 +43,21 @@ func void TimeEventsNecroloc()
 {
 	if (WORLD_CURRENT == WORLD_NECROLOCATION)
 	{
-		if (inserted_alter_ego && InfoManager_HasFinished())
+		if (inserted_alter_ego == 1 && InfoManager_HasFinished())
 		{
-			ChangeAttributeAppearanceAlterEgo();
+			ChangeAttributeAlterEgo();
+			ChangeArmorAndWeaponAlterEgo();
 			B_ExchangeRoutine(PC_Hero_AlterEgo, "Follow");
+			inserted_alter_ego = 2;
+		};
+		if (inserted_alter_ego == 2 && NPC_isDead(PC_Hero_AlterEgo))
+		{
+			if (AlterEgoHasFakeRuneSwd)
+			{
+				Wld_RemoveItem(ItMw_2H_RuneSWD_Fake);
+				print("usuwamy");
+			};
+			
 			inserted_alter_ego = false;
 		};
 	};

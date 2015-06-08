@@ -155,7 +155,6 @@ Prototype ItMw_2H_RuneSWD_Proto (C_ITEM)
 INSTANCE ItMw_2H_RuneSWD_01 (ItMw_2H_RuneSWD_Proto) 
 {	
 	visual 				=	"ItMw_2h_RuneSword_NEUTRAL.3DS";
-
 };
 INSTANCE ItMw_2H_RuneSWD_DARK (ItMw_2H_RuneSWD_Proto) 
 {	
@@ -176,6 +175,11 @@ INSTANCE ItMw_2H_RuneSWD_WATER (ItMw_2H_RuneSWD_Proto)
 INSTANCE ItMw_2H_RuneSWD_PSI (ItMw_2H_RuneSWD_Proto) 
 {	
 	visual 				=	"ItMw_2h_RuneSword_PSI.3DS";
+};
+
+INSTANCE ItMw_2H_RuneSWD_Fake (ItMw_2H_RuneSWD_Proto) 
+{	
+	visual 				=	"ItMw_2h_RuneSword_NEUTRAL.3DS";
 };
 //END
 
