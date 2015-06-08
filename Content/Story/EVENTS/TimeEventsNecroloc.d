@@ -55,7 +55,6 @@ func void TimeEventsNecroloc()
 			if (AlterEgoHasFakeRuneSwd)
 			{
 				Wld_RemoveItem(ItMw_2H_RuneSWD_Fake);
-				print("usuwamy");
 			};
 			
 			inserted_alter_ego = false;
