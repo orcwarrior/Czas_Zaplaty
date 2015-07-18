@@ -58,7 +58,7 @@ FUNC VOID DIA_HUN_858_Quentin_Hello_Info()
 {
 	Npc_SetAivar(self,AIV_WASDEFEATEDBYSC,  FALSE); Npc_SetAivar(self,AIV_HASDEFEATEDSC,  FALSE);
    
-	AI_Output (other, self, "DIA_HUN_858_Quentin_Hello_15_01"); //Witaj. Widzê, ¿e lubisz machaæ mieczem?
+	AI_Output (other, self, "DIA_HUN_858_Quentin_Hello_15_01"); //Witaj. Widzê, ¿e lubisz machaæ toporem?
 	AI_Output (self, other, "DIA_HUN_858_Quentin_Hello_07_02"); //Mo¿e i lubiê. A co Ciê to obchodzi?
 	AI_Output (other, self, "DIA_HUN_858_Quentin_Hello_15_03"); //Chcia³em tylko zagaiæ rozmowê...
 	AI_Output (self, other, "DIA_HUN_858_Quentin_Hello_07_04"); //Wiesz co? Nie lubiê miêczaków miel¹cych ozorem.
