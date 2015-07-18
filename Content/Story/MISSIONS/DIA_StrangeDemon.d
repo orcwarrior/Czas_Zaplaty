@@ -126,7 +126,7 @@ FUNC VOID Info_StrangeDemon_Halo1_Info()
 {
 	AI_Output		(hero, self,"Info_StrangeDemon_Halo1_15_02"); //Zamieniam siê w s³uch.
 	AI_Output		(self, hero,"Info_StrangeDemon_Halo1_17_01"); //Wszystko zaczê³o siê w czasach...
-	AI_Output		(hero, self,"Info_StrangeDemon_Halo1_15_02"); //Nie jestem archeologiem, przejdŸ od razu do tej czêœci z obrzydliwym bogactwem.
+	AI_Output		(hero, self,"Info_StrangeDemon_Halo1_15_03"); //Nie jestem archeologiem, przejdŸ od razu do tej czêœci z obrzydliwym bogactwem.
 
 	B_LogEntry		(Strange_DemonStory, "");	
 };

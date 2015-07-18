@@ -262,10 +262,10 @@ ork daj jakiœ fajny pfx, niech jaszczuroludzie i orkowie sp³on¹. a dicka niech s
 
 FUNC VOID DIA_Ancient_Dead_True()
 {
-	AI_Output (other, self, "DIA_Ancient_Dead_Weak_15_01"); //Masz racjê, zawiod³em.
-	AI_Output (self, other, "DIA_Ancient_Dead_Weak_11_02"); //DOBRZE, ¯E ROZUMIESZ SWÓJ B£¥D. NIESTETY TO ¯YCIA MYM DZIECIOM NIE PRZYWRÓCI.
-	AI_Output (self, other, "DIA_Ancient_Dead_Weak_11_03"); //JEDNAK ZAPAMIÊTAJ, ¯E OJCIEC SMOKÓW JEST SPRAWIEDLIWYM SÊDZI¥.
-	AI_Output (self, other, "DIA_Ancient_Dead_Weak_11_04"); //POZWOLÊ CI ODEJŒÆ, ABYŒ MÓG£ NAPRAWIÆ Z£O KTÓRE UCZYNI£EŒ...
+	AI_Output (other, self, "DIA_Ancient_Dead_Weak_True_15_01"); //Masz racjê, zawiod³em.
+	AI_Output (self, other, "DIA_Ancient_Dead_Weak_True_11_02"); //DOBRZE, ¯E ROZUMIESZ SWÓJ B£¥D. NIESTETY TO ¯YCIA MYM DZIECIOM NIE PRZYWRÓCI.
+	AI_Output (self, other, "DIA_Ancient_Dead_Weak_True_11_03"); //JEDNAK ZAPAMIÊTAJ, ¯E OJCIEC SMOKÓW JEST SPRAWIEDLIWYM SÊDZI¥.
+	AI_Output (self, other, "DIA_Ancient_Dead_Weak_True_11_04"); //POZWOLÊ CI ODEJŒÆ, ABYŒ MÓG£ NAPRAWIÆ Z£O KTÓRE UCZYNI£EŒ...
 
 	/**************
 standardowo jaszczurki i orkowie gin¹, smok znika, a dickowi nic siê nie dzieje.

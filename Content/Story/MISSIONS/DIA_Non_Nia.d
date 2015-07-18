@@ -218,7 +218,7 @@ FUNC VOID Info_Nia_Def_Info()
    AI_TurnToNpc (self, sti);
    AI_Output (other, self,"Info_Nia_Def_15_02"); //Co siê dzieje?
    AI_TurnToNpc (sti, self);
-   AI_Output (self, other,"Info_Nia_Def_16_01"); //Znamiê oszala³. Georg!
+   AI_Output (self, other,"Info_Nia_Def_16_03"); //Znamiê oszala³. Georg!
 
    B_StopProcessInfos   (self);
    AI_GotoWP          (sti,   "NIA_INSPECT");

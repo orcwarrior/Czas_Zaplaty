@@ -85,11 +85,11 @@ FUNC INT Info_Henger_Hello1_Condition()
 FUNC VOID Info_Henger_Hello1_Info()
 {	
 	B_FullStop (hero);
-	AI_Output (self, other,"Info_Henger_Hello_06_01"); //Mia³em do Ciebie nosa. W koñcu bêdê spokojnie spa³ w nocy.
-	AI_Output (self, other,"Info_Henger_Hello_06_02"); //Dobrze wiedzieæ, ¿e zabójca ju¿ gryzie ziemiê.
-	AI_Output (other, self,"Info_Henger_Again_15_03"); //Czasem ³atwo pomyliæ odbicie gwiazd w tafli wody z prawdziwym niebem.
-	AI_Output (self, other,"Info_Henger_Hello_06_04"); //Co tam mamroczesz?
-	AI_Output (other, self,"Info_Henger_Again_15_05"); //Nic takiego. Bywaj.
+	AI_Output (self, other,"Info_Henger_Hello1_06_01"); //Mia³em do Ciebie nosa. W koñcu bêdê spokojnie spa³ w nocy.
+	AI_Output (self, other,"Info_Henger_Hello1_06_02"); //Dobrze wiedzieæ, ¿e zabójca ju¿ gryzie ziemiê.
+	AI_Output (other, self,"Info_Henger_Hello1_15_03"); //Czasem ³atwo pomyliæ odbicie gwiazd w tafli wody z prawdziwym niebem.
+	AI_Output (self, other,"Info_Henger_Hello1_06_04"); //Co tam mamroczesz?
+	AI_Output (other, self,"Info_Henger_Hello1_15_05"); //Nic takiego. Bywaj.
 
 	B_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self,"START");	

@@ -416,7 +416,7 @@ FUNC VOID DIA_Rodney_KillPatrol_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Hank_KillPatrol_11_04"); //Nie ma sprawy.
+		AI_Output (self, other,"DIA_Rodney_KillPatrol_11_04"); //Nie ma sprawy.
 	};
    
 	B_StopProcessInfos	(self);

@@ -223,9 +223,9 @@ FUNC INT DIA_Cup_Statu_Condition()
 FUNC VOID DIA_Cup_Statu_Info()
 {
 	CreateInvItems (self, poor_sack,1); 
-	AI_Output (other, self, "DIA_Cup_Again1_15_01"); //Œmierdzisz z³odziejem.
-	AI_Output (self, other, "DIA_Cup_Again1_11_02"); //A Co Ci do tego ³azêgo?
-	AI_Output (other, self, "DIA_Cup_Again1_15_03"); //Ano to, ¿e nie lubiê z³odziei!
+	AI_Output (other, self, "DIA_Cup_Statu_15_01"); //Œmierdzisz z³odziejem.
+	AI_Output (self, other, "DIA_Cup_Statu_11_02"); //A Co Ci do tego ³azêgo?
+	AI_Output (other, self, "DIA_Cup_Statu_15_03"); //Ano to, ¿e nie lubiê z³odziei!
 	B_StopProcessInfos	(self); 
 	B_StartAfterDialogFight(self,other,false);
 

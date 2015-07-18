@@ -178,15 +178,15 @@ FUNC VOID Info_Saturas_Konwer_Info()
 	AI_Output(self, other,"Info_Saturas_Konwer_14_17"); //Za trzy dni odbêdzie siê konwergerencja sfer. Wtedy pierwotna moc wszystkich bogów po³¹czy siê...
 	AI_Output(self, other,"Info_Saturas_Konwer_14_18"); //To zjawisko zdarza siê raz na dziesiêæ lat. Jest niezwykle potê¿ne, ale krótkotrwa³e.
 	AI_Output(self, other,"Info_Saturas_Konwer_14_19"); //Jego moc os³abi barierê na tyle, ¿e bêdzie mo¿na siê poza ni¹ teleportowaæ.
-	AI_Output(other, self, "Info_Saturas_Konwer_15_16"); //Bêdzie mo¿na przez ni¹ przejœæ?
-	AI_Output(self, other,"Info_Saturas_Konwer_14_20"); //Niestety nie, tylko magia zdo³a siê przedrzeæ przez os³onê.
-	AI_Output(self, other,"Info_Saturas_Konwer_14_20"); //To dla nas jedyna szansa, aby odnaleŸæ drogê do Jarkendaru.
-	AI_Output(other, self, "Info_Saturas_Konwer_15_21"); //Gdzie?
-	AI_Output(self, other,"Info_Saturas_Konwer_14_22"); //Do miejsca, gdzie ju¿ wkrótce narodzi siê potê¿ne z³o. Wiêcej wiedzieæ nie musisz.
-	AI_Output(other, self, "Info_Saturas_Konwer_15_23"); //Czyli mam trzy dni na znalezienie ornamentów?
-	AI_Output(self, other,"Info_Saturas_Konwer_14_24"); //Tak. 
-	AI_Output(other, self, "Info_Saturas_Konwer_15_25"); //Rozumiem, ¿e zwrócenie ornamentu nie wchodzi w rachubê?
-	AI_Output(self, other,"Info_Saturas_Konwer_14_26"); //Oczywiœcie. Porozmawiaj z Merdarionem, on mo¿e Ci pomóc. A teraz ruszaj, muszê wróciæ do pracy.
+	AI_Output(other, self, "Info_Saturas_Konwer_15_20"); //Bêdzie mo¿na przez ni¹ przejœæ?
+	AI_Output(self, other,"Info_Saturas_Konwer_14_21"); //Niestety nie, tylko magia zdo³a siê przedrzeæ przez os³onê.
+	AI_Output(self, other,"Info_Saturas_Konwer_14_22"); //To dla nas jedyna szansa, aby odnaleŸæ drogê do Jarkendaru.
+	AI_Output(other, self, "Info_Saturas_Konwer_15_23"); //Gdzie?
+	AI_Output(self, other,"Info_Saturas_Konwer_14_24"); //Do miejsca, gdzie ju¿ wkrótce narodzi siê potê¿ne z³o. Wiêcej wiedzieæ nie musisz.
+	AI_Output(other, self, "Info_Saturas_Konwer_15_25"); //Czyli mam trzy dni na znalezienie ornamentów?
+	AI_Output(self, other,"Info_Saturas_Konwer_14_26"); //Tak. 
+	AI_Output(other, self, "Info_Saturas_Konwer_15_27"); //Rozumiem, ¿e zwrócenie ornamentu nie wchodzi w rachubê?
+	AI_Output(self, other,"Info_Saturas_Konwer_14_28"); //Oczywiœcie. Porozmawiaj z Merdarionem, on mo¿e Ci pomóc. A teraz ruszaj, muszê wróciæ do pracy.
 	
    B_LogEntry(CH3_NON_Ornament, "Mam trzy dni na odnalezienie pozosta³ych czeœci ornamentu. Wtedy nadejdzie jakaœ konwergerencja i magowie bêd¹ mogli siê teleportowaæ poza barierê. Muszê porozmawiaæ z Merdarionem, podobno mo¿e mi pomóc.");
 };

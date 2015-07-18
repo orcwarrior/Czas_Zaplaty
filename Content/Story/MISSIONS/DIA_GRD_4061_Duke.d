@@ -417,10 +417,10 @@ FUNC VOID DIA_Duke_Hello_Info()
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Duke_Hello_15_03"); //Poczu³em straszny smród i przyszed³em zobaczyæ, co tak cuchnie.
-		AI_Output (self, other, "DIA_Duke_Hello_11_04"); //Ty skurwielu!
+		AI_Output (other, self, "DIA_Duke_Hello_15_20"); //Poczu³em straszny smród i przyszed³em zobaczyæ, co tak cuchnie.
+		AI_Output (self, other, "DIA_Duke_Hello_11_21"); //Ty skurwielu!
 		AI_TurnToNpc(self, CH2_Patrol_g2);
-		AI_Output (self, other, "DIA_Duke_Hello_11_05"); //S³yszeliœcie to! Ten pastuch owiec nas obra¿a!
+		AI_Output (self, other, "DIA_Duke_Hello_11_22"); //S³yszeliœcie to! Ten pastuch owiec nas obra¿a!
 		AI_TurnToNpc(self, other);
 		patrol_trial = 1;
 		AI_TurnToNpc(CH2_Patrol_g1, other);
@@ -428,8 +428,8 @@ FUNC VOID DIA_Duke_Hello_Info()
 		AI_TurnToNpc(CH2_Patrol_g3, other);
 		AI_TurnToNpc(CH2_Patrol_g4, other);
 		AI_TurnToNpc(CH2_Patrol_g5, other);
-		AI_Output (self, other, "DIA_Duke_Hello_11_06"); //Zap³acisz za to krwi¹ durniu.
-		AI_Output (other, self, "DIA_Duke_Hello_15_07"); //Nie s¹dzê!
+		AI_Output (self, other, "DIA_Duke_Hello_11_23"); //Zap³acisz za to krwi¹ durniu.
+		AI_Output (other, self, "DIA_Duke_Hello_15_24"); //Nie s¹dzê!
 		B_LogEntry(CH2_RBL_GuardCamp, "Obrzuci³em stra¿ników obelgami - teraz muszê 'tylko' ich zabiæ.");
 
 		B_StopProcessInfos(self);

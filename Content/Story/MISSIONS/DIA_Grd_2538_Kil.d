@@ -209,7 +209,7 @@ FUNC VOID DIA_Kil_Gate_Patrol()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Kil_Gate_Patrol_11_08"); //Dobra, spróbujmy jeszcze raz. Kto NAPRAWDÊ rz¹dzi w Nowym Obozie?
+		AI_Output (self, other, "DIA_Kil_Gate_Patrol_11_09"); //Dobra, spróbujmy jeszcze raz. Kto NAPRAWDÊ rz¹dzi w Nowym Obozie?
 	};
    
 	Info_ClearChoices (DIA_Kil_Gate);

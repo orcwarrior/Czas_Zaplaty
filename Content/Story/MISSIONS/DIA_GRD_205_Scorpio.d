@@ -775,8 +775,8 @@ FUNC VOID DIA_Scorpio_Map_Info()
       
 		AI_Output (other, self, "DIA_Scorpio_Map_15_11"); //A reszta rudy?
 		AI_Output (self, other, "DIA_Scorpio_Map_11_12"); //Trzaby³o siê nie spóŸniæ!
-		AI_Output (other, self, "DIA_Scorpio_Map_15_09"); //Co siê tak wœciekasz. Po co Ci ta mapa?
-		AI_Output (self, other, "DIA_Scorpio_Map_11_10"); //A co ciê to obchodzi?! Bywaj.
+		AI_Output (other, self, "DIA_Scorpio_Map_15_13"); //Co siê tak wœciekasz. Po co Ci ta mapa?
+		AI_Output (self, other, "DIA_Scorpio_Map_11_14"); //A co ciê to obchodzi?! Bywaj.
       
 		Log_SetTopicStatus(CH1_Rbl_Map, LOG_SUCCESS);
 		B_LogEntry(CH1_Rbl_Map, "Przynios³em mapê Skorpionowi. SpóŸni³em siê i nie dosta³em reszty rudy. By³y stra¿nik nie chcia³ te¿ zdradziæ, do czego potrzebuje t¹ mapê. Ciekawe, mo¿e Pacho coœ mi powie, w koñcu to przyjaciele.");

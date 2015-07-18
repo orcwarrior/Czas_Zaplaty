@@ -2446,8 +2446,8 @@ FUNC VOID DIA_Cavalorn_TunelTrap_Info()
 {
    B_FullStop (hero);
    AI_TurnToNpc(self, other);
-   AI_Output (self, other,"DIA_Cavalorn_TunelTrapAfter_12_01"); //Jednak mia³em nosa. Czeka na nas komitet powitalny.
-   AI_Output (self, other, "DIA_Cavalorn_TunelTrapAfter_12_02"); //Zróbmy z nich œliczn¹ siekankê!
+   AI_Output (self, other,"DIA_Cavalorn_TunelTrap_12_01"); //Jednak mia³em nosa. Czeka na nas komitet powitalny.
+   AI_Output (self, other, "DIA_Cavalorn_TunelTrap_12_02"); //Zróbmy z nich œliczn¹ siekankê!
    
    //dodaæ rebeliantów do SO! - w sumie nie trzeba, oni i tak szli za dickiem
    

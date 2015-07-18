@@ -316,7 +316,7 @@ FUNC void  RBL_2604_Tony_OLDCAMP_OreBaron()
 	else
 	{
 		AI_Output (other, self,"RBL_2604_Tony_OreBaron_Info_15_00");//Opowiedz mi o magnatach.
-		AI_Output (self, other,"RBL_2604_Tony_OreBaron_Info_07_01"); //Ju¿ o nich pyta³eœ.
+		AI_Output (self, other,"RBL_2604_Tony_OreBaron_Info_07_21"); //Ju¿ o nich pyta³eœ.
 	};
 	Info_ClearChoices	(RBL_2604_Tony_OLDCAMP );
 	if (Tony_OreBaron == FALSE)
@@ -364,7 +364,7 @@ FUNC void  RBL_2604_Tony_OLDCAMP_Guards()
 	else
 	{
 		AI_Output (other, self,"RBL_2604_Tony_Guards_Info_15_00"); //Kim s¹ stra¿nicy?
-		AI_Output (self, other,"RBL_2604_Tony_Guards_Info_15_01"); //Przecie¿ ju¿ wiesz.
+		AI_Output (self, other,"RBL_2604_Tony_Guards_Info_15_22"); //Przecie¿ ju¿ wiesz.
 	};
 	Info_ClearChoices (RBL_2604_Tony_OLDCAMP );
 	if (Tony_OreBaron == FALSE)
@@ -447,7 +447,7 @@ FUNC void  RBL_2604_Tony_OLDCAMP_Diggers()
 	else
 	{
 		AI_Output (other, self,"RBL_2604_Tony_Diggers_Info_15_00"); //Mo¿esz mi coœ powiedzieæ o kopaczach?
-		AI_Output (self, other,"RBL_2604_Tony_Diggers_Info_07_01"); //Szkoda na to czasu.
+		AI_Output (self, other,"RBL_2604_Tony_Diggers_Info_07_11"); //Szkoda na to czasu.
 	};
    
 	Info_ClearChoices	(RBL_2604_Tony_OLDCAMP );

@@ -224,9 +224,9 @@ FUNC VOID DIA_Pluskwa_Again_Fear_Know_Hrabia()
 	AI_Output (other, self, "DIA_Pluskwa_Again_Fear_Know_Hrabia_15_11"); //A kim on jest?
 	AI_Output (self, other, "DIA_Pluskwa_Again_Fear_Know_Hrabia_11_12"); //Racja. Dobra, coœ wymyœlê. Tylko napomknij o mnie Hrabiemu!
 	AI_Output (other, self, "DIA_Pluskwa_Again_Fear_Know_Hrabia_15_13"); //Mo¿esz byæ pewien, ¿e nie omieszkam.
-		AI_Output (self, other, "DIA_Pluskwa_Again_Fear_Know_Hrabia_11_12"); //Wypijê za to!
+	AI_Output (self, other, "DIA_Pluskwa_Again_Fear_Know_Hrabia_11_14"); //Wypijê za to!
 	
-  Npc_ExchangeRoutine	(self, "GO");	
+   Npc_ExchangeRoutine	(self, "GO");	
   	B_StopProcessInfos(self);	
 };
 

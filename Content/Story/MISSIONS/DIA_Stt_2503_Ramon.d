@@ -129,6 +129,6 @@ FUNC VOID  Stt_2503_Ramon_Give_Payment_For_Amulet_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Grd_2502_Witten_Final_Talk_About_Ring_Info_11_02"); //Chcesz mnie wyrolowaæ!? To nie jest 100 bry³ek rudy! Wróæ gdy je zdobêdziesz!
+		AI_Output(self,other,"Stt_2503_Ramon_Give_Payment_For_Amulet_11_02"); //Chcesz mnie wyrolowaæ!? To nie jest 100 bry³ek rudy! Wróæ gdy je zdobêdziesz!
 	};	
 }; 
