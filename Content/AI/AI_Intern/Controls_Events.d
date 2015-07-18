@@ -12,6 +12,11 @@ var int key_PFav;
 
 func void KeyEvent_RuneSwd()
 {
+	if (!TALENT_RUNESWORDUSING)
+	{
+		return;
+	};
+	
 	var oCNPC hiro;	var int rune; var string rune_instance;
 	if(MEM_KeyState(Key_RuneSwd)==KEY_PRESSED)
 	{
