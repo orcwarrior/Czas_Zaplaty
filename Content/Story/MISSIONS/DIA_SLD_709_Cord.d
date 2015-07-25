@@ -719,6 +719,35 @@ FUNC void  DIA_Cord_AllEnd_Info()
 	AI_Output (self, other, "DIA_Cord_AllEnd_14_05"); //Ty te¿, piracie. Ty te¿...
 };
 
+//************************************************************
+
+instance DIA_Cord_FailOrkanConvoy (C_INFO)
+{
+	npc				= SLD_709_Cord;
+	condition		= DIA_Cord_FailOrkanConvoy_Condition;
+	information		= DIA_Cord_FailOrkanConvoy_Info;
+	important		= 0;
+	permanent		= 0;
+	description		= "Zawali³em sprawê z konwojem."; 
+};
+
+FUNC int DIA_Cord_FailOrkanConvoy_Condition()
+{	
+	if (Npc_KnowsInfo(hero, Info_Kharim_Hi))&&(!merc_trap)
+	{
+		return 1;
+	};
+};
+
+FUNC void  DIA_Cord_FailOrkanConvoy_Info()
+{
+	AI_Output (other, self, "DIA_Cord_FailOrkanConvoy_15_01"); //Zawali³em sprawê z konwojem...
+	AI_Output (self, other, "DIA_Cord_FailOrkanConvoy_14_02"); //Tak, wiem. Kharim mi o tym powiedzia³.
+	AI_Output (self, other, "DIA_Cord_FailOrkanConvoy_14_03"); //No có¿, szkoda. Tak w ¿yciu bywa. Raz na wozie, raz pod wozem. Oby wiêcej nie by³o takich pora¿ek.
+	AI_Output (other, self, "DIA_Cord_FailOrkanConvoy_15_04"); //Jeszcze z³oimy im skórê. Nie mogê siê ju¿ doczekaæ.
+	AI_Output (self, other, "DIA_Cord_FailOrkanConvoy_14_05"); //Na pewno bêdzie taka okazja. Bywaj.
+};
+
 /****************************
 
 

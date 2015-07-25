@@ -1108,7 +1108,8 @@ instance  DIA_Lee_AllCompleated (C_INFO)
 
 FUNC int  DIA_Lee_AllCompleated_Condition()
 {
-	if (Npc_KnowsInfo(hero,DIA_Lee_ConvoysCompleated))&&(Npc_KnowsInfo(hero,DIA_Lee_TheRockCompleated))
+	if (Npc_KnowsInfo(hero, DIA_Lee_ConvoysCompleated) || Npc_KnowsInfo(hero, DIA_Cord_FailOrkanConvoy))
+	&& (Npc_KnowsInfo(hero, DIA_Lee_TheRockCompleated)) 
 	{
 		return 1;
 	};
@@ -1116,7 +1117,21 @@ FUNC int  DIA_Lee_AllCompleated_Condition()
 
 FUNC VOID  DIA_Lee_AllCompleated_Info()
 {
-	AI_Output (self, other,"DIA_Lee_AllCompleated_08_01"); //Zrobi³eœ dla nas wiêcej, ni¿ œmia³em oczekiwaæ. Zaskakujesz mnie, piracie.
+	Log_SetTopicStatus(CH5_NO_Rebel, LOG_SUCCESS);
+	
+	if (Npc_KnowsInfo(hero, DIA_Cord_FailOrkanConvoy))
+	{
+		B_GiveXP(500);
+		B_LogEntry(CH5_NO_Rebel, "Pomimo ¿e nie uda³a mi siê sprawa z konwojem Orkana, Nowy Obóz znowu jest wolny od stra¿ników.");
+		AI_Output (self, other,"DIA_Lee_AllCompleated_08_00"); //Mimo ¿e nie uda³o Ci siê zadanie z konwojem Orkana, zrobi³eœ dla nas bardzo wiele. Zaskakujesz mnie, piracie.
+	}
+	else
+	{
+		B_GiveXP(1000);
+		B_LogEntry(CH5_NO_Rebel, "Nowy Obóz znowu jest wolny od stra¿ników. Sporo mnie to kosztowa³o wysi³ku, ale by³o warto.");
+		AI_Output (self, other,"DIA_Lee_AllCompleated_08_01"); //Zrobi³eœ dla nas wiêcej, ni¿ œmia³em oczekiwaæ. Zaskakujesz mnie, piracie.
+	};
+	
 	AI_Output (other, self,"DIA_Lee_AllCompleated_15_02"); //Sam siê zaskakujê. Nigdy bym nie przypuszcza³, ¿e znajdê tu... przyjació³.
 	AI_Output (self, other,"DIA_Lee_AllCompleated_08_03"); //Nic nie dzieje siê bez powodu, Rick. Obyœmy do¿yli lepszych czasów.
 	AI_Output (other, self,"DIA_Lee_AllCompleated_15_04"); //Nie mam zamiaru opowiadaæ swoich przygód wnukom, wystarczy, ¿e sam mam koszmary.
@@ -1126,9 +1141,6 @@ FUNC VOID  DIA_Lee_AllCompleated_Info()
 	AI_Output (self, other,"DIA_Lee_AllCompleated_08_08"); //Drugi raz, kiedy ginie pamiêæ o nim i jego czynach.
 	AI_Output (other, self,"DIA_Lee_AllCompleated_15_09"); //Zapamiêtam to, Lee. Bywaj.
 	AI_Output (self, other,"DIA_Lee_AllCompleated_08_10"); //Do nastêpnego razu, piracie.
-
-	Log_SetTopicStatus(CH5_NO_Rebel, LOG_SUCCESS);
-	B_LogEntry(CH5_NO_Rebel, "Nowy Obóz znowu jest wolny od stra¿ników. Sporo mnie to kosztowa³o wysi³ku, ale by³o warto.");
 
 	B_LogEntry (CH4_RBL_NCRebel, "W Nowym Obozie zapanowa³ stary porz¹dek. Czas porozmawiaæ z Cavalornem.");
 	B_Kapitelwechsel(6);	 
