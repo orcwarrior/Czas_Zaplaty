@@ -30,6 +30,8 @@ var int B_AfterDialog_Info_Roderic_Gate_disabled;
 
 var int B_AfterDialog_Stigma_Death_disabled;
 
+var int B_AfterDialog_GoToNia_disabled;
+
 // Ork: Dodaje "Generici" bo mog¹ sie przydaæ (choæby nekro nas czêsto usmierca
 // i wyglada to obecnie kiepsko. Tutaj w przeciwienstwie do innych AfterDialog'ów ustawiamy zmienna
 // na true w dialogu, a w funkcji po-dialogu zmeni siê na false.
@@ -325,17 +327,30 @@ func void B_AfterDialog_Info_Roderic_Gate(var c_npc talker)
 	B_AfterDialog_Info_Roderic_Gate_disabled = true;
 };
 
+func void B_AfterDialog_GoToNia(var c_npc talker)
+{
+	AI_SetWalkmode(talker,NPC_RUN);
+	AI_SetWalkmode(hero,NPC_RUN);
+	var C_NPC nia; nia = Hlp_GetNpc(Non_660_Nia);
+	AI_GotoNpc(talker, nia);
+	AI_GotoNpc(hero, nia);
+	
+	B_AfterDialog_GoToNia_disabled = true;
+};
+
 func void B_AfterDialog_Stigma_Death(var c_npc talker)
 {
 	var C_NPC sti; sti = Hlp_GetNpc(Grd_614_Gardist);
 	var C_NPC nia; nia = Hlp_GetNpc(Non_660_Nia);
+	sti.guild = GIL_ORCWARRIOR;
+	var C_NPC georg; georg = Hlp_GetNpc(Grd_611_Gardist);
 	sti.attribute[ATR_HITPOINTS] = sti.attribute[ATR_HITPOINTS_MAX]/10;
 
 	Npc_SetPermAttitude	(sti, ATT_HOSTILE);
-	Npc_SetTarget (talker,sti);
+	Npc_SetTarget (georg,sti);
 	Npc_SetTarget (sti,nia);
 	AI_StartState (sti,ZS_ATTACK,1,"");
-	B_StartAfterDialogFight(talker,sti,true);
+	B_StartAfterDialogFight(georg,sti,true);
 	B_StartAfterDialogFight(sti,nia,true);
 	
 	B_AfterDialog_Stigma_Death_disabled = true;
@@ -455,4 +470,9 @@ func void B_ThingsToDoAfterDialog(var c_npc talker)
 	{
 		B_AfterDialog_Stigma_Death(talker); 	 	
 	}; 
+	
+	if (Hlp_GetInstanceID(talker)==Grd_614_Gardist)&&(Npc_KnowsInfo(hero, Info_Stigma_Hello2))&&(!B_AfterDialog_GoToNia_disabled)
+	{
+		B_AfterDialog_GoToNia(talker);
+	};
 };
